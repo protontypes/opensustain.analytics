@@ -62,7 +62,7 @@ with tab1:
             "contributors": True
         },
         labels={"project_age": "Project Age (Years)", "category_sub": ""},
-        title="Project Age vs. Sub-Category",
+        title=" ",
         template="plotly_white"
     )
 
@@ -101,7 +101,7 @@ with tab1:
     st.plotly_chart(fig1, use_container_width=True)
 
 # ==========================
-# TAB 3: Download Ranking
+# TAB 2: Download Ranking
 # ==========================
 with tab3:
     st.header("🏆 Top Open Source Package Downloads")
