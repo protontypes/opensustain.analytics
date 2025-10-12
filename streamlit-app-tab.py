@@ -34,8 +34,17 @@ df['contributors'] = df['contributors'].fillna(1)
 df['contributors_size'] = np.sqrt(df['contributors']) * 20
 df['downloads_last_month'] = df['downloads_last_month'].fillna(0)
 
-# Preprocessing of organisations
-# (none for now)
+# --- Preprocessing of organisations ---
+# Make organisation names clickable using their namespace URL
+def org_to_link(org_name, org_url):
+    if pd.isna(org_url) or org_url.strip() == "":
+        return org_name
+    return f'<a href="{org_url}" target="_blank" style="color:black">{org_name}</a>'
+
+df_organisations['organization_name'] = df_organisations.apply(
+    lambda row: org_to_link(row['organization_name'], row.get('organization_namespace_url', "")),
+    axis=1
+)
 
 # --- Add clickable project name column ---
 df['project_names_link'] = df.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
@@ -51,14 +60,15 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations = st.tabs([
-    "🌎 Sustainability Ecosystem",
-    "🏆 Download Ranking",
-    "📈 Age vs Sub-Category",
-    "📊 Project Rankings",
-    "📊 Categorical Distributions",
-    "💡 GitHub Topics and Keywords",
-    "Organisations"
+tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst = st.tabs([
+    "🌍 Sustainability Ecosystem",         
+    "📦 Package Download Ranking",          
+    "⏳ Project Age vs Sub-Category",       
+    "🥇 Project Rankings",                  
+    "🧩 Category Distributions",            
+    "🏷️ GitHub Topics & Keywords",          
+    "🏢 Organisations",
+    "🌐 Organisation Ecosystem"                      
 ])
 
 # ==========================
@@ -627,3 +637,62 @@ with tab_organisations:
         x_title="Number of projects listed in organisations",
     )
     st.plotly_chart(fig_top_org_countries_projs, use_container_width=True)
+
+with tab_org_sunburst:
+    st.header("🌐 Organisational Projects Overview")
+    st.caption("Sunburst showing larger organisations (≥2 projects) and their projects. Click an organisation to see its projects.")
+
+    # Explode projects into separate rows
+    df_sunburst_projects = df_organisations.copy()
+    df_sunburst_projects = df_sunburst_projects.assign(
+        organization_projects=df_sunburst_projects['organization_projects'].fillna("").str.split(',')
+    ).explode('organization_projects')
+    df_sunburst_projects['organization_projects'] = df_sunburst_projects['organization_projects'].str.strip()
+    df_sunburst_projects = df_sunburst_projects[df_sunburst_projects['organization_projects'] != ""]
+
+    # Filter only organisations with ≥2 projects
+    org_project_counts = df_sunburst_projects.groupby("organization_name").size().reset_index(name="num_projects")
+    large_orgs = org_project_counts[org_project_counts['num_projects'] >= 2]['organization_name'].tolist()
+    df_sunburst_projects = df_sunburst_projects[df_sunburst_projects['organization_name'].isin(large_orgs)]
+
+    # Add root
+    df_sunburst_projects['root'] = "🌐 Organisations"
+
+    # Map colors from the project sunburst palette
+    unique_orgs = df_sunburst_projects['organization_name'].unique()
+    color_palette = list(category_colors.values())
+    org_colors = {org: color_palette[i % len(color_palette)] for i, org in enumerate(unique_orgs)}
+
+    # Create Sunburst
+    fig_org_sun = px.sunburst(
+        df_sunburst_projects,
+        path=["root", "organization_name", "organization_projects"],  # 2 levels below root
+        color="organization_name",
+        color_discrete_map=org_colors,
+        maxdepth=2,
+        title="Larger Organisations and Their Projects",
+        custom_data=["organization_name", "organization_namespace_url", "organization_projects"]
+    )
+
+    # Update traces (like project Sunburst)
+    fig_org_sun.update_traces(
+        insidetextorientation="radial",
+        hovertemplate="<br>".join([
+            "Organisation: %{customdata[0]}",
+            "Project: %{customdata[2]}",
+            "<a href='%{customdata[1]}' target='_blank'>GitHub</a>"
+        ])
+    )
+
+    # Layout
+    fig_org_sun.update_layout(
+        height=1000,
+        margin=dict(l=2, r=2, t=40, b=2),
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        font=dict(size=18, family="Arial"),
+        title_font=dict(size=26, family="Arial", color="#099ec8")
+    )
+
+    st.plotly_chart(fig_org_sun, use_container_width=True)
+

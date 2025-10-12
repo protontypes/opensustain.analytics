@@ -1,7 +1,7 @@
 #  OpenSustain.tech Analytics Dashboard
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://streamlit.io)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://opensustain-analytics.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **OpenSustain Analytics** is an interactive **Streamlit dashboard** that visualizes and explores the open-source ecosystem for **climate and sustainability technologies**.  
