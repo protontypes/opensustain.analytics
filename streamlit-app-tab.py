@@ -41,13 +41,12 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab3, tab1, tab_rankings, tab_leaderboard, tab_distributions = st.tabs([
+tab4, tab3, tab1, tab_rankings, tab_distributions = st.tabs([
     "🌎 Sustainability Ecosystem",
     "🏆 Download Ranking",
     "📈 Age vs Sub-Category",
     "📊 Project Rankings",
-    "🏅 Leaderboard",
-    "📊 Categorical Distributions"
+    "📊 Categorical Distributions",
 ])
 
 # ==========================
@@ -319,77 +318,9 @@ with tab_rankings:
     st.plotly_chart(fig_rank, use_container_width=True)
 
 
-
-with tab_leaderboard:
-    st.header("🏅 Open Source Project Leaderboard Across Metrics")
-
-    df_board = df.copy()
-    df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']] = \
-        df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']].fillna(0)
-    df_board['project_names_link'] = df_board.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
-
-    metrics = ["score","dds","contributors","citations","total_commits","total_number_of_dependencies","stars"]
-    metric_display_names = {
-        "score": "Ecosyste.ms Score",
-        "dds": "Development Distribution Score",
-        "contributors": "Contributors",
-        "citations": "Citations",
-        "total_commits": "Total Commits",
-        "total_number_of_dependencies": "Total Dependencies",
-        "stars": "Stars"
-    }
-
-    number_of_projects_to_show = st.slider("Number of projects to show per metric:", 5, 50, 15)
-
-    # Prepare long-format dataframe
-    df_long = pd.DataFrame()
-    for m in metrics:
-        top = df_board.nlargest(number_of_projects_to_show, m)
-        tmp = top[['project_names_link','category','sub_category','language','git_url',m]].copy()
-        tmp.rename(columns={m:"value"}, inplace=True)
-        tmp['metric'] = metric_display_names[m]
-        df_long = pd.concat([df_long,tmp], ignore_index=True)
-
-    fig_board = px.bar(
-        df_long,
-        x="value",
-        y="project_names_link",
-        color="category",
-        facet_col="metric",
-        orientation="h",
-        color_discrete_map=category_colors,
-        height=600 + number_of_projects_to_show*20,
-        labels={"project_names_link":"Project","value":"Value"},
-        title="Top Projects Across Multiple Metrics"
-    )
-
-    fig_board.update_traces(
-        hovertemplate="<br>".join([
-            "Project: %{y}",
-            "Metric: %{facet_col}",
-            "Value: %{x}",
-            "Category: %{customdata[0]}",
-            "Sub-Category: %{customdata[1]}",
-            "Language: %{customdata[2]}",
-            "<extra></extra>"
-        ]),
-        customdata=df_long[['category','sub_category','language']].values
-    )
-
-    fig_board.update_layout(
-        showlegend=False,
-        yaxis={'categoryorder':'total ascending'},
-        plot_bgcolor="white",
-        paper_bgcolor="white",
-        margin=dict(l=220,r=50,t=50,b=20)
-    )
-
-    st.plotly_chart(fig_board, use_container_width=True)
-
 # ==========================
 # TAB 6: Distributions
 # ==========================
-tab_distributions = st.tabs(["📊 Categorical Distributions"])[0]
 
 with tab_distributions:
     st.header("📊 Distribution of Key Project Attributes")
@@ -442,3 +373,4 @@ with tab_distributions:
         )
 
         st.plotly_chart(fig_dist, use_container_width=True)
+
