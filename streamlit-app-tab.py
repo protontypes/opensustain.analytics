@@ -252,6 +252,118 @@ with tab4:
     )
 
     st.plotly_chart(fig4, use_container_width=True)
+# ==========================
+# TAB 4: Project Rankings
+# ==========================
+
+with tab_rankings:
+    st.header("📊 Project Rankings by Various Metrics")
+    df_rank = df.copy()
+    df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']] = \
+        df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']].fillna(0)
+    df_rank['project_names_link'] = df_rank.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
+
+    metric = st.selectbox(
+        "Select Ranking Metric:",
+        options=["score", "dds", "contributors", "citations", "total_commits", "total_number_of_dependencies", "stars"],
+        format_func=lambda x: {
+            "score": "Ecosyste.ms Score",
+            "dds": "Development Distribution Score",
+            "contributors": "Contributors",
+            "citations": "Citations",
+            "total_commits": "Total Commits",
+            "total_number_of_dependencies": "Total Dependencies",
+            "stars": "Stars"
+        }[x]
+    )
+
+    number_of_projects_to_show = st.slider("Number of projects to show:", 10, 300, 50)
+    top_projects = df_rank.nlargest(number_of_projects_to_show, metric)
+    top_projects.index.name = "ranking"
+
+    fig_rank = px.bar(
+        top_projects,
+        x=metric,
+        y="project_names_link",
+        custom_data=[
+            "project_names_link", metric, "category", "sub_category", "language", "git_url", top_projects.index + 1
+        ],
+        orientation="h",
+        color="category",
+        color_discrete_map=category_colors,
+        title=f"Top Projects by {metric.replace('_',' ').title()}"
+    )
+
+    fig_rank.update_layout(
+        height=number_of_projects_to_show * 20 + 200,
+        width=1000,
+        xaxis_title="",
+        yaxis_title=None,
+        dragmode=False,
+        plot_bgcolor="white",
+        yaxis_categoryorder="total descending",
+        legend_title=None,
+        xaxis={"side": "top"}
+    )
+
+    fig_rank.update_traces(
+        hovertemplate="<extra></extra>" + "<br>".join([
+            "Ranking: <b>%{customdata[6]}</b>",
+            "Project: %{customdata[0]}",
+            f"{metric.replace('_',' ').title()}: <b>%{{customdata[1]}}</b>",
+            "Category: <b>%{customdata[2]}</b>",
+            "Sub-Category: <b>%{customdata[3]}</b>",
+            "Language: <b>%{customdata[4]}</b>",
+        ])
+    )
+
+    fig_rank.update_xaxes(showspikes=False)
+    fig_rank.update_yaxes(showspikes=False, autorange="reversed")
+    st.plotly_chart(fig_rank, use_container_width=True)
+
+
+# ==========================
+# TAB 6: Categorical Distributions
+# ==========================
+with tab_distributions:
+    st.header("📊 Distribution of Key Project Attributes")
+    categorical_fields = ["code_of_conduct", "contributing_guide", "license", "language", "ecosystems"]
+
+    for field in categorical_fields:
+        st.subheader(field.replace("_", " ").title())
+        df[field] = df[field].fillna("Unknown")
+        if field in ["ecosystems"]:
+            df_exploded = df[field].str.split(",", expand=True).stack().str.strip().reset_index(drop=True)
+            counts = df_exploded.value_counts()
+        else:
+            counts = df[field].value_counts()
+
+        top_n = 30
+        counts = counts.head(top_n)
+
+        fig_dist = px.bar(
+            counts,
+            x=counts.values,
+            y=counts.index,
+            orientation="h",
+            text=counts.values,
+            labels={"x": "Count", "y": field.replace("_", " ").title()},
+            title=f"Distribution of {field.replace('_', ' ').title()} (Top {top_n})",
+            color=counts.index,
+            color_discrete_sequence=px.colors.qualitative.Vivid
+        )
+
+        fig_dist.update_layout(
+            yaxis={'categoryorder':'total descending'},
+            showlegend=False,
+            height=40 * len(counts) + 150,
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            margin=dict(l=220, r=50, t=50, b=20)
+        )
+
+        st.plotly_chart(fig_dist, use_container_width=True)
+
 
 # ==========================
 # TAB 7: GitHub Topics & Keywords (fixed heatmap Y-axis)
