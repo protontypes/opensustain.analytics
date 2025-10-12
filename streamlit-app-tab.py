@@ -44,8 +44,8 @@ category_colors = {
 # --- Tabs ---
 tab4, tab3, tab1 = st.tabs([
     "🌎 Sustainability Ecosystem",
-    "📈 Age vs Sub-Category",
     "🏆 Download Ranking",
+    "📈 Age vs Sub-Category",
 ])
 
 # ==========================
@@ -202,7 +202,7 @@ with tab3:
 with tab4:
     st.header("🌎 The Open Source Sustainability Ecosystem")
 
-    df['hole'] = " "
+    df['hole'] = f'<b><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
 
     fig4 = px.sunburst(
         df,
@@ -235,8 +235,8 @@ with tab4:
         dict(
             source="https://opensustain.tech/logo.png",  # replace with your logo URL
             xref="paper", yref="paper",
-            x=0.5, y=0.5,  # center
-            sizex=0.15, sizey=0.15,  # adjust size
+            x=0.5, y=0.58,  # center
+            sizex=0.10, sizey=0.10,  # adjust size
             xanchor="center",
             yanchor="middle",
             layer="above",
