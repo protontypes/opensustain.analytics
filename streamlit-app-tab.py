@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from datetime import datetime, timezone
+import ast
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
@@ -41,12 +42,13 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab3, tab1, tab_rankings, tab_distributions = st.tabs([
+tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics = st.tabs([
     "🌎 Sustainability Ecosystem",
     "🏆 Download Ranking",
     "📈 Age vs Sub-Category",
     "📊 Project Rankings",
     "📊 Categorical Distributions",
+    "💡 GitHub Topics and Keywords"
 ])
 
 # ==========================
@@ -224,10 +226,10 @@ with tab4:
     # Add OpenSustain logo at the center
     fig4.add_layout_image(
         dict(
-            source="https://opensustain.tech/logo.png",  # replace with your logo URL
+            source="https://opensustain.tech/logo.png",
             xref="paper", yref="paper",
-            x=0.5, y=0.58,  # center
-            sizex=0.10, sizey=0.10,  # adjust size
+            x=0.5, y=0.58,
+            sizex=0.10, sizey=0.10,
             xanchor="center",
             yanchor="middle",
             layer="above",
@@ -251,6 +253,9 @@ with tab4:
 
     st.plotly_chart(fig4, use_container_width=True)
 
+# ==========================
+# TAB 5: Rankings
+# ==========================
 with tab_rankings:
     st.header("📊 Project Rankings by Various Metrics")
 
@@ -317,11 +322,9 @@ with tab_rankings:
     fig_rank.update_yaxes(showspikes=False, autorange="reversed")
     st.plotly_chart(fig_rank, use_container_width=True)
 
-
 # ==========================
 # TAB 6: Distributions
 # ==========================
-
 with tab_distributions:
     st.header("📊 Distribution of Key Project Attributes")
 
@@ -336,17 +339,14 @@ with tab_distributions:
     for field in categorical_fields:
         st.subheader(field.replace("_", " ").title())
 
-        # Handle missing values
         df[field] = df[field].fillna("Unknown")
 
-        # Explode multiple entries for fields like ecosystems
         if field in ["ecosystems"]:
             df_exploded = df[field].str.split(",", expand=True).stack().str.strip().reset_index(drop=True)
             counts = df_exploded.value_counts()
         else:
             counts = df[field].value_counts()
 
-        # Limit to top N categories to avoid cutting off labels
         top_n = 30
         counts = counts.head(top_n)
 
@@ -362,15 +362,122 @@ with tab_distributions:
             color_discrete_sequence=px.colors.qualitative.Vivid
         )
 
-        # Dynamically set chart height
         fig_dist.update_layout(
             yaxis={'categoryorder':'total descending'},
             showlegend=False,
-            height=40 * len(counts) + 150,  # 40px per category + extra padding
+            height=40 * len(counts) + 150,
             plot_bgcolor="white",
             paper_bgcolor="white",
             margin=dict(l=220, r=50, t=50, b=20)
         )
 
         st.plotly_chart(fig_dist, use_container_width=True)
+
+# ==========================
+# TAB 7: GitHub Topics & Keywords (Integrated)
+# ==========================
+with tab_topics:
+    st.header("💡 GitHub Topics and Keywords")
+
+    # --- Load README keywords ---
+    try:
+        with open("ost_keywords.txt", "r", encoding="utf-8") as f:
+            content = f.read().strip()
+
+        keywords_data = ast.literal_eval(content)
+        df_keywords = pd.DataFrame(keywords_data, columns=["keyword", "count"])
+        df_keywords = df_keywords.sort_values("count", ascending=False).reset_index(drop=True)
+
+        st.subheader("Top Extracted Keywords from GitHub READMEs")
+        st.caption("These represent the most frequent words extracted from README files of OpenSustain.tech projects.")
+
+        top_n = st.slider("Number of keywords to display:", 10, 100, 30)
+        df_top = df_keywords.head(top_n)
+
+        fig_kw = px.bar(
+            df_top,
+            x="count",
+            y="keyword",
+            orientation="h",
+            text="count",
+            color="count",
+            color_continuous_scale="Tealgrn",
+            title=f"Top {top_n} Keywords Found in Project READMEs"
+        )
+
+        fig_kw.update_layout(
+            height=40 * len(df_top) + 150,
+            yaxis={'categoryorder': 'total ascending'},
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            margin=dict(l=220, r=50, t=50, b=20)
+        )
+
+        st.plotly_chart(fig_kw, use_container_width=True)
+
+        # --- Word Cloud Image ---
+        st.subheader("🌥️ Word Cloud Representation")
+        st.image(
+            "https://raw.githubusercontent.com/protontypes/osta/refs/heads/main/ost_word_cloud.png",
+            caption="Word Cloud of the Most Common Topics in OpenSustain.tech Project READMEs",
+            use_container_width=True
+        )
+
+    except Exception as e:
+        st.error(f"Could not load keywords file: {e}")
+        st.info("Please ensure `ost_keywords.txt` is present in the app directory and has the format [('keyword', count), ...]")
+
+    # --- Preprocess GitHub topics from projects.csv (using 'keywords' field) ---
+    st.subheader("📌 GitHub Topics Across Sub-Categories")
+
+    df_topics = df[['category', 'sub_category', 'project_names_link', 'keywords']].copy()
+    df_topics['keywords'] = df_topics['keywords'].fillna("Unknown")
+    df_exploded = df_topics.assign(
+        github_topic=df_topics['keywords'].str.split(',')
+    ).explode('github_topic')
+    df_exploded['github_topic'] = df_exploded['github_topic'].str.strip()
+
+    # --- Treemap: Overall topic distribution ---
+    st.subheader("Treemap: Topics Distribution by Category & Sub-Category")
+    fig_tree = px.treemap(
+        df_exploded,
+        path=['category', 'sub_category', 'github_topic'],
+        color='category',
+        title='GitHub Topics Distribution Across Categories & Sub-Categories',
+        color_discrete_map=category_colors
+    )
+    st.plotly_chart(fig_tree, use_container_width=True)
+
+    # --- Bar chart: Top topics per selected sub-category ---
+    st.subheader("Top Topics by Sub-Category")
+    subcat_selected = st.selectbox(
+        "Select Sub-Category:",
+        options=df_exploded['sub_category'].unique()
+    )
+
+    df_sub = df_exploded[df_exploded['sub_category'] == subcat_selected]
+    topic_counts = df_sub['github_topic'].value_counts().reset_index()
+    topic_counts.columns = ['github_topic', 'count']
+
+    top_n_sub = st.slider("Number of top topics to display:", 5, 50, 15, key="subcat_top_n")
+    df_top_sub = topic_counts.head(top_n_sub)
+
+    fig_bar = px.bar(
+        df_top_sub,
+        x='count',
+        y='github_topic',
+        orientation='h',
+        text='count',
+        color='count',
+        color_continuous_scale='Tealgrn',
+        title=f"Top {top_n_sub} GitHub Topics in '{subcat_selected}'"
+    )
+    fig_bar.update_layout(
+        yaxis={'categoryorder':'total ascending'},
+        plot_bgcolor='white',
+        paper_bgcolor='white',
+        margin=dict(l=220, r=50, t=50, b=20),
+        height=40 * len(df_top_sub) + 150
+    )
+    st.plotly_chart(fig_bar, use_container_width=True)
 
