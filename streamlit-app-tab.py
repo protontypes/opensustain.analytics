@@ -256,8 +256,6 @@ with tab4:
 # ==========================
 # TAB 7: GitHub Topics & Keywords (fixed heatmap Y-axis)
 # ==========================
-tab_topics = st.tabs(["💡 GitHub Topics & Keywords"])[0]
-
 with tab_topics:
     st.header("💡 GitHub Topics and Keywords")
 
