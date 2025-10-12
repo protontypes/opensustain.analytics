@@ -655,43 +655,70 @@ with tab_org_sunburst:
     large_orgs = org_project_counts[org_project_counts['num_projects'] >= 2]['organization_name'].tolist()
     df_sunburst_projects = df_sunburst_projects[df_sunburst_projects['organization_name'].isin(large_orgs)]
 
-    # Add root
-    df_sunburst_projects['root'] = "🌐 Organisations"
+    # Add root (center of Sunburst)
+    df_sunburst_projects['root'] = f'<b><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech Organizations</a></b>'
+
+    # Make organization_projects clickable HTML links
+    df_sunburst_projects['organization_projects_link'] = df_sunburst_projects.apply(
+        lambda row: f'<a href="{row["organization_namespace_url"]}" target="_blank">{row["organization_projects"]}</a>', axis=1
+    )
 
     # Map colors from the project sunburst palette
     unique_orgs = df_sunburst_projects['organization_name'].unique()
     color_palette = list(category_colors.values())
     org_colors = {org: color_palette[i % len(color_palette)] for i, org in enumerate(unique_orgs)}
 
-    # Create Sunburst
+    # Create Sunburst using clickable project names
     fig_org_sun = px.sunburst(
         df_sunburst_projects,
-        path=["root", "organization_name", "organization_projects"],  # 2 levels below root
+        path=["root", "organization_name", "organization_projects_link"],  # clickable project name as label
         color="organization_name",
         color_discrete_map=org_colors,
         maxdepth=2,
         title="Larger Organisations and Their Projects",
-        custom_data=["organization_name", "organization_namespace_url", "organization_projects"]
+        custom_data=["organization_name", "organization_projects_link"]
     )
 
-    # Update traces (like project Sunburst)
+    # Make the root (hole) white
+    colors = list(fig_org_sun.data[0].marker.colors)
+    colors[0] = "white"
+    fig_org_sun.data[0].marker.colors = colors
+
+    # Update traces: hover shows the same clickable project link
     fig_org_sun.update_traces(
         insidetextorientation="radial",
         hovertemplate="<br>".join([
             "Organisation: %{customdata[0]}",
-            "Project: %{customdata[2]}",
-            "<a href='%{customdata[1]}' target='_blank'>GitHub</a>"
+            "Project: %{customdata[1]}"
         ])
     )
 
-    # Layout
+    # Add logo at the center
+    fig_org_sun.add_layout_image(
+        dict(
+            source="https://opensustain.tech/logo.png",
+            xref="paper",
+            yref="paper",
+            x=0.5,
+            y=0.58,
+            sizex=0.10,
+            sizey=0.10,
+            xanchor="center",
+            yanchor="middle",
+            layer="above",
+            sizing="contain",
+            opacity=1
+        )
+    )
+
+    # Layout: full-page view
     fig_org_sun.update_layout(
-        height=1000,
+        height=1600,
         margin=dict(l=2, r=2, t=40, b=2),
         plot_bgcolor="white",
         paper_bgcolor="white",
-        font=dict(size=18, family="Arial"),
-        title_font=dict(size=26, family="Arial", color="#099ec8")
+        font=dict(size=20, family="Arial"),
+        title_font=dict(size=30, family="Arial", color="#099ec8")
     )
 
     st.plotly_chart(fig_org_sun, use_container_width=True)
