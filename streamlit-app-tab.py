@@ -60,7 +60,7 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst = st.tabs([
+tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
     "🌍 Sustainability Ecosystem",         
     "📦 Package Download Ranking",          
     "⏳ Project Age vs Sub-Category",       
@@ -68,7 +68,8 @@ tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations
     "🧩 Category Distributions",            
     "🏷️ GitHub Topics & Keywords",          
     "🏢 Organisations",
-    "🌐 Organisation Ecosystem"                      
+    "🌐 Projects by Organisation Ecosystem",
+    "🏢 Organisations by Sub-Category"                      
 ])
 
 # ==========================
@@ -224,7 +225,8 @@ with tab4:
         maxdepth=3,
         color="category",
         color_discrete_map=category_colors,
-        custom_data=["project_names_link", "category", "sub_category", "downloads_last_month", "git_url"]
+        custom_data=["project_names_link", "category", "sub_category", "downloads_last_month", "git_url"],
+        title=" "
     )
 
     colors = list(fig4.data[0].marker.colors)
@@ -259,7 +261,7 @@ with tab4:
     )
 
     fig4.update_layout(
-        height=1200,
+        height=1600,
         title_x=0.5,
         font_size=18,
         dragmode=False,
@@ -268,7 +270,6 @@ with tab4:
         font_family="Open Sans",
         font_color="black",
         plot_bgcolor='white',
-        title=" "
     )
 
     st.plotly_chart(fig4, use_container_width=True)
@@ -675,7 +676,7 @@ with tab_org_sunburst:
         color="organization_name",
         color_discrete_map=org_colors,
         maxdepth=2,
-        title="Larger Organisations and Their Projects",
+        title=" ",
         custom_data=["organization_name", "organization_projects_link"]
     )
 
@@ -714,7 +715,7 @@ with tab_org_sunburst:
     # Layout: full-page view
     fig_org_sun.update_layout(
         height=1600,
-        margin=dict(l=2, r=2, t=40, b=2),
+        margin=dict(l=2, r=2, t=50, b=2),
         plot_bgcolor="white",
         paper_bgcolor="white",
         font=dict(size=20, family="Arial"),
@@ -722,4 +723,93 @@ with tab_org_sunburst:
     )
 
     st.plotly_chart(fig_org_sun, use_container_width=True)
+
+
+# ==========================
+# TAB 9: Organisations by Sub-Categories Sunburst
+# ==========================
+
+with tab_org_subcat:
+    st.header("🏢 Organisations by Sub-Category Overview")
+    st.caption("Sunburst showing organisations grouped by project sub-categories, colored by sub-category.")
+
+    # Copy and clean the dataframe
+    df_org_subcat = df_organisations.copy()
+
+    # Fill missing values and ensure strings
+    for col in ['organization_name', 'organization_sub_category']:
+        df_org_subcat[col] = df_org_subcat[col].fillna("Unknown").astype(str)
+
+    # Filter out empty names
+    df_org_subcat = df_org_subcat[
+        (df_org_subcat['organization_name'] != "") &
+        (df_org_subcat['organization_sub_category'] != "")
+    ]
+
+    if df_org_subcat.empty:
+        st.warning("No organisations with sub-categories found. Please check your data.")
+    else:
+        # Add root for sunburst
+        df_org_subcat['root'] = '<b><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech Organisations by Sub-Category</a></b>'
+
+        # Map colors from the category_colors palette, applied to sub-categories
+        unique_subcats = df_org_subcat['organization_sub_category'].unique()
+        color_palette = list(category_colors.values())
+        subcat_colors = {subcat: color_palette[i % len(color_palette)] for i, subcat in enumerate(unique_subcats)}
+
+        # Create sunburst
+        fig_org_subcat_sun = px.sunburst(
+            df_org_subcat,
+            path=['root', 'organization_sub_category', 'organization_name'],
+            color='organization_sub_category',
+            color_discrete_map=subcat_colors,
+            maxdepth=2,
+            custom_data=['organization_name', 'organization_sub_category'],
+            title=" "
+        )
+
+        # Make root white
+        if hasattr(fig_org_subcat_sun.data[0].marker, 'colors'):
+            colors = list(fig_org_subcat_sun.data[0].marker.colors)
+            colors[0] = "white"
+            fig_org_subcat_sun.data[0].marker.colors = colors
+
+        # Hover template
+        fig_org_subcat_sun.update_traces(
+            insidetextorientation="radial",
+            hovertemplate="<br>".join([
+                "Sub-Category: %{customdata[1]}",
+                "Organisation: %{customdata[0]}"
+            ])
+        )
+
+        # Add OpenSustain logo in center
+        fig_org_subcat_sun.add_layout_image(
+            dict(
+                source="https://opensustain.tech/logo.png",
+                xref="paper",
+                yref="paper",
+                x=0.5,
+                y=0.58,
+                sizex=0.10,
+                sizey=0.10,
+                xanchor="center",
+                yanchor="middle",
+                layer="above",
+                sizing="contain",
+                opacity=1,
+            )
+        )
+
+        # Layout
+        fig_org_subcat_sun.update_layout(
+            height=1600,
+            margin=dict(l=2, r=2, t=50, b=2),
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            font=dict(size=20, family="Arial"),
+            title_font=dict(size=30, family="Arial", color="#099ec8")
+        )
+
+        st.plotly_chart(fig_org_subcat_sun, use_container_width=True)
 
