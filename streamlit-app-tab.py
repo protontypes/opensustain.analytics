@@ -43,8 +43,8 @@ category_colors = {
 # --- Tabs ---
 tab4, tab3, tab1, tab_rankings, tab_leaderboard = st.tabs([
     "🌎 Sustainability Ecosystem",
-    "📈 Age vs Sub-Category",
     "🏆 Download Ranking",
+    "📈 Age vs Sub-Category",
     "📊 Project Rankings",
     "🏅 Leaderboard Dashboard"
 ])
@@ -251,21 +251,26 @@ with tab4:
 
     st.plotly_chart(fig4, use_container_width=True)
 
-# ==========================
-# TAB 4: Project Rankings
-# ==========================
 with tab_rankings:
     st.header("📊 Project Rankings by Various Metrics")
 
     df_rank = df.copy()
-    df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']] = \
-        df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']].fillna(0)
+    df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']] = \
+        df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']].fillna(0)
     df_rank['project_names_link'] = df_rank.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
 
     metric = st.selectbox(
         "Select Ranking Metric:",
-        options=["score", "contributors", "citations", "total_commits", "total_number_of_dependencies", "stars"],
-        format_func=lambda x: x.replace("_", " ").title()
+        options=["score", "dds", "contributors", "citations", "total_commits", "total_number_of_dependencies", "stars"],
+        format_func=lambda x: {
+            "score": "Ecosyste.ms Score",
+            "dds": "Development Distribution Score",
+            "contributors": "Contributors",
+            "citations": "Citations",
+            "total_commits": "Total Commits",
+            "total_number_of_dependencies": "Total Dependencies",
+            "stars": "Stars"
+        }[x]
     )
 
     number_of_projects_to_show = st.slider("Number of projects to show:", 10, 300, 50)
@@ -312,18 +317,27 @@ with tab_rankings:
     fig_rank.update_yaxes(showspikes=False, autorange="reversed")
     st.plotly_chart(fig_rank, use_container_width=True)
 
-# ==========================
-# TAB 5: Leaderboard Dashboard
-# ==========================
+
+
 with tab_leaderboard:
     st.header("🏅 Open Source Project Leaderboard Across Metrics")
 
     df_board = df.copy()
-    df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']] = \
-        df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']].fillna(0)
+    df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']] = \
+        df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']].fillna(0)
     df_board['project_names_link'] = df_board.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
 
-    metrics = ["score","contributors","citations","total_commits","total_number_of_dependencies","stars"]
+    metrics = ["score","dds","contributors","citations","total_commits","total_number_of_dependencies","stars"]
+    metric_display_names = {
+        "score": "Ecosyste.ms Score",
+        "dds": "Development Distribution Score",
+        "contributors": "Contributors",
+        "citations": "Citations",
+        "total_commits": "Total Commits",
+        "total_number_of_dependencies": "Total Dependencies",
+        "stars": "Stars"
+    }
+
     number_of_projects_to_show = st.slider("Number of projects to show per metric:", 5, 50, 15)
 
     # Prepare long-format dataframe
@@ -332,7 +346,7 @@ with tab_leaderboard:
         top = df_board.nlargest(number_of_projects_to_show, m)
         tmp = top[['project_names_link','category','sub_category','language','git_url',m]].copy()
         tmp.rename(columns={m:"value"}, inplace=True)
-        tmp['metric'] = m.replace("_"," ").title()
+        tmp['metric'] = metric_display_names[m]
         df_long = pd.concat([df_long,tmp], ignore_index=True)
 
     fig_board = px.bar(
@@ -370,3 +384,4 @@ with tab_leaderboard:
     )
 
     st.plotly_chart(fig_board, use_container_width=True)
+
