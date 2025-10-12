@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -42,10 +41,12 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab3, tab1 = st.tabs([
+tab4, tab3, tab1, tab_rankings, tab_leaderboard = st.tabs([
     "🌎 Sustainability Ecosystem",
-    "🏆 Download Ranking",
     "📈 Age vs Sub-Category",
+    "🏆 Download Ranking",
+    "📊 Project Rankings",
+    "🏅 Leaderboard Dashboard"
 ])
 
 # ==========================
@@ -108,7 +109,6 @@ with tab1:
         tickfont=dict(family="Arial Black", size=20, color="black")
     )
 
-    # Update hover template
     fig1.update_traces(
         hovertemplate="<br>".join([
             "Project: %{customdata[0]}",
@@ -132,19 +132,15 @@ with tab3:
     df_extract = df.copy()
     df_extract = df_extract[df_extract["downloads_last_month"] > 0]
     df_extract.rename(columns={"downloads_last_month": "download_counts"}, inplace=True)
-
-    # Add clickable link
-    df_extract['project_names_link'] = df_extract.apply(
-        lambda row: text_to_link(row['project_names'], row['git_url']), axis=1
-    )
+    df_extract['project_names_link'] = df_extract.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
 
     number_of_projects_to_show = 300
     top_downloaders = df_extract.nlargest(number_of_projects_to_show, "download_counts")
     top_downloaders.index.name = "ranking"
 
     month_year = datetime.now().strftime("%B %Y")
-
     color_discrete_sequence = px.colors.qualitative.Vivid
+
     fig3 = px.bar(
         top_downloaders,
         x="download_counts",
@@ -167,10 +163,7 @@ with tab3:
         dragmode=False,
         plot_bgcolor="white",
         modebar_color="#009485",
-        modebar_activecolor="#2563eb"
-    )
-
-    fig3.update_layout(
+        modebar_activecolor="#2563eb",
         hovermode="y unified",
         hoverdistance=1000,
         xaxis_type="log",
@@ -193,11 +186,10 @@ with tab3:
 
     fig3.update_xaxes(showspikes=False)
     fig3.update_yaxes(showspikes=False, autorange="reversed")
-
     st.plotly_chart(fig3, use_container_width=True)
 
 # ==========================
-# TAB 4: Sunburst (from projects.csv)
+# TAB 3: Sunburst
 # ==========================
 with tab4:
     st.header("🌎 The Open Source Sustainability Ecosystem")
@@ -210,10 +202,9 @@ with tab4:
         maxdepth=3,
         color="category",
         color_discrete_map=category_colors,
-        custom_data=["project_names_link", "category", "sub_category", "downloads_last_month", "git_url"],
+        custom_data=["project_names_link", "category", "sub_category", "downloads_last_month", "git_url"]
     )
 
-    # Make the hole white
     colors = list(fig4.data[0].marker.colors)
     colors[0] = "white"
     fig4.data[0].marker.colors = colors
@@ -260,3 +251,122 @@ with tab4:
 
     st.plotly_chart(fig4, use_container_width=True)
 
+# ==========================
+# TAB 4: Project Rankings
+# ==========================
+with tab_rankings:
+    st.header("📊 Project Rankings by Various Metrics")
+
+    df_rank = df.copy()
+    df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']] = \
+        df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']].fillna(0)
+    df_rank['project_names_link'] = df_rank.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
+
+    metric = st.selectbox(
+        "Select Ranking Metric:",
+        options=["score", "contributors", "citations", "total_commits", "total_number_of_dependencies", "stars"],
+        format_func=lambda x: x.replace("_", " ").title()
+    )
+
+    number_of_projects_to_show = st.slider("Number of projects to show:", 10, 300, 50)
+    top_projects = df_rank.nlargest(number_of_projects_to_show, metric)
+    top_projects.index.name = "ranking"
+
+    fig_rank = px.bar(
+        top_projects,
+        x=metric,
+        y="project_names_link",
+        custom_data=[
+            "project_names_link", metric, "category", "sub_category", "language", "git_url", top_projects.index + 1
+        ],
+        orientation="h",
+        color="category",
+        color_discrete_map=category_colors,
+        title=f"Top Projects by {metric.replace('_',' ').title()}"
+    )
+
+    fig_rank.update_layout(
+        height=number_of_projects_to_show * 20 + 200,
+        width=1000,
+        xaxis_title="",
+        yaxis_title=None,
+        dragmode=False,
+        plot_bgcolor="white",
+        yaxis_categoryorder="total descending",
+        legend_title=None,
+        xaxis={"side": "top"}
+    )
+
+    fig_rank.update_traces(
+        hovertemplate="<extra></extra>" + "<br>".join([
+            "Ranking: <b>%{customdata[6]}</b>",
+            "Project: %{customdata[0]}",
+            f"{metric.replace('_',' ').title()}: <b>%{{customdata[1]}}</b>",
+            "Category: <b>%{customdata[2]}</b>",
+            "Sub-Category: <b>%{customdata[3]}</b>",
+            "Language: <b>%{customdata[4]}</b>",
+        ])
+    )
+
+    fig_rank.update_xaxes(showspikes=False)
+    fig_rank.update_yaxes(showspikes=False, autorange="reversed")
+    st.plotly_chart(fig_rank, use_container_width=True)
+
+# ==========================
+# TAB 5: Leaderboard Dashboard
+# ==========================
+with tab_leaderboard:
+    st.header("🏅 Open Source Project Leaderboard Across Metrics")
+
+    df_board = df.copy()
+    df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']] = \
+        df_board[['contributors','citations','total_commits','total_number_of_dependencies','stars','score']].fillna(0)
+    df_board['project_names_link'] = df_board.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
+
+    metrics = ["score","contributors","citations","total_commits","total_number_of_dependencies","stars"]
+    number_of_projects_to_show = st.slider("Number of projects to show per metric:", 5, 50, 15)
+
+    # Prepare long-format dataframe
+    df_long = pd.DataFrame()
+    for m in metrics:
+        top = df_board.nlargest(number_of_projects_to_show, m)
+        tmp = top[['project_names_link','category','sub_category','language','git_url',m]].copy()
+        tmp.rename(columns={m:"value"}, inplace=True)
+        tmp['metric'] = m.replace("_"," ").title()
+        df_long = pd.concat([df_long,tmp], ignore_index=True)
+
+    fig_board = px.bar(
+        df_long,
+        x="value",
+        y="project_names_link",
+        color="category",
+        facet_col="metric",
+        orientation="h",
+        color_discrete_map=category_colors,
+        height=600 + number_of_projects_to_show*20,
+        labels={"project_names_link":"Project","value":"Value"},
+        title="Top Projects Across Multiple Metrics"
+    )
+
+    fig_board.update_traces(
+        hovertemplate="<br>".join([
+            "Project: %{y}",
+            "Metric: %{facet_col}",
+            "Value: %{x}",
+            "Category: %{customdata[0]}",
+            "Sub-Category: %{customdata[1]}",
+            "Language: %{customdata[2]}",
+            "<extra></extra>"
+        ]),
+        customdata=df_long[['category','sub_category','language']].values
+    )
+
+    fig_board.update_layout(
+        showlegend=False,
+        yaxis={'categoryorder':'total ascending'},
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        margin=dict(l=220,r=50,t=50,b=20)
+    )
+
+    st.plotly_chart(fig_board, use_container_width=True)
