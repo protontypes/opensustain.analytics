@@ -7,6 +7,13 @@ from datetime import datetime, timezone
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
+# --- Helper functions ---
+def text_to_link(project_name, git_url):
+    return f'<a href="{git_url}" target="_blank" style="color:black">{project_name}</a>'
+
+def text_to_bolt(topic):
+    return f"<b>{topic}</b>"
+
 # --- Load main dataset ---
 df = pd.read_csv("projects.csv")
 
@@ -20,6 +27,9 @@ df = df.sort_values(['category', 'sub_category']).reset_index(drop=True)
 df['contributors'] = df['contributors'].fillna(1)
 df['contributors_size'] = np.sqrt(df['contributors']) * 20
 df['downloads_last_month'] = df['downloads_last_month'].fillna(0)
+
+# --- Add clickable project name column ---
+df['project_names_link'] = df.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
 
 # --- Define palette ---
 category_colors = {
@@ -53,7 +63,7 @@ with tab1:
         size="contributors_size",
         size_max=50,
         hover_data={
-            "project_names": True,
+            "project_names_link": True,
             "project_age": ':.1f',
             "category": True,
             "sub_category": True,
@@ -61,7 +71,7 @@ with tab1:
             "description": True,
             "contributors": True
         },
-        labels={"project_age": "Project Age (Years)", "category_sub": ""},
+        labels={"project_names_link": "Project", "project_age": "Project Age (Years)", "category_sub": ""},
         title=" ",
         template="plotly_white"
     )
@@ -98,6 +108,19 @@ with tab1:
         tickfont=dict(family="Arial Black", size=20, color="black")
     )
 
+    # Update hover template
+    fig1.update_traces(
+        hovertemplate="<br>".join([
+            "Project: %{customdata[0]}",
+            "Age (years): %{customdata[1]:.1f}",
+            "Category: %{customdata[2]}",
+            "Sub-Category: %{customdata[3]}",
+            "Git URL: %{customdata[4]}",
+            "Description: %{customdata[5]}",
+            "Contributors: %{customdata[6]}"
+        ])
+    )
+
     st.plotly_chart(fig1, use_container_width=True)
 
 # ==========================
@@ -110,6 +133,11 @@ with tab3:
     df_extract = df_extract[df_extract["downloads_last_month"] > 0]
     df_extract.rename(columns={"downloads_last_month": "download_counts"}, inplace=True)
 
+    # Add clickable link
+    df_extract['project_names_link'] = df_extract.apply(
+        lambda row: text_to_link(row['project_names'], row['git_url']), axis=1
+    )
+
     number_of_projects_to_show = 300
     top_downloaders = df_extract.nlargest(number_of_projects_to_show, "download_counts")
     top_downloaders.index.name = "ranking"
@@ -120,9 +148,9 @@ with tab3:
     fig3 = px.bar(
         top_downloaders,
         x="download_counts",
-        y="project_names",
+        y="project_names_link",
         custom_data=[
-            "project_names", "download_counts", "git_url", "description",
+            "project_names_link", "download_counts", "git_url", "description",
             "category", "sub_category", "language", top_downloaders.index + 1
         ],
         orientation="h",
@@ -154,6 +182,7 @@ with tab3:
     fig3.update_traces(
         hovertemplate="<extra></extra>" + "<br>".join([
             "Ranking: <b>%{customdata[7]}</b>",
+            "Project: %{customdata[0]}",
             "Description: <b>%{customdata[3]}</b>",
             "Sub Category: <b>%{customdata[5]}</b>",
             "Language: <b>%{customdata[6]}</b>",
@@ -170,18 +199,50 @@ with tab3:
 # ==========================
 # TAB 4: Sunburst (from projects.csv)
 # ==========================
-
 with tab4:
     st.header("🌎 The Open Source Sustainability Ecosystem")
 
-    # Map hierarchy: category → sub_category → project
+    df['hole'] = " "
+
     fig4 = px.sunburst(
-        df.assign(hole="<b>The Open Source <br> Sustainability Ecosystem</b>"),
-        path=["hole", "category", "sub_category", "project_names"],
+        df,
+        path=["hole", "category", "sub_category", "project_names_link"],
         maxdepth=3,
-        color="category",  # use category for discrete colors
-        color_discrete_map=category_colors,  # same colors as scatter plot
-        custom_data=["project_names", "category", "sub_category", "downloads_last_month", "git_url"],
+        color="category",
+        color_discrete_map=category_colors,
+        custom_data=["project_names_link", "category", "sub_category", "downloads_last_month", "git_url"],
+    )
+
+    # Make the hole white
+    colors = list(fig4.data[0].marker.colors)
+    colors[0] = "white"
+    fig4.data[0].marker.colors = colors
+
+    fig4.update_traces(
+        insidetextorientation="radial",
+        marker=dict(line=dict(color="#000000", width=2)),
+        hovertemplate="<br>".join([
+            "%{customdata[0]}",
+            "Category: %{customdata[1]}",
+            "Sub-Category: %{customdata[2]}",
+            "Downloads (Last Month): %{customdata[3]}",
+            "<a href='%{customdata[4]}' target='_blank'>GitHub</a>"
+        ])
+    )
+
+    # Add OpenSustain logo at the center
+    fig4.add_layout_image(
+        dict(
+            source="https://opensustain.tech/logo.png",  # replace with your logo URL
+            xref="paper", yref="paper",
+            x=0.5, y=0.5,  # center
+            sizex=0.15, sizey=0.15,  # adjust size
+            xanchor="center",
+            yanchor="middle",
+            layer="above",
+            sizing="contain",
+            opacity=1
+        )
     )
 
     fig4.update_layout(
@@ -197,18 +258,5 @@ with tab4:
         title=" "
     )
 
-    # Disable color axis / colorbar
-    fig4.update_traces(
-        insidetextorientation="radial",
-        marker=dict(line=dict(color="#000000", width=2)),
-        hovertemplate="<br>".join([
-            "<b>%{label}</b>",
-            "Category: %{customdata[1]}",
-            "Sub-Category: %{customdata[2]}",
-            "Downloads (Last Month): %{customdata[3]}",
-            "Project: %{customdata[0]}",
-            "<a href='%{customdata[4]}' target='_blank'>GitHub</a>"
-        ]),
-    )
-
     st.plotly_chart(fig4, use_container_width=True)
+
