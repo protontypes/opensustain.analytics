@@ -41,12 +41,13 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab3, tab1, tab_rankings, tab_leaderboard = st.tabs([
+tab4, tab3, tab1, tab_rankings, tab_leaderboard, tab_distributions = st.tabs([
     "🌎 Sustainability Ecosystem",
     "🏆 Download Ranking",
     "📈 Age vs Sub-Category",
     "📊 Project Rankings",
-    "🏅 Leaderboard Dashboard"
+    "🏅 Leaderboard",
+    "📊 Categorical Distributions"
 ])
 
 # ==========================
@@ -385,3 +386,59 @@ with tab_leaderboard:
 
     st.plotly_chart(fig_board, use_container_width=True)
 
+# ==========================
+# TAB 6: Distributions
+# ==========================
+tab_distributions = st.tabs(["📊 Categorical Distributions"])[0]
+
+with tab_distributions:
+    st.header("📊 Distribution of Key Project Attributes")
+
+    categorical_fields = [
+        "code_of_conduct",
+        "contributing_guide",
+        "license",
+        "language",
+        "ecosystems"
+    ]
+
+    for field in categorical_fields:
+        st.subheader(field.replace("_", " ").title())
+
+        # Handle missing values
+        df[field] = df[field].fillna("Unknown")
+
+        # Explode multiple entries for fields like ecosystems
+        if field in ["ecosystems"]:
+            df_exploded = df[field].str.split(",", expand=True).stack().str.strip().reset_index(drop=True)
+            counts = df_exploded.value_counts()
+        else:
+            counts = df[field].value_counts()
+
+        # Limit to top N categories to avoid cutting off labels
+        top_n = 30
+        counts = counts.head(top_n)
+
+        fig_dist = px.bar(
+            counts,
+            x=counts.values,
+            y=counts.index,
+            orientation="h",
+            text=counts.values,
+            labels={"x": "Count", "y": field.replace("_", " ").title()},
+            title=f"Distribution of {field.replace('_', ' ').title()} (Top {top_n})",
+            color=counts.index,
+            color_discrete_sequence=px.colors.qualitative.Vivid
+        )
+
+        # Dynamically set chart height
+        fig_dist.update_layout(
+            yaxis={'categoryorder':'total descending'},
+            showlegend=False,
+            height=40 * len(counts) + 150,  # 40px per category + extra padding
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            margin=dict(l=220, r=50, t=50, b=20)
+        )
+
+        st.plotly_chart(fig_dist, use_container_width=True)
