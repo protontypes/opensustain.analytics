@@ -254,19 +254,22 @@ with tab4:
     st.plotly_chart(fig4, use_container_width=True)
 
 # ==========================
-# TAB 7: GitHub Topics & Keywords (enhanced)
+# TAB 7: GitHub Topics & Keywords (fixed heatmap Y-axis)
 # ==========================
+tab_topics = st.tabs(["💡 GitHub Topics & Keywords"])[0]
+
 with tab_topics:
     st.header("💡 GitHub Topics and Keywords")
 
     import numpy as np
+    import ast
+    import plotly.express as px
 
     # --- Load README keywords ---
     try:
         with open("ost_keywords.txt", "r", encoding="utf-8") as f:
             content = f.read().strip()
 
-        import ast
         keywords_data = ast.literal_eval(content)
         df_keywords = pd.DataFrame(keywords_data, columns=["keyword", "count"])
         df_keywords = df_keywords.sort_values("count", ascending=False).reset_index(drop=True)
@@ -277,29 +280,26 @@ with tab_topics:
         top_n = st.slider("Number of keywords to display:", 10, 500, 30)  # up to 500 keywords selectable
         df_top = df_keywords.head(top_n)
 
-        import plotly.express as px
         fig_kw = px.bar(
             df_top,
             x="count",
             y="keyword",
             orientation="h",
             text="count",
-            color="count",
+            color=np.log10(df_top['count'] + 1),          # log10 color scale
             color_continuous_scale="Tealgrn",
             title=f"Top {top_n} Keywords Found in Project READMEs"
         )
-
-        # Log10 color scaling
-        fig_kw.update_traces(marker=dict(color=np.log10(df_top['count'] + 1)))
 
         fig_kw.update_layout(
             height=40 * len(df_top) + 150,
             yaxis={'categoryorder': 'total ascending'},
             plot_bgcolor="white",
             paper_bgcolor="white",
-            margin=dict(l=220, r=50, t=50, b=20),
-            coloraxis_colorbar=dict(title="log10(Count)")
+            margin=dict(l=220, r=50, t=50, b=20)
         )
+        # explicit colorbar title
+        fig_kw.update_coloraxes(colorbar=dict(title="log10(Count)"))
 
         st.plotly_chart(fig_kw, use_container_width=True)
 
@@ -332,37 +332,53 @@ with tab_topics:
     df_exploded = df_exploded[~df_exploded['github_topic_clean'].isin(words_black_list_small)]
     df_exploded = df_exploded[df_exploded['github_topic_clean'] != ""]
 
-    # Streamlit slider for top N topics
+    # Streamlit slider for top N topics (default 400)
     top_n_topics = st.slider("Number of top topics to display in heatmap:", 10, 500, 400)
 
-    # Select top N topics overall
+    # Select top N topics overall (ordered by frequency)
     top_topics = df_exploded['github_topic_clean'].value_counts().head(top_n_topics).index.tolist()
 
     df_heat = df_exploded[df_exploded['github_topic_clean'].isin(top_topics)]
     heat_data = df_heat.groupby(['sub_category', 'github_topic_clean']).size().reset_index(name='count')
+
+    # Create pivot and ensure ALL sub-categories are present on the Y-axis
     heat_pivot = heat_data.pivot(index='sub_category', columns='github_topic_clean', values='count').fillna(0)
 
-    import plotly.express as px
+    # IMPORTANT: reindex rows so every sub_category from the original dataset appears (even if zeros)
+    all_subcats = df['sub_category'].astype(str).unique().tolist()
+    heat_pivot = heat_pivot.reindex(index=all_subcats, fill_value=0)
+
+    # Ensure columns are ordered by overall topic frequency (descending)
+    col_order = df_exploded['github_topic_clean'].value_counts().loc[top_topics].index.tolist()
+    heat_pivot = heat_pivot.reindex(columns=col_order, fill_value=0)
+
+    # Prepare z matrix using log10 scaling
+    z = np.log10(heat_pivot.values + 1)
+
+    # Dynamically set height so many sub-categories are readable
+    height_px = max(600, 24 * len(heat_pivot.index) + 200)
+
+    # Build heatmap with explicit x and y so all ticks appear
     fig_heat = px.imshow(
-        heat_pivot,
-        labels=dict(x="GitHub Topic", y="Sub-Category", color="Count"),
+        z,
+        x=heat_pivot.columns,
+        y=heat_pivot.index,
+        labels=dict(x="GitHub Topic", y="Sub-Category", color="log10(Count)"),
         aspect="auto",
         color_continuous_scale="Tealgrn",
-        title=f"Frequency of Top {top_n_topics} GitHub Topics per Sub-Category"
+        title=f"Frequency (log10) of Top {top_n_topics} GitHub Topics per Sub-Category"
     )
-
-    # Apply log10 color scaling
-    import numpy as np
-    fig_heat.update_traces(z=np.log10(heat_pivot.values + 1))
 
     fig_heat.update_layout(
         xaxis_tickangle=-45,
-        height=700,
-        margin=dict(l=220, r=50, t=50, b=150),
+        height=height_px,
+        margin=dict(l=220, r=50, t=50, b=200),
         plot_bgcolor='white',
-        paper_bgcolor='white',
-        coloraxis_colorbar=dict(title="log10(Count)")
+        paper_bgcolor='white'
     )
+    # make sure colorbar has a clear title
+    fig_heat.update_coloraxes(colorbar=dict(title="log10(Count)"))
+
     st.plotly_chart(fig_heat, use_container_width=True)
 
     # --- Static Word Cloud Image at the end ---
@@ -372,5 +388,3 @@ with tab_topics:
         caption="Word Cloud of the Most Common Topics in OpenSustain.tech Project READMEs",
         use_container_width=True
     )
-
-
