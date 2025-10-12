@@ -4,6 +4,8 @@ import numpy as np
 import plotly.express as px
 from datetime import datetime, timezone
 import ast
+import plotly.graph_objects as go
+
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
@@ -16,8 +18,12 @@ def text_to_bolt(topic):
 
 # --- Load main dataset ---
 df = pd.read_csv("projects.csv")
+df_organisations = pd.read_csv("organisations.csv")
+
 
 # --- Preprocess ---
+
+# Preprocessing of projects
 df['project_created_at'] = pd.to_datetime(df['project_created_at'], utc=True)
 now_utc = datetime.now(timezone.utc)
 df['project_age'] = (now_utc - df['project_created_at']).dt.total_seconds() / (365.25 * 24 * 3600)
@@ -27,6 +33,9 @@ df = df.sort_values(['category', 'sub_category']).reset_index(drop=True)
 df['contributors'] = df['contributors'].fillna(1)
 df['contributors_size'] = np.sqrt(df['contributors']) * 20
 df['downloads_last_month'] = df['downloads_last_month'].fillna(0)
+
+# Preprocessing of organisations
+# (none for now)
 
 # --- Add clickable project name column ---
 df['project_names_link'] = df.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
@@ -42,13 +51,14 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics = st.tabs([
+tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations = st.tabs([
     "🌎 Sustainability Ecosystem",
     "🏆 Download Ranking",
     "📈 Age vs Sub-Category",
     "📊 Project Rankings",
     "📊 Categorical Distributions",
-    "💡 GitHub Topics and Keywords"
+    "💡 GitHub Topics and Keywords",
+    "Organisations"
 ])
 
 # ==========================
@@ -259,10 +269,6 @@ with tab4:
 with tab_topics:
     st.header("💡 GitHub Topics and Keywords")
 
-    import numpy as np
-    import ast
-    import plotly.express as px
-
     # --- Load README keywords ---
     try:
         with open("ost_keywords.txt", "r", encoding="utf-8") as f:
@@ -386,3 +392,126 @@ with tab_topics:
         caption="Word Cloud of the Most Common Topics in OpenSustain.tech Project READMEs",
         use_container_width=True
     )
+
+
+# ==========================
+# TAB 8: Organisations data
+# ==========================
+
+def _f_plot_dataframe_as_horizontal_bars(
+        df: pd.DataFrame, 
+        x_column: str, 
+        y_column: str, 
+        title: str, 
+        top_n: int, 
+        x_title: str | None = None, 
+        y_title: str | None = None,
+    ) -> go.Figure:
+    df_topx = df.sort_values(x_column, ascending=False).reset_index(drop=True).head(top_n)
+
+    fig_topx = px.bar(
+        df_topx,
+        x=x_column,
+        y=y_column,
+        orientation="h",
+        text=x_column,
+        color=np.log10(df_topx[x_column] + 1),          # log10 color scale
+        color_continuous_scale="Tealgrn",
+        title=title,
+    )
+
+    fig_topx.update_layout(
+        height=40 * len(df_topx) + 150,
+        yaxis={'categoryorder': 'total ascending'},
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        margin=dict(l=220, r=50, t=50, b=20)
+    )
+    # explicit colorbar title
+    fig_topx.update_coloraxes(colorbar=dict(title="log10(Count)"))
+
+    if x_title:
+        fig_topx.update_layout(xaxis={"title": x_title})
+    if y_title:
+        fig_topx.update_layout(xaxis={"title": y_title})
+
+    return fig_topx
+
+
+def _f_count_by_column(df: pd.DataFrame, column: str, count_column: str | None = None) -> tuple[pd.DataFrame, str]:
+    if count_column is None:
+        df_0 = df[[column]].copy()
+        df_0["count"] = 1
+        count_column = "count"
+    else:
+        df_0 = df[[column, count_column]].copy()
+
+    df_out = df_0.groupby(column).sum().reset_index()
+    return df_out, count_column
+
+
+with tab_organisations:
+    st.header("Organisations")
+
+
+    # Number of repositories listed per organisation
+    st.subheader("Top organisations per number of repositories")
+    st.caption("These represent the organisations with most projects listed within OpenSustain.tech.")
+
+    top_n_orgs_projs=st.slider("Number of organisations to display:", 10, len(df_organisations), 30)
+
+    fig_top_org_listed_proj = _f_plot_dataframe_as_horizontal_bars(
+        df=df_organisations,
+        x_column="total_listed_projects_in_organization",
+        y_column="organization_name",
+        title=f"Top {top_n_orgs_projs} organisations by number of listed projects",
+        top_n=top_n_orgs_projs,
+        y_title="Organisation name",
+        x_title="Number of projects listed",
+    )
+    st.plotly_chart(fig_top_org_listed_proj, use_container_width=True)
+
+   
+    st.subheader("Organisations by type")
+    df_orgs_by_type, x_orgs_by_type =_f_count_by_column(df=df_organisations, column="form_of_organization")
+    fig_orgs_by_type = _f_plot_dataframe_as_horizontal_bars(
+        df=df_orgs_by_type,
+        x_column=x_orgs_by_type,
+        y_column="form_of_organization",
+        title="Organisations by type of organisation",
+        top_n=len(df_orgs_by_type),
+        y_title="Organisation type",
+        x_title="Number of organisation",
+    )
+    st.plotly_chart(fig_orgs_by_type, use_container_width=True)
+
+    # Number of organisations per country
+    st.subheader("Top country per number of organisations")
+    df_countries_count, x_countries_count =_f_count_by_column(df=df_organisations, column="location_country", count_column=None)
+    top_n_orgs_countries=st.slider("Number of countries to display (for organisations):", 10, len(df_countries_count), 30)
+    fig_top_org_countries = _f_plot_dataframe_as_horizontal_bars(
+        df=df_countries_count,
+        x_column=x_countries_count,
+        y_column="location_country",
+        title=f"Top {top_n_orgs_countries} countries by number of organisations",
+        top_n=top_n_orgs_countries,
+        y_title="Country / Region",
+        x_title="Number of organisations",
+    )
+    st.plotly_chart(fig_top_org_countries, use_container_width=True)
+
+
+    # Number of projects under organisation per country
+    st.subheader("Top country per number of projects listed in organisations")
+    df_countries_count_projs, x_countries_count_projs =_f_count_by_column(df=df_organisations, column="location_country", count_column="total_listed_projects_in_organization")
+    top_n_orgs_countries_projs=st.slider("Number of countries to display (for projects):", 10, len(df_countries_count_projs), 30)
+    fig_top_org_countries_projs = _f_plot_dataframe_as_horizontal_bars(
+        df=df_countries_count_projs,
+        x_column=x_countries_count_projs,
+        y_column="location_country",
+        title=f"Top {top_n_orgs_countries_projs} countries by number of projects",
+        top_n=top_n_orgs_countries_projs,
+        y_title="Country / Region",
+        x_title="Number of projects listed in organisations",
+    )
+    st.plotly_chart(fig_top_org_countries_projs, use_container_width=True)
