@@ -801,9 +801,10 @@ with tab_organisations:
         locations="iso_alpha",
         color=color_column,
         hover_name="location_country",
-        color_continuous_scale="Tealgrn",
-        title="Total Number of Projects per Country"
+        color_continuous_scale="Turbo",  # improved for small differences
+        title="Total Number of Projects per Country",
     )
+
     fig_map.update_layout(
         height=700,
         margin=dict(l=10, r=10, t=50, b=10),
