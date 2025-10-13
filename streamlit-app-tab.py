@@ -680,16 +680,18 @@ def _f_count_by_column(df: pd.DataFrame, column: str, count_column: str | None =
     return df_out, count_column
 
 
+import pycountry_convert as pc
+import plotly.express as px
+import pandas as pd
+import numpy as np
+
 with tab_organisations:
     st.header("Organisations")
 
-
-    # Number of repositories listed per organisation
+    # --- Top organisations per number of repositories ---
     st.subheader("Top organisations per number of repositories")
     st.caption("These represent the organisations with most projects listed within OpenSustain.tech.")
-
-    top_n_orgs_projs=st.slider("Number of organisations to display:", 10, len(df_organisations), 30)
-
+    top_n_orgs_projs = st.slider("Number of organisations to display:", 10, len(df_organisations), 30)
     fig_top_org_listed_proj = _f_plot_dataframe_as_horizontal_bars(
         df=df_organisations,
         x_column="total_listed_projects_in_organization",
@@ -701,9 +703,9 @@ with tab_organisations:
     )
     st.plotly_chart(fig_top_org_listed_proj, use_container_width=True)
 
-   
+    # --- Organisations by type ---
     st.subheader("Organisations by type")
-    df_orgs_by_type, x_orgs_by_type =_f_count_by_column(df=df_organisations, column="form_of_organization")
+    df_orgs_by_type, x_orgs_by_type = _f_count_by_column(df=df_organisations, column="form_of_organization")
     fig_orgs_by_type = _f_plot_dataframe_as_horizontal_bars(
         df=df_orgs_by_type,
         x_column=x_orgs_by_type,
@@ -711,14 +713,14 @@ with tab_organisations:
         title="Organisations by type of organisation",
         top_n=len(df_orgs_by_type),
         y_title="Organisation type",
-        x_title="Number of organisation",
+        x_title="Number of organisations",
     )
     st.plotly_chart(fig_orgs_by_type, use_container_width=True)
 
-    # Number of organisations per country
-    st.subheader("Top country per number of organisations")
-    df_countries_count, x_countries_count =_f_count_by_column(df=df_organisations, column="location_country", count_column=None)
-    top_n_orgs_countries=st.slider("Number of countries to display (for organisations):", 10, len(df_countries_count), 30)
+    # --- Organisations per country ---
+    st.subheader("Top countries per number of organisations")
+    df_countries_count, x_countries_count = _f_count_by_column(df=df_organisations, column="location_country")
+    top_n_orgs_countries = st.slider("Number of countries to display (organisations):", 10, len(df_countries_count), 30)
     fig_top_org_countries = _f_plot_dataframe_as_horizontal_bars(
         df=df_countries_count,
         x_column=x_countries_count,
@@ -730,21 +732,77 @@ with tab_organisations:
     )
     st.plotly_chart(fig_top_org_countries, use_container_width=True)
 
+    # --- Organisations per continent ---
+    st.subheader("Organisations by Continent")
+    df_continent = df_organisations.copy()
+    
+    def country_to_continent(country_name):
+        try:
+            country_code = pc.country_name_to_country_alpha2(country_name)
+            continent_code = pc.country_alpha2_to_continent_code(country_code)
+            continent_name = pc.convert_continent_code_to_continent_name(continent_code)
+            return continent_name
+        except:
+            return "Unknown"
 
-    # Number of projects under organisation per country
-    st.subheader("Top country per number of projects listed in organisations")
-    df_countries_count_projs, x_countries_count_projs =_f_count_by_column(df=df_organisations, column="location_country", count_column="total_listed_projects_in_organization")
-    top_n_orgs_countries_projs=st.slider("Number of countries to display (for projects):", 10, len(df_countries_count_projs), 30)
-    fig_top_org_countries_projs = _f_plot_dataframe_as_horizontal_bars(
-        df=df_countries_count_projs,
-        x_column=x_countries_count_projs,
-        y_column="location_country",
-        title=f"Top {top_n_orgs_countries_projs} countries by number of projects",
-        top_n=top_n_orgs_countries_projs,
-        y_title="Country / Region",
-        x_title="Number of projects listed in organisations",
+    df_continent['continent'] = df_continent['location_country'].apply(country_to_continent)
+    df_continent_counts = df_continent['continent'].value_counts().reset_index()
+    df_continent_counts.columns = ['continent', 'count']
+
+    fig_continent = px.bar(
+        df_continent_counts,
+        x='count',
+        y='continent',
+        orientation='h',
+        text='count',
+        title="Number of Organisations by Continent",
+        color='count',
+        color_continuous_scale='Tealgrn'
     )
-    st.plotly_chart(fig_top_org_countries_projs, use_container_width=True)
+    fig_continent.update_layout(
+        yaxis={'categoryorder':'total ascending'},
+        height=500,
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        margin=dict(l=220, r=50, t=50, b=20)
+    )
+    st.plotly_chart(fig_continent, use_container_width=True)
+
+    # --- Total number of projects per country (choropleth map) ---
+    st.subheader("Total Number of Projects per Country")
+    df_projects_country, x_projects_country = _f_count_by_column(
+        df=df_organisations, 
+        column='location_country', 
+        count_column='total_listed_projects_in_organization'
+    )
+
+    # Ensure ISO alpha-3 country codes for the map
+    import pycountry
+    def country_to_alpha3(country_name):
+        try:
+            return pycountry.countries.lookup(country_name).alpha_3
+        except:
+            return None
+
+    df_projects_country['iso_alpha'] = df_projects_country['location_country'].apply(country_to_alpha3)
+    df_projects_country = df_projects_country.dropna(subset=['iso_alpha'])
+
+    fig_map = px.choropleth(
+        df_projects_country,
+        locations="iso_alpha",
+        color=x_projects_country,
+        hover_name="location_country",
+        color_continuous_scale="Tealgrn",
+        title="Total Number of Projects per Country"
+    )
+    fig_map.update_layout(
+        height=700,
+        margin=dict(l=10, r=10, t=50, b=10),
+        plot_bgcolor="white",
+        paper_bgcolor="white"
+    )
+    st.plotly_chart(fig_map, use_container_width=True)
+
 
 with tab_org_sunburst:
     st.header("🌐 Organisational Projects Overview")
