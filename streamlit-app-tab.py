@@ -5,6 +5,7 @@ import plotly.express as px
 from datetime import datetime, timezone
 import ast
 import plotly.graph_objects as go
+import pycountry_convert as pc
 
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
@@ -684,6 +685,7 @@ import pycountry_convert as pc
 import plotly.express as px
 import pandas as pd
 import numpy as np
+import pycountry
 
 with tab_organisations:
     st.header("Organisations")
@@ -735,13 +737,16 @@ with tab_organisations:
     # --- Organisations per continent ---
     st.subheader("Organisations by Continent")
     df_continent = df_organisations.copy()
-    
+
     def country_to_continent(country_name):
+        if pd.isna(country_name) or country_name.strip().lower() in ["unknown"]:
+            return "Unknown"
+        if country_name.strip().lower() == "global":
+            return "Global"
         try:
             country_code = pc.country_name_to_country_alpha2(country_name)
             continent_code = pc.country_alpha2_to_continent_code(country_code)
-            continent_name = pc.convert_continent_code_to_continent_name(continent_code)
-            return continent_name
+            return pc.convert_continent_code_to_continent_name(continent_code)
         except:
             return "Unknown"
 
@@ -776,9 +781,10 @@ with tab_organisations:
         count_column='total_listed_projects_in_organization'
     )
 
-    # Ensure ISO alpha-3 country codes for the map
-    import pycountry
+    # Ensure ISO alpha-3 country codes for the map (exclude 'Global' and 'Unknown')
     def country_to_alpha3(country_name):
+        if pd.isna(country_name) or country_name.strip().lower() in ["unknown", "global"]:
+            return None
         try:
             return pycountry.countries.lookup(country_name).alpha_3
         except:
@@ -787,10 +793,13 @@ with tab_organisations:
     df_projects_country['iso_alpha'] = df_projects_country['location_country'].apply(country_to_alpha3)
     df_projects_country = df_projects_country.dropna(subset=['iso_alpha'])
 
+    # Use the same column for coloring as the number of projects
+    color_column = x_projects_country
+
     fig_map = px.choropleth(
         df_projects_country,
         locations="iso_alpha",
-        color=x_projects_country,
+        color=color_column,
         hover_name="location_country",
         color_continuous_scale="Tealgrn",
         title="Total Number of Projects per Country"
@@ -802,6 +811,7 @@ with tab_organisations:
         paper_bgcolor="white"
     )
     st.plotly_chart(fig_map, use_container_width=True)
+
 
 
 with tab_org_sunburst:
