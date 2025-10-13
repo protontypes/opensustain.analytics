@@ -61,14 +61,14 @@ category_colors = {
 
 # --- Tabs ---
 tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
-    "🌍 Sustainability Ecosystem",         
+    "🌍 Sustainability Project Ecosystem",         
     "📦 Package Download Ranking",          
     "⏳ Project Age vs Sub-Category",       
     "🥇 Project Rankings",                  
-    "🧩 Category Distributions",            
+    "🧩 Project Attributes",            
     "🏷️ GitHub Topics & Keywords",          
     "🏢 Organisations",
-    "🌐 Projects by Organisation Ecosystem",
+    "🌐 Projects by Organisation",
     "🏢 Organisations by Sub-Category"                      
 ])
 
@@ -78,13 +78,43 @@ tab4, tab3, tab1, tab_rankings, tab_distributions, tab_topics, tab_organisations
 with tab1:
     st.header("Open Sustainable Technology: Age vs. Sub-Category")
 
+    # -------------------------------
+    # Dropdown for bubble size metric
+    # -------------------------------
+    size_metric_options = {
+        "Contributors": "contributors",
+        "Stars": "stars",
+        "Downloads (Last Month)": "downloads_last_month",
+        "Total Commits": "total_commits",
+        "Total Dependencies": "total_number_of_dependencies",
+        "Citations": "citations"
+    }
+
+    selected_size_label = st.selectbox(
+        "Select Metric for Bubble Size:",
+        options=list(size_metric_options.keys()),
+        index=0,
+        help="Choose which metric determines the bubble size."
+    )
+
+    selected_size_column = size_metric_options[selected_size_label]
+
+    # Ensure numeric data and fill NaNs
+    df[selected_size_column] = pd.to_numeric(df[selected_size_column], errors='coerce').fillna(0)
+
+    # Scale bubble size for better visualization
+    size_scaled = np.sqrt(df[selected_size_column]) * 20 + 5  # keep minimum size > 0
+
+    # -------------------------------
+    # Scatter plot
+    # -------------------------------
     fig1 = px.scatter(
         df,
         x="project_age",
         y="category_sub",
         color="category",
         color_discrete_map=category_colors,
-        size="contributors_size",
+        size=size_scaled,
         size_max=50,
         hover_data={
             "project_names_link": True,
@@ -93,13 +123,26 @@ with tab1:
             "sub_category": True,
             "git_url": True,
             "description": True,
-            "contributors": True
+            "contributors": True,
+            "stars": True,
+            "downloads_last_month": True,
+            "total_commits": True,
+            "total_number_of_dependencies": True,
+            "citations": True
         },
-        labels={"project_names_link": "Project", "project_age": "Project Age (Years)", "category_sub": ""},
-        title=" ",
+        labels={
+            "project_names_link": "Project",
+            "project_age": "Project Age (Years)",
+            "category_sub": "",
+            selected_size_column: selected_size_label
+        },
+        title=f" ",
         template="plotly_white"
     )
 
+    # -------------------------------
+    # Background bands per main category
+    # -------------------------------
     shapes = []
     categories = df['category'].unique()
     for idx, cat in enumerate(categories):
@@ -123,15 +166,17 @@ with tab1:
         height=1400 + 20 * df['category_sub'].nunique(),
         plot_bgcolor="white",
         paper_bgcolor="white",
-        margin=dict(l=220, r=50, t=50, b=20),
+        margin=dict(l=220, r=50, t=10, b=20),
         title_font=dict(size=30, family="Arial", color="#099ec8"),
         font=dict(size=20, family="Arial")
     )
+
     fig1.update_yaxes(
         autorange="reversed",
         tickfont=dict(family="Arial Black", size=20, color="black")
     )
 
+    # Update hover template
     fig1.update_traces(
         hovertemplate="<br>".join([
             "Project: %{customdata[0]}",
@@ -140,7 +185,12 @@ with tab1:
             "Sub-Category: %{customdata[3]}",
             "Git URL: %{customdata[4]}",
             "Description: %{customdata[5]}",
-            "Contributors: %{customdata[6]}"
+            "Contributors: %{customdata[6]}",
+            "Stars: %{customdata[7]}",
+            "Downloads: %{customdata[8]}",
+            "Total Commits: %{customdata[9]}",
+            "Total Dependencies: %{customdata[10]}",
+            "Citations: %{customdata[11]}"
         ])
     )
 
@@ -348,6 +398,60 @@ with tab_rankings:
 # ==========================
 with tab_distributions:
     st.header("📊 Distribution of Key Project Attributes")
+    st.subheader("Recent Commit Activity (Last Year)")
+
+    # Ensure field exists and handle missing values
+    if "latest_commit_activity" in df.columns:
+        df['latest_commit_activity'] = df['latest_commit_activity'].fillna("Unknown")
+
+        # Normalize values into a Yes/No style for clarity
+        def classify_commit_activity(val):
+            if isinstance(val, str):
+                val_lower = val.strip().lower()
+                if any(keyword in val_lower for keyword in ["active", "yes", "true", "recent", "1", "commit"]):
+                    return "Active (Commits in Last Year)"
+                elif any(keyword in val_lower for keyword in ["no", "none", "inactive", "false", "0"]):
+                    return "Inactive (No Commits in Last Year)"
+            if isinstance(val, (int, float)):
+                return "Active (Commits in Last Year)" if val > 0 else "Inactive (No Commits in Last Year)"
+            return "Unknown"
+
+        df['commit_activity_status'] = df['latest_commit_activity'].apply(classify_commit_activity)
+
+        counts_commit = df['commit_activity_status'].value_counts()
+
+        fig_commit_activity = px.bar(
+            counts_commit,
+            x=counts_commit.values,
+            y=counts_commit.index,
+            orientation="h",
+            text=counts_commit.values,
+            labels={"x": "Number of Projects", "y": "Commit Activity"},
+            title="Projects with Commit Activity in the Last Year",
+            color=counts_commit.index,
+            color_discrete_sequence=px.colors.qualitative.Vivid
+        )
+
+        fig_commit_activity.update_layout(
+            yaxis={'categoryorder': 'total descending'},
+            showlegend=False,
+            height=300,
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            margin=dict(l=220, r=50, t=50, b=20),
+            font=dict(size=18),
+            yaxis_tickfont=dict(size=18, family="Arial"),
+            yaxis_title_font=dict(size=20, family="Arial Black"),
+        )
+
+        st.plotly_chart(fig_commit_activity, use_container_width=True)
+
+    else:
+        st.warning("Column `latest_commit_activity` not found in dataset.")
+
+    # ==============================
+    # Existing categorical attribute distributions
+    # ==============================
     categorical_fields = ["code_of_conduct", "contributing_guide", "license", "language", "ecosystems"]
 
     for field in categorical_fields:
@@ -375,12 +479,15 @@ with tab_distributions:
         )
 
         fig_dist.update_layout(
-            yaxis={'categoryorder':'total descending'},
+            yaxis={'categoryorder': 'total descending'},
             showlegend=False,
             height=40 * len(counts) + 150,
             plot_bgcolor="white",
             paper_bgcolor="white",
-            margin=dict(l=220, r=50, t=50, b=20)
+            margin=dict(l=220, r=50, t=50, b=20),
+            font=dict(size=18),
+            yaxis_tickfont=dict(size=18),
+            yaxis_title_font=dict(size=20),
         )
 
         st.plotly_chart(fig_dist, use_container_width=True)
