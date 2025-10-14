@@ -18,8 +18,8 @@ def text_to_bolt(topic):
     return f"<b>{topic}</b>"
 
 # --- Load main dataset ---
-df = pd.read_csv("projects.csv")
-df_organisations = pd.read_csv("organisations.csv")
+df = pd.read_csv("./data/projects.csv")
+df_organisations = pd.read_csv("./data/organizations.csv")
 
 
 # --- Preprocess ---
