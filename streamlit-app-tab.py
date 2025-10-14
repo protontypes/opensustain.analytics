@@ -268,7 +268,7 @@ with tab3:
 with tab4:
     st.header("🌎 The Open Source Sustainability Ecosystem")
 
-    df['hole'] = f'<b><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
+    df['hole'] = f'<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
 
     fig4 = px.sunburst(
         df,
@@ -833,7 +833,7 @@ with tab_org_sunburst:
     df_sunburst_projects = df_sunburst_projects[df_sunburst_projects['organization_name'].isin(large_orgs)]
 
     # Add root (center of Sunburst)
-    df_sunburst_projects['root'] = f'<b><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech Organizations</a></b>'
+    df_sunburst_projects['root'] = f'<b style="font-size:40px;"><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech <br> <br> Organizations</a></b>'
 
     # Make organization_projects clickable HTML links
     df_sunburst_projects['organization_projects_link'] = df_sunburst_projects.apply(
@@ -926,7 +926,7 @@ with tab_org_subcat:
         st.warning("No organisations with sub-categories found. Please check your data.")
     else:
         # Add root for sunburst
-        df_org_subcat['root'] = '<b><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech Organisations by Sub-Category</a></b>'
+        df_org_subcat['root'] = '<b style="font-size:40px;"><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech </br> </br> </br> Organisations by Sub-Category</a></b>'
 
         # Map colors from the category_colors palette, applied to sub-categories
         unique_subcats = df_org_subcat['organization_sub_category'].unique()
