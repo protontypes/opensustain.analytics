@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import ast
 import plotly.graph_objects as go
 import pycountry_convert as pc
+import pycountry
 
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
@@ -545,7 +546,7 @@ with tab_distributions:
         fig_platform.update_layout(
             yaxis={'categoryorder': 'total descending'},
             showlegend=False,
-            height=300,
+            height=600,
             plot_bgcolor="white",
             paper_bgcolor="white",
             margin=dict(l=220, r=50, t=50, b=20),
