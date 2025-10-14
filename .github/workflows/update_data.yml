@@ -2,9 +2,8 @@ name: Update OpenSustain Data
 
 on:
   schedule:
-    # Runs at 12:00 UTC on the first day of each month
-    - cron: "0 12 1 * *"
-  workflow_dispatch:  # allows manual trigger
+    - cron: "0 12 1 * *"  # 12:00 UTC on the first day of each month
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,20 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 🧭 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: ⚙️ Install dependencies
         run: |
           python -m pip install --upgrade pip requests
 
-      - name: Download latest OpenSustain release CSVs
+      - name: 📥 Download latest OpenSustain release CSVs
         run: |
+          python - <<'EOF'
           import os, requests
 
           repo = "protontypes/open-sustainable-technology"
@@ -50,15 +50,16 @@ jobs:
               elif "organization" in name and name.endswith(".csv"):
                   save_name = "data/organizations.csv"
               else:
-                  continue  # skip any other files
+                  continue
               print(f"Downloading {asset['name']} -> {save_name}")
               r = requests.get(download_url)
               with open(save_name, "wb") as f:
                   f.write(r.content)
 
-          print("CSV files downloaded successfully!")
+          print("✅ CSV files downloaded successfully!")
+          EOF
 
-      - name: Commit & push updated data
+      - name: 📝 Commit & push updated data
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
@@ -66,5 +67,5 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected."
           else
-            git commit -m " Update projects.csv and organizations.csv from latest OpenSustain release"
+            git commit -m "📦 Update projects.csv and organizations.csv from latest OpenSustain release"
             git push
