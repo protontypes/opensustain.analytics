@@ -1,0 +1,70 @@
+name: Update OpenSustain Data
+
+on:
+  schedule:
+    # Runs at 12:00 UTC on the first day of each month
+    - cron: "0 12 1 * *"
+  workflow_dispatch:  # allows manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip requests
+
+      - name: Download latest OpenSustain release CSVs
+        run: |
+          import os, requests
+
+          repo = "protontypes/open-sustainable-technology"
+          api_url = f"https://api.github.com/repos/{repo}/releases/latest"
+          headers = {"Accept": "application/vnd.github.v3+json"}
+
+          print("Fetching latest release metadata...")
+          release = requests.get(api_url, headers=headers).json()
+          tag_name = release.get("tag_name")
+          print(f"Latest release: {tag_name}")
+
+          assets = release.get("assets", [])
+          os.makedirs("data", exist_ok=True)
+
+          for asset in assets:
+              download_url = asset["browser_download_url"]
+              name = asset["name"].lower()
+              if "project" in name and name.endswith(".csv"):
+                  save_name = "data/projects.csv"
+              elif "organization" in name and name.endswith(".csv"):
+                  save_name = "data/organizations.csv"
+              else:
+                  continue  # skip any other files
+              print(f"Downloading {asset['name']} -> {save_name}")
+              r = requests.get(download_url)
+              with open(save_name, "wb") as f:
+                  f.write(r.content)
+
+          print("CSV files downloaded successfully!")
+
+      - name: Commit & push updated data
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add data/projects.csv data/organizations.csv
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+          else
+            git commit -m " Update projects.csv and organizations.csv from latest OpenSustain release"
+            git push
