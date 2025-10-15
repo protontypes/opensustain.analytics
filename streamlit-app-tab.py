@@ -248,57 +248,80 @@ with tab1:
 # ==========================
 # TAB 3: Sunburst
 # ==========================
+# ==========================
+# TAB 3: Sunburst
+# ==========================
 with tab4:
     st.header("🌎 The Open Source Sustainability Ecosystem")
 
     df['hole'] = f'<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
 
-    fig4 = px.sunburst(
-        df,
-        path=["hole", "category", "sub_category", "project_names_link"],
-        maxdepth=3,
-        color="category",
-        color_discrete_map=category_colors,
-        title=" "
-    )
-
-    colors = list(fig4.data[0].marker.colors)
-    colors[0] = "white"
-    fig4.data[0].marker.colors = colors
-
-    fig4.update_traces(
-        insidetextorientation="radial",
-        marker=dict(line=dict(color="#000000", width=2))
-    )
-
-    # Add OpenSustain logo at the center
-    fig4.add_layout_image(
-        dict(
-            source="https://opensustain.tech/logo.png",
-            xref="paper", yref="paper",
-            x=0.5, y=0.58,
-            sizex=0.10, sizey=0.10,
-            xanchor="center",
-            yanchor="middle",
-            layer="above",
-            sizing="contain",
-            opacity=1
+    # Cache the figure creation
+    @st.cache_data
+    def create_sunburst(df):
+        # Optional: precompute hover text to reduce custom_data overhead
+        df['hover_text'] = (
+            df['project_names_link'] + '<br>' +
+            "Category: " + df['category'] + '<br>' +
+            "Sub-Category: " + df['sub_category'] + '<br>' +
+            "Downloads (Last Month): " + df['downloads_last_month'].astype(str) + '<br>' +
+            "<a href='" + df['git_url'] + "' target='_blank'>GitHub</a>"
         )
-    )
 
-    fig4.update_layout(
-        height=1000,
-        title_x=0.5,
-        font_size=18,
-        dragmode=False,
-        margin=dict(l=2, r=2, b=0, t=10),
-        title_font_family="Open Sans",
-        font_family="Open Sans",
-        font_color="black",
-        plot_bgcolor='white',
-    )
+        fig = px.sunburst(
+            df,
+            path=["hole", "category", "sub_category", "project_names_link"],
+            maxdepth=3,
+            color="category",
+            color_discrete_map=category_colors,
+            hover_data={'hover_text': True},
+            title=" "
+        )
 
+        # Set root node color to white
+        colors = list(fig.data[0].marker.colors)
+        colors[0] = "white"
+        fig.data[0].marker.colors = colors
+
+        # Update traces
+        fig.update_traces(
+            insidetextorientation="radial",
+            marker=dict(line=dict(color="#000000", width=2)),
+            hovertemplate="%{customdata[0]}"
+        )
+
+        # Add OpenSustain logo at the center
+        fig.add_layout_image(
+            dict(
+                source="https://opensustain.tech/logo.png",
+                xref="paper", yref="paper",
+                x=0.5, y=0.58,
+                sizex=0.10, sizey=0.10,
+                xanchor="center",
+                yanchor="middle",
+                layer="above",
+                sizing="contain",
+                opacity=1
+            )
+        )
+
+        fig.update_layout(
+            height=1000,
+            title_x=0.5,
+            font_size=18,
+            dragmode=False,
+            margin=dict(l=2, r=2, b=0, t=10),
+            title_font_family="Open Sans",
+            font_family="Open Sans",
+            font_color="black",
+            plot_bgcolor='white',
+        )
+        return fig
+
+    # Create and display sunburst
+    fig4 = create_sunburst(df)
     st.plotly_chart(fig4)
+
 # ==========================
 # TAB 4: Project Rankings
 # ==========================
