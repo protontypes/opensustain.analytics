@@ -54,16 +54,9 @@ df_organisations['organization_name'] = df_organisations.apply(
 )
 
 # --- Add clickable project name column ---
-df['project_names_link'] = df.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
+df['project_names_link'] = '<a href="' + df['git_url'] + '" target="_blank" style="color:black">' + df['project_names'] + '</a>'
 
 # --- Dashboard Introduction ---
-
-# Get last modification dates
-last_update_projects = datetime.fromtimestamp(os.path.getmtime(projects_file)).strftime("%Y-%m-%d")
-last_update_orgs = datetime.fromtimestamp(os.path.getmtime(organisations_file)).strftime("%Y-%m-%d")
-
-# Take the latest date among the two files
-last_update_date = max(last_update_projects, last_update_orgs)
 
 st.markdown(
     f"""
@@ -74,7 +67,6 @@ st.markdown(
     The data is provided under a <b>Creative Commons CC-BY 4.0 license</b> and is powered by <b><a href="https://ecosyste.ms/">Ecosyste.ms</a></b>. 
     You can find <b>Good First Issues</b> in all these projects to start contributing to Open Source in Climate and Sustainability at 
     <a href="https://climatetriage.com/" target="_blank">ClimateTriage.com</a>.
-    <i>Last data update: {last_update_date}</i>
     </p>
     """, unsafe_allow_html=True)
 
