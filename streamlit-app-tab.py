@@ -110,9 +110,9 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab_rankings, tab4, tab3, tab1, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
-    "🥇 Project Rankings", 
-    "🌍 Sustainability Project Ecosystem",         
+tab4, tab_rankings, tab3, tab1, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
+    "🌍 Sustainability Project Ecosystem", 
+    "🥇 Project Rankings",         
     "📦 Package Download Ranking",          
     "⏳ Project Age vs Sub-Category",                        
     "🧩 Project Attributes",            
@@ -361,7 +361,7 @@ with tab4:
     )
 
     fig4.update_layout(
-        height=1400,
+        height=1000,
         title_x=0.5,
         font_size=18,
         dragmode=False,
