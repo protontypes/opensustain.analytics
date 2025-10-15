@@ -304,7 +304,7 @@ with tab4:
         )
 
         fig.update_layout(
-            height=1000,
+            height=1400,
             title_x=0.5,
             font_size=18,
             dragmode=False,
@@ -343,7 +343,7 @@ with tab_rankings:
             "total_commits",
             "total_number_of_dependencies",
             "stars",
-            "downloads_last_month"  # ✅ Added new metric
+            "downloads_last_month" 
         ],
         format_func=lambda x: {
             "score": "Ecosyste.ms Score",
@@ -353,7 +353,7 @@ with tab_rankings:
             "total_commits": "Total Commits",
             "total_number_of_dependencies": "Total Dependencies",
             "stars": "Stars",
-            "downloads_last_month": "Downloads (Last Month)"  # ✅ Friendly name
+            "downloads_last_month": "Downloads (Last Month)" 
         }[x]
     )
 
@@ -423,8 +423,6 @@ with tab_rankings:
     fig_rank.update_yaxes(showspikes=False, autorange="reversed")
 
     st.plotly_chart(fig_rank)
-
-
 
 
 # ==========================
