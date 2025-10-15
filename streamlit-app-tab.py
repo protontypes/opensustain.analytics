@@ -7,7 +7,8 @@ import ast
 import plotly.graph_objects as go
 import pycountry_convert as pc
 import pycountry
-
+import os
+from datetime import datetime
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
@@ -18,9 +19,13 @@ def text_to_link(project_name, git_url):
 def text_to_bolt(topic):
     return f"<b>{topic}</b>"
 
+# Paths to your datasets
+projects_file = "./data/projects.csv"
+organisations_file = "./data/organizations.csv"    
+
 # --- Load main dataset ---
-df = pd.read_csv("./data/projects.csv")
-df_organisations = pd.read_csv("./data/organizations.csv")
+df = pd.read_csv(projects_file)
+df_organisations = pd.read_csv(organisations_file)
 
 
 # --- Preprocess ---
@@ -50,6 +55,49 @@ df_organisations['organization_name'] = df_organisations.apply(
 
 # --- Add clickable project name column ---
 df['project_names_link'] = df.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
+
+# --- Dashboard Introduction ---
+
+# Get last modification dates
+last_update_projects = datetime.fromtimestamp(os.path.getmtime(projects_file)).strftime("%Y-%m-%d")
+last_update_orgs = datetime.fromtimestamp(os.path.getmtime(organisations_file)).strftime("%Y-%m-%d")
+
+# Take the latest date among the two files
+last_update_date = max(last_update_projects, last_update_orgs)
+
+st.markdown(
+    f"""
+    # [OpenSustain.tech](https://opensustain.tech/) Analytics Dashboard
+    <p>
+    Explore data on the open-source project and organisation ecosystem in environmental sustainability.
+    All <b>project names</b> and <b>organisation names</b> throughout the dashboard are <b>clickable links</b> that will open the corresponding project or organisation page.
+    The data is provided under a <b>Creative Commons CC-BY 4.0 license</b> and is powered by <b><a href="https://ecosyste.ms/">Ecosyste.ms</a></b>. 
+    You can find <b>Good First Issues</b> in all these projects to start contributing to Open Source in Climate and Sustainability at 
+    <a href="https://climatetriage.com/" target="_blank">ClimateTriage.com</a>.
+    <i>Last data update: {last_update_date}</i>
+    </p>
+    """, unsafe_allow_html=True)
+
+# --- Download Buttons ---
+col1, col2 = st.columns(2)
+
+with col1:
+    st.download_button(
+        label="📥 Download Projects Dataset",
+        data=df.to_csv(index=False).encode('utf-8'),
+        file_name="opensustain_projects.csv",
+        mime="text/csv"
+    )
+
+with col2:
+    st.download_button(
+        label="📥 Download Organisations Dataset",
+        data=df_organisations.to_csv(index=False).encode('utf-8'),
+        file_name="opensustain_organisations.csv",
+        mime="text/csv"
+    )
+
+
 
 # --- Define palette ---
 category_colors = {
@@ -168,7 +216,7 @@ with tab1:
         height=1400 + 20 * df['category_sub'].nunique(),
         plot_bgcolor="white",
         paper_bgcolor="white",
-        margin=dict(l=220, r=50, t=10, b=20),
+        margin=dict(l=220, r=50, t=0, b=20),
         title_font=dict(size=30, family="Arial", color="#099ec8"),
         font=dict(size=20, family="Arial")
     )
@@ -873,64 +921,99 @@ with tab_organisations:
     )
     st.plotly_chart(fig_map, use_container_width=True)
 
-
+# ==========================
+# TAB 9: Organisations by Projects
+# ==========================
 
 with tab_org_sunburst:
     st.header("🌐 Organisational Projects Overview")
-    st.caption("Sunburst showing larger organisations (≥2 projects) and their projects. Click an organisation to see its projects.")
+    st.caption("Sunburst showing larger organisations (≥2 projects) and their projects. Click an organisation to open its projects on GitHub or similar platforms.")
 
-    # Explode projects into separate rows
+    # --- Prepare Data ---
     df_sunburst_projects = df_organisations.copy()
+
+    # Split and explode project list into separate rows
     df_sunburst_projects = df_sunburst_projects.assign(
         organization_projects=df_sunburst_projects['organization_projects'].fillna("").str.split(',')
     ).explode('organization_projects')
+
     df_sunburst_projects['organization_projects'] = df_sunburst_projects['organization_projects'].str.strip()
     df_sunburst_projects = df_sunburst_projects[df_sunburst_projects['organization_projects'] != ""]
 
-    # Filter only organisations with ≥2 projects
-    org_project_counts = df_sunburst_projects.groupby("organization_name").size().reset_index(name="num_projects")
-    large_orgs = org_project_counts[org_project_counts['num_projects'] >= 2]['organization_name'].tolist()
-    df_sunburst_projects = df_sunburst_projects[df_sunburst_projects['organization_name'].isin(large_orgs)]
-
-    # Add root (center of Sunburst)
-    df_sunburst_projects['root'] = f'<b style="font-size:40px;"><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech <br> <br> Organizations</a></b>'
-
-    # Make organization_projects clickable HTML links
-    df_sunburst_projects['organization_projects_link'] = df_sunburst_projects.apply(
-        lambda row: f'<a href="{row["organization_namespace_url"]}" target="_blank">{row["organization_projects"]}</a>', axis=1
+    # Compute number of projects per organization
+    org_project_counts = (
+        df_sunburst_projects.groupby("organization_name")
+        .size()
+        .reset_index(name="num_projects")
+        .sort_values("num_projects", ascending=False)
     )
 
-    # Map colors from the project sunburst palette
+    # --- Filter by minimum project count (≥2) ---
+    org_project_counts = org_project_counts[org_project_counts['num_projects'] >= 2]
+
+    # --- Add slider to select top X organizations ---
+    top_n_orgs = st.slider(
+        "Number of top organizations to display:",
+        min_value=5,
+        max_value=len(org_project_counts),
+        value=150,
+        step=5,
+        help="Select how many of the top organizations (by number of projects) to include in the Sunburst chart."
+    )
+
+    top_orgs = org_project_counts.head(top_n_orgs)['organization_name'].tolist()
+    df_sunburst_projects = df_sunburst_projects[df_sunburst_projects['organization_name'].isin(top_orgs)]
+
+    # --- Add root (center node) ---
+    df_sunburst_projects['root'] = (
+        '<b style="font-size:40px;"><a href="https://opensustain.tech/" target="_blank">'
+        'OpenSustain.tech<br><br>Organizations</a></b>'
+    )
+
+    # --- Extract short project name from URL (last part) ---
+    def extract_project_name(url):
+        if isinstance(url, str) and '/' in url:
+            return url.rstrip('/').split('/')[-1]
+        return url
+
+    df_sunburst_projects['project_display_name'] = df_sunburst_projects['organization_projects'].apply(extract_project_name)
+
+    # --- Create clickable link using the full URL, but display only the short name ---
+    df_sunburst_projects['organization_projects_link'] = df_sunburst_projects.apply(
+        lambda row: f'<a href="{row["organization_projects"]}" target="_blank">{extract_project_name(row["organization_projects"])}</a>',
+        axis=1
+    )
+
+    # --- Color mapping ---
     unique_orgs = df_sunburst_projects['organization_name'].unique()
     color_palette = list(category_colors.values())
     org_colors = {org: color_palette[i % len(color_palette)] for i, org in enumerate(unique_orgs)}
 
-    # Create Sunburst using clickable project names
+    # --- Create Sunburst ---
     fig_org_sun = px.sunburst(
         df_sunburst_projects,
-        path=["root", "organization_name", "organization_projects_link"],  # clickable project name as label
+        path=["root", "organization_name", "organization_projects_link"],  # clickable project names
         color="organization_name",
         color_discrete_map=org_colors,
         maxdepth=2,
         title=" ",
-        custom_data=["organization_name", "organization_projects_link"]
+        custom_data=["organization_name", "organization_projects"]
     )
 
-    # Make the root (hole) white
+    # --- Make the root (hole) white ---
     colors = list(fig_org_sun.data[0].marker.colors)
-    colors[0] = "white"
-    fig_org_sun.data[0].marker.colors = colors
+    if len(colors) > 0:
+        colors[0] = "white"
+        fig_org_sun.data[0].marker.colors = colors
 
-    # Update traces: hover shows the same clickable project link
+    # --- Hover info ---
     fig_org_sun.update_traces(
         insidetextorientation="radial",
-        hovertemplate="<br>".join([
-            "Organisation: %{customdata[0]}",
-            "Project: %{customdata[1]}"
-        ])
+        hovertemplate="<b>Organisation:</b> %{customdata[0]}<br>"
+                      "<b>Project URL:</b> %{customdata[1]}<extra></extra>"
     )
 
-    # Add logo at the center
+    # --- Add logo at the center ---
     fig_org_sun.add_layout_image(
         dict(
             source="https://opensustain.tech/logo.png",
@@ -948,7 +1031,7 @@ with tab_org_sunburst:
         )
     )
 
-    # Layout: full-page view
+    # --- Layout ---
     fig_org_sun.update_layout(
         height=1600,
         margin=dict(l=2, r=2, t=50, b=2),
@@ -962,7 +1045,7 @@ with tab_org_sunburst:
 
 
 # ==========================
-# TAB 9: Organisations by Sub-Categories Sunburst
+# TAB 10: Organisations by Sub-Categories Sunburst
 # ==========================
 
 with tab_org_subcat:
