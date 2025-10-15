@@ -110,9 +110,10 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab_rankings, tab1, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
+tab4, tab_rankings, tab_top_org_score, tab1, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
     "🌍 Sustainability Project Ecosystem", 
-    "🥇 Project Rankings",         
+    "🥇 Project Rankings",
+    "🏆 Organisations by Ecosyste.ms Score",         
     "⏳ Project Age vs Sub-Category",                        
     "🧩 Project Attributes",            
     "🏷️ GitHub Topics & Keywords",          
@@ -250,7 +251,7 @@ with tab1:
 # ==========================
 
 with tab4:
-    st.header("🌎 The Open Source Sustainability Ecosystem")
+    st.header(" The Open Source Sustainability Ecosystem")
 
     df['hole'] = f'<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
 
@@ -1096,5 +1097,66 @@ with tab_org_subcat:
         )
 
         st.plotly_chart(fig_org_subcat_sun, use_container_width=True)
+    
+with tab_top_org_score:
+    st.header("Top Organisations by Sum of Ecosyste.ms Scores")
+    st.caption("Aggregates the Ecosyste.ms project scores for each organisation using the `organization_projects` field from organisations.csv.")
+
+    if "organization_projects" not in df_organisations.columns or "git_url" not in df.columns:
+        st.warning("Missing required fields: `organization_projects` in organisations.csv or `git_url` in projects.csv.")
+    else:
+        # Ensure numeric scores
+        df["score"] = pd.to_numeric(df["score"], errors="coerce").fillna(0)
+
+        # Map git_url -> score
+        project_score_map = df.set_index("git_url")["score"].to_dict()
+
+        # Split projects per organisation
+        df_organisations["organization_projects"] = df_organisations["organization_projects"].fillna("").astype(str)
+        df_organisations["projects_list"] = df_organisations["organization_projects"].apply(lambda s: [p.strip() for p in s.split(",") if p.strip() != ""])
+
+        # Compute aggregated score
+        aggregated_data = []
+        for _, row in df_organisations.iterrows():
+            org_name = row.get("organization_name", "Unknown")
+            projects = row["projects_list"]
+            total_score = sum(project_score_map.get(p, 0) for p in projects)
+            aggregated_data.append({"organization_name": org_name, "total_score": total_score})
+
+        df_agg_scores = pd.DataFrame(aggregated_data)
+        if df_agg_scores.empty:
+            st.warning("No organisation data found to compute scores.")
+        else:
+            df_agg_scores = df_agg_scores.sort_values("total_score", ascending=False).reset_index(drop=True)
+
+            # Slider with default 60
+            top_n = st.slider(
+                "Number of organisations to display:",
+                min_value=5,
+                max_value=len(df_agg_scores),
+                value=min(60, len(df_agg_scores))
+            )
+            df_top = df_agg_scores.head(top_n)
+
+            # Horizontal bar chart
+            fig_score = px.bar(
+                df_top,
+                x="total_score",
+                y="organization_name",
+                orientation="h",
+                text=df_top["total_score"].round(2),
+                color="total_score",
+                color_continuous_scale="Tealgrn",
+                title=f"Top {top_n} Organisations by Combined Ecosyste.ms Project Score"
+            )
+            fig_score.update_layout(
+                height=40 * len(df_top) + 200,
+                yaxis=dict(title="Organisation"),
+                xaxis=dict(title="Total Ecosyste.ms Score"),
+                plot_bgcolor="white",
+                paper_bgcolor="white",
+                margin=dict(l=200, r=50, t=50, b=30)
+            )
+            st.plotly_chart(fig_score, use_container_width=True)
 
 
