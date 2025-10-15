@@ -110,7 +110,7 @@ category_colors = {
 }
 
 # --- Tabs ---
-tab4, tab_rankings, tab3, tab1, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
+tab4, tab_rankings, tab1, tab_distributions, tab_topics, tab_organisations,tab_org_sunburst,tab_org_subcat = st.tabs([
     "🌍 Sustainability Project Ecosystem", 
     "🥇 Project Rankings",         
     "📦 Package Download Ranking",          
@@ -245,71 +245,6 @@ with tab1:
     )
 
     st.plotly_chart(fig1, use_container_width=True)
-
-# ==========================
-# TAB 2: Download Ranking
-# ==========================
-with tab3:
-    st.header("🏆 Top Open Source Package Downloads")
-
-    df_extract = df.copy()
-    df_extract = df_extract[df_extract["downloads_last_month"] > 0]
-    df_extract.rename(columns={"downloads_last_month": "download_counts"}, inplace=True)
-    df_extract['project_names_link'] = df_extract.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
-
-    number_of_projects_to_show = 300
-    top_downloaders = df_extract.nlargest(number_of_projects_to_show, "download_counts")
-    top_downloaders.index.name = "ranking"
-
-    month_year = datetime.now().strftime("%B %Y")
-    color_discrete_sequence = px.colors.qualitative.Vivid
-
-    fig3 = px.bar(
-        top_downloaders,
-        x="download_counts",
-        y="project_names_link",
-        custom_data=[
-            "project_names_link", "download_counts", "git_url", "description",
-            "category", "sub_category", "language", top_downloaders.index + 1
-        ],
-        orientation="h",
-        color="category",
-        color_discrete_sequence=color_discrete_sequence,
-        title=f"Open Source Package Downloads in Climate and Sustainability – {month_year}"
-    )
-
-    fig3.update_layout(
-        height=number_of_projects_to_show * 20,
-        width=1000,
-        xaxis_title="",
-        yaxis_title=None,
-        dragmode=False,
-        plot_bgcolor="white",
-        modebar_color="#009485",
-        modebar_activecolor="#2563eb",
-        hovermode="y unified",
-        hoverdistance=1000,
-        xaxis_type="log",
-        yaxis_categoryorder="total descending",
-        legend_title=None,
-        xaxis={"side": "top"}
-    )
-
-    fig3.update_traces(
-        hovertemplate="<extra></extra>" + "<br>".join([
-            "Ranking: <b>%{customdata[7]}</b>",
-            "Project: %{customdata[0]}",
-            "Description: <b>%{customdata[3]}</b>",
-            "Sub Category: <b>%{customdata[5]}</b>",
-            "Language: <b>%{customdata[6]}</b>",
-            "Downloads per month: <b>%{customdata[1]}</b>",
-            "Category: <b>%{customdata[4]}</b>",
-        ])
-    )
-
-    fig3.update_xaxes(showspikes=False)
-    fig3.update_yaxes(showspikes=False, autorange="reversed")
-    st.plotly_chart(fig3, use_container_width=True)
 
 # ==========================
 # TAB 3: Sunburst
