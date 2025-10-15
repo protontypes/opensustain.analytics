@@ -372,7 +372,7 @@ with tab4:
         plot_bgcolor='white',
     )
 
-    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig4)
 # ==========================
 # TAB 4: Project Rankings
 # ==========================
@@ -465,7 +465,7 @@ with tab_rankings:
     fig_rank.update_xaxes(showspikes=False)
     fig_rank.update_yaxes(showspikes=False, autorange="reversed")
 
-    st.plotly_chart(fig_rank, use_container_width=True)
+    st.plotly_chart(fig_rank)
 
 
 
@@ -522,7 +522,7 @@ with tab_distributions:
             yaxis_title_font=dict(size=20, family="Arial Black"),
         )
 
-        st.plotly_chart(fig_commit_activity, use_container_width=True)
+        st.plotly_chart(fig_commit_activity)
     else:
         st.warning("Column latest_commit_activity not found in dataset.")
 
@@ -568,7 +568,7 @@ with tab_distributions:
             yaxis_title_font=dict(size=20),
         )
 
-        st.plotly_chart(fig_dist, use_container_width=True)
+        st.plotly_chart(fig_dist)
 
     # ==============================
     # Git Platforms Distribution (Moved to End)
@@ -603,7 +603,7 @@ with tab_distributions:
             yaxis_title_font=dict(size=20),
         )
 
-        st.plotly_chart(fig_platform, use_container_width=True)
+        st.plotly_chart(fig_platform)
     else:
         st.warning("Column `platform` not found in dataset.")
 
