@@ -259,7 +259,6 @@ with tab4:
         maxdepth=3,
         color="category",
         color_discrete_map=category_colors,
-        custom_data=["project_names_link", "category", "sub_category", "downloads_last_month", "git_url"],
         title=" "
     )
 
@@ -269,14 +268,7 @@ with tab4:
 
     fig4.update_traces(
         insidetextorientation="radial",
-        marker=dict(line=dict(color="#000000", width=2)),
-        hovertemplate="<br>".join([
-            "%{customdata[0]}",
-            "Category: %{customdata[1]}",
-            "Sub-Category: %{customdata[2]}",
-            "Downloads (Last Month): %{customdata[3]}",
-            "<a href='%{customdata[4]}' target='_blank'>GitHub</a>"
-        ])
+        marker=dict(line=dict(color="#000000", width=2))
     )
 
     # Add OpenSustain logo at the center
