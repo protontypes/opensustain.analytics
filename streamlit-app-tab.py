@@ -5,10 +5,6 @@ import plotly.express as px
 from datetime import datetime, timezone
 import ast
 import plotly.graph_objects as go
-import pycountry_convert as pc
-import pycountry
-import os
-from datetime import datetime
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
@@ -48,9 +44,11 @@ def org_to_link(org_name, org_url):
         return org_name
     return f'<a href="{org_url}" target="_blank" style="color:black">{org_name}</a>'
 
-df_organisations['organization_name'] = df_organisations.apply(
-    lambda row: org_to_link(row['organization_name'], row.get('organization_namespace_url', "")),
-    axis=1
+df_organisations['organization_name'] = np.where(
+    df_organisations['organization_namespace_url'].notna() & (df_organisations['organization_namespace_url'].str.strip() != ""),
+    '<a href="' + df_organisations['organization_namespace_url'] + '" target="_blank" style="color:black">' 
+    + df_organisations['organization_name'] + '</a>',
+    df_organisations['organization_name']
 )
 
 # --- Add clickable project name column ---
@@ -68,27 +66,37 @@ st.markdown(
     You can find <b>Good First Issues</b> in all these projects to start contributing to Open Source in Climate and Sustainability at 
     <a href="https://climatetriage.com/" target="_blank">ClimateTriage.com</a>.
     </p>
-    """, unsafe_allow_html=True)
-
-# --- Download Buttons ---
-col1, col2 = st.columns(2)
-
-with col1:
-    st.download_button(
-        label="📥 Download Projects Dataset",
-        data=df.to_csv(index=False).encode('utf-8'),
-        file_name="opensustain_projects.csv",
-        mime="text/csv"
-    )
-
-with col2:
-    st.download_button(
-        label="📥 Download Organisations Dataset",
-        data=df_organisations.to_csv(index=False).encode('utf-8'),
-        file_name="opensustain_organisations.csv",
-        mime="text/csv"
-    )
-
+    <p>
+    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=5&tableId=Projects&activeSortSpec=%5B132%5D&filters=%5B%5D&linkingFilter=%7B%22filters%22%3A%7B%7D%2C%22operations%22%3A%7B%7D%7D" target="_blank">
+        <button style="
+            background-color:#099ec8;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            font-size:16px;
+            border-radius:8px;
+            cursor:pointer;
+            margin-right:10px;
+        ">
+            📥 Download Projects Dataset
+        </button>
+    </a>
+    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=7&tableId=Organizations&activeSortSpec=%5B119%5D&filters=%5B%5D&linkingFilter=%7B%22filters%22%3A%7B%7D%2C%22operations%22%3A%7B%7D%7D" target="_blank">
+        <button style="
+            background-color:#099ec8;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            font-size:16px;
+            border-radius:8px;
+            cursor:pointer;
+        ">
+            📥 Download Organisations Dataset
+        </button>
+    </a>
+    </p>
+    """, unsafe_allow_html=True
+)
 
 
 # --- Define palette ---
@@ -734,6 +742,9 @@ with tab_topics:
 # ==========================
 # TAB 8: Organisations data
 # ==========================
+
+import pycountry_convert as pc
+import pycountry
 
 def _f_plot_dataframe_as_horizontal_bars(
         df: pd.DataFrame, 
