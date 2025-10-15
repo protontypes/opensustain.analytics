@@ -216,13 +216,13 @@ with tab1:
         plot_bgcolor="white",
         paper_bgcolor="white",
         margin=dict(l=220, r=50, t=0, b=20),
-        title_font=dict(size=30, family="Arial", color="#099ec8"),
-        font=dict(size=20, family="Arial")
+        title_font=dict(size=30, family="Open Sans", color="#099ec8"),
+        font=dict(size=20, family="Open Sans")
     )
 
     fig1.update_yaxes(
         autorange="reversed",
-        tickfont=dict(family="Arial Black", size=20, color="black")
+        tickfont=dict(family="Open Sans", size=20, color="black")
     )
 
     # Update hover template
@@ -248,9 +248,7 @@ with tab1:
 # ==========================
 # TAB 3: Sunburst
 # ==========================
-# ==========================
-# TAB 3: Sunburst
-# ==========================
+
 with tab4:
     st.header("🌎 The Open Source Sustainability Ecosystem")
 
@@ -330,14 +328,23 @@ with tab_rankings:
     st.header("📊 Project Rankings by Various Metrics")
 
     df_rank = df.copy()
-    df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']] = \
-        df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds']].fillna(0)
+    df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds','downloads_last_month']] = \
+        df_rank[['contributors','citations','total_commits','total_number_of_dependencies','stars','score','dds','downloads_last_month']].fillna(0)
     df_rank['project_names_link'] = df_rank.apply(lambda row: text_to_link(row['project_names'], row['git_url']), axis=1)
 
     # --- Metric selection ---
     metric = st.selectbox(
         "Select Ranking Metric:",
-        options=["score", "dds", "contributors", "citations", "total_commits", "total_number_of_dependencies", "stars"],
+        options=[
+            "score",
+            "dds",
+            "contributors",
+            "citations",
+            "total_commits",
+            "total_number_of_dependencies",
+            "stars",
+            "downloads_last_month"  # ✅ Added new metric
+        ],
         format_func=lambda x: {
             "score": "Ecosyste.ms Score",
             "dds": "Development Distribution Score",
@@ -345,7 +352,8 @@ with tab_rankings:
             "citations": "Citations",
             "total_commits": "Total Commits",
             "total_number_of_dependencies": "Total Dependencies",
-            "stars": "Stars"
+            "stars": "Stars",
+            "downloads_last_month": "Downloads (Last Month)"  # ✅ Friendly name
         }[x]
     )
 
@@ -418,6 +426,7 @@ with tab_rankings:
 
 
 
+
 # ==========================
 # TAB 6: Categorical Distributions
 # ==========================
@@ -467,8 +476,8 @@ with tab_distributions:
             paper_bgcolor="white",
             margin=dict(l=220, r=50, t=50, b=20),
             font=dict(size=18),
-            yaxis_tickfont=dict(size=18, family="Arial"),
-            yaxis_title_font=dict(size=20, family="Arial Black"),
+            yaxis_tickfont=dict(size=18, family="Open Sans"),
+            yaxis_title_font=dict(size=20, family="Open Sans"),
         )
 
         st.plotly_chart(fig_commit_activity)
@@ -989,8 +998,8 @@ with tab_org_sunburst:
         margin=dict(l=2, r=2, t=50, b=2),
         plot_bgcolor="white",
         paper_bgcolor="white",
-        font=dict(size=20, family="Arial"),
-        title_font=dict(size=30, family="Arial", color="#099ec8")
+        font=dict(size=20, family="Open Sans"),
+        title_font=dict(size=30, family="Open Sans", color="#099ec8")
     )
 
     st.plotly_chart(fig_org_sun, use_container_width=True)
@@ -1010,6 +1019,12 @@ with tab_org_subcat:
     # Fill missing values and ensure strings
     for col in ['organization_name', 'organization_sub_category']:
         df_org_subcat[col] = df_org_subcat[col].fillna("Unknown").astype(str)
+
+    # --- Split multiple subcategories separated by commas ---
+    df_org_subcat['organization_sub_category'] = df_org_subcat['organization_sub_category'].apply(
+        lambda x: [s.strip() for s in x.split(',') if s.strip()]
+    )
+    df_org_subcat = df_org_subcat.explode('organization_sub_category')  # 🔥 expands into separate rows
 
     # Filter out empty names
     df_org_subcat = df_org_subcat[
@@ -1078,9 +1093,10 @@ with tab_org_subcat:
             margin=dict(l=2, r=2, t=50, b=2),
             plot_bgcolor="white",
             paper_bgcolor="white",
-            font=dict(size=20, family="Arial"),
-            title_font=dict(size=30, family="Arial", color="#099ec8")
+            font=dict(size=20, family="Open Sans"),
+            title_font=dict(size=30, family="Open Sans", color="#099ec8")
         )
 
         st.plotly_chart(fig_org_subcat_sun, use_container_width=True)
+
 
