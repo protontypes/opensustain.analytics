@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Data: Ecosyste.ms](https://img.shields.io/badge/Data%20Backend-Ecosyste.ms-blueviolet)](https://ecosyste.ms)
 
-**OpenSustain Analytics** is an interactive **Streamlit dashboard** that visualizes and explores the open-source ecosystem for **climate and sustainability technologies**.  
+**OpenSustain Analytics** is an interactive **Streamlit dashboard** that visualizes and explores the open-source ecosystem for **climate and sustainability technologies**.
 It provides insight into project activity, community engagement, and metadata across hundreds of sustainability-related open-source repositories.
 
 See a live Dashboard at: [Opensustain-analytics.streamlit.app](https://opensustain-analytics.streamlit.app/)
@@ -18,22 +18,22 @@ See a live Dashboard at: [Opensustain-analytics.streamlit.app](https://opensusta
 
 ## 🚀 Features
 
-- **🌎 Sustainability Ecosystem (Sunburst)**  
+- **🌎 Sustainability Ecosystem (Sunburst)**
   Interactive visualization of the open sustainability landscape — from categories down to individual projects.
 
-- **📈 Age vs. Sub-Category (Scatter Plot)**  
+- **📈 Age vs. Sub-Category (Scatter Plot)**
   Displays project age distribution across sub-categories, with bubble sizes representing contributor counts.
 
-- **🏆 Download Ranking**  
+- **🏆 Download Ranking**
   Ranks the most-downloaded open-source sustainability packages.
 
-- **📊 Project Rankings**  
+- **📊 Project Rankings**
   Sort projects by contributors, commits, citations, stars, and Ecosyste.ms scores.
 
-- **🏅 Leaderboard**  
+- **🏅 Leaderboard**
   Multi-metric leaderboard comparing projects across multiple indicators.
 
-- **📊 Categorical Distributions**  
+- **📊 Categorical Distributions**
   Shows distributions for licenses, programming languages, presence of contributing guides, codes of conduct, and ecosystems.
 
 ---
@@ -85,4 +85,3 @@ The dashboard uses a dataset called `projects.csv` with the following columns:
     ```bash
     python3 -m streamlit run streamlit-app-tab.py
     ```
-
