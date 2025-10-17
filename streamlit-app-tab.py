@@ -176,6 +176,7 @@ category_colors = {
 with tab1:
     st.header("⏳Projects over Age")
 
+
     # -------------------------------
     # Dropdown for bubble size metric
     # -------------------------------
@@ -203,7 +204,7 @@ with tab1:
     ).fillna(0)
 
     # Scale bubble size for better visualization
-    size_scaled = np.sqrt(df[selected_size_column]) * 20 + 5  # keep minimum size > 0
+    size_scaled = np.sqrt(df[selected_size_column]) * 20 + 5  # minimum size > 0
 
     # -------------------------------
     # Scatter plot
@@ -211,7 +212,7 @@ with tab1:
     fig1 = px.scatter(
         df,
         x="project_age",
-        y="category_sub",
+        y="sub_category",  # show only sub-category on Y-axis
         color="category",
         color_discrete_map=category_colors,
         size=size_scaled,
@@ -233,10 +234,10 @@ with tab1:
         labels={
             "project_names_link": "Project",
             "project_age": "Project Age (Years)",
-            "category_sub": "",
+            "sub_category": "",  # only sub-category on axis
             selected_size_column: selected_size_label,
         },
-        title=f" ",
+        title=" ",
         template="plotly_white",
     )
 
@@ -246,7 +247,7 @@ with tab1:
     shapes = []
     categories = df["category"].unique()
     for idx, cat in enumerate(categories):
-        subcats = df[df["category"] == cat]["category_sub"].unique()
+        subcats = df[df["category"] == cat]["sub_category"].unique()
         if len(subcats) > 0:
             shapes.append(
                 dict(
@@ -267,7 +268,7 @@ with tab1:
     fig1.update_layout(
         shapes=shapes,
         showlegend=False,
-        height=1400 + 20 * df["category_sub"].nunique(),
+        height=1400 + 20 * df["sub_category"].nunique(),
         plot_bgcolor="white",
         paper_bgcolor="white",
         margin=dict(l=220, r=50, t=0, b=20),
@@ -276,10 +277,13 @@ with tab1:
     )
 
     fig1.update_yaxes(
-        autorange="reversed", tickfont=dict(family="Open Sans", size=20, color="black")
+        autorange="reversed",
+        tickfont=dict(family="Open Sans", size=20, color="black")
     )
 
-    # Update hover template
+    # -------------------------------
+    # Hover template
+    # -------------------------------
     fig1.update_traces(
         hovertemplate="<br>".join(
             [
