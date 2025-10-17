@@ -163,7 +163,7 @@ category_colors = {
         "🏆 Organisations by Ecosyste.ms Score",
         "⏳ Project Age vs Sub-Category",
         "🧩 Project Attributes",
-        "🏷️ GitHub Topics & Keywords",
+        "🏷️ Topics & Keywords",
         "🏢 Organisations",
         "🌐 Projects by Organisation",
         "🏢 Organisations by Sub-Category",
@@ -695,10 +695,10 @@ with tab_distributions:
 
 
 # ==========================
-# TAB 7: GitHub Topics & Keywords (fixed heatmap Y-axis)
+# TAB 7: Topics & Keywords (fixed heatmap Y-axis)
 # ==========================
 with tab_topics:
-    st.header("💡 GitHub Topics and Keywords")
+    st.header("💡 Topics and Keywords")
 
     # --- Load README keywords ---
     try:
@@ -1239,119 +1239,12 @@ with tab_org_sunburst:
 # TAB 10: Organisations by Sub-Categories Sunburst
 # ==========================
 
-with tab_org_subcat:
-    st.header("🏢 Organisations by Sub-Category Overview")
-    st.caption(
-        "Sunburst showing organisations grouped by project sub-categories, colored by sub-category."
-    )
-
-    # Copy and clean the dataframe
-    df_org_subcat = df_organisations.copy()
-
-    # Fill missing values and ensure strings
-    for col in ["organization_name", "organization_sub_category"]:
-        df_org_subcat[col] = df_org_subcat[col].fillna("Unknown").astype(str)
-
-    # --- Split multiple subcategories separated by commas ---
-    df_org_subcat["organization_sub_category"] = df_org_subcat[
-        "organization_sub_category"
-    ].apply(lambda x: [s.strip() for s in x.split(",") if s.strip()])
-    df_org_subcat = df_org_subcat.explode(
-        "organization_sub_category"
-    )  # 🔥 expands into separate rows
-
-    # Filter out empty names
-    df_org_subcat = df_org_subcat[
-        (df_org_subcat["organization_name"] != "")
-        & (df_org_subcat["organization_sub_category"] != "")
-    ]
-
-    if df_org_subcat.empty:
-        st.warning(
-            "No organisations with sub-categories found. Please check your data."
-        )
-    else:
-        # Add root for sunburst
-        df_org_subcat["root"] = (
-            '<b style="font-size:40px;"><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech </br> </br> </br> Organisations by Sub-Category</a></b>'
-        )
-
-        # Map colors from the category_colors palette, applied to sub-categories
-        unique_subcats = df_org_subcat["organization_sub_category"].unique()
-        color_palette = list(category_colors.values())
-        subcat_colors = {
-            subcat: color_palette[i % len(color_palette)]
-            for i, subcat in enumerate(unique_subcats)
-        }
-
-        # Create sunburst
-        fig_org_subcat_sun = px.sunburst(
-            df_org_subcat,
-            path=["root", "organization_sub_category", "organization_name"],
-            color="organization_sub_category",
-            color_discrete_map=subcat_colors,
-            maxdepth=2,
-            custom_data=["organization_name", "organization_sub_category"],
-            title=" ",
-        )
-
-        # Make root white
-        if hasattr(fig_org_subcat_sun.data[0].marker, "colors"):
-            colors = list(fig_org_subcat_sun.data[0].marker.colors)
-            colors[0] = "white"
-            fig_org_subcat_sun.data[0].marker.colors = colors
-
-        # Hover template
-        fig_org_subcat_sun.update_traces(
-            insidetextorientation="radial",
-            hovertemplate="<br>".join(
-                ["Sub-Category: %{customdata[1]}", "Organisation: %{customdata[0]}"]
-            ),
-        )
-
-        # Add OpenSustain logo in center
-        fig_org_subcat_sun.add_layout_image(
-            dict(
-                source="https://opensustain.tech/logo.png",
-                xref="paper",
-                yref="paper",
-                x=0.5,
-                y=0.58,
-                sizex=0.10,
-                sizey=0.10,
-                xanchor="center",
-                yanchor="middle",
-                layer="above",
-                sizing="contain",
-                opacity=1,
-            )
-        )
-
-        # Layout
-        fig_org_subcat_sun.update_layout(
-            height=1600,
-            margin=dict(l=2, r=2, t=50, b=2),
-            plot_bgcolor="white",
-            paper_bgcolor="white",
-            font=dict(size=20, family="Open Sans"),
-            title_font=dict(size=30, family="Open Sans", color="#099ec8"),
-        )
-
-        st.plotly_chart(fig_org_subcat_sun, use_container_width=True)
-
 with tab_top_org_score:
     st.header("Top Organisations by Sum of Ecosyste.ms Scores")
-    st.caption(
-        "Aggregates the Ecosyste.ms project scores for each organisation using the `organization_projects` field from organisations.csv."
-    )
+    st.caption("Aggregates the Ecosyste.ms project scores for each organisation using the `organization_projects` field from organisations.csv.")
 
-    if (
-        "organization_projects" not in df_organisations.columns
-        or "git_url" not in df.columns
-    ):
-        st.warning(
-            "Missing required fields: `organization_projects` in organisations.csv or `git_url` in projects.csv."
-        )
+    if "organization_projects" not in df_organisations.columns or "git_url" not in df.columns:
+        st.warning("Missing required fields: `organization_projects` in organisations.csv or `git_url` in projects.csv.")
     else:
         # Ensure numeric scores
         df["score"] = pd.to_numeric(df["score"], errors="coerce").fillna(0)
@@ -1360,12 +1253,16 @@ with tab_top_org_score:
         project_score_map = df.set_index("git_url")["score"].to_dict()
 
         # Split projects per organisation
-        df_organisations["organization_projects"] = (
-            df_organisations["organization_projects"].fillna("").astype(str)
+        df_organisations["organization_projects"] = df_organisations["organization_projects"].fillna("").astype(str)
+        df_organisations["projects_list"] = df_organisations["organization_projects"].apply(
+            lambda s: [p.strip() for p in s.split(",") if p.strip() != ""]
         )
-        df_organisations["projects_list"] = df_organisations[
-            "organization_projects"
-        ].apply(lambda s: [p.strip() for p in s.split(",") if p.strip() != ""])
+        df_organisations["organization_description"] = df_organisations.get(
+            "organization_description", ""
+        ).fillna("No description available")
+        df_organisations["organization_icon_url"] = df_organisations.get(
+            "organization_icon_url", ""
+        ).fillna("")
 
         # Compute aggregated score
         aggregated_data = []
@@ -1373,28 +1270,38 @@ with tab_top_org_score:
             org_name = row.get("organization_name", "Unknown")
             projects = row["projects_list"]
             total_score = sum(project_score_map.get(p, 0) for p in projects)
+            description = row["organization_description"]
+            icon_url = row["organization_icon_url"]
             aggregated_data.append(
-                {"organization_name": org_name, "total_score": total_score}
+                {
+                    "organization_name": org_name,
+                    "total_score": total_score,
+                    "organization_description": description,
+                    "organization_icon_url": icon_url,
+                }
             )
 
         df_agg_scores = pd.DataFrame(aggregated_data)
+
         if df_agg_scores.empty:
             st.warning("No organisation data found to compute scores.")
         else:
+            # Sort by total score descending
             df_agg_scores = df_agg_scores.sort_values(
                 "total_score", ascending=False
             ).reset_index(drop=True)
 
-            # Slider with default 60
+            # Slider for top N organisations
             top_n = st.slider(
                 "Number of organisations to display:",
                 min_value=5,
                 max_value=len(df_agg_scores),
                 value=min(60, len(df_agg_scores)),
             )
+
             df_top = df_agg_scores.head(top_n)
 
-            # Horizontal bar chart
+            # Create horizontal bar chart
             fig_score = px.bar(
                 df_top,
                 x="total_score",
@@ -1403,14 +1310,52 @@ with tab_top_org_score:
                 text=df_top["total_score"].round(2),
                 color="total_score",
                 color_continuous_scale="Tealgrn",
-                title=f"Top {top_n} Organisations by Combined Ecosyste.ms Project Score",
+                hover_data={
+                    "total_score": True,
+                    "organization_description": True,
+                    "organization_name": False,
+                },
             )
+
+            # Reverse y-axis for leaderboard
             fig_score.update_layout(
                 height=40 * len(df_top) + 200,
-                yaxis=dict(title="Organisation"),
+                yaxis=dict(
+                    title="Organisation",
+                    categoryorder="array",
+                    categoryarray=df_top["organization_name"][::-1],
+                ),
                 xaxis=dict(title="Total Ecosyste.ms Score"),
                 plot_bgcolor="white",
                 paper_bgcolor="white",
                 margin=dict(l=200, r=50, t=50, b=30),
+                showlegend=False,
+                coloraxis_showscale=False,
             )
+
+            # Make bar text visible
+            fig_score.update_traces(textposition="outside", textfont_size=12)
+
+            # Overlay logos on the left using paper coordinates
+            logo_images = []
+            for idx, row in df_top.iterrows():
+                if row["organization_icon_url"]:
+                    logo_images.append(
+                        dict(
+                            source=row["organization_icon_url"],
+                            xref="paper",  # relative to chart area
+                            yref="y",
+                            x=0.01,  # small offset from left margin
+                            y=row["organization_name"],
+                            xanchor="left",
+                            yanchor="middle",
+                            sizex=0.05,  # fraction of chart width
+                            sizey=0.4,   # relative to bar height
+                            layer="above",
+                            sizing="contain",
+                            opacity=1,
+                        )
+                    )
+            fig_score.update_layout(images=logo_images)
+
             st.plotly_chart(fig_score, use_container_width=True)
