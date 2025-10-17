@@ -78,9 +78,9 @@ df["project_names_link"] = (
 
 st.markdown(
     f"""
-    # [OpenSustain.tech](https://opensustain.tech/) Analytics Dashboard
+    # OpenSustain.Analytics Dashboard
     <p>
-    Explore data on the open-source project and organisation ecosystem in environmental sustainability.
+    Explore OpenSustain.tech, the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact.
     All <b>project names</b> and <b>organisation names</b> throughout the dashboard are <b>clickable links</b> that will open the corresponding project or organisation page.
     The data is provided under a <b>Creative Commons CC-BY 4.0 license</b> and is powered by <b><a href="https://ecosyste.ms/">Ecosyste.ms</a></b>.
     You can find <b>Good First Issues</b> in all these projects to start contributing to Open Source in Climate and Sustainability at
@@ -174,7 +174,7 @@ category_colors = {
 # TAB 1: Scatter Plot
 # ==========================
 with tab1:
-    st.header("Open Sustainable Technology: Age vs. Sub-Category")
+    st.header("Projects over Time")
 
     # -------------------------------
     # Dropdown for bubble size metric
@@ -374,7 +374,7 @@ with tab4:
         )
 
         fig.update_layout(
-            height=1400,
+            height=1200,
             title_x=0.5,
             font_size=18,
             dragmode=False,
