@@ -174,7 +174,7 @@ category_colors = {
 # TAB 1: Scatter Plot
 # ==========================
 with tab1:
-    st.header("Projects over Time")
+    st.header("Projects over Age")
 
     # -------------------------------
     # Dropdown for bubble size metric
@@ -398,46 +398,26 @@ with tab_rankings:
     st.header("📊 Project Rankings by Various Metrics")
 
     df_rank = df.copy()
-    df_rank[
-        [
-            "contributors",
-            "citations",
-            "total_commits",
-            "total_number_of_dependencies",
-            "stars",
-            "score",
-            "dds",
-            "downloads_last_month",
-        ]
-    ] = df_rank[
-        [
-            "contributors",
-            "citations",
-            "total_commits",
-            "total_number_of_dependencies",
-            "stars",
-            "score",
-            "dds",
-            "downloads_last_month",
-        ]
-    ].fillna(0)
+    metrics = [
+        "contributors",
+        "citations",
+        "total_commits",
+        "total_number_of_dependencies",
+        "stars",
+        "score",
+        "dds",
+        "downloads_last_month",
+    ]
+    df_rank[metrics] = df_rank[metrics].fillna(0)
     df_rank["project_names_link"] = df_rank.apply(
         lambda row: text_to_link(row["project_names"], row["git_url"]), axis=1
     )
+    df_rank["avatar_url"] = df_rank.get("avatar_url", "").fillna("")
 
-    # --- Metric selection ---
+    # Metric selection
     metric = st.selectbox(
         "Select Ranking Metric:",
-        options=[
-            "score",
-            "dds",
-            "contributors",
-            "citations",
-            "total_commits",
-            "total_number_of_dependencies",
-            "stars",
-            "downloads_last_month",
-        ],
+        options=metrics,
         format_func=lambda x: {
             "score": "Ecosyste.ms Score",
             "dds": "Development Distribution Score",
@@ -450,85 +430,75 @@ with tab_rankings:
         }[x],
     )
 
-    # --- Category filter dropdown ---
+    # Category filter
     categories = sorted(df_rank["category"].dropna().unique().tolist())
     category_options = ["All Categories"] + categories
+    selected_category = st.selectbox("Filter by Category:", options=category_options, index=0)
 
-    selected_category = st.selectbox(
-        "Filter by Category:",
-        options=category_options,
-        index=0,  # Default to "All Categories"
-        help="Select a category to filter the ranking. Default shows all.",
-    )
-
-    # --- Apply filter only if a specific category is selected ---
     if selected_category != "All Categories":
         df_rank = df_rank[df_rank["category"] == selected_category]
 
-    # --- Number of projects to show ---
+    # Number of projects
     number_of_projects_to_show = st.slider("Number of projects to show:", 10, 300, 50)
 
-    # --- Select and rank projects ---
+    # Top projects
     top_projects = df_rank.nlargest(number_of_projects_to_show, metric)
     top_projects.index.name = "ranking"
 
-    # --- Bar chart ---
+    # --- Horizontal bar chart with gradient ---
     fig_rank = px.bar(
         top_projects,
         x=metric,
         y="project_names_link",
-        custom_data=[
-            "project_names_link",
-            metric,
-            "category",
-            "sub_category",
-            "language",
-            "git_url",
-            top_projects.index + 1,
-        ],
         orientation="h",
-        color="category",
-        color_discrete_map=category_colors,
-        title=(
-            f"Top Projects by {metric.replace('_', ' ').title()}"
-            + (
-                ""
-                if selected_category == "All Categories"
-                else f" — {selected_category}"
-            )
-        ),
-    )
-
-    fig_rank.update_layout(
-        height=number_of_projects_to_show * 20 + 200,
-        width=1000,
-        xaxis_title="",
-        yaxis_title=None,
-        dragmode=False,
-        plot_bgcolor="white",
-        yaxis_categoryorder="total descending",
-        legend_title=None,
-        xaxis={"side": "top"},
+        color=metric,
+        color_continuous_scale="Tealgrn",
+        text=top_projects[metric].round(2),
+        custom_data=[top_projects.index + 1],  # ranking only
     )
 
     fig_rank.update_traces(
-        hovertemplate="<extra></extra>"
-        + "<br>".join(
-            [
-                "Ranking: <b>%{customdata[6]}</b>",
-                "Project: %{customdata[0]}",
-                f"{metric.replace('_', ' ').title()}: <b>%{{customdata[1]}}</b>",
-                "Category: <b>%{customdata[2]}</b>",
-                "Sub-Category: <b>%{customdata[3]}</b>",
-                "Language: <b>%{customdata[4]}</b>",
-            ]
-        )
+        textposition="outside",
+        textfont_size=12,
+        hovertemplate="Ranking: <b>%{customdata[0]+1}</b><br>%{y}<extra></extra>"
     )
 
-    fig_rank.update_xaxes(showspikes=False)
-    fig_rank.update_yaxes(showspikes=False, autorange="reversed")
+    # Layout cleanup & sizing to match organisation leaderboard
+    fig_rank.update_layout(
+        width=1200,  # wider chart
+        height=number_of_projects_to_show * 40 + 200,  # more spacing between bars
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        margin=dict(l=250, r=50, t=50, b=30),
+        yaxis=dict(autorange="reversed"),  # leaderboard top-down
+        showlegend=False,
+        coloraxis_showscale=False,  # remove color bar
+    )
 
-    st.plotly_chart(fig_rank)
+    # Overlay project logos, aligned with bars
+    logo_images = []
+    for idx, row in top_projects.iterrows():
+        if row["avatar_url"]:
+            logo_images.append(
+                dict(
+                    source=row["avatar_url"],
+                    xref="paper",
+                    yref="y",
+                    x=0.005,        # slightly right from left margin
+                    y=row["project_names_link"],
+                    xanchor="left",
+                    yanchor="middle",
+                    sizex=0.04,
+                    sizey=0.6,
+                    layer="above",
+                    sizing="contain",
+                    opacity=1,
+                )
+            )
+    fig_rank.update_layout(images=logo_images)
+
+    st.plotly_chart(fig_rank, use_container_width=True)
+
 
 
 # ==========================
@@ -970,6 +940,7 @@ with tab_organisations:
     )
     st.plotly_chart(fig_top_org_listed_proj, use_container_width=True)
 
+
     # --- Organisations by type ---
     st.subheader("Organisations by type")
     df_orgs_by_type, x_orgs_by_type = _f_count_by_column(
@@ -1095,7 +1066,7 @@ with tab_organisations:
     st.plotly_chart(fig_map, use_container_width=True)
 
 # ==========================
-# TAB 9: Organisations by Projects
+# TAB 9: Projects by Organizations
 # ==========================
 
 with tab_org_sunburst:
