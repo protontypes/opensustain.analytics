@@ -921,6 +921,7 @@ def _f_count_by_column(
     df_out = df_0.groupby(column).sum().reset_index()
     return df_out, count_column
 
+
 with tab_organisations:
     st.header("Organisations")
 
@@ -932,8 +933,6 @@ with tab_organisations:
     top_n_orgs_projs = st.slider(
         "Number of organisations to display:", 10, len(df_organisations), 30
     )
-
-    # Horizontal bar chart
     fig_top_org_listed_proj = _f_plot_dataframe_as_horizontal_bars(
         df=df_organisations,
         x_column="total_listed_projects_in_organization",
@@ -943,44 +942,8 @@ with tab_organisations:
         y_title="Organisation name",
         x_title="Number of projects listed",
     )
-
-    # --- Add organization logos just inside the beginning of each bar ---
-    top_orgs_df = df_organisations.nlargest(
-        top_n_orgs_projs, "total_listed_projects_in_organization"
-    )
-    N = len(top_orgs_df)
-    max_bar = top_orgs_df["total_listed_projects_in_organization"].max()
-
-    for i, org_name in enumerate(top_orgs_df["organization_name"]):
-        logo_url = top_orgs_df.loc[
-            top_orgs_df["organization_name"] == org_name, "organization_icon_url"
-        ].values[0]
-        if pd.notna(logo_url) and logo_url.strip() != "":
-            # vertical position in paper coordinates
-            y_paper = (i + 0.5) / N
-
-            # x just inside the beginning of the bar (2% of max bar value)
-            x_paper = 0.0001 * top_orgs_df.loc[top_orgs_df["organization_name"] == org_name,
-                                             "total_listed_projects_in_organization"].values[0] / max_bar
-
-            fig_top_org_listed_proj.add_layout_image(
-                dict(
-                    source=logo_url,
-                    xref="paper",
-                    yref="paper",
-                    x=x_paper,
-                    y=y_paper,
-                    xanchor="left",
-                    yanchor="middle",
-                    sizex=0.05,  # width relative to paper
-                    sizey=1.0 / N * 0.8,  # height fits the bar
-                    layer="above",
-                    sizing="contain",
-                    opacity=1,
-                )
-            )
-
     st.plotly_chart(fig_top_org_listed_proj, use_container_width=True)
+
 
     # --- Organisations by type ---
     st.subheader("Organisations by type")
@@ -1004,7 +967,10 @@ with tab_organisations:
         df=df_organisations, column="location_country"
     )
     top_n_orgs_countries = st.slider(
-        "Number of countries to display (organisations):", 10, len(df_countries_count), 30
+        "Number of countries to display (organisations):",
+        10,
+        len(df_countries_count),
+        30,
     )
     fig_top_org_countries = _f_plot_dataframe_as_horizontal_bars(
         df=df_countries_count,
@@ -1033,7 +999,9 @@ with tab_organisations:
         except:
             return "Unknown"
 
-    df_continent["continent"] = df_continent["location_country"].apply(country_to_continent)
+    df_continent["continent"] = df_continent["location_country"].apply(
+        country_to_continent
+    )
     df_continent_counts = df_continent["continent"].value_counts().reset_index()
     df_continent_counts.columns = ["continent", "count"]
 
@@ -1064,25 +1032,35 @@ with tab_organisations:
         count_column="total_listed_projects_in_organization",
     )
 
+    # Ensure ISO alpha-3 country codes for the map (exclude 'Global' and 'Unknown')
     def country_to_alpha3(country_name):
-        if pd.isna(country_name) or country_name.strip().lower() in ["unknown", "global"]:
+        if pd.isna(country_name) or country_name.strip().lower() in [
+            "unknown",
+            "global",
+        ]:
             return None
         try:
             return pycountry.countries.lookup(country_name).alpha_3
         except:
             return None
 
-    df_projects_country["iso_alpha"] = df_projects_country["location_country"].apply(country_to_alpha3)
+    df_projects_country["iso_alpha"] = df_projects_country["location_country"].apply(
+        country_to_alpha3
+    )
     df_projects_country = df_projects_country.dropna(subset=["iso_alpha"])
+
+    # Use the same column for coloring as the number of projects
+    color_column = x_projects_country
 
     fig_map = px.choropleth(
         df_projects_country,
         locations="iso_alpha",
-        color=x_projects_country,
+        color=color_column,
         hover_name="location_country",
-        color_continuous_scale="Turbo",
+        color_continuous_scale="Turbo",  # improved for small differences
         title="Total Number of Projects per Country",
     )
+
     fig_map.update_layout(
         height=700,
         margin=dict(l=10, r=10, t=50, b=10),
