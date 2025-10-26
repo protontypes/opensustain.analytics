@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import ast
 import plotly.graph_objects as go
 from datetime import datetime, timedelta, timezone
+import country_converter as coco
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
@@ -200,9 +201,19 @@ category_colors = {
 # ==========================
 # TAB 1: Scatter Plot
 # ==========================
+# ==========================
+# TAB 1: Scatter Plot
+# ==========================
 with tab1:
-    st.header("⏳Projects over Age")
+    st.header("⏳ Projects over Age")
 
+    # -------------------------------
+    # Remove extra gap under selectbox
+    # -------------------------------
+    st.markdown(
+        "<style>div.row-widget.stSelectbox {margin-bottom: -20px;}</style>",
+        unsafe_allow_html=True,
+    )
 
     # -------------------------------
     # Dropdown for bubble size metric
@@ -264,7 +275,6 @@ with tab1:
             "sub_category": "",  # only sub-category on axis
             selected_size_column: selected_size_label,
         },
-        title=" ",
         template="plotly_white",
     )
 
@@ -331,6 +341,7 @@ with tab1:
     )
 
     st.plotly_chart(fig1, use_container_width=True)
+
 
 # ==========================
 # TAB 3: Sunburst
@@ -538,9 +549,8 @@ with tab4:
 # ==========================
 # TAB 4: Project Rankings
 # ==========================
-
 with tab_rankings:
-    st.header("📊 Project Rankings by Various Metrics")
+    st.header("Project Rankings by Various Metrics")
 
     df_rank = df.copy()
     metrics = [
@@ -559,7 +569,27 @@ with tab_rankings:
     )
     df_rank["avatar_url"] = df_rank.get("avatar_url", "").fillna("")
 
+    # --------------------------
+    # Filter inactive projects
+    # --------------------------
+    # Consider project active if latest_commit_activity within last year
+    one_year_ago = pd.Timestamp.now(tz='UTC') - pd.Timedelta(days=365)
+    df_rank["latest_commit_activity_dt"] = pd.to_datetime(
+        df_rank["latest_commit_activity"], utc=True, errors="coerce"
+    )
+    df_rank["is_active"] = df_rank["latest_commit_activity_dt"] >= one_year_ago
+
+    show_only_active = st.checkbox(
+        "Show only active projects (at least one commit in the last year)", 
+        value=True,
+        key="filter_active_projects"
+    )
+    if show_only_active:
+        df_rank = df_rank[df_rank["is_active"]]
+
+    # --------------------------
     # Metric selection
+    # --------------------------
     metric = st.selectbox(
         "Select Ranking Metric:",
         options=metrics,
@@ -575,22 +605,32 @@ with tab_rankings:
         }[x],
     )
 
+    # --------------------------
     # Category filter
+    # --------------------------
     categories = sorted(df_rank["category"].dropna().unique().tolist())
     category_options = ["All Categories"] + categories
-    selected_category = st.selectbox("Filter by Category:", options=category_options, index=0)
+    selected_category = st.selectbox(
+        "Filter by Category:", options=category_options, index=0, key="ranking_category_filter"
+    )
 
     if selected_category != "All Categories":
         df_rank = df_rank[df_rank["category"] == selected_category]
 
-    # Number of projects
-    number_of_projects_to_show = st.slider("Number of projects to show:", 10, 300, 50)
+    # --------------------------
+    # Number of projects to show
+    # --------------------------
+    number_of_projects_to_show = st.slider("Number of projects to show:", 10, 300, 50, key="ranking_slider")
 
+    # --------------------------
     # Top projects
+    # --------------------------
     top_projects = df_rank.nlargest(number_of_projects_to_show, metric)
     top_projects.index.name = "ranking"
 
-    # --- Horizontal bar chart with gradient ---
+    # --------------------------
+    # Horizontal bar chart
+    # --------------------------
     fig_rank = px.bar(
         top_projects,
         x=metric,
@@ -608,19 +648,18 @@ with tab_rankings:
         hovertemplate="Ranking: <b>%{customdata[0]+1}</b><br>%{y}<extra></extra>"
     )
 
-    # Layout cleanup & sizing to match organisation leaderboard
     fig_rank.update_layout(
-        width=1200,  # wider chart
-        height=number_of_projects_to_show * 40 + 200,  # more spacing between bars
+        width=1200,
+        height=number_of_projects_to_show * 40 + 200,
         plot_bgcolor="white",
         paper_bgcolor="white",
         margin=dict(l=250, r=50, t=50, b=30),
-        yaxis=dict(autorange="reversed"),  # leaderboard top-down
+        yaxis=dict(autorange="reversed"),
         showlegend=False,
-        coloraxis_showscale=False,  # remove color bar
+        coloraxis_showscale=False,
     )
 
-    # Overlay project logos, aligned with bars
+    # Overlay project logos
     logo_images = []
     for idx, row in top_projects.iterrows():
         if row["avatar_url"]:
@@ -629,7 +668,7 @@ with tab_rankings:
                     source=row["avatar_url"],
                     xref="paper",
                     yref="y",
-                    x=0.005,        # slightly right from left margin
+                    x=0.005,
                     y=row["project_names_link"],
                     xanchor="left",
                     yanchor="middle",
@@ -650,7 +689,7 @@ with tab_rankings:
 # TAB 6: Categorical Distributions
 # ==========================
 with tab_distributions:
-    st.header("📊 Distribution of Key Project Attributes")
+    st.header("Distribution of Key Project Attributes")
 
     # ==============================
     # Recent Commit Activity
@@ -813,7 +852,7 @@ with tab_distributions:
 # TAB 7: Topics & Keywords (fixed heatmap Y-axis)
 # ==========================
 with tab_topics:
-    st.header("💡 Topics and Keywords")
+    st.header("Topics and Keywords")
 
     # --- Load README keywords ---
     try:
@@ -1003,10 +1042,9 @@ with tab_topics:
 # TAB 8: Organisations data
 # ==========================
 
-import pycountry_convert as pc
-import pycountry
+cc = coco.CountryConverter()
 
-
+# --- Helper functions ---
 def _f_plot_dataframe_as_horizontal_bars(
     df: pd.DataFrame,
     x_column: str,
@@ -1016,9 +1054,7 @@ def _f_plot_dataframe_as_horizontal_bars(
     x_title: str | None = None,
     y_title: str | None = None,
 ) -> go.Figure:
-    df_topx = (
-        df.sort_values(x_column, ascending=False).reset_index(drop=True).head(top_n)
-    )
+    df_topx = df.sort_values(x_column, ascending=False).reset_index(drop=True).head(top_n)
 
     fig_topx = px.bar(
         df_topx,
@@ -1026,7 +1062,7 @@ def _f_plot_dataframe_as_horizontal_bars(
         y=y_column,
         orientation="h",
         text=x_column,
-        color=np.log10(df_topx[x_column] + 1),  # log10 color scale
+        color=np.log10(df_topx[x_column] + 1),
         color_continuous_scale="Tealgrn",
         title=title,
     )
@@ -1038,64 +1074,68 @@ def _f_plot_dataframe_as_horizontal_bars(
         paper_bgcolor="white",
         margin=dict(l=220, r=50, t=50, b=20),
     )
-    # explicit colorbar title
     fig_topx.update_coloraxes(colorbar=dict(title="log10(Count)"))
 
     if x_title:
         fig_topx.update_layout(xaxis={"title": x_title})
     if y_title:
-        fig_topx.update_layout(xaxis={"title": y_title})
+        fig_topx.update_layout(yaxis={"title": y_title})
 
     return fig_topx
 
 
-def _f_count_by_column(
-    df: pd.DataFrame, column: str, count_column: str | None = None
-) -> tuple[pd.DataFrame, str]:
-    if count_column is None:
-        df_0 = df[[column]].copy()
-        df_0["count"] = 1
-        count_column = "count"
-    else:
-        df_0 = df[[column, count_column]].copy()
-
-    df_out = df_0.groupby(column).sum().reset_index()
-    return df_out, count_column
+@st.cache_data(show_spinner=False)
+def process_organisations_data(df_organisations: pd.DataFrame):
+    df_clean = df_organisations[df_organisations["location_country"].notna() & (df_organisations["location_country"].str.strip() != "")]
+    df_clean = df_clean.copy()
+    
+    # Convert country to ISO3 code
+    df_clean["iso_alpha"] = cc.convert(df_clean["location_country"], to="ISO3", not_found=None)
+    df_clean = df_clean.dropna(subset=["iso_alpha"])
+    
+    # Convert country to continent
+    df_clean["continent"] = cc.convert(df_clean["location_country"], to="continent", not_found="Unknown")
+    
+    # Countries count (organisations)
+    df_countries_count = df_clean.groupby("iso_alpha").size().reset_index(name="count")
+    
+    # Continents count
+    df_continent_counts = df_clean["continent"].value_counts().reset_index()
+    df_continent_counts.columns = ["continent", "count"]
+    
+    # Total projects per country
+    df_projects_country = df_clean.groupby("iso_alpha")["total_listed_projects_in_organization"].sum().reset_index()
+    
+    return df_clean, df_countries_count, df_continent_counts, df_projects_country
 
 
 with tab_organisations:
-    st.header("Organisations")
+    st.header("🏢 Organisations Overview")
+
+    df_clean, df_countries_count, df_continent_counts, df_projects_country = process_organisations_data(df_organisations)
 
     # --- Top organisations per number of repositories ---
-    st.subheader("Top organisations per number of repositories")
-    st.caption(
-        "These represent the organisations with most projects listed within OpenSustain.tech."
-    )
-    top_n_orgs_projs = st.slider(
-        "Number of organisations to display:", 10, len(df_organisations), 30
-    )
+    st.subheader("Top Organisations by Number of Projects")
+    top_n_orgs_projs = st.slider("Number of organisations to display:", 10, len(df_organisations), 30)
     fig_top_org_listed_proj = _f_plot_dataframe_as_horizontal_bars(
         df=df_organisations,
         x_column="total_listed_projects_in_organization",
         y_column="organization_name",
-        title=f"Top {top_n_orgs_projs} organisations by number of listed projects",
+        title=f"Top {top_n_orgs_projs} Organisations by Number of Listed Projects",
         top_n=top_n_orgs_projs,
         y_title="Organisation name",
         x_title="Number of projects listed",
     )
     st.plotly_chart(fig_top_org_listed_proj, use_container_width=True)
 
-
     # --- Organisations by type ---
-    st.subheader("Organisations by type")
-    df_orgs_by_type, x_orgs_by_type = _f_count_by_column(
-        df=df_organisations, column="form_of_organization"
-    )
+    st.subheader("Organisations by Type")
+    df_orgs_by_type = df_organisations.groupby("form_of_organization").size().reset_index(name="count")
     fig_orgs_by_type = _f_plot_dataframe_as_horizontal_bars(
         df=df_orgs_by_type,
-        x_column=x_orgs_by_type,
+        x_column="count",
         y_column="form_of_organization",
-        title="Organisations by type of organisation",
+        title="Organisations by Type of Organisation",
         top_n=len(df_orgs_by_type),
         y_title="Organisation type",
         x_title="Number of organisations",
@@ -1103,112 +1143,50 @@ with tab_organisations:
     st.plotly_chart(fig_orgs_by_type, use_container_width=True)
 
     # --- Organisations per country ---
-    st.subheader("Top countries per number of organisations")
-    df_countries_count, x_countries_count = _f_count_by_column(
-        df=df_organisations, column="location_country"
+    st.subheader("Top Countries by Number of Organisations")
+    top_n_orgs_countries = st.slider("Number of countries to display (organisations):", 10, len(df_countries_count), 30)
+    fig_top_org_countries = px.bar(
+        df_countries_count.sort_values("count", ascending=False).head(top_n_orgs_countries),
+        x="count",
+        y="iso_alpha",
+        orientation="h",
+        text="count",
+        color="count",
+        color_continuous_scale="Tealgrn",
+        title=f"Top {top_n_orgs_countries} Countries by Number of Organisations",
     )
-    top_n_orgs_countries = st.slider(
-        "Number of countries to display (organisations):",
-        10,
-        len(df_countries_count),
-        30,
-    )
-    fig_top_org_countries = _f_plot_dataframe_as_horizontal_bars(
-        df=df_countries_count,
-        x_column=x_countries_count,
-        y_column="location_country",
-        title=f"Top {top_n_orgs_countries} countries by number of organisations",
-        top_n=top_n_orgs_countries,
-        y_title="Country / Region",
-        x_title="Number of organisations",
-    )
+    fig_top_org_countries.update_layout(yaxis={"categoryorder": "total ascending"}, height=700)
     st.plotly_chart(fig_top_org_countries, use_container_width=True)
 
     # --- Organisations per continent ---
     st.subheader("Organisations by Continent")
-    df_continent = df_organisations.copy()
-
-    def country_to_continent(country_name):
-        if pd.isna(country_name) or country_name.strip().lower() in ["unknown"]:
-            return "Unknown"
-        if country_name.strip().lower() == "global":
-            return "Global"
-        try:
-            country_code = pc.country_name_to_country_alpha2(country_name)
-            continent_code = pc.country_alpha2_to_continent_code(country_code)
-            return pc.convert_continent_code_to_continent_name(continent_code)
-        except:
-            return "Unknown"
-
-    df_continent["continent"] = df_continent["location_country"].apply(
-        country_to_continent
-    )
-    df_continent_counts = df_continent["continent"].value_counts().reset_index()
-    df_continent_counts.columns = ["continent", "count"]
-
     fig_continent = px.bar(
         df_continent_counts,
         x="count",
         y="continent",
         orientation="h",
         text="count",
-        title="Number of Organisations by Continent",
         color="count",
         color_continuous_scale="Tealgrn",
+        title="Number of Organisations by Continent",
     )
-    fig_continent.update_layout(
-        yaxis={"categoryorder": "total ascending"},
-        height=500,
-        plot_bgcolor="white",
-        paper_bgcolor="white",
-        margin=dict(l=220, r=50, t=50, b=20),
-    )
+    fig_continent.update_layout(yaxis={"categoryorder": "total ascending"}, height=500)
     st.plotly_chart(fig_continent, use_container_width=True)
 
-    # --- Total number of projects per country (choropleth map) ---
-    st.subheader("Total Number of Projects per Country")
-    df_projects_country, x_projects_country = _f_count_by_column(
-        df=df_organisations,
-        column="location_country",
-        count_column="total_listed_projects_in_organization",
-    )
-
-    # Ensure ISO alpha-3 country codes for the map (exclude 'Global' and 'Unknown')
-    def country_to_alpha3(country_name):
-        if pd.isna(country_name) or country_name.strip().lower() in [
-            "unknown",
-            "global",
-        ]:
-            return None
-        try:
-            return pycountry.countries.lookup(country_name).alpha_3
-        except:
-            return None
-
-    df_projects_country["iso_alpha"] = df_projects_country["location_country"].apply(
-        country_to_alpha3
-    )
-    df_projects_country = df_projects_country.dropna(subset=["iso_alpha"])
-
-    # Use the same column for coloring as the number of projects
-    color_column = x_projects_country
-
+    # --- Total number of projects per country (choropleth) ---
+    st.subheader("🌍 Total Number of Projects per Country")
     fig_map = px.choropleth(
         df_projects_country,
         locations="iso_alpha",
-        color=color_column,
-        hover_name="location_country",
-        color_continuous_scale="Turbo",  # improved for small differences
+        color="total_listed_projects_in_organization",
+        hover_name="iso_alpha",
+        color_continuous_scale="Turbo",
         title="Total Number of Projects per Country",
     )
-
-    fig_map.update_layout(
-        height=700,
-        margin=dict(l=10, r=10, t=50, b=10),
-        plot_bgcolor="white",
-        paper_bgcolor="white",
-    )
+    fig_map.update_layout(height=700, margin=dict(l=10, r=10, t=50, b=10))
     st.plotly_chart(fig_map, use_container_width=True)
+
+
 
 
 # ==========================
@@ -1216,7 +1194,7 @@ with tab_organisations:
 # ==========================
 
 with tab_org_sunburst:
-    st.header("🌐 Organisational Projects Overview")
+    st.header("Organisational Projects Overview")
     st.caption(
         "Sunburst showing larger organisations (≥2 projects) and their projects. Click an organisation to open its projects on GitHub or similar platforms."
     )
@@ -1482,7 +1460,7 @@ with tab_top_org_score:
 # ==========================
 
 with tab_org_subcat:
-    st.header("🏢 Organisations by Sub-Category Overview")
+    st.header("Organisations by Sub-Category Overview")
     st.caption("Sunburst showing organisations grouped by project sub-categories, colored by sub-category.")
 
     # Copy and clean the dataframe
