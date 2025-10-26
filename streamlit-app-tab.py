@@ -74,50 +74,60 @@ df["project_names_link"] = (
     + "</a>"
 )
 
-# --- Dashboard Introduction ---
-
+# --- Dashboard Introduction in a card style ---
 st.markdown(
-    f"""
-    # OpenSustain.Analytics Dashboard
-    <p>
-    Explore OpenSustain.tech, the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact.
-    All <b>project names</b> and <b>organisation names</b> throughout the dashboard are <b>clickable links</b> that will open the corresponding project or organisation page.
-    The data is provided under a <b>Creative Commons CC-BY 4.0 license</b> and is powered by <b><a href="https://ecosyste.ms/">Ecosyste.ms</a></b>.
-    You can find <b>Good First Issues</b> in all these projects to start contributing to Open Source in Climate and Sustainability at
-    <a href="https://climatetriage.com/" target="_blank">ClimateTriage.com</a>.
-    </p>
-    <p>
-    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=5&tableId=Projects&activeSortSpec=%5B132%5D&filters=%5B%5D&linkingFilter=%7B%22filters%22%3A%7B%7D%2C%22operations%22%3A%7B%7D%7D" target="_blank">
-        <button style="
-            background-color:#099ec8;
-            color:white;
-            border:none;
-            padding:10px 20px;
-            font-size:16px;
-            border-radius:8px;
-            cursor:pointer;
-            margin-right:10px;
-        ">
-            📥 Download Projects Dataset
-        </button>
-    </a>
-    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=7&tableId=Organizations&activeSortSpec=%5B119%5D&filters=%5B%5D&linkingFilter=%7B%22filters%22%3A%7B%7D%2C%22operations%22%3A%7B%7D%7D" target="_blank">
-        <button style="
-            background-color:#099ec8;
-            color:white;
-            border:none;
-            padding:10px 20px;
-            font-size:16px;
-            border-radius:8px;
-            cursor:pointer;
-        ">
-            📥 Download Organisations Dataset
-        </button>
-    </a>
-    </p>
-    """,
-    unsafe_allow_html=True,
+    """
+<div style="
+    background-color:#f5f7fa;
+    padding:30px;
+    border-radius:12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family:'Open Sans', sans-serif;
+    line-height:1.6;
+    color:#333333;
+">
+
+<h1 style="color:#099ec8; font-weight:700; font-size:2.5em; margin-bottom:15px;">
+    🌱 OpenSustain.Analytics Dashboard
+</h1>
+
+Explore **OpenSustain.tech**, the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact.
+
+All **project names** and **organisation names** throughout the dashboard are **clickable links** that will open the corresponding project or organisation page.
+
+The data is provided under a **Creative Commons CC-BY 4.0 license** and is powered by <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.
+
+You can find **Good First Issues** in all these projects to start contributing to Open Source in Climate and Sustainability at <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.
+
+<div style="margin-top:20px;">
+    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=5&tableId=Projects" target="_blank" style="
+        background-color:#099ec8;
+        color:white;
+        padding:12px 24px;
+        font-size:16px;
+        font-weight:600;
+        border-radius:8px;
+        text-decoration:none;
+        display:inline-block;
+        margin-right:12px;
+    ">📥 Download Projects Dataset</a>
+    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=7&tableId=Organizations" target="_blank" style="
+        background-color:#099ec8;
+        color:white;
+        padding:12px 24px;
+        font-size:16px;
+        font-weight:600;
+        border-radius:8px;
+        text-decoration:none;
+        display:inline-block;
+    ">📥 Download Organisations Dataset</a>
+</div>
+
+</div>
+""",
+    unsafe_allow_html=True
 )
+
 
 
 # --- Define palette ---
@@ -319,47 +329,92 @@ with tab4:
     # Cache the figure creation
     @st.cache_data
     def create_sunburst(df):
-        # Optional: precompute hover text to reduce custom_data overhead
+        # Add description & hover text
         df["hover_text"] = (
             df["project_names_link"]
             + "<br>"
-            + "Category: "
-            + df["category"]
+            + "Category: " + df["category"]
             + "<br>"
-            + "Sub-Category: "
-            + df["sub_category"]
+            + "Sub-Category: " + df["sub_category"]
             + "<br>"
-            + "Downloads (Last Month): "
-            + df["downloads_last_month"].astype(str)
-            + "<br>"
-            + "<a href='"
-            + df["git_url"]
-            + "' target='_blank'>GitHub</a>"
+            + "Description: " + df["description"].fillna("No description provided")
         )
 
+        # Ensure score is numeric
+        df["Ecosyste_ms_Score"] = np.log1p(df["score"].fillna(0))
+
+        bright_score_colors = [
+            "#fde725",  # yellow
+            "#ffa600",  # orange
+            "#73c400",  # green
+            "#33c1ff",  # light blue
+            "#00ffff",  # cyan
+        ]
+
+        # Create sunburst with project leaves colored by score
         fig = px.sunburst(
             df,
             path=["hole", "category", "sub_category", "project_names_link"],
             maxdepth=3,
-            color="category",
-            color_discrete_map=category_colors,
+            color="Ecosyste_ms_Score",
+            color_continuous_scale=bright_score_colors,
             hover_data={"hover_text": True},
             title=" ",
         )
 
-        # Set root node color to white
+        # Get the original colors array
         colors = list(fig.data[0].marker.colors)
+
+        # Set root to white
         colors[0] = "white"
+
+        # Map category and subcategory levels to discrete colors
+        # First, get unique categories and subcategories in order of appearance
+        category_list = df["category"].unique().tolist()
+        subcategory_list = df["sub_category"].unique().tolist()
+
+        # Replace the colors for category & sub-category nodes with category_colors
+        # Loop over all labels
+        for i, label in enumerate(fig.data[0].labels):
+            # Skip root node
+            if label == "OpenSustain.tech":
+                continue
+            # If label is a category
+            elif label in category_colors:
+                colors[i] = category_colors[label]
+            # If label is a sub-category
+            elif label in subcategory_list:
+                # Get its category
+                cat = df[df["sub_category"] == label]["category"].iloc[0]
+                colors[i] = category_colors.get(cat, "#999999")  # fallback grey
+            # Else leave project node color as Viridis (already set)
         fig.data[0].marker.colors = colors
 
-        # Update traces
+        # Update traces for hover and radial text
         fig.update_traces(
             insidetextorientation="radial",
             marker=dict(line=dict(color="#000000", width=2)),
-            hovertemplate="%{customdata[0]}",
+            hovertemplate="%{customdata[0]}"
+        )
+        
+
+        # Bigger hover font
+        fig.update_layout(hoverlabel=dict(font_size=18, font_family="Open Sans"))
+
+        # Layout settings
+        fig.update_layout(
+            height=1200,
+            title_x=0.5,
+            font_size=18,
+            dragmode=False,
+            margin=dict(l=2, r=2, b=0, t=10),
+            title_font_family="Open Sans",
+            font_family="Open Sans",
+            font_color="black",
+            plot_bgcolor="white",
         )
 
-        # Add OpenSustain logo at the center
+        # Add OpenSustain logo at center
         fig.add_layout_image(
             dict(
                 source="https://opensustain.tech/logo.png",
@@ -377,18 +432,8 @@ with tab4:
             )
         )
 
-        fig.update_layout(
-            height=1200,
-            title_x=0.5,
-            font_size=18,
-            dragmode=False,
-            margin=dict(l=2, r=2, b=0, t=10),
-            title_font_family="Open Sans",
-            font_family="Open Sans",
-            font_color="black",
-            plot_bgcolor="white",
-        )
         return fig
+
 
     # Create and display sunburst
     fig4 = create_sunburst(df)
