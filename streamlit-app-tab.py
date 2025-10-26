@@ -201,9 +201,6 @@ category_colors = {
 # ==========================
 # TAB 1: Scatter Plot
 # ==========================
-# ==========================
-# TAB 1: Scatter Plot
-# ==========================
 with tab1:
     st.header("⏳ Projects over Age")
 
@@ -501,16 +498,17 @@ with tab4:
         fig.update_traces(
             insidetextorientation="radial",
             marker=dict(line=dict(color="#000000", width=2)),
-            hovertemplate="%{customdata[0]}"
+            hovertemplate="%{customdata[0]}",
         )
         
+        fig.update_layout(coloraxis_showscale=False)
 
         # Bigger hover font
         fig.update_layout(hoverlabel=dict(font_size=18, font_family="Open Sans"))
 
         # Layout settings
         fig.update_layout(
-            height=1200,
+            height=1400,
             title_x=0.5,
             font_size=18,
             dragmode=False,
