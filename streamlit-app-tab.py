@@ -22,9 +22,27 @@ def text_to_bolt(topic):
 projects_file = "./data/projects.csv"
 organisations_file = "./data/organizations.csv"
 
-# --- Load main dataset ---
-df = pd.read_csv(projects_file)
-df_organisations = pd.read_csv(organisations_file)
+# --- Cached data loading ---
+@st.cache_data
+def load_csv(file_path):
+    """
+    Load a CSV file into a pandas DataFrame with caching.
+
+    Args:
+        file_path (str): Path to the CSV file.
+
+    Returns:
+        pd.DataFrame: Loaded DataFrame.
+    """
+    return pd.read_csv(file_path)
+
+
+# --- Load main datasets ---
+projects_file = "./data/projects.csv"
+organisations_file = "./data/organizations.csv"
+
+df = load_csv(projects_file)
+df_organisations = load_csv(organisations_file)
 
 
 # --- Preprocess ---
