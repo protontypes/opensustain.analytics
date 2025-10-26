@@ -5,6 +5,7 @@ import plotly.express as px
 from datetime import datetime, timezone
 import ast
 import plotly.graph_objects as go
+from datetime import datetime, timedelta, timezone
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
@@ -145,8 +146,6 @@ You can find **Good First Issues** in all these projects to start contributing t
 """,
     unsafe_allow_html=True
 )
-
-
 
 # --- Define palette ---
 category_colors = {
@@ -339,6 +338,85 @@ with tab1:
 
 with tab4:
     st.header(" The Open Source Sustainability Ecosystem")
+
+    # --- Cached summary stats ---
+    # --- Cached summary stats with median age, stars, and DDS ---
+
+    @st.cache_data
+    def compute_summary_stats(df_projects, df_orgs):
+        total_projects = df_projects.shape[0]
+        total_organisations = df_orgs.shape[0]
+        total_contributors = int(df_projects["contributors"].sum())
+
+        # Median project age in years
+        now_utc = datetime.now(timezone.utc)
+        project_created_at = pd.to_datetime(df_projects["project_created_at"], utc=True)
+        project_age_years = (now_utc - project_created_at).dt.total_seconds() / (365.25 * 24 * 3600)
+        median_age = round(project_age_years.median(), 2)
+
+        # Active projects: commits in the last year
+        one_year_ago = now_utc - timedelta(days=365)
+        if "latest_commit_activity" in df_projects.columns:
+            df_projects["latest_commit_activity_date"] = pd.to_datetime(
+                df_projects["latest_commit_activity"], utc=True, errors="coerce"
+            )
+            active_projects = df_projects[
+                df_projects["latest_commit_activity_date"].notna() &
+                (df_projects["latest_commit_activity_date"] >= one_year_ago)
+            ].shape[0]
+        else:
+            active_projects = 0
+
+        # Median stars
+        median_stars = int(df_projects["stars"].median()) if "stars" in df_projects.columns else 0
+
+        # Median DDS
+        median_dds = round(df_projects["dds"].median(), 2) if "dds" in df_projects.columns else 0
+
+        # Median contributors
+        median_contributors = round(df_projects["contributors"].median(), 2) if "contributors" in df_projects.columns else 0
+
+        # Median total commits
+        median_commits = round(df_projects["total_commits"].median(), 2) if "total_commits" in df_projects.columns else 0
+
+        return (
+            total_projects,
+            total_organisations,
+            active_projects,
+            total_contributors,
+            median_age,
+            median_stars,
+            median_dds,
+            median_contributors,
+            median_commits,
+        )
+
+    # Get cached stats
+    (
+        total_projects,
+        total_organisations,
+        active_projects,
+        total_contributors,
+        median_age,
+        median_stars,
+        median_dds,
+        median_contributors,
+        median_commits,
+    ) = compute_summary_stats(df, df_organisations)
+
+    # --- Display metrics in two rows for better readability ---
+    row1_cols = st.columns(5, gap="large")
+    row1_cols[0].metric("🌱 Total Projects", f"{total_projects}")
+    row1_cols[2].metric("🏢 Total Organisations", f"{total_organisations}")
+    row1_cols[1].metric("✅ Active Projects", f"{active_projects}")
+    row1_cols[3].metric("👥 Total Contributors", f"{total_contributors}")
+    row1_cols[4].metric("⏳ Median Project Age (yrs)", f"{median_age}")
+
+    row2_cols = st.columns(4, gap="large")
+    row2_cols[0].metric("⭐ Median Stars", f"{median_stars}")
+    row2_cols[1].metric("📊 Median Development Distribution Score", f"{median_dds}")
+    row2_cols[2].metric("👤 Median Contributors", f"{median_contributors}")
+    row2_cols[3].metric("📝 Median Commits", f"{median_commits}")
 
     df["hole"] = (
         f'<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
