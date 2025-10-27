@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-from datetime import datetime, timezone
 import ast
 import plotly.graph_objects as go
 from datetime import datetime, timedelta, timezone
@@ -550,6 +549,7 @@ with tab4:
 with tab_rankings:
     st.header("Project Rankings by Various Metrics")
 
+    # Copy the base df
     df_rank = df.copy()
     metrics = [
         "contributors",
@@ -570,7 +570,6 @@ with tab_rankings:
     # --------------------------
     # Filter inactive projects
     # --------------------------
-    # Consider project active if latest_commit_activity within last year
     one_year_ago = pd.Timestamp.now(tz='UTC') - pd.Timedelta(days=365)
     df_rank["latest_commit_activity_dt"] = pd.to_datetime(
         df_rank["latest_commit_activity"], utc=True, errors="coerce"
@@ -611,75 +610,105 @@ with tab_rankings:
     selected_category = st.selectbox(
         "Filter by Category:", options=category_options, index=0, key="ranking_category_filter"
     )
-
     if selected_category != "All Categories":
         df_rank = df_rank[df_rank["category"] == selected_category]
 
     # --------------------------
     # Number of projects to show
     # --------------------------
-    number_of_projects_to_show = st.slider("Number of projects to show:", 10, 300, 50, key="ranking_slider")
+    number_of_projects_to_show = st.slider(
+        "Number of projects to show:", 10, 300, 50, key="ranking_slider"
+    )
 
     # --------------------------
     # Top projects
     # --------------------------
     top_projects = df_rank.nlargest(number_of_projects_to_show, metric)
-    top_projects.index.name = "ranking"
 
-    # --------------------------
-    # Horizontal bar chart
-    # --------------------------
-    fig_rank = px.bar(
-        top_projects,
-        x=metric,
-        y="project_names_link",
-        orientation="h",
-        color=metric,
-        color_continuous_scale="Tealgrn",
-        text=top_projects[metric].round(2),
-        custom_data=[top_projects.index + 1],  # ranking only
-    )
+    if top_projects.empty:
+        st.warning("No projects match the selected filters.")
+    else:
+        top_projects = top_projects.copy()
 
-    fig_rank.update_traces(
-        textposition="outside",
-        textfont_size=12,
-        hovertemplate="Ranking: <b>%{customdata[0]+1}</b><br>%{y}<extra></extra>"
-    )
+        # --------------------------
+        # Horizontal bar chart
+        # --------------------------
+        hover_cols = [
+            "contributors",
+            "citations",
+            "total_commits",
+            "total_number_of_dependencies",
+            "stars",
+            "score",
+            "dds",
+            "downloads_last_month",
+            "description",
+        ]
 
-    fig_rank.update_layout(
-        width=1200,
-        height=number_of_projects_to_show * 40 + 200,
-        plot_bgcolor="white",
-        paper_bgcolor="white",
-        margin=dict(l=250, r=50, t=50, b=30),
-        yaxis=dict(autorange="reversed"),
-        showlegend=False,
-        coloraxis_showscale=False,
-    )
+        fig_rank = px.bar(
+            top_projects,
+            x=metric,
+            y="project_names_link",
+            orientation="h",
+            color=metric,
+            color_continuous_scale="Tealgrn",
+            text=top_projects[metric].round(2),
+            custom_data=[top_projects.index + 1] + [top_projects[col] for col in hover_cols],
+        )
 
-    # Overlay project logos
-    logo_images = []
-    for idx, row in top_projects.iterrows():
-        if row["avatar_url"]:
-            logo_images.append(
-                dict(
-                    source=row["avatar_url"],
-                    xref="paper",
-                    yref="y",
-                    x=0.005,
-                    y=row["project_names_link"],
-                    xanchor="left",
-                    yanchor="middle",
-                    sizex=0.04,
-                    sizey=0.6,
-                    layer="above",
-                    sizing="contain",
-                    opacity=1,
+        # Hover template with larger text
+        hover_template = (
+            "Contributors: %{customdata[1]}<br>"
+            "Citations: %{customdata[2]}<br>"
+            "Total Commits: %{customdata[3]}<br>"
+            "Dependencies: %{customdata[4]}<br>"
+            "Stars: %{customdata[5]}<br>"
+            "Ecosyste.ms Score: %{customdata[6]}<br>"
+            "DDS: %{customdata[7]}<br>"
+            "Downloads (Last Month): %{customdata[8]}<br><br>"
+            "Description:<br>%{customdata[9]}</span><extra></extra>"
+        )
+
+        fig_rank.update_traces(
+            textposition="outside",
+            textfont_size=12,
+            hovertemplate=hover_template
+        )
+
+        fig_rank.update_layout(
+            width=1200,
+            height=number_of_projects_to_show * 40 + 200,
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            margin=dict(l=250, r=50, t=50, b=30),
+            yaxis=dict(autorange="reversed"),
+            showlegend=False,
+            coloraxis_showscale=False,
+        )
+
+        # Overlay project logos
+        logo_images = []
+        for idx, row in top_projects.iterrows():
+            if row["avatar_url"]:
+                logo_images.append(
+                    dict(
+                        source=row["avatar_url"],
+                        xref="paper",
+                        yref="y",
+                        x=0.005,
+                        y=row["project_names_link"],
+                        xanchor="left",
+                        yanchor="middle",
+                        sizex=0.04,
+                        sizey=0.6,
+                        layer="above",
+                        sizing="contain",
+                        opacity=1,
+                    )
                 )
-            )
-    fig_rank.update_layout(images=logo_images)
+        fig_rank.update_layout(images=logo_images)
 
-    st.plotly_chart(fig_rank, use_container_width=True)
+        st.plotly_chart(fig_rank, use_container_width=True)
 
 
 
@@ -1084,15 +1113,34 @@ def _f_plot_dataframe_as_horizontal_bars(
 
 @st.cache_data(show_spinner=False)
 def process_organisations_data(df_organisations: pd.DataFrame):
-    df_clean = df_organisations[df_organisations["location_country"].notna() & (df_organisations["location_country"].str.strip() != "")]
-    df_clean = df_clean.copy()
+    df_clean = df_organisations[
+        df_organisations["location_country"].notna() & (df_organisations["location_country"].str.strip() != "")
+    ].copy()
     
-    # Convert country to ISO3 code
-    df_clean["iso_alpha"] = cc.convert(df_clean["location_country"], to="ISO3", not_found=None)
-    df_clean = df_clean.dropna(subset=["iso_alpha"])
+    # Convert country to ISO3 code, skip 'Global' and 'EU'
+    def safe_iso(country):
+        c = country.strip()
+        if c.lower() == "global":
+            return "Global"
+        if c.upper() == "EU":
+            return "EU"
+        return cc.convert(c, to="ISO3", not_found=None)
     
-    # Convert country to continent
-    df_clean["continent"] = cc.convert(df_clean["location_country"], to="continent", not_found="Unknown")
+    df_clean["iso_alpha"] = df_clean["location_country"].apply(safe_iso)
+    
+    # Drop rows that could not be converted (except Global and EU)
+    df_clean = df_clean[df_clean["iso_alpha"].notna()]
+    
+    # Convert country to continent, handle 'Global' and 'EU'
+    def safe_continent(country):
+        c = country.strip()
+        if c.lower() == "global":
+            return "Global"
+        if c.upper() == "EU":
+            return "Europe"
+        return cc.convert(c, to="continent", not_found="Unknown")
+    
+    df_clean["continent"] = df_clean["location_country"].apply(safe_continent)
     
     # Countries count (organisations)
     df_countries_count = df_clean.groupby("iso_alpha").size().reset_index(name="count")
@@ -1105,6 +1153,7 @@ def process_organisations_data(df_organisations: pd.DataFrame):
     df_projects_country = df_clean.groupby("iso_alpha")["total_listed_projects_in_organization"].sum().reset_index()
     
     return df_clean, df_countries_count, df_continent_counts, df_projects_country
+
 
 
 with tab_organisations:
