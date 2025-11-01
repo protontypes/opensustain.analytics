@@ -361,8 +361,6 @@ with tab4:
     st.header(" The Open Source Sustainability Ecosystem")
 
     # --- Cached summary stats ---
-    # --- Cached summary stats with median age, stars, and DDS ---
-
     @st.cache_data
     def compute_summary_stats(df_projects, df_orgs):
         total_projects = df_projects.shape[0]
@@ -425,7 +423,7 @@ with tab4:
         median_commits,
     ) = compute_summary_stats(df, df_organisations)
 
-    # --- Display metrics in two rows for better readability ---
+    # --- Display metrics ---
     row1_cols = st.columns(5, gap="large")
     row1_cols[0].metric("🌱 Total Projects", f"{total_projects}")
     row1_cols[2].metric("🏢 Total Organisations", f"{total_organisations}")
@@ -443,84 +441,152 @@ with tab4:
         f'<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
     )
 
-    # Cache the figure creation
-    @st.cache_data
-    def create_sunburst(df):
-        # Add description & hover text
-        df["hover_text"] = (
-            df["project_names_link"]
-            + "<br>"
-            + "Category: " + df["category"]
-            + "<br>"
-            + "Sub-Category: " + df["sub_category"]
-            + "<br>"
-            + "Description: " + df["description"].fillna("No description provided")
+    # --- Checkbox to hide inactive projects ---
+    hide_inactive = st.checkbox("Hide inactive projects (no commits in past year)", value=True)
+
+    # Filter inactive projects if checkbox is selected
+    df_filtered = df.copy()
+    if hide_inactive and "latest_commit_activity" in df_filtered.columns:
+        now_utc = datetime.now(timezone.utc)
+        one_year_ago = now_utc - timedelta(days=365)
+        df_filtered["latest_commit_activity_date"] = pd.to_datetime(
+            df_filtered["latest_commit_activity"], utc=True, errors="coerce"
         )
-
-        # Ensure score is numeric
-        df["Ecosyste_ms_Score"] = np.log1p(df["score"].fillna(0))
-
-        bright_score_colors = [
-            "#fde725",  # yellow
-            "#ffa600",  # orange
-            "#73c400",  # green
-            "#33c1ff",  # light blue
-            "#00ffff",  # cyan
+        df_filtered = df_filtered[
+            df_filtered["latest_commit_activity_date"].notna() &
+            (df_filtered["latest_commit_activity_date"] >= one_year_ago)
         ]
 
-        # Create sunburst with project leaves colored by score
+    @st.cache_data
+    def create_sunburst(df):
+        # --- Prepare data ---
+        df["Ecosyste_ms_Score"] = np.log1p(df["score"].fillna(0))
+
+        # Sort projects by score within subcategories
+        df = df.sort_values(
+            by=["category", "sub_category", "Ecosyste_ms_Score"],
+            ascending=[True, True, False],
+            na_position="last",
+        ).reset_index(drop=True)
+
+        # --- Build customdata array for hover ---
+        df["custom_category"] = df["category"]
+        df["custom_subcategory"] = df["sub_category"]
+        df["custom_score"] = df["Ecosyste_ms_Score"].round(2)
+        customdata = np.stack(
+            [df["custom_category"], df["custom_subcategory"], df["custom_score"]], axis=-1
+        )
+
+        # --- Define color scale ---
+        bright_score_colors = [
+            "#fde725", "#ffa600", "#73c400", "#33c1ff", "#00ffff"
+        ]
+
+        # --- Create sunburst ---
         fig = px.sunburst(
             df,
             path=["hole", "category", "sub_category", "project_names_link"],
             maxdepth=3,
             color="Ecosyste_ms_Score",
             color_continuous_scale=bright_score_colors,
-            hover_data={"hover_text": True},
             title=" ",
         )
+        fig.data[0].customdata = customdata
 
-        # Get the original colors array
+        # --- Replace category/subcategory colors ---
         colors = list(fig.data[0].marker.colors)
-
-        # Set root to white
         colors[0] = "white"
-
-        # Map category and subcategory levels to discrete colors
-        # First, get unique categories and subcategories in order of appearance
-        category_list = df["category"].unique().tolist()
         subcategory_list = df["sub_category"].unique().tolist()
 
-        # Replace the colors for category & sub-category nodes with category_colors
-        # Loop over all labels
         for i, label in enumerate(fig.data[0].labels):
-            # Skip root node
             if label == "OpenSustain.tech":
                 continue
-            # If label is a category
             elif label in category_colors:
                 colors[i] = category_colors[label]
-            # If label is a sub-category
             elif label in subcategory_list:
-                # Get its category
                 cat = df[df["sub_category"] == label]["category"].iloc[0]
-                colors[i] = category_colors.get(cat, "#999999")  # fallback grey
-            # Else leave project node color as Viridis (already set)
+                colors[i] = category_colors.get(cat, "#999999")
+
         fig.data[0].marker.colors = colors
 
-        # Update traces for hover and radial text
-        fig.update_traces(
-            insidetextorientation="radial",
-            marker=dict(line=dict(color="#000000", width=2)),
-            hovertemplate="%{customdata[0]}",
+    @st.cache_data
+    def create_sunburst(df):
+        # --- Prepare data ---
+        df["Ecosyste_ms_Score"] = np.log1p(df["score"].fillna(0))
+
+        # Sort projects by score within subcategories
+        df = df.sort_values(
+            by=["category", "sub_category", "Ecosyste_ms_Score"],
+            ascending=[True, True, False],
+            na_position="last",
+        ).reset_index(drop=True)
+
+        # --- Build customdata array for hover ---
+        df["custom_category"] = df["category"]
+        df["custom_subcategory"] = df["sub_category"]
+        df["custom_score"] = df["Ecosyste_ms_Score"].round(2)
+        customdata = np.stack(
+            [df["custom_category"], df["custom_subcategory"], df["custom_score"]], axis=-1
         )
-        
-        fig.update_layout(coloraxis_showscale=False)
 
-        # Bigger hover font
-        fig.update_layout(hoverlabel=dict(font_size=18, font_family="Open Sans"))
+        # --- Define color scale ---
+        bright_score_colors = [
+            "#fde725", "#ffa600", "#73c400", "#33c1ff", "#00ffff"
+        ]
 
-        # Layout settings
+        # --- Create sunburst ---
+        fig = px.sunburst(
+            df,
+            path=["hole", "category", "sub_category", "project_names_link"],
+            maxdepth=3,
+            color="Ecosyste_ms_Score",
+            color_continuous_scale=bright_score_colors,
+            title=" ",
+        )
+        fig.data[0].customdata = customdata
+
+        # --- Replace category/subcategory colors ---
+        colors = list(fig.data[0].marker.colors)
+        colors[0] = "white"
+        subcategory_list = df["sub_category"].unique().tolist()
+
+        for i, label in enumerate(fig.data[0].labels):
+            if label == "OpenSustain.tech":
+                continue
+            elif label in category_colors:
+                colors[i] = category_colors[label]
+            elif label in subcategory_list:
+                cat = df[df["sub_category"] == label]["category"].iloc[0]
+                colors[i] = category_colors.get(cat, "#999999")
+
+        fig.data[0].marker.colors = colors
+
+        # --- Hover template: hide first two levels ---
+        trace = fig.data[0]
+        root_level = ""  # the root / hole
+        category_levels = set(df["category"].unique())
+
+        hovertemplates = []
+        for parent, label in zip(trace.parents, trace.labels):
+            if parent == root_level or label in category_levels:
+                hovertemplates.append(None)  # completely hide hover
+            else:
+                hovertemplates.append(
+                    "<b>%{label}</b><br>"
+                    "Category: %{customdata[0]}<br>"
+                    "Sub-Category: %{customdata[1]}<br>"
+                    "Ecosystem Score: "
+                    "<span style='color:%{marker.color}; font-weight:bold;'>%{customdata[2]}</span><extra></extra>"
+                )
+
+        trace.hovertemplate = hovertemplates
+        trace.insidetextorientation = "radial"
+        trace.marker.line = dict(color="#000000", width=2)
+
+        # --- Layout adjustments ---
         fig.update_layout(
+            coloraxis_showscale=False,
+            hoverlabel=dict(font_size=18, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
             height=1400,
             title_x=0.5,
             font_size=18,
@@ -532,7 +598,7 @@ with tab4:
             plot_bgcolor="white",
         )
 
-        # Add OpenSustain logo at center
+        # --- Add logo ---
         fig.add_layout_image(
             dict(
                 source="https://opensustain.tech/logo.png",
@@ -553,14 +619,47 @@ with tab4:
         return fig
 
 
-    # Create and display sunburst
-    fig4 = create_sunburst(df)
-    config = {
-        "responsive": True,  # replaces use_container_width
-        # other config options here if needed
-    }
 
-    st.plotly_chart(fig4)
+
+        # --- Layout adjustments ---
+        fig.update_layout(
+            coloraxis_showscale=False,
+            hoverlabel=dict(font_size=18, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
+            height=1400,
+            title_x=0.5,
+            font_size=18,
+            dragmode=False,
+            margin=dict(l=2, r=2, b=0, t=10),
+            title_font_family="Open Sans",
+            font_family="Open Sans",
+            font_color="black",
+            plot_bgcolor="white",
+        )
+
+        # --- Add logo ---
+        fig.add_layout_image(
+            dict(
+                source="https://opensustain.tech/logo.png",
+                xref="paper",
+                yref="paper",
+                x=0.5,
+                y=0.58,
+                sizex=0.10,
+                sizey=0.10,
+                xanchor="center",
+                yanchor="middle",
+                layer="above",
+                sizing="contain",
+                opacity=1,
+            )
+        )
+
+        return fig
+
+    # --- Generate sunburst ---
+    fig4 = create_sunburst(df_filtered)
+    st.plotly_chart(fig4, config={"responsive": True}, use_container_width=True)
+
 
 # ==========================
 # TAB 4: Project Rankings
