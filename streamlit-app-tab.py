@@ -790,7 +790,7 @@ with tab_rankings:
                 )
         fig_rank.update_layout(images=logo_images)
 
-        st.plotly_chart(fig_rank, config=config)
+        st.plotly_chart(fig_rank)
 
 
 
@@ -917,12 +917,8 @@ with tab_distributions:
             yaxis_tickfont=dict(size=18),
             yaxis_title_font=dict(size=20),
         )
-        config = {
-            "responsive": True,  # replaces use_container_width
-            # other config options here if needed
-        }
 
-        st.plotly_chart(fig_dist, config=config)
+        st.plotly_chart(fig_dist)
 
     # ==============================
     # Git Platforms Distribution (Moved to End)
