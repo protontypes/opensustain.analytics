@@ -561,15 +561,16 @@ with tab4:
 
         fig.data[0].marker.colors = colors
 
-        # --- Hover template: hide first two levels ---
+        # --- Hover template: hide first three levels (hole, category, sub_category) ---
         trace = fig.data[0]
         root_level = ""  # the root / hole
         category_levels = set(df["category"].unique())
+        subcategory_levels = set(df["sub_category"].unique())
 
         hovertemplates = []
         for parent, label in zip(trace.parents, trace.labels):
-            if parent == root_level or label in category_levels:
-                hovertemplates.append(None)  # completely hide hover
+            if parent == root_level or label in category_levels or label in subcategory_levels:
+                hovertemplates.append(None)  # hide hover for first 3 levels
             else:
                 hovertemplates.append(
                     "<b>%{label}</b><br>"
@@ -619,46 +620,9 @@ with tab4:
         return fig
 
 
-
-
-        # --- Layout adjustments ---
-        fig.update_layout(
-            coloraxis_showscale=False,
-            hoverlabel=dict(font_size=18, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
-            height=1400,
-            title_x=0.5,
-            font_size=18,
-            dragmode=False,
-            margin=dict(l=2, r=2, b=0, t=10),
-            title_font_family="Open Sans",
-            font_family="Open Sans",
-            font_color="black",
-            plot_bgcolor="white",
-        )
-
-        # --- Add logo ---
-        fig.add_layout_image(
-            dict(
-                source="https://opensustain.tech/logo.png",
-                xref="paper",
-                yref="paper",
-                x=0.5,
-                y=0.58,
-                sizex=0.10,
-                sizey=0.10,
-                xanchor="center",
-                yanchor="middle",
-                layer="above",
-                sizing="contain",
-                opacity=1,
-            )
-        )
-
-        return fig
-
     # --- Generate sunburst ---
     fig4 = create_sunburst(df_filtered)
-    st.plotly_chart(fig4, config={"responsive": True}, use_container_width=True)
+    st.plotly_chart(fig4)
 
 
 # ==========================
