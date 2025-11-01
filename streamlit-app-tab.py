@@ -237,7 +237,6 @@ with tab1:
         df[selected_size_column], errors="coerce"
     ).fillna(0)
 
-    # Scale bubble size for better visualization
     size_scaled = np.sqrt(df[selected_size_column]) * 20 + 5  # minimum size > 0
 
     # -------------------------------
@@ -246,7 +245,7 @@ with tab1:
     fig1 = px.scatter(
         df,
         x="project_age",
-        y="sub_category",  # show only sub-category on Y-axis
+        y="sub_category",
         color="category",
         color_discrete_map=category_colors,
         size=size_scaled,
@@ -301,12 +300,17 @@ with tab1:
     fig1.update_layout(
         shapes=shapes,
         showlegend=False,
-        height=1400 + 20 * df["sub_category"].nunique(),
+        height=1200,
         plot_bgcolor="white",
         paper_bgcolor="white",
-        margin=dict(l=220, r=50, t=0, b=20),
+        margin=dict(l=220, r=50, t=0, b=0),
         title_font=dict(size=30, family="Open Sans", color="#099ec8"),
         font=dict(size=20, family="Open Sans"),
+        title=" ",
+        xaxis=dict(
+            side="top",        # move X-axis to top
+            autorange="reversed" # reverse the X-axis direction
+        ),
     )
 
     fig1.update_yaxes(
@@ -337,6 +341,7 @@ with tab1:
     )
 
     st.plotly_chart(fig1, use_container_width=True)
+
 
 
 # ==========================
