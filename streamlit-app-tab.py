@@ -7,6 +7,7 @@ import plotly.graph_objects as go
 from datetime import datetime, timedelta, timezone
 import country_converter as coco
 
+
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
 
@@ -212,6 +213,23 @@ with tab1:
     )
 
     # -------------------------------
+    # Filter by category (single select dropdown)
+    # -------------------------------
+    categories = sorted(df["category"].unique())
+    categories_with_all = ["All"] + categories  # add "All" option
+    selected_category = st.selectbox(
+        "Filter by Category:",
+        options=categories_with_all,
+        index=0,  # default: "All"
+        help="Select which category to display in the plot."
+    )
+
+    if selected_category == "All":
+        df_filtered = df.copy()
+    else:
+        df_filtered = df[df["category"] == selected_category]
+
+    # -------------------------------
     # Dropdown for bubble size metric
     # -------------------------------
     size_metric_options = {
@@ -233,17 +251,17 @@ with tab1:
     selected_size_column = size_metric_options[selected_size_label]
 
     # Ensure numeric data and fill NaNs
-    df[selected_size_column] = pd.to_numeric(
-        df[selected_size_column], errors="coerce"
+    df_filtered[selected_size_column] = pd.to_numeric(
+        df_filtered[selected_size_column], errors="coerce"
     ).fillna(0)
 
-    size_scaled = np.sqrt(df[selected_size_column]) * 20 + 5  # minimum size > 0
+    size_scaled = np.sqrt(df_filtered[selected_size_column]) * 20 + 5  # minimum size > 0
 
     # -------------------------------
     # Scatter plot
     # -------------------------------
     fig1 = px.scatter(
-        df,
+        df_filtered,
         x="project_age",
         y="sub_category",
         color="category",
@@ -274,48 +292,41 @@ with tab1:
     )
 
     # -------------------------------
-    # Background bands per main category
+    # Sort subcategories alphabetically
     # -------------------------------
-    shapes = []
-    categories = df["category"].unique()
-    for idx, cat in enumerate(categories):
-        subcats = df[df["category"] == cat]["sub_category"].unique()
-        if len(subcats) > 0:
-            shapes.append(
-                dict(
-                    type="rect",
-                    xref="paper",
-                    x0=0,
-                    x1=1,
-                    yref="y",
-                    y0=subcats[0],
-                    y1=subcats[-1],
-                    fillcolor="grey" if idx % 2 == 0 else "whitesmoke",
-                    opacity=0.2,
-                    layer="below",
-                    line_width=0,
-                )
-            )
+    sorted_subcats = sorted(df_filtered["sub_category"].unique())
+
+    # -------------------------------
+    # Dynamic plot height based on number of subcategories
+    # -------------------------------
+    height_per_subcat = 30  # pixels per subcategory
+    base_height = 200       # minimum height
+    plot_height = max(base_height, height_per_subcat * len(sorted_subcats))
 
     fig1.update_layout(
-        shapes=shapes,
         showlegend=False,
-        height=1200,
+        height=plot_height,
         plot_bgcolor="white",
         paper_bgcolor="white",
-        margin=dict(l=220, r=50, t=0, b=0),
+        margin=dict(l=100, r=30, t=0, b=0),
         title_font=dict(size=30, family="Open Sans", color="#099ec8"),
         font=dict(size=20, family="Open Sans"),
         title=" ",
         xaxis=dict(
             side="top",        # move X-axis to top
-            autorange="reversed" # reverse the X-axis direction
+            autorange="reversed"
         ),
     )
 
+    # -------------------------------
+    # Update Y-axis: alphabetical + increased spacing
+    # -------------------------------
     fig1.update_yaxes(
         autorange="reversed",
-        tickfont=dict(family="Open Sans", size=20, color="black")
+        tickvals=list(range(len(sorted_subcats))),  # one tick per subcategory
+        ticktext=sorted_subcats,                     # corresponding subcategory names
+        tickfont=dict(family="Open Sans", size=18, color="black"),
+        automargin=True
     )
 
     # -------------------------------
@@ -325,7 +336,6 @@ with tab1:
         hovertemplate="<br>".join(
             [
                 "Project: %{customdata[0]}",
-                "Age (years): %{customdata[1]:.1f}",
                 "Category: %{customdata[2]}",
                 "Sub-Category: %{customdata[3]}",
                 "Git URL: %{customdata[4]}",
@@ -334,13 +344,12 @@ with tab1:
                 "Stars: %{customdata[7]}",
                 "Downloads: %{customdata[8]}",
                 "Total Commits: %{customdata[9]}",
-                "Total Dependencies: %{customdata[10]}",
-                "Citations: %{customdata[11]}",
             ]
         )
     )
 
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig1)
+
 
 
 
@@ -546,6 +555,11 @@ with tab4:
 
     # Create and display sunburst
     fig4 = create_sunburst(df)
+    config = {
+        "responsive": True,  # replaces use_container_width
+        # other config options here if needed
+    }
+
     st.plotly_chart(fig4)
 
 # ==========================
@@ -713,7 +727,8 @@ with tab_rankings:
                 )
         fig_rank.update_layout(images=logo_images)
 
-        st.plotly_chart(fig_rank, use_container_width=True)
+        st.plotly_chart(fig_rank, config=config)
+
 
 
 
@@ -839,8 +854,12 @@ with tab_distributions:
             yaxis_tickfont=dict(size=18),
             yaxis_title_font=dict(size=20),
         )
+        config = {
+            "responsive": True,  # replaces use_container_width
+            # other config options here if needed
+        }
 
-        st.plotly_chart(fig_dist)
+        st.plotly_chart(fig_dist, config=config)
 
     # ==============================
     # Git Platforms Distribution (Moved to End)
@@ -875,7 +894,7 @@ with tab_distributions:
             yaxis_title_font=dict(size=20),
         )
 
-        st.plotly_chart(fig_platform)
+        st.plotly_chart(fig_platform, )
     else:
         st.warning("Column `platform` not found in dataset.")
 
@@ -928,7 +947,7 @@ with tab_topics:
         # explicit colorbar title
         fig_kw.update_coloraxes(colorbar=dict(title="log10(Count)"))
 
-        st.plotly_chart(fig_kw, use_container_width=True)
+        st.plotly_chart(fig_kw)
 
     except Exception as e:
         st.error(f"Could not load keywords file: {e}")
@@ -1059,14 +1078,13 @@ with tab_topics:
     # make sure colorbar has a clear title
     fig_heat.update_coloraxes(colorbar=dict(title="log10(Count)"))
 
-    st.plotly_chart(fig_heat, use_container_width=True)
+    st.plotly_chart(fig_heat)
 
     # --- Static Word Cloud Image at the end ---
     st.subheader("🌥️ Word Cloud Representation")
     st.image(
         "https://raw.githubusercontent.com/protontypes/osta/refs/heads/main/ost_word_cloud.png",
-        caption="Word Cloud of the Most Common Topics in OpenSustain.tech Project READMEs",
-        use_container_width=True,
+        caption="Word Cloud of the Most Common Topics in OpenSustain.tech Project READMEs"
     )
 
 
@@ -1178,7 +1196,7 @@ with tab_organisations:
         y_title="Organisation name",
         x_title="Number of projects listed",
     )
-    st.plotly_chart(fig_top_org_listed_proj, use_container_width=True)
+    st.plotly_chart(fig_top_org_listed_proj)
 
     # --- Organisations by type ---
     st.subheader("Organisations by Type")
@@ -1192,7 +1210,7 @@ with tab_organisations:
         y_title="Organisation type",
         x_title="Number of organisations",
     )
-    st.plotly_chart(fig_orgs_by_type, use_container_width=True)
+    st.plotly_chart(fig_orgs_by_type)
 
     # --- Organisations per country ---
     st.subheader("Top Countries by Number of Organisations")
@@ -1208,7 +1226,7 @@ with tab_organisations:
         title=f"Top {top_n_orgs_countries} Countries by Number of Organisations",
     )
     fig_top_org_countries.update_layout(yaxis={"categoryorder": "total ascending"}, height=700)
-    st.plotly_chart(fig_top_org_countries, use_container_width=True)
+    st.plotly_chart(fig_top_org_countries)
 
     # --- Organisations per continent ---
     st.subheader("Organisations by Continent")
@@ -1223,7 +1241,7 @@ with tab_organisations:
         title="Number of Organisations by Continent",
     )
     fig_continent.update_layout(yaxis={"categoryorder": "total ascending"}, height=500)
-    st.plotly_chart(fig_continent, use_container_width=True)
+    st.plotly_chart(fig_continent)
 
     # --- Total number of projects per country (choropleth) ---
     st.subheader("🌍 Total Number of Projects per Country")
@@ -1236,7 +1254,7 @@ with tab_organisations:
         title="Total Number of Projects per Country",
     )
     fig_map.update_layout(height=700, margin=dict(l=10, r=10, t=50, b=10))
-    st.plotly_chart(fig_map, use_container_width=True)
+    st.plotly_chart(fig_map)
 
 
 
@@ -1379,7 +1397,7 @@ with tab_org_sunburst:
         title_font=dict(size=30, family="Open Sans", color="#099ec8"),
     )
 
-    st.plotly_chart(fig_org_sun, use_container_width=True)
+    st.plotly_chart(fig_org_sun)
 
 
 # ==========================
@@ -1505,7 +1523,7 @@ with tab_top_org_score:
                     )
             fig_score.update_layout(images=logo_images)
 
-            st.plotly_chart(fig_score, use_container_width=True)
+            st.plotly_chart(fig_score)
 
 # ==========================
 # TAB 1: Organisations by Sub-Categories Sunburst
@@ -1599,4 +1617,4 @@ with tab_org_subcat:
             title_font=dict(size=30, family="Open Sans", color="#099ec8")
         )
 
-        st.plotly_chart(fig_org_subcat_sun, use_container_width=True)
+        st.plotly_chart(fig_org_subcat_sun)
