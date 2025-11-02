@@ -93,6 +93,7 @@ df["project_names_link"] = (
     + "</a>"
 )
 
+
 # --- Dashboard Introduction in a card style ---
 st.markdown(
     """
@@ -103,49 +104,42 @@ st.markdown(
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     font-family:'Open Sans', sans-serif;
     line-height:1.6;
-    color:#333333;
-">
-
-<h1 style="color:#099ec8; font-weight:700; font-size:2.5em; margin-bottom:15px;">
-    🌱 OpenSustain.Analytics Dashboard
-</h1>
-
-Explore **OpenSustain.tech**, the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact.
-
-All **project names** and **organisation names** throughout the dashboard are **clickable links** that will open the corresponding project or organisation page.
-
-The data is provided under a **Creative Commons CC-BY 4.0 license** and is powered by <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.
-
-You can find **Good First Issues** in all these projects to start contributing to Open Source in Climate and Sustainability at <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.
-
-<div style="margin-top:20px;">
-    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=5&tableId=Projects" target="_blank" style="
-        background-color:#099ec8;
-        color:white;
-        padding:12px 24px;
-        font-size:16px;
-        font-weight:600;
-        border-radius:8px;
-        text-decoration:none;
-        display:inline-block;
-        margin-right:12px;
-    ">📥 Download Projects Dataset</a>
-    <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=7&tableId=Organizations" target="_blank" style="
-        background-color:#099ec8;
-        color:white;
-        padding:12px 24px;
-        font-size:16px;
-        font-weight:600;
-        border-radius:8px;
-        text-decoration:none;
-        display:inline-block;
-    ">📥 Download Organisations Dataset</a>
+    color:#333333;">
+    <div style="display:flex; align-items:center; margin-bottom:20px;">
+        <img src="https://opensustain.tech/logo.png" width="80" height="80" style="margin-right:16px;">
+        <h1 style="margin:0; font-size:2rem; color:#099ec8;">OpenSustain.Analytics</h1>
+    </div>
+    <p>Explore <strong>OpenSustain.tech</strong>, the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact.</p>
+    <p>All <strong>project names</strong> and <strong>organisation names</strong> throughout the dashboard are <strong>clickable links</strong> that will open the corresponding project or organisation page.</p>
+    <p>The data is provided under a <strong>Creative Commons CC-BY 4.0 license</strong> and is powered by 
+    <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.</p>
+    <p>You can find <strong>Good First Issues</strong> in all these projects to start contributing to Open Source in Climate and Sustainability at 
+    <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.</p>
+    <div style="margin-top:20px;">
+        <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=5&tableId=Projects" target="_blank" style="
+            background-color:#099ec8;
+            color:white;
+            padding:12px 24px;
+            font-size:16px;
+            font-weight:600;
+            border-radius:8px;
+            text-decoration:none;
+            display:inline-block;
+            margin-right:12px;
+        ">📥 Download Projects Dataset</a>
+        <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=7&tableId=Organizations" target="_blank" style="
+            background-color:#099ec8;
+            color:white;
+            padding:12px 24px;
+            font-size:16px;
+            font-weight:600;
+            border-radius:8px;
+            text-decoration:none;
+            display:inline-block;
+        ">📥 Download Organisations Dataset</a>
+    </div>
 </div>
-
-</div>
-""",
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
 
 # --- Define palette ---
 category_colors = {
