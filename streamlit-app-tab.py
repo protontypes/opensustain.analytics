@@ -399,9 +399,8 @@ with tab1:
 
 
 # ==========================
-# TAB 3: Sunburst
+# TAB 4: Sunburst
 # ==========================
-
 with tab4:
     st.header("The Open Source Sustainability Ecosystem")
 
@@ -471,8 +470,8 @@ with tab4:
     # --- Display metrics ---
     row1_cols = st.columns(5, gap="large")
     row1_cols[0].metric("🌱 Total Projects", f"{total_projects}")
-    row1_cols[2].metric("🏢 Total Organisations", f"{total_organisations}")
     row1_cols[1].metric("✅ Active Projects", f"{active_projects}")
+    row1_cols[2].metric("🏢 Total Organisations", f"{total_organisations}")
     row1_cols[3].metric("👥 Total Contributors", f"{total_contributors}")
     row1_cols[4].metric("⏳ Median Project Age (yrs)", f"{median_age}")
 
@@ -482,9 +481,8 @@ with tab4:
     row2_cols[2].metric("👤 Median Contributors", f"{median_contributors}")
     row2_cols[3].metric("📝 Median Commits", f"{median_commits}")
 
-    df["hole"] = (
-        f'<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
-    )
+    # --- Root label for sunburst ---
+    df["hole"] = '<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
 
     # --- Checkbox to hide inactive projects ---
     hide_inactive = st.checkbox("Hide inactive projects (no commits in past year)", value=True)
@@ -502,47 +500,85 @@ with tab4:
             (df_filtered["latest_commit_activity_date"] >= one_year_ago)
         ]
 
-    @st.cache_data
-    def create_sunburst(df):
-        # --- Prepare data ---
-        df["Ecosyste_ms_Score"] = np.log1p(df["score"].fillna(0))
+    # --- Select color metric for sunburst ---
+    available_metrics = [
+        "contributors", "citations", "total_commits",
+        "total_number_of_dependencies", "stars", "score",
+        "dds", "downloads_last_month"
+    ]
+    selected_color_metric = st.selectbox(
+        "Select metric for color coding:",
+        options=available_metrics,
+        index=available_metrics.index("dds"),  # default
+        format_func=lambda x: {
+            "score": "Ecosyste.ms Score",
+            "dds": "Development Distribution Score",
+            "contributors": "Contributors",
+            "citations": "Citations",
+            "total_commits": "Total Commits",
+            "total_number_of_dependencies": "Total Dependencies",
+            "stars": "Stars",
+            "downloads_last_month": "Downloads (Last Month)"
+        }[x]
+    )
 
-        # Sort projects by score within subcategories
+    # --- Function to create sunburst ---
+    @st.cache_data
+    def create_sunburst(df, color_metric):
+        # Fill missing metrics
+        metric_cols = available_metrics
+        for col in metric_cols:
+            if col not in df.columns:
+                df[col] = 0
+            else:
+                df[col] = df[col].fillna(0)
+
+        # Sort projects by selected metric
         df = df.sort_values(
-            by=["category", "sub_category", "Ecosyste_ms_Score"],
+            by=["category", "sub_category", color_metric],
             ascending=[True, True, False],
             na_position="last",
         ).reset_index(drop=True)
 
-        # --- Build customdata array for hover ---
+        df["color_metric_scaled"] = np.log1p(df[color_metric])
+
+        # Build customdata for hover
         df["custom_category"] = df["category"]
         df["custom_subcategory"] = df["sub_category"]
-        df["custom_score"] = df["Ecosyste_ms_Score"].round(2)
+        df["custom_color_metric"] = df[color_metric].round(2)
         customdata = np.stack(
-            [df["custom_category"], df["custom_subcategory"], df["custom_score"]], axis=-1
+            [
+                df["custom_category"],
+                df["custom_subcategory"],
+                df["contributors"],
+                df["citations"],
+                df["total_commits"],
+                df["total_number_of_dependencies"],
+                df["stars"],
+                df["score"],
+                df["dds"],
+                df["downloads_last_month"],
+                df["custom_color_metric"]
+            ],
+            axis=-1
         )
 
-        # --- Define color scale ---
-        bright_score_colors = [
-            "#fde725", "#ffa600", "#73c400", "#33c1ff", "#00ffff"
-        ]
+        bright_score_colors = ["#ff0000", "#ff6600", "#ffcc00", "#66cc00", "#00cc00"]
 
-        # --- Create sunburst ---
         fig = px.sunburst(
             df,
             path=["hole", "category", "sub_category", "project_names_link"],
             maxdepth=3,
-            color="Ecosyste_ms_Score",
+            color="color_metric_scaled",
             color_continuous_scale=bright_score_colors,
             title=" ",
         )
         fig.data[0].customdata = customdata
 
-        # --- Replace category/subcategory colors ---
+        # Replace category/subcategory colors
         colors = list(fig.data[0].marker.colors)
         colors[0] = "white"
         subcategory_list = df["sub_category"].unique().tolist()
-
         for i, label in enumerate(fig.data[0].labels):
             if label == "OpenSustain.tech":
                 continue
@@ -551,88 +587,42 @@ with tab4:
             elif label in subcategory_list:
                 cat = df[df["sub_category"] == label]["category"].iloc[0]
                 colors[i] = category_colors.get(cat, "#999999")
-
         fig.data[0].marker.colors = colors
 
-    @st.cache_data
-    def create_sunburst(df):
-        # --- Prepare data ---
-        df["Ecosyste_ms_Score"] = np.log1p(df["score"].fillna(0))
-
-        # Sort projects by score within subcategories
-        df = df.sort_values(
-            by=["category", "sub_category", "Ecosyste_ms_Score"],
-            ascending=[True, True, False],
-            na_position="last",
-        ).reset_index(drop=True)
-
-        # --- Build customdata array for hover ---
-        df["custom_category"] = df["category"]
-        df["custom_subcategory"] = df["sub_category"]
-        df["custom_score"] = df["Ecosyste_ms_Score"].round(2)
-        customdata = np.stack(
-            [df["custom_category"], df["custom_subcategory"], df["custom_score"]], axis=-1
-        )
-
-        # --- Define color scale ---
-        bright_score_colors = [
-            "#fde725", "#ffa600", "#73c400", "#33c1ff", "#00ffff"
-        ]
-
-        # --- Create sunburst ---
-        fig = px.sunburst(
-            df,
-            path=["hole", "category", "sub_category", "project_names_link"],
-            maxdepth=3,
-            color="Ecosyste_ms_Score",
-            color_continuous_scale=bright_score_colors,
-            title=" ",
-        )
-        fig.data[0].customdata = customdata
-
-        # --- Replace category/subcategory colors ---
-        colors = list(fig.data[0].marker.colors)
-        colors[0] = "white"
-        subcategory_list = df["sub_category"].unique().tolist()
-
-        for i, label in enumerate(fig.data[0].labels):
-            if label == "OpenSustain.tech":
-                continue
-            elif label in category_colors:
-                colors[i] = category_colors[label]
-            elif label in subcategory_list:
-                cat = df[df["sub_category"] == label]["category"].iloc[0]
-                colors[i] = category_colors.get(cat, "#999999")
-
-        fig.data[0].marker.colors = colors
-
-        # --- Hover template: hide first three levels (hole, category, sub_category) ---
+        # Hover template
         trace = fig.data[0]
-        root_level = ""  # the root / hole
+        root_level = ""
         category_levels = set(df["category"].unique())
         subcategory_levels = set(df["sub_category"].unique())
 
         hovertemplates = []
         for parent, label in zip(trace.parents, trace.labels):
             if parent == root_level or label in category_levels or label in subcategory_levels:
-                hovertemplates.append(None)  # hide hover for first 3 levels
+                hovertemplates.append(None)
             else:
                 hovertemplates.append(
-                    "<b>%{label}</b><br>"
-                    "Category: %{customdata[0]}<br>"
-                    "Sub-Category: %{customdata[1]}<br>"
-                    "Ecosystem Score: "
-                    "<span style='color:%{marker.color}; font-weight:bold;'>%{customdata[2]}</span><extra></extra>"
+                    f"<b>%{{label}}</b><br>"
+                    f"Category: %{{customdata[0]}}<br>"
+                    f"Sub-Category: %{{customdata[1]}}<br>"
+                    f"Contributors: %{{customdata[2]:,}}<br>"
+                    f"Citations: %{{customdata[3]:,}}<br>"
+                    f"Total Commits: %{{customdata[4]:,}}<br>"
+                    f"Dependencies: %{{customdata[5]:,}}<br>"
+                    f"Stars: %{{customdata[6]:,}}<br>"
+                    f"Ecosyste.ms Score: %{{customdata[7]:,.2f}}<br>"
+                    f"DDS: %{{customdata[8]:,.2f}}<br>"
+                    f"Downloads (Last Month): %{{customdata[9]:,}}<br>"
+                    f"<b>{color_metric} (color metric):</b> %{{customdata[10]:,.2f}}<extra></extra>"
                 )
 
         trace.hovertemplate = hovertemplates
         trace.insidetextorientation = "radial"
         trace.marker.line = dict(color="#000000", width=2)
 
-        # --- Layout adjustments ---
+        # Layout adjustments
         fig.update_layout(
             coloraxis_showscale=False,
-            hoverlabel=dict(font_size=18, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
+            hoverlabel=dict(font_size=16, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
             height=1400,
             title_x=0.5,
             font_size=18,
@@ -644,7 +634,7 @@ with tab4:
             plot_bgcolor="white",
         )
 
-        # --- Add logo ---
+        # Add logo
         fig.add_layout_image(
             dict(
                 source="https://opensustain.tech/logo.png",
@@ -664,10 +654,10 @@ with tab4:
 
         return fig
 
-
     # --- Generate sunburst ---
-    fig4 = create_sunburst(df_filtered)
-    st.plotly_chart(fig4)
+    fig_sunburst = create_sunburst(df_filtered, selected_color_metric)
+    st.plotly_chart(fig_sunburst)
+
 
 
 # ==========================
@@ -731,9 +721,13 @@ with tab_rankings:
     # --------------------------
     # Metric selection
     # --------------------------
+    # --------------------------
+    # Metric selection (Total Score default)
+    # --------------------------
     metric = st.selectbox(
         "Select Ranking Metric:",
         options=metrics_with_total,
+        index=metrics_with_total.index("total_score_combined"),  # Default to Total Score
         format_func=lambda x: {
             "score": "Ecosyste.ms Score",
             "dds": "Development Distribution Score",
