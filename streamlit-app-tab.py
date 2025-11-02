@@ -563,7 +563,17 @@ with tab4:
             axis=-1
         )
 
-        bright_score_colors = ["#ff0000", "#ff6600", "#ffcc00", "#66cc00", "#00cc00"]
+        bright_score_colors = [
+            "#ff3300",  # red-orange (rare)
+            "#ff6600",  # orange
+            "#ff9900",  # dark yellow
+            "#ffcc00",  # yellow
+            "#ccff33",  # yellow-green
+            "#99ff33",  # light green
+            "#66cc00",  # green
+            "#33cc00",  # strong green
+            "#00cc00"   # bright green
+        ]
 
         fig = px.sunburst(
             df,
