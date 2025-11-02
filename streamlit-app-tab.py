@@ -109,9 +109,7 @@ st.markdown(
         <img src="https://opensustain.tech/logo.png" width="80" height="80" style="margin-right:16px;">
         <h1 style="margin:0; font-size:2rem; color:#099ec8;">OpenSustain.Analytics</h1>
     </div>
-    <p>Explore <strong>OpenSustain.tech</strong>, the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact.</p>
-    <p>All <strong>project names</strong> and <strong>organisation names</strong> throughout the dashboard are <strong>clickable links</strong> that will open the corresponding project or organisation page.</p>
-    <p>The data is provided under a <strong>Creative Commons CC-BY 4.0 license</strong> and is powered by 
+    <p>Discover <strong>OpenSustain.tech</strong>, a global index of the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact. All <strong>project names</strong> and <strong>organisation names</strong> throughout the dashboard are <strong>clickable links</strong> that will open the corresponding project or organisation page. The data is provided under a <strong>Creative Commons CC-BY 4.0 license</strong> and is powered by 
     <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.</p>
     <p>You can find <strong>Good First Issues</strong> in all these projects to start contributing to Open Source in Climate and Sustainability at 
     <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.</p>
