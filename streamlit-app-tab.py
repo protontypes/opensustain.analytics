@@ -67,7 +67,6 @@ df["downloads_last_month"] = df["downloads_last_month"].fillna(0)
 
 
 # --- Preprocessing of organisations ---
-# Make organisation names clickable using their namespace URL
 def org_to_link(org_name, org_url):
     if pd.isna(org_url) or org_url.strip() == "":
         return org_name
@@ -173,6 +172,25 @@ category_colors = {
     )
 }
 
+# --- Modern Web-App Style Tabs ---
+st.markdown("""
+<style>
+/* Tab container */
+div[data-baseweb="tab-list"] {
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Active (selected) tab */
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #099ec8;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
 # --- Tabs ---
 (
     tab4,
@@ -186,15 +204,15 @@ category_colors = {
     tab_topics,
 ) = st.tabs(
     [
-        "🌍 Ecosystem Overview",
-        "🥇 Project Rankings",
-        "🏆 Organisations Ranking",
-        "⏳ Projects over Time",
-        "🏢 Organisations",
-        "🌐 Projects by Organisation",
-        "🏢 Organisations by Sub-Category",
-        "🧩 Projects Attributes",
-        "🏷️ Topics & Keywords",
+        "Ecosystem Overview",
+        "Project Rankings",
+        "Organisations Ranking",
+        "Projects over Time",
+        "Organisations",
+        "Projects by Organisation",
+        "Organisations by Sub-Category",
+        "Projects Attributes",
+        "Topics & Keywords",
     ]
 )
 
@@ -202,7 +220,7 @@ category_colors = {
 # TAB 1: Scatter Plot
 # ==========================
 with tab1:
-    st.header("⏳ Projects over Age")
+    st.header("Projects over Age")
 
     # -------------------------------
     # Remove extra gap under selectbox
@@ -358,7 +376,7 @@ with tab1:
 # ==========================
 
 with tab4:
-    st.header(" The Open Source Sustainability Ecosystem")
+    st.header("The Open Source Sustainability Ecosystem")
 
     # --- Cached summary stats ---
     @st.cache_data
