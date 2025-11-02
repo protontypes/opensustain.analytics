@@ -712,11 +712,28 @@ with tab_rankings:
         df_rank = df_rank[df_rank["is_active"]]
 
     # --------------------------
+    # Compute Total Score
+    # --------------------------
+    # Normalize metrics (min-max scaling) to [0,1]
+    df_norm = df_rank[metrics].copy()
+    for col in metrics:
+        min_val = df_norm[col].min()
+        max_val = df_norm[col].max()
+        if max_val > min_val:
+            df_norm[col] = (df_norm[col] - min_val) / (max_val - min_val)
+        else:
+            df_norm[col] = 0
+    df_rank["total_score_combined"] = df_norm.sum(axis=1)
+
+    # Add Total Score to metrics list for dropdown
+    metrics_with_total = metrics + ["total_score_combined"]
+
+    # --------------------------
     # Metric selection
     # --------------------------
     metric = st.selectbox(
         "Select Ranking Metric:",
-        options=metrics,
+        options=metrics_with_total,
         format_func=lambda x: {
             "score": "Ecosyste.ms Score",
             "dds": "Development Distribution Score",
@@ -726,6 +743,7 @@ with tab_rankings:
             "total_number_of_dependencies": "Total Dependencies",
             "stars": "Stars",
             "downloads_last_month": "Downloads (Last Month)",
+            "total_score_combined": "Total Score (All Metrics)"
         }[x],
     )
 
@@ -836,7 +854,6 @@ with tab_rankings:
         fig_rank.update_layout(images=logo_images)
 
         st.plotly_chart(fig_rank)
-
 
 
 
