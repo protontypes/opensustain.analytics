@@ -172,23 +172,50 @@ category_colors = {
     )
 }
 
-# --- Modern Web-App Style Tabs ---
+# --- Modern Web-App Style Tabs (Highlighted Buttons) ---
 st.markdown("""
 <style>
 /* Tab container */
 div[data-baseweb="tab-list"] {
     justify-content: flex-start;
-    gap: 2rem;
-    padding-bottom: 0.5rem;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
     margin-bottom: 1.5rem;
 }
 
-/* Active (selected) tab */
-button[data-baseweb="tab"][aria-selected="true"] {
+/* Base tab button */
+button[data-baseweb="tab"] {
+    background-color: #f5f7fa; /* light button background */
+    color: #444;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+/* Hover effect */
+button[data-baseweb="tab"]:hover {
+    background-color: #e0f0fb;
     color: #099ec8;
+}
+
+/* Active tab */
+button[data-baseweb="tab"][aria-selected="true"] {
+    background-color: #099ec8;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Remove focus outline */
+button[data-baseweb="tab"]:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 # --- Tabs ---
@@ -1257,7 +1284,7 @@ def process_organisations_data(df_organisations: pd.DataFrame):
 
 
 with tab_organisations:
-    st.header("🏢 Organisations Overview")
+    st.header("Organisations Overview")
 
     df_clean, df_countries_count, df_continent_counts, df_projects_country = process_organisations_data(df_organisations)
 
@@ -1321,7 +1348,7 @@ with tab_organisations:
     st.plotly_chart(fig_continent)
 
     # --- Total number of projects per country (choropleth) ---
-    st.subheader("🌍 Total Number of Projects per Country")
+    st.subheader("Total Number of Projects per Country")
     fig_map = px.choropleth(
         df_projects_country,
         locations="iso_alpha",
@@ -1478,15 +1505,19 @@ with tab_org_sunburst:
 
 
 # ==========================
-# TAB 10: Organisations by Sub-Categories Sunburst
+# TAB 10: Organisations Ranking
 # ==========================
 
 with tab_top_org_score:
     st.header("Organisations Rankings")
-    st.caption("Aggregates the Ecosyste.ms project scores for each organisation using the `organization_projects` field from organisations.csv.")
+    st.caption(
+        "Aggregates the Ecosyste.ms project scores for each organisation using the `organization_projects` field from organisations.csv."
+    )
 
     if "organization_projects" not in df_organisations.columns or "git_url" not in df.columns:
-        st.warning("Missing required fields: `organization_projects` in organisations.csv or `git_url` in projects.csv.")
+        st.warning(
+            "Missing required fields: `organization_projects` in organisations.csv or `git_url` in projects.csv."
+        )
     else:
         # Ensure numeric scores
         df["score"] = pd.to_numeric(df["score"], errors="coerce").fillna(0)
@@ -1494,11 +1525,18 @@ with tab_top_org_score:
         # Map git_url -> score
         project_score_map = df.set_index("git_url")["score"].to_dict()
 
+        # Map git_url -> category
+        project_category_map = df.set_index("git_url")["category"].to_dict()
+
         # Split projects per organisation
-        df_organisations["organization_projects"] = df_organisations["organization_projects"].fillna("").astype(str)
+        df_organisations["organization_projects"] = df_organisations[
+            "organization_projects"
+        ].fillna("").astype(str)
         df_organisations["projects_list"] = df_organisations["organization_projects"].apply(
             lambda s: [p.strip() for p in s.split(",") if p.strip() != ""]
         )
+
+        # Fill missing descriptions and icons
         df_organisations["organization_description"] = df_organisations.get(
             "organization_description", ""
         ).fillna("No description available")
@@ -1506,32 +1544,49 @@ with tab_top_org_score:
             "organization_icon_url", ""
         ).fillna("")
 
-        # Compute aggregated score
+        # --- Single-select category filter ---
+        all_categories = df["category"].unique().tolist()
+        all_categories = ["All Categories"] + all_categories  # add default option
+        selected_category = st.selectbox(
+            "Filter organisations by project category:",
+            options=all_categories,
+            index=0,  # default to "All Categories"
+        )
+
+        # Compute aggregated score per organisation, filtering by selected category
         aggregated_data = []
         for _, row in df_organisations.iterrows():
             org_name = row.get("organization_name", "Unknown")
             projects = row["projects_list"]
-            total_score = sum(project_score_map.get(p, 0) for p in projects)
+
+            # Keep only projects in selected category (or all)
+            if selected_category == "All Categories":
+                filtered_projects = projects
+            else:
+                filtered_projects = [p for p in projects if project_category_map.get(p) == selected_category]
+
+            total_score = sum(project_score_map.get(p, 0) for p in filtered_projects)
             description = row["organization_description"]
             icon_url = row["organization_icon_url"]
-            aggregated_data.append(
-                {
-                    "organization_name": org_name,
-                    "total_score": total_score,
-                    "organization_description": description,
-                    "organization_icon_url": icon_url,
-                }
-            )
+
+            # Only include orgs with projects in the selected category
+            if filtered_projects:
+                aggregated_data.append(
+                    {
+                        "organization_name": org_name,
+                        "total_score": total_score,
+                        "organization_description": description,
+                        "organization_icon_url": icon_url,
+                    }
+                )
 
         df_agg_scores = pd.DataFrame(aggregated_data)
 
         if df_agg_scores.empty:
-            st.warning("No organisation data found to compute scores.")
+            st.warning("No organisation data found for the selected category.")
         else:
             # Sort by total score descending
-            df_agg_scores = df_agg_scores.sort_values(
-                "total_score", ascending=False
-            ).reset_index(drop=True)
+            df_agg_scores = df_agg_scores.sort_values("total_score", ascending=False).reset_index(drop=True)
 
             # Slider for top N organisations
             top_n = st.slider(
@@ -1585,14 +1640,14 @@ with tab_top_org_score:
                     logo_images.append(
                         dict(
                             source=row["organization_icon_url"],
-                            xref="paper",  # relative to chart area
+                            xref="paper",
                             yref="y",
-                            x=0.01,  # small offset from left margin
+                            x=0.01,
                             y=row["organization_name"],
                             xanchor="left",
                             yanchor="middle",
-                            sizex=0.05,  # fraction of chart width
-                            sizey=0.4,   # relative to bar height
+                            sizex=0.05,
+                            sizey=0.4,
                             layer="above",
                             sizing="contain",
                             opacity=1,
