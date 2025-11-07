@@ -474,7 +474,7 @@ with tab4:
     row2_cols[3].metric("📝 Median Commits", f"{median_commits}")
 
     # --- Root label for sunburst ---
-    df["hole"] = '<b style="font-size:40px;"><a href="https://opensustain.tech/">OpenSustain.tech</a></b>'
+    df["hole"] = '<b style="font-size:1.2rem; line-height:normal;"><a href="https://opensustain.tech/" >The Open Source Ecosystem <br> in Sustainability</a></b>'
 
     # --- Checkbox to hide inactive projects ---
     hide_inactive = st.checkbox("Hide inactive projects (no commits in past year)", value=True)
@@ -636,23 +636,7 @@ with tab4:
             plot_bgcolor="white",
         )
 
-        # Add logo
-        fig.add_layout_image(
-            dict(
-                source="https://opensustain.tech/logo.png",
-                xref="paper",
-                yref="paper",
-                x=0.5,
-                y=0.58,
-                sizex=0.10,
-                sizey=0.10,
-                xanchor="center",
-                yanchor="middle",
-                layer="above",
-                sizing="contain",
-                opacity=1,
-            )
-        )
+
 
         return fig
 
