@@ -474,7 +474,7 @@ with tab4:
     row2_cols[3].metric("📝 Median Commits", f"{median_commits}")
 
     # --- Root label for sunburst ---
-    df["hole"] = '<b style="font-size:1.2rem; line-height:normal;"><a href="https://opensustain.tech/" >The Open Source Ecosystem <br> in Sustainability</a></b>'
+    df["hole"] = '<b style="font-family: Open Sans; font-size:1.5rem; line-height:normal;"><a href="https://opensustain.tech/">The Open Source Ecosystem <br> in Sustainability</a></b>'
 
     # --- Checkbox to hide inactive projects ---
     hide_inactive = st.checkbox("Hide inactive projects (no commits in past year)", value=True)
@@ -621,20 +621,37 @@ with tab4:
         trace.insidetextorientation = "radial"
         trace.marker.line = dict(color="#000000", width=2)
 
-        # Layout adjustments
         fig.update_layout(
-            coloraxis_showscale=False,
+            coloraxis_showscale=True,
+            coloraxis_colorbar=dict(
+                title=dict(
+                    text=f"{selected_color_metric.replace('_', ' ').title()}",
+                    font=dict(size=16, family="Open Sans")
+                ),
+                orientation="h",
+                yanchor="bottom",
+                y=-0.15,           # move below the plot
+                xanchor="center",
+                x=0.5,
+                thicknessmode="pixels",
+                thickness=25,
+                lenmode="fraction",
+                len=0.6,
+                tickfont=dict(size=14, family="Open Sans"),
+            ),
             hoverlabel=dict(font_size=16, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
             height=1400,
             title_x=0.5,
             font_size=18,
             dragmode=False,
-            margin=dict(l=2, r=2, b=0, t=10),
+            margin=dict(l=2, r=2, b=120, t=10),  # extra space for colorbar
             title_font_family="Open Sans",
             font_family="Open Sans",
             font_color="black",
             plot_bgcolor="white",
         )
+
+
 
 
 
