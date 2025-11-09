@@ -194,6 +194,21 @@ category_colors = {
     )
 }
 
+bright_score_colors = [
+    "#ff3300",  # red-orange (rare)
+    "#ff6600",  # orange
+    "#ff9900",  # dark yellow
+    "#ffcc00",  # yellow
+    "#ccff33",  # yellow-green
+    "#99ff33",  # light green
+    "#66ff33",  # lime green
+    "#33ff33",  # bright green
+    "#00ff33",  # vivid green
+    "#00cc33",  # strong green
+    "#00cc00"   # deep green
+]
+
+
 # --- Modern Web-App Style Tabs (Highlighted Buttons) ---
 st.markdown("""
 <style>
@@ -418,8 +433,6 @@ with tab1:
     st.plotly_chart(fig1)
 
 
-
-
 # ==========================
 # TAB 4: Sunburst
 # ==========================
@@ -585,18 +598,6 @@ with tab4:
             ],
             axis=-1
         )
-
-        bright_score_colors = [
-            "#ff3300",  # red-orange (rare)
-            "#ff6600",  # orange
-            "#ff9900",  # dark yellow
-            "#ffcc00",  # yellow
-            "#ccff33",  # yellow-green
-            "#99ff33",  # light green
-            "#66cc00",  # green
-            "#33cc00",  # strong green
-            "#00cc00"   # bright green
-        ]
 
         fig = px.sunburst(
             df,
@@ -1380,16 +1381,45 @@ with tab_organisations:
 
     # --- Total number of projects per country (choropleth) ---
     st.subheader("Total Number of Projects per Country")
+
+    # Choose a nice continuous color scale
+    color_scale = px.colors.sequential.Turbo  # smoother green-blue gradient
+
     fig_map = px.choropleth(
         df_projects_country,
-        locations="iso_alpha",
+        locations="iso_alpha",  # ISO country codes
         color="total_listed_projects_in_organization",
-        hover_name="iso_alpha",
-        color_continuous_scale="Turbo",
-        title="Total Number of Projects per Country",
+        hover_name="iso_alpha",  # show country name instead of ISO code
+        hover_data={
+            "iso_alpha": False,  # hide ISO code
+            "total_listed_projects_in_organization": True
+        },
+        color_continuous_scale=color_scale,
+        range_color=[0, 150],  # cap the color scale at 200
+        title=" ",
     )
-    fig_map.update_layout(height=700, margin=dict(l=10, r=10, t=50, b=10))
+
+    # Update layout for aesthetics
+    fig_map.update_layout(
+        height=700,
+        margin=dict(l=10, r=10, t=50, b=10),
+        title_font_size=22,
+        title_x=0.5,  # center title
+        geo=dict(
+            showframe=False,
+            showcoastlines=True,
+            projection_type="natural earth",
+            lakecolor="LightBlue"
+        )
+    )
+
+    # Optionally, add hover label formatting
+    fig_map.update_traces(
+        hovertemplate="<b>%{hovertext}</b><br>Total Projects: %{z}<extra></extra>"
+    )
+
     st.plotly_chart(fig_map)
+
 
 
 
@@ -1407,7 +1437,7 @@ with tab_org_sunburst:
     # --- Prepare Data ---
     df_sunburst_projects = df_organisations.copy()
 
-    # Split and explode project list into separate rows
+    # Split and explode project list
     df_sunburst_projects = df_sunburst_projects.assign(
         organization_projects=df_sunburst_projects["organization_projects"]
         .fillna("")
@@ -1421,25 +1451,37 @@ with tab_org_sunburst:
         df_sunburst_projects["organization_projects"] != ""
     ]
 
-    # Compute number of projects per organization
+    # --- Merge with main projects dataframe to get total_score_combined ---
+    df_sunburst_projects = df_sunburst_projects.merge(
+        df[["git_url", "total_score_combined", "category"]],
+        left_on="organization_projects",
+        right_on="git_url",
+        how="left"
+    )
+
+    # Fill missing total_score_combined with 0
+    df_sunburst_projects["total_score_combined"] = df_sunburst_projects["total_score_combined"].fillna(0)
+
+    # --- Order projects by score descending ---
+    df_sunburst_projects = df_sunburst_projects.sort_values(
+        by=["organization_name", "total_score_combined"], ascending=[True, False]
+    ).reset_index(drop=True)
+
+    # --- Filter organizations with at least 2 projects ---
     org_project_counts = (
         df_sunburst_projects.groupby("organization_name")
         .size()
         .reset_index(name="num_projects")
         .sort_values("num_projects", ascending=False)
     )
-
-    # --- Filter by minimum project count (≥2) ---
     org_project_counts = org_project_counts[org_project_counts["num_projects"] >= 2]
 
-    # --- Add slider to select top X organizations ---
     top_n_orgs = st.slider(
         "Number of top organizations to display:",
         min_value=5,
         max_value=len(org_project_counts),
         value=150,
         step=5,
-        help="Select how many of the top organizations (by number of projects) to include in the Sunburst chart.",
     )
 
     top_orgs = org_project_counts.head(top_n_orgs)["organization_name"].tolist()
@@ -1447,13 +1489,13 @@ with tab_org_sunburst:
         df_sunburst_projects["organization_name"].isin(top_orgs)
     ]
 
-    # --- Add root (center node) ---
+    # --- Add root node ---
     df_sunburst_projects["root"] = (
         '<b style="font-size:40px;"><a href="https://opensustain.tech/" target="_blank">'
-        "OpenSustain.tech<br><br>Organizations</a></b>"
+        "Open Source Projects in <br><br>Sustainabiliby by Organizations</a></b>"
     )
 
-    # --- Extract short project name from URL (last part) ---
+    # --- Extract short project name ---
     def extract_project_name(url):
         if isinstance(url, str) and "/" in url:
             return url.rstrip("/").split("/")[-1]
@@ -1463,64 +1505,57 @@ with tab_org_sunburst:
         "organization_projects"
     ].apply(extract_project_name)
 
-    # --- Create clickable link using the full URL, but display only the short name ---
+    # --- Create clickable link ---
     df_sunburst_projects["organization_projects_link"] = df_sunburst_projects.apply(
         lambda row: f'<a href="{row["organization_projects"]}" target="_blank">{extract_project_name(row["organization_projects"])}</a>',
         axis=1,
     )
 
-    # --- Color mapping ---
+    # --- Organization color mapping (categorical) ---
     unique_orgs = df_sunburst_projects["organization_name"].unique()
     color_palette = list(category_colors.values())
     org_colors = {
         org: color_palette[i % len(color_palette)] for i, org in enumerate(unique_orgs)
     }
 
-    # --- Create Sunburst ---
+    # --- Bright colors for project scores ---
+    bright_score_colors = [
+        "#ff3300", "#ff6600", "#ff9900", "#ffcc00",
+        "#ccff33", "#99ff33", "#66cc00", "#33cc00", "#00cc00"
+    ]
+
+    # --- Sunburst ---
     fig_org_sun = px.sunburst(
         df_sunburst_projects,
-        path=[
-            "root",
-            "organization_name",
-            "organization_projects_link",
-        ],  # clickable project names
-        color="organization_name",
-        color_discrete_map=org_colors,
+        path=["root", "organization_name", "organization_projects_link"],
+        color="total_score_combined",  # project nodes
+        color_continuous_scale=bright_score_colors,
         maxdepth=2,
         title=" ",
-        custom_data=["organization_name", "organization_projects"],
+        custom_data=["organization_name", "organization_projects", "total_score_combined"],
     )
 
-    # --- Make the root (hole) white ---
-    colors = list(fig_org_sun.data[0].marker.colors)
-    if len(colors) > 0:
-        colors[0] = "white"
-        fig_org_sun.data[0].marker.colors = colors
+    # --- Override organization node colors ---
+    trace = fig_org_sun.data[0]
+    colors = list(trace.marker.colors)
+
+    for i, label in enumerate(trace.labels):
+        if label in unique_orgs:
+            colors[i] = org_colors[label]  # org nodes: categorical color
+        elif i == 0:
+            colors[i] = "white"  # root
+        # project nodes keep continuous bright_score_colors
+
+    trace.marker.colors = colors
 
     # --- Hover info ---
     fig_org_sun.update_traces(
         insidetextorientation="radial",
         hovertemplate="<b>Organisation:</b> %{customdata[0]}<br>"
-        "<b>Project URL:</b> %{customdata[1]}<extra></extra>",
+        "<b>Project URL:</b> %{customdata[1]}<br>"
+        "<b>Total Score:</b> %{customdata[2]:.2f}<extra></extra>",
     )
 
-    # --- Add logo at the center ---
-    fig_org_sun.add_layout_image(
-        dict(
-            source="https://opensustain.tech/logo.png",
-            xref="paper",
-            yref="paper",
-            x=0.5,
-            y=0.58,
-            sizex=0.10,
-            sizey=0.10,
-            xanchor="center",
-            yanchor="middle",
-            layer="above",
-            sizing="contain",
-            opacity=1,
-        )
-    )
 
     # --- Layout ---
     fig_org_sun.update_layout(
@@ -1532,6 +1567,36 @@ with tab_org_sunburst:
         title_font=dict(size=30, family="Open Sans", color="#099ec8"),
     )
 
+    # --- Layout with horizontal colorbar ---
+    fig_org_sun.update_layout(
+        height=1600,
+        margin=dict(l=2, r=2, t=50, b=50),  # extra bottom margin for colorbar
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        font=dict(size=20, family="Open Sans"),
+        title_font=dict(size=30, family="Open Sans", color="#099ec8"),
+        coloraxis_colorbar=dict(
+            title=dict(
+                text="Total Score",
+                font=dict(size=16, family="Open Sans")
+            ),
+            orientation="h",   # horizontal colorbar
+            x=0.5,
+            y=-0.05,          # slightly below plot
+            xanchor="center",
+            yanchor="top",
+            thickness=25,
+            lenmode="fraction",
+            len=0.6,
+            tickfont=dict(size=14, family="Open Sans"),
+        ),
+    )
+
+    # Ensure the trace uses the coloraxis
+    fig_org_sun.data[0].update(marker=dict(coloraxis="coloraxis"))
+
+
+
     st.plotly_chart(fig_org_sun)
 
 
@@ -1542,7 +1607,7 @@ with tab_org_sunburst:
 with tab_top_org_score:
     st.header("Organisations Rankings")
     st.caption(
-        "Aggregates the Ecosyste.ms project scores for each organisation using the `organization_projects` field from organisations.csv."
+        "Aggregates the total project scores for each organisation using the `organization_projects` field from organisations.csv."
     )
 
     if "organization_projects" not in df_organisations.columns or "git_url" not in df.columns:
@@ -1551,10 +1616,10 @@ with tab_top_org_score:
         )
     else:
         # Ensure numeric scores
-        df["score"] = pd.to_numeric(df["score"], errors="coerce").fillna(0)
+        df["total_score_combined"] = pd.to_numeric(df["total_score_combined"], errors="coerce").fillna(0)
 
         # Map git_url -> score
-        project_score_map = df.set_index("git_url")["score"].to_dict()
+        project_score_map = df.set_index("git_url")["total_score_combined"].to_dict()
 
         # Map git_url -> category
         project_category_map = df.set_index("git_url")["category"].to_dict()
