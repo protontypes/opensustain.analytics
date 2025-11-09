@@ -94,6 +94,36 @@ df["project_names_link"] = (
 )
 
 
+# --- Compute Total Score across metrics ---
+metrics_for_score = [
+    "contributors",
+    "total_commits",
+    "stars",
+    "score",
+    "dds",
+    "downloads_last_month",
+]
+
+# Ensure numeric and fill NaNs
+for col in metrics_for_score:
+    if col not in df.columns:
+        df[col] = 0
+    else:
+        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+
+# Normalize each metric (min-max scaling)
+df_norm = df[metrics_for_score].copy()
+for col in metrics_for_score:
+    min_val = df_norm[col].min()
+    max_val = df_norm[col].max()
+    if max_val > min_val:
+        df_norm[col] = (df_norm[col] - min_val) / (max_val - min_val)
+    else:
+        df_norm[col] = 0
+
+# Add the aggregated Total Score column
+df["total_score_combined"] = df_norm.sum(axis=1)
+
 # --- Dashboard Introduction in a card style ---
 st.markdown(
     """
@@ -496,12 +526,12 @@ with tab4:
     available_metrics = [
         "contributors", "citations", "total_commits",
         "total_number_of_dependencies", "stars", "score",
-        "dds", "downloads_last_month"
+        "dds", "downloads_last_month", "total_score_combined"
     ]
     selected_color_metric = st.selectbox(
         "Select metric for color coding:",
         options=available_metrics,
-        index=available_metrics.index("dds"),  # default
+        index=available_metrics.index("total_score_combined"),  # Default to Total Score
         format_func=lambda x: {
             "score": "Ecosyste.ms Score",
             "dds": "Development Distribution Score",
@@ -510,7 +540,8 @@ with tab4:
             "total_commits": "Total Commits",
             "total_number_of_dependencies": "Total Dependencies",
             "stars": "Stars",
-            "downloads_last_month": "Downloads (Last Month)"
+            "downloads_last_month": "Downloads (Last Month)",
+            "total_score_combined": "Total Score (All Metrics)"
         }[x]
     )
 
@@ -703,20 +734,6 @@ with tab_rankings:
     )
     if show_only_active:
         df_rank = df_rank[df_rank["is_active"]]
-
-    # --------------------------
-    # Compute Total Score
-    # --------------------------
-    # Normalize metrics (min-max scaling) to [0,1]
-    df_norm = df_rank[metrics].copy()
-    for col in metrics:
-        min_val = df_norm[col].min()
-        max_val = df_norm[col].max()
-        if max_val > min_val:
-            df_norm[col] = (df_norm[col] - min_val) / (max_val - min_val)
-        else:
-            df_norm[col] = 0
-    df_rank["total_score_combined"] = df_norm.sum(axis=1)
 
     # Add Total Score to metrics list for dropdown
     metrics_with_total = metrics + ["total_score_combined"]
