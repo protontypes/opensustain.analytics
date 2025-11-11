@@ -395,7 +395,7 @@ with tab1:
 # ==========================
 with tab4:
     st.header("The Open Source Sustainability Ecosystem")
-
+    st.divider()
     # --- Cached summary stats ---
     @st.cache_data
     def compute_summary_stats(df_projects, df_orgs):
@@ -460,18 +460,21 @@ with tab4:
     ) = compute_summary_stats(df, df_organisations)
 
     # --- Display metrics ---
-    row1_cols = st.columns(5, gap="large")
+    row1_cols = st.columns(5, gap="small")
     row1_cols[0].metric("🌱 Total Projects", f"{total_projects}")
     row1_cols[1].metric("✅ Active Projects", f"{active_projects}")
     row1_cols[2].metric("🏢 Total Organisations", f"{total_organisations}")
     row1_cols[3].metric("👥 Total Contributors", f"{total_contributors}")
     row1_cols[4].metric("⏳ Median Project Age (yrs)", f"{median_age}")
-
-    row2_cols = st.columns(4, gap="large")
+    row2_cols = st.columns(5, gap="large")
     row2_cols[0].metric("⭐ Median Stars", f"{median_stars}")
     row2_cols[1].metric("📊 Median Development Distribution Score", f"{median_dds}")
     row2_cols[2].metric("👤 Median Contributors", f"{median_contributors}")
     row2_cols[3].metric("📝 Median Commits", f"{median_commits}")
+
+
+
+    st.divider()
 
     # --- Root label for sunburst ---
     df["hole"] = '<b style="font-size:1.2rem; line-height:normal;"><a href="https://opensustain.tech/" >The Open Source Ecosystem <br> in Sustainability</a></b>'
@@ -623,20 +626,48 @@ with tab4:
 
         # Layout adjustments
         fig.update_layout(
-            coloraxis_showscale=False,
-            hoverlabel=dict(font_size=16, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
-            height=1400,
-            title_x=0.5,
-            font_size=18,
-            dragmode=False,
-            margin=dict(l=2, r=2, b=0, t=10),
-            title_font_family="Open Sans",
-            font_family="Open Sans",
-            font_color="black",
-            plot_bgcolor="white",
+        coloraxis_showscale=False,
+        hoverlabel=dict(font_size=16, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
+        height=1400,
+        title_x=0.5,
+        font_size=18,
+        dragmode=False,
+        margin=dict(l=2, r=2, b=100, t=10),
+        title_font_family="Open Sans",
+        font_family="Open Sans",
+        font_color="black",
+        plot_bgcolor="white",
+
         )
+        # legend annotations for categories
+        legend_items = []
+        x_pos = 0.05
+        y_pos = -0.05
 
+        for i, (category, color) in enumerate(category_colors.items()):
+            #  position (arrange horizontally)
+            if i > 0:
+                x_pos += 0.08
 
+            legend_items.append(
+                dict(
+                    x=x_pos,
+                    y=y_pos,
+                    xref="paper",
+                    yref="paper",
+                    text=f"<span style='padding:5px;'>{category}</span>",
+                    showarrow=False,
+                    font=dict(size=12, color="black", family="Open Sans"),
+                    bgcolor=color,
+                    bordercolor="black",
+                    borderwidth=1,
+                    borderpad=4,
+                    xanchor="left",
+                    yanchor="top"
+                )
+            )
+
+        fig.update_layout(annotations=legend_items)
 
         return fig
 
