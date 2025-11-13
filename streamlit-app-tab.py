@@ -469,7 +469,7 @@ with tab4:
         median_stars = int(df_projects["stars"].median()) if "stars" in df_projects.columns else 0
 
         # Median DDS
-        median_dds = round(df_projects["dds"].median(), 2) if "dds" in df_projects.columns else 0
+        median_dds = round(df_projects["dds"].median(), 3) if "dds" in df_projects.columns else 0
 
         # Median contributors
         median_contributors = round(df_projects["contributors"].median(), 2) if "contributors" in df_projects.columns else 0
@@ -1846,3 +1846,67 @@ with tab_org_subcat:
         )
 
         st.plotly_chart(fig_org_subcat_sun)
+
+st.markdown(
+    """
+### 🧭 Understanding the Metrics
+
+**🔹 Total Score (All Metrics)**  
+The *Total Score* is a composite indicator that aggregates several quantitative signals of project activity and impact.  
+It combines normalized values (min–max scaled) of:
+- Number of contributors  
+- Total commits  
+- Stars  
+- Ecosyste.ms Score  
+- Development Distribution Score (DDS)  
+- Downloads in the last month  
+
+Each metric is normalized between 0 and 1 to ensure comparability, then summed to form a single *Total Score*.  
+Higher *Total Scores* represent projects that are both technically active and socially visible across multiple dimensions of the open-source ecosystem.
+All project names are clickable links to the git repositories.
+
+---
+
+**🔹 Ecosyste.ms Score**  
+The *Ecosyste.ms Score* is provided by [Ecosyste.ms](https://ecosyste.ms/), a platform that measures and analyzes open-source ecosystems.  
+It reflects a project’s **overall health and sustainability**, incorporating factors such as:
+- Development activity and growth  
+- Community engagement  
+- Project maturity and governance  
+- Dependency relationships within the wider ecosystem  
+
+This score serves as a holistic indicator of how well a project is maintained and integrated into the open-source sustainability landscape.
+
+---
+
+**🔹 Development Distribution Score (DDS)**  
+The *Development Distribution Score (DDS)* quantifies **how evenly contributions are distributed** across a project’s contributor base.  
+It captures whether a project’s development is concentrated among a few developers or more evenly spread among many participants.  
+- A **higher DDS** indicates a healthier, more distributed, and community-driven project.  
+- A **lower DDS** suggests that development activity is dominated by a small group or a single maintainer.  
+
+For more information about the origin of the DDS and how it is calculated, please refer to the [definition in our latest report](https://report.opensustain.tech/chapters/development-distribution-score.html).
+
+---
+
+### ☀️ How to Use the Sunburst Visualization
+
+The **Sunburst chart** provides a hierarchical view of the open-source sustainability ecosystem:
+- The **center (root)** represents *The Open Source Ecosystem in Sustainability*.  
+- The **first ring** displays broad *categories* (e.g., Energy, Agriculture, Biodiversity).  
+- The **second ring** expands into *sub-categories* within each domain.  
+- The **outermost ring** contains individual *projects*.
+
+**Interactivity:**
+-  **Hover** over any project slice to view detailed metrics (contributors, stars, commits, DDS, Ecosyste.ms score, etc.).  
+-  **Color** represents the currently selected metric (e.g., Total Score, Ecosyste.ms Score, or DDS) — brighter colors indicate higher metric values.  
+-  **Click** on a segment (category or sub-category) to zoom in and explore its internal structure.  
+-  **Click the center** to zoom back out.  
+-  **Use the checkbox** *“Hide inactive projects”* to filter out projects without recent commit activity.  
+
+The sunburst helps identify which sustainability domains are most active, how contributions are distributed across subfields, and which projects are leading in community engagement and open-source vitality.
+
+---
+""",
+    unsafe_allow_html=True,
+)
