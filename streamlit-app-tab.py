@@ -686,7 +686,6 @@ with tab4:
             plot_bgcolor="white",
         )
 
-        )
         # legend annotations for categories
         legend_items = []
         x_pos = 0.05
