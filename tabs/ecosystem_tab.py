@@ -319,4 +319,4 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
         category_colors,
         bright_score_colors
     )
-    st.plotly_chart(fig_sunburst, width='stretch')
+    st.plotly_chart(fig_sunburst)

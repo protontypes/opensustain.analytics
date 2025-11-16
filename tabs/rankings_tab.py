@@ -206,4 +206,4 @@ def render_rankings_tab(df, text_to_link_func):
                 )
         fig_rank.update_layout(images=logo_images)
 
-        st.plotly_chart(fig_rank, width='stretch')
+        st.plotly_chart(fig_rank)

@@ -174,6 +174,6 @@ def render_distributions_tab(df):
             yaxis_title_font=dict(size=20),
         )
 
-        st.plotly_chart(fig_platform, use_container_width=True)
+        st.plotly_chart(fig_platform)
     else:
         st.warning("Column `platform` not found in dataset.")
