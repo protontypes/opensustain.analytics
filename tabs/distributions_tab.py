@@ -80,7 +80,7 @@ def render_distributions_tab(df):
             yaxis_title_font=dict(size=20, family="Open Sans"),
         )
 
-        st.plotly_chart(fig_commit_activity, use_container_width=True)
+        st.plotly_chart(fig_commit_activity, width='stretch')
     else:
         st.warning("Column latest_commit_activity not found in dataset.")
 
@@ -138,8 +138,7 @@ def render_distributions_tab(df):
             yaxis_tickfont=dict(size=18),
             yaxis_title_font=dict(size=20),
         )
-
-        st.plotly_chart(fig_dist, use_container_width=True)
+        st.plotly_chart(fig_dist, width='stretch')
 
     # ==============================
     # Git Platforms Distribution (Moved to End)
