@@ -19,6 +19,9 @@ def render_projects_over_time_tab(df, category_colors):
         A dictionary mapping categories to colors.
     """
     st.header("Projects over Age")
+    st.caption(
+        "Scatter plot showing the project age in different sub-categories, with the size of the bubbles based on different metrics."
+    )
 
     # -------------------------------
     # Remove extra gap under selectbox

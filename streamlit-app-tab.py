@@ -219,8 +219,8 @@ st.markdown("""
 /* Tab container */
 div[data-baseweb="tab-list"] {
     justify-content: flex-start;
-    gap: 1.5rem;
-    padding: 0.5rem 0;
+    gap: 1.0rem;
+    padding: 0.3rem 0;
     margin-bottom: 1.5rem;
 }
 
@@ -230,7 +230,7 @@ button[data-baseweb="tab"] {
     color: #444;
     font-weight: 600;
     font-size: 1rem;
-    padding: 6px 16px;
+    padding: 6px 6px;
     border-radius: 8px;
     border: none;
     transition: all 0.25s ease;
@@ -352,7 +352,7 @@ with st.expander("☀️ **How to Use the Sunburst Visualization**", expanded=Fa
     [
         "Ecosystem Overview",
         "Project Rankings",
-        "Organisations Ranking",
+        "Organisation Rankings",
         "Projects over Time",
         "Organisations",
         "Projects by Organisation",
@@ -409,8 +409,6 @@ with tab_topics:
 
 with tab_organisations:
     render_organisations_tab(df_organisations=df_organisations)
-
-
 
 
 

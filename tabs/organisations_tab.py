@@ -91,6 +91,9 @@ def process_organisations_data(df_organisations: pd.DataFrame):
 
 def render_organisations_tab(df_organisations):
     st.header("Organisations Overview")
+    st.caption(
+        "Ecosystem insights based on the attributes of an organisation's Git namespace."
+    )
 
     df_clean, df_countries_count, df_continent_counts, df_projects_country = process_organisations_data(df_organisations)
 

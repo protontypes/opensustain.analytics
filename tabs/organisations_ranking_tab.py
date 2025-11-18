@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 def render_organisations_ranking_tab(df, df_organisations):
-    st.header("Organisations Rankings")
+    st.header("Organisation Ranking")
     st.caption(
         "Aggregates the total project scores for each organisation using the `organization_projects` field from organisations.csv."
     )
