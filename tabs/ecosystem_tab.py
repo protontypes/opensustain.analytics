@@ -320,3 +320,15 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
         bright_score_colors
     )
     st.plotly_chart(fig_sunburst)
+
+    # --- Export as HTML ---
+    export_html = st.checkbox("Export this plot as an HTML file and add it to your website.", value=False)
+    if export_html:
+        # Convert plot to HTML string
+        html_str = fig_sunburst.to_html(full_html=True)
+        st.download_button(
+            label="Download Sunburst Plot as HTML",
+            data=html_str,
+            file_name="ecosystem_sunburst.html",
+            mime="text/html"
+        )
