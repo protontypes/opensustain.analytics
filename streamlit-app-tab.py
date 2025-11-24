@@ -257,86 +257,91 @@ button[data-baseweb="tab"]:focus {
 </style>
 """, unsafe_allow_html=True)
 
-
-# collapsible sections  for metrics
-with st.expander("📊 **Understanding the Metrics**", expanded=False):
-    st.markdown("#### 🔹 Total Score (All Metrics)")
-    st.markdown("""
-    The **Total Score** is a composite indicator aggregating several quantitative signals of project activity and impact.
-
-    It combines normalized values (min–max scaled) of:
-    - Number of contributors
-    - Total commits
-    - Stars
-    - Ecosyste.ms Score
-    - Development Distribution Score (DDS)
-    - Downloads in the last month
-
-    Each metric is normalized between 0 and 1 to ensure comparability, then summed to form a single score. 
-    Higher scores represent projects that are both technically active and socially visible across multiple dimensions.
-
-    > 💡 **Tip:** All project names are clickable links to their git repositories.
-    """)
-
-    st.divider()
-
-    st.markdown("#### 🔹 Ecosyste.ms Score")
-    st.markdown("""
-    Provided by [Ecosyste.ms](https://ecosyste.ms/), this score reflects a project's **overall health and sustainability**.
-
-    **Key factors include:**
-    - Development activity and growth
-    - Community engagement
-    - Project maturity and governance
-    - Dependency relationships within the ecosystem
-
-    This serves as a holistic indicator of project maintenance and integration into the open-source sustainability landscape.
-    """)
-
-    st.divider()
-
-    st.markdown("#### 🔹 Development Distribution Score (DDS)")
-    st.markdown("""
-    The **DDS** quantifies how evenly contributions are distributed across a project's contributor base.
-
-    - **Higher DDS** → Healthier, more distributed, community-driven project
-    - **Lower DDS** → Development dominated by a small group or single maintainer
-
-    📖 Learn more: [DDS definition in our latest report](https://report.opensustain.tech/chapters/development-distribution-score.html)
-    """)
-with st.expander("☀️ **How to Use the Sunburst Visualization**", expanded=False):
-    st.markdown("""
-    The **Sunburst chart** provides a hierarchical view of the open-source sustainability ecosystem:
-
-    **Structure:**
-    - **Center (root)** → *The Open Source Ecosystem in Sustainability*
-    - **First ring** → Broad categories (e.g., Energy, Agriculture, Biodiversity)
-    - **Second ring** → Sub-categories within each domain
-    - **Outermost ring** → Individual projects
-    """)
-
-    st.markdown("#### 🖱️ Interactive Features")
-
+# Documentation section
+with st.expander("📚 **Documentation & User Guide**", expanded=False):
     col1, col2 = st.columns(2)
-
     with col1:
-        st.markdown("""
-        **🔍 Explore:**
-        - **Hover** over any slice to view detailed metrics
-        - **Click** a segment to zoom in
-        - **Click the center** to zoom back out
-        """)
+
+        st.markdown("#### Understanding the Metrics")
+        #collapsible section  for metrics
+        with st.expander("📊 **Understanding the Metrics**", expanded=False):
+            st.markdown("#### 🔹 Total Score (All Metrics)")
+            st.markdown("""
+            The **Total Score** is a composite indicator aggregating several quantitative signals of project activity and impact.
+
+            It combines normalized values (min–max scaled) of:
+            - Number of contributors
+            - Total commits
+            - Stars
+            - Ecosyste.ms Score
+            - Development Distribution Score (DDS)
+            - Downloads in the last month
+
+            Each metric is normalized between 0 and 1 to ensure comparability, then summed to form a single score. 
+            Higher scores represent projects that are both technically active and socially visible across multiple dimensions.
+
+            > 💡 **Tip:** All project names are clickable links to their git repositories.
+            """)
+
+            st.divider()
+
+            st.markdown("#### 🔹 Ecosyste.ms Score")
+            st.markdown("""
+            Provided by [Ecosyste.ms](https://ecosyste.ms/), this score reflects a project's **overall health and sustainability**.
+
+            **Key factors include:**
+            - Development activity and growth
+            - Community engagement
+            - Project maturity and governance
+            - Dependency relationships within the ecosystem
+
+            This serves as a holistic indicator of project maintenance and integration into the open-source sustainability landscape.
+            """)
+
+            st.divider()
+
+            st.markdown("#### 🔹 Development Distribution Score (DDS)")
+            st.markdown("""
+            The **DDS** quantifies how evenly contributions are distributed across a project's contributor base.
+
+            - **Higher DDS** → Healthier, more distributed, community-driven project
+            - **Lower DDS** → Development dominated by a small group or single maintainer
+
+            📖 Learn more: [DDS definition in our latest report](https://report.opensustain.tech/chapters/development-distribution-score.html)
+            """)
+
 
     with col2:
-        st.markdown("""
-        **🎨 Visual Cues:**
-        - **Color intensity** represents metric values
-        - **Brighter colors** = higher values
-        - **Filter option** to hide inactive projects
-        """)
+        st.markdown("#### Using the Sunburst Visualization")
+        #collapsible section  for the sunburst
+        with st.expander("☀️ **How to Use the Sunburst Visualization**", expanded=False):
+            st.markdown("""
+            The **Sunburst chart** provides a hierarchical view of the open source sustainability ecosystem:
 
-    st.info(
-        "💡 The sunburst helps identify which sustainability domains are most active, how contributions are distributed, and which projects lead in community engagement.")
+            **Structure:**
+            - **Center (root)** → *The Open Source Ecosystem in Sustainability*
+            - **First ring** → Broad categories (e.g., Energy, Agriculture, Biodiversity)
+            - **Second ring** → Sub-categories within each domain
+            - **Outermost ring** → Individual projects
+            """)
+
+            st.markdown("#### 🖱️ Interactive Features")
+
+            st.markdown("""
+            **🔍 Explore:**
+            - **Hover** over any slice to view detailed metrics
+            - **Click** a segment to zoom in
+            - **Click the center** to zoom back out
+
+            **🎨 Visual Cues:**
+            - **Color intensity** represents metric values
+            - **Brighter colors** = higher values
+            - **Filter option** to hide inactive projects
+            """)
+
+            st.info(
+                "💡 The sunburst helps identify which sustainability domains are most active, how contributions are distributed, and which projects lead in community engagement.")
+
 # --- Tabs ---
 (
     tab4,
