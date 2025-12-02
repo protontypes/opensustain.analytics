@@ -113,7 +113,13 @@ def render_organisations_tab(df_organisations):
 
     # --- Organisations by type ---
     st.subheader("Organisations by Type")
-    df_orgs_by_type = df_organisations.groupby("form_of_organization").size().reset_index(name="count")
+    df_orgs_by_type = (
+        df_organisations
+        .assign(form_of_organization=df_organisations["form_of_organization"].str.lower())
+        .groupby("form_of_organization")
+        .size()
+        .reset_index(name="count")
+    )
     fig_orgs_by_type = _f_plot_dataframe_as_horizontal_bars(
         df=df_orgs_by_type,
         x_column="count",
