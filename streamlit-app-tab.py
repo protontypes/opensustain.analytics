@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import warnings
+pd.set_option('future.no_silent_downcasting', True)
 from datetime import datetime, timezone
 import country_converter as coco
 from tabs.distributions_tab import render_distributions_tab
@@ -127,6 +129,32 @@ for col in metrics_for_score:
 
 # Add the aggregated Total Score column
 df["total_score_combined"] = df_norm.sum(axis=1)
+
+
+# --- Sidebar Filters ---
+st.sidebar.title("Filters")
+
+# Country filter
+countries = sorted(df_organisations['location_country'].dropna().unique())
+selected_countries = st.sidebar.multiselect(
+    'Filter by Country',
+    options=countries,
+    default=[]
+)
+
+if selected_countries:
+    # Filter organizations by country
+    df_organisations = df_organisations[df_organisations['location_country'].isin(selected_countries)]
+
+    # Get the list of project URLs from the filtered organizations
+    project_urls = set()
+    for projects_str in df_organisations['organization_projects'].dropna():
+        urls = [url.strip() for url in projects_str.split(',') if url.strip()]
+        project_urls.update(urls)
+
+    # Filter the projects dataframe
+    df = df[df['git_url'].isin(project_urls)]
+
 
 # --- Dashboard Introduction in a card style ---
 st.markdown(

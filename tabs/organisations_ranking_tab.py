@@ -83,12 +83,15 @@ def render_organisations_ranking_tab(df, df_organisations):
             df_agg_scores = df_agg_scores.sort_values("total_score", ascending=False).reset_index(drop=True)
 
             # Slider for top N organisations
-            top_n = st.slider(
-                "Number of organisations to display:",
-                min_value=5,
-                max_value=len(df_agg_scores),
-                value=min(60, len(df_agg_scores)),
-            )
+            if len(df_agg_scores) > 1:
+                top_n = st.slider(
+                    "Number of organisations to display:",
+                    min_value=1,
+                    max_value=len(df_agg_scores),
+                    value=min(60, len(df_agg_scores)),
+                )
+            else:
+                top_n = 1
 
             df_top = df_agg_scores.head(top_n)
 
