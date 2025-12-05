@@ -134,25 +134,45 @@ df["total_score_combined"] = df_norm.sum(axis=1)
 # --- Sidebar Filters ---
 st.sidebar.title("Filters")
 
-# Country filter
+# --- Get filter options from original dataframes ---
 countries = sorted(df_organisations['location_country'].dropna().unique())
+org_types = sorted(df_organisations['form_of_organization'].dropna().unique())
+
+# --- Display filter widgets ---
 selected_countries = st.sidebar.multiselect(
     'Filter by Country',
     options=countries,
     default=[]
 )
 
-if selected_countries:
-    # Filter organizations by country
-    df_organisations = df_organisations[df_organisations['location_country'].isin(selected_countries)]
+selected_org_types = st.sidebar.multiselect(
+    'Filter by Organization Type',
+    options=org_types,
+    default=[]
+)
 
-    # Get the list of project URLs from the filtered organizations
+# --- Apply filters ---
+# Only filter if a selection has been made
+if selected_countries or selected_org_types:
+
+    # Filter organizations based on selections
+    filtered_orgs = df_organisations.copy()
+    if selected_countries:
+        filtered_orgs = filtered_orgs[filtered_orgs['location_country'].isin(selected_countries)]
+
+    if selected_org_types:
+        filtered_orgs = filtered_orgs[filtered_orgs['form_of_organization'].isin(selected_org_types)]
+
+    # Update the main dataframes
+    df_organisations = filtered_orgs
+
+    # Get the project URLs from the filtered organizations
     project_urls = set()
     for projects_str in df_organisations['organization_projects'].dropna():
         urls = [url.strip() for url in projects_str.split(',') if url.strip()]
         project_urls.update(urls)
 
-    # Filter the projects dataframe
+    # Filter the projects dataframe to only include projects from the filtered organizations
     df = df[df['git_url'].isin(project_urls)]
 
 
@@ -171,11 +191,11 @@ st.markdown(
         <img src="https://opensustain.tech/logo.png" width="80" height="80" style="margin-right:16px;">
         <h1 style="margin:0; font-size:2rem; color:#099ec8;">OpenSustain.Analytics</h1>
     </div>
-    <p>Discover <strong>OpenSustain.tech</strong>, a global index of the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact. All <strong>project names</strong> and <strong>organisation names</strong> throughout the dashboard are <strong>clickable links</strong> that will open the corresponding project or organisation page. The data is provided under a <strong>Creative Commons CC-BY 4.0 license</strong> and is powered by 
-    <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.</p>
-    <p>You can find <strong>Good First Issues</strong> in all these projects to start contributing to Open Source in Climate and Sustainability at 
-    <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.</p>
-    <div style="margin-top:20px;">
+        <p>Discover <strong>OpenSustain.tech</strong>, a global index of the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact. All <strong>project names</strong> and <strong>organisation names</strong> throughout the dashboard are <strong>clickable links</strong> that will open the corresponding project or organisation page. The data is provided under a <strong>Creative Commons CC-BY 4.0 license</strong> and is powered by
+        <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.</p>
+        <p style="font-size:0.9em; color:#666;">Note: Citation data is very limited at this stage and will be expanded in future updates.</p>
+        <p>You can find <strong>Good First Issues</strong> in all these projects to start contributing to Open Source in Climate and Sustainability at
+        <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.</p>    <div style="margin-top:20px;">
         <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=5&tableId=Projects" target="_blank" style="
             background-color:#099ec8;
             color:white;

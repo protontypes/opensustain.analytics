@@ -25,66 +25,68 @@ def render_topics_tab(df, keywords_file="ost_keywords.txt", wordcloud_url=None):
 
     st.header("Topics and Keywords")
 
-    # --- Load README keywords ---
-    try:
-        with open(keywords_file, "r", encoding="utf-8") as f:
-            content = f.read().strip()
+#Top Extracted Keywords from GitHub READMEs
+    with st.container(border=True):
+       # --- Load README keywords ---
+       try:
+           with open(keywords_file, "r", encoding="utf-8") as f:
+               content = f.read().strip()
 
-        keywords_data = ast.literal_eval(content)
-        df_keywords = pd.DataFrame(keywords_data, columns=["keyword", "count"])
-        df_keywords = df_keywords.sort_values("count", ascending=False).reset_index(
-            drop=True
-        )
+           keywords_data = ast.literal_eval(content)
+           df_keywords = pd.DataFrame(keywords_data, columns=["keyword", "count"])
+           df_keywords = df_keywords.sort_values("count", ascending=False).reset_index(
+               drop=True
+           )
 
-        st.subheader("Top Extracted Keywords from GitHub READMEs")
-        st.caption(
-            "These represent the most frequent words extracted from README files of OpenSustain.tech projects."
-        )
+           st.subheader("Top Extracted Keywords from GitHub READMEs")
+           st.caption(
+               "These represent the most frequent words extracted from README files of OpenSustain.tech projects."
+           )
 
-        top_n = st.slider(
-            "Number of keywords to display:",
-            min_value=10,
-            max_value=500,
-            value=30,
-            key="keywords_slider"
-        )
-        df_top = df_keywords.head(top_n)
+           top_n = st.slider(
+               "Number of keywords to display:",
+               min_value=10,
+               max_value=500,
+               value=30,
+               key="keywords_slider"
+           )
+           df_top = df_keywords.head(top_n)
 
-        fig_kw = px.bar(
-            df_top,
-            x="count",
-            y="keyword",
-            orientation="h",
-            text="count",
-            color=np.log10(df_top["count"] + 1),  # log10 color scale
-            color_continuous_scale="Tealgrn",
-            title=f"Top {top_n} Keywords Found in Project READMEs",
-        )
+           fig_kw = px.bar(
+               df_top,
+               x="count",
+               y="keyword",
+               orientation="h",
+               text="count",
+               color=np.log10(df_top["count"] + 1),  # log10 color scale
+               color_continuous_scale="Tealgrn",
+               title=f"Top {top_n} Keywords Found in Project READMEs",
+           )
 
-        fig_kw.update_layout(
-            height=40 * len(df_top) + 150,
-            yaxis={"categoryorder": "total ascending"},
-            plot_bgcolor="white",
-            paper_bgcolor="white",
-            margin=dict(l=220, r=50, t=50, b=20),
-        )
-        # Explicit colorbar title
-        fig_kw.update_coloraxes(colorbar=dict(title="log10(Count)"))
+           fig_kw.update_layout(
+               height=40 * len(df_top) + 150,
+               yaxis={"categoryorder": "total ascending"},
+               plot_bgcolor="white",
+               paper_bgcolor="white",
+               margin=dict(l=220, r=50, t=50, b=20),
+           )
+           # Explicit colorbar title
+           fig_kw.update_coloraxes(colorbar=dict(title="log10(Count)"))
 
-        st.plotly_chart(fig_kw, width='stretch')
+           st.plotly_chart(fig_kw, width='stretch')
 
-    except FileNotFoundError:
-        st.error(f"Could not find keywords file: {keywords_file}")
-        st.info(
-            "Please ensure `ost_keywords.txt` is present in the app directory and has the format [('keyword', count), ...]"
-        )
-    except Exception as e:
-        st.error(f"Could not load keywords file: {e}")
-        st.info(
-            "Please ensure `ost_keywords.txt` is in the correct format: [('keyword', count), ...]"
-        )
+       except FileNotFoundError:
+           st.error(f"Could not find keywords file: {keywords_file}")
+           st.info(
+               "Please ensure `ost_keywords.txt` is present in the app directory and has the format [('keyword', count), ...]"
+           )
+       except Exception as e:
+           st.error(f"Could not load keywords file: {e}")
+           st.info(
+               "Please ensure `ost_keywords.txt` is in the correct format: [('keyword', count), ...]"
+           )
 
-    # --- Heatmap: Topics vs Sub-Categories (filtered + dynamic top N) ---
+       # --- Heatmap: Topics vs Sub-Categories (filtered + dynamic top N) ---
     st.subheader("📊 Heatmap of GitHub Topics Across Sub-Categories (Filtered)")
 
     # Custom stopword list
