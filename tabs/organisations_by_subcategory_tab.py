@@ -1,12 +1,15 @@
 import streamlit as st
 import plotly.express as px
+from tabs.tab_utils import render_filters
 
 def render_organisations_by_subcategory_tab(df_organisations, category_colors):
     st.header("Organisations by Sub-Category Overview")
     st.caption("Sunburst showing organisations grouped by project sub-categories, colored by sub-category.")
 
+    filtered_df_organisations = render_filters(df_organisations, 'organisations_by_subcategory')
+
     # Copy and clean the dataframe
-    df_org_subcat = df_organisations.copy()
+    df_org_subcat = filtered_df_organisations.copy()
 
     # Fill missing values and ensure strings
     for col in ['organization_name', 'organization_sub_category']:
