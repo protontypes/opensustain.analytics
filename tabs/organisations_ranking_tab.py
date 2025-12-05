@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from tabs.tab_utils import render_filters
 
 def render_organisations_ranking_tab(df, df_organisations):
     st.header("Organisation Ranking")
@@ -8,7 +9,9 @@ def render_organisations_ranking_tab(df, df_organisations):
         "Aggregates the total project scores for each organisation using the `organization_projects` field from organisations.csv."
     )
 
-    if "organization_projects" not in df_organisations.columns or "git_url" not in df.columns:
+    filtered_df_organisations = render_filters(df_organisations, 'organisations_ranking')
+
+    if "organization_projects" not in filtered_df_organisations.columns or "git_url" not in df.columns:
         st.warning(
             "Missing required fields: `organization_projects` in organisations.csv or `git_url` in projects.csv."
         )
@@ -23,18 +26,18 @@ def render_organisations_ranking_tab(df, df_organisations):
         project_category_map = df.set_index("git_url")["category"].to_dict()
 
         # Split projects per organisation
-        df_organisations["organization_projects"] = df_organisations[
+        filtered_df_organisations["organization_projects"] = filtered_df_organisations[
             "organization_projects"
         ].fillna("").astype(str)
-        df_organisations["projects_list"] = df_organisations["organization_projects"].apply(
+        filtered_df_organisations["projects_list"] = filtered_df_organisations["organization_projects"].apply(
             lambda s: [p.strip() for p in s.split(",") if p.strip() != ""]
         )
 
         # Fill missing descriptions and icons
-        df_organisations["organization_description"] = df_organisations.get(
+        filtered_df_organisations["organization_description"] = filtered_df_organisations.get(
             "organization_description", ""
         ).fillna("No description available")
-        df_organisations["organization_icon_url"] = df_organisations.get(
+        filtered_df_organisations["organization_icon_url"] = filtered_df_organisations.get(
             "organization_icon_url", ""
         ).fillna("")
 
@@ -49,7 +52,7 @@ def render_organisations_ranking_tab(df, df_organisations):
 
         # Compute aggregated score per organisation, filtering by selected category
         aggregated_data = []
-        for _, row in df_organisations.iterrows():
+        for _, row in filtered_df_organisations.iterrows():
             org_name = row.get("organization_name", "Unknown")
             projects = row["projects_list"]
 

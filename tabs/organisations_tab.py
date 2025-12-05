@@ -4,6 +4,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import country_converter as coco
+from tabs.tab_utils import render_filters
 
 def _f_plot_dataframe_as_horizontal_bars(
     df: pd.DataFrame,
@@ -95,7 +96,9 @@ def render_organisations_tab(df_organisations):
         "Ecosystem insights based on the attributes of an organisation's Git namespace."
     )
 
-    df_clean, df_countries_count, df_continent_counts, df_projects_country = process_organisations_data(df_organisations)
+    filtered_df_organisations = render_filters(df_organisations, 'organisations')
+
+    df_clean, df_countries_count, df_continent_counts, df_projects_country = process_organisations_data(filtered_df_organisations)
 
     with st.container(border=True):
         # --- Total number of projects per country (choropleth) ---
@@ -142,9 +145,9 @@ def render_organisations_tab(df_organisations):
     with st.container(border=True):
         # --- Top organisations per number of repositories ---
         st.subheader("Top Organisations by Number of Projects")
-        top_n_orgs_projs = st.slider("Number of organisations to display:", 10, len(df_organisations), 30)
+        top_n_orgs_projs = st.slider("Number of organisations to display:", 10, len(filtered_df_organisations), 30)
         fig_top_org_listed_proj = _f_plot_dataframe_as_horizontal_bars(
-           df=df_organisations,
+           df=filtered_df_organisations,
            x_column="total_listed_projects_in_organization",
            y_column="organization_name",
            title=f"Top {top_n_orgs_projs} Organisations by Number of Listed Projects",
@@ -152,14 +155,14 @@ def render_organisations_tab(df_organisations):
            y_title="Organisation name",
            x_title="Number of projects listed",
        )
-    st.plotly_chart(fig_top_org_listed_proj)
+        st.plotly_chart(fig_top_org_listed_proj)
 
     with st.container(border=True):
         # --- Organisations by type ---
         st.subheader("Organisations by Type")
         df_orgs_by_type = (
-            df_organisations
-            .assign(form_of_organization=df_organisations["form_of_organization"].str.lower())
+            filtered_df_organisations
+            .assign(form_of_organization=filtered_df_organisations["form_of_organization"].str.lower())
             .groupby("form_of_organization")
             .size()
             .reset_index(name="count")

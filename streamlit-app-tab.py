@@ -131,49 +131,8 @@ for col in metrics_for_score:
 df["total_score_combined"] = df_norm.sum(axis=1)
 
 
-# --- Sidebar Filters ---
-st.sidebar.title("Filters")
 
-# --- Get filter options from original dataframes ---
-countries = sorted(df_organisations['location_country'].dropna().unique())
-org_types = sorted(df_organisations['form_of_organization'].dropna().unique())
 
-# --- Display filter widgets ---
-selected_countries = st.sidebar.multiselect(
-    'Filter by Country',
-    options=countries,
-    default=[]
-)
-
-selected_org_types = st.sidebar.multiselect(
-    'Filter by Organization Type',
-    options=org_types,
-    default=[]
-)
-
-# --- Apply filters ---
-# Only filter if a selection has been made
-if selected_countries or selected_org_types:
-
-    # Filter organizations based on selections
-    filtered_orgs = df_organisations.copy()
-    if selected_countries:
-        filtered_orgs = filtered_orgs[filtered_orgs['location_country'].isin(selected_countries)]
-
-    if selected_org_types:
-        filtered_orgs = filtered_orgs[filtered_orgs['form_of_organization'].isin(selected_org_types)]
-
-    # Update the main dataframes
-    df_organisations = filtered_orgs
-
-    # Get the project URLs from the filtered organizations
-    project_urls = set()
-    for projects_str in df_organisations['organization_projects'].dropna():
-        urls = [url.strip() for url in projects_str.split(',') if url.strip()]
-        project_urls.update(urls)
-
-    # Filter the projects dataframe to only include projects from the filtered organizations
-    df = df[df['git_url'].isin(project_urls)]
 
 
 # --- Dashboard Introduction in a card style ---
