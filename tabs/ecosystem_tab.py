@@ -26,8 +26,7 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
     """
 
     st.header("The Open Source Sustainability Ecosystem")
-    st.divider()
-
+    st.write('')
     # --- Cached summary stats ---
     @st.cache_data
     def compute_summary_stats(df_projects, df_orgs):
@@ -61,12 +60,10 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
         median_dds = round(df_projects["dds"].median(), 3) if "dds" in df_projects.columns else 0
 
         # Median contributors
-        median_contributors = round(df_projects["contributors"].median(),
-                                    2) if "contributors" in df_projects.columns else 0
+        median_contributors = round(df_projects["contributors"].median(),2) if "contributors" in df_projects.columns else 0
 
         # Median total commits
-        median_commits = round(df_projects["total_commits"].median(),
-                               2) if "total_commits" in df_projects.columns else 0
+        median_commits = round(df_projects["total_commits"].median(),2) if "total_commits" in df_projects.columns else 0
 
         return (
             total_projects,

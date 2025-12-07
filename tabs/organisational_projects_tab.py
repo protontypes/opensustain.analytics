@@ -1,5 +1,6 @@
 import streamlit as st
 import plotly.express as px
+from tabs.tab_utils import render_filters
 
 def extract_project_name(url):
     if isinstance(url, str) and "/" in url:
@@ -12,8 +13,10 @@ def render_organisational_projects_tab(df, df_organisations, category_colors, br
         "Sunburst showing larger organisations (≥2 projects) and their projects. Click an organisation to open its projects on GitHub or similar platforms."
     )
 
+    filtered_df_organisations = render_filters(df_organisations, 'organisational_projects')
+
     # --- Prepare Data ---
-    df_sunburst_projects = df_organisations.copy()
+    df_sunburst_projects = filtered_df_organisations.copy()
 
     # Split and explode project list
     df_sunburst_projects = df_sunburst_projects.assign(

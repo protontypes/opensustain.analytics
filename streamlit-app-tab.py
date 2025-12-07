@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import warnings
+pd.set_option('future.no_silent_downcasting', True)
 from datetime import datetime, timezone
 import country_converter as coco
 from tabs.distributions_tab import render_distributions_tab
@@ -128,6 +130,11 @@ for col in metrics_for_score:
 # Add the aggregated Total Score column
 df["total_score_combined"] = df_norm.sum(axis=1)
 
+
+
+
+
+
 # --- Dashboard Introduction in a card style ---
 st.markdown(
     """
@@ -143,11 +150,11 @@ st.markdown(
         <img src="https://opensustain.tech/logo.png" width="80" height="80" style="margin-right:16px;">
         <h1 style="margin:0; font-size:2rem; color:#099ec8;">OpenSustain.Analytics</h1>
     </div>
-    <p>Discover <strong>OpenSustain.tech</strong>, a global index of the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact. All <strong>project names</strong> and <strong>organisation names</strong> throughout the dashboard are <strong>clickable links</strong> that will open the corresponding project or organisation page. The data is provided under a <strong>Creative Commons CC-BY 4.0 license</strong> and is powered by 
-    <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.</p>
-    <p>You can find <strong>Good First Issues</strong> in all these projects to start contributing to Open Source in Climate and Sustainability at 
-    <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.</p>
-    <div style="margin-top:20px;">
+        <p>Discover <strong>OpenSustain.tech</strong>, a global index of the open-source ecosystem in environmental sustainability, including information on its participants, activities and impact. All <strong>project names</strong> and <strong>organisation names</strong> throughout the dashboard are <strong>clickable links</strong> that will open the corresponding project or organisation page. The data is provided under a <strong>Creative Commons CC-BY 4.0 license</strong> and is powered by
+        <a href="https://ecosyste.ms/" target="_blank" style="color:#099ec8; text-decoration:none;">Ecosyste.ms</a>.</p>
+        <p style="font-size:0.9em; color:#666;">Note: Citation data is very limited at this stage and will be expanded in future updates.</p>
+        <p>You can find <strong>Good First Issues</strong> in all these projects to start contributing to Open Source in Climate and Sustainability at
+        <a href="https://climatetriage.com/" target="_blank" style="color:#099ec8; text-decoration:none;">ClimateTriage.com</a>.</p>    <div style="margin-top:20px;">
         <a href="https://api.getgrist.com/o/docs/api/docs/gSscJkc5Rb1Rw45gh1o1Yc/download/csv?viewSection=5&tableId=Projects" target="_blank" style="
             background-color:#099ec8;
             color:white;

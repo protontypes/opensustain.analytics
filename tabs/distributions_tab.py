@@ -101,7 +101,7 @@ def render_distributions_tab(df):
     for field in categorical_fields:
         with st.container(border=True):
             st.subheader(field.replace("_", " ").title())
-            df_dist[field] = df_dist[field].fillna("Unknown")
+            df_dist[field] = df_dist[field].fillna("Unknown").infer_objects(copy=False)
 
             if field in ["ecosystems"]:
                 # Handle comma-separated values
