@@ -26,10 +26,6 @@ def text_to_bolt(topic):
     return f"<b>{topic}</b>"
 
 
-# Paths to your datasets
-projects_file = "./data/projects.csv"
-organisations_file = "./data/organizations.csv"
-
 # --- Cached data loading ---
 @st.cache_data
 def load_csv(file_path):
@@ -138,6 +134,9 @@ df["total_score_combined"] = df_norm.sum(axis=1)
 # --- Dashboard Introduction in a card style ---
 st.markdown(
     """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+</style>
 <div style="
     background-color:#f5f7fa;
     padding:30px;
