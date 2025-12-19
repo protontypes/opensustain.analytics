@@ -1,10 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import warnings
 pd.set_option('future.no_silent_downcasting', True)
 from datetime import datetime, timezone
-import country_converter as coco
 from tabs.distributions_tab import render_distributions_tab
 from tabs.ecosystem_tab import render_ecosystem_tab
 from tabs.rankings_tab import render_rankings_tab
