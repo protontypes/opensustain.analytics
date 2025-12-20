@@ -1,10 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import warnings
 pd.set_option('future.no_silent_downcasting', True)
 from datetime import datetime, timezone
-import country_converter as coco
 from tabs.distributions_tab import render_distributions_tab
 from tabs.ecosystem_tab import render_ecosystem_tab
 from tabs.rankings_tab import render_rankings_tab
@@ -25,10 +23,6 @@ def text_to_link(project_name, git_url):
 def text_to_bolt(topic):
     return f"<b>{topic}</b>"
 
-
-# Paths to your datasets
-projects_file = "./data/projects.csv"
-organisations_file = "./data/organizations.csv"
 
 # --- Cached data loading ---
 @st.cache_data
@@ -138,6 +132,9 @@ df["total_score_combined"] = df_norm.sum(axis=1)
 # --- Dashboard Introduction in a card style ---
 st.markdown(
     """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+</style>
 <div style="
     background-color:#f5f7fa;
     padding:30px;
