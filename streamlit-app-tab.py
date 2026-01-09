@@ -291,15 +291,19 @@ with st.expander("📚 **Documentation & User Guide**", expanded=False):
 
             st.markdown("#### 🔹 Ecosyste.ms Score")
             st.markdown("""
-            Provided by [Ecosyste.ms](https://ecosyste.ms/), this score reflects a project's **overall health and sustainability**.
+            Provided by [Ecosyste.ms](https://ecosyste.ms/), projects have two independent scores: a general popularity score and a science score.
 
             **Key factors include:**
-            - Development activity and growth
-            - Community engagement
-            - Project maturity and governance
-            - Dependency relationships within the ecosystem
+            - Repository activity and visibility (stars, issues)
+            - Package usage and downstream dependents
+            - Contributor base and committers
+            - Adoption signals across ecosystems (downloads, Docker usage)
+            - Use of academic best practices (citations, metadata, DOIs)
+            - Academic engagement (research links, academic contributors)
+            - Institutional or organizational ownership
+            - Publication in the Journal of Open Source Software (JOSS)
 
-            This serves as a holistic indicator of project maintenance and integration into the open-source sustainability landscape.
+            > 💡 More details can be found in the [offical documentation](https://github.com/ecosyste-ms/ost/blob/main/docs/project_scoring.md). 
             """)
 
             st.divider()
