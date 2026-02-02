@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping Streamlit app
         run: |
-          curl -I -L --max-time 30 https://your-app-name.streamlit.app
+          curl -s -L --max-time 30 https://your-app-name.streamlit.app || true
