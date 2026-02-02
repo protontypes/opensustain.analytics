@@ -1,0 +1,14 @@
+name: Wake Streamlit App
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # once per day at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit app
+        run: |
+          curl -L --max-time 30 https://opensustain-analytics.streamlit.app/
