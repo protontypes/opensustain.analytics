@@ -98,7 +98,7 @@ def render_organisational_projects_tab(df, df_organisations, category_colors, br
     fig_org_sun = px.sunburst(
         df_sunburst_projects,
         path=["root", "organization_name", "organization_projects_link"],
-        color="total_score_combined",  # project nodes
+        color="total_score_combined",
         color_continuous_scale=bright_score_colors,
         maxdepth=2,
         title=" ",
@@ -111,10 +111,9 @@ def render_organisational_projects_tab(df, df_organisations, category_colors, br
 
     for i, label in enumerate(trace.labels):
         if label in unique_orgs:
-            colors[i] = org_colors[label]  # org nodes: categorical color
+            colors[i] = org_colors[label]
         elif i == 0:
-            colors[i] = "white"  # root
-        # project nodes keep continuous bright_score_colors
+            colors[i] = "white"
 
     trace.marker.colors = colors
 
@@ -140,7 +139,7 @@ def render_organisational_projects_tab(df, df_organisations, category_colors, br
     # --- Layout with horizontal colorbar ---
     fig_org_sun.update_layout(
         height=1600,
-        margin=dict(l=2, r=2, t=50, b=50),  # extra bottom margin for colorbar
+        margin=dict(l=2, r=2, t=50, b=50),
         plot_bgcolor="white",
         paper_bgcolor="white",
         font=dict(size=20, family="Open Sans"),
@@ -150,9 +149,9 @@ def render_organisational_projects_tab(df, df_organisations, category_colors, br
                 text="Total Score",
                 font=dict(size=16, family="Open Sans")
             ),
-            orientation="h",   # horizontal colorbar
+            orientation="h",
             x=0.5,
-            y=-0.05,          # slightly below plot
+            y=-0.05,
             xanchor="center",
             yanchor="top",
             thickness=25,
@@ -162,7 +161,6 @@ def render_organisational_projects_tab(df, df_organisations, category_colors, br
         ),
     )
 
-    # Ensure the trace uses the coloraxis
     fig_org_sun.data[0].update(marker=dict(coloraxis="coloraxis"))
 
     st.plotly_chart(fig_org_sun)

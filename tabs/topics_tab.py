@@ -88,7 +88,7 @@ def render_topics_tab(df, keywords_file="ost_keywords.txt", wordcloud_url=None):
 
        # --- Heatmap: Topics vs Sub-Categories (filtered + dynamic top N) ---
     with st.container(border=True):
-       st.subheader("📊 Heatmap of GitHub Topics Across Sub-Categories (Filtered)")
+       st.subheader("Heatmap of GitHub Topics Across Sub-Categories (Filtered)")
 
        # Custom stopword list
        words_black_list_small = [

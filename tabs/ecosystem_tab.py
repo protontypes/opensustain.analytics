@@ -92,17 +92,17 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
 
     # --- Display metrics ---
     row1_cols = st.columns(5, gap="small")
-    row1_cols[0].metric("🌱 Total Projects", f"{total_projects}")
-    row1_cols[1].metric("✅ Active Projects", f"{active_projects}")
-    row1_cols[2].metric("🏢 Total Organisations", f"{total_organisations}")
-    row1_cols[3].metric("👥 Total Contributors", f"{total_contributors}")
-    row1_cols[4].metric("⏳ Median Project Age (yrs)", f"{median_age}")
+    row1_cols[0].metric("Total Projects", f"{total_projects}")
+    row1_cols[1].metric("Active Projects", f"{active_projects}")
+    row1_cols[2].metric("Total Organisations", f"{total_organisations}")
+    row1_cols[3].metric("Total Contributors", f"{total_contributors}")
+    row1_cols[4].metric("Median Project Age (yrs)", f"{median_age}")
 
     row2_cols = st.columns(5, gap="large")
-    row2_cols[0].metric("⭐ Median Stars", f"{median_stars}")
-    row2_cols[1].metric("📊 Median Development Distribution Score", f"{median_dds}")
-    row2_cols[2].metric("👤 Median Contributors", f"{median_contributors}")
-    row2_cols[3].metric("📝 Median Commits", f"{median_commits}")
+    row2_cols[0].metric("Median Stars", f"{median_stars}")
+    row2_cols[1].metric("Median Development Distribution Score", f"{median_dds}")
+    row2_cols[2].metric("Median Contributors", f"{median_contributors}")
+    row2_cols[3].metric("Median Commits", f"{median_commits}")
 
     st.divider()
 

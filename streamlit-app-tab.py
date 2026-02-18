@@ -121,7 +121,6 @@ for col in metrics_for_score:
     else:
         df_norm[col] = 0
 
-# Add the aggregated Total Score column
 df["total_score_combined"] = df_norm.sum(axis=1)
 
 
@@ -129,7 +128,6 @@ df["total_score_combined"] = df_norm.sum(axis=1)
 
 
 
-# --- Dashboard Introduction in a card style ---
 st.markdown(
     """
 <style>
@@ -177,7 +175,7 @@ st.markdown(
 </div>
 """, unsafe_allow_html=True)
 
-# --- Define palette ---
+# ---palette ---
 category_colors = {
     cat: color
     for cat, color in zip(
@@ -203,21 +201,20 @@ category_colors = {
 }
 
 bright_score_colors = [
-    "#ff3300",  # red-orange (rare)
-    "#ff6600",  # orange
-    "#ff9900",  # dark yellow
-    "#ffcc00",  # yellow
-    "#ccff33",  # yellow-green
-    "#99ff33",  # light green
-    "#66ff33",  # lime green
-    "#33ff33",  # bright green
-    "#00ff33",  # vivid green
-    "#00cc33",  # strong green
-    "#00cc00"   # deep green
+    "#ff3300",
+    "#ff6600",
+    "#ff9900",
+    "#ffcc00",
+    "#ccff33",
+    "#99ff33",
+    "#66ff33",
+    "#33ff33",
+    "#00ff33",
+    "#00cc33",
+    "#00cc00"
 ]
 
 
-# --- Modern Web-App Style Tabs (Highlighted Buttons) ---
 st.markdown("""
 <style>
 /* Tab container */
@@ -262,14 +259,14 @@ button[data-baseweb="tab"]:focus {
 """, unsafe_allow_html=True)
 
 # Documentation section
-with st.expander("📚 **Documentation & User Guide**", expanded=False):
+with st.expander("**Documentation & User Guide**", expanded=False):
     col1, col2 = st.columns(2)
     with col1:
 
         st.markdown("#### Understanding the Metrics")
         #collapsible section  for metrics
-        with st.expander("📊 **Understanding the Metrics**", expanded=False):
-            st.markdown("#### 🔹 Total Score (All Metrics)")
+        with st.expander("**Understanding the Metrics**", expanded=False):
+            st.markdown("#### Total Score (All Metrics)")
             st.markdown("""
             The **Total Score** is a composite indicator aggregating several quantitative signals of project activity and impact.
 
@@ -284,12 +281,12 @@ with st.expander("📚 **Documentation & User Guide**", expanded=False):
             Each metric is normalized between 0 and 1 to ensure comparability, then summed to form a single score. 
             Higher scores represent projects that are both technically active and socially visible across multiple dimensions.
 
-            > 💡 **Tip:** All project names are clickable links to their git repositories.
+            > **Tip:** All project names are clickable links to their git repositories.
             """)
 
             st.divider()
 
-            st.markdown("#### 🔹 Ecosyste.ms Score")
+            st.markdown("#### Ecosyste.ms Score")
             st.markdown("""
             Provided by [Ecosyste.ms](https://ecosyste.ms/), projects have two independent scores: a general popularity score and a science score.
 
@@ -308,21 +305,21 @@ with st.expander("📚 **Documentation & User Guide**", expanded=False):
 
             st.divider()
 
-            st.markdown("#### 🔹 Development Distribution Score (DDS)")
+            st.markdown("#### Development Distribution Score (DDS)")
             st.markdown("""
             The **DDS** quantifies how evenly contributions are distributed across a project's contributor base.
 
             - **Higher DDS** → Healthier, more distributed, community-driven project
             - **Lower DDS** → Development dominated by a small group or single maintainer
 
-            📖 Learn more: [DDS definition in our latest report](https://report.opensustain.tech/chapters/development-distribution-score.html)
+            Learn more: [DDS definition in our latest report](https://report.opensustain.tech/chapters/development-distribution-score.html)
             """)
 
 
     with col2:
         st.markdown("#### Using the Sunburst Visualization")
         #collapsible section  for the sunburst
-        with st.expander("☀️ **How to Use the Sunburst Visualization**", expanded=False):
+        with st.expander("**How to Use the Sunburst Visualization**", expanded=False):
             st.markdown("""
             The **Sunburst chart** provides a hierarchical view of the open source sustainability ecosystem:
 
@@ -333,22 +330,22 @@ with st.expander("📚 **Documentation & User Guide**", expanded=False):
             - **Outermost ring** → Individual projects
             """)
 
-            st.markdown("#### 🖱️ Interactive Features")
+            st.markdown("#### Interactive Features")
 
             st.markdown("""
-            **🔍 Explore:**
+            **Explore:**
             - **Hover** over any slice to view detailed metrics
             - **Click** a segment to zoom in
             - **Click the center** to zoom back out
 
-            **🎨 Visual Cues:**
+            **Visual Cues:**
             - **Color intensity** represents metric values
             - **Brighter colors** = higher values
             - **Filter option** to hide inactive projects
             """)
 
             st.info(
-                "💡 The sunburst helps identify which sustainability domains are most active, how contributions are distributed, and which projects lead in community engagement.")
+                "The sunburst helps identify which sustainability domains are most active, how contributions are distributed, and which projects lead in community engagement.")
 
 # --- Tabs ---
 (
@@ -397,7 +394,7 @@ with tab4:
 with tab_rankings:
     render_rankings_tab(
         df=df,
-        text_to_link_func=text_to_link  # Pass your existing text_to_link function
+        text_to_link_func=text_to_link
     )
 
 
