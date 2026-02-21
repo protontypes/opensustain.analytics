@@ -30,15 +30,15 @@ def render_organisations_by_subcategory_tab(df_organisations, category_colors):
     if df_org_subcat.empty:
         st.warning("No organisations with sub-categories found. Please check your data.")
     else:
-        # Add root for sunburst
+        # root for sunburst
         df_org_subcat['root'] = '<b style="font-size:40px;"><a href="https://opensustain.tech/" target="_blank">OpenSustain.tech </br> </br> </br> Organisations by Sub-Category</a></b>'
 
-        # Map colors from the category_colors palette, applied to sub-categories
+        # Mapping colors from the category_colors palette, applied to sub-categories
         unique_subcats = df_org_subcat['organization_sub_category'].unique()
         color_palette = list(category_colors.values())
         subcat_colors = {subcat: color_palette[i % len(color_palette)] for i, subcat in enumerate(unique_subcats)}
 
-        # Create sunburst
+        # Creating sunburst
         fig_org_subcat_sun = px.sunburst(
             df_org_subcat,
             path=['root', 'organization_sub_category', 'organization_name'],
@@ -49,13 +49,11 @@ def render_organisations_by_subcategory_tab(df_organisations, category_colors):
             title=" "
         )
 
-        # Make root white
         if hasattr(fig_org_subcat_sun.data[0].marker, 'colors'):
             colors = list(fig_org_subcat_sun.data[0].marker.colors)
             colors[0] = "white"
             fig_org_subcat_sun.data[0].marker.colors = colors
 
-        # Hover template
         fig_org_subcat_sun.update_traces(
             insidetextorientation="radial",
             hovertemplate="<br>".join([
@@ -64,7 +62,7 @@ def render_organisations_by_subcategory_tab(df_organisations, category_colors):
             ])
         )
 
-        # Add OpenSustain logo in center
+        # OpenSustain logo in center
         fig_org_subcat_sun.add_layout_image(
             dict(
                 source="https://opensustain.tech/logo.png",

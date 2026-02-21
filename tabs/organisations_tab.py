@@ -135,7 +135,6 @@ def render_organisations_tab(df_organisations):
             )
         )
 
-        # Optionally, add hover label formatting
         fig_map.update_traces(
             hovertemplate="<b>%{hovertext}</b><br>Total Projects: %{z}<extra></extra>"
         )
