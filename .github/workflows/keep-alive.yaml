@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping Streamlit app
         run: |
-          curl -s -L --max-time 30 https://your-app-name.streamlit.app || true
+          curl -s -L --max-time 30 https://opensustain-analytics.streamlit.app/ || true
