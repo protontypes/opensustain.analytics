@@ -2,13 +2,56 @@ name: Wake Streamlit App
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # once per day at 06:00 UTC
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 jobs:
   wake:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - name: Ping Streamlit app
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Playwright
         run: |
-          curl -s -L --max-time 30 https://opensustain-analytics.streamlit.app/ || true
+          npm init -y
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Wake app by clicking button
+        run: |
+          cat > wake.js <<'EOF'
+          const { chromium } = require('playwright');
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage();
+            page.setDefaultTimeout(90000);
+
+            await page.goto('https://opensustain-analytics.streamlit.app/', {
+              waitUntil: 'domcontentloaded'
+            });
+
+            // Wait a bit for Streamlit to render the wake-up screen
+            await page.waitForTimeout(5000);
+
+            const button = page.getByRole('button', {
+              name: 'Yes, get this app back up!'
+            });
+
+            await button.waitFor({ state: 'visible' });
+            await button.click();
+
+            // Give Streamlit time to process the wake-up
+            await page.waitForTimeout(15000);
+
+            await browser.close();
+          })();
+          EOF
+
+          node wake.js
