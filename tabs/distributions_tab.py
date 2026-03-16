@@ -1,6 +1,7 @@
 """
 Distributions Tab - Distribution of Key Project Attributes
 """
+
 import streamlit as st
 import plotly.express as px
 
@@ -27,20 +28,29 @@ def render_distributions_tab(df):
     with st.container(border=True):
         st.subheader("Recent Commit Activity (Last Year)")
         if "latest_commit_activity" in df_dist.columns:
-            df_dist["latest_commit_activity"] = df_dist["latest_commit_activity"].fillna("Unknown")
+            df_dist["latest_commit_activity"] = df_dist[
+                "latest_commit_activity"
+            ].fillna("Unknown")
 
             # Normalize values into a Yes/No style for clarity
             def classify_commit_activity(val):
                 if isinstance(val, str):
                     val_lower = val.strip().lower()
                     if any(
-                            keyword in val_lower
-                            for keyword in ["active", "yes", "true", "recent", "1", "commit"]
+                        keyword in val_lower
+                        for keyword in [
+                            "active",
+                            "yes",
+                            "true",
+                            "recent",
+                            "1",
+                            "commit",
+                        ]
                     ):
                         return "Active (Commits in Last Year)"
                     elif any(
-                            keyword in val_lower
-                            for keyword in ["no", "none", "inactive", "false", "0"]
+                        keyword in val_lower
+                        for keyword in ["no", "none", "inactive", "false", "0"]
                     ):
                         return "Inactive (No Commits in Last Year)"
                 if isinstance(val, (int, float)):
@@ -80,7 +90,7 @@ def render_distributions_tab(df):
                 yaxis_title_font=dict(size=20, family="Open Sans"),
             )
 
-            st.plotly_chart(fig_commit_activity, width='stretch')
+            st.plotly_chart(fig_commit_activity, width="stretch")
         else:
             st.warning("Column latest_commit_activity not found in dataset.")
 
@@ -142,7 +152,7 @@ def render_distributions_tab(df):
                 yaxis_tickfont=dict(size=18),
                 yaxis_title_font=dict(size=20),
             )
-            st.plotly_chart(fig_dist, width='stretch')
+            st.plotly_chart(fig_dist, width="stretch")
 
         # Add spacing between sections
         st.write("")
@@ -181,6 +191,6 @@ def render_distributions_tab(df):
                 yaxis_title_font=dict(size=20),
             )
 
-            st.plotly_chart(fig_platform, width='stretch')
+            st.plotly_chart(fig_platform, width="stretch")
         else:
             st.warning("Column `platform` not found in dataset.")

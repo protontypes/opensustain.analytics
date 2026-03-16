@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-pd.set_option('future.no_silent_downcasting', True)
+
+pd.set_option("future.no_silent_downcasting", True)
 from datetime import datetime, timezone
 from tabs.distributions_tab import render_distributions_tab
 from tabs.ecosystem_tab import render_ecosystem_tab
@@ -11,7 +12,9 @@ from tabs.projects_over_time_tab import render_projects_over_time_tab
 from tabs.organisations_ranking_tab import render_organisations_ranking_tab
 from tabs.organisations_tab import render_organisations_tab
 from tabs.organisational_projects_tab import render_organisational_projects_tab
-from tabs.organisations_by_subcategory_tab import render_organisations_by_subcategory_tab
+from tabs.organisations_by_subcategory_tab import (
+    render_organisations_by_subcategory_tab,
+)
 
 st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 
@@ -19,6 +22,7 @@ st.set_page_config(page_title="OpenSustain Analytics", layout="wide")
 # --- Helper functions ---
 def text_to_link(project_name, git_url):
     return f'<a href="{git_url}" target="_blank" style="color:black">{project_name}</a>'
+
 
 def text_to_bolt(topic):
     return f"<b>{topic}</b>"
@@ -124,10 +128,6 @@ for col in metrics_for_score:
 df["total_score_combined"] = df_norm.sum(axis=1)
 
 
-
-
-
-
 st.markdown(
     """
 <style>
@@ -173,7 +173,9 @@ st.markdown(
         ">📥 Download Organisations Dataset</a>
     </div>
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 # ---palette ---
 category_colors = {
@@ -211,11 +213,12 @@ bright_score_colors = [
     "#33ff33",
     "#00ff33",
     "#00cc33",
-    "#00cc00"
+    "#00cc00",
 ]
 
 
-st.markdown("""
+st.markdown(
+    """
 <style>
 /* Tab container */
 div[data-baseweb="tab-list"] {
@@ -256,15 +259,16 @@ button[data-baseweb="tab"]:focus {
     box-shadow: none !important;
 }
 </style>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 # Documentation section
 with st.expander("**Documentation & User Guide**", expanded=False):
     col1, col2 = st.columns(2)
     with col1:
-
         st.markdown("#### Understanding the Metrics")
-        #collapsible section  for metrics
+        # collapsible section  for metrics
         with st.expander("**Understanding the Metrics**", expanded=False):
             st.markdown("#### Total Score (All Metrics)")
             st.markdown("""
@@ -278,7 +282,7 @@ with st.expander("**Documentation & User Guide**", expanded=False):
             - Development Distribution Score (DDS)
             - Downloads in the last month
 
-            Each metric is normalized between 0 and 1 to ensure comparability, then summed to form a single score. 
+            Each metric is normalized between 0 and 1 to ensure comparability, then summed to form a single score.
             Higher scores represent projects that are both technically active and socially visible across multiple dimensions.
 
             > **Tip:** All project names are clickable links to their git repositories.
@@ -300,7 +304,7 @@ with st.expander("**Documentation & User Guide**", expanded=False):
             - Institutional or organizational ownership
             - Publication in the Journal of Open Source Software (JOSS)
 
-            > 💡 More details can be found in the [offical documentation](https://github.com/ecosyste-ms/ost/blob/main/docs/project_scoring.md). 
+            > 💡 More details can be found in the [offical documentation](https://github.com/ecosyste-ms/ost/blob/main/docs/project_scoring.md).
             """)
 
             st.divider()
@@ -315,10 +319,9 @@ with st.expander("**Documentation & User Guide**", expanded=False):
             Learn more: [DDS definition in our latest report](https://report.opensustain.tech/chapters/development-distribution-score.html)
             """)
 
-
     with col2:
         st.markdown("#### Using the Sunburst Visualization")
-        #collapsible section  for the sunburst
+        # collapsible section  for the sunburst
         with st.expander("**How to Use the Sunburst Visualization**", expanded=False):
             st.markdown("""
             The **Sunburst chart** provides a hierarchical view of the open source sustainability ecosystem:
@@ -345,7 +348,8 @@ with st.expander("**Documentation & User Guide**", expanded=False):
             """)
 
             st.info(
-                "The sunburst helps identify which sustainability domains are most active, how contributions are distributed, and which projects lead in community engagement.")
+                "The sunburst helps identify which sustainability domains are most active, how contributions are distributed, and which projects lead in community engagement."
+            )
 
 # --- Tabs ---
 (
@@ -388,14 +392,11 @@ with tab4:
         df=df,
         df_organisations=df_organisations,
         category_colors=category_colors,
-        bright_score_colors=bright_score_colors
+        bright_score_colors=bright_score_colors,
     )
 
 with tab_rankings:
-    render_rankings_tab(
-        df=df,
-        text_to_link_func=text_to_link
-    )
+    render_rankings_tab(df=df, text_to_link_func=text_to_link)
 
 
 # ==========================
@@ -407,11 +408,7 @@ with tab_distributions:
 # TAB 7: Topics & Keywords (fixed heatmap Y-axis)
 # ==========================
 with tab_topics:
-    render_topics_tab(
-        df=df,
-        keywords_file="ost_keywords.txt",
-        wordcloud_url=None
-    )
+    render_topics_tab(df=df, keywords_file="ost_keywords.txt", wordcloud_url=None)
 
 # ==========================
 # TAB 8: Organisations data
@@ -419,7 +416,6 @@ with tab_topics:
 
 with tab_organisations:
     render_organisations_tab(df_organisations=df_organisations)
-
 
 
 # ==========================
@@ -440,7 +436,6 @@ with tab_org_sunburst:
 # ==========================
 
 with tab_top_org_score:
-
     render_organisations_ranking_tab(df=df, df_organisations=df_organisations)
 
 # ==========================
@@ -448,10 +443,6 @@ with tab_top_org_score:
 # ==========================
 
 with tab_org_subcat:
-
     render_organisations_by_subcategory_tab(
-
         df_organisations=df_organisations, category_colors=category_colors
-
     )
-

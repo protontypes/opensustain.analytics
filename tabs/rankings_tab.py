@@ -1,12 +1,10 @@
 """
 Rankings Tab - Project Rankings by Various Metrics
 """
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
-
-
 
 
 def render_rankings_tab(df, text_to_link_func):
@@ -54,7 +52,7 @@ def render_rankings_tab(df, text_to_link_func):
     # --------------------------
     # Filter inactive projects
     # --------------------------
-    one_year_ago = pd.Timestamp.now(tz='UTC') - pd.Timedelta(days=365)
+    one_year_ago = pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=365)
     df_rank["latest_commit_activity_dt"] = pd.to_datetime(
         df_rank["latest_commit_activity"], utc=True, errors="coerce"
     )
@@ -63,7 +61,7 @@ def render_rankings_tab(df, text_to_link_func):
     show_only_active = st.checkbox(
         "Show only active projects (at least one commit in the last year)",
         value=True,
-        key="filter_active_projects"
+        key="filter_active_projects",
     )
     if show_only_active:
         df_rank = df_rank[df_rank["is_active"]]
@@ -83,7 +81,7 @@ def render_rankings_tab(df, text_to_link_func):
         "total_number_of_dependencies": "Total Dependencies",
         "stars": "Stars",
         "downloads_last_month": "Downloads (Last Month)",
-        "total_score_combined": "Total Score (All Metrics)"
+        "total_score_combined": "Total Score (All Metrics)",
     }
 
     metric = st.selectbox(
@@ -102,7 +100,7 @@ def render_rankings_tab(df, text_to_link_func):
         "Filter by Category:",
         options=category_options,
         index=0,
-        key="ranking_category_filter"
+        key="ranking_category_filter",
     )
     if selected_category != "All Categories":
         df_rank = df_rank[df_rank["category"] == selected_category]
@@ -115,7 +113,7 @@ def render_rankings_tab(df, text_to_link_func):
         min_value=10,
         max_value=300,
         value=50,
-        key="ranking_slider"
+        key="ranking_slider",
     )
 
     # --------------------------
@@ -151,7 +149,8 @@ def render_rankings_tab(df, text_to_link_func):
             color=metric,
             color_continuous_scale="Tealgrn",
             text=top_projects[metric].round(2),
-            custom_data=[top_projects.index + 1] + [top_projects[col] for col in hover_cols],
+            custom_data=[top_projects.index + 1]
+            + [top_projects[col] for col in hover_cols],
         )
 
         # Hover template with larger text
@@ -168,9 +167,7 @@ def render_rankings_tab(df, text_to_link_func):
         )
 
         fig_rank.update_traces(
-            textposition="outside",
-            textfont_size=12,
-            hovertemplate=hover_template
+            textposition="outside", textfont_size=12, hovertemplate=hover_template
         )
 
         fig_rank.update_layout(

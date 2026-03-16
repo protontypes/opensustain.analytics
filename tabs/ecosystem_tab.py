@@ -1,6 +1,7 @@
 """
 Ecosystem Tab - Open Source Sustainability Ecosystem Visualization
 """
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -26,7 +27,8 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
     """
 
     st.header("The Open Source Sustainability Ecosystem")
-    st.write('')
+    st.write("")
+
     # --- Cached summary stats ---
     @st.cache_data
     def compute_summary_stats(df_projects, df_orgs):
@@ -37,7 +39,9 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
         # Median project age in years
         now_utc = datetime.now(timezone.utc)
         project_created_at = pd.to_datetime(df_projects["project_created_at"], utc=True)
-        project_age_years = (now_utc - project_created_at).dt.total_seconds() / (365.25 * 24 * 3600)
+        project_age_years = (now_utc - project_created_at).dt.total_seconds() / (
+            365.25 * 24 * 3600
+        )
         median_age = round(project_age_years.median(), 2)
 
         # Active projects: commits in the last year
@@ -47,23 +51,35 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
                 df_projects["latest_commit_activity"], utc=True, errors="coerce"
             )
             active_projects = df_projects[
-                df_projects["latest_commit_activity_date"].notna() &
-                (df_projects["latest_commit_activity_date"] >= one_year_ago)
-                ].shape[0]
+                df_projects["latest_commit_activity_date"].notna()
+                & (df_projects["latest_commit_activity_date"] >= one_year_ago)
+            ].shape[0]
         else:
             active_projects = 0
 
         # Median stars
-        median_stars = int(df_projects["stars"].median()) if "stars" in df_projects.columns else 0
+        median_stars = (
+            int(df_projects["stars"].median()) if "stars" in df_projects.columns else 0
+        )
 
         # Median DDS
-        median_dds = round(df_projects["dds"].median(), 3) if "dds" in df_projects.columns else 0
+        median_dds = (
+            round(df_projects["dds"].median(), 3) if "dds" in df_projects.columns else 0
+        )
 
         # Median contributors
-        median_contributors = round(df_projects["contributors"].median(),2) if "contributors" in df_projects.columns else 0
+        median_contributors = (
+            round(df_projects["contributors"].median(), 2)
+            if "contributors" in df_projects.columns
+            else 0
+        )
 
         # Median total commits
-        median_commits = round(df_projects["total_commits"].median(),2) if "total_commits" in df_projects.columns else 0
+        median_commits = (
+            round(df_projects["total_commits"].median(), 2)
+            if "total_commits" in df_projects.columns
+            else 0
+        )
 
         return (
             total_projects,
@@ -107,11 +123,14 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
     st.divider()
 
     # --- Root label for sunburst ---
-    df[
-        "hole"] = '<b style="font-family: Open Sans; font-size:1.5rem; line-height:normal;"><a href="https://opensustain.tech/">The Open Source Ecosystem <br> in Sustainability</a></b>'
+    df["hole"] = (
+        '<b style="font-family: Open Sans; font-size:1.5rem; line-height:normal;"><a href="https://opensustain.tech/">The Open Source Ecosystem <br> in Sustainability</a></b>'
+    )
 
     # --- Checkbox to hide inactive projects ---
-    hide_inactive = st.checkbox("Hide inactive projects (no commits in past year)", value=True)
+    hide_inactive = st.checkbox(
+        "Hide inactive projects (no commits in past year)", value=True
+    )
 
     # Filter inactive projects if checkbox is selected
     df_filtered = df.copy()
@@ -122,15 +141,21 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
             df_filtered["latest_commit_activity"], utc=True, errors="coerce"
         )
         df_filtered = df_filtered[
-            df_filtered["latest_commit_activity_date"].notna() &
-            (df_filtered["latest_commit_activity_date"] >= one_year_ago)
-            ]
+            df_filtered["latest_commit_activity_date"].notna()
+            & (df_filtered["latest_commit_activity_date"] >= one_year_ago)
+        ]
 
     # --- Select color metric for sunburst ---
     available_metrics = [
-        "contributors", "citations", "total_commits",
-        "total_number_of_dependencies", "stars", "score",
-        "dds", "downloads_last_month", "total_score_combined"
+        "contributors",
+        "citations",
+        "total_commits",
+        "total_number_of_dependencies",
+        "stars",
+        "score",
+        "dds",
+        "downloads_last_month",
+        "total_score_combined",
     ]
 
     metric_labels = {
@@ -142,14 +167,14 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
         "total_number_of_dependencies": "Total Dependencies",
         "stars": "Stars",
         "downloads_last_month": "Downloads (Last Month)",
-        "total_score_combined": "Total Score (All Metrics)"
+        "total_score_combined": "Total Score (All Metrics)",
     }
 
     selected_color_metric = st.selectbox(
         "Select metric for color coding:",
         options=available_metrics,
         index=available_metrics.index("total_score_combined"),
-        format_func=lambda x: metric_labels[x]
+        format_func=lambda x: metric_labels[x],
     )
 
     # --- Function to create sunburst ---
@@ -188,9 +213,9 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
                 df_sb["score"],
                 df_sb["dds"],
                 df_sb["downloads_last_month"],
-                df_sb["custom_color_metric"]
+                df_sb["custom_color_metric"],
             ],
-            axis=-1
+            axis=-1,
         )
 
         fig = px.sunburst(
@@ -225,7 +250,11 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
 
         hovertemplates = []
         for parent, label in zip(trace.parents, trace.labels):
-            if parent == root_level or label in category_levels or label in subcategory_levels:
+            if (
+                parent == root_level
+                or label in category_levels
+                or label in subcategory_levels
+            ):
                 hovertemplates.append(None)
             else:
                 hovertemplates.append(
@@ -252,7 +281,7 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
             coloraxis_colorbar=dict(
                 title=dict(
                     text=f"{color_metric.replace('_', ' ').title()}",
-                    font=dict(size=16, family="Open Sans")
+                    font=dict(size=16, family="Open Sans"),
                 ),
                 orientation="h",
                 yanchor="bottom",
@@ -265,7 +294,9 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
                 len=0.6,
                 tickfont=dict(size=14, family="Open Sans"),
             ),
-            hoverlabel=dict(font_size=16, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"),
+            hoverlabel=dict(
+                font_size=16, font_family="Open Sans", bgcolor="rgba(255,255,255,0.9)"
+            ),
             height=1400,
             title_x=0.5,
             font_size=18,
@@ -300,7 +331,7 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
                     borderwidth=1,
                     borderpad=4,
                     xanchor="left",
-                    yanchor="top"
+                    yanchor="top",
                 )
             )
 
@@ -314,12 +345,14 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
         selected_color_metric,
         available_metrics,
         category_colors,
-        bright_score_colors
+        bright_score_colors,
     )
     st.plotly_chart(fig_sunburst)
 
     # --- Export as HTML ---
-    export_html = st.checkbox("Export this plot as an HTML file and add it to your website.", value=False)
+    export_html = st.checkbox(
+        "Export this plot as an HTML file and add it to your website.", value=False
+    )
     if export_html:
         # Convert plot to HTML string
         html_str = fig_sunburst.to_html(full_html=True)
@@ -327,5 +360,5 @@ def render_ecosystem_tab(df, df_organisations, category_colors, bright_score_col
             label="Download Sunburst Plot as HTML",
             data=html_str,
             file_name="ecosystem_sunburst.html",
-            mime="text/html"
+            mime="text/html",
         )
