@@ -3,21 +3,29 @@ import pandas as pd
 import plotly.express as px
 from tabs.tab_utils import render_filters
 
+
 def render_organisations_ranking_tab(df, df_organisations):
     st.header("Organisation Ranking")
     st.caption(
         "Aggregates the total project scores for each organisation using the `organization_projects` field from organisations.csv."
     )
 
-    filtered_df_organisations = render_filters(df_organisations, 'organisations_ranking')
+    filtered_df_organisations = render_filters(
+        df_organisations, "organisations_ranking"
+    )
 
-    if "organization_projects" not in filtered_df_organisations.columns or "git_url" not in df.columns:
+    if (
+        "organization_projects" not in filtered_df_organisations.columns
+        or "git_url" not in df.columns
+    ):
         st.warning(
             "Missing required fields: `organization_projects` in organisations.csv or `git_url` in projects.csv."
         )
     else:
         # Ensure numeric scores
-        df["total_score_combined"] = pd.to_numeric(df["total_score_combined"], errors="coerce").fillna(0)
+        df["total_score_combined"] = pd.to_numeric(
+            df["total_score_combined"], errors="coerce"
+        ).fillna(0)
 
         # Map git_url -> score
         project_score_map = df.set_index("git_url")["total_score_combined"].to_dict()
@@ -26,20 +34,22 @@ def render_organisations_ranking_tab(df, df_organisations):
         project_category_map = df.set_index("git_url")["category"].to_dict()
 
         # Split projects per organisation
-        filtered_df_organisations["organization_projects"] = filtered_df_organisations[
-            "organization_projects"
-        ].fillna("").astype(str)
-        filtered_df_organisations["projects_list"] = filtered_df_organisations["organization_projects"].apply(
-            lambda s: [p.strip() for p in s.split(",") if p.strip() != ""]
+        filtered_df_organisations["organization_projects"] = (
+            filtered_df_organisations["organization_projects"].fillna("").astype(str)
         )
+        filtered_df_organisations["projects_list"] = filtered_df_organisations[
+            "organization_projects"
+        ].apply(lambda s: [p.strip() for p in s.split(",") if p.strip() != ""])
 
         # Fill missing descriptions and icons
-        filtered_df_organisations["organization_description"] = filtered_df_organisations.get(
-            "organization_description", ""
-        ).fillna("No description available")
-        filtered_df_organisations["organization_icon_url"] = filtered_df_organisations.get(
-            "organization_icon_url", ""
-        ).fillna("")
+        filtered_df_organisations["organization_description"] = (
+            filtered_df_organisations.get("organization_description", "").fillna(
+                "No description available"
+            )
+        )
+        filtered_df_organisations["organization_icon_url"] = (
+            filtered_df_organisations.get("organization_icon_url", "").fillna("")
+        )
 
         # --- Single-select category filter ---
         all_categories = sorted(df["category"].unique().tolist())
@@ -60,7 +70,11 @@ def render_organisations_ranking_tab(df, df_organisations):
             if selected_category == "All Categories":
                 filtered_projects = projects
             else:
-                filtered_projects = [p for p in projects if project_category_map.get(p) == selected_category]
+                filtered_projects = [
+                    p
+                    for p in projects
+                    if project_category_map.get(p) == selected_category
+                ]
 
             total_score = sum(project_score_map.get(p, 0) for p in filtered_projects)
             description = row["organization_description"]
@@ -83,7 +97,9 @@ def render_organisations_ranking_tab(df, df_organisations):
             st.warning("No organisation data found for the selected category.")
         else:
             # Sort by total score descending
-            df_agg_scores = df_agg_scores.sort_values("total_score", ascending=False).reset_index(drop=True)
+            df_agg_scores = df_agg_scores.sort_values(
+                "total_score", ascending=False
+            ).reset_index(drop=True)
 
             # Slider for top N organisations
             if len(df_agg_scores) > 1:

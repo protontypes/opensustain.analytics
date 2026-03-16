@@ -1,6 +1,7 @@
 """
 Projects over Time Tab
 """
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -40,7 +41,7 @@ def render_projects_over_time_tab(df, category_colors):
         "Filter by Category:",
         options=categories_with_all,
         index=0,  # default: "All"
-        help="Select which category to display in the plot."
+        help="Select which category to display in the plot.",
     )
 
     if selected_category == "All":
@@ -74,7 +75,9 @@ def render_projects_over_time_tab(df, category_colors):
         df_filtered[selected_size_column], errors="coerce"
     ).fillna(0)
 
-    size_scaled = np.sqrt(df_filtered[selected_size_column]) * 20 + 5  # minimum size > 0
+    size_scaled = (
+        np.sqrt(df_filtered[selected_size_column]) * 20 + 5
+    )  # minimum size > 0
 
     # -------------------------------
     # Scatter plot
@@ -119,7 +122,7 @@ def render_projects_over_time_tab(df, category_colors):
     # Dynamic plot height based on number of subcategories
     # -------------------------------
     height_per_subcat = 30  # pixels per subcategory
-    base_height = 200       # minimum height
+    base_height = 200  # minimum height
     plot_height = max(base_height, height_per_subcat * len(sorted_subcats))
 
     fig1.update_layout(
@@ -132,8 +135,8 @@ def render_projects_over_time_tab(df, category_colors):
         font=dict(size=20, family="Open Sans"),
         title=" ",
         xaxis=dict(
-            side="top",        # move X-axis to top
-            autorange="reversed"
+            side="top",  # move X-axis to top
+            autorange="reversed",
         ),
     )
 
@@ -143,9 +146,9 @@ def render_projects_over_time_tab(df, category_colors):
     fig1.update_yaxes(
         autorange="reversed",
         tickvals=list(range(len(sorted_subcats))),  # one tick per subcategory
-        ticktext=sorted_subcats,                     # corresponding subcategory names
+        ticktext=sorted_subcats,  # corresponding subcategory names
         tickfont=dict(family="Open Sans", size=18, color="black"),
-        automargin=True
+        automargin=True,
     )
 
     # -------------------------------
