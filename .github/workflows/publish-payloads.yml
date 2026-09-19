@@ -1,0 +1,73 @@
+name: Publish analytics payloads
+
+# Builds the analytics JSON payloads from data/*.csv with
+# scripts/build_analytics_payloads.py, publishes them to a dedicated `data`
+# branch, then tells opensustain.tech to rebuild against them.
+#
+# The payloads are generated here rather than committed: `data/payloads/` is
+# gitignored, so the `data` branch is their only published copy and always
+# matches the CSVs on main.
+#
+# Runs after "Update OpenSustain Data" refreshes data/*.csv, on any push to
+# main that changes the CSVs or the builder, and on demand.
+#
+# The notify step needs a secret named OST_TECH_DISPATCH_TOKEN: a fine-grained
+# PAT scoped to protontypes/opensustain.tech with "Contents: read and write"
+# (repository_dispatch needs write access on the target repo; the default
+# GITHUB_TOKEN cannot reach another repository). Without it the payloads are
+# still published and that step is skipped.
+on:
+  workflow_run:
+    workflows: ["Update OpenSustain Data"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "data/*.csv"
+      - "ost_keywords.txt"
+      - "scripts/build_analytics_payloads.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Only what the builder imports; requirements.txt also pulls in the
+      # Streamlit app's dependencies.
+      - name: Install builder dependencies
+        run: pip install "pandas>=2.3.3,<3" "numpy>=2.3.3,<3" country-converter
+
+      - name: Build payloads
+        run: python scripts/build_analytics_payloads.py --output-dir data/payloads
+
+      - name: Publish data/payloads to the data branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: data/payloads
+          publish_branch: data
+          keep_files: false
+          commit_message: "data: publish analytics payloads (${{ github.sha }})"
+
+      - name: Notify opensustain.tech to rebuild
+        env:
+          DISPATCH_TOKEN: ${{ secrets.OST_TECH_DISPATCH_TOKEN }}
+        if: ${{ env.DISPATCH_TOKEN != '' }}
+        run: |
+          curl -sS -f -X POST \
+            -H "Authorization: token $DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/protontypes/opensustain.tech/dispatches \
+            -d '{"event_type":"analytics-data-updated"}'
