@@ -1,0 +1,1207 @@
+{
+  "generated_at": "2026-09-19T18:36:57.020674+00:00",
+  "default_top_n": 30,
+  "max_top_n": 300,
+  "records": [
+    {
+      "keyword": "energy",
+      "count": 356
+    },
+    {
+      "keyword": "climate",
+      "count": 278
+    },
+    {
+      "keyword": "water",
+      "count": 150
+    },
+    {
+      "keyword": "power",
+      "count": 115
+    },
+    {
+      "keyword": "environmental",
+      "count": 107
+    },
+    {
+      "keyword": "carbon",
+      "count": 103
+    },
+    {
+      "keyword": "weather",
+      "count": 102
+    },
+    {
+      "keyword": "earth",
+      "count": 99
+    },
+    {
+      "keyword": "emission",
+      "count": 89
+    },
+    {
+      "keyword": "ocean",
+      "count": 82
+    },
+    {
+      "keyword": "building",
+      "count": 79
+    },
+    {
+      "keyword": "impact",
+      "count": 73
+    },
+    {
+      "keyword": "assessment",
+      "count": 72
+    },
+    {
+      "keyword": "wind",
+      "count": 72
+    },
+    {
+      "keyword": "science",
+      "count": 71
+    },
+    {
+      "keyword": "plant",
+      "count": 70
+    },
+    {
+      "keyword": "forest",
+      "count": 68
+    },
+    {
+      "keyword": "atmospheric",
+      "count": 65
+    },
+    {
+      "keyword": "soil",
+      "count": 64
+    },
+    {
+      "keyword": "land",
+      "count": 61
+    },
+    {
+      "keyword": "electricity",
+      "count": 56
+    },
+    {
+      "keyword": "resource",
+      "count": 56
+    },
+    {
+      "keyword": "solar",
+      "count": 56
+    },
+    {
+      "keyword": "surface",
+      "count": 54
+    },
+    {
+      "keyword": "specie",
+      "count": 53
+    },
+    {
+      "keyword": "environment",
+      "count": 52
+    },
+    {
+      "keyword": "ecosystem",
+      "count": 49
+    },
+    {
+      "keyword": "cloud",
+      "count": 47
+    },
+    {
+      "keyword": "monitoring",
+      "count": 45
+    },
+    {
+      "keyword": "satellite",
+      "count": 45
+    },
+    {
+      "keyword": "battery",
+      "count": 44
+    },
+    {
+      "keyword": "tree",
+      "count": 44
+    },
+    {
+      "keyword": "consumption",
+      "count": 43
+    },
+    {
+      "keyword": "integrate",
+      "count": 43
+    },
+    {
+      "keyword": "product",
+      "count": 43
+    },
+    {
+      "keyword": "biodiversity",
+      "count": 41
+    },
+    {
+      "keyword": "forecast",
+      "count": 41
+    },
+    {
+      "keyword": "marine",
+      "count": 40
+    },
+    {
+      "keyword": "service",
+      "count": 38
+    },
+    {
+      "keyword": "transport",
+      "count": 37
+    },
+    {
+      "keyword": "cost",
+      "count": 36
+    },
+    {
+      "keyword": "distribution",
+      "count": 36
+    },
+    {
+      "keyword": "generation",
+      "count": 36
+    },
+    {
+      "keyword": "measure",
+      "count": 35
+    },
+    {
+      "keyword": "cycle",
+      "count": 34
+    },
+    {
+      "keyword": "hydrological",
+      "count": 34
+    },
+    {
+      "keyword": "life",
+      "count": 34
+    },
+    {
+      "keyword": "meteorological",
+      "count": 34
+    },
+    {
+      "keyword": "prediction",
+      "count": 34
+    },
+    {
+      "keyword": "scenario",
+      "count": 34
+    },
+    {
+      "keyword": "atmosphere",
+      "count": 33
+    },
+    {
+      "keyword": "ecological",
+      "count": 33
+    },
+    {
+      "keyword": "forecasting",
+      "count": 33
+    },
+    {
+      "keyword": "temperature",
+      "count": 33
+    },
+    {
+      "keyword": "future",
+      "count": 32
+    },
+    {
+      "keyword": "observation",
+      "count": 32
+    },
+    {
+      "keyword": "remote",
+      "count": 32
+    },
+    {
+      "keyword": "sense",
+      "count": 32
+    },
+    {
+      "keyword": "storage",
+      "count": 32
+    },
+    {
+      "keyword": "sustainable",
+      "count": 32
+    },
+    {
+      "keyword": "common",
+      "count": 31
+    },
+    {
+      "keyword": "well",
+      "count": 31
+    },
+    {
+      "keyword": "planning",
+      "count": 30
+    },
+    {
+      "keyword": "public",
+      "count": 30
+    },
+    {
+      "keyword": "regional",
+      "count": 30
+    },
+    {
+      "keyword": "risk",
+      "count": 30
+    },
+    {
+      "keyword": "spatial",
+      "count": 30
+    },
+    {
+      "keyword": "decision",
+      "count": 29
+    },
+    {
+      "keyword": "vegetation",
+      "count": 29
+    },
+    {
+      "keyword": "field",
+      "count": 28
+    },
+    {
+      "keyword": "mapping",
+      "count": 28
+    },
+    {
+      "keyword": "renewable",
+      "count": 28
+    },
+    {
+      "keyword": "infrastructure",
+      "count": 27
+    },
+    {
+      "keyword": "scientific",
+      "count": 27
+    },
+    {
+      "keyword": "sector",
+      "count": 27
+    },
+    {
+      "keyword": "urban",
+      "count": 27
+    },
+    {
+      "keyword": "greenhouse",
+      "count": 26
+    },
+    {
+      "keyword": "groundwater",
+      "count": 26
+    },
+    {
+      "keyword": "heat",
+      "count": 26
+    },
+    {
+      "keyword": "market",
+      "count": 26
+    },
+    {
+      "keyword": "network",
+      "count": 26
+    },
+    {
+      "keyword": "simulator",
+      "count": 26
+    },
+    {
+      "keyword": "vehicle",
+      "count": 26
+    },
+    {
+      "keyword": "material",
+      "count": 25
+    },
+    {
+      "keyword": "production",
+      "count": 25
+    },
+    {
+      "keyword": "area",
+      "count": 24
+    },
+    {
+      "keyword": "balance",
+      "count": 24
+    },
+    {
+      "keyword": "demand",
+      "count": 24
+    },
+    {
+      "keyword": "efficient",
+      "count": 24
+    },
+    {
+      "keyword": "electric",
+      "count": 24
+    },
+    {
+      "keyword": "geospatial",
+      "count": 24
+    },
+    {
+      "keyword": "local",
+      "count": 24
+    },
+    {
+      "keyword": "sustainability",
+      "count": 24
+    },
+    {
+      "keyword": "turbine",
+      "count": 24
+    },
+    {
+      "keyword": "agriculture",
+      "count": 23
+    },
+    {
+      "keyword": "farm",
+      "count": 23
+    },
+    {
+      "keyword": "metric",
+      "count": 23
+    },
+    {
+      "keyword": "natural",
+      "count": 23
+    },
+    {
+      "keyword": "predict",
+      "count": 23
+    },
+    {
+      "keyword": "region",
+      "count": 23
+    },
+    {
+      "keyword": "survey",
+      "count": 23
+    },
+    {
+      "keyword": "agricultural",
+      "count": 22
+    },
+    {
+      "keyword": "conservation",
+      "count": 22
+    },
+    {
+      "keyword": "crop",
+      "count": 22
+    },
+    {
+      "keyword": "facilitate",
+      "count": 22
+    },
+    {
+      "keyword": "flood",
+      "count": 22
+    },
+    {
+      "keyword": "footprint",
+      "count": 22
+    },
+    {
+      "keyword": "home",
+      "count": 22
+    },
+    {
+      "keyword": "policy",
+      "count": 22
+    },
+    {
+      "keyword": "scientist",
+      "count": 22
+    },
+    {
+      "keyword": "station",
+      "count": 22
+    },
+    {
+      "keyword": "thermal",
+      "count": 22
+    },
+    {
+      "keyword": "charge",
+      "count": 21
+    },
+    {
+      "keyword": "coastal",
+      "count": 21
+    },
+    {
+      "keyword": "detection",
+      "count": 21
+    },
+    {
+      "keyword": "dynamic",
+      "count": 21
+    },
+    {
+      "keyword": "landscape",
+      "count": 21
+    },
+    {
+      "keyword": "technology",
+      "count": 21
+    },
+    {
+      "keyword": "engine",
+      "count": 20
+    },
+    {
+      "keyword": "goal",
+      "count": 20
+    },
+    {
+      "keyword": "index",
+      "count": 20
+    },
+    {
+      "keyword": "sentinel",
+      "count": 20
+    },
+    {
+      "keyword": "course",
+      "count": 19
+    },
+    {
+      "keyword": "economic",
+      "count": 19
+    },
+    {
+      "keyword": "economy",
+      "count": 19
+    },
+    {
+      "keyword": "meter",
+      "count": 19
+    },
+    {
+      "keyword": "physic",
+      "count": 19
+    },
+    {
+      "keyword": "river",
+      "count": 19
+    },
+    {
+      "keyword": "tutorial",
+      "count": 19
+    },
+    {
+      "keyword": "compute",
+      "count": 18
+    },
+    {
+      "keyword": "fishery",
+      "count": 18
+    },
+    {
+      "keyword": "fuel",
+      "count": 18
+    },
+    {
+      "keyword": "health",
+      "count": 18
+    },
+    {
+      "keyword": "monitor",
+      "count": 18
+    },
+    {
+      "keyword": "supply",
+      "count": 18
+    },
+    {
+      "keyword": "transfer",
+      "count": 18
+    },
+    {
+      "keyword": "wave",
+      "count": 18
+    },
+    {
+      "keyword": "food",
+      "count": 17
+    },
+    {
+      "keyword": "hydrologic",
+      "count": 17
+    },
+    {
+      "keyword": "implement",
+      "count": 17
+    },
+    {
+      "keyword": "people",
+      "count": 17
+    },
+    {
+      "keyword": "stock",
+      "count": 17
+    },
+    {
+      "keyword": "animal",
+      "count": 16
+    },
+    {
+      "keyword": "current",
+      "count": 16
+    },
+    {
+      "keyword": "fire",
+      "count": 16
+    },
+    {
+      "keyword": "knowledge",
+      "count": 16
+    },
+    {
+      "keyword": "map",
+      "count": 16
+    },
+    {
+      "keyword": "plastic",
+      "count": 16
+    },
+    {
+      "keyword": "capacity",
+      "count": 15
+    },
+    {
+      "keyword": "collect",
+      "count": 15
+    },
+    {
+      "keyword": "indicator",
+      "count": 15
+    },
+    {
+      "keyword": "lidar",
+      "count": 15
+    },
+    {
+      "keyword": "physical",
+      "count": 15
+    },
+    {
+      "keyword": "precipitation",
+      "count": 15
+    },
+    {
+      "keyword": "radiative",
+      "count": 15
+    },
+    {
+      "keyword": "reproducible",
+      "count": 15
+    },
+    {
+      "keyword": "spectral",
+      "count": 15
+    },
+    {
+      "keyword": "understand",
+      "count": 15
+    },
+    {
+      "keyword": "waste",
+      "count": 15
+    },
+    {
+      "keyword": "access",
+      "count": 14
+    },
+    {
+      "keyword": "biological",
+      "count": 14
+    },
+    {
+      "keyword": "calculation",
+      "count": 14
+    },
+    {
+      "keyword": "city",
+      "count": 14
+    },
+    {
+      "keyword": "glacier",
+      "count": 14
+    },
+    {
+      "keyword": "heating",
+      "count": 14
+    },
+    {
+      "keyword": "industry",
+      "count": 14
+    },
+    {
+      "keyword": "photovoltaic",
+      "count": 14
+    },
+    {
+      "keyword": "profile",
+      "count": 14
+    },
+    {
+      "keyword": "snow",
+      "count": 14
+    },
+    {
+      "keyword": "transmission",
+      "count": 14
+    },
+    {
+      "keyword": "transparent",
+      "count": 14
+    },
+    {
+      "keyword": "activity",
+      "count": 13
+    },
+    {
+      "keyword": "assistant",
+      "count": 13
+    },
+    {
+      "keyword": "efficiency",
+      "count": 13
+    },
+    {
+      "keyword": "flux",
+      "count": 13
+    },
+    {
+      "keyword": "foundation",
+      "count": 13
+    },
+    {
+      "keyword": "growth",
+      "count": 13
+    },
+    {
+      "keyword": "methodology",
+      "count": 13
+    },
+    {
+      "keyword": "mobility",
+      "count": 13
+    },
+    {
+      "keyword": "neural",
+      "count": 13
+    },
+    {
+      "keyword": "optimize",
+      "count": 13
+    },
+    {
+      "keyword": "population",
+      "count": 13
+    },
+    {
+      "keyword": "produce",
+      "count": 13
+    },
+    {
+      "keyword": "reduce",
+      "count": 13
+    },
+    {
+      "keyword": "site",
+      "count": 13
+    },
+    {
+      "keyword": "storm",
+      "count": 13
+    },
+    {
+      "keyword": "terrestrial",
+      "count": 13
+    },
+    {
+      "keyword": "asset",
+      "count": 12
+    },
+    {
+      "keyword": "circulation",
+      "count": 12
+    },
+    {
+      "keyword": "classification",
+      "count": 12
+    },
+    {
+      "keyword": "collaborative",
+      "count": 12
+    },
+    {
+      "keyword": "community",
+      "count": 12
+    },
+    {
+      "keyword": "develop",
+      "count": 12
+    },
+    {
+      "keyword": "downscaling",
+      "count": 12
+    },
+    {
+      "keyword": "electrical",
+      "count": 12
+    },
+    {
+      "keyword": "facilitates",
+      "count": 12
+    },
+    {
+      "keyword": "human",
+      "count": 12
+    },
+    {
+      "keyword": "property",
+      "count": 12
+    },
+    {
+      "keyword": "train",
+      "count": 12
+    },
+    {
+      "keyword": "transition",
+      "count": 12
+    },
+    {
+      "keyword": "airborne",
+      "count": 11
+    },
+    {
+      "keyword": "apply",
+      "count": 11
+    },
+    {
+      "keyword": "archive",
+      "count": 11
+    },
+    {
+      "keyword": "capability",
+      "count": 11
+    },
+    {
+      "keyword": "citizen",
+      "count": 11
+    },
+    {
+      "keyword": "copernicus",
+      "count": 11
+    },
+    {
+      "keyword": "couple",
+      "count": 11
+    },
+    {
+      "keyword": "district",
+      "count": 11
+    },
+    {
+      "keyword": "diversity",
+      "count": 11
+    },
+    {
+      "keyword": "ecology",
+      "count": 11
+    },
+    {
+      "keyword": "evolution",
+      "count": 11
+    },
+    {
+      "keyword": "fish",
+      "count": 11
+    },
+    {
+      "keyword": "focus",
+      "count": 11
+    },
+    {
+      "keyword": "hazard",
+      "count": 11
+    },
+    {
+      "keyword": "intensity",
+      "count": 11
+    },
+    {
+      "keyword": "optical",
+      "count": 11
+    },
+    {
+      "keyword": "pollution",
+      "count": 11
+    },
+    {
+      "keyword": "radiation",
+      "count": 11
+    },
+    {
+      "keyword": "scalable",
+      "count": 11
+    },
+    {
+      "keyword": "solution",
+      "count": 11
+    },
+    {
+      "keyword": "target",
+      "count": 11
+    },
+    {
+      "keyword": "tropical",
+      "count": 11
+    },
+    {
+      "keyword": "aim",
+      "count": 10
+    },
+    {
+      "keyword": "basin",
+      "count": 10
+    },
+    {
+      "keyword": "bird",
+      "count": 10
+    },
+    {
+      "keyword": "circular",
+      "count": 10
+    },
+    {
+      "keyword": "concentration",
+      "count": 10
+    },
+    {
+      "keyword": "detect",
+      "count": 10
+    },
+    {
+      "keyword": "document",
+      "count": 10
+    },
+    {
+      "keyword": "flexibility",
+      "count": 10
+    },
+    {
+      "keyword": "flow",
+      "count": 10
+    },
+    {
+      "keyword": "green",
+      "count": 10
+    },
+    {
+      "keyword": "hyperspectral",
+      "count": 10
+    },
+    {
+      "keyword": "industrial",
+      "count": 10
+    },
+    {
+      "keyword": "insight",
+      "count": 10
+    },
+    {
+      "keyword": "intelligence",
+      "count": 10
+    },
+    {
+      "keyword": "introduction",
+      "count": 10
+    },
+    {
+      "keyword": "inverter",
+      "count": 10
+    },
+    {
+      "keyword": "investment",
+      "count": 10
+    },
+    {
+      "keyword": "location",
+      "count": 10
+    },
+    {
+      "keyword": "rainfall",
+      "count": 10
+    },
+    {
+      "keyword": "reservoir",
+      "count": 10
+    },
+    {
+      "keyword": "residential",
+      "count": 10
+    },
+    {
+      "keyword": "verification",
+      "count": 10
+    },
+    {
+      "keyword": "wildfire",
+      "count": 10
+    },
+    {
+      "keyword": "acoustic",
+      "count": 9
+    },
+    {
+      "keyword": "address",
+      "count": 9
+    },
+    {
+      "keyword": "aerosol",
+      "count": 9
+    },
+    {
+      "keyword": "alternative",
+      "count": 9
+    },
+    {
+      "keyword": "annual",
+      "count": 9
+    },
+    {
+      "keyword": "architecture",
+      "count": 9
+    },
+    {
+      "keyword": "context",
+      "count": 9
+    },
+    {
+      "keyword": "cover",
+      "count": 9
+    },
+    {
+      "keyword": "dispersion",
+      "count": 9
+    },
+    {
+      "keyword": "expansion",
+      "count": 9
+    },
+    {
+      "keyword": "gas",
+      "count": 9
+    },
+    {
+      "keyword": "give",
+      "count": 9
+    },
+    {
+      "keyword": "hydraulic",
+      "count": 9
+    },
+    {
+      "keyword": "hydro",
+      "count": 9
+    },
+    {
+      "keyword": "hydrogen",
+      "count": 9
+    },
+    {
+      "keyword": "methane",
+      "count": 9
+    },
+    {
+      "keyword": "moisture",
+      "count": 9
+    },
+    {
+      "keyword": "offshore",
+      "count": 9
+    },
+    {
+      "keyword": "poverty",
+      "count": 9
+    },
+    {
+      "keyword": "present",
+      "count": 9
+    },
+    {
+      "keyword": "protect",
+      "count": 9
+    },
+    {
+      "keyword": "publicly",
+      "count": 9
+    },
+    {
+      "keyword": "pump",
+      "count": 9
+    },
+    {
+      "keyword": "radar",
+      "count": 9
+    },
+    {
+      "keyword": "report",
+      "count": 9
+    },
+    {
+      "keyword": "represent",
+      "count": 9
+    },
+    {
+      "keyword": "runoff",
+      "count": 9
+    },
+    {
+      "keyword": "sample",
+      "count": 9
+    },
+    {
+      "keyword": "social",
+      "count": 9
+    },
+    {
+      "keyword": "teach",
+      "count": 9
+    },
+    {
+      "keyword": "treatment",
+      "count": 9
+    },
+    {
+      "keyword": "validation",
+      "count": 9
+    },
+    {
+      "keyword": "accounting",
+      "count": 8
+    },
+    {
+      "keyword": "bank",
+      "count": 8
+    },
+    {
+      "keyword": "capture",
+      "count": 8
+    },
+    {
+      "keyword": "catalog",
+      "count": 8
+    },
+    {
+      "keyword": "company",
+      "count": 8
+    },
+    {
+      "keyword": "country",
+      "count": 8
+    },
+    {
+      "keyword": "efficiently",
+      "count": 8
+    },
+    {
+      "keyword": "establish",
+      "count": 8
+    },
+    {
+      "keyword": "forestry",
+      "count": 8
+    },
+    {
+      "keyword": "government",
+      "count": 8
+    },
+    {
+      "keyword": "host",
+      "count": 8
+    },
+    {
+      "keyword": "landsat",
+      "count": 8
+    },
+    {
+      "keyword": "manage",
+      "count": 8
+    },
+    {
+      "keyword": "million",
+      "count": 8
+    },
+    {
+      "keyword": "oceanic",
+      "count": 8
+    },
+    {
+      "keyword": "pipeline",
+      "count": 8
+    },
+    {
+      "keyword": "programme",
+      "count": 8
+    },
+    {
+      "keyword": "protection",
+      "count": 8
+    },
+    {
+      "keyword": "show",
+      "count": 8
+    },
+    {
+      "keyword": "simplify",
+      "count": 8
+    },
+    {
+      "keyword": "transparency",
+      "count": 8
+    },
+    {
+      "keyword": "watershed",
+      "count": 8
+    },
+    {
+      "keyword": "whole",
+      "count": 8
+    }
+  ]
+}

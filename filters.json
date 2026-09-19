@@ -1,0 +1,363 @@
+{
+  "generated_at": "2026-09-19T18:36:57.020674+00:00",
+  "categories": [
+    "Atmosphere",
+    "Biosphere",
+    "Climate Change",
+    "Consumption",
+    "Cryosphere",
+    "Emissions",
+    "Energy Storage",
+    "Energy Systems",
+    "Hydrosphere",
+    "Industrial Ecology",
+    "Natural Resources",
+    "Renewable Energy",
+    "Sustainable Development"
+  ],
+  "sub_categories": [
+    "Agriculture and Nutrition",
+    "Air Quality",
+    "Atmospheric Chemistry and Aerosol",
+    "Atmospheric Composition and Dynamics",
+    "Atmospheric Dispersion and Transport",
+    "Avian Monitoring and Analysis",
+    "Battery",
+    "Bioacoustics and Acoustic Data Analysis",
+    "Biodiversity Analysis and Metrics",
+    "Biodiversity Citizen Science",
+    "Biodiversity Data Access and Management",
+    "Biodiversity Data Cleaning and Standardization",
+    "Bioenergy",
+    "Biomass",
+    "Building Energy Monitoring",
+    "Buildings and Heating",
+    "Carbon Capture",
+    "Carbon Intensity and Accounting",
+    "Carbon Offsets and Trading",
+    "Circular Economy and Waste",
+    "Climate Data Access and Visualization",
+    "Climate Data Processing and Analysis",
+    "Climate Data Standards",
+    "Climate Downscaling",
+    "Coastal and Reefs",
+    "Computation and Communication",
+    "Conservation and Restoration",
+    "Curated Lists",
+    "Data Catalogs and Interfaces",
+    "Deforestation and Reforestation",
+    "Earth and Climate Modeling",
+    "Ecological and Environmental Modeling",
+    "Ecotoxicology",
+    "Education",
+    "Emission Observation and Modeling",
+    "Energy Data Accessibility and Integration",
+    "Energy Markets",
+    "Energy Policy",
+    "Energy System Modeling Frameworks",
+    "Environmental Satellites",
+    "Forest Modeling and Analysis",
+    "Forest Observation and Management",
+    "Forest Remote Sensing",
+    "Freshwater and Hydrology",
+    "Geothermal Energy",
+    "Glacier and Ice Sheets",
+    "Global and Regional Energy System Models",
+    "Grid Analysis and Planning",
+    "Grid Management and Microgrid",
+    "Hydro Energy",
+    "Hydrogen",
+    "Input Output Model",
+    "Integrated Assessment and Climate Policy",
+    "Knowledge Platforms",
+    "Life Cycle Assessment",
+    "Load and Demand Forecasting",
+    "Marine Life and Fishery",
+    "Meteorological Observation and Forecast",
+    "Mobility and Transportation",
+    "Natural Hazard and Storms",
+    "Ocean Carbon and Temperature",
+    "Ocean Models",
+    "Ocean and Hydrology Data Access",
+    "Photovoltaics and Solar Energy",
+    "Plants and Vegetation",
+    "Population and Poverty",
+    "Production and Industry",
+    "Radiative Transfer",
+    "Renewable Energy Integration",
+    "Sea Ice",
+    "Snow and Permafrost",
+    "Soil and Land",
+    "Species Distribution Modeling",
+    "Sustainable Development Goals",
+    "Sustainable Investment",
+    "Taxonomy and Ontology",
+    "Terrestrial Wildlife",
+    "Water Supply and Quality",
+    "Waves and Currents",
+    "Wildfire",
+    "Wind Energy"
+  ],
+  "sub_categories_by_category": {
+    "Atmosphere": [
+      "Atmospheric Chemistry and Aerosol",
+      "Atmospheric Composition and Dynamics",
+      "Atmospheric Dispersion and Transport",
+      "Meteorological Observation and Forecast",
+      "Radiative Transfer"
+    ],
+    "Biosphere": [
+      "Avian Monitoring and Analysis",
+      "Bioacoustics and Acoustic Data Analysis",
+      "Biodiversity Analysis and Metrics",
+      "Biodiversity Citizen Science",
+      "Biodiversity Data Access and Management",
+      "Biodiversity Data Cleaning and Standardization",
+      "Biomass",
+      "Conservation and Restoration",
+      "Deforestation and Reforestation",
+      "Ecological and Environmental Modeling",
+      "Forest Modeling and Analysis",
+      "Forest Observation and Management",
+      "Forest Remote Sensing",
+      "Marine Life and Fishery",
+      "Plants and Vegetation",
+      "Species Distribution Modeling",
+      "Terrestrial Wildlife",
+      "Wildfire"
+    ],
+    "Climate Change": [
+      "Climate Data Access and Visualization",
+      "Climate Data Processing and Analysis",
+      "Climate Data Standards",
+      "Climate Downscaling",
+      "Earth and Climate Modeling",
+      "Integrated Assessment and Climate Policy",
+      "Natural Hazard and Storms"
+    ],
+    "Consumption": [
+      "Agriculture and Nutrition",
+      "Buildings and Heating",
+      "Computation and Communication",
+      "Mobility and Transportation",
+      "Production and Industry"
+    ],
+    "Cryosphere": [
+      "Glacier and Ice Sheets",
+      "Sea Ice",
+      "Snow and Permafrost"
+    ],
+    "Emissions": [
+      "Carbon Capture",
+      "Carbon Intensity and Accounting",
+      "Carbon Offsets and Trading",
+      "Emission Observation and Modeling"
+    ],
+    "Energy Storage": [
+      "Battery",
+      "Hydrogen"
+    ],
+    "Energy Systems": [
+      "Building Energy Monitoring",
+      "Energy Data Accessibility and Integration",
+      "Energy Markets",
+      "Energy Policy",
+      "Energy System Modeling Frameworks",
+      "Global and Regional Energy System Models",
+      "Grid Analysis and Planning",
+      "Grid Management and Microgrid",
+      "Load and Demand Forecasting",
+      "Renewable Energy Integration"
+    ],
+    "Hydrosphere": [
+      "Coastal and Reefs",
+      "Freshwater and Hydrology",
+      "Ocean Carbon and Temperature",
+      "Ocean Models",
+      "Ocean and Hydrology Data Access",
+      "Waves and Currents"
+    ],
+    "Industrial Ecology": [
+      "Circular Economy and Waste",
+      "Input Output Model",
+      "Life Cycle Assessment"
+    ],
+    "Natural Resources": [
+      "Air Quality",
+      "Ecotoxicology",
+      "Soil and Land",
+      "Water Supply and Quality"
+    ],
+    "Renewable Energy": [
+      "Bioenergy",
+      "Geothermal Energy",
+      "Hydro Energy",
+      "Photovoltaics and Solar Energy",
+      "Wind Energy"
+    ],
+    "Sustainable Development": [
+      "Curated Lists",
+      "Data Catalogs and Interfaces",
+      "Education",
+      "Environmental Satellites",
+      "Knowledge Platforms",
+      "Population and Poverty",
+      "Sustainable Development Goals",
+      "Sustainable Investment",
+      "Taxonomy and Ontology"
+    ]
+  },
+  "countries": [
+    "Argentina",
+    "Australia",
+    "Austria",
+    "Belgium",
+    "Berlin",
+    "Brazil",
+    "Canada",
+    "Chile",
+    "China",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "EU",
+    "Europe",
+    "Finland",
+    "Frace",
+    "France",
+    "German",
+    "Germany",
+    "Global",
+    "Greece",
+    "India",
+    "Iran",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Japan",
+    "Kenya",
+    "London",
+    "Mali",
+    "Netherlands",
+    "New Zealand",
+    "Norway",
+    "Panama",
+    "Poland",
+    "Portugal",
+    "Singapore",
+    "Slovenia",
+    "South Africa",
+    "South Australia",
+    "Spain",
+    "Sweden",
+    "Switzerland",
+    "Taiwan",
+    "Thailand",
+    "UK",
+    "USA",
+    "Uganda"
+  ],
+  "organization_types": [
+    "Collaboration",
+    "academia",
+    "collaboration",
+    "community",
+    "for-profit",
+    "government agency",
+    "non-profit"
+  ],
+  "ranking_metrics": [
+    {
+      "id": "score",
+      "label": "Ecosyste.ms Score"
+    },
+    {
+      "id": "dds",
+      "label": "Development Distribution Score"
+    },
+    {
+      "id": "contributors",
+      "label": "Contributors"
+    },
+    {
+      "id": "citations",
+      "label": "Citations"
+    },
+    {
+      "id": "total_commits",
+      "label": "Total Commits"
+    },
+    {
+      "id": "total_number_of_dependencies",
+      "label": "Total Dependencies"
+    },
+    {
+      "id": "stars",
+      "label": "Stars"
+    },
+    {
+      "id": "downloads_last_month",
+      "label": "Downloads (Last Month)"
+    },
+    {
+      "id": "total_score_combined",
+      "label": "Total Score (All Metrics)"
+    }
+  ],
+  "bubble_size_metrics": [
+    {
+      "id": "contributors",
+      "label": "Contributors"
+    },
+    {
+      "id": "stars",
+      "label": "Stars"
+    },
+    {
+      "id": "downloads_last_month",
+      "label": "Downloads (Last Month)"
+    },
+    {
+      "id": "total_commits",
+      "label": "Total Commits"
+    },
+    {
+      "id": "total_number_of_dependencies",
+      "label": "Total Dependencies"
+    },
+    {
+      "id": "citations",
+      "label": "Citations"
+    }
+  ],
+  "category_colors": {
+    "Atmosphere": "#099ec8",
+    "Biosphere": "#84bc41",
+    "Climate Change": "#f9c416",
+    "Consumption": "#9cd8e9",
+    "Cryosphere": "#cde4b3",
+    "Emissions": "#f7a600",
+    "Energy Storage": "#00a0a6",
+    "Energy Systems": "#00689d",
+    "Hydrosphere": "#009639",
+    "Industrial Ecology": "#ffcc00",
+    "Natural Resources": "#a3d55d",
+    "Renewable Energy": "#2cb5e8",
+    "Sustainable Development": "#f46f1b"
+  },
+  "bright_score_colors": [
+    "#ff3300",
+    "#ff6600",
+    "#ff9900",
+    "#ffcc00",
+    "#ccff33",
+    "#99ff33",
+    "#66ff33",
+    "#33ff33",
+    "#00ff33",
+    "#00cc33",
+    "#00cc00"
+  ],
+  "default_ranking_metric": "total_score_combined",
+  "default_bubble_size_metric": "contributors"
+}
