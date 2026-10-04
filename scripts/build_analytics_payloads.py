@@ -280,15 +280,15 @@ def load_projects(projects_csv: Path, as_of: datetime) -> pd.DataFrame:
         get_series(df, "latest_commit_activity"), utc=True, errors="coerce"
     )
 
-    df["project_age"] = (
-        (as_of - df["project_created_at"]).dt.total_seconds() / (365.25 * 24 * 3600)
+    df["project_age"] = (as_of - df["project_created_at"]).dt.total_seconds() / (
+        365.25 * 24 * 3600
     )
     df["project_age"] = df["project_age"].fillna(0)
 
     df["contributors"] = pd.to_numeric(df["contributors"], errors="coerce").fillna(1)
-    df["downloads_last_month"] = (
-        pd.to_numeric(df["downloads_last_month"], errors="coerce").fillna(0)
-    )
+    df["downloads_last_month"] = pd.to_numeric(
+        df["downloads_last_month"], errors="coerce"
+    ).fillna(0)
 
     numeric_defaults = [
         "citations",
@@ -339,9 +339,9 @@ def load_organizations(organizations_csv: Path) -> pd.DataFrame:
     df["organization_namespace_url"] = get_series(
         df, "organization_namespace_url"
     ).fillna("")
-    df["organization_description"] = get_series(
-        df, "organization_description"
-    ).fillna("")
+    df["organization_description"] = get_series(df, "organization_description").fillna(
+        ""
+    )
     df["organization_icon_url"] = get_series(df, "organization_icon_url").fillna("")
     df["organization_sub_category"] = get_series(
         df, "organization_sub_category"
@@ -359,10 +359,7 @@ def count_series_values(series: pd.Series) -> list[dict[str, Any]]:
     normalized = series.fillna("Unknown").astype(str).str.strip()
     normalized = normalized.replace("", "Unknown")
     counts = normalized.value_counts()
-    return [
-        {"label": label, "count": int(count)}
-        for label, count in counts.items()
-    ]
+    return [{"label": label, "count": int(count)} for label, count in counts.items()]
 
 
 def build_summary_payload(
@@ -726,7 +723,10 @@ def build_organizations_overview_payload(
             total_projects=("total_listed_projects_in_organization", "sum"),
         )
         .reset_index()
-        .sort_values(["organization_count", "total_projects", "country_name"], ascending=[False, False, True])
+        .sort_values(
+            ["organization_count", "total_projects", "country_name"],
+            ascending=[False, False, True],
+        )
     )
 
     continent_counts = (
@@ -762,7 +762,9 @@ def build_organizations_overview_payload(
         "organization_type_counts": org_type_counts.to_dict(orient="records"),
         "organizations_by_project_count": [
             {
-                "organization_name": clean_text(row.organization_name, "Unknown Organisation"),
+                "organization_name": clean_text(
+                    row.organization_name, "Unknown Organisation"
+                ),
                 "organization_url": clean_text(row.organization_namespace_url),
                 "organization_description": clean_text(row.organization_description),
                 "organization_icon_url": clean_text(row.organization_icon_url),
@@ -838,18 +840,27 @@ def build_organization_rankings_payload(
                 project_count=("git_url", "nunique"),
             )
             .reset_index()
-            .sort_values(["total_score", "project_count", "category"], ascending=[False, False, True])
+            .sort_values(
+                ["total_score", "project_count", "category"],
+                ascending=[False, False, True],
+            )
         )
 
         records.append(
             {
-                "organization_name": clean_text(organization_name, "Unknown Organisation"),
+                "organization_name": clean_text(
+                    organization_name, "Unknown Organisation"
+                ),
                 "organization_url": clean_text(meta["organization_namespace_url"]),
-                "organization_description": clean_text(meta["organization_description"]),
+                "organization_description": clean_text(
+                    meta["organization_description"]
+                ),
                 "organization_icon_url": clean_text(meta["organization_icon_url"]),
                 "location_country": clean_text(meta["location_country"]),
                 "form_of_organization": clean_text(meta["form_of_organization"]),
-                "listed_project_count": int(meta["total_listed_projects_in_organization"]),
+                "listed_project_count": int(
+                    meta["total_listed_projects_in_organization"]
+                ),
                 "matched_project_count": int(group["git_url"].nunique()),
                 "total_score": float(group["total_score_combined"].sum()),
                 "category_breakdown": category_breakdown.to_dict(orient="records"),
@@ -971,11 +982,14 @@ def build_organizations_by_subcategory_payload(
             "form_of_organization",
         ]
     ].copy()
-    org_subcategories["organization_name"] = org_subcategories["organization_name"].fillna(
-        "Unknown Organisation"
-    )
+    org_subcategories["organization_name"] = org_subcategories[
+        "organization_name"
+    ].fillna("Unknown Organisation")
     org_subcategories["organization_sub_category"] = (
-        org_subcategories["organization_sub_category"].fillna("").astype(str).str.split(",")
+        org_subcategories["organization_sub_category"]
+        .fillna("")
+        .astype(str)
+        .str.split(",")
     )
     org_subcategories = org_subcategories.explode("organization_sub_category")
     org_subcategories["organization_sub_category"] = org_subcategories[
@@ -984,9 +998,7 @@ def build_organizations_by_subcategory_payload(
     org_subcategories = org_subcategories[
         (org_subcategories["organization_name"].astype(str).str.strip() != "")
         & (org_subcategories["organization_sub_category"] != "")
-    ].drop_duplicates(
-        subset=["organization_name", "organization_sub_category"]
-    )
+    ].drop_duplicates(subset=["organization_name", "organization_sub_category"])
 
     grouped_records = []
     root = {
@@ -1000,7 +1012,9 @@ def build_organizations_by_subcategory_payload(
     ):
         organizations_list = [
             {
-                "organization_name": clean_text(row.organization_name, "Unknown Organisation"),
+                "organization_name": clean_text(
+                    row.organization_name, "Unknown Organisation"
+                ),
                 "organization_url": clean_text(row.organization_namespace_url),
                 "location_country": clean_text(row.location_country),
                 "form_of_organization": clean_text(row.form_of_organization),
@@ -1032,7 +1046,10 @@ def build_organizations_by_subcategory_payload(
         )
 
     grouped_records.sort(
-        key=lambda record: (-record["organization_count"], record["sub_category"].lower())
+        key=lambda record: (
+            -record["organization_count"],
+            record["sub_category"].lower(),
+        )
     )
     root["children"].sort(key=lambda node: (-node["value"], node["name"].lower()))
 
@@ -1146,9 +1163,7 @@ def build_payloads(
         "ecosystem-sunburst.json": build_ecosystem_sunburst_payload(
             projects, category_colors, generated_at
         ),
-        "project-rankings.json": build_project_rankings_payload(
-            projects, generated_at
-        ),
+        "project-rankings.json": build_project_rankings_payload(projects, generated_at),
         "projects-over-time.json": build_projects_over_time_payload(
             projects, generated_at
         ),
@@ -1170,9 +1185,7 @@ def build_payloads(
         "keyword-counts.json": build_keyword_counts_payload(
             keywords_file, generated_at
         ),
-        "topics-heatmap.json": build_topics_heatmap_payload(
-            projects, generated_at
-        ),
+        "topics-heatmap.json": build_topics_heatmap_payload(projects, generated_at),
         "wordcloud.json": build_wordcloud_payload(generated_at),
     }
 
