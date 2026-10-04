@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T17:56:25.911172+00:00",
+  "generated_at": "2026-10-04T08:06:23.271227+00:00",
   "default_top_n": 60,
   "default_category": "All Categories",
   "records": [
@@ -18375,7 +18375,7 @@
     {
       "organization_name": "foodsharing-dev",
       "organization_url": "https://gitlab.com/foodsharing-dev",
-      "organization_description": "Issue tracker and development for https://foodsharing.de, https://foodsharing.at, and https://foodsharingschweiz.ch\r\n\r\nDev blog at https://devblog.foodsharing.de",
+      "organization_description": "Issue tracker and development for https://foodsharing.de, https://foodsharing.at, and https://foodsharingschweiz.ch\n\nDev blog at https://devblog.foodsharing.de",
       "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/761945/gabel-bg.png",
       "location_country": "Global",
       "form_of_organization": "community",
@@ -20221,7 +20221,7 @@
     {
       "organization_name": "PermafrostNet",
       "organization_url": "https://gitlab.com/permafrostnet",
-      "organization_description": "Welcome to the GitLab repository for [NSERC PermafrostNet](www.permafrostnet.ca). \r\n\r\n## Guide to software for permafrost research\r\n[See the Wiki pages](https://gitlab.com/groups/permafrostnet/-/wikis/home)",
+      "organization_description": "Welcome to the GitLab repository for [NSERC PermafrostNet](www.permafrostnet.ca).\n\n## Guide to software for permafrost research\n[See the Wiki pages](https://gitlab.com/groups/permafrostnet/-/wikis/home)",
       "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7682572/Permafrost_logo_4color_stack_crop.png",
       "location_country": "Canada",
       "form_of_organization": "collaboration",
@@ -20473,7 +20473,7 @@
     {
       "organization_name": "OpenFlexure",
       "organization_url": "https://gitlab.com/openflexure",
-      "organization_description": "The OpenFlexure project, which aims to make high precision mechanical positioning available to anyone with a 3D printer - for use in microscopes, micromanipulators, and more.\r\nhttp://openflexure.org",
+      "organization_description": "The OpenFlexure project, which aims to make high precision mechanical positioning available to anyone with a 3D printer - for use in microscopes, micromanipulators, and more.\nhttp://openflexure.org",
       "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/3930388/emblem2.png",
       "location_country": "",
       "form_of_organization": "",
@@ -24677,7 +24677,7 @@
     {
       "organization_name": "ISRIC",
       "organization_url": "https://git.wur.nl/isric",
-      "organization_description": "ISRIC - Word Soil Information\r\nwww.isric.org",
+      "organization_description": "ISRIC - Word Soil Information\nwww.isric.org",
       "organization_icon_url": "https://git.wur.nl/uploads/-/system/group/avatar/1094/ISRIC_logo_round.png",
       "location_country": "Netherlands",
       "form_of_organization": "academia",
