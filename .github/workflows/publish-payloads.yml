@@ -35,6 +35,11 @@ jobs:
   publish:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+    # Job-level so the notify step's `if` can see it: secrets can't be used in
+    # `if` directly, and a step's own `env` isn't reliably visible to that
+    # step's `if`.
+    env:
+      DISPATCH_TOKEN: ${{ secrets.OST_TECH_DISPATCH_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -62,8 +67,6 @@ jobs:
           commit_message: "data: publish analytics payloads (${{ github.sha }})"
 
       - name: Notify opensustain.tech to rebuild
-        env:
-          DISPATCH_TOKEN: ${{ secrets.OST_TECH_DISPATCH_TOKEN }}
         if: ${{ env.DISPATCH_TOKEN != '' }}
         run: |
           curl -sS -f -X POST \
