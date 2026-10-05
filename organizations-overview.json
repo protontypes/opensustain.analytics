@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T08:15:20.729001+00:00",
+  "generated_at": "2026-10-05T12:09:41.263541+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -333,7 +333,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 215
+      "count": 217
     },
     {
       "form_of_organization": "government agency",
@@ -5668,6 +5668,15 @@
       "organization_url": "https://github.com/fablabbcn",
       "organization_description": "We are an innovation centre rethinking the way we live, work and play in cities.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1260741?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "FairScope",
+      "organization_url": "https://github.com/fairscope",
+      "organization_description": "Disruptive flow-through microscopy",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/203827607?v=4",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 1
@@ -11430,6 +11439,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/165696201?v=4",
       "location_country": "USA",
       "form_of_organization": "community",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "echostack",
+      "organization_url": "https://github.com/echostack-org",
+      "organization_description": "Home for open source tools and resources in ocean acoustics",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/42682187?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
