@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-07T11:38:38.172350+00:00",
+  "generated_at": "2026-10-08T11:53:09.652439+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
       "country_name": "United States",
       "map_eligible": true,
-      "organization_count": 350,
-      "total_projects": 606
+      "organization_count": 353,
+      "total_projects": 616
     },
     {
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 301,
-      "total_projects": 419
+      "organization_count": 306,
+      "total_projects": 429
     },
     {
       "iso_alpha": "DEU",
       "country_name": "Germany",
       "map_eligible": true,
-      "organization_count": 122,
-      "total_projects": 199
+      "organization_count": 123,
+      "total_projects": 201
     },
     {
       "iso_alpha": "GBR",
       "country_name": "United Kingdom",
       "map_eligible": true,
-      "organization_count": 60,
-      "total_projects": 94
+      "organization_count": 61,
+      "total_projects": 97
     },
     {
       "iso_alpha": "FRA",
@@ -40,8 +40,8 @@
       "iso_alpha": "CAN",
       "country_name": "Canada",
       "map_eligible": true,
-      "organization_count": 36,
-      "total_projects": 63
+      "organization_count": 37,
+      "total_projects": 65
     },
     {
       "iso_alpha": "NLD",
@@ -299,15 +299,15 @@
   "continent_counts": [
     {
       "continent": "America",
-      "count": 396
+      "count": 400
     },
     {
       "continent": "Europe",
-      "count": 391
+      "count": 393
     },
     {
       "continent": "Global",
-      "count": 301
+      "count": 306
     },
     {
       "continent": "Oceania",
@@ -325,19 +325,19 @@
   "organization_type_counts": [
     {
       "form_of_organization": "community",
-      "count": 295
+      "count": 299
     },
     {
       "form_of_organization": "academia",
-      "count": 277
+      "count": 278
     },
     {
       "form_of_organization": "unknown",
-      "count": 210
+      "count": 219
     },
     {
       "form_of_organization": "government agency",
-      "count": 191
+      "count": 194
     },
     {
       "form_of_organization": "for-profit",
@@ -345,11 +345,11 @@
     },
     {
       "form_of_organization": "non-profit",
-      "count": 124
+      "count": 125
     },
     {
       "form_of_organization": "collaboration",
-      "count": 118
+      "count": 120
     }
   ],
   "organizations_by_project_count": [
@@ -360,7 +360,7 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1200269?v=4",
       "location_country": "USA",
       "form_of_organization": "non-profit",
-      "total_listed_projects_in_organization": 45
+      "total_listed_projects_in_organization": 48
     },
     {
       "organization_name": "National Laboratory of the Rockies",
@@ -369,7 +369,16 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1906800?v=4",
       "location_country": "",
       "form_of_organization": "",
-      "total_listed_projects_in_organization": 42
+      "total_listed_projects_in_organization": 43
+    },
+    {
+      "organization_name": "U.S. Environmental Protection Agency",
+      "organization_url": "https://github.com/USEPA",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/1304320?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 20
     },
     {
       "organization_name": "bcgov",
@@ -379,15 +388,6 @@
       "location_country": "Canada",
       "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 20
-    },
-    {
-      "organization_name": "U.S. Environmental Protection Agency",
-      "organization_url": "https://github.com/USEPA",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/1304320?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 19
     },
     {
       "organization_name": "European Centre for Medium-Range Weather Forecasts",
@@ -423,7 +423,7 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
       "location_country": "USA",
       "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 11
+      "total_listed_projects_in_organization": 12
     },
     {
       "organization_name": "Forschungszentrum Jülich - Jülich Systems Analysis (ICE-2)",
@@ -450,6 +450,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/15230149?v=4",
       "location_country": "Austria",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 9
+    },
+    {
+      "organization_name": "Microsoft",
+      "organization_url": "https://github.com/microsoft",
+      "organization_description": "Open source projects and samples from Microsoft",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
+      "location_country": "USA",
+      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 9
     },
     {
@@ -495,15 +504,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/8431983?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 8
-    },
-    {
-      "organization_name": "Microsoft",
-      "organization_url": "https://github.com/microsoft",
-      "organization_description": "Open source projects and samples from Microsoft",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
-      "location_country": "USA",
-      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 8
     },
     {
@@ -864,6 +864,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/5213740?v=4",
       "location_country": "Austria",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 4
+    },
+    {
+      "organization_name": "The Alan Turing Institute",
+      "organization_url": "https://github.com/alan-turing-institute",
+      "organization_description": "The UK's national institute for data science and artificial intelligence.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/18304793?v=4",
+      "location_country": "UK",
+      "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 4
     },
     {
@@ -1317,6 +1326,15 @@
       "total_listed_projects_in_organization": 3
     },
     {
+      "organization_name": "PRIMAP",
+      "organization_url": "https://github.com/primap-community",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/114724539?v=4",
+      "location_country": "Germany",
+      "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 3
+    },
+    {
       "organization_name": "Pacific Northwest National Laboratory (Public)",
       "organization_url": "https://github.com/pnnl",
       "organization_description": "This Org is intended for the hosting of approved released PNNL software repositories for public use and collaboration.",
@@ -1386,15 +1404,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/19895500?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 3
-    },
-    {
-      "organization_name": "The Alan Turing Institute",
-      "organization_url": "https://github.com/alan-turing-institute",
-      "organization_description": "The UK's national institute for data science and artificial intelligence.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/18304793?v=4",
-      "location_country": "UK",
-      "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 3
     },
     {
@@ -1474,6 +1483,15 @@
       "organization_url": "https://github.com/rOpenGov",
       "organization_description": "Open government data analytics with R",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/5463092?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 3
+    },
+    {
+      "organization_name": "rOpenSci Archive",
+      "organization_url": "https://github.com/ropensci-archive",
+      "organization_description": "Retired or sunset rOpenSci projects -- email info@ropensci.org if you have questions!",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/68704009?v=4",
       "location_country": "Global",
       "form_of_organization": "community",
       "total_listed_projects_in_organization": 3
@@ -1606,9 +1624,9 @@
     },
     {
       "organization_name": "BONSAI",
-      "organization_url": "https://github.com/BONSAMURAIS",
-      "organization_description": "An organisation dedicated to create and maintain a truly global Open Source Database for product footprinting",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/25032243?v=4",
+      "organization_url": "https://gitlab.com/bonsamurais",
+      "organization_description": "",
+      "organization_icon_url": "",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 2
@@ -1956,6 +1974,15 @@
       "total_listed_projects_in_organization": 2
     },
     {
+      "organization_name": "Ecoverse",
+      "organization_url": "https://github.com/ecoverseR",
+      "organization_description": "R packages for Modeling Species Diversity and Distributions",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/170126741?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 2
+    },
+    {
       "organization_name": "Energy Modelling Toolkit",
       "organization_url": "https://github.com/energy-modelling-toolkit",
       "organization_description": "A fully open inter-institutional energy modelling group. It serves as an umbrella organization that hosts open datasets and models.",
@@ -2244,6 +2271,15 @@
       "total_listed_projects_in_organization": 2
     },
     {
+      "organization_name": "Meteostat",
+      "organization_url": "https://github.com/meteostat",
+      "organization_description": "The Weather's Record Keeper",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/29773680?v=4",
+      "location_country": "Canada",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 2
+    },
+    {
       "organization_name": "Microsoft Azure",
       "organization_url": "https://github.com/Azure",
       "organization_description": "APIs, SDKs and open source projects from Microsoft Azure",
@@ -2397,6 +2433,15 @@
       "total_listed_projects_in_organization": 2
     },
     {
+      "organization_name": "Office of Science & Technology at NOAA Fisheries",
+      "organization_url": "https://github.com/nmfs-ost",
+      "organization_description": "Providing the science behind how we manage sustainable fisheries, protected species, and healthy ecosystems.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/72827324?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 2
+    },
+    {
       "organization_name": "Open Climate Data",
       "organization_url": "https://github.com/openclimatedata",
       "organization_description": "",
@@ -2429,6 +2474,15 @@
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/14758186?v=4",
       "location_country": "Germany",
+      "form_of_organization": "non-profit",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "OpenAQ Platform",
+      "organization_url": "https://github.com/openaq",
+      "organization_description": "An open platform for air quality data",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/11806583?v=4",
+      "location_country": "Global",
       "form_of_organization": "non-profit",
       "total_listed_projects_in_organization": 2
     },
@@ -2493,15 +2547,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/22459078?v=4",
       "location_country": "USA",
       "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 2
-    },
-    {
-      "organization_name": "PRIMAP",
-      "organization_url": "https://github.com/primap-community",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/114724539?v=4",
-      "location_country": "Germany",
-      "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -2721,6 +2766,15 @@
       "total_listed_projects_in_organization": 2
     },
     {
+      "organization_name": "The Openair Project",
+      "organization_url": "https://github.com/openair-project",
+      "organization_description": "Open Source Tools for Air Quality Data Analysis",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/194077245?v=4",
+      "location_country": "UK",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 2
+    },
+    {
       "organization_name": "Toyota Research Institute - Accelerated Materials Design & Discovery (AMDD)",
       "organization_url": "https://github.com/TRI-AMDD",
       "organization_description": "",
@@ -2860,6 +2914,15 @@
       "organization_url": "https://github.com/nco",
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/13952264?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "neuralgcm",
+      "organization_url": "https://github.com/neuralgcm",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/190404709?v=4",
       "location_country": "Global",
       "form_of_organization": "community",
       "total_listed_projects_in_organization": 2
@@ -3303,6 +3366,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/21251662?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "AguaClara Reach",
+      "organization_url": "https://github.com/AguaClara-Reach",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/42070153?v=4",
+      "location_country": "USA",
+      "form_of_organization": "non-profit",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -3860,6 +3932,15 @@
       "organization_description": "Le Forestier en chef a pour mission principale de déterminer les possibilités forestières des forêts publiques du Québec.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/99218695?v=4",
       "location_country": "Canada",
+      "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Bureau of Reclamation",
+      "organization_url": "https://github.com/DOI-BOR",
+      "organization_description": "Bureau of Reclamation DOI GitHub",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/102251442?v=4",
+      "location_country": "USA",
       "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 1
     },
@@ -4683,6 +4764,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "DHIS2-CHAP",
+      "organization_url": "https://github.com/dhis2-chap",
+      "organization_description": "DHIS2 Chap Modeling Platform",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/184943667?v=4",
+      "location_country": "Global",
+      "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "DISPATCHES",
       "organization_url": "https://github.com/gmlc-dispatches",
       "organization_description": "Design Integration and Synthesis Platform to Advance Tightly Coupled Hybrid Energy Systems",
@@ -5214,15 +5304,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "Ecoverse",
-      "organization_url": "https://github.com/ecoverseR",
-      "organization_description": "R packages for Modeling Species Diversity and Distributions",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/170126741?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "Electricity Maps",
       "organization_url": "https://github.com/electricitymaps",
       "organization_description": "The world’s most comprehensive electricity data platform",
@@ -5556,6 +5637,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "FISHGLOB",
+      "organization_url": "https://github.com/fishglob",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/226361955?v=4",
+      "location_country": "Global",
+      "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "FLARE-forecast",
       "organization_url": "https://github.com/FLARE-forecast",
       "organization_description": "",
@@ -5596,6 +5686,15 @@
       "organization_url": "https://github.com/fablabbcn",
       "organization_description": "We are an innovation centre rethinking the way we live, work and play in cities.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1260741?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "FairScope",
+      "organization_url": "https://github.com/fairscope",
+      "organization_description": "Disruptive flow-through microscopy",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/203827607?v=4",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 1
@@ -5661,6 +5760,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/16683990?v=4",
       "location_country": "Italy",
       "form_of_organization": "community",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "FireCaster Codes",
+      "organization_url": "https://github.com/forefireAPI",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/6805132?v=4",
+      "location_country": "Global",
+      "form_of_organization": "academia",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -5742,6 +5850,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/88376562?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Freva",
+      "organization_url": "https://github.com/freva-org",
+      "organization_description": "Freva – The Free Evaluation System Framework",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/218064798?v=4",
+      "location_country": "Germany",
+      "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -5922,6 +6039,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/30867214?v=4",
       "location_country": "UK",
       "form_of_organization": "non-profit",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Giswater",
+      "organization_url": "https://github.com/giswater",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/3052331?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -7284,6 +7410,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "MODFLOW and Related Programs",
+      "organization_url": "https://github.com/MODFLOW-ORG",
+      "organization_description": "Organization for MODFLOW development",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/34482102?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "MaREI-EPMG",
       "organization_url": "https://github.com/MaREI-EPMG",
       "organization_description": "",
@@ -7389,15 +7524,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/11772263?v=4",
       "location_country": "Canada",
       "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "Meteostat",
-      "organization_url": "https://github.com/meteostat",
-      "organization_description": "The Weather's Record Keeper",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/29773680?v=4",
-      "location_country": "Canada",
-      "form_of_organization": "community",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -7995,15 +8121,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "Office of Science & Technology at NOAA Fisheries",
-      "organization_url": "https://github.com/nmfs-ost",
-      "organization_description": "Providing the science behind how we manage sustainable fisheries, protected species, and healthy ecosystems.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/72827324?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "OnStove",
       "organization_url": "https://github.com/Open-Source-Spatial-Clean-Cooking-Tool",
       "organization_description": "",
@@ -8208,15 +8325,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/86407831?v=4",
       "location_country": "Switzerland",
       "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "OpenAQ Platform",
-      "organization_url": "https://github.com/openaq",
-      "organization_description": "An open platform for air quality data",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/11806583?v=4",
-      "location_country": "Global",
-      "form_of_organization": "non-profit",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -8496,6 +8604,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/9842346?v=4",
       "location_country": "France",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Orcasound",
+      "organization_url": "https://github.com/orcasound",
+      "organization_description": "Listen for whales! Open source bioacoustic tools aimed at saving endangered orcas (Southern Resident Killer Whales)",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/29990731?v=4",
+      "location_country": "Canada",
+      "form_of_organization": "community",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -8901,6 +9018,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/62665039?v=4",
       "location_country": "UK",
       "form_of_organization": "non-profit",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Public Health and Environmental Surveillance Open Data Model (PHES-ODM)",
+      "organization_url": "https://github.com/PHES-ODM",
+      "organization_description": "The PHES-ODM is an open science project of data standards & structures -and tools to support their use- for environmental surveillance of public health threats.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/218308183?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -9414,6 +9540,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/97563124?v=4",
       "location_country": "Canada",
       "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Sam Passmore",
+      "organization_url": "https://github.com/Sam-r-passmore",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/332891764?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -11343,6 +11478,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "echostack",
+      "organization_url": "https://github.com/echostack-org",
+      "organization_description": "Home for open source tools and resources in ocean acoustics",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/42682187?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "ecoinvent",
       "organization_url": "https://github.com/ecoinvent",
       "organization_description": "",
@@ -11973,6 +12117,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "pestpp",
+      "organization_url": "https://github.com/pestpp",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/70729312?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "pledge4future",
       "organization_url": "https://github.com/pledge4future",
       "organization_description": "Webapp to assess, monitor and compare CO2 emissions of research institutes.",
@@ -12058,6 +12211,15 @@
       "organization_url": "https://github.com/pylandtemp",
       "organization_description": "pylandtemp is a Python tool for retrieving land surface temperature from Landsat 8 satellite imagery using the mono-window and split-window techniques",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/95449903?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "pysheds",
+      "organization_url": "https://github.com/pysheds",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/218899350?v=4",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 1
@@ -12252,6 +12414,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "sdmTMB",
+      "organization_url": "https://github.com/sdmTMB",
+      "organization_description": "sdmTMB R package",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/245077094?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "secondlaw",
       "organization_url": "https://github.com/secondlaw-ai",
       "organization_description": "",
@@ -12303,6 +12474,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/32961692?v=4",
       "location_country": "Chile",
       "form_of_organization": "community",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "simsphere",
+      "organization_url": "https://github.com/simsphere",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/77640077?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {

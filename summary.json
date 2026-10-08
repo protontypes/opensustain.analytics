@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-10-07T11:38:38.172350+00:00",
-  "as_of": "2026-10-07T11:38:38.172286+00:00",
+  "generated_at": "2026-10-08T11:53:09.652439+00:00",
+  "as_of": "2026-10-08T11:53:09.652396+00:00",
   "totals": {
-    "projects": 2796,
-    "active_projects": 1585,
-    "organizations": 1358,
-    "contributors": 41139
+    "projects": 2825,
+    "active_projects": 1620,
+    "organizations": 1378,
+    "contributors": 41797
   },
   "medians": {
-    "project_age_years": 6.55,
-    "stars": 42,
-    "dds": 0.246,
+    "project_age_years": 6.56,
+    "stars": 43,
+    "dds": 0.252,
     "contributors": 6.0,
-    "total_commits": 271.0
+    "total_commits": 278.0
   },
   "source": {
-    "projects_rows": 2796,
-    "organizations_rows": 1358
+    "projects_rows": 2825,
+    "organizations_rows": 1378
   }
 }
