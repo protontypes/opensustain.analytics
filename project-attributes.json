@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T11:53:09.652439+00:00",
+  "generated_at": "2026-10-09T11:45:08.470355+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1620
+      "count": 1628
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
@@ -15,39 +15,39 @@
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2257
+        "count": 2264
       },
       {
         "label": "True",
-        "count": 479
+        "count": 482
       },
       {
         "label": "Unknown",
-        "count": 89
+        "count": 87
       }
     ],
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1822
+        "count": 1826
       },
       {
         "label": "True",
-        "count": 914
+        "count": 920
       },
       {
         "label": "Unknown",
-        "count": 89
+        "count": 87
       }
     ],
     "license": [
       {
         "label": "mit",
-        "count": 729
+        "count": 733
       },
       {
         "label": "other",
-        "count": 530
+        "count": 532
       },
       {
         "label": "gpl-3.0",
@@ -55,11 +55,11 @@
       },
       {
         "label": "apache-2.0",
-        "count": 341
+        "count": 343
       },
       {
         "label": "Unknown",
-        "count": 331
+        "count": 330
       },
       {
         "label": "bsd-3-clause",
@@ -78,12 +78,12 @@
         "count": 38
       },
       {
-        "label": "cc-by-4.0",
+        "label": "cc0-1.0",
         "count": 38
       },
       {
-        "label": "cc0-1.0",
-        "count": 37
+        "label": "cc-by-4.0",
+        "count": 38
       },
       {
         "label": "mpl-2.0",
@@ -141,23 +141,23 @@
     "language": [
       {
         "label": "Python",
-        "count": 983
+        "count": 986
       },
       {
         "label": "R",
-        "count": 399
+        "count": 401
       },
       {
         "label": "Jupyter Notebook",
-        "count": 317
+        "count": 318
       },
       {
         "label": "Unknown",
-        "count": 237
+        "count": 235
       },
       {
         "label": "C++",
-        "count": 113
+        "count": 114
       },
       {
         "label": "HTML",
@@ -165,7 +165,7 @@
       },
       {
         "label": "Fortran",
-        "count": 95
+        "count": 96
       },
       {
         "label": "TypeScript",
@@ -177,7 +177,7 @@
       },
       {
         "label": "Julia",
-        "count": 81
+        "count": 82
       },
       {
         "label": "Java",
@@ -228,15 +228,15 @@
         "count": 10
       },
       {
+        "label": "Makefile",
+        "count": 8
+      },
+      {
         "label": "PLpgSQL",
         "count": 8
       },
       {
         "label": "Shell",
-        "count": 7
-      },
-      {
-        "label": "Makefile",
         "count": 7
       },
       {
@@ -419,23 +419,23 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7035
+        "count": 7071
       },
       {
         "label": "pypi",
-        "count": 3242
+        "count": 3238
       },
       {
         "label": "Unknown",
-        "count": 2825
+        "count": 2833
       },
       {
         "label": "npm",
-        "count": 1491
+        "count": 1493
       },
       {
         "label": "docker",
-        "count": 1479
+        "count": 1484
       },
       {
         "label": "maven",
@@ -443,15 +443,15 @@
       },
       {
         "label": "cran",
-        "count": 457
+        "count": 459
       },
       {
         "label": "conda",
-        "count": 355
+        "count": 359
       },
       {
         "label": "julia",
-        "count": 308
+        "count": 311
       },
       {
         "label": "nuget",
@@ -479,7 +479,7 @@
       },
       {
         "label": "hackage",
-        "count": 57
+        "count": 40
       },
       {
         "label": "cpan",
@@ -545,11 +545,11 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2666
+        "count": 2676
       },
       {
         "label": "Unknown",
-        "count": 89
+        "count": 87
       },
       {
         "label": "gitlab.com",
