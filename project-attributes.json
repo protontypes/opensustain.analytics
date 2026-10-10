@@ -1,73 +1,73 @@
 {
-  "generated_at": "2026-10-09T11:45:08.470355+00:00",
+  "generated_at": "2026-10-10T11:03:31.488143+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1628
+      "count": 1598
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 1205
+      "count": 1215
     }
   ],
   "fields": {
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2264
+        "count": 2235
       },
       {
         "label": "True",
-        "count": 482
+        "count": 474
       },
       {
         "label": "Unknown",
-        "count": 87
+        "count": 104
       }
     ],
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1826
+        "count": 1812
       },
       {
         "label": "True",
-        "count": 920
+        "count": 897
       },
       {
         "label": "Unknown",
-        "count": 87
+        "count": 104
       }
     ],
     "license": [
       {
         "label": "mit",
-        "count": 733
+        "count": 724
       },
       {
         "label": "other",
-        "count": 532
+        "count": 521
       },
       {
         "label": "gpl-3.0",
-        "count": 379
-      },
-      {
-        "label": "apache-2.0",
-        "count": 343
+        "count": 376
       },
       {
         "label": "Unknown",
-        "count": 330
+        "count": 344
+      },
+      {
+        "label": "apache-2.0",
+        "count": 338
       },
       {
         "label": "bsd-3-clause",
-        "count": 172
+        "count": 171
       },
       {
         "label": "agpl-3.0",
-        "count": 86
+        "count": 85
       },
       {
         "label": "gpl-2.0",
@@ -78,12 +78,12 @@
         "count": 38
       },
       {
-        "label": "cc0-1.0",
+        "label": "cc-by-4.0",
         "count": 38
       },
       {
-        "label": "cc-by-4.0",
-        "count": 38
+        "label": "cc0-1.0",
+        "count": 35
       },
       {
         "label": "mpl-2.0",
@@ -99,7 +99,7 @@
       },
       {
         "label": "cc-by-sa-4.0",
-        "count": 10
+        "count": 9
       },
       {
         "label": "gpl-3.0+",
@@ -141,31 +141,31 @@
     "language": [
       {
         "label": "Python",
-        "count": 986
+        "count": 972
       },
       {
         "label": "R",
-        "count": 401
+        "count": 391
       },
       {
         "label": "Jupyter Notebook",
-        "count": 318
+        "count": 316
       },
       {
         "label": "Unknown",
-        "count": 235
+        "count": 253
       },
       {
         "label": "C++",
-        "count": 114
+        "count": 110
       },
       {
         "label": "HTML",
-        "count": 103
+        "count": 102
       },
       {
         "label": "Fortran",
-        "count": 96
+        "count": 93
       },
       {
         "label": "TypeScript",
@@ -177,7 +177,7 @@
       },
       {
         "label": "Julia",
-        "count": 82
+        "count": 81
       },
       {
         "label": "Java",
@@ -228,19 +228,19 @@
         "count": 10
       },
       {
-        "label": "Makefile",
-        "count": 8
-      },
-      {
-        "label": "PLpgSQL",
-        "count": 8
-      },
-      {
         "label": "Shell",
         "count": 7
       },
       {
+        "label": "Makefile",
+        "count": 7
+      },
+      {
         "label": "CSS",
+        "count": 6
+      },
+      {
+        "label": "PLpgSQL",
         "count": 6
       },
       {
@@ -419,23 +419,23 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7071
+        "count": 6936
       },
       {
         "label": "pypi",
-        "count": 3238
+        "count": 3191
       },
       {
         "label": "Unknown",
-        "count": 2833
+        "count": 2813
       },
       {
         "label": "npm",
-        "count": 1493
+        "count": 1491
       },
       {
         "label": "docker",
-        "count": 1484
+        "count": 1466
       },
       {
         "label": "maven",
@@ -443,15 +443,15 @@
       },
       {
         "label": "cran",
-        "count": 459
+        "count": 443
       },
       {
         "label": "conda",
-        "count": 359
+        "count": 353
       },
       {
         "label": "julia",
-        "count": 311
+        "count": 308
       },
       {
         "label": "nuget",
@@ -467,7 +467,7 @@
       },
       {
         "label": "rubygems",
-        "count": 117
+        "count": 119
       },
       {
         "label": "rpm",
@@ -545,11 +545,11 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2676
+        "count": 2639
       },
       {
         "label": "Unknown",
-        "count": 87
+        "count": 104
       },
       {
         "label": "gitlab.com",
