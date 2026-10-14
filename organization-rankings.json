@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T12:33:14.137436+00:00",
+  "generated_at": "2026-10-14T10:00:27.413816+00:00",
   "default_top_n": 60,
   "default_category": "All Categories",
   "records": [
@@ -10,13 +10,13 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1906800?v=4",
       "location_country": "",
       "form_of_organization": "",
-      "listed_project_count": 43,
-      "matched_project_count": 43,
-      "total_score": 34.196325792369834,
+      "listed_project_count": 42,
+      "matched_project_count": 42,
+      "total_score": 32.921531363053305,
       "category_breakdown": [
         {
           "category": "Renewable Energy",
-          "total_score": 14.598426663427722,
+          "total_score": 14.599066853636591,
           "project_count": 19
         },
         {
@@ -31,8 +31,8 @@
         },
         {
           "category": "Sustainable Development",
-          "total_score": 2.1290376077869007,
-          "project_count": 2
+          "total_score": 0.8536029882615002,
+          "project_count": 1
         },
         {
           "category": "Energy Storage",
@@ -53,33 +53,33 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1200269?v=4",
       "location_country": "USA",
       "form_of_organization": "non-profit",
-      "listed_project_count": 48,
-      "matched_project_count": 48,
-      "total_score": 28.57686118934278,
+      "listed_project_count": 45,
+      "matched_project_count": 45,
+      "total_score": 26.85192428689726,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 14.688439046560903,
+          "total_score": 14.687842302619924,
           "project_count": 20
         },
         {
-          "category": "Climate Change",
-          "total_score": 4.126820940041745,
-          "project_count": 9
-        },
-        {
           "category": "Sustainable Development",
-          "total_score": 3.1386260117975993,
+          "total_score": 3.138637090413643,
           "project_count": 5
         },
         {
+          "category": "Climate Change",
+          "total_score": 2.4014749575144174,
+          "project_count": 6
+        },
+        {
           "category": "Hydrosphere",
-          "total_score": 2.1661910119915024,
+          "total_score": 2.1665271323738358,
           "project_count": 3
         },
         {
           "category": "Consumption",
-          "total_score": 1.5581753034059924,
+          "total_score": 1.55817194620864,
           "project_count": 2
         },
         {
@@ -89,7 +89,7 @@
         },
         {
           "category": "Energy Systems",
-          "total_score": 0.876747589744774,
+          "total_score": 0.8774095719665397,
           "project_count": 1
         },
         {
@@ -111,14 +111,14 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1304320?v=4",
       "location_country": "USA",
       "form_of_organization": "government agency",
-      "listed_project_count": 20,
-      "matched_project_count": 20,
-      "total_score": 15.024814643064833,
+      "listed_project_count": 19,
+      "matched_project_count": 19,
+      "total_score": 14.035234433782742,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 6.576899938751376,
-          "project_count": 7
+          "total_score": 5.588659959313842,
+          "project_count": 6
         },
         {
           "category": "Industrial Ecology",
@@ -132,7 +132,7 @@
         },
         {
           "category": "Hydrosphere",
-          "total_score": 1.4189595547207907,
+          "total_score": 1.4176193248762319,
           "project_count": 2
         },
         {
@@ -156,16 +156,16 @@
       "form_of_organization": "government agency",
       "listed_project_count": 20,
       "matched_project_count": 20,
-      "total_score": 13.079779936900577,
+      "total_score": 13.08017460981843,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 4.817109367529403,
+          "total_score": 4.8174851070779106,
           "project_count": 7
         },
         {
           "category": "Natural Resources",
-          "total_score": 4.098496131190084,
+          "total_score": 4.098515064559429,
           "project_count": 7
         },
         {
@@ -204,7 +204,7 @@
       "form_of_organization": "",
       "listed_project_count": 15,
       "matched_project_count": 15,
-      "total_score": 10.859104869406307,
+      "total_score": 10.859104869406305,
       "category_breakdown": [
         {
           "category": "Climate Change",
@@ -242,7 +242,7 @@
       "form_of_organization": "academia",
       "listed_project_count": 12,
       "matched_project_count": 12,
-      "total_score": 10.573379646900415,
+      "total_score": 10.574642450488277,
       "category_breakdown": [
         {
           "category": "Atmosphere",
@@ -266,7 +266,7 @@
         },
         {
           "category": "Natural Resources",
-          "total_score": 1.2905911488230821,
+          "total_score": 1.2918539524109431,
           "project_count": 1
         }
       ]
@@ -280,7 +280,7 @@
       "form_of_organization": "government agency",
       "listed_project_count": 15,
       "matched_project_count": 15,
-      "total_score": 9.574563030813083,
+      "total_score": 9.574218001364049,
       "category_breakdown": [
         {
           "category": "Hydrosphere",
@@ -289,7 +289,7 @@
         },
         {
           "category": "Atmosphere",
-          "total_score": 2.9236312636751425,
+          "total_score": 2.9232862342261074,
           "project_count": 7
         },
         {
@@ -338,39 +338,6 @@
       ]
     },
     {
-      "organization_name": "U.S. Geological Survey",
-      "organization_url": "https://github.com/DOI-USGS",
-      "organization_description": "By integrating our diverse scientific expertise, we understand complex natural science phenomena and provide scientific products that lead to solutions.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "listed_project_count": 13,
-      "matched_project_count": 13,
-      "total_score": 8.761646189851518,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 3.7779227246326874,
-          "project_count": 6
-        },
-        {
-          "category": "Hydrosphere",
-          "total_score": 3.3454452308501716,
-          "project_count": 5
-        },
-        {
-          "category": "Sustainable Development",
-          "total_score": 0.8575368866909183,
-          "project_count": 1
-        },
-        {
-          "category": "Cryosphere",
-          "total_score": 0.780741347677741,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Stichting Deltares",
       "organization_url": "https://github.com/Deltares",
       "organization_description": "Deltares is an independent institute for applied research in the field of water and subsurface.",
@@ -379,11 +346,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 9,
       "matched_project_count": 9,
-      "total_score": 8.649069094061916,
+      "total_score": 8.650114583783306,
       "category_breakdown": [
         {
           "category": "Hydrosphere",
-          "total_score": 5.4704430653641145,
+          "total_score": 5.471488555085505,
           "project_count": 5
         },
         {
@@ -418,6 +385,39 @@
           "category": "Energy Systems",
           "total_score": 8.547328709937046,
           "project_count": 10
+        }
+      ]
+    },
+    {
+      "organization_name": "U.S. Geological Survey",
+      "organization_url": "https://github.com/DOI-USGS",
+      "organization_description": "By integrating our diverse scientific expertise, we understand complex natural science phenomena and provide scientific products that lead to solutions.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
+      "listed_project_count": 11,
+      "matched_project_count": 11,
+      "total_score": 8.16689793241097,
+      "category_breakdown": [
+        {
+          "category": "Natural Resources",
+          "total_score": 3.6546786751305183,
+          "project_count": 5
+        },
+        {
+          "category": "Hydrosphere",
+          "total_score": 2.8734887242612093,
+          "project_count": 4
+        },
+        {
+          "category": "Sustainable Development",
+          "total_score": 0.8579891853415025,
+          "project_count": 1
+        },
+        {
+          "category": "Cryosphere",
+          "total_score": 0.780741347677741,
+          "project_count": 1
         }
       ]
     },
@@ -463,16 +463,16 @@
       "form_of_organization": "government agency",
       "listed_project_count": 10,
       "matched_project_count": 10,
-      "total_score": 7.738021651412993,
+      "total_score": 7.739485595922089,
       "category_breakdown": [
         {
           "category": "Energy Systems",
-          "total_score": 3.8326187856788065,
+          "total_score": 3.831811296079199,
           "project_count": 4
         },
         {
           "category": "Consumption",
-          "total_score": 2.8789651605004227,
+          "total_score": 2.8812365946091254,
           "project_count": 4
         },
         {
@@ -491,11 +491,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 7,
       "matched_project_count": 7,
-      "total_score": 7.094520454030193,
+      "total_score": 7.097334848867839,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 3.5701068655944708,
+          "total_score": 3.5729212604321163,
           "project_count": 3
         },
         {
@@ -524,7 +524,7 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 9,
       "matched_project_count": 9,
-      "total_score": 6.757242735531031,
+      "total_score": 6.757504208574473,
       "category_breakdown": [
         {
           "category": "Biosphere",
@@ -558,7 +558,7 @@
         },
         {
           "category": "Energy Systems",
-          "total_score": 0.20910309681698766,
+          "total_score": 0.20936456986042945,
           "project_count": 1
         }
       ]
@@ -576,7 +576,7 @@
       "category_breakdown": [
         {
           "category": "Renewable Energy",
-          "total_score": 2.856487215608604,
+          "total_score": 2.8564872156086034,
           "project_count": 5
         },
         {
@@ -633,11 +633,11 @@
       "form_of_organization": "",
       "listed_project_count": 6,
       "matched_project_count": 6,
-      "total_score": 5.722106044938753,
+      "total_score": 5.722911688730257,
       "category_breakdown": [
         {
           "category": "Renewable Energy",
-          "total_score": 5.722106044938752,
+          "total_score": 5.722911688730257,
           "project_count": 6
         }
       ]
@@ -651,7 +651,7 @@
       "form_of_organization": "government agency",
       "listed_project_count": 7,
       "matched_project_count": 7,
-      "total_score": 5.685701450428117,
+      "total_score": 5.685701450428116,
       "category_breakdown": [
         {
           "category": "Natural Resources",
@@ -684,7 +684,7 @@
       "form_of_organization": "academia",
       "listed_project_count": 8,
       "matched_project_count": 8,
-      "total_score": 5.623899006907223,
+      "total_score": 5.623899006907222,
       "category_breakdown": [
         {
           "category": "Climate Change",
@@ -722,11 +722,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 4,
       "matched_project_count": 4,
-      "total_score": 5.464828410261262,
+      "total_score": 5.46152370674184,
       "category_breakdown": [
         {
           "category": "Energy Systems",
-          "total_score": 4.361389094712873,
+          "total_score": 4.358084391193452,
           "project_count": 3
         },
         {
@@ -768,7 +768,7 @@
       "form_of_organization": "academia",
       "listed_project_count": 9,
       "matched_project_count": 9,
-      "total_score": 4.938936709558245,
+      "total_score": 4.938936709558244,
       "category_breakdown": [
         {
           "category": "Climate Change",
@@ -839,11 +839,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 5,
       "matched_project_count": 5,
-      "total_score": 4.830147912602136,
+      "total_score": 4.830214248094287,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 4.830147912602137,
+          "total_score": 4.830214248094287,
           "project_count": 5
         }
       ]
@@ -857,7 +857,7 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 5,
       "matched_project_count": 5,
-      "total_score": 4.8239623830431375,
+      "total_score": 4.823962383043138,
       "category_breakdown": [
         {
           "category": "Climate Change",
@@ -903,11 +903,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 5,
       "matched_project_count": 5,
-      "total_score": 4.529160133293868,
+      "total_score": 4.529661573165549,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 4.529160133293868,
+          "total_score": 4.529661573165549,
           "project_count": 5
         }
       ]
@@ -1015,11 +1015,11 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 4,
       "matched_project_count": 4,
-      "total_score": 4.222347088277776,
+      "total_score": 4.222757841206314,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 3.3913451722867665,
+          "total_score": 3.3917559252153047,
           "project_count": 3
         },
         {
@@ -1079,7 +1079,7 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 4,
       "matched_project_count": 4,
-      "total_score": 3.971562833300632,
+      "total_score": 3.9715628333006325,
       "category_breakdown": [
         {
           "category": "Biosphere",
@@ -1120,7 +1120,7 @@
       "form_of_organization": "government agency",
       "listed_project_count": 6,
       "matched_project_count": 6,
-      "total_score": 3.8903081003202074,
+      "total_score": 3.890308100320208,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
@@ -1199,24 +1199,6 @@
       ]
     },
     {
-      "organization_name": "ARM User Facility",
-      "organization_url": "https://github.com/ARM-DOE",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/2540600?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "listed_project_count": 3,
-      "matched_project_count": 3,
-      "total_score": 3.5023892635343694,
-      "category_breakdown": [
-        {
-          "category": "Atmosphere",
-          "total_score": 3.5023892635343694,
-          "project_count": 3
-        }
-      ]
-    },
-    {
       "organization_name": "Santander Meteorology Group (UC-CSIC)",
       "organization_url": "https://github.com/SantanderMetGroup",
       "organization_description": "a multidisciplinary approach to weather & climate",
@@ -1284,11 +1266,11 @@
       "form_of_organization": "community",
       "listed_project_count": 5,
       "matched_project_count": 5,
-      "total_score": 3.347274697994355,
+      "total_score": 3.348232353846912,
       "category_breakdown": [
         {
           "category": "Industrial Ecology",
-          "total_score": 2.8039344275590303,
+          "total_score": 2.8048920834115876,
           "project_count": 4
         },
         {
@@ -1421,7 +1403,7 @@
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 2.7088657358350403,
+          "total_score": 2.70886573583504,
           "project_count": 3
         },
         {
@@ -1440,11 +1422,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 4,
       "matched_project_count": 4,
-      "total_score": 3.2156105566062343,
+      "total_score": 3.21677427627313,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 3.2156105566062347,
+          "total_score": 3.21677427627313,
           "project_count": 4
         }
       ]
@@ -1458,11 +1440,11 @@
       "form_of_organization": "community",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 3.2084250685321183,
+      "total_score": 3.2085795300272544,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 3.2084250685321183,
+          "total_score": 3.2085795300272544,
           "project_count": 3
         }
       ]
@@ -1540,7 +1522,7 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 5,
       "matched_project_count": 5,
-      "total_score": 3.065048438819459,
+      "total_score": 3.065048438819458,
       "category_breakdown": [
         {
           "category": "Biosphere",
@@ -1578,34 +1560,6 @@
         {
           "category": "Natural Resources",
           "total_score": 0.055816916672267756,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "OpenDSM",
-      "organization_url": "https://github.com/opendsm",
-      "organization_description": "Collaboratively advancing the future of demand-side energy",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/19336002?v=4",
-      "location_country": "Global",
-      "form_of_organization": "collaboration",
-      "listed_project_count": 3,
-      "matched_project_count": 3,
-      "total_score": 2.94569602240232,
-      "category_breakdown": [
-        {
-          "category": "Energy Systems",
-          "total_score": 1.0865136314149033,
-          "project_count": 1
-        },
-        {
-          "category": "Consumption",
-          "total_score": 1.0682004121041775,
-          "project_count": 1
-        },
-        {
-          "category": "Atmosphere",
-          "total_score": 0.7909819788832388,
           "project_count": 1
         }
       ]
@@ -1683,26 +1637,26 @@
       "form_of_organization": "academia",
       "listed_project_count": 6,
       "matched_project_count": 6,
-      "total_score": 2.7888961397643532,
+      "total_score": 2.7877358644087042,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 1.138552276236966,
+          "total_score": 1.1379207960999835,
           "project_count": 2
         },
         {
           "category": "Biosphere",
-          "total_score": 0.7968544602158506,
+          "total_score": 0.7964606416505378,
           "project_count": 2
         },
         {
           "category": "Sustainable Development",
-          "total_score": 0.4391414212250555,
+          "total_score": 0.4391472488443502,
           "project_count": 1
         },
         {
           "category": "Cryosphere",
-          "total_score": 0.4143479820864815,
+          "total_score": 0.41420717781383265,
           "project_count": 1
         }
       ]
@@ -1716,11 +1670,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 4,
       "matched_project_count": 4,
-      "total_score": 2.780363900170131,
+      "total_score": 2.7828007533961436,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 2.54135692135533,
+          "total_score": 2.543793774581343,
           "project_count": 3
         },
         {
@@ -1762,40 +1716,12 @@
       "form_of_organization": "academia",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.764269815342377,
+      "total_score": 2.7642698153423764,
       "category_breakdown": [
         {
           "category": "Energy Systems",
           "total_score": 2.7642698153423764,
           "project_count": 3
-        }
-      ]
-    },
-    {
-      "organization_name": "The Alan Turing Institute",
-      "organization_url": "https://github.com/alan-turing-institute",
-      "organization_description": "The UK's national institute for data science and artificial intelligence.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/18304793?v=4",
-      "location_country": "UK",
-      "form_of_organization": "government agency",
-      "listed_project_count": 4,
-      "matched_project_count": 4,
-      "total_score": 2.7346007174319977,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 1.5012891249326166,
-          "project_count": 2
-        },
-        {
-          "category": "Biosphere",
-          "total_score": 0.679028860557791,
-          "project_count": 1
-        },
-        {
-          "category": "Atmosphere",
-          "total_score": 0.55428273194159,
-          "project_count": 1
         }
       ]
     },
@@ -1808,7 +1734,7 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 4,
       "matched_project_count": 4,
-      "total_score": 2.7338383563721846,
+      "total_score": 2.733838356372185,
       "category_breakdown": [
         {
           "category": "Biosphere",
@@ -1852,6 +1778,24 @@
           "category": "Natural Resources",
           "total_score": 0.6936370754848049,
           "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "ARM User Facility",
+      "organization_url": "https://github.com/ARM-DOE",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/2540600?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 2.714209161896253,
+      "category_breakdown": [
+        {
+          "category": "Atmosphere",
+          "total_score": 2.714209161896253,
+          "project_count": 2
         }
       ]
     },
@@ -2097,16 +2041,16 @@
       "form_of_organization": "community",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.46465753440347,
+      "total_score": 2.4652576457021844,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 1.9463252351818638,
+          "total_score": 1.9468923938549327,
           "project_count": 2
         },
         {
           "category": "Industrial Ecology",
-          "total_score": 0.5183322992216058,
+          "total_score": 0.5183652518472515,
           "project_count": 1
         }
       ]
@@ -2120,7 +2064,7 @@
       "form_of_organization": "community",
       "listed_project_count": 4,
       "matched_project_count": 4,
-      "total_score": 2.425382393329034,
+      "total_score": 2.4253823933290346,
       "category_breakdown": [
         {
           "category": "Energy Systems",
@@ -2138,11 +2082,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.392973516376146,
+      "total_score": 2.394482759111249,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 2.392973516376146,
+          "total_score": 2.394482759111249,
           "project_count": 3
         }
       ]
@@ -2240,35 +2184,12 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 2.3194463766855957,
+      "total_score": 2.321321762512335,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 2.3194463766855957,
+          "total_score": 2.321321762512335,
           "project_count": 2
-        }
-      ]
-    },
-    {
-      "organization_name": "Accélérateur de la Transition Écologique (ADEME)",
-      "organization_url": "https://github.com/incubateur-ademe",
-      "organization_description": "Incubateur interne de l'ADEME",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/78278195?v=4",
-      "location_country": "Frace",
-      "form_of_organization": "government agency",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 2.3180344960362778,
-      "category_breakdown": [
-        {
-          "category": "Emissions",
-          "total_score": 1.318883160135602,
-          "project_count": 1
-        },
-        {
-          "category": "Consumption",
-          "total_score": 0.9991513359006756,
-          "project_count": 1
         }
       ]
     },
@@ -2291,6 +2212,29 @@
       ]
     },
     {
+      "organization_name": "Accélérateur de la Transition Écologique (ADEME)",
+      "organization_url": "https://github.com/incubateur-ademe",
+      "organization_description": "Incubateur interne de l'ADEME",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/78278195?v=4",
+      "location_country": "Frace",
+      "form_of_organization": "government agency",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 2.3140680606428665,
+      "category_breakdown": [
+        {
+          "category": "Emissions",
+          "total_score": 1.3145935787174543,
+          "project_count": 1
+        },
+        {
+          "category": "Consumption",
+          "total_score": 0.999474481925412,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "rte-antares-rpackage",
       "organization_url": "https://github.com/rte-antares-rpackage",
       "organization_description": "RTE ANTARES R PACKAGE",
@@ -2299,11 +2243,11 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 2.265253339451304,
+      "total_score": 2.264902770413882,
       "category_breakdown": [
         {
           "category": "Energy Systems",
-          "total_score": 2.265253339451304,
+          "total_score": 2.264902770413882,
           "project_count": 2
         }
       ]
@@ -2317,7 +2261,7 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.2567693271177003,
+      "total_score": 2.2567693271177,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
@@ -2363,11 +2307,11 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 2.244066808241666,
+      "total_score": 2.2443137136407723,
       "category_breakdown": [
         {
           "category": "Energy Storage",
-          "total_score": 2.244066808241666,
+          "total_score": 2.2443137136407723,
           "project_count": 2
         }
       ]
@@ -2417,11 +2361,11 @@
       "form_of_organization": "community",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.1905940584828776,
+      "total_score": 2.190528630534411,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 2.1905940584828776,
+          "total_score": 2.190528630534411,
           "project_count": 3
         }
       ]
@@ -2499,6 +2443,29 @@
       ]
     },
     {
+      "organization_name": "OpenDSM",
+      "organization_url": "https://github.com/opendsm",
+      "organization_description": "Collaboratively advancing the future of demand-side energy",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/19336002?v=4",
+      "location_country": "Global",
+      "form_of_organization": "collaboration",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 2.154714043519081,
+      "category_breakdown": [
+        {
+          "category": "Energy Systems",
+          "total_score": 1.0865136314149033,
+          "project_count": 1
+        },
+        {
+          "category": "Consumption",
+          "total_score": 1.0682004121041775,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Potsdam Integrated Assessment Modelling (PIAM)",
       "organization_url": "https://github.com/pik-piam",
       "organization_description": "Tools developed for use with data and models related to PIK's research.",
@@ -2530,11 +2497,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 2.1318035450283146,
+      "total_score": 2.1322548227958746,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 2.1318035450283146,
+          "total_score": 2.1322548227958746,
           "project_count": 1
         }
       ]
@@ -2553,24 +2520,6 @@
         {
           "category": "Climate Change",
           "total_score": 2.1314412939110956,
-          "project_count": 2
-        }
-      ]
-    },
-    {
-      "organization_name": "neuralgcm",
-      "organization_url": "https://github.com/neuralgcm",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/190404709?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 2.127462505950468,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 2.127462505950468,
           "project_count": 2
         }
       ]
@@ -2636,34 +2585,6 @@
           "category": "Climate Change",
           "total_score": 2.114632472457604,
           "project_count": 3
-        }
-      ]
-    },
-    {
-      "organization_name": "PRIMAP",
-      "organization_url": "https://github.com/primap-community",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/114724539?v=4",
-      "location_country": "Germany",
-      "form_of_organization": "collaboration",
-      "listed_project_count": 3,
-      "matched_project_count": 3,
-      "total_score": 2.105632591932001,
-      "category_breakdown": [
-        {
-          "category": "Sustainable Development",
-          "total_score": 0.8323025938954436,
-          "project_count": 1
-        },
-        {
-          "category": "Climate Change",
-          "total_score": 0.6973058900868749,
-          "project_count": 1
-        },
-        {
-          "category": "Emissions",
-          "total_score": 0.5760241079496828,
-          "project_count": 1
         }
       ]
     },
@@ -2753,7 +2674,7 @@
       "form_of_organization": "government agency",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.0512479549186855,
+      "total_score": 2.051247954918686,
       "category_breakdown": [
         {
           "category": "Climate Change",
@@ -2804,16 +2725,16 @@
       "form_of_organization": "government agency",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.027846321317472,
+      "total_score": 2.0292211604347337,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 1.2042781469397406,
+          "total_score": 1.2050198985195002,
           "project_count": 2
         },
         {
           "category": "Climate Change",
-          "total_score": 0.8235681743777313,
+          "total_score": 0.8242012619152335,
           "project_count": 1
         }
       ]
@@ -2827,12 +2748,40 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 2.0207503050410685,
+      "total_score": 2.021002752564759,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 2.0207503050410685,
+          "total_score": 2.021002752564759,
           "project_count": 3
+        }
+      ]
+    },
+    {
+      "organization_name": "The Alan Turing Institute",
+      "organization_url": "https://github.com/alan-turing-institute",
+      "organization_description": "The UK's national institute for data science and artificial intelligence.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/18304793?v=4",
+      "location_country": "UK",
+      "form_of_organization": "government agency",
+      "listed_project_count": 3,
+      "matched_project_count": 3,
+      "total_score": 2.020723951204591,
+      "category_breakdown": [
+        {
+          "category": "Climate Change",
+          "total_score": 0.7874123587052098,
+          "project_count": 1
+        },
+        {
+          "category": "Biosphere",
+          "total_score": 0.679028860557791,
+          "project_count": 1
+        },
+        {
+          "category": "Atmosphere",
+          "total_score": 0.55428273194159,
+          "project_count": 1
         }
       ]
     },
@@ -2886,11 +2835,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.9971924237217165,
+      "total_score": 1.9981615131648691,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.9971924237217162,
+          "total_score": 1.9981615131648693,
           "project_count": 3
         }
       ]
@@ -2904,11 +2853,11 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.9886540960859294,
+      "total_score": 1.989999290204009,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 1.9886540960859294,
+          "total_score": 1.989999290204009,
           "project_count": 2
         }
       ]
@@ -2986,11 +2935,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.9571899770595569,
+      "total_score": 1.9578911967582084,
       "category_breakdown": [
         {
           "category": "Energy Storage",
-          "total_score": 1.9571899770595567,
+          "total_score": 1.9578911967582084,
           "project_count": 3
         }
       ]
@@ -3094,11 +3043,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.8768230740280223,
+      "total_score": 1.8768213894685053,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.8768230740280223,
+          "total_score": 1.8768213894685053,
           "project_count": 2
         }
       ]
@@ -3118,24 +3067,6 @@
           "category": "Climate Change",
           "total_score": 1.8741543377914118,
           "project_count": 2
-        }
-      ]
-    },
-    {
-      "organization_name": "Google DeepMind",
-      "organization_url": "https://github.com/google-deepmind",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/8596759?v=4",
-      "location_country": "USA",
-      "form_of_organization": "for-profit",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.868045799769933,
-      "category_breakdown": [
-        {
-          "category": "Atmosphere",
-          "total_score": 1.868045799769933,
-          "project_count": 1
         }
       ]
     },
@@ -3202,11 +3133,11 @@
       "form_of_organization": "community",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.8384772190754508,
+      "total_score": 1.8385879349331486,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 1.3246655927186233,
+          "total_score": 1.3247763085763211,
           "project_count": 2
         },
         {
@@ -3225,11 +3156,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.8372474546732216,
+      "total_score": 1.8377723878204517,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 1.8372474546732216,
+          "total_score": 1.8377723878204517,
           "project_count": 1
         }
       ]
@@ -3453,11 +3384,11 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.758482862861476,
+      "total_score": 1.7585690697580276,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 1.758482862861476,
+          "total_score": 1.7585690697580276,
           "project_count": 2
         }
       ]
@@ -3525,7 +3456,7 @@
       "form_of_organization": "government agency",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.7304630168397215,
+      "total_score": 1.730463016839722,
       "category_breakdown": [
         {
           "category": "Climate Change",
@@ -3584,11 +3515,11 @@
       "form_of_organization": "community",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.7249525793692473,
+      "total_score": 1.725297652982926,
       "category_breakdown": [
         {
           "category": "Energy Systems",
-          "total_score": 1.7249525793692473,
+          "total_score": 1.725297652982926,
           "project_count": 3
         }
       ]
@@ -3887,11 +3818,11 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.6235557128459503,
+      "total_score": 1.6235577536018408,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 1.6235557128459503,
+          "total_score": 1.6235577536018408,
           "project_count": 2
         }
       ]
@@ -4169,24 +4100,6 @@
       ]
     },
     {
-      "organization_name": "The Openair Project",
-      "organization_url": "https://github.com/openair-project",
-      "organization_description": "Open Source Tools for Air Quality Data Analysis",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/194077245?v=4",
-      "location_country": "UK",
-      "form_of_organization": "community",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 1.5613219325625818,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 1.5613219325625818,
-          "project_count": 2
-        }
-      ]
-    },
-    {
       "organization_name": "Canadian Society for Hydrological Sciences",
       "organization_url": "https://github.com/CSHS-CWRA",
       "organization_description": "",
@@ -4328,6 +4241,24 @@
       ]
     },
     {
+      "organization_name": "Energy Web Foundation",
+      "organization_url": "https://github.com/energywebfoundation",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/32361864?v=4",
+      "location_country": "Switzerland",
+      "form_of_organization": "for-profit",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 1.5273333306968233,
+      "category_breakdown": [
+        {
+          "category": "Energy Systems",
+          "total_score": 1.5273333306968233,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Natural Capital Alliance",
       "organization_url": "https://github.com/natcap",
       "organization_description": "Pioneering science, technology, and partnerships that enable people and nature to thrive.",
@@ -4346,24 +4277,6 @@
       ]
     },
     {
-      "organization_name": "Energy Web Foundation",
-      "organization_url": "https://github.com/energywebfoundation",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/32361864?v=4",
-      "location_country": "Switzerland",
-      "form_of_organization": "for-profit",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.526489145799638,
-      "category_breakdown": [
-        {
-          "category": "Energy Systems",
-          "total_score": 1.526489145799638,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "GreenDelta",
       "organization_url": "https://github.com/GreenDelta",
       "organization_description": "",
@@ -4372,7 +4285,7 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.525643672073338,
+      "total_score": 1.5256436720733377,
       "category_breakdown": [
         {
           "category": "Industrial Ecology",
@@ -4449,11 +4362,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.5105169425048388,
+      "total_score": 1.5105237020900333,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 1.5105169425048388,
+          "total_score": 1.5105237020900333,
           "project_count": 1
         }
       ]
@@ -4603,57 +4516,16 @@
       "form_of_organization": "government agency",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.478692353783439,
+      "total_score": 1.478432399378255,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.9910887538280393,
+          "total_score": 0.9908287994228553,
           "project_count": 1
         },
         {
           "category": "Industrial Ecology",
           "total_score": 0.4876035999553998,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Parcels",
-      "organization_url": "https://github.com/Parcels-code",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/14887518?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 1.4757085829415868,
-      "category_breakdown": [
-        {
-          "category": "Hydrosphere",
-          "total_score": 1.3281067573445047,
-          "project_count": 1
-        },
-        {
-          "category": "Industrial Ecology",
-          "total_score": 0.14760182559708215,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "MODFLOW and Related Programs",
-      "organization_url": "https://github.com/MODFLOW-ORG",
-      "organization_description": "Organization for MODFLOW development",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/34482102?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.475698672429281,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 1.475698672429281,
           "project_count": 1
         }
       ]
@@ -4721,7 +4593,7 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.465557669410816,
+      "total_score": 1.464572065584282,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
@@ -4730,7 +4602,7 @@
         },
         {
           "category": "Industrial Ecology",
-          "total_score": 0.6111342514467112,
+          "total_score": 0.6101486476201771,
           "project_count": 1
         }
       ]
@@ -4762,11 +4634,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.4592339142361705,
+      "total_score": 1.459872918295028,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.4592339142361705,
+          "total_score": 1.459872918295028,
           "project_count": 1
         }
       ]
@@ -4816,16 +4688,16 @@
       "form_of_organization": "academia",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.4509755422654853,
+      "total_score": 1.4512679288164965,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.794421576130655,
+          "total_score": 0.7941315279592626,
           "project_count": 2
         },
         {
           "category": "Climate Change",
-          "total_score": 0.6565539661348302,
+          "total_score": 0.6571364008572338,
           "project_count": 1
         }
       ]
@@ -4939,11 +4811,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.429803396379758,
+      "total_score": 1.4297960945417134,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 1.429803396379758,
+          "total_score": 1.4297960945417134,
           "project_count": 1
         }
       ]
@@ -4957,11 +4829,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.4246995251581231,
+      "total_score": 1.4261917868215797,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.2165731715854775,
+          "total_score": 1.218065433248934,
           "project_count": 1
         },
         {
@@ -4986,24 +4858,6 @@
           "category": "Climate Change",
           "total_score": 1.4239442228357975,
           "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "OpenAQ Platform",
-      "organization_url": "https://github.com/openaq",
-      "organization_description": "An open platform for air quality data",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/11806583?v=4",
-      "location_country": "Global",
-      "form_of_organization": "non-profit",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 1.423877009501151,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 1.423877009501151,
-          "project_count": 2
         }
       ]
     },
@@ -5070,16 +4924,16 @@
       "form_of_organization": "academia",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.416992370899309,
+      "total_score": 1.4181732516972574,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 0.7130418007301371,
+          "total_score": 0.7136275640093103,
           "project_count": 1
         },
         {
           "category": "Biosphere",
-          "total_score": 0.7039505701691721,
+          "total_score": 0.704545687687947,
           "project_count": 2
         }
       ]
@@ -5098,6 +4952,29 @@
         {
           "category": "Industrial Ecology",
           "total_score": 1.4133996749963438,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "PRIMAP",
+      "organization_url": "https://github.com/primap-community",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/114724539?v=4",
+      "location_country": "Germany",
+      "form_of_organization": "collaboration",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 1.4083267018451264,
+      "category_breakdown": [
+        {
+          "category": "Sustainable Development",
+          "total_score": 0.8323025938954436,
+          "project_count": 1
+        },
+        {
+          "category": "Emissions",
+          "total_score": 0.5760241079496828,
           "project_count": 1
         }
       ]
@@ -5165,11 +5042,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.3963162432590623,
+      "total_score": 1.3960750353030795,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.3963162432590623,
+          "total_score": 1.3960750353030795,
           "project_count": 1
         }
       ]
@@ -5183,11 +5060,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.3955157723372975,
+      "total_score": 1.3956644729766694,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 1.3955157723372975,
+          "total_score": 1.3956644729766694,
           "project_count": 1
         }
       ]
@@ -5309,11 +5186,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.369359723457066,
+      "total_score": 1.3693609432594664,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 1.369359723457066,
+          "total_score": 1.3693609432594664,
           "project_count": 1
         }
       ]
@@ -5345,11 +5222,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.364079636161695,
+      "total_score": 1.3643321632144543,
       "category_breakdown": [
         {
           "category": "Energy Systems",
-          "total_score": 1.364079636161695,
+          "total_score": 1.3643321632144543,
           "project_count": 2
         }
       ]
@@ -5363,11 +5240,11 @@
       "form_of_organization": "",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.3613654844887217,
+      "total_score": 1.362890759792917,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.229078797551432,
+          "total_score": 1.2306040728556271,
           "project_count": 1
         },
         {
@@ -5386,11 +5263,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.360195456280814,
+      "total_score": 1.3601093101196156,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.360195456280814,
+          "total_score": 1.3601093101196156,
           "project_count": 1
         }
       ]
@@ -5504,7 +5381,7 @@
       "form_of_organization": "academia",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.3488839873556913,
+      "total_score": 1.348970194252243,
       "category_breakdown": [
         {
           "category": "Renewable Energy",
@@ -5513,7 +5390,7 @@
         },
         {
           "category": "Energy Systems",
-          "total_score": 0.23633525260694352,
+          "total_score": 0.23642145950349522,
           "project_count": 1
         }
       ]
@@ -5581,11 +5458,11 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.338205124412714,
+      "total_score": 1.340328730214054,
       "category_breakdown": [
         {
           "category": "Emissions",
-          "total_score": 1.338205124412714,
+          "total_score": 1.340328730214054,
           "project_count": 2
         }
       ]
@@ -5617,11 +5494,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.3313768789893266,
+      "total_score": 1.331373932009954,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.3313768789893266,
+          "total_score": 1.331373932009954,
           "project_count": 1
         }
       ]
@@ -5707,11 +5584,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.319492431976781,
+      "total_score": 1.319686990620448,
       "category_breakdown": [
         {
           "category": "Hydrosphere",
-          "total_score": 0.7380646400616575,
+          "total_score": 0.7382591987053247,
           "project_count": 1
         },
         {
@@ -5758,24 +5635,6 @@
       ]
     },
     {
-      "organization_name": "AguaClara Reach",
-      "organization_url": "https://github.com/AguaClara-Reach",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/42070153?v=4",
-      "location_country": "USA",
-      "form_of_organization": "non-profit",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.3031259260034886,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 1.3031259260034886,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "USA National Phenology Network",
       "organization_url": "https://github.com/usa-npn",
       "organization_description": "USA National Phenology Network",
@@ -5784,11 +5643,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.2962879023669789,
+      "total_score": 1.2962870149443568,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.2962879023669789,
+          "total_score": 1.2962870149443568,
           "project_count": 1
         }
       ]
@@ -5943,24 +5802,6 @@
       ]
     },
     {
-      "organization_name": "Giswater",
-      "organization_url": "https://github.com/giswater",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/3052331?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.2734445770055325,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 1.2734445770055325,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "SYSTRA",
       "organization_url": "https://github.com/systragroup",
       "organization_description": "SYSTRA is an international consulting and engineering group, the signature team for transportation solutions",
@@ -6010,34 +5851,6 @@
         {
           "category": "Natural Resources",
           "total_score": 1.2666587413931334,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "rOpenSci Archive",
-      "organization_url": "https://github.com/ropensci-archive",
-      "organization_description": "Retired or sunset rOpenSci projects -- email info@ropensci.org if you have questions!",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/68704009?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "listed_project_count": 4,
-      "matched_project_count": 4,
-      "total_score": 1.2651098691680402,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 0.7495519130931013,
-          "project_count": 2
-        },
-        {
-          "category": "Hydrosphere",
-          "total_score": 0.31720799914806375,
-          "project_count": 1
-        },
-        {
-          "category": "Natural Resources",
-          "total_score": 0.19834995692687515,
           "project_count": 1
         }
       ]
@@ -6123,11 +5936,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.2541093092783935,
+      "total_score": 1.2541133938886377,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 1.2541093092783935,
+          "total_score": 1.2541133938886377,
           "project_count": 1
         }
       ]
@@ -6241,6 +6054,24 @@
       ]
     },
     {
+      "organization_name": "CEMS",
+      "organization_url": "https://github.com/cemsbv",
+      "organization_description": "CEMS offers geotechnical software as a service through REST APIs, to be used as a trusted component in scalable automated engineering processes.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/92314127?v=4",
+      "location_country": "Netherlands",
+      "form_of_organization": "for-profit",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 1.237710379444446,
+      "category_breakdown": [
+        {
+          "category": "Natural Resources",
+          "total_score": 1.237710379444446,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Open Global Glacier Model",
       "organization_url": "https://github.com/OGGM",
       "organization_description": "",
@@ -6259,24 +6090,6 @@
         {
           "category": "Sustainable Development",
           "total_score": 0.17456008316626065,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "CEMS",
-      "organization_url": "https://github.com/cemsbv",
-      "organization_description": "CEMS offers geotechnical software as a service through REST APIs, to be used as a trusted component in scalable automated engineering processes.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/92314127?v=4",
-      "location_country": "Netherlands",
-      "form_of_organization": "for-profit",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.2359583589477656,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 1.2359583589477656,
           "project_count": 1
         }
       ]
@@ -6367,7 +6180,7 @@
       "form_of_organization": "academia",
       "listed_project_count": 3,
       "matched_project_count": 3,
-      "total_score": 1.2228182085234378,
+      "total_score": 1.2227184841867487,
       "category_breakdown": [
         {
           "category": "Climate Change",
@@ -6376,7 +6189,7 @@
         },
         {
           "category": "Biosphere",
-          "total_score": 0.5210115080263849,
+          "total_score": 0.5209117836896957,
           "project_count": 2
         }
       ]
@@ -6449,11 +6262,11 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.2104501571693633,
+      "total_score": 1.2104649690378257,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.2104501571693633,
+          "total_score": 1.2104649690378257,
           "project_count": 2
         }
       ]
@@ -6549,11 +6362,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.2055287149359537,
+      "total_score": 1.205578423795469,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.2055287149359537,
+          "total_score": 1.205578423795469,
           "project_count": 1
         }
       ]
@@ -6621,11 +6434,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.200232974148855,
+      "total_score": 1.2002374554417965,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 1.200232974148855,
+          "total_score": 1.2002374554417965,
           "project_count": 1
         }
       ]
@@ -6657,11 +6470,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.1994929635864358,
+      "total_score": 1.1995791704829875,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 1.1994929635864358,
+          "total_score": 1.1995791704829875,
           "project_count": 2
         }
       ]
@@ -7078,6 +6891,24 @@
       ]
     },
     {
+      "organization_name": "Theoretical Ecology",
+      "organization_url": "https://github.com/TheoreticalEcology",
+      "organization_description": "Repositories of the Theoretical Ecology Group, University of Regensburg",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/22679875?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 1.1718838364852031,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 1.1718838364852031,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Thermodynamic Equation Of Seawater - 2010 (TEOS-10)",
       "organization_url": "https://github.com/TEOS-10",
       "organization_description": "",
@@ -7091,24 +6922,6 @@
         {
           "category": "Hydrosphere",
           "total_score": 1.17183970582776,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Theoretical Ecology",
-      "organization_url": "https://github.com/TheoreticalEcology",
-      "organization_description": "Repositories of the Theoretical Ecology Group, University of Regensburg",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/22679875?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.1717199689136686,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 1.1717199689136686,
           "project_count": 1
         }
       ]
@@ -7158,11 +6971,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.1674204447787948,
+      "total_score": 1.1675018407265074,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.1674204447787948,
+          "total_score": 1.1675018407265074,
           "project_count": 1
         }
       ]
@@ -7415,11 +7228,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.1473357645114957,
+      "total_score": 1.1473706383754874,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.1473357645114957,
+          "total_score": 1.1473706383754874,
           "project_count": 1
         }
       ]
@@ -7496,7 +7309,7 @@
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 0.7535547859904946,
+          "total_score": 0.7535547859904947,
           "project_count": 3
         },
         {
@@ -7597,6 +7410,42 @@
       ]
     },
     {
+      "organization_name": "Moore Institute for Plastic Pollution Research",
+      "organization_url": "https://github.com/Moore-Institute-4-Plastic-Pollution-Res",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/104230762?v=4",
+      "location_country": "USA",
+      "form_of_organization": "non-profit",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 1.123461829420247,
+      "category_breakdown": [
+        {
+          "category": "Natural Resources",
+          "total_score": 1.123461829420247,
+          "project_count": 2
+        }
+      ]
+    },
+    {
+      "organization_name": "Teikei / ErnteTeilen",
+      "organization_url": "https://github.com/teikei",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/7583909?v=4",
+      "location_country": "Germany",
+      "form_of_organization": "non-profit",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 1.123120256163048,
+      "category_breakdown": [
+        {
+          "category": "Consumption",
+          "total_score": 1.123120256163048,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Open Energy Dashboard",
       "organization_url": "https://github.com/OpenEnergyDashboard",
       "organization_description": "Energy Dashboard for Sustainability",
@@ -7615,37 +7464,19 @@
       ]
     },
     {
-      "organization_name": "Moore Institute for Plastic Pollution Research",
-      "organization_url": "https://github.com/Moore-Institute-4-Plastic-Pollution-Res",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/104230762?v=4",
-      "location_country": "USA",
-      "form_of_organization": "non-profit",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 1.1221390968626341,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 1.1221390968626341,
-          "project_count": 2
-        }
-      ]
-    },
-    {
-      "organization_name": "Teikei / ErnteTeilen",
-      "organization_url": "https://github.com/teikei",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/7583909?v=4",
+      "organization_name": "ASSUME",
+      "organization_url": "https://github.com/assume-framework",
+      "organization_description": "Agent based market model toolbox",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/131251735?v=4",
       "location_country": "Germany",
-      "form_of_organization": "non-profit",
+      "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.1221250125679605,
+      "total_score": 1.1224270522690825,
       "category_breakdown": [
         {
-          "category": "Consumption",
-          "total_score": 1.1221250125679605,
+          "category": "Energy Systems",
+          "total_score": 1.1224270522690825,
           "project_count": 1
         }
       ]
@@ -7687,47 +7518,6 @@
         {
           "category": "Hydrosphere",
           "total_score": 1.1207286361303554,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "ASSUME",
-      "organization_url": "https://github.com/assume-framework",
-      "organization_description": "Agent based market model toolbox",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/131251735?v=4",
-      "location_country": "Germany",
-      "form_of_organization": "community",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.1205629708065017,
-      "category_breakdown": [
-        {
-          "category": "Energy Systems",
-          "total_score": 1.1205629708065017,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Meteostat",
-      "organization_url": "https://github.com/meteostat",
-      "organization_description": "The Weather's Record Keeper",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/29773680?v=4",
-      "location_country": "Canada",
-      "form_of_organization": "community",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 1.1188611235462667,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 0.7431969093707491,
-          "project_count": 1
-        },
-        {
-          "category": "Atmosphere",
-          "total_score": 0.3756642141755176,
           "project_count": 1
         }
       ]
@@ -7903,11 +7693,11 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 1.1073397826425326,
+      "total_score": 1.1077238998857957,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.1073397826425326,
+          "total_score": 1.1077238998857957,
           "project_count": 2
         }
       ]
@@ -7926,24 +7716,6 @@
         {
           "category": "Energy Systems",
           "total_score": 1.1051970558362019,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Freva",
-      "organization_url": "https://github.com/freva-org",
-      "organization_description": "Freva – The Free Evaluation System Framework",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/218064798?v=4",
-      "location_country": "Germany",
-      "form_of_organization": "government agency",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.1050923798254275,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 1.1050923798254275,
           "project_count": 1
         }
       ]
@@ -8011,11 +7783,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.0969719864838363,
+      "total_score": 1.097058193380388,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
-          "total_score": 1.0969719864838363,
+          "total_score": 1.097058193380388,
           "project_count": 1
         }
       ]
@@ -8101,11 +7873,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.091198438569736,
+      "total_score": 1.091130693726783,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.091198438569736,
+          "total_score": 1.091130693726783,
           "project_count": 1
         }
       ]
@@ -8245,11 +8017,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.074908053512762,
+      "total_score": 1.0748816678762676,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 1.074908053512762,
+          "total_score": 1.0748816678762676,
           "project_count": 1
         }
       ]
@@ -8322,11 +8094,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.0696855587106857,
+      "total_score": 1.0703203359612572,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 1.0696855587106857,
+          "total_score": 1.0703203359612572,
           "project_count": 1
         }
       ]
@@ -8340,11 +8112,11 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.0675186143049369,
+      "total_score": 1.0689544034535527,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 1.0675186143049369,
+          "total_score": 1.0689544034535527,
           "project_count": 1
         }
       ]
@@ -8512,6 +8284,24 @@
       ]
     },
     {
+      "organization_name": "INRAE",
+      "organization_url": "https://github.com/inrae",
+      "organization_description": "INRAE, French National Institute for Agriculture, Food and Environment",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/64418390?v=4",
+      "location_country": "France",
+      "form_of_organization": "academia",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 1.049068016472322,
+      "category_breakdown": [
+        {
+          "category": "Hydrosphere",
+          "total_score": 1.049068016472322,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "echostack",
       "organization_url": "https://github.com/echostack-org",
       "organization_description": "Home for open source tools and resources in ocean acoustics",
@@ -8525,24 +8315,6 @@
         {
           "category": "Biosphere",
           "total_score": 1.0486542194442452,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "INRAE",
-      "organization_url": "https://github.com/inrae",
-      "organization_description": "INRAE, French National Institute for Agriculture, Food and Environment",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/64418390?v=4",
-      "location_country": "France",
-      "form_of_organization": "academia",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 1.0483829497312245,
-      "category_breakdown": [
-        {
-          "category": "Hydrosphere",
-          "total_score": 1.0483829497312245,
           "project_count": 1
         }
       ]
@@ -9134,11 +8906,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 1.0069833173431602,
+      "total_score": 1.0069856597042843,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 1.0069833173431602,
+          "total_score": 1.0069856597042843,
           "project_count": 1
         }
       ]
@@ -9337,29 +9109,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.9972202619759251,
+      "total_score": 0.9971476345501745,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 0.9972202619759251,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Public Health and Environmental Surveillance Open Data Model (PHES-ODM)",
-      "organization_url": "https://github.com/PHES-ODM",
-      "organization_description": "The PHES-ODM is an open science project of data standards & structures -and tools to support their use- for environmental surveillance of public health threats.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/218308183?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.9968306682819197,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 0.9968306682819197,
+          "total_score": 0.9971476345501745,
           "project_count": 1
         }
       ]
@@ -10067,11 +9821,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.9409868061145635,
+      "total_score": 0.941252156722416,
       "category_breakdown": [
         {
           "category": "Hydrosphere",
-          "total_score": 0.9409868061145635,
+          "total_score": 0.941252156722416,
           "project_count": 1
         }
       ]
@@ -10131,24 +9885,6 @@
       ]
     },
     {
-      "organization_name": "C4IROcean-archive",
-      "organization_url": "https://github.com/C4IROcean-archive",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/205895850?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.9341635885932366,
-      "category_breakdown": [
-        {
-          "category": "Hydrosphere",
-          "total_score": 0.9341635885932366,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "tetratech",
       "organization_url": "https://github.com/tetratech",
       "organization_description": "",
@@ -10157,11 +9893,11 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.9331115473448718,
+      "total_score": 0.9331145160070071,
       "category_breakdown": [
         {
           "category": "Hydrosphere",
-          "total_score": 0.9331115473448718,
+          "total_score": 0.9331145160070071,
           "project_count": 1
         }
       ]
@@ -10193,11 +9929,11 @@
       "form_of_organization": "community",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 0.9315543918107256,
+      "total_score": 0.9322920680978679,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.9315543918107256,
+          "total_score": 0.9322920680978679,
           "project_count": 2
         }
       ]
@@ -10388,24 +10124,6 @@
       ]
     },
     {
-      "organization_name": "pyTMD",
-      "organization_url": "https://github.com/pyTMD",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/199183018?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.9214140871485235,
-      "category_breakdown": [
-        {
-          "category": "Hydrosphere",
-          "total_score": 0.9214140871485235,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Climate Mind",
       "organization_url": "https://github.com/ClimateMind",
       "organization_description": "Powering climate conversations",
@@ -10522,11 +10240,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.911887347203145,
+      "total_score": 0.9120358590395405,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.911887347203145,
+          "total_score": 0.9120358590395405,
           "project_count": 1
         }
       ]
@@ -10558,11 +10276,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.9098853296064887,
+      "total_score": 0.9102859017978882,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.9098853296064887,
+          "total_score": 0.9102859017978882,
           "project_count": 1
         }
       ]
@@ -10604,6 +10322,29 @@
       ]
     },
     {
+      "organization_name": "DSE",
+      "organization_url": "https://github.com/SchmidtDSE",
+      "organization_description": "The Eric and Wendy Schmidt Center for Data Science & Environment at Berkeley",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/124641794?v=4",
+      "location_country": "USA",
+      "form_of_organization": "academia",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 0.9075175448486164,
+      "category_breakdown": [
+        {
+          "category": "Industrial Ecology",
+          "total_score": 0.5033402869680293,
+          "project_count": 1
+        },
+        {
+          "category": "Biosphere",
+          "total_score": 0.40417725788058706,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Intake",
       "organization_url": "https://github.com/intake",
       "organization_description": "Taking the pain out of data access and distribution",
@@ -10617,29 +10358,6 @@
         {
           "category": "Climate Change",
           "total_score": 0.9053684725093363,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "DSE",
-      "organization_url": "https://github.com/SchmidtDSE",
-      "organization_description": "The Eric and Wendy Schmidt Center for Data Science & Environment at Berkeley",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/124641794?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 0.9049552654421313,
-      "category_breakdown": [
-        {
-          "category": "Industrial Ecology",
-          "total_score": 0.5007780075615443,
-          "project_count": 1
-        },
-        {
-          "category": "Biosphere",
-          "total_score": 0.40417725788058706,
           "project_count": 1
         }
       ]
@@ -10671,11 +10389,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.903694082005184,
+      "total_score": 0.9039204462585649,
       "category_breakdown": [
         {
           "category": "Renewable Energy",
-          "total_score": 0.903694082005184,
+          "total_score": 0.9039204462585649,
           "project_count": 1
         }
       ]
@@ -10730,29 +10448,6 @@
         {
           "category": "Energy Systems",
           "total_score": 0.9009963853221162,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "EMODnet",
-      "organization_url": "https://github.com/EMODnet",
-      "organization_description": "Your gateway to marine data in Europe",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/30047227?v=4",
-      "location_country": "EU",
-      "form_of_organization": "government agency",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 0.9009537166629851,
-      "category_breakdown": [
-        {
-          "category": "Hydrosphere",
-          "total_score": 0.7921017253408237,
-          "project_count": 1
-        },
-        {
-          "category": "Sustainable Development",
-          "total_score": 0.10885199132216142,
           "project_count": 1
         }
       ]
@@ -11059,7 +10754,7 @@
       "form_of_organization": "community",
       "listed_project_count": 5,
       "matched_project_count": 5,
-      "total_score": 0.8806689043180038,
+      "total_score": 0.8806689043180036,
       "category_breakdown": [
         {
           "category": "Sustainable Development",
@@ -11095,11 +10790,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.8779861248437342,
+      "total_score": 0.8777190610835208,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.8779861248437342,
+          "total_score": 0.8777190610835208,
           "project_count": 1
         }
       ]
@@ -11907,6 +11602,24 @@
       ]
     },
     {
+      "organization_name": "OpenAQ Platform",
+      "organization_url": "https://github.com/openaq",
+      "organization_description": "An open platform for air quality data",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/11806583?v=4",
+      "location_country": "Global",
+      "form_of_organization": "non-profit",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.8218434228147153,
+      "category_breakdown": [
+        {
+          "category": "Natural Resources",
+          "total_score": 0.8218434228147153,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Long Term Ecological Research Network",
       "organization_url": "https://github.com/lter",
       "organization_description": "Projects in this organization support ecological research, coordination, and communication by and related to the LTER Network.",
@@ -11915,11 +11628,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.8211213714367843,
+      "total_score": 0.8206623031348942,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.8211213714367843,
+          "total_score": 0.8206623031348942,
           "project_count": 1
         }
       ]
@@ -11969,11 +11682,11 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.8193050094300873,
+      "total_score": 0.8193094479823844,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.8193050094300873,
+          "total_score": 0.8193094479823844,
           "project_count": 1
         }
       ]
@@ -12077,11 +11790,11 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.8127469371506106,
+      "total_score": 0.8127704996577911,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 0.8127469371506106,
+          "total_score": 0.8127704996577911,
           "project_count": 1
         }
       ]
@@ -12123,24 +11836,6 @@
       ]
     },
     {
-      "organization_name": "ToxPi",
-      "organization_url": "https://github.com/ToxPi",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/65192026?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.8090352490153514,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 0.8090352490153514,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "BioSTEAM Development Group",
       "organization_url": "https://github.com/BioSTEAMDevelopmentGroup",
       "organization_description": "Our mission is to create, deliver, and support open-source products that make the BioSTEAM software easy to use, deploy, and scale.",
@@ -12154,6 +11849,24 @@
         {
           "category": "Renewable Energy",
           "total_score": 0.8089232006271299,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "ToxPi",
+      "organization_url": "https://github.com/ToxPi",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/65192026?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.8077997700688998,
+      "category_breakdown": [
+        {
+          "category": "Natural Resources",
+          "total_score": 0.8077997700688998,
           "project_count": 1
         }
       ]
@@ -12190,24 +11903,6 @@
         {
           "category": "Hydrosphere",
           "total_score": 0.8014348551174124,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "DHIS2-CHAP",
-      "organization_url": "https://github.com/dhis2-chap",
-      "organization_description": "DHIS2 Chap Modeling Platform",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/184943667?v=4",
-      "location_country": "Global",
-      "form_of_organization": "collaboration",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.8001970044188585,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 0.8001970044188585,
           "project_count": 1
         }
       ]
@@ -12375,6 +12070,24 @@
       ]
     },
     {
+      "organization_name": "IUCN Red List of Ecosystems Science Team",
+      "organization_url": "https://github.com/red-list-ecosystem",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/29559340?v=4",
+      "location_country": "Australia",
+      "form_of_organization": "non-profit",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.7863194003831588,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.7863194003831588,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Environmental Data Science Innovation and Impact Lab (ESIIL)",
       "organization_url": "https://github.com/CU-ESIIL",
       "organization_description": "This is an open, public Github Organization for ESIIL",
@@ -12406,24 +12119,6 @@
         {
           "category": "Hydrosphere",
           "total_score": 0.7856512859171969,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "IUCN Red List of Ecosystems Science Team",
-      "organization_url": "https://github.com/red-list-ecosystem",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/29559340?v=4",
-      "location_country": "Australia",
-      "form_of_organization": "non-profit",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.7845132028509415,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.7845132028509415,
           "project_count": 1
         }
       ]
@@ -12483,24 +12178,6 @@
       ]
     },
     {
-      "organization_name": "Bureau of Reclamation",
-      "organization_url": "https://github.com/DOI-BOR",
-      "organization_description": "Bureau of Reclamation DOI GitHub",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/102251442?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.779182550917934,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 0.779182550917934,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Sh**t! I Smoke",
       "organization_url": "https://github.com/shootismoke",
       "organization_description": "See your city's air pollution measured in daily cigarettes. Web/iOS/Android.",
@@ -12545,11 +12222,11 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.7714499827105005,
+      "total_score": 0.7714619899100648,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.7714499827105005,
+          "total_score": 0.7714619899100648,
           "project_count": 1
         }
       ]
@@ -12655,6 +12332,24 @@
       ]
     },
     {
+      "organization_name": "Environmental Data Initiative",
+      "organization_url": "https://github.com/EDIorg",
+      "organization_description": "Accelerating the archive and reuse of environmental data",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/22452966?v=4",
+      "location_country": "USA",
+      "form_of_organization": "academia",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.767698314908768,
+      "category_breakdown": [
+        {
+          "category": "Sustainable Development",
+          "total_score": 0.767698314908768,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "CURENT LTB",
       "organization_url": "https://github.com/CURENT",
       "organization_description": "CURENT Large Scale Testbed",
@@ -12668,24 +12363,6 @@
         {
           "category": "Energy Systems",
           "total_score": 0.7675704190650974,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Environmental Data Initiative",
-      "organization_url": "https://github.com/EDIorg",
-      "organization_description": "Accelerating the archive and reuse of environmental data",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/22452966?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.7668283788145122,
-      "category_breakdown": [
-        {
-          "category": "Sustainable Development",
-          "total_score": 0.7668283788145122,
           "project_count": 1
         }
       ]
@@ -12861,11 +12538,11 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.7588329414063115,
+      "total_score": 0.7597812172683804,
       "category_breakdown": [
         {
           "category": "Energy Systems",
-          "total_score": 0.7588329414063115,
+          "total_score": 0.7597812172683804,
           "project_count": 1
         }
       ]
@@ -12925,24 +12602,6 @@
       ]
     },
     {
-      "organization_name": "sdmTMB",
-      "organization_url": "https://github.com/sdmTMB",
-      "organization_description": "sdmTMB R package",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/245077094?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.7507524297682266,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.7507524297682266,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "dsgrid",
       "organization_url": "https://github.com/dsgrid",
       "organization_description": "The demand-side grid (dsgrid) toolkit enables the compilation of high-resolution load datasets suitable for forward-looking power system and other analyses",
@@ -12956,6 +12615,24 @@
         {
           "category": "Energy Systems",
           "total_score": 0.7505530964165843,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "sdmTMB",
+      "organization_url": "https://github.com/sdmTMB",
+      "organization_description": "sdmTMB R package",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/245077094?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.7504054264910883,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.7504054264910883,
           "project_count": 1
         }
       ]
@@ -13059,11 +12736,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.7434617061945136,
+      "total_score": 0.7437935759704525,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.7434617061945136,
+          "total_score": 0.7437935759704525,
           "project_count": 1
         }
       ]
@@ -13083,24 +12760,6 @@
           "category": "Consumption",
           "total_score": 0.7428530729153545,
           "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "HyRiver",
-      "organization_url": "https://github.com/hyriver",
-      "organization_description": "A suite of Python packages that provides a unified API for retrieving geospatial/temporal data from various web services",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/109259800?v=4",
-      "location_country": "USA",
-      "form_of_organization": "community",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 0.7427712606670827,
-      "category_breakdown": [
-        {
-          "category": "Hydrosphere",
-          "total_score": 0.7427712606670827,
-          "project_count": 2
         }
       ]
     },
@@ -13527,11 +13186,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.7189513996273869,
+      "total_score": 0.7189935302327076,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.7189513996273869,
+          "total_score": 0.7189935302327076,
           "project_count": 1
         }
       ]
@@ -13704,11 +13363,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.7106451040627023,
+      "total_score": 0.710907079570463,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.7106451040627023,
+          "total_score": 0.710907079570463,
           "project_count": 1
         }
       ]
@@ -13776,11 +13435,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.7056891601995827,
+      "total_score": 0.7058615739926862,
       "category_breakdown": [
         {
           "category": "Climate Change",
-          "total_score": 0.7056891601995827,
+          "total_score": 0.7058615739926862,
           "project_count": 1
         }
       ]
@@ -13830,11 +13489,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.7015217431305094,
+      "total_score": 0.7013718084820765,
       "category_breakdown": [
         {
           "category": "Renewable Energy",
-          "total_score": 0.7015217431305094,
+          "total_score": 0.7013718084820765,
           "project_count": 1
         }
       ]
@@ -13912,24 +13571,6 @@
       ]
     },
     {
-      "organization_name": "WAVI.jl Ice Sheet Model",
-      "organization_url": "https://github.com/WAVI-ice-sheet-model",
-      "organization_description": "Wavelet-based Adaptive-grid Vertically-integrated Ice-model (WAVI), is an ice sheet model written in Julia, developed at the British Antarctic Survey.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/227185268?v=4",
-      "location_country": "UK",
-      "form_of_organization": "community",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.6957873156561369,
-      "category_breakdown": [
-        {
-          "category": "Cryosphere",
-          "total_score": 0.6957873156561369,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "EcologyR",
       "organization_url": "https://github.com/EcologyR",
       "organization_description": "Collaborative development of R packages for ecology",
@@ -13938,11 +13579,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.6951587165331337,
+      "total_score": 0.6954193252705904,
       "category_breakdown": [
         {
           "category": "Emissions",
-          "total_score": 0.6951587165331337,
+          "total_score": 0.6954193252705904,
           "project_count": 1
         }
       ]
@@ -14123,24 +13764,6 @@
         {
           "category": "Renewable Energy",
           "total_score": 0.6851214738638736,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "pestpp",
-      "organization_url": "https://github.com/pestpp",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/70729312?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.6815658131480795,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 0.6815658131480795,
           "project_count": 1
         }
       ]
@@ -14429,11 +14052,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 2,
       "matched_project_count": 2,
-      "total_score": 0.6623326955951484,
+      "total_score": 0.6625051093882519,
       "category_breakdown": [
         {
           "category": "Energy Systems",
-          "total_score": 0.6623326955951484,
+          "total_score": 0.6625051093882519,
           "project_count": 2
         }
       ]
@@ -14565,11 +14188,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.6529125924310588,
+      "total_score": 0.6532177535471048,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.6529125924310588,
+          "total_score": 0.6532177535471048,
           "project_count": 1
         }
       ]
@@ -14760,6 +14383,24 @@
       ]
     },
     {
+      "organization_name": "rOpenSpain",
+      "organization_url": "https://github.com/rOpenSpain",
+      "organization_description": "rOpenSci is our form, Spanish public data our matter",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/34716267?v=4",
+      "location_country": "Spain",
+      "form_of_organization": "community",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.6412734729110181,
+      "category_breakdown": [
+        {
+          "category": "Climate Change",
+          "total_score": 0.6412734729110181,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Open Methane",
       "organization_url": "https://github.com/openmethane",
       "organization_description": "",
@@ -14778,24 +14419,6 @@
       ]
     },
     {
-      "organization_name": "rOpenSpain",
-      "organization_url": "https://github.com/rOpenSpain",
-      "organization_description": "rOpenSci is our form, Spanish public data our matter",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/34716267?v=4",
-      "location_country": "Spain",
-      "form_of_organization": "community",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.6410545321178923,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 0.6410545321178923,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Cornell Lab of Ornithology",
       "organization_url": "https://github.com/CornellLabofOrnithology",
       "organization_description": "",
@@ -14804,11 +14427,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.6377375695729955,
+      "total_score": 0.6377411038305417,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.6377375695729955,
+          "total_score": 0.6377411038305417,
           "project_count": 1
         }
       ]
@@ -15115,11 +14738,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.6191964782323749,
+      "total_score": 0.6188434131073391,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.6191964782323749,
+          "total_score": 0.6188434131073391,
           "project_count": 1
         }
       ]
@@ -15259,11 +14882,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.6104098492320378,
+      "total_score": 0.611098274245828,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.6104098492320378,
+          "total_score": 0.611098274245828,
           "project_count": 1
         }
       ]
@@ -15282,6 +14905,24 @@
         {
           "category": "Hydrosphere",
           "total_score": 0.6102551882349284,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "Scottish Government Marine Directorate",
+      "organization_url": "https://github.com/MarineScotlandScience",
+      "organization_description": "Repository for Marine Science and Data Projects",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/13151918?v=4",
+      "location_country": "UK",
+      "form_of_organization": "government agency",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.6101959010837225,
+      "category_breakdown": [
+        {
+          "category": "Renewable Energy",
+          "total_score": 0.6101959010837225,
           "project_count": 1
         }
       ]
@@ -15346,24 +14987,6 @@
       ]
     },
     {
-      "organization_name": "Scottish Government Marine Directorate",
-      "organization_url": "https://github.com/MarineScotlandScience",
-      "organization_description": "Repository for Marine Science and Data Projects",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/13151918?v=4",
-      "location_country": "UK",
-      "form_of_organization": "government agency",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.6067642237794848,
-      "category_breakdown": [
-        {
-          "category": "Renewable Energy",
-          "total_score": 0.6067642237794848,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "mapme-initiative",
       "organization_url": "https://github.com/mapme-initiative",
       "organization_description": "",
@@ -15372,11 +14995,11 @@
       "form_of_organization": "for-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.6062703040314665,
+      "total_score": 0.6074339246274428,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.6062703040314665,
+          "total_score": 0.6074339246274428,
           "project_count": 1
         }
       ]
@@ -15490,6 +15113,24 @@
       ]
     },
     {
+      "organization_name": "spatial-ews",
+      "organization_url": "https://github.com/spatial-ews",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/25773075?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.5998860187193881,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.5998860187193881,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Cambridge Sustainable Computing Lab",
       "organization_url": "https://github.com/Cambridge-Sustainable-Computing-Lab",
       "organization_description": "Cambridge Sustainable Computing Lab at the University of Cambridge, UK",
@@ -15503,24 +15144,6 @@
         {
           "category": "Consumption",
           "total_score": 0.599812857237443,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "spatial-ews",
-      "organization_url": "https://github.com/spatial-ews",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/25773075?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.5993486730878493,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.5993486730878493,
           "project_count": 1
         }
       ]
@@ -16048,6 +15671,24 @@
       ]
     },
     {
+      "organization_name": "pyregence.org",
+      "organization_url": "https://github.com/pyregence",
+      "organization_description": "EPIC: Open Fire Modeling Environment",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/61761393?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 0.563373690164566,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.563373690164566,
+          "project_count": 2
+        }
+      ]
+    },
+    {
       "organization_name": "HoloViz Topics",
       "organization_url": "https://github.com/holoviz-topics",
       "organization_description": "Domain specific topics using HoloViz tools",
@@ -16080,24 +15721,6 @@
           "category": "Hydrosphere",
           "total_score": 0.5626558726875361,
           "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "pyregence.org",
-      "organization_url": "https://github.com/pyregence",
-      "organization_description": "EPIC: Open Fire Modeling Environment",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/61761393?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 0.5612394376206995,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.5612394376206995,
-          "project_count": 2
         }
       ]
     },
@@ -16277,11 +15900,11 @@
       "form_of_organization": "non-profit",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.5501439332882645,
+      "total_score": 0.5501411202897865,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.5501439332882645,
+          "total_score": 0.5501411202897865,
           "project_count": 1
         }
       ]
@@ -16300,24 +15923,6 @@
         {
           "category": "Hydrosphere",
           "total_score": 0.5494276667307149,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "pysheds",
-      "organization_url": "https://github.com/pysheds",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/218899350?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.5492405760664768,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 0.5492405760664768,
           "project_count": 1
         }
       ]
@@ -16503,24 +16108,6 @@
       ]
     },
     {
-      "organization_name": "CycleStreets",
-      "organization_url": "https://github.com/cyclestreets",
-      "organization_description": "Cycle journey planning and tools, for cyclists, by cyclists",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/361419?v=4",
-      "location_country": "UK",
-      "form_of_organization": "non-profit",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.53741457219315,
-      "category_breakdown": [
-        {
-          "category": "Consumption",
-          "total_score": 0.53741457219315,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Climate Cooperative",
       "organization_url": "https://github.com/climate-cooperative",
       "organization_description": "Helping everyone achieve a net zero home",
@@ -16534,6 +16121,24 @@
         {
           "category": "Consumption",
           "total_score": 0.5371365962882428,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "CycleStreets",
+      "organization_url": "https://github.com/cyclestreets",
+      "organization_description": "Cycle journey planning and tools, for cyclists, by cyclists",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/361419?v=4",
+      "location_country": "UK",
+      "form_of_organization": "non-profit",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.5368091027867069,
+      "category_breakdown": [
+        {
+          "category": "Consumption",
+          "total_score": 0.5368091027867069,
           "project_count": 1
         }
       ]
@@ -16629,6 +16234,29 @@
       ]
     },
     {
+      "organization_name": "CEA-Liten",
+      "organization_url": "https://github.com/CEA-Liten",
+      "organization_description": "CEA-Liten is a R&D institute on energy efficiency and circular economy for the energy transition: solar PV, batteries, hydrogen, sustainable fuels, recycling.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/157691627?v=4",
+      "location_country": "France",
+      "form_of_organization": "government agency",
+      "listed_project_count": 2,
+      "matched_project_count": 2,
+      "total_score": 0.528322107514502,
+      "category_breakdown": [
+        {
+          "category": "Consumption",
+          "total_score": 0.3852302188116056,
+          "project_count": 1
+        },
+        {
+          "category": "Energy Systems",
+          "total_score": 0.14309188870289644,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "VIAME",
       "organization_url": "https://github.com/VIAME",
       "organization_description": "A computer vision project majorly targeting conservation efforts, but with other applications as well.",
@@ -16660,29 +16288,6 @@
         {
           "category": "Sustainable Development",
           "total_score": 0.5275914308921147,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "CEA-Liten",
-      "organization_url": "https://github.com/CEA-Liten",
-      "organization_description": "CEA-Liten is a R&D institute on energy efficiency and circular economy for the energy transition: solar PV, batteries, hydrogen, sustainable fuels, recycling.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/157691627?v=4",
-      "location_country": "France",
-      "form_of_organization": "government agency",
-      "listed_project_count": 2,
-      "matched_project_count": 2,
-      "total_score": 0.5269193448146965,
-      "category_breakdown": [
-        {
-          "category": "Consumption",
-          "total_score": 0.3852302188116056,
-          "project_count": 1
-        },
-        {
-          "category": "Energy Systems",
-          "total_score": 0.14168912600309094,
           "project_count": 1
         }
       ]
@@ -16827,6 +16432,24 @@
         {
           "category": "Industrial Ecology",
           "total_score": 0.5151197886874984,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "eigenergy group @ michigan ece",
+      "organization_url": "https://github.com/eigenergy",
+      "organization_description": "A research group coming Fall 2027 at the University of Michigan Department of Electrical Engineering and Computer Science",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/289333365?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.5150362289251463,
+      "category_breakdown": [
+        {
+          "category": "Energy Systems",
+          "total_score": 0.5150362289251463,
           "project_count": 1
         }
       ]
@@ -17066,24 +16689,6 @@
       ]
     },
     {
-      "organization_name": "eigenergy group @ michigan ece",
-      "organization_url": "https://github.com/eigenergy",
-      "organization_description": "A research group coming Fall 2027 at the University of Michigan Department of Electrical Engineering and Computer Science",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/289333365?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.49418509537517197,
-      "category_breakdown": [
-        {
-          "category": "Energy Systems",
-          "total_score": 0.49418509537517197,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "hydro-python",
       "organization_url": "https://github.com/hydro-python",
       "organization_description": "",
@@ -17138,6 +16743,24 @@
       ]
     },
     {
+      "organization_name": "eBird Status & Trends",
+      "organization_url": "https://github.com/ebird",
+      "organization_description": "Using eBird data to monitor bird populations and power research, conservation, and education.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/3780849?v=4",
+      "location_country": "USA",
+      "form_of_organization": "academia",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.4892117664415265,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.4892117664415265,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "ESA WorldCereal",
       "organization_url": "https://github.com/WorldCereal",
       "organization_description": "The WorldCereal consortium has been funded by ESA (European Space Agency) to perform global crop mapping at field scale",
@@ -17151,24 +16774,6 @@
         {
           "category": "Consumption",
           "total_score": 0.4888251207576144,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "eBird Status & Trends",
-      "organization_url": "https://github.com/ebird",
-      "organization_description": "Using eBird data to monitor bird populations and power research, conservation, and education.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/3780849?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.4885868370235394,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.4885868370235394,
           "project_count": 1
         }
       ]
@@ -17241,11 +16846,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.482603959473296,
+      "total_score": 0.4826099702223044,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.482603959473296,
+          "total_score": 0.4826099702223044,
           "project_count": 1
         }
       ]
@@ -17485,6 +17090,24 @@
       ]
     },
     {
+      "organization_name": "HyRiver",
+      "organization_url": "https://github.com/hyriver",
+      "organization_description": "A suite of Python packages that provides a unified API for retrieving geospatial/temporal data from various web services",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/109259800?v=4",
+      "location_country": "USA",
+      "form_of_organization": "community",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.46697164843822975,
+      "category_breakdown": [
+        {
+          "category": "Hydrosphere",
+          "total_score": 0.46697164843822975,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Open Energy Data Initiative",
       "organization_url": "https://github.com/openEDI",
       "organization_description": "The OEDI Data Lake is a centralized repository of high-value energy research datasets aggregated from the U.S. Department of Energy’s Programs and Offices.",
@@ -17547,11 +17170,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.4592435440515583,
+      "total_score": 0.4598184482327209,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.4592435440515583,
+          "total_score": 0.4598184482327209,
           "project_count": 1
         }
       ]
@@ -17989,24 +17612,6 @@
       ]
     },
     {
-      "organization_name": "WavX",
-      "organization_url": "https://github.com/WavX",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/27907458?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.429739472300515,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.429739472300515,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "SunPeek",
       "organization_url": "https://gitlab.com/sunpeek",
       "organization_description": "",
@@ -18020,6 +17625,24 @@
         {
           "category": "Renewable Energy",
           "total_score": 0.42955163258876633,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "WavX",
+      "organization_url": "https://github.com/WavX",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/27907458?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.429327219040293,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.429327219040293,
           "project_count": 1
         }
       ]
@@ -18213,11 +17836,11 @@
       "form_of_organization": "collaboration",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.42242318925629035,
+      "total_score": 0.4224351345769494,
       "category_breakdown": [
         {
           "category": "Consumption",
-          "total_score": 0.42242318925629035,
+          "total_score": 0.4224351345769494,
           "project_count": 1
         }
       ]
@@ -18668,11 +18291,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.3935736659909543,
+      "total_score": 0.3941560920490858,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 0.3935736659909543,
+          "total_score": 0.3941560920490858,
           "project_count": 1
         }
       ]
@@ -18966,6 +18589,24 @@
       ]
     },
     {
+      "organization_name": "Meteostat",
+      "organization_url": "https://github.com/meteostat",
+      "organization_description": "The Weather's Record Keeper",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/29773680?v=4",
+      "location_country": "Canada",
+      "form_of_organization": "community",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.3756642141755176,
+      "category_breakdown": [
+        {
+          "category": "Atmosphere",
+          "total_score": 0.3756642141755176,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "REEF3D",
       "organization_url": "https://github.com/REEF3D",
       "organization_description": "REEF3D : Open-Source Hydrodynamics",
@@ -19115,6 +18756,24 @@
       ]
     },
     {
+      "organization_name": "Eco-Hydrological Researches in China University of Geosciences (Wuhan)",
+      "organization_url": "https://github.com/eco-hydro",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/86526225?v=4",
+      "location_country": "China",
+      "form_of_organization": "community",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.36922277547941984,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.36922277547941984,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "RES Group",
       "organization_url": "https://github.com/resgroup",
       "organization_description": "Renewable Energy Systems",
@@ -19133,24 +18792,6 @@
       ]
     },
     {
-      "organization_name": "Eco-Hydrological Researches in China University of Geosciences (Wuhan)",
-      "organization_url": "https://github.com/eco-hydro",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/86526225?v=4",
-      "location_country": "China",
-      "form_of_organization": "community",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.3688147189416631,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.3688147189416631,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Brown and Caldwell - Public",
       "organization_url": "https://github.com/BrownandCaldwell-Public",
       "organization_description": "",
@@ -19159,11 +18800,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.3682908279676112,
+      "total_score": 0.3678807086148252,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 0.3682908279676112,
+          "total_score": 0.3678807086148252,
           "project_count": 1
         }
       ]
@@ -19295,24 +18936,6 @@
       ]
     },
     {
-      "organization_name": "NCU CryoSensing Team",
-      "organization_url": "https://github.com/ncu-cryosensing",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/203055798?v=4",
-      "location_country": "Taiwan",
-      "form_of_organization": "government agency",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.36098357081099286,
-      "category_breakdown": [
-        {
-          "category": "Cryosphere",
-          "total_score": 0.36098357081099286,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "CRiSp",
       "organization_url": "https://github.com/CityRiverSpaces",
       "organization_description": "Tools for urban river space analysis",
@@ -19321,11 +18944,11 @@
       "form_of_organization": "community",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.3602439949147591,
+      "total_score": 0.36117094042073566,
       "category_breakdown": [
         {
           "category": "Hydrosphere",
-          "total_score": 0.3602439949147591,
+          "total_score": 0.36117094042073566,
           "project_count": 1
         }
       ]
@@ -19699,11 +19322,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.3363521333216753,
+      "total_score": 0.33618597513417986,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.3363521333216753,
+          "total_score": 0.33618597513417986,
           "project_count": 1
         }
       ]
@@ -19781,24 +19404,6 @@
         {
           "category": "Atmosphere",
           "total_score": 0.3329783381311894,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "tRIBS Distributed Hydrologic Modeling System",
-      "organization_url": "https://github.com/tRIBS-Model",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/69878127?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.33189237547107225,
-      "category_breakdown": [
-        {
-          "category": "Hydrosphere",
-          "total_score": 0.33189237547107225,
           "project_count": 1
         }
       ]
@@ -19920,11 +19525,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.3195882029990696,
+      "total_score": 0.3203877131447273,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.3195882029990696,
+          "total_score": 0.3203877131447273,
           "project_count": 1
         }
       ]
@@ -20010,11 +19615,11 @@
       "form_of_organization": "academia",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.31433103595934414,
+      "total_score": 0.31427959597954225,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 0.31433103595934414,
+          "total_score": 0.31427959597954225,
           "project_count": 1
         }
       ]
@@ -20524,6 +20129,24 @@
       ]
     },
     {
+      "organization_name": "Sam Passmore",
+      "organization_url": "https://github.com/Sam-r-passmore",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/332891764?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.28641841085429554,
+      "category_breakdown": [
+        {
+          "category": "Sustainable Development",
+          "total_score": 0.28641841085429554,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "Prospect Energy",
       "organization_url": "https://gitlab.com/prospect-energy",
       "organization_description": "",
@@ -20573,6 +20196,24 @@
         {
           "category": "Consumption",
           "total_score": 0.2809681445991893,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "EarthSystemDiagnostics",
+      "organization_url": "https://github.com/EarthSystemDiagnostics",
+      "organization_description": "Code respository for the Earth System Diagnostics research team including the SPACE ERC Starting grant project",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/45169479?v=4",
+      "location_country": "Germany",
+      "form_of_organization": "academia",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.2802245597352393,
+      "category_breakdown": [
+        {
+          "category": "Climate Change",
+          "total_score": 0.2802245597352393,
           "project_count": 1
         }
       ]
@@ -20668,24 +20309,6 @@
       ]
     },
     {
-      "organization_name": "EarthSystemDiagnostics",
-      "organization_url": "https://github.com/EarthSystemDiagnostics",
-      "organization_description": "Code respository for the Earth System Diagnostics research team including the SPACE ERC Starting grant project",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/45169479?v=4",
-      "location_country": "Germany",
-      "form_of_organization": "academia",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.27808789272854745,
-      "category_breakdown": [
-        {
-          "category": "Climate Change",
-          "total_score": 0.27808789272854745,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Assessing Solar",
       "organization_url": "https://github.com/AssessingSolar",
       "organization_description": "",
@@ -20748,11 +20371,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.2740314157742322,
+      "total_score": 0.2754065040304745,
       "category_breakdown": [
         {
           "category": "Biosphere",
-          "total_score": 0.2740314157742322,
+          "total_score": 0.2754065040304745,
           "project_count": 1
         }
       ]
@@ -20874,11 +20497,11 @@
       "form_of_organization": "",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.2683285549946008,
+      "total_score": 0.26814922468266833,
       "category_breakdown": [
         {
           "category": "Hydrosphere",
-          "total_score": 0.2683285549946008,
+          "total_score": 0.26814922468266833,
           "project_count": 1
         }
       ]
@@ -20928,11 +20551,11 @@
       "form_of_organization": "government agency",
       "listed_project_count": 1,
       "matched_project_count": 1,
-      "total_score": 0.2659562379472038,
+      "total_score": 0.2661171296067842,
       "category_breakdown": [
         {
           "category": "Natural Resources",
-          "total_score": 0.2659562379472038,
+          "total_score": 0.2661171296067842,
           "project_count": 1
         }
       ]
@@ -22532,6 +22155,24 @@
       ]
     },
     {
+      "organization_name": "DigitalPebble Ltd",
+      "organization_url": "https://github.com/DigitalPebble",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/1726647?v=4",
+      "location_country": "UK",
+      "form_of_organization": "non-profit",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.19320028598481112,
+      "category_breakdown": [
+        {
+          "category": "Consumption",
+          "total_score": 0.19320028598481112,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "earthtoolsmaker",
       "organization_url": "https://github.com/earthtoolsmaker",
       "organization_description": "Open tools for the people protecting nature",
@@ -22545,24 +22186,6 @@
         {
           "category": "Biosphere",
           "total_score": 0.19199335094717687,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "DigitalPebble Ltd",
-      "organization_url": "https://github.com/DigitalPebble",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/1726647?v=4",
-      "location_country": "UK",
-      "form_of_organization": "non-profit",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.19172694123884074,
-      "category_breakdown": [
-        {
-          "category": "Consumption",
-          "total_score": 0.19172694123884074,
           "project_count": 1
         }
       ]
@@ -22712,6 +22335,24 @@
       ]
     },
     {
+      "organization_name": "Deadwood-ai",
+      "organization_url": "https://github.com/Deadwood-ai",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/158443411?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.18578212257116541,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.18578212257116541,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "openmeteo",
       "organization_url": "https://github.com/openmeteo",
       "organization_description": "",
@@ -22815,24 +22456,6 @@
         {
           "category": "Energy Storage",
           "total_score": 0.18199421188744044,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Deadwood-ai",
-      "organization_url": "https://github.com/Deadwood-ai",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/158443411?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.1817288429158585,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.1817288429158585,
           "project_count": 1
         }
       ]
@@ -23288,6 +22911,24 @@
       ]
     },
     {
+      "organization_name": "GeoPressure",
+      "organization_url": "https://github.com/GeoPressure",
+      "organization_description": "Open tools and standards for birds movement using multi-sensor geolocators",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/269720653?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.162616432846374,
+      "category_breakdown": [
+        {
+          "category": "Biosphere",
+          "total_score": 0.162616432846374,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "CanAirIO",
       "organization_url": "https://github.com/kike-canaries",
       "organization_description": "CanAirIO is a citizen science initiative for air quality tracking, visualization and dissemination",
@@ -23342,24 +22983,6 @@
       ]
     },
     {
-      "organization_name": "simsphere",
-      "organization_url": "https://github.com/simsphere",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/77640077?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.1604484566867477,
-      "category_breakdown": [
-        {
-          "category": "Natural Resources",
-          "total_score": 0.1604484566867477,
-          "project_count": 1
-        }
-      ]
-    },
-    {
       "organization_name": "Field Boundaries for Agriculture (fiboa)",
       "organization_url": "https://github.com/fiboa",
       "organization_description": "An ecosystem of data schema specifications, tools and data for more interoperability between field boundaries and related agriculture & other data",
@@ -23409,24 +23032,6 @@
         {
           "category": "Biosphere",
           "total_score": 0.15928966296670896,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "GeoPressure",
-      "organization_url": "https://github.com/GeoPressure",
-      "organization_description": "Open tools and standards for birds movement using multi-sensor geolocators",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/269720653?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.15917573542994526,
-      "category_breakdown": [
-        {
-          "category": "Biosphere",
-          "total_score": 0.15917573542994526,
           "project_count": 1
         }
       ]
@@ -23733,6 +23338,24 @@
         {
           "category": "Atmosphere",
           "total_score": 0.1489277970572471,
+          "project_count": 1
+        }
+      ]
+    },
+    {
+      "organization_name": "Parcels",
+      "organization_url": "https://github.com/Parcels-code",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/14887518?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.14760182559708215,
+      "category_breakdown": [
+        {
+          "category": "Industrial Ecology",
+          "total_score": 0.14760182559708215,
           "project_count": 1
         }
       ]
@@ -24458,6 +24081,24 @@
       ]
     },
     {
+      "organization_name": "EMODnet",
+      "organization_url": "https://github.com/EMODnet",
+      "organization_description": "Your gateway to marine data in Europe",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/30047227?v=4",
+      "location_country": "EU",
+      "form_of_organization": "government agency",
+      "listed_project_count": 1,
+      "matched_project_count": 1,
+      "total_score": 0.10885199132216142,
+      "category_breakdown": [
+        {
+          "category": "Sustainable Development",
+          "total_score": 0.10885199132216142,
+          "project_count": 1
+        }
+      ]
+    },
+    {
       "organization_name": "KfW Bankengruppe",
       "organization_url": "https://github.com/openkfw",
       "organization_description": "This is the repository for KfW open source projects",
@@ -25083,24 +24724,6 @@
         {
           "category": "Energy Systems",
           "total_score": 0.06822842746183069,
-          "project_count": 1
-        }
-      ]
-    },
-    {
-      "organization_name": "Sam Passmore",
-      "organization_url": "https://github.com/Sam-r-passmore",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/332891764?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "listed_project_count": 1,
-      "matched_project_count": 1,
-      "total_score": 0.0646710877418093,
-      "category_breakdown": [
-        {
-          "category": "Sustainable Development",
-          "total_score": 0.0646710877418093,
           "project_count": 1
         }
       ]
