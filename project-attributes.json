@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-10-15T09:42:15.339856+00:00",
+  "generated_at": "2026-10-16T09:36:03.371032+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1628
+      "count": 1630
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 1202
+      "count": 1203
     }
   ],
   "fields": {
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2262
+        "count": 2265
       },
       {
         "label": "True",
@@ -29,11 +29,11 @@
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1826
+        "count": 1828
       },
       {
         "label": "True",
-        "count": 920
+        "count": 921
       },
       {
         "label": "Unknown",
@@ -43,7 +43,7 @@
     "license": [
       {
         "label": "mit",
-        "count": 733
+        "count": 735
       },
       {
         "label": "other",
@@ -78,12 +78,12 @@
         "count": 38
       },
       {
-        "label": "cc-by-4.0",
+        "label": "cc0-1.0",
         "count": 38
       },
       {
-        "label": "cc0-1.0",
-        "count": 37
+        "label": "cc-by-4.0",
+        "count": 38
       },
       {
         "label": "mpl-2.0",
@@ -149,7 +149,7 @@
       },
       {
         "label": "Jupyter Notebook",
-        "count": 317
+        "count": 318
       },
       {
         "label": "Unknown",
@@ -165,7 +165,7 @@
       },
       {
         "label": "Fortran",
-        "count": 95
+        "count": 96
       },
       {
         "label": "TypeScript",
@@ -177,7 +177,7 @@
       },
       {
         "label": "Julia",
-        "count": 81
+        "count": 82
       },
       {
         "label": "Java",
@@ -415,15 +415,15 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7132
+        "count": 7152
       },
       {
         "label": "pypi",
-        "count": 3225
+        "count": 3232
       },
       {
         "label": "Unknown",
-        "count": 2830
+        "count": 2833
       },
       {
         "label": "docker",
@@ -431,11 +431,11 @@
       },
       {
         "label": "npm",
-        "count": 1504
+        "count": 1502
       },
       {
         "label": "maven",
-        "count": 695
+        "count": 696
       },
       {
         "label": "cran",
@@ -443,7 +443,7 @@
       },
       {
         "label": "conda",
-        "count": 357
+        "count": 359
       },
       {
         "label": "nuget",
@@ -541,7 +541,7 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2676
+        "count": 2679
       },
       {
         "label": "Unknown",

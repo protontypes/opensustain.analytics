@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-15T09:42:15.339856+00:00",
+  "generated_at": "2026-10-16T09:36:03.371032+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
       "country_name": "United States",
       "map_eligible": true,
       "organization_count": 355,
-      "total_projects": 620
+      "total_projects": 621
     },
     {
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 306,
-      "total_projects": 431
+      "organization_count": 307,
+      "total_projects": 433
     },
     {
       "iso_alpha": "DEU",
@@ -26,8 +26,8 @@
       "iso_alpha": "GBR",
       "country_name": "United Kingdom",
       "map_eligible": true,
-      "organization_count": 61,
-      "total_projects": 97
+      "organization_count": 62,
+      "total_projects": 98
     },
     {
       "iso_alpha": "FRA",
@@ -289,6 +289,13 @@
       "total_projects": 1
     },
     {
+      "iso_alpha": "TWN",
+      "country_name": "Taiwan",
+      "map_eligible": true,
+      "organization_count": 1,
+      "total_projects": 1
+    },
+    {
       "iso_alpha": "UGA",
       "country_name": "Uganda",
       "map_eligible": true,
@@ -303,11 +310,11 @@
     },
     {
       "continent": "Europe",
-      "count": 393
+      "count": 394
     },
     {
       "continent": "Global",
-      "count": 306
+      "count": 307
     },
     {
       "continent": "Oceania",
@@ -315,7 +322,7 @@
     },
     {
       "continent": "Asia",
-      "count": 19
+      "count": 20
     },
     {
       "continent": "Africa",
@@ -325,7 +332,7 @@
   "organization_type_counts": [
     {
       "form_of_organization": "community",
-      "count": 300
+      "count": 301
     },
     {
       "form_of_organization": "academia",
@@ -333,15 +340,15 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 221
+      "count": 220
     },
     {
       "form_of_organization": "government agency",
-      "count": 194
+      "count": 195
     },
     {
       "form_of_organization": "for-profit",
-      "count": 143
+      "count": 144
     },
     {
       "form_of_organization": "non-profit",
@@ -408,21 +415,21 @@
       "total_listed_projects_in_organization": 15
     },
     {
-      "organization_name": "Climate Modeling Alliance",
-      "organization_url": "https://github.com/CliMA",
-      "organization_description": "The next generation of climate models. Built in the open.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/43161188?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 12
-    },
-    {
       "organization_name": "U.S. Geological Survey",
       "organization_url": "https://github.com/DOI-USGS",
       "organization_description": "By integrating our diverse scientific expertise, we understand complex natural science phenomena and provide scientific products that lead to solutions.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
       "location_country": "USA",
       "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 13
+    },
+    {
+      "organization_name": "Climate Modeling Alliance",
+      "organization_url": "https://github.com/CliMA",
+      "organization_description": "The next generation of climate models. Built in the open.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/43161188?v=4",
+      "location_country": "USA",
+      "form_of_organization": "academia",
       "total_listed_projects_in_organization": 12
     },
     {
@@ -2398,11 +2405,11 @@
     },
     {
       "organization_name": "Natural Solutions",
-      "organization_url": "https://gitlab.com/natural-solutions",
-      "organization_description": "# NATURAL SOLUTIONS Biodiversity data and software\r\n\r\nMarseille\r\n[https://natural-solutions.world](https://natural-solutions.world)\r\n[@Nat_Solutions](https://twitter.com/Nat_Solutions)",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7726340/NS_interne.png",
-      "location_country": "",
-      "form_of_organization": "",
+      "organization_url": "https://github.com/naturalsolutions",
+      "organization_description": "Biodiversity data and software",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/2242739?v=4",
+      "location_country": "Global",
+      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -7725,6 +7732,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "NCU CryoSensing Team",
+      "organization_url": "https://github.com/ncu-cryosensing",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/203055798?v=4",
+      "location_country": "Taiwan",
+      "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "NCX",
       "organization_url": "https://github.com/ncx-co",
       "organization_description": "Discover the true value of your land.",
@@ -10818,6 +10834,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/101812219?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "WAVI.jl Ice Sheet Model",
+      "organization_url": "https://github.com/WAVI-ice-sheet-model",
+      "organization_description": "Wavelet-based Adaptive-grid Vertically-integrated Ice-model (WAVI), is an ice sheet model written in Julia, developed at the British Antarctic Survey.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/227185268?v=4",
+      "location_country": "UK",
+      "form_of_organization": "community",
       "total_listed_projects_in_organization": 1
     },
     {

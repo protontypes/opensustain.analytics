@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T09:42:15.339856+00:00",
+  "generated_at": "2026-10-16T09:36:03.371032+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -6277,9 +6277,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://gitlab.com/natural-solutions",
-          "location_country": "",
-          "form_of_organization": ""
+          "organization_url": "https://github.com/naturalsolutions",
+          "location_country": "Global",
+          "form_of_organization": "for-profit"
         },
         {
           "organization_name": "OBIS",
@@ -6514,6 +6514,150 @@
           "organization_url": "https://github.com/protontypes",
           "location_country": "Germany",
           "form_of_organization": "community"
+        }
+      ]
+    },
+    {
+      "sub_category": "Glacier and Ice Sheets",
+      "organization_count": 23,
+      "organizations": [
+        {
+          "organization_name": "CICE Consortium",
+          "organization_url": "https://github.com/CICE-Consortium",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "CryoTools",
+          "organization_url": "https://github.com/cryotools",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Cryologger",
+          "organization_url": "https://github.com/cryologger",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
+          "organization_url": "https://github.com/ECCO-GROUP",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "GEUS Glaciology and Climate",
+          "organization_url": "https://github.com/GEUS-Glaciology-and-Climate",
+          "location_country": "Denmark",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Ice-sheet and Sea-level System Model (ISSM)",
+          "organization_url": "https://github.com/ISSMteam",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Land Ice Verification and Validation toolkit",
+          "organization_url": "https://github.com/LIVVkit",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NASA Jet Propulsion Laboratory",
+          "organization_url": "https://github.com/nasa-jpl",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NCU CryoSensing Team",
+          "organization_url": "https://github.com/ncu-cryosensing",
+          "location_country": "Taiwan",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NOAA - Geophysical Fluid Dynamics Laboratory",
+          "organization_url": "https://github.com/NOAA-GFDL",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "National Snow and Ice Data Center",
+          "organization_url": "https://github.com/nsidc",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "ODINN",
+          "organization_url": "https://github.com/ODINN-SciML",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Open Global Glacier Model",
+          "organization_url": "https://github.com/OGGM",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "PalMA Ice sheet modeling group",
+          "organization_url": "https://github.com/palma-ice",
+          "location_country": "Spain",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Parallel Ice Sheet Model",
+          "organization_url": "https://github.com/pism",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "PyGEM-Community",
+          "organization_url": "https://github.com/PyGEM-Community",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "SICE",
+          "organization_url": "https://github.com/GEUS-SICE",
+          "location_country": "Denmark",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Sandia National Laboratories",
+          "organization_url": "https://github.com/sandialabs",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "StratusGeo: Accelerating discovery for geoscience communities",
+          "organization_url": "https://github.com/CryoInTheCloud",
+          "location_country": "Netherlands",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "WAVI.jl Ice Sheet Model",
+          "organization_url": "https://github.com/WAVI-ice-sheet-model",
+          "location_country": "UK",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "icepack",
+          "organization_url": "https://github.com/icepack",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "icesat2py",
+          "organization_url": "https://github.com/icesat2py",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "wgms",
+          "organization_url": "https://gitlab.com/wgms",
+          "location_country": "Switzerland",
+          "form_of_organization": "collaboration"
         }
       ]
     },
@@ -6916,138 +7060,6 @@
           "organization_url": "https://github.com/wimlds-trojmiasto",
           "location_country": "Global",
           "form_of_organization": "for-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Glacier and Ice Sheets",
-      "organization_count": 21,
-      "organizations": [
-        {
-          "organization_name": "CICE Consortium",
-          "organization_url": "https://github.com/CICE-Consortium",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "CryoTools",
-          "organization_url": "https://github.com/cryotools",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Cryologger",
-          "organization_url": "https://github.com/cryologger",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
-          "organization_url": "https://github.com/ECCO-GROUP",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "GEUS Glaciology and Climate",
-          "organization_url": "https://github.com/GEUS-Glaciology-and-Climate",
-          "location_country": "Denmark",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Ice-sheet and Sea-level System Model (ISSM)",
-          "organization_url": "https://github.com/ISSMteam",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Land Ice Verification and Validation toolkit",
-          "organization_url": "https://github.com/LIVVkit",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "NASA Jet Propulsion Laboratory",
-          "organization_url": "https://github.com/nasa-jpl",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "NOAA - Geophysical Fluid Dynamics Laboratory",
-          "organization_url": "https://github.com/NOAA-GFDL",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "National Snow and Ice Data Center",
-          "organization_url": "https://github.com/nsidc",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "ODINN",
-          "organization_url": "https://github.com/ODINN-SciML",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Open Global Glacier Model",
-          "organization_url": "https://github.com/OGGM",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "PalMA Ice sheet modeling group",
-          "organization_url": "https://github.com/palma-ice",
-          "location_country": "Spain",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Parallel Ice Sheet Model",
-          "organization_url": "https://github.com/pism",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "PyGEM-Community",
-          "organization_url": "https://github.com/PyGEM-Community",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "SICE",
-          "organization_url": "https://github.com/GEUS-SICE",
-          "location_country": "Denmark",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Sandia National Laboratories",
-          "organization_url": "https://github.com/sandialabs",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "StratusGeo: Accelerating discovery for geoscience communities",
-          "organization_url": "https://github.com/CryoInTheCloud",
-          "location_country": "Netherlands",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "icepack",
-          "organization_url": "https://github.com/icepack",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "icesat2py",
-          "organization_url": "https://github.com/icesat2py",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "wgms",
-          "organization_url": "https://gitlab.com/wgms",
-          "location_country": "Switzerland",
-          "form_of_organization": "collaboration"
         }
       ]
     },
@@ -7591,9 +7603,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://gitlab.com/natural-solutions",
-          "location_country": "",
-          "form_of_organization": ""
+          "organization_url": "https://github.com/naturalsolutions",
+          "location_country": "Global",
+          "form_of_organization": "for-profit"
         },
         {
           "organization_name": "PADAS",
@@ -17438,7 +17450,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/natural-solutions"
+            "url": "https://github.com/naturalsolutions"
           },
           {
             "name": "OBIS",
@@ -17674,6 +17686,151 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/protontypes"
+          }
+        ]
+      },
+      {
+        "name": "Glacier and Ice Sheets",
+        "kind": "sub_category",
+        "value": 23,
+        "children": [
+          {
+            "name": "CICE Consortium",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/CICE-Consortium"
+          },
+          {
+            "name": "CryoTools",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/cryotools"
+          },
+          {
+            "name": "Cryologger",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/cryologger"
+          },
+          {
+            "name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ECCO-GROUP"
+          },
+          {
+            "name": "GEUS Glaciology and Climate",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/GEUS-Glaciology-and-Climate"
+          },
+          {
+            "name": "Ice-sheet and Sea-level System Model (ISSM)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ISSMteam"
+          },
+          {
+            "name": "Land Ice Verification and Validation toolkit",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/LIVVkit"
+          },
+          {
+            "name": "NASA Jet Propulsion Laboratory",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/nasa-jpl"
+          },
+          {
+            "name": "NCU CryoSensing Team",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ncu-cryosensing"
+          },
+          {
+            "name": "NOAA - Geophysical Fluid Dynamics Laboratory",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NOAA-GFDL"
+          },
+          {
+            "name": "National Snow and Ice Data Center",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/nsidc"
+          },
+          {
+            "name": "ODINN",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ODINN-SciML"
+          },
+          {
+            "name": "Open Global Glacier Model",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OGGM"
+          },
+          {
+            "name": "PalMA Ice sheet modeling group",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/palma-ice"
+          },
+          {
+            "name": "Parallel Ice Sheet Model",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pism"
+          },
+          {
+            "name": "PyGEM-Community",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PyGEM-Community"
+          },
+          {
+            "name": "SICE",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/GEUS-SICE"
+          },
+          {
+            "name": "Sandia National Laboratories",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/sandialabs"
+          },
+          {
+            "name": "StratusGeo: Accelerating discovery for geoscience communities",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/CryoInTheCloud"
+          },
+          {
+            "name": "WAVI.jl Ice Sheet Model",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WAVI-ice-sheet-model"
+          },
+          {
+            "name": "icepack",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/icepack"
+          },
+          {
+            "name": "icesat2py",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/icesat2py"
+          },
+          {
+            "name": "wgms",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/wgms"
           }
         ]
       },
@@ -18079,139 +18236,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/wimlds-trojmiasto"
-          }
-        ]
-      },
-      {
-        "name": "Glacier and Ice Sheets",
-        "kind": "sub_category",
-        "value": 21,
-        "children": [
-          {
-            "name": "CICE Consortium",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/CICE-Consortium"
-          },
-          {
-            "name": "CryoTools",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/cryotools"
-          },
-          {
-            "name": "Cryologger",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/cryologger"
-          },
-          {
-            "name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ECCO-GROUP"
-          },
-          {
-            "name": "GEUS Glaciology and Climate",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/GEUS-Glaciology-and-Climate"
-          },
-          {
-            "name": "Ice-sheet and Sea-level System Model (ISSM)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ISSMteam"
-          },
-          {
-            "name": "Land Ice Verification and Validation toolkit",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/LIVVkit"
-          },
-          {
-            "name": "NASA Jet Propulsion Laboratory",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/nasa-jpl"
-          },
-          {
-            "name": "NOAA - Geophysical Fluid Dynamics Laboratory",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NOAA-GFDL"
-          },
-          {
-            "name": "National Snow and Ice Data Center",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/nsidc"
-          },
-          {
-            "name": "ODINN",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ODINN-SciML"
-          },
-          {
-            "name": "Open Global Glacier Model",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OGGM"
-          },
-          {
-            "name": "PalMA Ice sheet modeling group",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/palma-ice"
-          },
-          {
-            "name": "Parallel Ice Sheet Model",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/pism"
-          },
-          {
-            "name": "PyGEM-Community",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PyGEM-Community"
-          },
-          {
-            "name": "SICE",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/GEUS-SICE"
-          },
-          {
-            "name": "Sandia National Laboratories",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/sandialabs"
-          },
-          {
-            "name": "StratusGeo: Accelerating discovery for geoscience communities",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/CryoInTheCloud"
-          },
-          {
-            "name": "icepack",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/icepack"
-          },
-          {
-            "name": "icesat2py",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/icesat2py"
-          },
-          {
-            "name": "wgms",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://gitlab.com/wgms"
           }
         ]
       },
@@ -18762,7 +18786,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/natural-solutions"
+            "url": "https://github.com/naturalsolutions"
           },
           {
             "name": "PADAS",
