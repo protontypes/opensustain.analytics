@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-16T09:36:03.371032+00:00",
+  "generated_at": "2026-10-17T09:07:00.128251+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1630
+      "count": 1631
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 1203
+      "count": 1204
     }
   ],
   "fields": {
@@ -23,7 +23,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 86
       }
     ],
     "contributing_guide": [
@@ -37,7 +37,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 86
       }
     ],
     "license": [
@@ -59,7 +59,7 @@
       },
       {
         "label": "Unknown",
-        "count": 326
+        "count": 328
       },
       {
         "label": "bsd-3-clause",
@@ -153,7 +153,7 @@
       },
       {
         "label": "Unknown",
-        "count": 233
+        "count": 235
       },
       {
         "label": "C++",
@@ -415,19 +415,19 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7152
+        "count": 7151
       },
       {
         "label": "pypi",
-        "count": 3232
+        "count": 3230
       },
       {
         "label": "Unknown",
-        "count": 2833
+        "count": 2835
       },
       {
         "label": "docker",
-        "count": 1506
+        "count": 1507
       },
       {
         "label": "npm",
@@ -439,7 +439,7 @@
       },
       {
         "label": "cran",
-        "count": 485
+        "count": 486
       },
       {
         "label": "conda",
@@ -451,7 +451,7 @@
       },
       {
         "label": "julia",
-        "count": 316
+        "count": 319
       },
       {
         "label": "cargo",
@@ -545,7 +545,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 86
       },
       {
         "label": "gitlab.com",
