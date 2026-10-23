@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:49:09.690461+00:00",
+  "generated_at": "2026-10-23T02:51:05.715756+00:00",
   "default_metric": "total_score_combined",
   "metric_labels": {
     "score": "Ecosyste.ms Score",
@@ -40188,7 +40188,7 @@
                 "description": "Reliability Test System of the Grid Modernization Lab Consortium.",
                 "category": "Energy Systems",
                 "sub_category": "Grid Analysis and Planning",
-                "is_active_last_365d": true,
+                "is_active_last_365d": false,
                 "latest_commit_activity": "2025-10-23T02:49:18+00:00",
                 "metrics": {
                   "contributors": 29.0,

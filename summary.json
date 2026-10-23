@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T02:49:09.690461+00:00",
-  "as_of": "2026-10-23T02:49:09.690406+00:00",
+  "generated_at": "2026-10-23T02:51:05.715756+00:00",
+  "as_of": "2026-10-23T02:51:05.715700+00:00",
   "totals": {
     "projects": 2835,
-    "active_projects": 1669,
+    "active_projects": 1668,
     "organizations": 1383,
     "contributors": 45992
   },

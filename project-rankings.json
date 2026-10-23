@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:49:09.690461+00:00",
+  "generated_at": "2026-10-23T02:51:05.715756+00:00",
   "default_metric": "total_score_combined",
   "default_top_n": 50,
   "metric_labels": {
@@ -18300,7 +18300,7 @@
       "category": "Energy Systems",
       "sub_category": "Grid Analysis and Planning",
       "latest_commit_activity": "2025-10-23T02:49:18+00:00",
-      "is_active_last_365d": true,
+      "is_active_last_365d": false,
       "contributors": 29.0,
       "citations": 0,
       "total_commits": 449.0,
