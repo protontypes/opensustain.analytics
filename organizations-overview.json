@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-24T09:22:28.446163+00:00",
+  "generated_at": "2026-10-25T09:40:02.772985+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
       "country_name": "United States",
       "map_eligible": true,
       "organization_count": 349,
-      "total_projects": 606
+      "total_projects": 608
     },
     {
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 301,
-      "total_projects": 419
+      "organization_count": 302,
+      "total_projects": 420
     },
     {
       "iso_alpha": "DEU",
@@ -307,7 +307,7 @@
     },
     {
       "continent": "Global",
-      "count": 301
+      "count": 302
     },
     {
       "continent": "Oceania",
@@ -329,7 +329,7 @@
     },
     {
       "form_of_organization": "academia",
-      "count": 277
+      "count": 278
     },
     {
       "form_of_organization": "unknown",
@@ -453,6 +453,15 @@
       "total_listed_projects_in_organization": 9
     },
     {
+      "organization_name": "Microsoft",
+      "organization_url": "https://github.com/microsoft",
+      "organization_description": "Open source projects and samples from Microsoft",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
+      "location_country": "USA",
+      "form_of_organization": "for-profit",
+      "total_listed_projects_in_organization": 9
+    },
+    {
       "organization_name": "Open Energy Transition",
       "organization_url": "https://github.com/open-energy-transition",
       "organization_description": "Non-profit that accelerates the energy transition with open data and open source software solutions.",
@@ -495,15 +504,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/8431983?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 8
-    },
-    {
-      "organization_name": "Microsoft",
-      "organization_url": "https://github.com/microsoft",
-      "organization_description": "Open source projects and samples from Microsoft",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
-      "location_country": "USA",
-      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 8
     },
     {
@@ -2176,6 +2176,15 @@
       "organization_url": "https://github.com/leap-stc",
       "organization_description": "Learning the Earth with AI and Physics",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/90631797?v=4",
+      "location_country": "USA",
+      "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "Landscape Science & Technology, Environment & Climate Change Canada",
+      "organization_url": "https://github.com/LandSciTech",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/41919529?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
       "total_listed_projects_in_organization": 2
@@ -5682,6 +5691,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "FireCaster Codes",
+      "organization_url": "https://github.com/forefireAPI",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/6805132?v=4",
+      "location_country": "Global",
+      "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "FixMyCity",
       "organization_url": "https://github.com/FixMyBerlin",
       "organization_description": "Digitale Plattform für die Radverkehrsplanung",
@@ -7074,15 +7092,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/69624981?v=4",
       "location_country": "Czech Republic",
       "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "Landscape Science & Technology, Environment & Climate Change Canada",
-      "organization_url": "https://github.com/LandSciTech",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/41919529?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
       "total_listed_projects_in_organization": 1
     },
     {
