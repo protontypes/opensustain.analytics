@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T09:40:02.772985+00:00",
+  "generated_at": "2026-10-26T10:52:57.699175+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -26,8 +26,8 @@
       "iso_alpha": "GBR",
       "country_name": "United Kingdom",
       "map_eligible": true,
-      "organization_count": 59,
-      "total_projects": 93
+      "organization_count": 60,
+      "total_projects": 94
     },
     {
       "iso_alpha": "FRA",
@@ -289,6 +289,13 @@
       "total_projects": 1
     },
     {
+      "iso_alpha": "TWN",
+      "country_name": "Taiwan",
+      "map_eligible": true,
+      "organization_count": 1,
+      "total_projects": 1
+    },
+    {
       "iso_alpha": "UGA",
       "country_name": "Uganda",
       "map_eligible": true,
@@ -303,7 +310,7 @@
     },
     {
       "continent": "Europe",
-      "count": 390
+      "count": 391
     },
     {
       "continent": "Global",
@@ -315,7 +322,7 @@
     },
     {
       "continent": "Asia",
-      "count": 19
+      "count": 20
     },
     {
       "continent": "Africa",
@@ -325,7 +332,7 @@
   "organization_type_counts": [
     {
       "form_of_organization": "community",
-      "count": 295
+      "count": 296
     },
     {
       "form_of_organization": "academia",
@@ -337,7 +344,7 @@
     },
     {
       "form_of_organization": "government agency",
-      "count": 191
+      "count": 192
     },
     {
       "form_of_organization": "for-profit",
@@ -1606,9 +1613,9 @@
     },
     {
       "organization_name": "BONSAI",
-      "organization_url": "https://gitlab.com/bonsamurais",
-      "organization_description": "",
-      "organization_icon_url": "",
+      "organization_url": "https://github.com/BONSAMURAIS",
+      "organization_description": "An organisation dedicated to create and maintain a truly global Open Source Database for product footprinting",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/25032243?v=4",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 2
@@ -3392,6 +3399,15 @@
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/40797821?v=4",
       "location_country": "France",
+      "form_of_organization": "for-profit",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Apostra",
+      "organization_url": "https://github.com/scope3data",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/97109212?v=4",
+      "location_country": "USA",
       "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 1
     },
@@ -7590,6 +7606,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "NCU CryoSensing Team",
+      "organization_url": "https://github.com/ncu-cryosensing",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/203055798?v=4",
+      "location_country": "Taiwan",
+      "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "NCX",
       "organization_url": "https://github.com/ncx-co",
       "organization_description": "Discover the true value of your land.",
@@ -9462,15 +9487,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "Scope3",
-      "organization_url": "https://github.com/scope3data",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/97109212?v=4",
-      "location_country": "USA",
-      "form_of_organization": "for-profit",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "Scott Logic Ltd",
       "organization_url": "https://github.com/ScottLogic",
       "organization_description": "All together smarter",
@@ -10683,6 +10699,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/101812219?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "WAVI.jl Ice Sheet Model",
+      "organization_url": "https://github.com/WAVI-ice-sheet-model",
+      "organization_description": "Wavelet-based Adaptive-grid Vertically-integrated Ice-model (WAVI), is an ice sheet model written in Julia, developed at the British Antarctic Survey.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/227185268?v=4",
+      "location_country": "UK",
+      "form_of_organization": "community",
       "total_listed_projects_in_organization": 1
     },
     {

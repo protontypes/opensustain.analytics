@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-10-25T09:40:02.772985+00:00",
+  "generated_at": "2026-10-26T10:52:57.699175+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1954
+      "count": 1956
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 849
+      "count": 852
     }
   ],
   "fields": {
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2214
+        "count": 2216
       },
       {
         "label": "True",
@@ -23,13 +23,13 @@
       },
       {
         "label": "Unknown",
-        "count": 115
+        "count": 118
       }
     ],
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1793
+        "count": 1795
       },
       {
         "label": "True",
@@ -37,13 +37,13 @@
       },
       {
         "label": "Unknown",
-        "count": 115
+        "count": 118
       }
     ],
     "license": [
       {
         "label": "mit",
-        "count": 718
+        "count": 720
       },
       {
         "label": "other",
@@ -55,7 +55,7 @@
       },
       {
         "label": "Unknown",
-        "count": 352
+        "count": 355
       },
       {
         "label": "apache-2.0",
@@ -141,7 +141,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 970
+        "count": 971
       },
       {
         "label": "R",
@@ -149,11 +149,11 @@
       },
       {
         "label": "Jupyter Notebook",
-        "count": 315
+        "count": 316
       },
       {
         "label": "Unknown",
-        "count": 259
+        "count": 262
       },
       {
         "label": "C++",
@@ -161,7 +161,7 @@
       },
       {
         "label": "HTML",
-        "count": 103
+        "count": 102
       },
       {
         "label": "Fortran",
@@ -177,7 +177,7 @@
       },
       {
         "label": "Julia",
-        "count": 79
+        "count": 80
       },
       {
         "label": "Java",
@@ -407,27 +407,27 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7039
+        "count": 7042
       },
       {
         "label": "pypi",
-        "count": 3180
+        "count": 3177
       },
       {
         "label": "Unknown",
-        "count": 2803
+        "count": 2808
       },
       {
         "label": "docker",
-        "count": 1500
+        "count": 1510
       },
       {
         "label": "npm",
-        "count": 1463
+        "count": 1461
       },
       {
         "label": "maven",
-        "count": 664
+        "count": 665
       },
       {
         "label": "cran",
@@ -435,7 +435,7 @@
       },
       {
         "label": "conda",
-        "count": 365
+        "count": 364
       },
       {
         "label": "nuget",
@@ -443,7 +443,7 @@
       },
       {
         "label": "julia",
-        "count": 318
+        "count": 321
       },
       {
         "label": "cargo",
@@ -471,22 +471,22 @@
       },
       {
         "label": "cpan",
-        "count": 35
+        "count": 27
       },
       {
         "label": "deb",
-        "count": 24
+        "count": 25
       },
       {
         "label": "nix",
         "count": 18
       },
       {
-        "label": "vcpkg",
-        "count": 13
+        "label": "cocoapods",
+        "count": 15
       },
       {
-        "label": "cocoapods",
+        "label": "vcpkg",
         "count": 13
       },
       {
@@ -529,11 +529,11 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2620
+        "count": 2622
       },
       {
         "label": "Unknown",
-        "count": 115
+        "count": 118
       },
       {
         "label": "gitlab.com",
