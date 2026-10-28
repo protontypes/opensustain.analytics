@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-27T10:18:10.259453+00:00",
+  "generated_at": "2026-10-28T11:10:25.429774+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
       "country_name": "United States",
       "map_eligible": true,
-      "organization_count": 354,
-      "total_projects": 621
+      "organization_count": 352,
+      "total_projects": 613
     },
     {
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 307,
-      "total_projects": 433
+      "organization_count": 304,
+      "total_projects": 426
     },
     {
       "iso_alpha": "DEU",
@@ -26,8 +26,8 @@
       "iso_alpha": "GBR",
       "country_name": "United Kingdom",
       "map_eligible": true,
-      "organization_count": 61,
-      "total_projects": 97
+      "organization_count": 60,
+      "total_projects": 96
     },
     {
       "iso_alpha": "FRA",
@@ -40,8 +40,8 @@
       "iso_alpha": "CAN",
       "country_name": "Canada",
       "map_eligible": true,
-      "organization_count": 36,
-      "total_projects": 64
+      "organization_count": 35,
+      "total_projects": 63
     },
     {
       "iso_alpha": "NLD",
@@ -69,7 +69,7 @@
       "country_name": "European Union",
       "map_eligible": false,
       "organization_count": 14,
-      "total_projects": 20
+      "total_projects": 19
     },
     {
       "iso_alpha": "ITA",
@@ -289,13 +289,6 @@
       "total_projects": 1
     },
     {
-      "iso_alpha": "TWN",
-      "country_name": "Taiwan",
-      "map_eligible": true,
-      "organization_count": 1,
-      "total_projects": 1
-    },
-    {
       "iso_alpha": "UGA",
       "country_name": "Uganda",
       "map_eligible": true,
@@ -306,15 +299,15 @@
   "continent_counts": [
     {
       "continent": "America",
-      "count": 400
+      "count": 397
     },
     {
       "continent": "Europe",
-      "count": 393
+      "count": 392
     },
     {
       "continent": "Global",
-      "count": 307
+      "count": 304
     },
     {
       "continent": "Oceania",
@@ -322,7 +315,7 @@
     },
     {
       "continent": "Asia",
-      "count": 20
+      "count": 19
     },
     {
       "continent": "Africa",
@@ -332,23 +325,23 @@
   "organization_type_counts": [
     {
       "form_of_organization": "community",
-      "count": 300
+      "count": 297
     },
     {
       "form_of_organization": "academia",
-      "count": 279
+      "count": 277
     },
     {
       "form_of_organization": "unknown",
-      "count": 222
+      "count": 216
     },
     {
       "form_of_organization": "government agency",
-      "count": 195
+      "count": 194
     },
     {
       "form_of_organization": "for-profit",
-      "count": 143
+      "count": 142
     },
     {
       "form_of_organization": "non-profit",
@@ -356,7 +349,7 @@
     },
     {
       "form_of_organization": "collaboration",
-      "count": 120
+      "count": 119
     }
   ],
   "organizations_by_project_count": [
@@ -415,21 +408,21 @@
       "total_listed_projects_in_organization": 15
     },
     {
-      "organization_name": "U.S. Geological Survey",
-      "organization_url": "https://github.com/DOI-USGS",
-      "organization_description": "By integrating our diverse scientific expertise, we understand complex natural science phenomena and provide scientific products that lead to solutions.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 13
-    },
-    {
       "organization_name": "Climate Modeling Alliance",
       "organization_url": "https://github.com/CliMA",
       "organization_description": "The next generation of climate models. Built in the open.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/43161188?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 12
+    },
+    {
+      "organization_name": "U.S. Geological Survey",
+      "organization_url": "https://github.com/DOI-USGS",
+      "organization_description": "By integrating our diverse scientific expertise, we understand complex natural science phenomena and provide scientific products that lead to solutions.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 12
     },
     {
@@ -457,15 +450,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/15230149?v=4",
       "location_country": "Austria",
       "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 9
-    },
-    {
-      "organization_name": "Microsoft",
-      "organization_url": "https://github.com/microsoft",
-      "organization_description": "Open source projects and samples from Microsoft",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
-      "location_country": "USA",
-      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 9
     },
     {
@@ -511,6 +495,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/8431983?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 8
+    },
+    {
+      "organization_name": "Microsoft",
+      "organization_url": "https://github.com/microsoft",
+      "organization_description": "Open source projects and samples from Microsoft",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
+      "location_country": "USA",
+      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 8
     },
     {
@@ -928,15 +921,6 @@
       "total_listed_projects_in_organization": 4
     },
     {
-      "organization_name": "rOpenSci Archive",
-      "organization_url": "https://github.com/ropensci-archive",
-      "organization_description": "Retired or sunset rOpenSci projects -- email info@ropensci.org if you have questions!",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/68704009?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "total_listed_projects_in_organization": 4
-    },
-    {
       "organization_name": "xarray-contrib",
       "organization_url": "https://github.com/xarray-contrib",
       "organization_description": "xarray compatible projects",
@@ -951,15 +935,6 @@
       "organization_description": "ACTRIS Cloud Remote Sensing Data Centre Unit (CLU)",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/52170164?v=4",
       "location_country": "Finland",
-      "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 3
-    },
-    {
-      "organization_name": "ARM User Facility",
-      "organization_url": "https://github.com/ARM-DOE",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/2540600?v=4",
-      "location_country": "USA",
       "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 3
     },
@@ -1324,15 +1299,6 @@
       "total_listed_projects_in_organization": 3
     },
     {
-      "organization_name": "OpenDSM",
-      "organization_url": "https://github.com/opendsm",
-      "organization_description": "Collaboratively advancing the future of demand-side energy",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/19336002?v=4",
-      "location_country": "Global",
-      "form_of_organization": "collaboration",
-      "total_listed_projects_in_organization": 3
-    },
-    {
       "organization_name": "Orion Lab",
       "organization_url": "https://github.com/Orion-AI-Lab",
       "organization_description": "Orion Lab research group: Deep Learning in Earth Observation at the National Observatory of Athens",
@@ -1522,6 +1488,15 @@
       "total_listed_projects_in_organization": 3
     },
     {
+      "organization_name": "rOpenSci Archive",
+      "organization_url": "https://github.com/ropensci-archive",
+      "organization_description": "Retired or sunset rOpenSci projects -- email info@ropensci.org if you have questions!",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/68704009?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 3
+    },
+    {
       "organization_name": "3DGeo Research Group, Heidelberg University",
       "organization_url": "https://github.com/3dgeo-heidelberg",
       "organization_description": "The 3DGeo Research Group investigates and develops computational methods for the geographic analysis of 3D/4D point clouds.",
@@ -1555,6 +1530,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/5667695?v=4",
       "location_country": "USA",
       "form_of_organization": "non-profit",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "ARM User Facility",
+      "organization_url": "https://github.com/ARM-DOE",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/2540600?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -1936,15 +1920,6 @@
       "total_listed_projects_in_organization": 2
     },
     {
-      "organization_name": "EMODnet",
-      "organization_url": "https://github.com/EMODnet",
-      "organization_description": "Your gateway to marine data in Europe",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/30047227?v=4",
-      "location_country": "EU",
-      "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 2
-    },
-    {
       "organization_name": "ERC Synergy Grant Water Futures",
       "organization_url": "https://github.com/WaterFutures",
       "organization_description": "Repository for the ERC SyG Water Futures Team",
@@ -1996,15 +1971,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/38220006?v=4",
       "location_country": "USA",
       "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 2
-    },
-    {
-      "organization_name": "Ecoverse",
-      "organization_url": "https://github.com/ecoverseR",
-      "organization_description": "R packages for Modeling Species Diversity and Distributions",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/170126741?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -2143,15 +2109,6 @@
       "total_listed_projects_in_organization": 2
     },
     {
-      "organization_name": "HyRiver",
-      "organization_url": "https://github.com/hyriver",
-      "organization_description": "A suite of Python packages that provides a unified API for retrieving geospatial/temporal data from various web services",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/109259800?v=4",
-      "location_country": "USA",
-      "form_of_organization": "community",
-      "total_listed_projects_in_organization": 2
-    },
-    {
       "organization_name": "IEA-ETSAP",
       "organization_url": "https://github.com/etsap-TIMES",
       "organization_description": "",
@@ -2228,15 +2185,6 @@
       "organization_url": "https://github.com/leap-stc",
       "organization_description": "Learning the Earth with AI and Physics",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/90631797?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 2
-    },
-    {
-      "organization_name": "Landscape Science & Technology, Environment & Climate Change Canada",
-      "organization_url": "https://github.com/LandSciTech",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/41919529?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
       "total_listed_projects_in_organization": 2
@@ -2476,15 +2424,6 @@
       "total_listed_projects_in_organization": 2
     },
     {
-      "organization_name": "Office of Science & Technology at NOAA Fisheries",
-      "organization_url": "https://github.com/nmfs-ost",
-      "organization_description": "Providing the science behind how we manage sustainable fisheries, protected species, and healthy ecosystems.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/72827324?v=4",
-      "location_country": "USA",
-      "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 2
-    },
-    {
       "organization_name": "Open Climate Data",
       "organization_url": "https://github.com/openclimatedata",
       "organization_description": "",
@@ -2527,6 +2466,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/11806583?v=4",
       "location_country": "Global",
       "form_of_organization": "non-profit",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "OpenDSM",
+      "organization_url": "https://github.com/opendsm",
+      "organization_description": "Collaboratively advancing the future of demand-side energy",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/19336002?v=4",
+      "location_country": "Global",
+      "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -2589,15 +2537,6 @@
       "organization_description": "Tutorial materials for open-source python packages for simulating and analyzing photovoltaic power systems",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/84424783?v=4",
       "location_country": "USA",
-      "form_of_organization": "community",
-      "total_listed_projects_in_organization": 2
-    },
-    {
-      "organization_name": "Parcels",
-      "organization_url": "https://github.com/Parcels-code",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/14887518?v=4",
-      "location_country": "Global",
       "form_of_organization": "community",
       "total_listed_projects_in_organization": 2
     },
@@ -4015,15 +3954,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "C4IROcean-archive",
-      "organization_url": "https://github.com/C4IROcean-archive",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/205895850?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "CABLE-LSM",
       "organization_url": "https://github.com/CABLE-LSM",
       "organization_description": "",
@@ -4219,15 +4149,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/174861785?v=4",
       "location_country": "Switzerland",
       "form_of_organization": "for-profit",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "CSIRO",
-      "organization_url": "https://github.com/csiro",
-      "organization_description": "CSIRO public facing GitHub organisation.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/74441954?v=4",
-      "location_country": "",
-      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -5113,6 +5034,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "EMODnet",
+      "organization_url": "https://github.com/EMODnet",
+      "organization_description": "Your gateway to marine data in Europe",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/30047227?v=4",
+      "location_country": "EU",
+      "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "EMRG-SFU",
       "organization_url": "https://github.com/EMRG-SFU",
       "organization_description": "",
@@ -5353,6 +5283,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1215872?v=4",
       "location_country": "USA",
       "form_of_organization": "non-profit",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Ecoverse",
+      "organization_url": "https://github.com/ecoverseR",
+      "organization_description": "R packages for Modeling Species Diversity and Distributions",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/170126741?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -5689,15 +5628,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "FISHGLOB",
-      "organization_url": "https://github.com/fishglob",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/226361955?v=4",
-      "location_country": "Global",
-      "form_of_organization": "collaboration",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "FLARE-forecast",
       "organization_url": "https://github.com/FLARE-forecast",
       "organization_description": "",
@@ -5738,15 +5668,6 @@
       "organization_url": "https://github.com/fablabbcn",
       "organization_description": "We are an innovation centre rethinking the way we live, work and play in cities.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1260741?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "FairScope",
-      "organization_url": "https://github.com/fairscope",
-      "organization_description": "Disruptive flow-through microscopy",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/203827607?v=4",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 1
@@ -5812,15 +5733,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/16683990?v=4",
       "location_country": "Italy",
       "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "FireCaster Codes",
-      "organization_url": "https://github.com/forefireAPI",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6805132?v=4",
-      "location_country": "Global",
-      "form_of_organization": "academia",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -6184,15 +6096,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "Google DeepMind",
-      "organization_url": "https://github.com/google-deepmind",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/8596759?v=4",
-      "location_country": "USA",
-      "form_of_organization": "for-profit",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "GralDispersionModel",
       "organization_url": "https://github.com/GralDispersionModel",
       "organization_description": "",
@@ -6548,6 +6451,15 @@
       "organization_url": "https://github.com/hafs-community",
       "organization_description": "HAFS is the Unified Forecast System (UFS) hurricane application specialized in tropical cyclone research and forecasting.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/48633048?v=4",
+      "location_country": "USA",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "HyRiver",
+      "organization_url": "https://github.com/hyriver",
+      "organization_description": "A suite of Python packages that provides a unified API for retrieving geospatial/temporal data from various web services",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/109259800?v=4",
       "location_country": "USA",
       "form_of_organization": "community",
       "total_listed_projects_in_organization": 1
@@ -7237,6 +7149,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "Landscape Science & Technology, Environment & Climate Change Canada",
+      "organization_url": "https://github.com/LandSciTech",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/41919529?v=4",
+      "location_country": "USA",
+      "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "Les e-novateurs",
       "organization_url": "https://github.com/les-enovateurs",
       "organization_description": "Our media is dedicated to a sustainable, ethical and accessible digital tech",
@@ -7732,15 +7653,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "NCU CryoSensing Team",
-      "organization_url": "https://github.com/ncu-cryosensing",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/203055798?v=4",
-      "location_country": "Taiwan",
-      "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "NCX",
       "organization_url": "https://github.com/ncx-co",
       "organization_description": "Discover the true value of your land.",
@@ -8161,6 +8073,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/14789732?v=4",
       "location_country": "Global",
       "form_of_organization": "community",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Office of Science & Technology at NOAA Fisheries",
+      "organization_url": "https://github.com/nmfs-ost",
+      "organization_description": "Providing the science behind how we manage sustainable fisheries, protected species, and healthy ecosystems.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/72827324?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -8650,15 +8571,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "Orcasound",
-      "organization_url": "https://github.com/orcasound",
-      "organization_description": "Listen for whales! Open source bioacoustic tools aimed at saving endangered orcas (Southern Resident Killer Whales)",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/29990731?v=4",
-      "location_country": "Canada",
-      "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "Organic Basics ApS",
       "organization_url": "https://github.com/Organic-Basics",
       "organization_description": "",
@@ -8794,6 +8706,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "Parcels",
+      "organization_url": "https://github.com/Parcels-code",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/14887518?v=4",
+      "location_country": "Global",
+      "form_of_organization": "community",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "Parflow",
       "organization_url": "https://github.com/parflow",
       "organization_description": "ParFlow is an integrated, parallel watershed model that makes use of high-performance computing to simulate surface and subsurface fluid flow.",
@@ -8917,15 +8838,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/34010853?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "Plymouth Marine Laboratory",
-      "organization_url": "https://github.com/PlymouthMarineLaboratory",
-      "organization_description": "Main GitHub for code produced by Plymouth Marine Laboratory.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/72567641?v=4",
-      "location_country": "",
-      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -10828,15 +10740,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "WAVI.jl Ice Sheet Model",
-      "organization_url": "https://github.com/WAVI-ice-sheet-model",
-      "organization_description": "Wavelet-based Adaptive-grid Vertically-integrated Ice-model (WAVI), is an ice sheet model written in Julia, developed at the British Antarctic Survey.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/227185268?v=4",
-      "location_country": "UK",
-      "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "WCRP-CMIP",
       "organization_url": "https://github.com/WCRP-CMIP",
       "organization_description": "",
@@ -11509,15 +11412,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/165696201?v=4",
       "location_country": "USA",
       "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "echostack",
-      "organization_url": "https://github.com/echostack-org",
-      "organization_description": "Home for open source tools and resources in ocean acoustics",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/42682187?v=4",
-      "location_country": "",
-      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -12223,15 +12117,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "pyTMD",
-      "organization_url": "https://github.com/pyTMD",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/199183018?v=4",
-      "location_country": "Global",
-      "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "pydap",
       "organization_url": "https://github.com/pydap",
       "organization_description": "",
@@ -12457,15 +12342,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "sdmTMB",
-      "organization_url": "https://github.com/sdmTMB",
-      "organization_description": "sdmTMB R package",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/245077094?v=4",
-      "location_country": "",
-      "form_of_organization": "",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "secondlaw",
       "organization_url": "https://github.com/secondlaw-ai",
       "organization_description": "",
@@ -12596,15 +12472,6 @@
       "organization_url": "https://github.com/sustainlab-group",
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/43426653?v=4",
-      "location_country": "USA",
-      "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "tRIBS Distributed Hydrologic Modeling System",
-      "organization_url": "https://github.com/tRIBS-Model",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/69878127?v=4",
       "location_country": "USA",
       "form_of_organization": "academia",
       "total_listed_projects_in_organization": 1
