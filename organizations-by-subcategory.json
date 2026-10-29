@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T11:10:25.429774+00:00",
+  "generated_at": "2026-10-29T11:23:35.075959+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -1569,7 +1569,7 @@
     },
     {
       "sub_category": "Freshwater and Hydrology",
-      "organization_count": 56,
+      "organization_count": 57,
       "organizations": [
         {
           "organization_name": "Amanzi",
@@ -1900,6 +1900,12 @@
           "organization_url": "https://github.com/ropensci",
           "location_country": "USA",
           "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "tRIBS Distributed Hydrologic Modeling System",
+          "organization_url": "https://github.com/tRIBS-Model",
+          "location_country": "USA",
+          "form_of_organization": "academia"
         },
         {
           "organization_name": "timflow-org",
@@ -3681,7 +3687,7 @@
     },
     {
       "sub_category": "Meteorological Observation and Forecast",
-      "organization_count": 42,
+      "organization_count": 44,
       "organizations": [
         {
           "organization_name": "ARM User Facility",
@@ -3730,6 +3736,12 @@
           "organization_url": "https://github.com/GIS4WRF",
           "location_country": "Global",
           "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Google DeepMind",
+          "organization_url": "https://github.com/google-deepmind",
+          "location_country": "USA",
+          "form_of_organization": "for-profit"
         },
         {
           "organization_name": "Google Research",
@@ -3834,6 +3846,12 @@
           "form_of_organization": "community"
         },
         {
+          "organization_name": "OpenDSM",
+          "organization_url": "https://github.com/opendsm",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
           "organization_name": "OpenSenseAction",
           "organization_url": "https://github.com/OpenSenseAction",
           "location_country": "Global",
@@ -3934,6 +3952,270 @@
           "organization_url": "https://github.com/secondlaw-ai",
           "location_country": "Global",
           "form_of_organization": "academia"
+        }
+      ]
+    },
+    {
+      "sub_category": "Marine Life and Fishery",
+      "organization_count": 43,
+      "organizations": [
+        {
+          "organization_name": "AFSC GAP Survey Data Products",
+          "organization_url": "https://github.com/afsc-gap-products",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Aqualink.org",
+          "organization_url": "https://github.com/aqualinkorg",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "AusOcean",
+          "organization_url": "https://github.com/ausocean",
+          "location_country": "Australia",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "CoralNet",
+          "organization_url": "https://github.com/coralnet",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "DAS4Whales",
+          "organization_url": "https://github.com/DAS4Whales",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "DSE",
+          "organization_url": "https://github.com/SchmidtDSE",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Department of Biodiversity, Conservation and Attractions",
+          "organization_url": "https://github.com/dbca-wa",
+          "location_country": "Australia",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Ecosystem Dynamics and Assessment Branch",
+          "organization_url": "https://github.com/NOAA-EDAB",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "FISHGLOB",
+          "organization_url": "https://github.com/fishglob",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "FLR",
+          "organization_url": "https://github.com/flr",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Fabrique numérique du Ministère de la Transition écologique",
+          "organization_url": "https://github.com/MTES-MCT",
+          "location_country": "France",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "FairScope",
+          "organization_url": "https://github.com/fairscope",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "FathomNet",
+          "organization_url": "https://github.com/fathomnet",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Global Change Research Group",
+          "organization_url": "https://github.com/pinskylab",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Global Fishing Watch",
+          "organization_url": "https://github.com/GlobalFishingWatch",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "ICES tools (development area)",
+          "organization_url": "https://github.com/ices-tools-dev",
+          "location_country": "Denmark",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "ICES tools (production)",
+          "organization_url": "https://github.com/ices-tools-prod",
+          "location_country": "Denmark",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Ichthyop",
+          "organization_url": "https://github.com/ichthyop",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "JuliaOcean",
+          "organization_url": "https://github.com/JuliaOcean",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "MERMAID",
+          "organization_url": "https://github.com/data-mermaid",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "NOAA-FIMS",
+          "organization_url": "https://github.com/NOAA-FIMS",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Northwest Fisheries Science Center - Conservation Biology Program",
+          "organization_url": "https://github.com/nwfsc-cb",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "OSMOSE: Modelling Marine Exploited Ecosystems",
+          "organization_url": "https://github.com/osmose-model",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Ocean Data Factory Sweden",
+          "organization_url": "https://github.com/ocean-data-factory-sweden",
+          "location_country": "Sweden",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Office of Science & Technology at NOAA Fisheries",
+          "organization_url": "https://github.com/nmfs-ost",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Orcasound",
+          "organization_url": "https://github.com/orcasound",
+          "location_country": "Canada",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "PFMC assessments",
+          "organization_url": "https://github.com/pfmc-assessments",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "POSEIDON",
+          "organization_url": "https://github.com/poseidon-fisheries",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Research Institute for Nature and Forest (INBO)",
+          "organization_url": "https://github.com/inbo",
+          "location_country": "Belgium",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "SOPhyE (Satellite Ocean Colour and Phytoplankton Ecology Group)",
+          "organization_url": "https://github.com/BIO-RSG",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Salmon Watersheds Program",
+          "organization_url": "https://github.com/salmonwatersheds",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Sizespectrum",
+          "organization_url": "https://github.com/sizespectrum",
+          "location_country": "UK",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "The Plankton Team",
+          "organization_url": "https://github.com/PlanktonTeam",
+          "location_country": "Australia",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "VIAME",
+          "organization_url": "https://github.com/VIAME",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Visual Computing Lab - ISTI - CNR",
+          "organization_url": "https://github.com/cnr-isti-vclab",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "WHOI GitHub Central",
+          "organization_url": "https://github.com/WHOIGit",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "deep-voice",
+          "organization_url": "https://github.com/deep-voice",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "echostack",
+          "organization_url": "https://github.com/echostack-org",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "fishR Core Team",
+          "organization_url": "https://github.com/fishR-Core-Team",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "pbs-assess",
+          "organization_url": "https://github.com/pbs-assess",
+          "location_country": "Canada",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "r4ss",
+          "organization_url": "https://github.com/r4ss",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "rOpenSci",
+          "organization_url": "https://github.com/ropensci",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "ss3sim",
+          "organization_url": "https://github.com/ss3sim",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
         }
       ]
     },
@@ -4424,230 +4706,224 @@
       ]
     },
     {
-      "sub_category": "Marine Life and Fishery",
-      "organization_count": 39,
+      "sub_category": "Ocean and Hydrology Data Access",
+      "organization_count": 38,
       "organizations": [
         {
-          "organization_name": "AFSC GAP Survey Data Products",
-          "organization_url": "https://github.com/afsc-gap-products",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Aqualink.org",
-          "organization_url": "https://github.com/aqualinkorg",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "AusOcean",
-          "organization_url": "https://github.com/ausocean",
-          "location_country": "Australia",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "CoralNet",
-          "organization_url": "https://github.com/coralnet",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "DAS4Whales",
-          "organization_url": "https://github.com/DAS4Whales",
+          "organization_name": "AMOC community",
+          "organization_url": "https://github.com/AMOCcommunity",
           "location_country": "",
           "form_of_organization": ""
         },
         {
-          "organization_name": "DSE",
-          "organization_url": "https://github.com/SchmidtDSE",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Department of Biodiversity, Conservation and Attractions",
-          "organization_url": "https://github.com/dbca-wa",
+          "organization_name": "Australian Antarctic Division",
+          "organization_url": "https://github.com/AustralianAntarcticDivision",
           "location_country": "Australia",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "Ecosystem Dynamics and Assessment Branch",
-          "organization_url": "https://github.com/NOAA-EDAB",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_name": "Australian Ocean Data Network",
+          "organization_url": "https://github.com/aodn",
+          "location_country": "Australia",
+          "form_of_organization": "collaboration"
         },
         {
-          "organization_name": "FLR",
-          "organization_url": "https://github.com/flr",
-          "location_country": "Global",
-          "form_of_organization": "community"
+          "organization_name": "C4IROcean-archive",
+          "organization_url": "https://github.com/C4IROcean-archive",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
-          "organization_name": "Fabrique numérique du Ministère de la Transition écologique",
-          "organization_url": "https://github.com/MTES-MCT",
+          "organization_name": "CNRM",
+          "organization_url": "https://github.com/UMR-CNRM",
           "location_country": "France",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "FathomNet",
-          "organization_url": "https://github.com/fathomnet",
-          "location_country": "USA",
+          "organization_name": "CORRECTIV",
+          "organization_url": "https://github.com/correctiv",
+          "location_country": "Germany",
           "form_of_organization": "non-profit"
         },
         {
-          "organization_name": "Global Change Research Group",
-          "organization_url": "https://github.com/pinskylab",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Global Fishing Watch",
-          "organization_url": "https://github.com/GlobalFishingWatch",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "ICES tools (development area)",
-          "organization_url": "https://github.com/ices-tools-dev",
-          "location_country": "Denmark",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "ICES tools (production)",
-          "organization_url": "https://github.com/ices-tools-prod",
-          "location_country": "Denmark",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Ichthyop",
-          "organization_url": "https://github.com/ichthyop",
+          "organization_name": "CRiSp",
+          "organization_url": "https://github.com/CityRiverSpaces",
           "location_country": "Global",
           "form_of_organization": "community"
         },
         {
-          "organization_name": "JuliaOcean",
-          "organization_url": "https://github.com/JuliaOcean",
-          "location_country": "Global",
-          "form_of_organization": "community"
+          "organization_name": "CSIRO",
+          "organization_url": "https://github.com/csiro",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
-          "organization_name": "MERMAID",
-          "organization_url": "https://github.com/data-mermaid",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "NOAA-FIMS",
-          "organization_url": "https://github.com/NOAA-FIMS",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Northwest Fisheries Science Center - Conservation Biology Program",
-          "organization_url": "https://github.com/nwfsc-cb",
-          "location_country": "USA",
+          "organization_name": "EMODnet",
+          "organization_url": "https://github.com/EMODnet",
+          "location_country": "EU",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "OSMOSE: Modelling Marine Exploited Ecosystems",
-          "organization_url": "https://github.com/osmose-model",
-          "location_country": "Global",
-          "form_of_organization": "community"
+          "organization_name": "ERDDAP",
+          "organization_url": "https://github.com/ERDDAP",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
-          "organization_name": "Ocean Data Factory Sweden",
-          "organization_url": "https://github.com/ocean-data-factory-sweden",
-          "location_country": "Sweden",
+          "organization_name": "Euro-Argo ERIC",
+          "organization_url": "https://github.com/euroargodev",
+          "location_country": "EU",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "Office of Science & Technology at NOAA Fisheries",
-          "organization_url": "https://github.com/nmfs-ost",
+          "organization_name": "Global freshwater biodiversity research",
+          "organization_url": "https://github.com/glowabio",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "GroMoPo",
+          "organization_url": "https://github.com/Gromopo",
+          "location_country": "Australia",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "HyRiver",
+          "organization_url": "https://github.com/hyriver",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "HydroFrame",
+          "organization_url": "https://github.com/hydroframe",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "INRAE",
+          "organization_url": "https://github.com/inrae",
+          "location_country": "France",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "International Oceanographic Data and Information Exchange",
+          "organization_url": "https://github.com/iodepo",
+          "location_country": "Global",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "KAUST HYdro-climatic EXtremes (HYEX) Research Group",
+          "organization_url": "https://github.com/hyex-research",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "KIOS Research and Innovation Center of Excellence, University of Cyprus",
+          "organization_url": "https://github.com/KIOS-Research",
+          "location_country": "Cyprus",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "MET-OM: software for Oceanography and Marine Meteorology",
+          "organization_url": "https://github.com/MET-OM",
+          "location_country": "Norway",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Matplotlib Developers",
+          "organization_url": "https://github.com/matplotlib",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Mercator Ocean International",
+          "organization_url": "https://github.com/mercator-ocean",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "NSF National Center for Atmospheric Research",
+          "organization_url": "https://github.com/NCAR",
           "location_country": "USA",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "PFMC assessments",
-          "organization_url": "https://github.com/pfmc-assessments",
+          "organization_name": "OPERA-Cal-Val",
+          "organization_url": "https://github.com/OPERA-Cal-Val",
           "location_country": "USA",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "POSEIDON",
-          "organization_url": "https://github.com/poseidon-fisheries",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Research Institute for Nature and Forest (INBO)",
-          "organization_url": "https://github.com/inbo",
-          "location_country": "Belgium",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "SOPhyE (Satellite Ocean Colour and Phytoplankton Ecology Group)",
-          "organization_url": "https://github.com/BIO-RSG",
+          "organization_name": "Ocean Navigator",
+          "organization_url": "https://github.com/DFO-Ocean-Navigator",
           "location_country": "Canada",
-          "form_of_organization": "government agency"
+          "form_of_organization": "academia"
         },
         {
-          "organization_name": "Salmon Watersheds Program",
-          "organization_url": "https://github.com/salmonwatersheds",
+          "organization_name": "Ocean Networks Canada",
+          "organization_url": "https://github.com/OceanNetworksCanada",
           "location_country": "Canada",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "OpenDCS",
+          "organization_url": "https://github.com/opendcs",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "OpenEarth",
+          "organization_url": "https://github.com/openearth",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "PO.DAAC",
+          "organization_url": "https://github.com/podaac",
+          "location_country": "USA",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "Sizespectrum",
-          "organization_url": "https://github.com/sizespectrum",
+          "organization_name": "Pacific Marine Environmental Laboratory",
+          "organization_url": "https://github.com/NOAA-PMEL",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Thomas Haine Research Group",
+          "organization_url": "https://github.com/hainegroup",
           "location_country": "UK",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "The Plankton Team",
-          "organization_url": "https://github.com/PlanktonTeam",
-          "location_country": "Australia",
-          "form_of_organization": "collaboration"
+          "organization_name": "U.S. Environmental Protection Agency",
+          "organization_url": "https://github.com/USEPA",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
         },
         {
-          "organization_name": "VIAME",
-          "organization_url": "https://github.com/VIAME",
+          "organization_name": "US Integrated Ocean Observing System",
+          "organization_url": "https://github.com/ioos",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "USGS Coastal and Marine Geology Program",
+          "organization_url": "https://github.com/USGS-CMG",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "openmeteo",
+          "organization_url": "https://github.com/openmeteo",
           "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Visual Computing Lab - ISTI - CNR",
-          "organization_url": "https://github.com/cnr-isti-vclab",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "WHOI GitHub Central",
-          "organization_url": "https://github.com/WHOIGit",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "deep-voice",
-          "organization_url": "https://github.com/deep-voice",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "fishR Core Team",
-          "organization_url": "https://github.com/fishR-Core-Team",
-          "location_country": "USA",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "pbs-assess",
-          "organization_url": "https://github.com/pbs-assess",
-          "location_country": "Canada",
+          "organization_name": "pyTMD",
+          "organization_url": "https://github.com/pyTMD",
+          "location_country": "Global",
           "form_of_organization": "community"
-        },
-        {
-          "organization_name": "r4ss",
-          "organization_url": "https://github.com/r4ss",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
         },
         {
           "organization_name": "rOpenSci",
@@ -4656,10 +4932,10 @@
           "form_of_organization": "non-profit"
         },
         {
-          "organization_name": "ss3sim",
-          "organization_url": "https://github.com/ss3sim",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_name": "rOpenSci Archive",
+          "organization_url": "https://github.com/ropensci-archive",
+          "location_country": "Global",
+          "form_of_organization": "community"
         }
       ]
     },
@@ -5074,210 +5350,6 @@
           "organization_url": "https://github.com/rOpenGov",
           "location_country": "Global",
           "form_of_organization": "community"
-        },
-        {
-          "organization_name": "rOpenSci",
-          "organization_url": "https://github.com/ropensci",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Ocean and Hydrology Data Access",
-      "organization_count": 33,
-      "organizations": [
-        {
-          "organization_name": "AMOC community",
-          "organization_url": "https://github.com/AMOCcommunity",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Australian Antarctic Division",
-          "organization_url": "https://github.com/AustralianAntarcticDivision",
-          "location_country": "Australia",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Australian Ocean Data Network",
-          "organization_url": "https://github.com/aodn",
-          "location_country": "Australia",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "CNRM",
-          "organization_url": "https://github.com/UMR-CNRM",
-          "location_country": "France",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "CORRECTIV",
-          "organization_url": "https://github.com/correctiv",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "CRiSp",
-          "organization_url": "https://github.com/CityRiverSpaces",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "ERDDAP",
-          "organization_url": "https://github.com/ERDDAP",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Euro-Argo ERIC",
-          "organization_url": "https://github.com/euroargodev",
-          "location_country": "EU",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Global freshwater biodiversity research",
-          "organization_url": "https://github.com/glowabio",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "GroMoPo",
-          "organization_url": "https://github.com/Gromopo",
-          "location_country": "Australia",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "HyRiver",
-          "organization_url": "https://github.com/hyriver",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "HydroFrame",
-          "organization_url": "https://github.com/hydroframe",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "INRAE",
-          "organization_url": "https://github.com/inrae",
-          "location_country": "France",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "International Oceanographic Data and Information Exchange",
-          "organization_url": "https://github.com/iodepo",
-          "location_country": "Global",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "KAUST HYdro-climatic EXtremes (HYEX) Research Group",
-          "organization_url": "https://github.com/hyex-research",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "KIOS Research and Innovation Center of Excellence, University of Cyprus",
-          "organization_url": "https://github.com/KIOS-Research",
-          "location_country": "Cyprus",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "MET-OM: software for Oceanography and Marine Meteorology",
-          "organization_url": "https://github.com/MET-OM",
-          "location_country": "Norway",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Matplotlib Developers",
-          "organization_url": "https://github.com/matplotlib",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Mercator Ocean International",
-          "organization_url": "https://github.com/mercator-ocean",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "NSF National Center for Atmospheric Research",
-          "organization_url": "https://github.com/NCAR",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "OPERA-Cal-Val",
-          "organization_url": "https://github.com/OPERA-Cal-Val",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Ocean Navigator",
-          "organization_url": "https://github.com/DFO-Ocean-Navigator",
-          "location_country": "Canada",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Ocean Networks Canada",
-          "organization_url": "https://github.com/OceanNetworksCanada",
-          "location_country": "Canada",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "OpenDCS",
-          "organization_url": "https://github.com/opendcs",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "OpenEarth",
-          "organization_url": "https://github.com/openearth",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "PO.DAAC",
-          "organization_url": "https://github.com/podaac",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Pacific Marine Environmental Laboratory",
-          "organization_url": "https://github.com/NOAA-PMEL",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Thomas Haine Research Group",
-          "organization_url": "https://github.com/hainegroup",
-          "location_country": "UK",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "U.S. Environmental Protection Agency",
-          "organization_url": "https://github.com/USEPA",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "US Integrated Ocean Observing System",
-          "organization_url": "https://github.com/ioos",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "USGS Coastal and Marine Geology Program",
-          "organization_url": "https://github.com/USGS-CMG",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "openmeteo",
-          "organization_url": "https://github.com/openmeteo",
-          "location_country": "Global",
-          "form_of_organization": "academia"
         },
         {
           "organization_name": "rOpenSci",
@@ -6446,92 +6518,110 @@
       ]
     },
     {
-      "sub_category": "Wind Energy",
-      "organization_count": 22,
+      "sub_category": "Glacier and Ice Sheets",
+      "organization_count": 23,
       "organizations": [
         {
-          "organization_name": "Applied Machine Learning (AML) Lab",
-          "organization_url": "https://github.com/TAMU-AML",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "BYU FLOW Lab",
-          "organization_url": "https://github.com/byuflowlab",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Energy Research and Forecasting",
-          "organization_url": "https://github.com/erf-model",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "FloatingArrayDesign",
-          "organization_url": "https://github.com/FloatingArrayDesign",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "FraunhoferIWES",
-          "organization_url": "https://github.com/FraunhoferIWES",
+          "organization_name": "CICE Consortium",
+          "organization_url": "https://github.com/CICE-Consortium",
           "location_country": "Global",
           "form_of_organization": "collaboration"
         },
         {
-          "organization_name": "IEA Wind Digitalization (Task 43)",
-          "organization_url": "https://github.com/IEA-Task-43",
+          "organization_name": "CryoTools",
+          "organization_url": "https://github.com/cryotools",
           "location_country": "Global",
-          "form_of_organization": "collaboration"
+          "form_of_organization": "community"
         },
         {
-          "organization_name": "IEA Wind Systems",
-          "organization_url": "https://github.com/IEAWindSystems",
-          "location_country": "Global",
-          "form_of_organization": "Collaboration"
-        },
-        {
-          "organization_name": "IEC 61400",
-          "organization_url": "https://github.com/IEC-61400",
+          "organization_name": "Cryologger",
+          "organization_url": "https://github.com/cryologger",
           "location_country": "",
           "form_of_organization": ""
         },
         {
-          "organization_name": "Imperial College London",
-          "organization_url": "https://github.com/ImperialCollegeLondon",
-          "location_country": "UK",
+          "organization_name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
+          "organization_url": "https://github.com/ECCO-GROUP",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "GEUS Glaciology and Climate",
+          "organization_url": "https://github.com/GEUS-Glaciology-and-Climate",
+          "location_country": "Denmark",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "LHEEA",
-          "organization_url": "https://gitlab.com/lheea",
-          "location_country": "France",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "NLRWindSystems",
-          "organization_url": "https://github.com/NLRWindSystems",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/NatLabRockies",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "OpenFAST",
-          "organization_url": "https://github.com/OpenFAST",
+          "organization_name": "Ice-sheet and Sea-level System Model (ISSM)",
+          "organization_url": "https://github.com/ISSMteam",
           "location_country": "USA",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "RES Group",
-          "organization_url": "https://github.com/resgroup",
+          "organization_name": "Land Ice Verification and Validation toolkit",
+          "organization_url": "https://github.com/LIVVkit",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NASA Jet Propulsion Laboratory",
+          "organization_url": "https://github.com/nasa-jpl",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NCU CryoSensing Team",
+          "organization_url": "https://github.com/ncu-cryosensing",
+          "location_country": "Taiwan",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NOAA - Geophysical Fluid Dynamics Laboratory",
+          "organization_url": "https://github.com/NOAA-GFDL",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "National Snow and Ice Data Center",
+          "organization_url": "https://github.com/nsidc",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "ODINN",
+          "organization_url": "https://github.com/ODINN-SciML",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Open Global Glacier Model",
+          "organization_url": "https://github.com/OGGM",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "PalMA Ice sheet modeling group",
+          "organization_url": "https://github.com/palma-ice",
+          "location_country": "Spain",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Parallel Ice Sheet Model",
+          "organization_url": "https://github.com/pism",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "PyGEM-Community",
+          "organization_url": "https://github.com/PyGEM-Community",
           "location_country": "",
           "form_of_organization": ""
+        },
+        {
+          "organization_name": "SICE",
+          "organization_url": "https://github.com/GEUS-SICE",
+          "location_country": "Denmark",
+          "form_of_organization": "collaboration"
         },
         {
           "organization_name": "Sandia National Laboratories",
@@ -6540,46 +6630,34 @@
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "Scottish Government Marine Directorate",
-          "organization_url": "https://github.com/MarineScotlandScience",
+          "organization_name": "StratusGeo: Accelerating discovery for geoscience communities",
+          "organization_url": "https://github.com/CryoInTheCloud",
+          "location_country": "Netherlands",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "WAVI.jl Ice Sheet Model",
+          "organization_url": "https://github.com/WAVI-ice-sheet-model",
           "location_country": "UK",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "icepack",
+          "organization_url": "https://github.com/icepack",
+          "location_country": "USA",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "The Signal Intelligence Project",
-          "organization_url": "https://github.com/sintel-dev",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "awebox",
-          "organization_url": "https://github.com/awebox",
-          "location_country": "Germany",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "brightwind",
-          "organization_url": "https://github.com/brightwind-dev",
-          "location_country": "Ireland",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "kynema",
-          "organization_url": "https://github.com/kynema",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "turbinesFoam",
-          "organization_url": "https://github.com/turbinesFoam",
+          "organization_name": "icesat2py",
+          "organization_url": "https://github.com/icesat2py",
           "location_country": "Global",
-          "form_of_organization": "academia"
+          "form_of_organization": "community"
         },
         {
-          "organization_name": "wind-python",
-          "organization_url": "https://github.com/wind-python",
-          "location_country": "",
-          "form_of_organization": ""
+          "organization_name": "wgms",
+          "organization_url": "https://gitlab.com/wgms",
+          "location_country": "Switzerland",
+          "form_of_organization": "collaboration"
         }
       ]
     },
@@ -6848,104 +6926,86 @@
       ]
     },
     {
-      "sub_category": "Glacier and Ice Sheets",
+      "sub_category": "Wind Energy",
       "organization_count": 21,
       "organizations": [
         {
-          "organization_name": "CICE Consortium",
-          "organization_url": "https://github.com/CICE-Consortium",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "CryoTools",
-          "organization_url": "https://github.com/cryotools",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Cryologger",
-          "organization_url": "https://github.com/cryologger",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
-          "organization_url": "https://github.com/ECCO-GROUP",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "GEUS Glaciology and Climate",
-          "organization_url": "https://github.com/GEUS-Glaciology-and-Climate",
-          "location_country": "Denmark",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Ice-sheet and Sea-level System Model (ISSM)",
-          "organization_url": "https://github.com/ISSMteam",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Land Ice Verification and Validation toolkit",
-          "organization_url": "https://github.com/LIVVkit",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "NASA Jet Propulsion Laboratory",
-          "organization_url": "https://github.com/nasa-jpl",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "NOAA - Geophysical Fluid Dynamics Laboratory",
-          "organization_url": "https://github.com/NOAA-GFDL",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "National Snow and Ice Data Center",
-          "organization_url": "https://github.com/nsidc",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "ODINN",
-          "organization_url": "https://github.com/ODINN-SciML",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Open Global Glacier Model",
-          "organization_url": "https://github.com/OGGM",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "PalMA Ice sheet modeling group",
-          "organization_url": "https://github.com/palma-ice",
-          "location_country": "Spain",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Parallel Ice Sheet Model",
-          "organization_url": "https://github.com/pism",
+          "organization_name": "Applied Machine Learning (AML) Lab",
+          "organization_url": "https://github.com/TAMU-AML",
           "location_country": "USA",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "PyGEM-Community",
-          "organization_url": "https://github.com/PyGEM-Community",
+          "organization_name": "BYU FLOW Lab",
+          "organization_url": "https://github.com/byuflowlab",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Energy Research and Forecasting",
+          "organization_url": "https://github.com/erf-model",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "FloatingArrayDesign",
+          "organization_url": "https://github.com/FloatingArrayDesign",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "FraunhoferIWES",
+          "organization_url": "https://github.com/FraunhoferIWES",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "IEA Wind Systems",
+          "organization_url": "https://github.com/IEAWindSystems",
+          "location_country": "Global",
+          "form_of_organization": "Collaboration"
+        },
+        {
+          "organization_name": "IEC 61400",
+          "organization_url": "https://github.com/IEC-61400",
           "location_country": "",
           "form_of_organization": ""
         },
         {
-          "organization_name": "SICE",
-          "organization_url": "https://github.com/GEUS-SICE",
-          "location_country": "Denmark",
-          "form_of_organization": "collaboration"
+          "organization_name": "Imperial College London",
+          "organization_url": "https://github.com/ImperialCollegeLondon",
+          "location_country": "UK",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "LHEEA",
+          "organization_url": "https://gitlab.com/lheea",
+          "location_country": "France",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "NLRWindSystems",
+          "organization_url": "https://github.com/NLRWindSystems",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "National Laboratory of the Rockies",
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "OpenFAST",
+          "organization_url": "https://github.com/OpenFAST",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "RES Group",
+          "organization_url": "https://github.com/resgroup",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Sandia National Laboratories",
@@ -6954,28 +7014,46 @@
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "StratusGeo: Accelerating discovery for geoscience communities",
-          "organization_url": "https://github.com/CryoInTheCloud",
-          "location_country": "Netherlands",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "icepack",
-          "organization_url": "https://github.com/icepack",
-          "location_country": "USA",
+          "organization_name": "Scottish Government Marine Directorate",
+          "organization_url": "https://github.com/MarineScotlandScience",
+          "location_country": "UK",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "icesat2py",
-          "organization_url": "https://github.com/icesat2py",
-          "location_country": "Global",
-          "form_of_organization": "community"
+          "organization_name": "The Signal Intelligence Project",
+          "organization_url": "https://github.com/sintel-dev",
+          "location_country": "USA",
+          "form_of_organization": "academia"
         },
         {
-          "organization_name": "wgms",
-          "organization_url": "https://gitlab.com/wgms",
-          "location_country": "Switzerland",
-          "form_of_organization": "collaboration"
+          "organization_name": "awebox",
+          "organization_url": "https://github.com/awebox",
+          "location_country": "Germany",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "brightwind",
+          "organization_url": "https://github.com/brightwind-dev",
+          "location_country": "Ireland",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "kynema",
+          "organization_url": "https://github.com/kynema",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "turbinesFoam",
+          "organization_url": "https://github.com/turbinesFoam",
+          "location_country": "Global",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "wind-python",
+          "organization_url": "https://github.com/wind-python",
+          "location_country": "",
+          "form_of_organization": ""
         }
       ]
     },
@@ -7466,6 +7544,126 @@
       ]
     },
     {
+      "sub_category": "Terrestrial Wildlife",
+      "organization_count": 19,
+      "organizations": [
+        {
+          "organization_name": "BlueGreen Labs",
+          "organization_url": "https://github.com/bluegreen-labs",
+          "location_country": "Belgium",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Circuitscape",
+          "organization_url": "https://github.com/Circuitscape",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Conservation Technology Lab",
+          "organization_url": "https://github.com/conservationtechlab",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "DrivenData",
+          "organization_url": "https://github.com/drivendataorg",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Google",
+          "organization_url": "https://github.com/google",
+          "location_country": "USA",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "LIFE RIPARIAS",
+          "organization_url": "https://github.com/riparias",
+          "location_country": "Belgium",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Landscape Science & Technology, Environment & Climate Change Canada",
+          "organization_url": "https://github.com/LandSciTech",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Microsoft",
+          "organization_url": "https://github.com/microsoft",
+          "location_country": "USA",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "NESP Threatened Species Recovery Hub (Project 3.1)",
+          "organization_url": "https://github.com/nesp-tsr3-1",
+          "location_country": "Global",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Natural Solutions",
+          "organization_url": "https://github.com/naturalsolutions",
+          "location_country": "Global",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "PADAS",
+          "organization_url": "https://github.com/PADAS",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "PAMGuard",
+          "organization_url": "https://github.com/PAMGuard",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Research Institute for Nature and Forest (INBO)",
+          "organization_url": "https://github.com/inbo",
+          "location_country": "Belgium",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Wild Me by Conservation X Labs",
+          "organization_url": "https://github.com/WildMeOrg",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "WildEye Conservation",
+          "organization_url": "https://github.com/WildEyeConservation",
+          "location_country": "South Africa",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "WildlifeDatasets",
+          "organization_url": "https://github.com/WildlifeDatasets",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "bcgov",
+          "organization_url": "https://github.com/bcgov",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "earthtoolsmaker",
+          "organization_url": "https://github.com/earthtoolsmaker",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "rOpenSci",
+          "organization_url": "https://github.com/ropensci",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        }
+      ]
+    },
+    {
       "sub_category": "Curated Lists",
       "organization_count": 18,
       "organizations": [
@@ -7922,98 +8120,98 @@
       ]
     },
     {
-      "sub_category": "Terrestrial Wildlife",
+      "sub_category": "Wildfire",
       "organization_count": 18,
       "organizations": [
         {
-          "organization_name": "BlueGreen Labs",
-          "organization_url": "https://github.com/bluegreen-labs",
-          "location_country": "Belgium",
+          "organization_name": "Department of Biodiversity, Conservation and Attractions",
+          "organization_url": "https://github.com/dbca-wa",
+          "location_country": "Australia",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "ECMWF Code for Earth",
+          "organization_url": "https://github.com/ECMWFCode4Earth",
+          "location_country": "Global",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Earth Lab",
+          "organization_url": "https://github.com/earthlab",
+          "location_country": "USA",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "Circuitscape",
-          "organization_url": "https://github.com/Circuitscape",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Conservation Technology Lab",
-          "organization_url": "https://github.com/conservationtechlab",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "DrivenData",
-          "organization_url": "https://github.com/drivendataorg",
+          "organization_name": "European Centre for Medium-Range Weather Forecasts",
+          "organization_url": "https://github.com/ecmwf",
           "location_country": "",
           "form_of_organization": ""
         },
         {
-          "organization_name": "Google",
-          "organization_url": "https://github.com/google",
-          "location_country": "USA",
-          "form_of_organization": "for-profit"
+          "organization_name": "Fire safety design tools",
+          "organization_url": "https://github.com/firetools",
+          "location_country": "Italy",
+          "form_of_organization": "community"
         },
         {
-          "organization_name": "LIFE RIPARIAS",
-          "organization_url": "https://github.com/riparias",
-          "location_country": "Belgium",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Microsoft",
-          "organization_url": "https://github.com/microsoft",
-          "location_country": "USA",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "NESP Threatened Species Recovery Hub (Project 3.1)",
-          "organization_url": "https://github.com/nesp-tsr3-1",
+          "organization_name": "FireCaster Codes",
+          "organization_url": "https://github.com/forefireAPI",
           "location_country": "Global",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
+          "organization_name": "Laboratory of Tree-Ring Research",
+          "organization_url": "https://github.com/ltrr-arizona-edu",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Los Angeles Times Data and Graphics Department",
+          "organization_url": "https://github.com/datadesk",
+          "location_country": "USA",
           "form_of_organization": "for-profit"
         },
         {
-          "organization_name": "PADAS",
-          "organization_url": "https://github.com/PADAS",
-          "location_country": "",
-          "form_of_organization": ""
+          "organization_name": "MITRE Fireline",
+          "organization_url": "https://github.com/mitrefireline",
+          "location_country": "USA",
+          "form_of_organization": "academia"
         },
         {
-          "organization_name": "PAMGuard",
-          "organization_url": "https://github.com/PAMGuard",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Research Institute for Nature and Forest (INBO)",
-          "organization_url": "https://github.com/inbo",
-          "location_country": "Belgium",
+          "organization_name": "Orion Lab",
+          "organization_url": "https://github.com/Orion-AI-Lab",
+          "location_country": "Greece",
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "Wild Me by Conservation X Labs",
-          "organization_url": "https://github.com/WildMeOrg",
-          "location_country": "USA",
+          "organization_name": "Our Planscape",
+          "organization_url": "https://github.com/OurPlanscape",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Plant-for-the-Planet",
+          "organization_url": "https://github.com/Plant-for-the-Planet-org",
+          "location_country": "Germany",
           "form_of_organization": "non-profit"
         },
         {
-          "organization_name": "WildEye Conservation",
-          "organization_url": "https://github.com/WildEyeConservation",
-          "location_country": "South Africa",
+          "organization_name": "PyroNear",
+          "organization_url": "https://github.com/pyronear",
+          "location_country": "France",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "RMRS Missoula Fire Sciences Lab",
+          "organization_url": "https://github.com/firelab",
+          "location_country": "USA",
           "form_of_organization": "community"
         },
         {
-          "organization_name": "WildlifeDatasets",
-          "organization_url": "https://github.com/WildlifeDatasets",
-          "location_country": "Global",
-          "form_of_organization": "community"
+          "organization_name": "Stanford Intelligent Systems Laboratory",
+          "organization_url": "https://github.com/sisl",
+          "location_country": "USA",
+          "form_of_organization": "academia"
         },
         {
           "organization_name": "bcgov",
@@ -8022,16 +8220,16 @@
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "earthtoolsmaker",
-          "organization_url": "https://github.com/earthtoolsmaker",
-          "location_country": "USA",
-          "form_of_organization": "community"
+          "organization_name": "cell2fire",
+          "organization_url": "https://github.com/cell2fire",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
-          "organization_name": "rOpenSci",
-          "organization_url": "https://github.com/ropensci",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
+          "organization_name": "pyregence.org",
+          "organization_url": "https://github.com/pyregence",
+          "location_country": "",
+          "form_of_organization": ""
         }
       ]
     },
@@ -8140,114 +8338,6 @@
           "organization_url": "https://github.com/thetisproject",
           "location_country": "Global",
           "form_of_organization": "collaboration"
-        }
-      ]
-    },
-    {
-      "sub_category": "Wildfire",
-      "organization_count": 17,
-      "organizations": [
-        {
-          "organization_name": "Department of Biodiversity, Conservation and Attractions",
-          "organization_url": "https://github.com/dbca-wa",
-          "location_country": "Australia",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "ECMWF Code for Earth",
-          "organization_url": "https://github.com/ECMWFCode4Earth",
-          "location_country": "Global",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Earth Lab",
-          "organization_url": "https://github.com/earthlab",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "European Centre for Medium-Range Weather Forecasts",
-          "organization_url": "https://github.com/ecmwf",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Fire safety design tools",
-          "organization_url": "https://github.com/firetools",
-          "location_country": "Italy",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Laboratory of Tree-Ring Research",
-          "organization_url": "https://github.com/ltrr-arizona-edu",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Los Angeles Times Data and Graphics Department",
-          "organization_url": "https://github.com/datadesk",
-          "location_country": "USA",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "MITRE Fireline",
-          "organization_url": "https://github.com/mitrefireline",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Orion Lab",
-          "organization_url": "https://github.com/Orion-AI-Lab",
-          "location_country": "Greece",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Our Planscape",
-          "organization_url": "https://github.com/OurPlanscape",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Plant-for-the-Planet",
-          "organization_url": "https://github.com/Plant-for-the-Planet-org",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "PyroNear",
-          "organization_url": "https://github.com/pyronear",
-          "location_country": "France",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "RMRS Missoula Fire Sciences Lab",
-          "organization_url": "https://github.com/firelab",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Stanford Intelligent Systems Laboratory",
-          "organization_url": "https://github.com/sisl",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "bcgov",
-          "organization_url": "https://github.com/bcgov",
-          "location_country": "Canada",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "cell2fire",
-          "organization_url": "https://github.com/cell2fire",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "pyregence.org",
-          "organization_url": "https://github.com/pyregence",
-          "location_country": "",
-          "form_of_organization": ""
         }
       ]
     },
@@ -9614,6 +9704,84 @@
       ]
     },
     {
+      "sub_category": "Waves and Currents",
+      "organization_count": 12,
+      "organizations": [
+        {
+          "organization_name": "CNES",
+          "organization_url": "https://github.com/CNES",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "CSIRO Oceans and Atmosphere - Coastal Informatics Team",
+          "organization_url": "https://github.com/onaci",
+          "location_country": "Australia",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Climate Modeling Alliance",
+          "organization_url": "https://github.com/CliMA",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "European Centre for Medium-Range Weather Forecasts (IFS)",
+          "organization_url": "https://github.com/ecmwf-ifs",
+          "location_country": "Europe",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Geoscience Australia",
+          "organization_url": "https://github.com/GeoscienceAustralia",
+          "location_country": "Australia",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "MET-OM: software for Oceanography and Marine Meteorology",
+          "organization_url": "https://github.com/MET-OM",
+          "location_country": "Norway",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Mines Oceanography",
+          "organization_url": "https://github.com/mines-oceanography",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "NumericalMathematics",
+          "organization_url": "https://github.com/NumericalMathematics",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "OpenDrift",
+          "organization_url": "https://github.com/OpenDrift",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Parcels",
+          "organization_url": "https://github.com/Parcels-code",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "PassaH2O Group",
+          "organization_url": "https://github.com/passaH2O",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Wavespectra",
+          "organization_url": "https://github.com/wavespectra",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        }
+      ]
+    },
+    {
       "sub_category": "Carbon Capture",
       "organization_count": 11,
       "organizations": [
@@ -9830,74 +9998,74 @@
       ]
     },
     {
-      "sub_category": "Waves and Currents",
+      "sub_category": "Species Distribution Modeling",
       "organization_count": 11,
       "organizations": [
         {
-          "organization_name": "CNES",
-          "organization_url": "https://github.com/CNES",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "CSIRO Oceans and Atmosphere - Coastal Informatics Team",
-          "organization_url": "https://github.com/onaci",
-          "location_country": "Australia",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Climate Modeling Alliance",
-          "organization_url": "https://github.com/CliMA",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "European Centre for Medium-Range Weather Forecasts (IFS)",
-          "organization_url": "https://github.com/ecmwf-ifs",
-          "location_country": "Europe",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Geoscience Australia",
-          "organization_url": "https://github.com/GeoscienceAustralia",
-          "location_country": "Australia",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "MET-OM: software for Oceanography and Marine Meteorology",
-          "organization_url": "https://github.com/MET-OM",
-          "location_country": "Norway",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Mines Oceanography",
-          "organization_url": "https://github.com/mines-oceanography",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "NumericalMathematics",
-          "organization_url": "https://github.com/NumericalMathematics",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "OpenDrift",
-          "organization_url": "https://github.com/OpenDrift",
+          "organization_name": "Ecoverse",
+          "organization_url": "https://github.com/ecoverseR",
           "location_country": "Global",
           "form_of_organization": "community"
         },
         {
-          "organization_name": "PassaH2O Group",
-          "organization_url": "https://github.com/passaH2O",
+          "organization_name": "Evolutionary Ecology Group at University of Cambridge",
+          "organization_url": "https://github.com/EvolEcolGroup",
+          "location_country": "UK",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "IIASA",
+          "organization_url": "https://github.com/iiasa",
+          "location_country": "Austria",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Systems Ecology and Ecoinformatics Laboratory",
+          "organization_url": "https://github.com/SEELab",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Theoretical Ecology",
+          "organization_url": "https://github.com/TheoreticalEcology",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Wallace Ecological Modeling App",
+          "organization_url": "https://github.com/wallaceEcoMod",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "bcgov",
+          "organization_url": "https://github.com/bcgov",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "biomod2 package, tools and scripts",
+          "organization_url": "https://github.com/biomodhub",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "moilab",
+          "organization_url": "https://github.com/moiexpositoalonsolab",
           "location_country": "USA",
           "form_of_organization": "academia"
         },
         {
-          "organization_name": "Wavespectra",
-          "organization_url": "https://github.com/wavespectra",
-          "location_country": "Global",
-          "form_of_organization": "community"
+          "organization_name": "sdmTMB",
+          "organization_url": "https://github.com/sdmTMB",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "ÉPICBiodiversity",
+          "organization_url": "https://github.com/PoisotLab",
+          "location_country": "Canada",
+          "form_of_organization": "academia"
         }
       ]
     },
@@ -10406,66 +10574,6 @@
       ]
     },
     {
-      "sub_category": "Species Distribution Modeling",
-      "organization_count": 9,
-      "organizations": [
-        {
-          "organization_name": "Evolutionary Ecology Group at University of Cambridge",
-          "organization_url": "https://github.com/EvolEcolGroup",
-          "location_country": "UK",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "IIASA",
-          "organization_url": "https://github.com/iiasa",
-          "location_country": "Austria",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Systems Ecology and Ecoinformatics Laboratory",
-          "organization_url": "https://github.com/SEELab",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Theoretical Ecology",
-          "organization_url": "https://github.com/TheoreticalEcology",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Wallace Ecological Modeling App",
-          "organization_url": "https://github.com/wallaceEcoMod",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "bcgov",
-          "organization_url": "https://github.com/bcgov",
-          "location_country": "Canada",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "biomod2 package, tools and scripts",
-          "organization_url": "https://github.com/biomodhub",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "moilab",
-          "organization_url": "https://github.com/moiexpositoalonsolab",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "ÉPICBiodiversity",
-          "organization_url": "https://github.com/PoisotLab",
-          "location_country": "Canada",
-          "form_of_organization": "academia"
-        }
-      ]
-    },
-    {
       "sub_category": "Carbon Offsets and Trading",
       "organization_count": 8,
       "organizations": [
@@ -10784,6 +10892,54 @@
       ]
     },
     {
+      "sub_category": "Ocean Carbon and Temperature",
+      "organization_count": 7,
+      "organizations": [
+        {
+          "organization_name": "International Quality-controlled Ocean Database",
+          "organization_url": "https://github.com/IQuOD",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "JuliaOcean",
+          "organization_url": "https://github.com/JuliaOcean",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Ocean Health Index - Science",
+          "organization_url": "https://github.com/OHI-Science",
+          "location_country": "USA",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Open Acidification Project",
+          "organization_url": "https://github.com/Open-Acidification",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Plymouth Marine Laboratory",
+          "organization_url": "https://github.com/PlymouthMarineLaboratory",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Thermodynamic Equation Of Seawater - 2010 (TEOS-10)",
+          "organization_url": "https://github.com/TEOS-10",
+          "location_country": "Global",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "US191",
+          "organization_url": "https://forge.ird.fr/us191",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        }
+      ]
+    },
+    {
       "sub_category": "Atmospheric Dispersion and Transport",
       "organization_count": 6,
       "organizations": [
@@ -10822,48 +10978,6 @@
           "organization_url": "https://github.com/ihesp",
           "location_country": "USA",
           "form_of_organization": "academia"
-        }
-      ]
-    },
-    {
-      "sub_category": "Ocean Carbon and Temperature",
-      "organization_count": 6,
-      "organizations": [
-        {
-          "organization_name": "International Quality-controlled Ocean Database",
-          "organization_url": "https://github.com/IQuOD",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "JuliaOcean",
-          "organization_url": "https://github.com/JuliaOcean",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Ocean Health Index - Science",
-          "organization_url": "https://github.com/OHI-Science",
-          "location_country": "USA",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Open Acidification Project",
-          "organization_url": "https://github.com/Open-Acidification",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Thermodynamic Equation Of Seawater - 2010 (TEOS-10)",
-          "organization_url": "https://github.com/TEOS-10",
-          "location_country": "Global",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "US191",
-          "organization_url": "https://forge.ird.fr/us191",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
         }
       ]
     },
@@ -12601,7 +12715,7 @@
       {
         "name": "Freshwater and Hydrology",
         "kind": "sub_category",
-        "value": 56,
+        "value": 57,
         "children": [
           {
             "name": "Amanzi",
@@ -12932,6 +13046,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/ropensci"
+          },
+          {
+            "name": "tRIBS Distributed Hydrologic Modeling System",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/tRIBS-Model"
           },
           {
             "name": "timflow-org",
@@ -14720,7 +14840,7 @@
       {
         "name": "Meteorological Observation and Forecast",
         "kind": "sub_category",
-        "value": 42,
+        "value": 44,
         "children": [
           {
             "name": "ARM User Facility",
@@ -14769,6 +14889,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/GIS4WRF"
+          },
+          {
+            "name": "Google DeepMind",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/google-deepmind"
           },
           {
             "name": "Google Research",
@@ -14873,6 +14999,12 @@
             "url": "https://github.com/open-meteo"
           },
           {
+            "name": "OpenDSM",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/opendsm"
+          },
+          {
             "name": "OpenSenseAction",
             "kind": "organization",
             "value": 1,
@@ -14973,6 +15105,271 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/secondlaw-ai"
+          }
+        ]
+      },
+      {
+        "name": "Marine Life and Fishery",
+        "kind": "sub_category",
+        "value": 43,
+        "children": [
+          {
+            "name": "AFSC GAP Survey Data Products",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/afsc-gap-products"
+          },
+          {
+            "name": "Aqualink.org",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/aqualinkorg"
+          },
+          {
+            "name": "AusOcean",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ausocean"
+          },
+          {
+            "name": "CoralNet",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/coralnet"
+          },
+          {
+            "name": "DAS4Whales",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/DAS4Whales"
+          },
+          {
+            "name": "DSE",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/SchmidtDSE"
+          },
+          {
+            "name": "Department of Biodiversity, Conservation and Attractions",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/dbca-wa"
+          },
+          {
+            "name": "Ecosystem Dynamics and Assessment Branch",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NOAA-EDAB"
+          },
+          {
+            "name": "FISHGLOB",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/fishglob"
+          },
+          {
+            "name": "FLR",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/flr"
+          },
+          {
+            "name": "Fabrique numérique du Ministère de la Transition écologique",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/MTES-MCT"
+          },
+          {
+            "name": "FairScope",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/fairscope"
+          },
+          {
+            "name": "FathomNet",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/fathomnet"
+          },
+          {
+            "name": "Global Change Research Group",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pinskylab"
+          },
+          {
+            "name": "Global Fishing Watch",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/GlobalFishingWatch"
+          },
+          {
+            "name": "ICES tools (development area)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ices-tools-dev"
+          },
+          {
+            "name": "ICES tools (production)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ices-tools-prod"
+          },
+          {
+            "name": "Ichthyop",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ichthyop"
+          },
+          {
+            "name": "JuliaOcean",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/JuliaOcean"
+          },
+          {
+            "name": "MERMAID",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/data-mermaid"
+          },
+          {
+            "name": "NOAA-FIMS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NOAA-FIMS"
+          },
+          {
+            "name": "Northwest Fisheries Science Center - Conservation Biology Program",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/nwfsc-cb"
+          },
+          {
+            "name": "OSMOSE: Modelling Marine Exploited Ecosystems",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/osmose-model"
+          },
+          {
+            "name": "Ocean Data Factory Sweden",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ocean-data-factory-sweden"
+          },
+          {
+            "name": "Office of Science & Technology at NOAA Fisheries",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/nmfs-ost"
+          },
+          {
+            "name": "Orcasound",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/orcasound"
+          },
+          {
+            "name": "PFMC assessments",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pfmc-assessments"
+          },
+          {
+            "name": "POSEIDON",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/poseidon-fisheries"
+          },
+          {
+            "name": "Research Institute for Nature and Forest (INBO)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/inbo"
+          },
+          {
+            "name": "SOPhyE (Satellite Ocean Colour and Phytoplankton Ecology Group)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/BIO-RSG"
+          },
+          {
+            "name": "Salmon Watersheds Program",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/salmonwatersheds"
+          },
+          {
+            "name": "Sizespectrum",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/sizespectrum"
+          },
+          {
+            "name": "The Plankton Team",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PlanktonTeam"
+          },
+          {
+            "name": "VIAME",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/VIAME"
+          },
+          {
+            "name": "Visual Computing Lab - ISTI - CNR",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/cnr-isti-vclab"
+          },
+          {
+            "name": "WHOI GitHub Central",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WHOIGit"
+          },
+          {
+            "name": "deep-voice",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/deep-voice"
+          },
+          {
+            "name": "echostack",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/echostack-org"
+          },
+          {
+            "name": "fishR Core Team",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/fishR-Core-Team"
+          },
+          {
+            "name": "pbs-assess",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pbs-assess"
+          },
+          {
+            "name": "r4ss",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/r4ss"
+          },
+          {
+            "name": "rOpenSci",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ropensci"
+          },
+          {
+            "name": "ss3sim",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ss3sim"
           }
         ]
       },
@@ -15465,231 +15862,225 @@
         ]
       },
       {
-        "name": "Marine Life and Fishery",
+        "name": "Ocean and Hydrology Data Access",
         "kind": "sub_category",
-        "value": 39,
+        "value": 38,
         "children": [
           {
-            "name": "AFSC GAP Survey Data Products",
+            "name": "AMOC community",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/afsc-gap-products"
+            "url": "https://github.com/AMOCcommunity"
           },
           {
-            "name": "Aqualink.org",
+            "name": "Australian Antarctic Division",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/aqualinkorg"
+            "url": "https://github.com/AustralianAntarcticDivision"
           },
           {
-            "name": "AusOcean",
+            "name": "Australian Ocean Data Network",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ausocean"
+            "url": "https://github.com/aodn"
           },
           {
-            "name": "CoralNet",
+            "name": "C4IROcean-archive",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/coralnet"
+            "url": "https://github.com/C4IROcean-archive"
           },
           {
-            "name": "DAS4Whales",
+            "name": "CNRM",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/DAS4Whales"
+            "url": "https://github.com/UMR-CNRM"
           },
           {
-            "name": "DSE",
+            "name": "CORRECTIV",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/SchmidtDSE"
+            "url": "https://github.com/correctiv"
           },
           {
-            "name": "Department of Biodiversity, Conservation and Attractions",
+            "name": "CRiSp",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/dbca-wa"
+            "url": "https://github.com/CityRiverSpaces"
           },
           {
-            "name": "Ecosystem Dynamics and Assessment Branch",
+            "name": "CSIRO",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/NOAA-EDAB"
+            "url": "https://github.com/csiro"
           },
           {
-            "name": "FLR",
+            "name": "EMODnet",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/flr"
+            "url": "https://github.com/EMODnet"
           },
           {
-            "name": "Fabrique numérique du Ministère de la Transition écologique",
+            "name": "ERDDAP",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/MTES-MCT"
+            "url": "https://github.com/ERDDAP"
           },
           {
-            "name": "FathomNet",
+            "name": "Euro-Argo ERIC",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/fathomnet"
+            "url": "https://github.com/euroargodev"
           },
           {
-            "name": "Global Change Research Group",
+            "name": "Global freshwater biodiversity research",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/pinskylab"
+            "url": "https://github.com/glowabio"
           },
           {
-            "name": "Global Fishing Watch",
+            "name": "GroMoPo",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/GlobalFishingWatch"
+            "url": "https://github.com/Gromopo"
           },
           {
-            "name": "ICES tools (development area)",
+            "name": "HyRiver",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ices-tools-dev"
+            "url": "https://github.com/hyriver"
           },
           {
-            "name": "ICES tools (production)",
+            "name": "HydroFrame",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ices-tools-prod"
+            "url": "https://github.com/hydroframe"
           },
           {
-            "name": "Ichthyop",
+            "name": "INRAE",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ichthyop"
+            "url": "https://github.com/inrae"
           },
           {
-            "name": "JuliaOcean",
+            "name": "International Oceanographic Data and Information Exchange",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/JuliaOcean"
+            "url": "https://github.com/iodepo"
           },
           {
-            "name": "MERMAID",
+            "name": "KAUST HYdro-climatic EXtremes (HYEX) Research Group",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/data-mermaid"
+            "url": "https://github.com/hyex-research"
           },
           {
-            "name": "NOAA-FIMS",
+            "name": "KIOS Research and Innovation Center of Excellence, University of Cyprus",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/NOAA-FIMS"
+            "url": "https://github.com/KIOS-Research"
           },
           {
-            "name": "Northwest Fisheries Science Center - Conservation Biology Program",
+            "name": "MET-OM: software for Oceanography and Marine Meteorology",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/nwfsc-cb"
+            "url": "https://github.com/MET-OM"
           },
           {
-            "name": "OSMOSE: Modelling Marine Exploited Ecosystems",
+            "name": "Matplotlib Developers",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/osmose-model"
+            "url": "https://github.com/matplotlib"
           },
           {
-            "name": "Ocean Data Factory Sweden",
+            "name": "Mercator Ocean International",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ocean-data-factory-sweden"
+            "url": "https://github.com/mercator-ocean"
           },
           {
-            "name": "Office of Science & Technology at NOAA Fisheries",
+            "name": "NSF National Center for Atmospheric Research",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/nmfs-ost"
+            "url": "https://github.com/NCAR"
           },
           {
-            "name": "PFMC assessments",
+            "name": "OPERA-Cal-Val",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/pfmc-assessments"
+            "url": "https://github.com/OPERA-Cal-Val"
           },
           {
-            "name": "POSEIDON",
+            "name": "Ocean Navigator",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/poseidon-fisheries"
+            "url": "https://github.com/DFO-Ocean-Navigator"
           },
           {
-            "name": "Research Institute for Nature and Forest (INBO)",
+            "name": "Ocean Networks Canada",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/inbo"
+            "url": "https://github.com/OceanNetworksCanada"
           },
           {
-            "name": "SOPhyE (Satellite Ocean Colour and Phytoplankton Ecology Group)",
+            "name": "OpenDCS",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/BIO-RSG"
+            "url": "https://github.com/opendcs"
           },
           {
-            "name": "Salmon Watersheds Program",
+            "name": "OpenEarth",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/salmonwatersheds"
+            "url": "https://github.com/openearth"
           },
           {
-            "name": "Sizespectrum",
+            "name": "PO.DAAC",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/sizespectrum"
+            "url": "https://github.com/podaac"
           },
           {
-            "name": "The Plankton Team",
+            "name": "Pacific Marine Environmental Laboratory",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/PlanktonTeam"
+            "url": "https://github.com/NOAA-PMEL"
           },
           {
-            "name": "VIAME",
+            "name": "Thomas Haine Research Group",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/VIAME"
+            "url": "https://github.com/hainegroup"
           },
           {
-            "name": "Visual Computing Lab - ISTI - CNR",
+            "name": "U.S. Environmental Protection Agency",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/cnr-isti-vclab"
+            "url": "https://github.com/USEPA"
           },
           {
-            "name": "WHOI GitHub Central",
+            "name": "US Integrated Ocean Observing System",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/WHOIGit"
+            "url": "https://github.com/ioos"
           },
           {
-            "name": "deep-voice",
+            "name": "USGS Coastal and Marine Geology Program",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/deep-voice"
+            "url": "https://github.com/USGS-CMG"
           },
           {
-            "name": "fishR Core Team",
+            "name": "openmeteo",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/fishR-Core-Team"
+            "url": "https://github.com/openmeteo"
           },
           {
-            "name": "pbs-assess",
+            "name": "pyTMD",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/pbs-assess"
-          },
-          {
-            "name": "r4ss",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/r4ss"
+            "url": "https://github.com/pyTMD"
           },
           {
             "name": "rOpenSci",
@@ -15698,10 +16089,10 @@
             "url": "https://github.com/ropensci"
           },
           {
-            "name": "ss3sim",
+            "name": "rOpenSci Archive",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ss3sim"
+            "url": "https://github.com/ropensci-archive"
           }
         ]
       },
@@ -16118,211 +16509,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/rOpenGov"
-          },
-          {
-            "name": "rOpenSci",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ropensci"
-          }
-        ]
-      },
-      {
-        "name": "Ocean and Hydrology Data Access",
-        "kind": "sub_category",
-        "value": 33,
-        "children": [
-          {
-            "name": "AMOC community",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/AMOCcommunity"
-          },
-          {
-            "name": "Australian Antarctic Division",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/AustralianAntarcticDivision"
-          },
-          {
-            "name": "Australian Ocean Data Network",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/aodn"
-          },
-          {
-            "name": "CNRM",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/UMR-CNRM"
-          },
-          {
-            "name": "CORRECTIV",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/correctiv"
-          },
-          {
-            "name": "CRiSp",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/CityRiverSpaces"
-          },
-          {
-            "name": "ERDDAP",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ERDDAP"
-          },
-          {
-            "name": "Euro-Argo ERIC",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/euroargodev"
-          },
-          {
-            "name": "Global freshwater biodiversity research",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/glowabio"
-          },
-          {
-            "name": "GroMoPo",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Gromopo"
-          },
-          {
-            "name": "HyRiver",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/hyriver"
-          },
-          {
-            "name": "HydroFrame",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/hydroframe"
-          },
-          {
-            "name": "INRAE",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/inrae"
-          },
-          {
-            "name": "International Oceanographic Data and Information Exchange",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/iodepo"
-          },
-          {
-            "name": "KAUST HYdro-climatic EXtremes (HYEX) Research Group",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/hyex-research"
-          },
-          {
-            "name": "KIOS Research and Innovation Center of Excellence, University of Cyprus",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/KIOS-Research"
-          },
-          {
-            "name": "MET-OM: software for Oceanography and Marine Meteorology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/MET-OM"
-          },
-          {
-            "name": "Matplotlib Developers",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/matplotlib"
-          },
-          {
-            "name": "Mercator Ocean International",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/mercator-ocean"
-          },
-          {
-            "name": "NSF National Center for Atmospheric Research",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NCAR"
-          },
-          {
-            "name": "OPERA-Cal-Val",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OPERA-Cal-Val"
-          },
-          {
-            "name": "Ocean Navigator",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/DFO-Ocean-Navigator"
-          },
-          {
-            "name": "Ocean Networks Canada",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OceanNetworksCanada"
-          },
-          {
-            "name": "OpenDCS",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/opendcs"
-          },
-          {
-            "name": "OpenEarth",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openearth"
-          },
-          {
-            "name": "PO.DAAC",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/podaac"
-          },
-          {
-            "name": "Pacific Marine Environmental Laboratory",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NOAA-PMEL"
-          },
-          {
-            "name": "Thomas Haine Research Group",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/hainegroup"
-          },
-          {
-            "name": "U.S. Environmental Protection Agency",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/USEPA"
-          },
-          {
-            "name": "US Integrated Ocean Observing System",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ioos"
-          },
-          {
-            "name": "USGS Coastal and Marine Geology Program",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/USGS-CMG"
-          },
-          {
-            "name": "openmeteo",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openmeteo"
           },
           {
             "name": "rOpenSci",
@@ -17498,93 +17684,111 @@
         ]
       },
       {
-        "name": "Wind Energy",
+        "name": "Glacier and Ice Sheets",
         "kind": "sub_category",
-        "value": 22,
+        "value": 23,
         "children": [
           {
-            "name": "Applied Machine Learning (AML) Lab",
+            "name": "CICE Consortium",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/TAMU-AML"
+            "url": "https://github.com/CICE-Consortium"
           },
           {
-            "name": "BYU FLOW Lab",
+            "name": "CryoTools",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/byuflowlab"
+            "url": "https://github.com/cryotools"
           },
           {
-            "name": "Energy Research and Forecasting",
+            "name": "Cryologger",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/erf-model"
+            "url": "https://github.com/cryologger"
           },
           {
-            "name": "FloatingArrayDesign",
+            "name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/FloatingArrayDesign"
+            "url": "https://github.com/ECCO-GROUP"
           },
           {
-            "name": "FraunhoferIWES",
+            "name": "GEUS Glaciology and Climate",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/FraunhoferIWES"
+            "url": "https://github.com/GEUS-Glaciology-and-Climate"
           },
           {
-            "name": "IEA Wind Digitalization (Task 43)",
+            "name": "Ice-sheet and Sea-level System Model (ISSM)",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/IEA-Task-43"
+            "url": "https://github.com/ISSMteam"
           },
           {
-            "name": "IEA Wind Systems",
+            "name": "Land Ice Verification and Validation toolkit",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/IEAWindSystems"
+            "url": "https://github.com/LIVVkit"
           },
           {
-            "name": "IEC 61400",
+            "name": "NASA Jet Propulsion Laboratory",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/IEC-61400"
+            "url": "https://github.com/nasa-jpl"
           },
           {
-            "name": "Imperial College London",
+            "name": "NCU CryoSensing Team",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ImperialCollegeLondon"
+            "url": "https://github.com/ncu-cryosensing"
           },
           {
-            "name": "LHEEA",
+            "name": "NOAA - Geophysical Fluid Dynamics Laboratory",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/lheea"
+            "url": "https://github.com/NOAA-GFDL"
           },
           {
-            "name": "NLRWindSystems",
+            "name": "National Snow and Ice Data Center",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/NLRWindSystems"
+            "url": "https://github.com/nsidc"
           },
           {
-            "name": "National Laboratory of the Rockies",
+            "name": "ODINN",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/NatLabRockies"
+            "url": "https://github.com/ODINN-SciML"
           },
           {
-            "name": "OpenFAST",
+            "name": "Open Global Glacier Model",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/OpenFAST"
+            "url": "https://github.com/OGGM"
           },
           {
-            "name": "RES Group",
+            "name": "PalMA Ice sheet modeling group",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/resgroup"
+            "url": "https://github.com/palma-ice"
+          },
+          {
+            "name": "Parallel Ice Sheet Model",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pism"
+          },
+          {
+            "name": "PyGEM-Community",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PyGEM-Community"
+          },
+          {
+            "name": "SICE",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/GEUS-SICE"
           },
           {
             "name": "Sandia National Laboratories",
@@ -17593,46 +17797,34 @@
             "url": "https://github.com/sandialabs"
           },
           {
-            "name": "Scottish Government Marine Directorate",
+            "name": "StratusGeo: Accelerating discovery for geoscience communities",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/MarineScotlandScience"
+            "url": "https://github.com/CryoInTheCloud"
           },
           {
-            "name": "The Signal Intelligence Project",
+            "name": "WAVI.jl Ice Sheet Model",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/sintel-dev"
+            "url": "https://github.com/WAVI-ice-sheet-model"
           },
           {
-            "name": "awebox",
+            "name": "icepack",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/awebox"
+            "url": "https://github.com/icepack"
           },
           {
-            "name": "brightwind",
+            "name": "icesat2py",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/brightwind-dev"
+            "url": "https://github.com/icesat2py"
           },
           {
-            "name": "kynema",
+            "name": "wgms",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/kynema"
-          },
-          {
-            "name": "turbinesFoam",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/turbinesFoam"
-          },
-          {
-            "name": "wind-python",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/wind-python"
+            "url": "https://gitlab.com/wgms"
           }
         ]
       },
@@ -17903,105 +18095,87 @@
         ]
       },
       {
-        "name": "Glacier and Ice Sheets",
+        "name": "Wind Energy",
         "kind": "sub_category",
         "value": 21,
         "children": [
           {
-            "name": "CICE Consortium",
+            "name": "Applied Machine Learning (AML) Lab",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/CICE-Consortium"
+            "url": "https://github.com/TAMU-AML"
           },
           {
-            "name": "CryoTools",
+            "name": "BYU FLOW Lab",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/cryotools"
+            "url": "https://github.com/byuflowlab"
           },
           {
-            "name": "Cryologger",
+            "name": "Energy Research and Forecasting",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/cryologger"
+            "url": "https://github.com/erf-model"
           },
           {
-            "name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
+            "name": "FloatingArrayDesign",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ECCO-GROUP"
+            "url": "https://github.com/FloatingArrayDesign"
           },
           {
-            "name": "GEUS Glaciology and Climate",
+            "name": "FraunhoferIWES",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/GEUS-Glaciology-and-Climate"
+            "url": "https://github.com/FraunhoferIWES"
           },
           {
-            "name": "Ice-sheet and Sea-level System Model (ISSM)",
+            "name": "IEA Wind Systems",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ISSMteam"
+            "url": "https://github.com/IEAWindSystems"
           },
           {
-            "name": "Land Ice Verification and Validation toolkit",
+            "name": "IEC 61400",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/LIVVkit"
+            "url": "https://github.com/IEC-61400"
           },
           {
-            "name": "NASA Jet Propulsion Laboratory",
+            "name": "Imperial College London",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/nasa-jpl"
+            "url": "https://github.com/ImperialCollegeLondon"
           },
           {
-            "name": "NOAA - Geophysical Fluid Dynamics Laboratory",
+            "name": "LHEEA",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/NOAA-GFDL"
+            "url": "https://gitlab.com/lheea"
           },
           {
-            "name": "National Snow and Ice Data Center",
+            "name": "NLRWindSystems",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/nsidc"
+            "url": "https://github.com/NLRWindSystems"
           },
           {
-            "name": "ODINN",
+            "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ODINN-SciML"
+            "url": "https://github.com/NatLabRockies"
           },
           {
-            "name": "Open Global Glacier Model",
+            "name": "OpenFAST",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/OGGM"
+            "url": "https://github.com/OpenFAST"
           },
           {
-            "name": "PalMA Ice sheet modeling group",
+            "name": "RES Group",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/palma-ice"
-          },
-          {
-            "name": "Parallel Ice Sheet Model",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/pism"
-          },
-          {
-            "name": "PyGEM-Community",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PyGEM-Community"
-          },
-          {
-            "name": "SICE",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/GEUS-SICE"
+            "url": "https://github.com/resgroup"
           },
           {
             "name": "Sandia National Laboratories",
@@ -18010,28 +18184,46 @@
             "url": "https://github.com/sandialabs"
           },
           {
-            "name": "StratusGeo: Accelerating discovery for geoscience communities",
+            "name": "Scottish Government Marine Directorate",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/CryoInTheCloud"
+            "url": "https://github.com/MarineScotlandScience"
           },
           {
-            "name": "icepack",
+            "name": "The Signal Intelligence Project",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/icepack"
+            "url": "https://github.com/sintel-dev"
           },
           {
-            "name": "icesat2py",
+            "name": "awebox",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/icesat2py"
+            "url": "https://github.com/awebox"
           },
           {
-            "name": "wgms",
+            "name": "brightwind",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/wgms"
+            "url": "https://github.com/brightwind-dev"
+          },
+          {
+            "name": "kynema",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/kynema"
+          },
+          {
+            "name": "turbinesFoam",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/turbinesFoam"
+          },
+          {
+            "name": "wind-python",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/wind-python"
           }
         ]
       },
@@ -18526,6 +18718,127 @@
         ]
       },
       {
+        "name": "Terrestrial Wildlife",
+        "kind": "sub_category",
+        "value": 19,
+        "children": [
+          {
+            "name": "BlueGreen Labs",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bluegreen-labs"
+          },
+          {
+            "name": "Circuitscape",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Circuitscape"
+          },
+          {
+            "name": "Conservation Technology Lab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/conservationtechlab"
+          },
+          {
+            "name": "DrivenData",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/drivendataorg"
+          },
+          {
+            "name": "Google",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/google"
+          },
+          {
+            "name": "LIFE RIPARIAS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/riparias"
+          },
+          {
+            "name": "Landscape Science & Technology, Environment & Climate Change Canada",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/LandSciTech"
+          },
+          {
+            "name": "Microsoft",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/microsoft"
+          },
+          {
+            "name": "NESP Threatened Species Recovery Hub (Project 3.1)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/nesp-tsr3-1"
+          },
+          {
+            "name": "Natural Solutions",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/naturalsolutions"
+          },
+          {
+            "name": "PADAS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PADAS"
+          },
+          {
+            "name": "PAMGuard",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PAMGuard"
+          },
+          {
+            "name": "Research Institute for Nature and Forest (INBO)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/inbo"
+          },
+          {
+            "name": "Wild Me by Conservation X Labs",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WildMeOrg"
+          },
+          {
+            "name": "WildEye Conservation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WildEyeConservation"
+          },
+          {
+            "name": "WildlifeDatasets",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WildlifeDatasets"
+          },
+          {
+            "name": "bcgov",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bcgov"
+          },
+          {
+            "name": "earthtoolsmaker",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/earthtoolsmaker"
+          },
+          {
+            "name": "rOpenSci",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ropensci"
+          }
+        ]
+      },
+      {
         "name": "Curated Lists",
         "kind": "sub_category",
         "value": 18,
@@ -18986,99 +19299,99 @@
         ]
       },
       {
-        "name": "Terrestrial Wildlife",
+        "name": "Wildfire",
         "kind": "sub_category",
         "value": 18,
         "children": [
           {
-            "name": "BlueGreen Labs",
+            "name": "Department of Biodiversity, Conservation and Attractions",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/bluegreen-labs"
+            "url": "https://github.com/dbca-wa"
           },
           {
-            "name": "Circuitscape",
+            "name": "ECMWF Code for Earth",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/Circuitscape"
+            "url": "https://github.com/ECMWFCode4Earth"
           },
           {
-            "name": "Conservation Technology Lab",
+            "name": "Earth Lab",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/conservationtechlab"
+            "url": "https://github.com/earthlab"
           },
           {
-            "name": "DrivenData",
+            "name": "European Centre for Medium-Range Weather Forecasts",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/drivendataorg"
+            "url": "https://github.com/ecmwf"
           },
           {
-            "name": "Google",
+            "name": "Fire safety design tools",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/google"
+            "url": "https://github.com/firetools"
           },
           {
-            "name": "LIFE RIPARIAS",
+            "name": "FireCaster Codes",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/riparias"
+            "url": "https://github.com/forefireAPI"
           },
           {
-            "name": "Microsoft",
+            "name": "Laboratory of Tree-Ring Research",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/microsoft"
+            "url": "https://github.com/ltrr-arizona-edu"
           },
           {
-            "name": "NESP Threatened Species Recovery Hub (Project 3.1)",
+            "name": "Los Angeles Times Data and Graphics Department",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/nesp-tsr3-1"
+            "url": "https://github.com/datadesk"
           },
           {
-            "name": "Natural Solutions",
+            "name": "MITRE Fireline",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/naturalsolutions"
+            "url": "https://github.com/mitrefireline"
           },
           {
-            "name": "PADAS",
+            "name": "Orion Lab",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/PADAS"
+            "url": "https://github.com/Orion-AI-Lab"
           },
           {
-            "name": "PAMGuard",
+            "name": "Our Planscape",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/PAMGuard"
+            "url": "https://github.com/OurPlanscape"
           },
           {
-            "name": "Research Institute for Nature and Forest (INBO)",
+            "name": "Plant-for-the-Planet",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/inbo"
+            "url": "https://github.com/Plant-for-the-Planet-org"
           },
           {
-            "name": "Wild Me by Conservation X Labs",
+            "name": "PyroNear",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/WildMeOrg"
+            "url": "https://github.com/pyronear"
           },
           {
-            "name": "WildEye Conservation",
+            "name": "RMRS Missoula Fire Sciences Lab",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/WildEyeConservation"
+            "url": "https://github.com/firelab"
           },
           {
-            "name": "WildlifeDatasets",
+            "name": "Stanford Intelligent Systems Laboratory",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/WildlifeDatasets"
+            "url": "https://github.com/sisl"
           },
           {
             "name": "bcgov",
@@ -19087,16 +19400,16 @@
             "url": "https://github.com/bcgov"
           },
           {
-            "name": "earthtoolsmaker",
+            "name": "cell2fire",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/earthtoolsmaker"
+            "url": "https://github.com/cell2fire"
           },
           {
-            "name": "rOpenSci",
+            "name": "pyregence.org",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ropensci"
+            "url": "https://github.com/pyregence"
           }
         ]
       },
@@ -19206,115 +19519,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/thetisproject"
-          }
-        ]
-      },
-      {
-        "name": "Wildfire",
-        "kind": "sub_category",
-        "value": 17,
-        "children": [
-          {
-            "name": "Department of Biodiversity, Conservation and Attractions",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/dbca-wa"
-          },
-          {
-            "name": "ECMWF Code for Earth",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ECMWFCode4Earth"
-          },
-          {
-            "name": "Earth Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/earthlab"
-          },
-          {
-            "name": "European Centre for Medium-Range Weather Forecasts",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ecmwf"
-          },
-          {
-            "name": "Fire safety design tools",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/firetools"
-          },
-          {
-            "name": "Laboratory of Tree-Ring Research",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ltrr-arizona-edu"
-          },
-          {
-            "name": "Los Angeles Times Data and Graphics Department",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/datadesk"
-          },
-          {
-            "name": "MITRE Fireline",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/mitrefireline"
-          },
-          {
-            "name": "Orion Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Orion-AI-Lab"
-          },
-          {
-            "name": "Our Planscape",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OurPlanscape"
-          },
-          {
-            "name": "Plant-for-the-Planet",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Plant-for-the-Planet-org"
-          },
-          {
-            "name": "PyroNear",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/pyronear"
-          },
-          {
-            "name": "RMRS Missoula Fire Sciences Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/firelab"
-          },
-          {
-            "name": "Stanford Intelligent Systems Laboratory",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/sisl"
-          },
-          {
-            "name": "bcgov",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bcgov"
-          },
-          {
-            "name": "cell2fire",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/cell2fire"
-          },
-          {
-            "name": "pyregence.org",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/pyregence"
           }
         ]
       },
@@ -20696,6 +20900,85 @@
         ]
       },
       {
+        "name": "Waves and Currents",
+        "kind": "sub_category",
+        "value": 12,
+        "children": [
+          {
+            "name": "CNES",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/CNES"
+          },
+          {
+            "name": "CSIRO Oceans and Atmosphere - Coastal Informatics Team",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/onaci"
+          },
+          {
+            "name": "Climate Modeling Alliance",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/CliMA"
+          },
+          {
+            "name": "European Centre for Medium-Range Weather Forecasts (IFS)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ecmwf-ifs"
+          },
+          {
+            "name": "Geoscience Australia",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/GeoscienceAustralia"
+          },
+          {
+            "name": "MET-OM: software for Oceanography and Marine Meteorology",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/MET-OM"
+          },
+          {
+            "name": "Mines Oceanography",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/mines-oceanography"
+          },
+          {
+            "name": "NumericalMathematics",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NumericalMathematics"
+          },
+          {
+            "name": "OpenDrift",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OpenDrift"
+          },
+          {
+            "name": "Parcels",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Parcels-code"
+          },
+          {
+            "name": "PassaH2O Group",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/passaH2O"
+          },
+          {
+            "name": "Wavespectra",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/wavespectra"
+          }
+        ]
+      },
+      {
         "name": "Carbon Capture",
         "kind": "sub_category",
         "value": 11,
@@ -20915,75 +21198,75 @@
         ]
       },
       {
-        "name": "Waves and Currents",
+        "name": "Species Distribution Modeling",
         "kind": "sub_category",
         "value": 11,
         "children": [
           {
-            "name": "CNES",
+            "name": "Ecoverse",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/CNES"
+            "url": "https://github.com/ecoverseR"
           },
           {
-            "name": "CSIRO Oceans and Atmosphere - Coastal Informatics Team",
+            "name": "Evolutionary Ecology Group at University of Cambridge",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/onaci"
+            "url": "https://github.com/EvolEcolGroup"
           },
           {
-            "name": "Climate Modeling Alliance",
+            "name": "IIASA",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/CliMA"
+            "url": "https://github.com/iiasa"
           },
           {
-            "name": "European Centre for Medium-Range Weather Forecasts (IFS)",
+            "name": "Systems Ecology and Ecoinformatics Laboratory",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/ecmwf-ifs"
+            "url": "https://github.com/SEELab"
           },
           {
-            "name": "Geoscience Australia",
+            "name": "Theoretical Ecology",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/GeoscienceAustralia"
+            "url": "https://github.com/TheoreticalEcology"
           },
           {
-            "name": "MET-OM: software for Oceanography and Marine Meteorology",
+            "name": "Wallace Ecological Modeling App",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/MET-OM"
+            "url": "https://github.com/wallaceEcoMod"
           },
           {
-            "name": "Mines Oceanography",
+            "name": "bcgov",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/mines-oceanography"
+            "url": "https://github.com/bcgov"
           },
           {
-            "name": "NumericalMathematics",
+            "name": "biomod2 package, tools and scripts",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/NumericalMathematics"
+            "url": "https://github.com/biomodhub"
           },
           {
-            "name": "OpenDrift",
+            "name": "moilab",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/OpenDrift"
+            "url": "https://github.com/moiexpositoalonsolab"
           },
           {
-            "name": "PassaH2O Group",
+            "name": "sdmTMB",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/passaH2O"
+            "url": "https://github.com/sdmTMB"
           },
           {
-            "name": "Wavespectra",
+            "name": "ÉPICBiodiversity",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/wavespectra"
+            "url": "https://github.com/PoisotLab"
           }
         ]
       },
@@ -21500,67 +21783,6 @@
         ]
       },
       {
-        "name": "Species Distribution Modeling",
-        "kind": "sub_category",
-        "value": 9,
-        "children": [
-          {
-            "name": "Evolutionary Ecology Group at University of Cambridge",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/EvolEcolGroup"
-          },
-          {
-            "name": "IIASA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/iiasa"
-          },
-          {
-            "name": "Systems Ecology and Ecoinformatics Laboratory",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/SEELab"
-          },
-          {
-            "name": "Theoretical Ecology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/TheoreticalEcology"
-          },
-          {
-            "name": "Wallace Ecological Modeling App",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/wallaceEcoMod"
-          },
-          {
-            "name": "bcgov",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bcgov"
-          },
-          {
-            "name": "biomod2 package, tools and scripts",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/biomodhub"
-          },
-          {
-            "name": "moilab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/moiexpositoalonsolab"
-          },
-          {
-            "name": "ÉPICBiodiversity",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PoisotLab"
-          }
-        ]
-      },
-      {
         "name": "Carbon Offsets and Trading",
         "kind": "sub_category",
         "value": 8,
@@ -21885,6 +22107,55 @@
         ]
       },
       {
+        "name": "Ocean Carbon and Temperature",
+        "kind": "sub_category",
+        "value": 7,
+        "children": [
+          {
+            "name": "International Quality-controlled Ocean Database",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/IQuOD"
+          },
+          {
+            "name": "JuliaOcean",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/JuliaOcean"
+          },
+          {
+            "name": "Ocean Health Index - Science",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OHI-Science"
+          },
+          {
+            "name": "Open Acidification Project",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Open-Acidification"
+          },
+          {
+            "name": "Plymouth Marine Laboratory",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PlymouthMarineLaboratory"
+          },
+          {
+            "name": "Thermodynamic Equation Of Seawater - 2010 (TEOS-10)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/TEOS-10"
+          },
+          {
+            "name": "US191",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://forge.ird.fr/us191"
+          }
+        ]
+      },
+      {
         "name": "Atmospheric Dispersion and Transport",
         "kind": "sub_category",
         "value": 6,
@@ -21924,49 +22195,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/ihesp"
-          }
-        ]
-      },
-      {
-        "name": "Ocean Carbon and Temperature",
-        "kind": "sub_category",
-        "value": 6,
-        "children": [
-          {
-            "name": "International Quality-controlled Ocean Database",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/IQuOD"
-          },
-          {
-            "name": "JuliaOcean",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/JuliaOcean"
-          },
-          {
-            "name": "Ocean Health Index - Science",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OHI-Science"
-          },
-          {
-            "name": "Open Acidification Project",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Open-Acidification"
-          },
-          {
-            "name": "Thermodynamic Equation Of Seawater - 2010 (TEOS-10)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/TEOS-10"
-          },
-          {
-            "name": "US191",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://forge.ird.fr/us191"
           }
         ]
       },
