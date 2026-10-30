@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T11:15:55.107969+00:00",
+  "generated_at": "2026-10-30T12:58:56.430601+00:00",
   "default_metric": "total_score_combined",
   "metric_labels": {
     "score": "Ecosyste.ms Score",
@@ -234,7 +234,7 @@
                 "category": "Atmosphere",
                 "sub_category": "Atmospheric Chemistry and Aerosol",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T16:49:25+00:00",
+                "latest_commit_activity": "2026-10-30T00:04:24+00:00",
                 "metrics": {
                   "contributors": 44.0,
                   "citations": 0,
@@ -353,13 +353,13 @@
                 "metrics": {
                   "contributors": 7.0,
                   "citations": 0,
-                  "total_commits": 2951.0,
+                  "total_commits": 2954.0,
                   "total_number_of_dependencies": 1609.0,
                   "stars": 6.0,
                   "score": 3.737669618283368,
-                  "dds": 0.590308370044052,
+                  "dds": 0.5907244414353411,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.7758888210331303
+                  "total_score_combined": 0.7763561376928787
                 }
               },
               {
@@ -769,17 +769,17 @@
                 "category": "Atmosphere",
                 "sub_category": "Atmospheric Composition and Dynamics",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T04:10:45+00:00",
+                "latest_commit_activity": "2026-10-30T06:51:46+00:00",
                 "metrics": {
                   "contributors": 30.0,
                   "citations": 0,
-                  "total_commits": 1973.0,
+                  "total_commits": 1974.0,
                   "total_number_of_dependencies": 96.0,
                   "stars": 258.0,
                   "score": 15.348149496128702,
-                  "dds": 0.676127724277749,
+                  "dds": 0.6757852077001011,
                   "downloads_last_month": 334,
-                  "total_score_combined": 1.2648040442818078
+                  "total_score_combined": 1.2644442282616142
                 }
               },
               {
@@ -1114,7 +1114,7 @@
                 "category": "Atmosphere",
                 "sub_category": "Atmospheric Composition and Dynamics",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-27T06:43:12+00:00",
+                "latest_commit_activity": "2026-10-30T07:28:54+00:00",
                 "metrics": {
                   "contributors": 37.0,
                   "citations": 0,
@@ -1137,7 +1137,7 @@
                 "category": "Atmosphere",
                 "sub_category": "Atmospheric Composition and Dynamics",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T12:48:30+00:00",
+                "latest_commit_activity": "2026-10-30T09:18:37+00:00",
                 "metrics": {
                   "contributors": 61.0,
                   "citations": 0,
@@ -2004,13 +2004,13 @@
                 "metrics": {
                   "contributors": 18.0,
                   "citations": 0,
-                  "total_commits": 315.0,
+                  "total_commits": 327.0,
                   "total_number_of_dependencies": 46.0,
                   "stars": 146.0,
                   "score": 20.436534224664225,
-                  "dds": 0.526984126984127,
+                  "dds": 0.538226299694189,
                   "downloads_last_month": 52992,
-                  "total_score_combined": 1.2335390389048955
+                  "total_score_combined": 1.2456705119374871
                 }
               },
               {
@@ -2046,17 +2046,17 @@
                 "category": "Atmosphere",
                 "sub_category": "Meteorological Observation and Forecast",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T08:35:51+00:00",
+                "latest_commit_activity": "2026-10-29T13:35:26+00:00",
                 "metrics": {
-                  "contributors": 45.0,
+                  "contributors": 47.0,
                   "citations": 0,
-                  "total_commits": 1537.0,
+                  "total_commits": 1540.0,
                   "total_number_of_dependencies": 99.0,
                   "stars": 323.0,
                   "score": 20.074480603793603,
-                  "dds": 0.440468445022771,
+                  "dds": 0.441558441558441,
                   "downloads_last_month": 19178,
-                  "total_score_combined": 1.1781101489289971
+                  "total_score_combined": 1.1813742300186882
                 }
               },
               {
@@ -2276,17 +2276,17 @@
                 "category": "Atmosphere",
                 "sub_category": "Meteorological Observation and Forecast",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:16:25+00:00",
+                "latest_commit_activity": "2026-10-30T10:45:08+00:00",
                 "metrics": {
                   "contributors": 45.0,
                   "citations": 0,
-                  "total_commits": 794.0,
+                  "total_commits": 795.0,
                   "total_number_of_dependencies": 195.0,
                   "stars": 148.0,
                   "score": 0.0,
-                  "dds": 0.773299748110831,
+                  "dds": 0.7735849056603771,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.8923885533566074
+                  "total_score_combined": 0.8927012574176941
                 }
               },
               {
@@ -2598,17 +2598,17 @@
                 "category": "Atmosphere",
                 "sub_category": "Meteorological Observation and Forecast",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:27:51+00:00",
+                "latest_commit_activity": "2026-10-30T10:08:11+00:00",
                 "metrics": {
                   "contributors": 71.0,
                   "citations": 0,
-                  "total_commits": 11070.0,
+                  "total_commits": 11071.0,
                   "total_number_of_dependencies": 65.0,
                   "stars": 274.0,
                   "score": 10.015252515866948,
-                  "dds": 0.177777777777777,
+                  "dds": 0.1778520458856471,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.6751426202458264
+                  "total_score_combined": 0.675229367272343
                 }
               },
               {
@@ -2681,29 +2681,6 @@
                 }
               },
               {
-                "name": "MetObs-toolkit",
-                "kind": "project",
-                "value": 1,
-                "url": "https://github.com/vergauwenthomas/metobs_toolkit",
-                "homepage": "https://metobs-toolkit.readthedocs.io/en/latest/index.html",
-                "description": "Provides a comprehensive framework for scientists to process, quality control, and analyze raw meteorological data.",
-                "category": "Atmosphere",
-                "sub_category": "Meteorological Observation and Forecast",
-                "is_active_last_365d": true,
-                "latest_commit_activity": "2026-08-31T08:07:30+00:00",
-                "metrics": {
-                  "contributors": 10.0,
-                  "citations": 0,
-                  "total_commits": 337.0,
-                  "total_number_of_dependencies": 18.0,
-                  "stars": 20.0,
-                  "score": 5.950642552587727,
-                  "dds": 0.4272997032640949,
-                  "downloads_last_month": 0,
-                  "total_score_combined": 0.6551673110149954
-                }
-              },
-              {
                 "name": "Graph Weather",
                 "kind": "project",
                 "value": 1,
@@ -2736,17 +2713,17 @@
                 "category": "Atmosphere",
                 "sub_category": "Meteorological Observation and Forecast",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-24T12:25:31+00:00",
+                "latest_commit_activity": "2026-10-29T16:19:06+00:00",
                 "metrics": {
                   "contributors": 20.0,
                   "citations": 0,
-                  "total_commits": 365.0,
+                  "total_commits": 368.0,
                   "total_number_of_dependencies": 19.0,
                   "stars": 365.0,
                   "score": 0.0,
-                  "dds": 0.526027397260274,
+                  "dds": 0.521739130434782,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.6167661669663898
+                  "total_score_combined": 0.6121930306540465
                 }
               },
               {
@@ -3322,6 +3299,29 @@
                   "dds": 0.081081081081081,
                   "downloads_last_month": 0,
                   "total_score_combined": 0.26174694441769153
+                }
+              },
+              {
+                "name": "MetObs-toolkit",
+                "kind": "project",
+                "value": 1,
+                "url": "https://github.com/vergauwenthomas/metobs_toolkit",
+                "homepage": "https://metobs-toolkit.readthedocs.io/en/latest/index.html",
+                "description": "Provides a comprehensive framework for scientists to process, quality control, and analyze raw meteorological data.",
+                "category": "Atmosphere",
+                "sub_category": "Meteorological Observation and Forecast",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-08-31T08:07:30+00:00",
+                "metrics": {
+                  "contributors": 8.0,
+                  "citations": 0,
+                  "total_commits": 337.0,
+                  "total_number_of_dependencies": 18.0,
+                  "stars": 20.0,
+                  "score": 5.950642552587727,
+                  "dds": 0.059347181008902,
+                  "downloads_last_month": 0,
+                  "total_score_combined": 0.2588506908507934
                 }
               },
               {
@@ -4227,7 +4227,7 @@
                 "category": "Biosphere",
                 "sub_category": "Avian Monitoring and Analysis",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-27T18:04:17+00:00",
+                "latest_commit_activity": "2026-10-29T23:14:18+00:00",
                 "metrics": {
                   "contributors": 6.0,
                   "citations": 0,
@@ -4415,13 +4415,13 @@
                 "metrics": {
                   "contributors": 2.0,
                   "citations": 0,
-                  "total_commits": 226.0,
+                  "total_commits": 229.0,
                   "total_number_of_dependencies": 5.0,
                   "stars": 1.0,
                   "score": 0.6931471805599451,
-                  "dds": 0.084070796460177,
+                  "dds": 0.08296943231441,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.11424094284139864
+                  "total_score_combined": 0.11308240648840483
                 }
               },
               {
@@ -4513,13 +4513,13 @@
                 "metrics": {
                   "contributors": 32.0,
                   "citations": 0,
-                  "total_commits": 725.0,
+                  "total_commits": 726.0,
                   "total_number_of_dependencies": 207.0,
                   "stars": 403.0,
                   "score": 9.531843992903474,
-                  "dds": 0.583448275862068,
+                  "dds": 0.584022038567493,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.99109644208292
+                  "total_score_combined": 0.9917183715118857
                 }
               },
               {
@@ -4739,17 +4739,17 @@
                 "category": "Biosphere",
                 "sub_category": "Bioacoustics and Acoustic Data Analysis",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:34:42+00:00",
+                "latest_commit_activity": "2026-10-30T08:29:56+00:00",
                 "metrics": {
                   "contributors": 83.0,
                   "citations": 0,
-                  "total_commits": 6256.0,
+                  "total_commits": 6276.0,
                   "total_number_of_dependencies": 1298.0,
-                  "stars": 2377.0,
+                  "stars": 2379.0,
                   "score": 0.0,
-                  "dds": 0.1202046035805626,
+                  "dds": 0.1198215423836839,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.4594872702206613
+                  "total_score_combined": 0.45938921152218937
                 }
               },
               {
@@ -5556,7 +5556,7 @@
                 "category": "Biosphere",
                 "sub_category": "Biodiversity Citizen Science",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T02:26:39+00:00",
+                "latest_commit_activity": "2026-10-30T05:03:16+00:00",
                 "metrics": {
                   "contributors": 33.0,
                   "citations": 0,
@@ -5648,17 +5648,17 @@
                 "category": "Biosphere",
                 "sub_category": "Biodiversity Citizen Science",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:27:46+00:00",
+                "latest_commit_activity": "2026-10-30T09:39:56+00:00",
                 "metrics": {
                   "contributors": 16.0,
                   "citations": 0,
-                  "total_commits": 6858.0,
+                  "total_commits": 6862.0,
                   "total_number_of_dependencies": 1995.0,
                   "stars": 28.0,
                   "score": 0.0,
-                  "dds": 0.597550306211723,
+                  "dds": 0.597201981929466,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.707358861681755
+                  "total_score_combined": 0.7070143408796545
                 }
               },
               {
@@ -5717,17 +5717,17 @@
                 "category": "Biosphere",
                 "sub_category": "Biodiversity Citizen Science",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T14:26:00+00:00",
+                "latest_commit_activity": "2026-10-30T06:21:41+00:00",
                 "metrics": {
                   "contributors": 92.0,
                   "citations": 0,
-                  "total_commits": 14105.0,
+                  "total_commits": 14106.0,
                   "total_number_of_dependencies": 1417.0,
                   "stars": 870.0,
                   "score": 0.0,
-                  "dds": 0.35689471818504,
+                  "dds": 0.356940309088331,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.6514419960728919
+                  "total_score_combined": 0.6514980169708033
                 }
               },
               {
@@ -5809,7 +5809,7 @@
                 "category": "Biosphere",
                 "sub_category": "Biodiversity Citizen Science",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T01:03:07+00:00",
+                "latest_commit_activity": "2026-10-30T09:45:47+00:00",
                 "metrics": {
                   "contributors": 15.0,
                   "citations": 0,
@@ -6390,7 +6390,7 @@
                 "category": "Biosphere",
                 "sub_category": "Biodiversity Data Access and Management",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-23T11:34:46+00:00",
+                "latest_commit_activity": "2026-10-30T10:28:08+00:00",
                 "metrics": {
                   "contributors": 16.0,
                   "citations": 0,
@@ -7771,7 +7771,7 @@
                 "category": "Biosphere",
                 "sub_category": "Deforestation and Reforestation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T23:56:01+00:00",
+                "latest_commit_activity": "2026-10-29T23:47:05+00:00",
                 "metrics": {
                   "contributors": 20.0,
                   "citations": 0,
@@ -7936,13 +7936,13 @@
                 "metrics": {
                   "contributors": 7.0,
                   "citations": 0,
-                  "total_commits": 756.0,
+                  "total_commits": 757.0,
                   "total_number_of_dependencies": 906.0,
                   "stars": 10.0,
                   "score": 4.51085950651685,
-                  "dds": 0.552910052910052,
+                  "dds": 0.552179656538969,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.7443066556434392
+                  "total_score_combined": 0.7435312466604225
                 }
               },
               {
@@ -8214,17 +8214,17 @@
                 "category": "Biosphere",
                 "sub_category": "Ecological and Environmental Modeling",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T01:46:48+00:00",
+                "latest_commit_activity": "2026-10-30T10:08:45+00:00",
                 "metrics": {
-                  "contributors": 303.0,
+                  "contributors": 306.0,
                   "citations": 286,
-                  "total_commits": 20007.0,
+                  "total_commits": 20030.0,
                   "total_number_of_dependencies": 940.0,
                   "stars": 250.0,
                   "score": 0.0,
-                  "dds": 0.899785075223671,
+                  "dds": 0.8999001497753361,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.4419683180966834
+                  "total_score_combined": 1.44536861801153
                 }
               },
               {
@@ -8352,7 +8352,7 @@
                 "category": "Biosphere",
                 "sub_category": "Ecological and Environmental Modeling",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T00:22:19+00:00",
+                "latest_commit_activity": "2026-10-30T06:21:25+00:00",
                 "metrics": {
                   "contributors": 5.0,
                   "citations": 0,
@@ -8795,7 +8795,7 @@
                 "category": "Biosphere",
                 "sub_category": "Forest Modeling and Analysis",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:25:41+00:00",
+                "latest_commit_activity": "2026-10-29T19:33:09+00:00",
                 "metrics": {
                   "contributors": 1.0,
                   "citations": 0,
@@ -8887,7 +8887,7 @@
                 "category": "Biosphere",
                 "sub_category": "Forest Modeling and Analysis",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-19T13:06:37+00:00",
+                "latest_commit_activity": "2026-10-29T10:31:59+00:00",
                 "metrics": {
                   "contributors": 8.0,
                   "citations": 0,
@@ -12177,7 +12177,7 @@
                 "category": "Biosphere",
                 "sub_category": "Plants and Vegetation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-06-12T12:44:23+00:00",
+                "latest_commit_activity": "2026-10-29T12:55:40+00:00",
                 "metrics": {
                   "contributors": 26.0,
                   "citations": 0,
@@ -12384,7 +12384,7 @@
                 "category": "Biosphere",
                 "sub_category": "Plants and Vegetation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-24T21:21:06+00:00",
+                "latest_commit_activity": "2026-10-29T15:38:46+00:00",
                 "metrics": {
                   "contributors": 8.0,
                   "citations": 0,
@@ -13431,7 +13431,7 @@
                 "category": "Biosphere",
                 "sub_category": "Terrestrial Wildlife",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T23:20:32+00:00",
+                "latest_commit_activity": "2026-10-29T23:22:56+00:00",
                 "metrics": {
                   "contributors": 27.0,
                   "citations": 0,
@@ -13828,17 +13828,17 @@
                 "category": "Biosphere",
                 "sub_category": "Wildfire",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T23:03:47+00:00",
+                "latest_commit_activity": "2026-10-29T21:01:33+00:00",
                 "metrics": {
                   "contributors": 31.0,
                   "citations": 0,
-                  "total_commits": 6542.0,
+                  "total_commits": 6547.0,
                   "total_number_of_dependencies": 1407.0,
                   "stars": 27.0,
                   "score": 0.0,
-                  "dds": 0.825282788138184,
+                  "dds": 0.8251107377424771,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.9645714926521215
+                  "total_score_combined": 0.9644230127467115
                 }
               },
               {
@@ -15618,17 +15618,17 @@
                 "category": "Climate Change",
                 "sub_category": "Climate Data Processing and Analysis",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T13:51:29+00:00",
+                "latest_commit_activity": "2026-10-29T16:48:13+00:00",
                 "metrics": {
-                  "contributors": 70.0,
+                  "contributors": 71.0,
                   "citations": 0,
-                  "total_commits": 15709.0,
+                  "total_commits": 15716.0,
                   "total_number_of_dependencies": 46.0,
                   "stars": 383.0,
                   "score": 23.634040405282576,
-                  "dds": 0.479406709529569,
+                  "dds": 0.4796385848816492,
                   "downloads_last_month": 3136,
-                  "total_score_combined": 1.4609355060598617
+                  "total_score_combined": 1.4622715011656404
                 }
               },
               {
@@ -17257,17 +17257,17 @@
                 "category": "Climate Change",
                 "sub_category": "Climate Data Standards",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:22:32+00:00",
+                "latest_commit_activity": "2026-10-29T19:03:12+00:00",
                 "metrics": {
                   "contributors": 198.0,
                   "citations": 0,
-                  "total_commits": 3007.0,
+                  "total_commits": 3011.0,
                   "total_number_of_dependencies": 474.0,
-                  "stars": 2079.0,
+                  "stars": 2080.0,
                   "score": 29.1190326134428,
-                  "dds": 0.721316927169936,
+                  "dds": 0.7216871471272001,
                   "downloads_last_month": 4930778,
-                  "total_score_combined": 2.5504559795361774
+                  "total_score_combined": 2.550965800859445
                 }
               },
               {
@@ -18028,17 +18028,17 @@
                 "category": "Climate Change",
                 "sub_category": "Earth and Climate Modeling",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:24:03+00:00",
+                "latest_commit_activity": "2026-10-29T21:38:23+00:00",
                 "metrics": {
                   "contributors": 149.0,
                   "citations": 0,
-                  "total_commits": 9586.0,
+                  "total_commits": 9587.0,
                   "total_number_of_dependencies": 56.0,
                   "stars": 277.0,
                   "score": 17.36936610620971,
-                  "dds": 0.8587523471729601,
+                  "dds": 0.858662772504433,
                   "downloads_last_month": 452,
-                  "total_score_combined": 1.7026047009713674
+                  "total_score_combined": 1.702515899010717
                 }
               },
               {
@@ -18097,7 +18097,7 @@
                 "category": "Climate Change",
                 "sub_category": "Earth and Climate Modeling",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:04:56+00:00",
+                "latest_commit_activity": "2026-10-30T09:39:05+00:00",
                 "metrics": {
                   "contributors": 50.0,
                   "citations": 0,
@@ -18166,17 +18166,17 @@
                 "category": "Climate Change",
                 "sub_category": "Earth and Climate Modeling",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T02:51:09+00:00",
+                "latest_commit_activity": "2026-10-30T03:37:08+00:00",
                 "metrics": {
                   "contributors": 66.0,
                   "citations": 0,
-                  "total_commits": 786.0,
+                  "total_commits": 794.0,
                   "total_number_of_dependencies": 900.0,
                   "stars": 1222.0,
                   "score": 19.331034269446512,
-                  "dds": 0.451653944020356,
+                  "dds": 0.4471032745591939,
                   "downloads_last_month": 2977,
-                  "total_score_combined": 1.2578817331148462
+                  "total_score_combined": 1.2530633091856844
                 }
               },
               {
@@ -19040,7 +19040,7 @@
                 "category": "Climate Change",
                 "sub_category": "Earth and Climate Modeling",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T07:45:48+00:00",
+                "latest_commit_activity": "2026-10-29T11:17:10+00:00",
                 "metrics": {
                   "contributors": 6.0,
                   "citations": 0,
@@ -19621,7 +19621,7 @@
                 "category": "Climate Change",
                 "sub_category": "Integrated Assessment and Climate Policy",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T23:23:20+00:00",
+                "latest_commit_activity": "2026-10-30T10:49:26+00:00",
                 "metrics": {
                   "contributors": 36.0,
                   "citations": 0,
@@ -20039,13 +20039,13 @@
                 "metrics": {
                   "contributors": 6.0,
                   "citations": 0,
-                  "total_commits": 496.0,
+                  "total_commits": 498.0,
                   "total_number_of_dependencies": 60.0,
                   "stars": 7.0,
                   "score": 3.87120101090789,
-                  "dds": 0.0241935483870967,
+                  "dds": 0.0281124497991968,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.15489123185098577
+                  "total_score_combined": 0.15910447551047222
                 }
               },
               {
@@ -21641,17 +21641,17 @@
                 "category": "Consumption",
                 "sub_category": "Agriculture and Nutrition",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T22:41:49+00:00",
+                "latest_commit_activity": "2026-10-29T22:52:36+00:00",
                 "metrics": {
                   "contributors": 110.0,
                   "citations": 0,
-                  "total_commits": 24537.0,
+                  "total_commits": 24538.0,
                   "total_number_of_dependencies": 79.0,
                   "stars": 218.0,
                   "score": 11.321886017556553,
-                  "dds": 0.8356767330969551,
+                  "dds": 0.8356834297823781,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.5527469611982176
+                  "total_score_combined": 1.55276130897081
                 }
               },
               {
@@ -21694,10 +21694,10 @@
                   "total_commits": 1621.0,
                   "total_number_of_dependencies": 34.0,
                   "stars": 17.0,
-                  "score": 15.689714156834953,
+                  "score": 15.6895336514193,
                   "dds": 0.669956816779765,
-                  "downloads_last_month": 546,
-                  "total_score_combined": 1.222029832630672
+                  "downloads_last_month": 542,
+                  "total_score_combined": 1.2220238680727753
                 }
               },
               {
@@ -21737,13 +21737,13 @@
                 "metrics": {
                   "contributors": 20.0,
                   "citations": 0,
-                  "total_commits": 213.0,
+                  "total_commits": 214.0,
                   "total_number_of_dependencies": 299.0,
-                  "stars": 163.0,
+                  "stars": 164.0,
                   "score": 14.94189364357774,
-                  "dds": 0.6431924882629101,
+                  "dds": 0.644859813084112,
                   "downloads_last_month": 711,
-                  "total_score_combined": 1.1859764413068836
+                  "total_score_combined": 1.1878545249507948
                 }
               },
               {
@@ -21917,17 +21917,17 @@
                 "category": "Consumption",
                 "sub_category": "Agriculture and Nutrition",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T20:32:31+00:00",
+                "latest_commit_activity": "2026-10-29T20:38:39+00:00",
                 "metrics": {
                   "contributors": 26.0,
                   "citations": 0,
-                  "total_commits": 2334.0,
+                  "total_commits": 2338.0,
                   "total_number_of_dependencies": 1096.0,
                   "stars": 5.0,
                   "score": 6.393590753950631,
-                  "dds": 0.7746358183376171,
+                  "dds": 0.775021385799828,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.0706628221391388
+                  "total_score_combined": 1.0711046280538126
                 }
               },
               {
@@ -22331,17 +22331,17 @@
                 "category": "Consumption",
                 "sub_category": "Agriculture and Nutrition",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T03:27:57+00:00",
+                "latest_commit_activity": "2026-10-30T04:18:20+00:00",
                 "metrics": {
                   "contributors": 35.0,
                   "citations": 0,
-                  "total_commits": 3750.0,
+                  "total_commits": 3774.0,
                   "total_number_of_dependencies": 5.0,
                   "stars": 24.0,
                   "score": 7.339537695407674,
-                  "dds": 0.447466666666666,
+                  "dds": 0.449390567037625,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.7704484526005041
+                  "total_score_combined": 0.772681954442074
                 }
               },
               {
@@ -22414,6 +22414,29 @@
                 }
               },
               {
+                "name": "FarmVibes.AI",
+                "kind": "project",
+                "value": 1,
+                "url": "https://github.com/microsoft/farmvibes-ai",
+                "homepage": "https://microsoft.github.io/farmvibes-ai/",
+                "description": "Can develop rich geospatial insights for agriculture and sustainability.",
+                "category": "Consumption",
+                "sub_category": "Agriculture and Nutrition",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-10-28T12:14:01+00:00",
+                "metrics": {
+                  "contributors": 11.0,
+                  "citations": 0,
+                  "total_commits": 56.0,
+                  "total_number_of_dependencies": 185.0,
+                  "stars": 905.0,
+                  "score": 0.0,
+                  "dds": 0.6071428571428571,
+                  "downloads_last_month": 0,
+                  "total_score_combined": 0.7377328182570054
+                }
+              },
+              {
                 "name": "AgroMo",
                 "kind": "project",
                 "value": 1,
@@ -22457,29 +22480,6 @@
                   "dds": 0.634753109687146,
                   "downloads_last_month": 0,
                   "total_score_combined": 0.7316075979616015
-                }
-              },
-              {
-                "name": "FarmVibes.AI",
-                "kind": "project",
-                "value": 1,
-                "url": "https://github.com/microsoft/farmvibes-ai",
-                "homepage": "https://microsoft.github.io/farmvibes-ai/",
-                "description": "Can develop rich geospatial insights for agriculture and sustainability.",
-                "category": "Consumption",
-                "sub_category": "Agriculture and Nutrition",
-                "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T12:14:01+00:00",
-                "metrics": {
-                  "contributors": 11.0,
-                  "citations": 0,
-                  "total_commits": 55.0,
-                  "total_number_of_dependencies": 185.0,
-                  "stars": 905.0,
-                  "score": 0.0,
-                  "dds": 0.6000000000000001,
-                  "downloads_last_month": 0,
-                  "total_score_combined": 0.7300724468505917
                 }
               },
               {
@@ -23570,6 +23570,29 @@
                 }
               },
               {
+                "name": "Versatile Thermostat",
+                "kind": "project",
+                "value": 1,
+                "url": "https://github.com/jmcollin78/versatile_thermostat",
+                "homepage": "https://www.versatile-thermostat.org/",
+                "description": "A full featured Thermostat for Home Assistant: presets, window, motion, presence and overpowering management.",
+                "category": "Consumption",
+                "sub_category": "Buildings and Heating",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-10-29T21:59:53+00:00",
+                "metrics": {
+                  "contributors": 73.0,
+                  "citations": 0,
+                  "total_commits": 896.0,
+                  "total_number_of_dependencies": 24.0,
+                  "stars": 1239.0,
+                  "score": 11.416546714447517,
+                  "dds": 0.600446428571428,
+                  "downloads_last_month": 0,
+                  "total_score_combined": 1.181918678525854
+                }
+              },
+              {
                 "name": "ModBus Measurement Daemon",
                 "kind": "project",
                 "value": 1,
@@ -23590,29 +23613,6 @@
                   "dds": 0.4039145907473309,
                   "downloads_last_month": 0,
                   "total_score_combined": 1.1811866538609386
-                }
-              },
-              {
-                "name": "Versatile Thermostat",
-                "kind": "project",
-                "value": 1,
-                "url": "https://github.com/jmcollin78/versatile_thermostat",
-                "homepage": "https://www.versatile-thermostat.org/",
-                "description": "A full featured Thermostat for Home Assistant: presets, window, motion, presence and overpowering management.",
-                "category": "Consumption",
-                "sub_category": "Buildings and Heating",
-                "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T08:25:54+00:00",
-                "metrics": {
-                  "contributors": 73.0,
-                  "citations": 0,
-                  "total_commits": 895.0,
-                  "total_number_of_dependencies": 24.0,
-                  "stars": 1233.0,
-                  "score": 11.416546714447517,
-                  "dds": 0.6000000000000001,
-                  "downloads_last_month": 0,
-                  "total_score_combined": 1.1809264242216373
                 }
               },
               {
@@ -23647,7 +23647,7 @@
                 "description": "A open-source smart city application that facilitates transparency in urban planning.",
                 "category": "Consumption",
                 "sub_category": "Buildings and Heating",
-                "is_active_last_365d": true,
+                "is_active_last_365d": false,
                 "latest_commit_activity": "2025-10-30T11:42:38+00:00",
                 "metrics": {
                   "contributors": 37.0,
@@ -23770,10 +23770,10 @@
                   "total_commits": 1690.0,
                   "total_number_of_dependencies": 18.0,
                   "stars": 233.0,
-                  "score": 20.65294703680445,
+                  "score": 20.618930151526197,
                   "dds": 0.329585798816568,
                   "downloads_last_month": 24839,
-                  "total_score_combined": 1.0753739674454226
+                  "total_score_combined": 1.0743227276239862
                 }
               },
               {
@@ -23855,7 +23855,7 @@
                 "category": "Consumption",
                 "sub_category": "Buildings and Heating",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T01:38:07+00:00",
+                "latest_commit_activity": "2026-10-29T22:05:04+00:00",
                 "metrics": {
                   "contributors": 23.0,
                   "citations": 0,
@@ -24269,17 +24269,17 @@
                 "category": "Consumption",
                 "sub_category": "Buildings and Heating",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T23:21:20+00:00",
+                "latest_commit_activity": "2026-10-30T01:24:25+00:00",
                 "metrics": {
                   "contributors": 6.0,
                   "citations": 0,
-                  "total_commits": 2628.0,
+                  "total_commits": 2630.0,
                   "total_number_of_dependencies": 192.0,
                   "stars": 7.0,
                   "score": 5.762051382780177,
-                  "dds": 0.491248097412481,
+                  "dds": 0.4908745247148289,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.729041687361745
+                  "total_score_combined": 0.7286557689527076
                 }
               },
               {
@@ -25678,7 +25678,7 @@
                 "category": "Consumption",
                 "sub_category": "Computation and Communication",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T16:59:54+00:00",
+                "latest_commit_activity": "2026-10-30T09:49:46+00:00",
                 "metrics": {
                   "contributors": 21.0,
                   "citations": 0,
@@ -25892,10 +25892,10 @@
                   "total_commits": 37.0,
                   "total_number_of_dependencies": 254.0,
                   "stars": 19.0,
-                  "score": 5.043425116919247,
+                  "score": 5.010635294096255,
                   "dds": 0.621621621621621,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.8279139726266298
+                  "total_score_combined": 0.8269006532939687
                 }
               },
               {
@@ -26138,7 +26138,7 @@
                 "category": "Consumption",
                 "sub_category": "Computation and Communication",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T07:23:15+00:00",
+                "latest_commit_activity": "2026-10-30T09:57:27+00:00",
                 "metrics": {
                   "contributors": 16.0,
                   "citations": 0,
@@ -26464,13 +26464,13 @@
                 "metrics": {
                   "contributors": 5.0,
                   "citations": 0,
-                  "total_commits": 374.0,
+                  "total_commits": 375.0,
                   "total_number_of_dependencies": 2.0,
-                  "stars": 231.0,
+                  "stars": 232.0,
                   "score": 13.46367389066579,
-                  "dds": 0.058823529411764,
+                  "dds": 0.0586666666666666,
                   "downloads_last_month": 608,
-                  "total_score_combined": 0.505501389734523
+                  "total_score_combined": 0.5054249515697327
                 }
               },
               {
@@ -26558,11 +26558,11 @@
                   "citations": 0,
                   "total_commits": 39.0,
                   "total_number_of_dependencies": 0.0,
-                  "stars": 91.0,
+                  "stars": 92.0,
                   "score": 5.8971538676367405,
                   "dds": 0.2051282051282051,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.41310426894263835
+                  "total_score_combined": 0.4131887284020978
                 }
               },
               {
@@ -26581,11 +26581,11 @@
                   "citations": 0,
                   "total_commits": 866.0,
                   "total_number_of_dependencies": 156.0,
-                  "stars": 355.0,
+                  "stars": 358.0,
                   "score": 0.0,
                   "dds": 0.330254041570438,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.411828808509159
+                  "total_score_combined": 0.41208218688753734
                 }
               },
               {
@@ -26880,17 +26880,17 @@
                 "category": "Consumption",
                 "sub_category": "Mobility and Transportation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:29:31+00:00",
+                "latest_commit_activity": "2026-10-30T10:55:59+00:00",
                 "metrics": {
                   "contributors": 601.0,
                   "citations": 0,
-                  "total_commits": 10125.0,
+                  "total_commits": 10127.0,
                   "total_number_of_dependencies": 2157.0,
-                  "stars": 7454.0,
+                  "stars": 7464.0,
                   "score": 28.14990026123447,
-                  "dds": 0.437827160493827,
+                  "dds": 0.437938185049866,
                   "downloads_last_month": 0,
-                  "total_score_combined": 2.6636288451009857
+                  "total_score_combined": 2.6646067419622423
                 }
               },
               {
@@ -26903,17 +26903,17 @@
                 "category": "Consumption",
                 "sub_category": "Mobility and Transportation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T08:49:57+00:00",
+                "latest_commit_activity": "2026-10-30T10:53:02+00:00",
                 "metrics": {
                   "contributors": 265.0,
                   "citations": 0,
-                  "total_commits": 28594.0,
+                  "total_commits": 28604.0,
                   "total_number_of_dependencies": 1530.0,
                   "stars": 2766.0,
                   "score": 18.26739494001211,
-                  "dds": 0.7956914037910051,
+                  "dds": 0.795762830373374,
                   "downloads_last_month": 0,
-                  "total_score_combined": 2.12963551729114
+                  "total_score_combined": 2.1297837733831004
                 }
               },
               {
@@ -26926,7 +26926,7 @@
                 "category": "Consumption",
                 "sub_category": "Mobility and Transportation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:32:32+00:00",
+                "latest_commit_activity": "2026-10-30T11:04:09+00:00",
                 "metrics": {
                   "contributors": 250.0,
                   "citations": 0,
@@ -26972,17 +26972,17 @@
                 "category": "Consumption",
                 "sub_category": "Mobility and Transportation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:34:07+00:00",
+                "latest_commit_activity": "2026-10-30T11:01:25+00:00",
                 "metrics": {
-                  "contributors": 92.0,
+                  "contributors": 93.0,
                   "citations": 0,
-                  "total_commits": 2224.0,
+                  "total_commits": 2232.0,
                   "total_number_of_dependencies": 760.0,
                   "stars": 289.0,
                   "score": 14.494544615260953,
-                  "dds": 0.809352517985611,
+                  "dds": 0.809587813620071,
                   "downloads_last_month": 37,
-                  "total_score_combined": 1.4498733474536158
+                  "total_score_combined": 1.4512201798370574
                 }
               },
               {
@@ -27225,17 +27225,17 @@
                 "category": "Consumption",
                 "sub_category": "Mobility and Transportation",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T23:09:05+00:00",
+                "latest_commit_activity": "2026-10-30T10:50:36+00:00",
                 "metrics": {
                   "contributors": 38.0,
                   "citations": 0,
-                  "total_commits": 7283.0,
+                  "total_commits": 7333.0,
                   "total_number_of_dependencies": 122.0,
                   "stars": 174.0,
                   "score": 8.863332833439587,
-                  "dds": 0.597418646162295,
+                  "dds": 0.6000272739669981,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.01932656520032
+                  "total_score_combined": 1.0224802049764383
                 }
               },
               {
@@ -27328,6 +27328,29 @@
                   "dds": 0.15997830802603,
                   "downloads_last_month": 1429,
                   "total_score_combined": 0.9102572851420321
+                }
+              },
+              {
+                "name": "accessibility",
+                "kind": "project",
+                "value": 1,
+                "url": "https://github.com/ipea/accessibility",
+                "homepage": "https://ipea.github.io/accessibility/",
+                "description": "Given a pre-computed travel cost matrix and a land use dataset (containing the location of jobs, healthcare and population, for example), the package allows one to calculate accessibility levels and accessibility poverty and inequality.",
+                "category": "Consumption",
+                "sub_category": "Mobility and Transportation",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-10-29T02:33:07+00:00",
+                "metrics": {
+                  "contributors": 8.0,
+                  "citations": 0,
+                  "total_commits": 366.0,
+                  "total_number_of_dependencies": 24.0,
+                  "stars": 72.0,
+                  "score": 13.213796962004544,
+                  "dds": 0.4453551912568306,
+                  "downloads_last_month": 876,
+                  "total_score_combined": 0.9015793167133388
                 }
               },
               {
@@ -27814,29 +27837,6 @@
                 }
               },
               {
-                "name": "accessibility",
-                "kind": "project",
-                "value": 1,
-                "url": "https://github.com/ipea/accessibility",
-                "homepage": "https://ipea.github.io/accessibility/",
-                "description": "Given a pre-computed travel cost matrix and a land use dataset (containing the location of jobs, healthcare and population, for example), the package allows one to calculate accessibility levels and accessibility poverty and inequality.",
-                "category": "Consumption",
-                "sub_category": "Mobility and Transportation",
-                "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T02:33:07+00:00",
-                "metrics": {
-                  "contributors": 8.0,
-                  "citations": 0,
-                  "total_commits": 366.0,
-                  "total_number_of_dependencies": 24.0,
-                  "stars": 72.0,
-                  "score": 6.461468176353717,
-                  "dds": 0.4453551912568306,
-                  "downloads_last_month": 0,
-                  "total_score_combined": 0.6928243183707901
-                }
-              },
-              {
                 "name": "Transitland",
                 "kind": "project",
                 "value": 1,
@@ -27850,13 +27850,13 @@
                 "metrics": {
                   "contributors": 176.0,
                   "citations": 0,
-                  "total_commits": 2192.0,
+                  "total_commits": 2194.0,
                   "total_number_of_dependencies": 71.0,
                   "stars": 199.0,
                   "score": 0.0,
-                  "dds": 0.441149635036496,
+                  "dds": 0.4416590701914311,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.6867339119111547
+                  "total_score_combined": 0.6872940903492948
                 }
               },
               {
@@ -28198,10 +28198,10 @@
                   "total_commits": 918.0,
                   "total_number_of_dependencies": 443.0,
                   "stars": 30.0,
-                  "score": 6.761572768804056,
+                  "score": 6.803505257608338,
                   "dds": 0.2625272331154684,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.5149187190220593
+                  "total_score_combined": 0.5162145784660508
                 }
               },
               {
@@ -29567,17 +29567,17 @@
                 "category": "Cryosphere",
                 "sub_category": "Glacier and Ice Sheets",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T11:49:30+00:00",
+                "latest_commit_activity": "2026-10-29T11:57:28+00:00",
                 "metrics": {
                   "contributors": 2.0,
                   "citations": 0,
-                  "total_commits": 546.0,
+                  "total_commits": 547.0,
                   "total_number_of_dependencies": 12.0,
                   "stars": 6.0,
                   "score": 2.484906649788,
-                  "dds": 0.164835164835164,
+                  "dds": 0.16453382084095,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.2588648733391326
+                  "total_score_combined": 0.2585491715940984
                 }
               },
               {
@@ -30863,7 +30863,7 @@
                 "category": "Emissions",
                 "sub_category": "Carbon Intensity and Accounting",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:18:18+00:00",
+                "latest_commit_activity": "2026-10-30T10:26:46+00:00",
                 "metrics": {
                   "contributors": 451.0,
                   "citations": 0,
@@ -31789,7 +31789,7 @@
                 "category": "Emissions",
                 "sub_category": "Carbon Offsets and Trading",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:32:58+00:00",
+                "latest_commit_activity": "2026-10-30T10:45:00+00:00",
                 "metrics": {
                   "contributors": 78.0,
                   "citations": 0,
@@ -32554,7 +32554,7 @@
                 "category": "Emissions",
                 "sub_category": "Emission Observation and Modeling",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T06:52:04+00:00",
+                "latest_commit_activity": "2026-10-30T09:56:09+00:00",
                 "metrics": {
                   "contributors": 18.0,
                   "citations": 0,
@@ -32599,8 +32599,8 @@
                 "description": "Semantic Segmentation of Methane Plumes with Hyperspectral Machine Learning models.",
                 "category": "Emissions",
                 "sub_category": "Emission Observation and Modeling",
-                "is_active_last_365d": false,
-                "latest_commit_activity": "2025-07-24T11:24:52+00:00",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-10-29T15:56:46+00:00",
                 "metrics": {
                   "contributors": 3.0,
                   "citations": 0,
@@ -33041,13 +33041,13 @@
                 "metrics": {
                   "contributors": 3.0,
                   "citations": 0,
-                  "total_commits": 471.0,
+                  "total_commits": 472.0,
                   "total_number_of_dependencies": 29.0,
                   "stars": 16.0,
                   "score": 8.403800504061147,
-                  "dds": 0.004246284501061,
+                  "dds": 0.004237288135593,
                   "downloads_last_month": 30,
-                  "total_score_combined": 0.271063519116769
+                  "total_score_combined": 0.27106105260404456
                 }
               },
               {
@@ -34725,17 +34725,17 @@
                 "category": "Energy Systems",
                 "sub_category": "Building Energy Monitoring",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T08:10:10+00:00",
+                "latest_commit_activity": "2026-10-30T10:20:02+00:00",
                 "metrics": {
                   "contributors": 384.0,
                   "citations": 0,
-                  "total_commits": 7884.0,
+                  "total_commits": 7886.0,
                   "total_number_of_dependencies": 665.0,
                   "stars": 1621.0,
                   "score": 13.370622476249562,
-                  "dds": 0.381532217148655,
+                  "dds": 0.381689069236621,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.412751159732502
+                  "total_score_combined": 1.412933563808783
                 }
               },
               {
@@ -35237,17 +35237,17 @@
                 "category": "Energy Systems",
                 "sub_category": "Energy Data Accessibility and Integration",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T23:03:28+00:00",
+                "latest_commit_activity": "2026-10-29T16:13:14+00:00",
                 "metrics": {
                   "contributors": 44.0,
                   "citations": 0,
-                  "total_commits": 905.0,
+                  "total_commits": 907.0,
                   "total_number_of_dependencies": 212.0,
                   "stars": 452.0,
                   "score": 21.328116775430995,
-                  "dds": 0.6309392265193371,
+                  "dds": 0.630650496141124,
                   "downloads_last_month": 84064,
-                  "total_score_combined": 1.4325227844064836
+                  "total_score_combined": 1.4322277701164674
                 }
               },
               {
@@ -35421,7 +35421,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Energy Data Accessibility and Integration",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:53:20+00:00",
+                "latest_commit_activity": "2026-10-29T12:40:12+00:00",
                 "metrics": {
                   "contributors": 10.0,
                   "citations": 0,
@@ -35446,15 +35446,15 @@
                 "is_active_last_365d": true,
                 "latest_commit_activity": "2026-10-01T16:15:33+00:00",
                 "metrics": {
-                  "contributors": 19.0,
+                  "contributors": 16.0,
                   "citations": 0,
                   "total_commits": 1032.0,
                   "total_number_of_dependencies": 54.0,
                   "stars": 102.0,
                   "score": 7.796469243086058,
-                  "dds": 0.625,
+                  "dds": 0.590116279069767,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.9452820647397164
+                  "total_score_combined": 0.9047939444654975
                 }
               },
               {
@@ -37026,7 +37026,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Energy System Modeling Frameworks",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T07:44:22+00:00",
+                "latest_commit_activity": "2026-10-30T10:16:49+00:00",
                 "metrics": {
                   "contributors": 50.0,
                   "citations": 0,
@@ -37124,11 +37124,11 @@
                   "citations": 0,
                   "total_commits": 931.0,
                   "total_number_of_dependencies": 41.0,
-                  "stars": 369.0,
+                  "stars": 368.0,
                   "score": 13.98608336772368,
                   "dds": 0.699248120300751,
                   "downloads_last_month": 71,
-                  "total_score_combined": 1.2555835640943855
+                  "total_score_combined": 1.2554991046349262
                 }
               },
               {
@@ -37371,7 +37371,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Energy System Modeling Frameworks",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T16:16:27+00:00",
+                "latest_commit_activity": "2026-10-30T08:53:27+00:00",
                 "metrics": {
                   "contributors": 77.0,
                   "citations": 0,
@@ -37486,7 +37486,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Energy System Modeling Frameworks",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:37:58+00:00",
+                "latest_commit_activity": "2026-10-30T09:54:32+00:00",
                 "metrics": {
                   "contributors": 19.0,
                   "citations": 0,
@@ -37716,7 +37716,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Energy System Modeling Frameworks",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-14T12:48:14+00:00",
+                "latest_commit_activity": "2026-10-30T10:44:00+00:00",
                 "metrics": {
                   "contributors": 23.0,
                   "citations": 0,
@@ -38337,7 +38337,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Energy System Modeling Frameworks",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:31:15+00:00",
+                "latest_commit_activity": "2026-10-30T10:59:07+00:00",
                 "metrics": {
                   "contributors": 37.0,
                   "citations": 0,
@@ -39309,7 +39309,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Global and Regional Energy System Models",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T07:25:13+00:00",
+                "latest_commit_activity": "2026-10-29T16:31:59+00:00",
                 "metrics": {
                   "contributors": 115.0,
                   "citations": 0,
@@ -39821,7 +39821,7 @@
                 "category": "Energy Systems",
                 "sub_category": "Grid Analysis and Planning",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T08:34:01+00:00",
+                "latest_commit_activity": "2026-10-30T10:23:41+00:00",
                 "metrics": {
                   "contributors": 48.0,
                   "citations": 0,
@@ -39896,11 +39896,11 @@
                   "citations": 0,
                   "total_commits": 13385.0,
                   "total_number_of_dependencies": 70.0,
-                  "stars": 634.0,
+                  "stars": 635.0,
                   "score": 20.389785810396265,
                   "dds": 0.401120657452372,
                   "downloads_last_month": 20472,
-                  "total_score_combined": 1.2664042802495288
+                  "total_score_combined": 1.2664887397089883
                 }
               },
               {
@@ -39982,17 +39982,17 @@
                 "category": "Energy Systems",
                 "sub_category": "Grid Analysis and Planning",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:38:09+00:00",
+                "latest_commit_activity": "2026-10-29T16:10:49+00:00",
                 "metrics": {
                   "contributors": 11.0,
                   "citations": 0,
-                  "total_commits": 332.0,
+                  "total_commits": 333.0,
                   "total_number_of_dependencies": 1668.0,
-                  "stars": 71.0,
+                  "stars": 72.0,
                   "score": 7.061334366910438,
-                  "dds": 0.7469879518072281,
+                  "dds": 0.7477477477477471,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.0373297368485745
+                  "total_score_combined": 1.0382354506429754
                 }
               },
               {
@@ -40034,11 +40034,11 @@
                   "citations": 0,
                   "total_commits": 2872.0,
                   "total_number_of_dependencies": 21.0,
-                  "stars": 483.0,
+                  "stars": 484.0,
                   "score": 19.18606761537204,
                   "dds": 0.287604456824512,
                   "downloads_last_month": 11863,
-                  "total_score_combined": 0.996803677013391
+                  "total_score_combined": 0.9968881364728505
                 }
               },
               {
@@ -40216,13 +40216,13 @@
                 "metrics": {
                   "contributors": 23.0,
                   "citations": 0,
-                  "total_commits": 5059.0,
+                  "total_commits": 5073.0,
                   "total_number_of_dependencies": 35.0,
                   "stars": 37.0,
                   "score": 0.0,
-                  "dds": 0.6412334453449291,
+                  "dds": 0.6422235363690121,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.7492810624884354
+                  "total_score_combined": 0.7504423100967262
                 }
               },
               {
@@ -41105,10 +41105,10 @@
                   "total_commits": 474.0,
                   "total_number_of_dependencies": 14.0,
                   "stars": 76.0,
-                  "score": 14.856612370825893,
+                  "score": 14.867785671424018,
                   "dds": 0.5780590717299571,
                   "downloads_last_month": 1326,
-                  "total_score_combined": 1.1122867513517276
+                  "total_score_combined": 1.1126320451206766
                 }
               },
               {
@@ -42480,7 +42480,7 @@
                 "category": "Hydrosphere",
                 "sub_category": "Freshwater and Hydrology",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:08:25+00:00",
+                "latest_commit_activity": "2026-10-30T08:24:09+00:00",
                 "metrics": {
                   "contributors": 19.0,
                   "citations": 0,
@@ -42756,7 +42756,7 @@
                 "category": "Hydrosphere",
                 "sub_category": "Freshwater and Hydrology",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-16T21:20:04+00:00",
+                "latest_commit_activity": "2026-10-29T17:14:05+00:00",
                 "metrics": {
                   "contributors": 52.0,
                   "citations": 611,
@@ -43032,7 +43032,7 @@
                 "category": "Hydrosphere",
                 "sub_category": "Freshwater and Hydrology",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-27T20:11:08+00:00",
+                "latest_commit_activity": "2026-10-30T08:27:54+00:00",
                 "metrics": {
                   "contributors": 9.0,
                   "citations": 0,
@@ -43216,17 +43216,17 @@
                 "category": "Hydrosphere",
                 "sub_category": "Freshwater and Hydrology",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T18:44:29+00:00",
+                "latest_commit_activity": "2026-10-29T14:15:32+00:00",
                 "metrics": {
                   "contributors": 69.0,
                   "citations": 0,
-                  "total_commits": 12177.0,
+                  "total_commits": 12180.0,
                   "total_number_of_dependencies": 5.0,
                   "stars": 52.0,
                   "score": 0.0,
-                  "dds": 0.6013796501601381,
+                  "dds": 0.601395730706075,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.8066192686419266
+                  "total_score_combined": 0.806658015978561
                 }
               },
               {
@@ -45068,17 +45068,17 @@
                 "category": "Hydrosphere",
                 "sub_category": "Ocean Models",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T07:58:32+00:00",
+                "latest_commit_activity": "2026-10-29T11:55:23+00:00",
                 "metrics": {
                   "contributors": 131.0,
                   "citations": 0,
-                  "total_commits": 8987.0,
+                  "total_commits": 8990.0,
                   "total_number_of_dependencies": 28.0,
                   "stars": 38.0,
                   "score": 9.548026157663056,
-                  "dds": 0.672193167909202,
+                  "dds": 0.6720800889877641,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.2178116574536608
+                  "total_score_combined": 1.2177120171593039
                 }
               },
               {
@@ -45833,7 +45833,7 @@
                 "category": "Hydrosphere",
                 "sub_category": "Ocean and Hydrology Data Access",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T08:11:00+00:00",
+                "latest_commit_activity": "2026-10-30T08:37:40+00:00",
                 "metrics": {
                   "contributors": 15.0,
                   "citations": 0,
@@ -47198,15 +47198,15 @@
                 "is_active_last_365d": true,
                 "latest_commit_activity": "2026-10-28T21:32:36+00:00",
                 "metrics": {
-                  "contributors": 15.0,
+                  "contributors": 16.0,
                   "citations": 0,
-                  "total_commits": 799.0,
+                  "total_commits": 802.0,
                   "total_number_of_dependencies": 50.0,
                   "stars": 143.0,
                   "score": 7.742402021815781,
-                  "dds": 0.047559449311639,
+                  "dds": 0.04862842892768,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.3225560141467838
+                  "total_score_combined": 0.3247602323052133
                 }
               }
             ]
@@ -47255,17 +47255,17 @@
                 "category": "Industrial Ecology",
                 "sub_category": "Circular Economy and Waste",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T03:09:40+00:00",
+                "latest_commit_activity": "2026-10-30T10:39:27+00:00",
                 "metrics": {
                   "contributors": 10.0,
                   "citations": 0,
-                  "total_commits": 2447.0,
+                  "total_commits": 2457.0,
                   "total_number_of_dependencies": 2139.0,
                   "stars": 36.0,
                   "score": 15.61334321466569,
-                  "dds": 0.5386187167960761,
+                  "dds": 0.5392755392755391,
                   "downloads_last_month": 2404,
-                  "total_score_combined": 1.0897685761145268
+                  "total_score_combined": 1.0905440533698876
                 }
               },
               {
@@ -47738,7 +47738,7 @@
                 "category": "Industrial Ecology",
                 "sub_category": "Circular Economy and Waste",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-22T12:43:17+00:00",
+                "latest_commit_activity": "2026-10-29T15:47:46+00:00",
                 "metrics": {
                   "contributors": 9.0,
                   "citations": 0,
@@ -48306,13 +48306,13 @@
                 "metrics": {
                   "contributors": 17.0,
                   "citations": 0,
-                  "total_commits": 1234.0,
+                  "total_commits": 1236.0,
                   "total_number_of_dependencies": 9.0,
                   "stars": 40.0,
                   "score": 6.910750787961936,
-                  "dds": 0.685575364667747,
+                  "dds": 0.6844660194174751,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.9769513279815951
+                  "total_score_combined": 0.9757770676679711
                 }
               },
               {
@@ -48417,7 +48417,7 @@
                 "category": "Industrial Ecology",
                 "sub_category": "Life Cycle Assessment",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-07T02:15:45+00:00",
+                "latest_commit_activity": "2026-10-29T21:41:10+00:00",
                 "metrics": {
                   "contributors": 8.0,
                   "citations": 0,
@@ -48628,13 +48628,13 @@
                 "metrics": {
                   "contributors": 14.0,
                   "citations": 0,
-                  "total_commits": 536.0,
+                  "total_commits": 545.0,
                   "total_number_of_dependencies": 19.0,
                   "stars": 29.0,
                   "score": 6.194405391104672,
-                  "dds": 0.3283582089552238,
+                  "dds": 0.322935779816513,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.5630266442571316
+                  "total_score_combined": 0.5572813479370547
                 }
               },
               {
@@ -48716,7 +48716,7 @@
                 "category": "Industrial Ecology",
                 "sub_category": "Life Cycle Assessment",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-21T06:32:55+00:00",
+                "latest_commit_activity": "2026-10-30T02:45:44+00:00",
                 "metrics": {
                   "contributors": 24.0,
                   "citations": 0,
@@ -48808,7 +48808,7 @@
                 "category": "Industrial Ecology",
                 "sub_category": "Life Cycle Assessment",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:24:46+00:00",
+                "latest_commit_activity": "2026-10-29T23:25:37+00:00",
                 "metrics": {
                   "contributors": 2.0,
                   "citations": 0,
@@ -49051,7 +49051,7 @@
                 "category": "Natural Resources",
                 "sub_category": "Air Quality",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-27T14:05:22+00:00",
+                "latest_commit_activity": "2026-10-30T09:38:57+00:00",
                 "metrics": {
                   "contributors": 47.0,
                   "citations": 0,
@@ -49177,6 +49177,29 @@
                   "dds": 0.4484536082474226,
                   "downloads_last_month": 47,
                   "total_score_combined": 0.8447959299262616
+                }
+              },
+              {
+                "name": "CREAHIA",
+                "kind": "project",
+                "value": 1,
+                "url": "https://github.com/energyandcleanair/creahia",
+                "homepage": "",
+                "description": "An R package dedicated to health impact assessment (HIA) of air pollution.",
+                "category": "Natural Resources",
+                "sub_category": "Air Quality",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-10-29T23:04:13+00:00",
+                "metrics": {
+                  "contributors": 8.0,
+                  "citations": 0,
+                  "total_commits": 715.0,
+                  "total_number_of_dependencies": 32.0,
+                  "stars": 6.0,
+                  "score": 4.852030263919617,
+                  "dds": 0.636363636363636,
+                  "downloads_last_month": 0,
+                  "total_score_combined": 0.8446716060477371
                 }
               },
               {
@@ -49364,29 +49387,6 @@
                 }
               },
               {
-                "name": "CREAHIA",
-                "kind": "project",
-                "value": 1,
-                "url": "https://github.com/energyandcleanair/creahia",
-                "homepage": "",
-                "description": "An R package dedicated to health impact assessment (HIA) of air pollution.",
-                "category": "Natural Resources",
-                "sub_category": "Air Quality",
-                "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:24:57+00:00",
-                "metrics": {
-                  "contributors": 7.0,
-                  "citations": 0,
-                  "total_commits": 528.0,
-                  "total_number_of_dependencies": 32.0,
-                  "stars": 6.0,
-                  "score": 4.852030263919617,
-                  "dds": 0.507575757575757,
-                  "downloads_last_month": 0,
-                  "total_score_combined": 0.7043034878426584
-                }
-              },
-              {
                 "name": "OpenAQ API Version 2",
                 "kind": "project",
                 "value": 1,
@@ -49488,7 +49488,7 @@
                 "category": "Natural Resources",
                 "sub_category": "Air Quality",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T09:42:47+00:00",
+                "latest_commit_activity": "2026-10-29T13:04:19+00:00",
                 "metrics": {
                   "contributors": 10.0,
                   "citations": 0,
@@ -50023,17 +50023,17 @@
                 "category": "Natural Resources",
                 "sub_category": "Ecotoxicology",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T19:32:44+00:00",
+                "latest_commit_activity": "2026-10-29T22:01:16+00:00",
                 "metrics": {
                   "contributors": 22.0,
                   "citations": 0,
-                  "total_commits": 3440.0,
+                  "total_commits": 3441.0,
                   "total_number_of_dependencies": 1390.0,
                   "stars": 28.0,
                   "score": 10.759136162440722,
-                  "dds": 0.3151162790697674,
+                  "dds": 0.3150247021214762,
                   "downloads_last_month": 66,
-                  "total_score_combined": 0.7189546000366722
+                  "total_score_combined": 0.7188636527377144
                 }
               }
             ]
@@ -50282,17 +50282,17 @@
                 "category": "Natural Resources",
                 "sub_category": "Soil and Land",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T15:23:54+00:00",
+                "latest_commit_activity": "2026-10-29T16:48:34+00:00",
                 "metrics": {
                   "contributors": 31.0,
                   "citations": 0,
-                  "total_commits": 4789.0,
+                  "total_commits": 4791.0,
                   "total_number_of_dependencies": 41.0,
                   "stars": 60.0,
                   "score": 7.592870287844818,
-                  "dds": 0.682814783879724,
+                  "dds": 0.6829471926528901,
                   "downloads_last_month": 0,
-                  "total_score_combined": 1.0367840571621612
+                  "total_score_combined": 1.0369402715018514
                 }
               },
               {
@@ -50687,6 +50687,29 @@
                 }
               },
               {
+                "name": "Terraso",
+                "kind": "project",
+                "value": 1,
+                "url": "https://github.com/techmatters/terraso-backend",
+                "homepage": "",
+                "description": "Develop an open source technology platform to help local community leaders practice Integrated Landscape Management.",
+                "category": "Natural Resources",
+                "sub_category": "Soil and Land",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-10-29T00:29:24+00:00",
+                "metrics": {
+                  "contributors": 17.0,
+                  "citations": 0,
+                  "total_commits": 1507.0,
+                  "total_number_of_dependencies": 172.0,
+                  "stars": 20.0,
+                  "score": 7.629003889652957,
+                  "dds": 0.396814863968148,
+                  "downloads_last_month": 0,
+                  "total_score_combined": 0.6900249670327514
+                }
+              },
+              {
                 "name": "ml_drought",
                 "kind": "project",
                 "value": 1,
@@ -50707,29 +50730,6 @@
                   "dds": 0.4596774193548387,
                   "downloads_last_month": 0,
                   "total_score_combined": 0.6897695512064165
-                }
-              },
-              {
-                "name": "Terraso",
-                "kind": "project",
-                "value": 1,
-                "url": "https://github.com/techmatters/terraso-backend",
-                "homepage": "",
-                "description": "Develop an open source technology platform to help local community leaders practice Integrated Landscape Management.",
-                "category": "Natural Resources",
-                "sub_category": "Soil and Land",
-                "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T00:29:24+00:00",
-                "metrics": {
-                  "contributors": 17.0,
-                  "citations": 0,
-                  "total_commits": 1505.0,
-                  "total_number_of_dependencies": 172.0,
-                  "stars": 20.0,
-                  "score": 7.629003889652957,
-                  "dds": 0.3960132890365448,
-                  "downloads_last_month": 0,
-                  "total_score_combined": 0.6891517760649595
                 }
               },
               {
@@ -54332,7 +54332,7 @@
                 "category": "Renewable Energy",
                 "sub_category": "Geothermal Energy",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-27T19:06:49+00:00",
+                "latest_commit_activity": "2026-10-30T06:23:14+00:00",
                 "metrics": {
                   "contributors": 13.0,
                   "citations": 0,
@@ -54424,7 +54424,7 @@
                 "category": "Renewable Energy",
                 "sub_category": "Geothermal Energy",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-14T22:25:48+00:00",
+                "latest_commit_activity": "2026-10-30T09:09:07+00:00",
                 "metrics": {
                   "contributors": 54.0,
                   "citations": 0,
@@ -55163,6 +55163,29 @@
                 }
               },
               {
+                "name": "solar-data-tools",
+                "kind": "project",
+                "value": 1,
+                "url": "https://github.com/natlabrockies/solar-data-tools",
+                "homepage": "https://solar-data-tools.readthedocs.io",
+                "description": "Data analysis tools for working with historical PV solar time-series data sets.",
+                "category": "Renewable Energy",
+                "sub_category": "Photovoltaics and Solar Energy",
+                "is_active_last_365d": true,
+                "latest_commit_activity": "2026-10-21T20:05:30+00:00",
+                "metrics": {
+                  "contributors": 28.0,
+                  "citations": 0,
+                  "total_commits": 1654.0,
+                  "total_number_of_dependencies": 20.0,
+                  "stars": 101.0,
+                  "score": 16.64358128966306,
+                  "dds": 0.605199516324062,
+                  "downloads_last_month": 6520,
+                  "total_score_combined": 1.211816052280817
+                }
+              },
+              {
                 "name": "solcore5",
                 "kind": "project",
                 "value": 1,
@@ -55183,29 +55206,6 @@
                   "dds": 0.59766081871345,
                   "downloads_last_month": 1455,
                   "total_score_combined": 1.1759864761740226
-                }
-              },
-              {
-                "name": "solar-data-tools",
-                "kind": "project",
-                "value": 1,
-                "url": "https://github.com/natlabrockies/solar-data-tools",
-                "homepage": "https://solar-data-tools.readthedocs.io",
-                "description": "Data analysis tools for working with historical PV solar time-series data sets.",
-                "category": "Renewable Energy",
-                "sub_category": "Photovoltaics and Solar Energy",
-                "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-21T20:05:30+00:00",
-                "metrics": {
-                  "contributors": 24.0,
-                  "citations": 0,
-                  "total_commits": 1654.0,
-                  "total_number_of_dependencies": 20.0,
-                  "stars": 101.0,
-                  "score": 16.64358128966306,
-                  "dds": 0.571342200725513,
-                  "downloads_last_month": 6520,
-                  "total_score_combined": 1.1713903273731843
                 }
               },
               {
@@ -55379,7 +55379,7 @@
                 "category": "Renewable Energy",
                 "sub_category": "Photovoltaics and Solar Energy",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-26T15:36:15+00:00",
+                "latest_commit_activity": "2026-10-30T06:55:49+00:00",
                 "metrics": {
                   "contributors": 14.0,
                   "citations": 0,
@@ -55498,13 +55498,13 @@
                 "metrics": {
                   "contributors": 32.0,
                   "citations": 0,
-                  "total_commits": 557.0,
+                  "total_commits": 558.0,
                   "total_number_of_dependencies": 79.0,
                   "stars": 13.0,
                   "score": 6.992096427415888,
-                  "dds": 0.6499102333931771,
+                  "dds": 0.650537634408602,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.949675757519318
+                  "total_score_combined": 0.9503551575991167
                 }
               },
               {
@@ -55540,7 +55540,7 @@
                 "category": "Renewable Energy",
                 "sub_category": "Photovoltaics and Solar Energy",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-28T13:43:32+00:00",
+                "latest_commit_activity": "2026-10-29T16:00:34+00:00",
                 "metrics": {
                   "contributors": 16.0,
                   "citations": 0,
@@ -55590,13 +55590,13 @@
                 "metrics": {
                   "contributors": 7.0,
                   "citations": 0,
-                  "total_commits": 447.0,
+                  "total_commits": 449.0,
                   "total_number_of_dependencies": 11.0,
                   "stars": 1128.0,
                   "score": 8.982937763741589,
-                  "dds": 0.4496644295302013,
+                  "dds": 0.447661469933184,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.8640964314692896
+                  "total_score_combined": 0.8619647100033426
                 }
               },
               {
@@ -56834,7 +56834,7 @@
                 "category": "Renewable Energy",
                 "sub_category": "Wind Energy",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T00:40:41+00:00",
+                "latest_commit_activity": "2026-10-29T22:12:35+00:00",
                 "metrics": {
                   "contributors": 107.0,
                   "citations": 0,
@@ -59291,7 +59291,7 @@
                 "category": "Sustainable Development",
                 "sub_category": "Data Catalogs and Interfaces",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T03:41:34+00:00",
+                "latest_commit_activity": "2026-10-29T21:35:33+00:00",
                 "metrics": {
                   "contributors": 16.0,
                   "citations": 0,
@@ -60056,7 +60056,7 @@
                 "category": "Sustainable Development",
                 "sub_category": "Education",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T03:35:01+00:00",
+                "latest_commit_activity": "2026-10-30T03:37:44+00:00",
                 "metrics": {
                   "contributors": 32.0,
                   "citations": 0,
@@ -60677,7 +60677,7 @@
                 "category": "Sustainable Development",
                 "sub_category": "Education",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T04:04:04+00:00",
+                "latest_commit_activity": "2026-10-30T04:03:43+00:00",
                 "metrics": {
                   "contributors": 7.0,
                   "citations": 0,
@@ -62103,17 +62103,17 @@
                 "category": "Sustainable Development",
                 "sub_category": "Education",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T06:21:27+00:00",
+                "latest_commit_activity": "2026-10-30T10:05:52+00:00",
                 "metrics": {
                   "contributors": 6.0,
                   "citations": 0,
-                  "total_commits": 1284.0,
+                  "total_commits": 1300.0,
                   "total_number_of_dependencies": 1606.0,
                   "stars": 12.0,
                   "score": 4.927253685157204,
-                  "dds": 0.024143302180685,
+                  "dds": 0.0246153846153845,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.1935474132999884
+                  "total_score_combined": 0.19416798697652934
                 }
               },
               {
@@ -63867,13 +63867,13 @@
                 "metrics": {
                   "contributors": 39.0,
                   "citations": 0,
-                  "total_commits": 7291.0,
+                  "total_commits": 7292.0,
                   "total_number_of_dependencies": 2878.0,
                   "stars": 32.0,
                   "score": 0.0,
-                  "dds": 0.6938691537512001,
+                  "dds": 0.6939111354909491,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.8378619868162281
+                  "total_score_combined": 0.8379141406836956
                 }
               },
               {
@@ -63886,17 +63886,17 @@
                 "category": "Sustainable Development",
                 "sub_category": "Knowledge Platforms",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:31:58+00:00",
+                "latest_commit_activity": "2026-10-30T10:56:42+00:00",
                 "metrics": {
                   "contributors": 28.0,
                   "citations": 0,
-                  "total_commits": 2466.0,
+                  "total_commits": 2478.0,
                   "total_number_of_dependencies": 611.0,
                   "stars": 41.0,
                   "score": 0.0,
-                  "dds": 0.6974858069748581,
+                  "dds": 0.6989507667473761,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.7964784802818332
+                  "total_score_combined": 0.7981341797329204
                 }
               },
               {
@@ -64145,11 +64145,11 @@
                   "citations": 0,
                   "total_commits": 57.0,
                   "total_number_of_dependencies": 1496.0,
-                  "stars": 31.0,
+                  "stars": 32.0,
                   "score": 10.397451819226706,
                   "dds": 0.017543859649122,
                   "downloads_last_month": 481,
-                  "total_score_combined": 0.34422556064427706
+                  "total_score_combined": 0.3443100201037365
                 }
               },
               {
@@ -64444,7 +64444,7 @@
                 "category": "Sustainable Development",
                 "sub_category": "Population and Poverty",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-12T19:44:44+00:00",
+                "latest_commit_activity": "2026-10-29T15:42:59+00:00",
                 "metrics": {
                   "contributors": 33.0,
                   "citations": 0,
@@ -65008,17 +65008,17 @@
                 "category": "Sustainable Development",
                 "sub_category": "Sustainable Investment",
                 "is_active_last_365d": true,
-                "latest_commit_activity": "2026-10-29T10:14:32+00:00",
+                "latest_commit_activity": "2026-10-30T02:32:26+00:00",
                 "metrics": {
                   "contributors": 70.0,
                   "citations": 0,
-                  "total_commits": 1339.0,
+                  "total_commits": 1340.0,
                   "total_number_of_dependencies": 2704.0,
                   "stars": 37.0,
                   "score": 0.0,
-                  "dds": 0.709484690067214,
+                  "dds": 0.7089552238805971,
                   "downloads_last_month": 0,
-                  "total_score_combined": 0.8444817377023754
+                  "total_score_combined": 0.8439216149294065
                 }
               },
               {

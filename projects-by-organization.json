@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T11:15:55.107969+00:00",
+  "generated_at": "2026-10-30T12:58:56.430601+00:00",
   "minimum_project_count": 2,
   "default_top_n": 150,
   "organizations": [
@@ -355,7 +355,7 @@
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1906800?v=4",
       "project_count": 43,
-      "total_score": 36.76663269061862,
+      "total_score": 36.80835427497024,
       "projects": [
         {
           "name": "EnergyPlus",
@@ -400,18 +400,18 @@
           "total_score_combined": 1.2140212421296928
         },
         {
+          "name": "solar-data-tools",
+          "url": "https://github.com/natlabrockies/solar-data-tools",
+          "category": "Renewable Energy",
+          "sub_category": "Photovoltaics and Solar Energy",
+          "total_score_combined": 1.211816052280817
+        },
+        {
           "name": "ComStock",
           "url": "https://github.com/NatLabRockies/ComStock",
           "category": "Consumption",
           "sub_category": "Buildings and Heating",
           "total_score_combined": 1.1785767091506911
-        },
-        {
-          "name": "solar-data-tools",
-          "url": "https://github.com/natlabrockies/solar-data-tools",
-          "category": "Renewable Energy",
-          "sub_category": "Photovoltaics and Solar Energy",
-          "total_score_combined": 1.1713903273731843
         },
         {
           "name": "HOPP",
@@ -607,7 +607,7 @@
           "url": "https://github.com/NatLabRockies/altrios",
           "category": "Consumption",
           "sub_category": "Mobility and Transportation",
-          "total_score_combined": 0.5149187190220593
+          "total_score_combined": 0.5162145784660508
         },
         {
           "name": "Probabilistic Resource Adequacy Suite",
@@ -1081,7 +1081,7 @@
       "organization_description": "Providing software to work with meteorological data and services",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/6368067?v=4",
       "project_count": 15,
-      "total_score": 12.893295266879885,
+      "total_score": 12.89369471796749,
       "projects": [
         {
           "name": "cdsapi",
@@ -1137,7 +1137,7 @@
           "url": "https://github.com/ecmwf/weathergenerator",
           "category": "Atmosphere",
           "sub_category": "Meteorological Observation and Forecast",
-          "total_score_combined": 0.8923885533566074
+          "total_score_combined": 0.8927012574176941
         },
         {
           "name": "Thermofeel",
@@ -1165,7 +1165,7 @@
           "url": "https://github.com/ecmwf/eccodes",
           "category": "Atmosphere",
           "sub_category": "Meteorological Observation and Forecast",
-          "total_score_combined": 0.6751426202458264
+          "total_score_combined": 0.675229367272343
         },
         {
           "name": "magics",
@@ -1624,7 +1624,7 @@
       "organization_description": "Open Energy Modelling Framework - A modular open source framework to model energy supply systems",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/8503379?v=4",
       "project_count": 9,
-      "total_score": 8.587710041733754,
+      "total_score": 8.588055335502704,
       "projects": [
         {
           "name": "oemof-solph",
@@ -1652,7 +1652,7 @@
           "url": "https://github.com/oemof/oemof-demand",
           "category": "Energy Systems",
           "sub_category": "Load and Demand Forecasting",
-          "total_score_combined": 1.1122867513517276
+          "total_score_combined": 1.1126320451206766
         },
         {
           "name": "oemof-thermal",
@@ -1770,7 +1770,7 @@
       "organization_description": "Open source projects and samples from Microsoft",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
       "project_count": 9,
-      "total_score": 7.321583789525309,
+      "total_score": 7.329244160931721,
       "projects": [
         {
           "name": "MegaDetector",
@@ -1805,7 +1805,7 @@
           "url": "https://github.com/microsoft/farmvibes-ai",
           "category": "Consumption",
           "sub_category": "Agriculture and Nutrition",
-          "total_score_combined": 0.7300724468505917
+          "total_score_combined": 0.7377328182570054
         },
         {
           "name": "Global Renewables Watch",
@@ -1843,7 +1843,7 @@
       "organization_description": "Non-profit that accelerates the energy transition with open data and open source software solutions.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/131007753?v=4",
       "project_count": 9,
-      "total_score": 6.299937835517052,
+      "total_score": 6.259449715242833,
       "projects": [
         {
           "name": "PyPSA-Wal",
@@ -1860,18 +1860,18 @@
           "total_score_combined": 0.9606352992791466
         },
         {
-          "name": "MapYourGrid",
-          "url": "https://github.com/open-energy-transition/mapyourgrid",
-          "category": "Energy Systems",
-          "sub_category": "Energy Data Accessibility and Integration",
-          "total_score_combined": 0.9452820647397164
-        },
-        {
           "name": "Open Energy Benchmark",
           "url": "https://github.com/open-energy-transition/solver-benchmark",
           "category": "Energy Systems",
           "sub_category": "Energy System Modeling Frameworks",
           "total_score_combined": 0.9304623014583548
+        },
+        {
+          "name": "MapYourGrid",
+          "url": "https://github.com/open-energy-transition/mapyourgrid",
+          "category": "Energy Systems",
+          "sub_category": "Energy Data Accessibility and Integration",
+          "total_score_combined": 0.9047939444654975
         },
         {
           "name": "Open-TYNDP Workshops",
@@ -2121,7 +2121,7 @@
       "organization_description": "U.S Department of Commerce, National Oceanic and Atmospheric Administration",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/11219395?v=4",
       "project_count": 7,
-      "total_score": 7.144948686288233,
+      "total_score": 7.144849045993876,
       "projects": [
         {
           "name": "The Flexible Modeling System",
@@ -2142,7 +2142,7 @@
           "url": "https://github.com/NOAA-GFDL/MOM6",
           "category": "Hydrosphere",
           "sub_category": "Ocean Models",
-          "total_score_combined": 1.2178116574536608
+          "total_score_combined": 1.2177120171593039
         },
         {
           "name": "Pace",
@@ -2239,7 +2239,7 @@
       "organization_description": "Using open science to mitigate climate change",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/48357542?v=4",
       "project_count": 6,
-      "total_score": 6.239664468938628,
+      "total_score": 6.240343869018426,
       "projects": [
         {
           "name": "PVNet",
@@ -2267,7 +2267,7 @@
           "url": "https://github.com/openclimatefix/solar-consumer",
           "category": "Renewable Energy",
           "sub_category": "Photovoltaics and Solar Energy",
-          "total_score_combined": 0.949675757519318
+          "total_score_combined": 0.9503551575991167
         },
         {
           "name": "Solar electricity Nowcasting",
@@ -3720,14 +3720,14 @@
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/43830688?v=4",
       "project_count": 4,
-      "total_score": 3.40741293443289,
+      "total_score": 3.4080348638618556,
       "projects": [
         {
           "name": "Perch",
           "url": "https://github.com/google-research/perch",
           "category": "Biosphere",
           "sub_category": "Bioacoustics and Acoustic Data Analysis",
-          "total_score_combined": 0.99109644208292
+          "total_score_combined": 0.9917183715118857
         },
         {
           "name": "Analysis-Ready, Cloud Optimized ERA5",
@@ -4262,7 +4262,7 @@
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/54071934?v=4",
       "project_count": 3,
-      "total_score": 3.296413900814249,
+      "total_score": 3.296667279192627,
       "projects": [
         {
           "name": "CodeCarbon",
@@ -4283,7 +4283,7 @@
           "url": "https://github.com/mlco2/ecologits",
           "category": "Consumption",
           "sub_category": "Computation and Communication",
-          "total_score_combined": 0.411828808509159
+          "total_score_combined": 0.41208218688753734
         }
       ]
     },
@@ -4572,7 +4572,7 @@
       "organization_description": "Official github account of the ie3 - one of the leading German higher education research institutes in the field of energy",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/58265273?v=4",
       "project_count": 3,
-      "total_score": 2.699521487557845,
+      "total_score": 2.700682735166136,
       "projects": [
         {
           "name": "PowerSystemDataModel",
@@ -4586,7 +4586,7 @@
           "url": "https://github.com/ie3-institute/simona",
           "category": "Energy Systems",
           "sub_category": "Grid Analysis and Planning",
-          "total_score_combined": 0.7492810624884354
+          "total_score_combined": 0.7504423100967262
         },
         {
           "name": "OSMoGrid",
@@ -4665,7 +4665,7 @@
       "organization_description": "ACTRIS Cloud Remote Sensing Data Centre Unit (CLU)",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/52170164?v=4",
       "project_count": 3,
-      "total_score": 2.638507501575237,
+      "total_score": 2.6389748182349853,
       "projects": [
         {
           "name": "MWRpy",
@@ -4686,7 +4686,7 @@
           "url": "https://github.com/actris-cloudnet/dataportal",
           "category": "Atmosphere",
           "sub_category": "Atmospheric Chemistry and Aerosol",
-          "total_score_combined": 0.7758888210331303
+          "total_score_combined": 0.7763561376928787
         }
       ]
     },
@@ -4789,21 +4789,21 @@
       "organization_description": "Free open-source solutions for environmental monitoring",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1212750?v=4",
       "project_count": 3,
-      "total_score": 2.446553477289302,
+      "total_score": 2.446365170826892,
       "projects": [
         {
           "name": "Collect Earth Online",
           "url": "https://github.com/openforis/collect-earth-online",
           "category": "Natural Resources",
           "sub_category": "Soil and Land",
-          "total_score_combined": 1.0367840571621612
+          "total_score_combined": 1.0369402715018514
         },
         {
           "name": "Arena",
           "url": "https://github.com/openforis/arena",
           "category": "Biosphere",
           "sub_category": "Biodiversity Citizen Science",
-          "total_score_combined": 0.707358861681755
+          "total_score_combined": 0.7070143408796545
         },
         {
           "name": "SEPAL",
@@ -6091,14 +6091,14 @@
       "organization_description": "Earth System Model eValuation Tool",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/24584460?v=4",
       "project_count": 2,
-      "total_score": 3.3293659582564423,
+      "total_score": 3.329277156295792,
       "projects": [
         {
           "name": "ESMValTool",
           "url": "https://github.com/ESMValGroup/ESMValTool",
           "category": "Climate Change",
           "sub_category": "Earth and Climate Modeling",
-          "total_score_combined": 1.7026047009713674
+          "total_score_combined": 1.702515899010717
         },
         {
           "name": "ESMValCore",
@@ -6259,7 +6259,7 @@
       "organization_description": "Ai2 Climate Modeling",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/55798839?v=4",
       "project_count": 2,
-      "total_score": 2.565531932463439,
+      "total_score": 2.5651721164432457,
       "projects": [
         {
           "name": "Pace",
@@ -6273,7 +6273,7 @@
           "url": "https://github.com/ai2cm/ace",
           "category": "Atmosphere",
           "sub_category": "Atmospheric Composition and Dynamics",
-          "total_score_combined": 1.2648040442818078
+          "total_score_combined": 1.2644442282616142
         }
       ]
     },
@@ -6355,14 +6355,14 @@
       "organization_description": "Unwritten understanding all code addition to be done by PR and everything to be collaborative. No unexpected actions.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/8717403?v=4",
       "project_count": 2,
-      "total_score": 2.3094805926533932,
+      "total_score": 2.3216120656859847,
       "projects": [
         {
           "name": "xradar",
           "url": "https://github.com/openradar/xradar",
           "category": "Atmosphere",
           "sub_category": "Meteorological Observation and Forecast",
-          "total_score_combined": 1.2335390389048955
+          "total_score_combined": 1.2456705119374871
         },
         {
           "name": "PyDDA",
@@ -6662,30 +6662,6 @@
       ]
     },
     {
-      "organization_name": "NVIDIA Corporation",
-      "organization_url": "https://github.com/NVIDIA",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/1728152?v=4",
-      "project_count": 2,
-      "total_score": 2.0821013265185906,
-      "projects": [
-        {
-          "name": "Earth2Studio",
-          "url": "https://github.com/nvidia/earth2studio",
-          "category": "Climate Change",
-          "sub_category": "Earth and Climate Modeling",
-          "total_score_combined": 1.2578817331148462
-        },
-        {
-          "name": "earth2mip",
-          "url": "https://github.com/NVIDIA/earth2mip",
-          "category": "Climate Change",
-          "sub_category": "Earth and Climate Modeling",
-          "total_score_combined": 0.8242195934037444
-        }
-      ]
-    },
-    {
       "organization_name": "ONE ARMY",
       "organization_url": "https://github.com/ONEARMY",
       "organization_description": "",
@@ -6706,6 +6682,30 @@
           "category": "Industrial Ecology",
           "sub_category": "Circular Economy and Waste",
           "total_score_combined": 0.836151533742786
+        }
+      ]
+    },
+    {
+      "organization_name": "NVIDIA Corporation",
+      "organization_url": "https://github.com/NVIDIA",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/1728152?v=4",
+      "project_count": 2,
+      "total_score": 2.077282902589429,
+      "projects": [
+        {
+          "name": "Earth2Studio",
+          "url": "https://github.com/nvidia/earth2studio",
+          "category": "Climate Change",
+          "sub_category": "Earth and Climate Modeling",
+          "total_score_combined": 1.2530633091856844
+        },
+        {
+          "name": "earth2mip",
+          "url": "https://github.com/NVIDIA/earth2mip",
+          "category": "Climate Change",
+          "sub_category": "Earth and Climate Modeling",
+          "total_score_combined": 0.8242195934037444
         }
       ]
     },
@@ -7075,14 +7075,14 @@
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/2879854?v=4",
       "project_count": 2,
-      "total_score": 1.9146429435433885,
+      "total_score": 1.9180432434582353,
       "projects": [
         {
           "name": "PEcAn",
           "url": "https://github.com/PecanProject/pecan",
           "category": "Biosphere",
           "sub_category": "Ecological and Environmental Modeling",
-          "total_score_combined": 1.4419683180966834
+          "total_score_combined": 1.44536861801153
         },
         {
           "name": "BETYdb",
@@ -7219,7 +7219,7 @@
       "organization_description": "",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/11797105?v=4",
       "project_count": 2,
-      "total_score": 1.8090914543080747,
+      "total_score": 1.810747153759162,
       "projects": [
         {
           "name": "oco2peak",
@@ -7233,7 +7233,7 @@
           "url": "https://github.com/dataforgoodfr/quotaclimat",
           "category": "Sustainable Development",
           "sub_category": "Knowledge Platforms",
-          "total_score_combined": 0.7964784802818332
+          "total_score_combined": 0.7981341797329204
         }
       ]
     },
@@ -7411,7 +7411,7 @@
       "organization_description": "Forest Data Partnership",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/155651852?v=4",
       "project_count": 2,
-      "total_score": 1.7163332537752105,
+      "total_score": 1.7155578447921938,
       "projects": [
         {
           "name": "whisp",
@@ -7425,7 +7425,7 @@
           "url": "https://github.com/forestdatapartnership/whisp-app",
           "category": "Biosphere",
           "sub_category": "Deforestation and Reforestation",
-          "total_score_combined": 0.7443066556434392
+          "total_score_combined": 0.7435312466604225
         }
       ]
     },
@@ -7699,7 +7699,7 @@
       "organization_description": "iNaturalist is a global online social network of naturalists. This is our code.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/62292?v=4",
       "project_count": 2,
-      "total_score": 1.6289427178491531,
+      "total_score": 1.6289987387470646,
       "projects": [
         {
           "name": "iNaturalistReactNative",
@@ -7713,7 +7713,7 @@
           "url": "https://github.com/inaturalist/inaturalist",
           "category": "Biosphere",
           "sub_category": "Biodiversity Citizen Science",
-          "total_score_combined": 0.6514419960728919
+          "total_score_combined": 0.6514980169708033
         }
       ]
     },
@@ -8318,6 +8318,30 @@
       ]
     },
     {
+      "organization_name": "CREA",
+      "organization_url": "https://github.com/energyandcleanair",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/64344323?v=4",
+      "project_count": 2,
+      "total_score": 1.4192122504938283,
+      "projects": [
+        {
+          "name": "CREAHIA",
+          "url": "https://github.com/energyandcleanair/creahia",
+          "category": "Natural Resources",
+          "sub_category": "Air Quality",
+          "total_score_combined": 0.8446716060477371
+        },
+        {
+          "name": "Fossil Shipment Tracker",
+          "url": "https://github.com/energyandcleanair/fossil_shipment_tracker_r",
+          "category": "Emissions",
+          "sub_category": "Emission Observation and Modeling",
+          "total_score_combined": 0.5745406444460912
+        }
+      ]
+    },
+    {
       "organization_name": "OpenSCM",
       "organization_url": "https://github.com/openscm",
       "organization_description": "Building a set of open, single-interface, simple climate models",
@@ -8458,6 +8482,30 @@
           "category": "Sustainable Development",
           "sub_category": "Taxonomy and Ontology",
           "total_score_combined": 0.34208445897308587
+        }
+      ]
+    },
+    {
+      "organization_name": "Instituto de Pesquisa Econômica Aplicada (IPEA)",
+      "organization_url": "https://github.com/ipea",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/22377669?v=4",
+      "project_count": 2,
+      "total_score": 1.3557353009961637,
+      "projects": [
+        {
+          "name": "accessibility",
+          "url": "https://github.com/ipea/accessibility",
+          "category": "Consumption",
+          "sub_category": "Mobility and Transportation",
+          "total_score_combined": 0.9015793167133388
+        },
+        {
+          "name": "gtfs2emis",
+          "url": "https://github.com/ipea/gtfs2emis",
+          "category": "Emissions",
+          "sub_category": "Emission Observation and Modeling",
+          "total_score_combined": 0.45415598428282494
         }
       ]
     },
@@ -8726,30 +8774,6 @@
       ]
     },
     {
-      "organization_name": "CREA",
-      "organization_url": "https://github.com/energyandcleanair",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/64344323?v=4",
-      "project_count": 2,
-      "total_score": 1.2788441322887496,
-      "projects": [
-        {
-          "name": "CREAHIA",
-          "url": "https://github.com/energyandcleanair/creahia",
-          "category": "Natural Resources",
-          "sub_category": "Air Quality",
-          "total_score_combined": 0.7043034878426584
-        },
-        {
-          "name": "Fossil Shipment Tracker",
-          "url": "https://github.com/energyandcleanair/fossil_shipment_tracker_r",
-          "category": "Emissions",
-          "sub_category": "Emission Observation and Modeling",
-          "total_score_combined": 0.5745406444460912
-        }
-      ]
-    },
-    {
       "organization_name": "Green Coding Solutions",
       "organization_url": "https://github.com/green-coding-solutions",
       "organization_description": "We create open source tools to measure software energy consumption",
@@ -8995,14 +9019,14 @@
       "organization_description": "Multi-process simulator for Environmental & Earth System Science",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/16613755?v=4",
       "project_count": 2,
-      "total_score": 1.1663492971848957,
+      "total_score": 1.16638804452153,
       "projects": [
         {
           "name": "Amanzi",
           "url": "https://github.com/amanzi/amanzi",
           "category": "Hydrosphere",
           "sub_category": "Freshwater and Hydrology",
-          "total_score_combined": 0.8066192686419266
+          "total_score_combined": 0.806658015978561
         },
         {
           "name": "ATS",
@@ -9058,30 +9082,6 @@
           "category": "Biosphere",
           "sub_category": "Wildfire",
           "total_score_combined": 0.5601529427208725
-        }
-      ]
-    },
-    {
-      "organization_name": "Instituto de Pesquisa Econômica Aplicada (IPEA)",
-      "organization_url": "https://github.com/ipea",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/22377669?v=4",
-      "project_count": 2,
-      "total_score": 1.146980302653615,
-      "projects": [
-        {
-          "name": "accessibility",
-          "url": "https://github.com/ipea/accessibility",
-          "category": "Consumption",
-          "sub_category": "Mobility and Transportation",
-          "total_score_combined": 0.6928243183707901
-        },
-        {
-          "name": "gtfs2emis",
-          "url": "https://github.com/ipea/gtfs2emis",
-          "category": "Emissions",
-          "sub_category": "Emission Observation and Modeling",
-          "total_score_combined": 0.45415598428282494
         }
       ]
     },
@@ -10712,7 +10712,7 @@
         "kind": "organization",
         "value": 43,
         "url": "https://github.com/NatLabRockies",
-        "total_score": 36.76663269061862,
+        "total_score": 36.80835427497024,
         "children": [
           {
             "name": "EnergyPlus",
@@ -10769,6 +10769,15 @@
             "total_score_combined": 1.2140212421296928
           },
           {
+            "name": "solar-data-tools",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/natlabrockies/solar-data-tools",
+            "category": "Renewable Energy",
+            "sub_category": "Photovoltaics and Solar Energy",
+            "total_score_combined": 1.211816052280817
+          },
+          {
             "name": "ComStock",
             "kind": "project",
             "value": 1,
@@ -10776,15 +10785,6 @@
             "category": "Consumption",
             "sub_category": "Buildings and Heating",
             "total_score_combined": 1.1785767091506911
-          },
-          {
-            "name": "solar-data-tools",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/natlabrockies/solar-data-tools",
-            "category": "Renewable Energy",
-            "sub_category": "Photovoltaics and Solar Energy",
-            "total_score_combined": 1.1713903273731843
           },
           {
             "name": "HOPP",
@@ -11036,7 +11036,7 @@
             "url": "https://github.com/NatLabRockies/altrios",
             "category": "Consumption",
             "sub_category": "Mobility and Transportation",
-            "total_score_combined": 0.5149187190220593
+            "total_score_combined": 0.5162145784660508
           },
           {
             "name": "Probabilistic Resource Adequacy Suite",
@@ -11630,7 +11630,7 @@
         "kind": "organization",
         "value": 15,
         "url": "https://github.com/ecmwf",
-        "total_score": 12.893295266879885,
+        "total_score": 12.89369471796749,
         "children": [
           {
             "name": "cdsapi",
@@ -11702,7 +11702,7 @@
             "url": "https://github.com/ecmwf/weathergenerator",
             "category": "Atmosphere",
             "sub_category": "Meteorological Observation and Forecast",
-            "total_score_combined": 0.8923885533566074
+            "total_score_combined": 0.8927012574176941
           },
           {
             "name": "Thermofeel",
@@ -11738,7 +11738,7 @@
             "url": "https://github.com/ecmwf/eccodes",
             "category": "Atmosphere",
             "sub_category": "Meteorological Observation and Forecast",
-            "total_score_combined": 0.6751426202458264
+            "total_score_combined": 0.675229367272343
           },
           {
             "name": "magics",
@@ -12305,7 +12305,7 @@
         "kind": "organization",
         "value": 9,
         "url": "https://github.com/oemof",
-        "total_score": 8.587710041733754,
+        "total_score": 8.588055335502704,
         "children": [
           {
             "name": "oemof-solph",
@@ -12341,7 +12341,7 @@
             "url": "https://github.com/oemof/oemof-demand",
             "category": "Energy Systems",
             "sub_category": "Load and Demand Forecasting",
-            "total_score_combined": 1.1122867513517276
+            "total_score_combined": 1.1126320451206766
           },
           {
             "name": "oemof-thermal",
@@ -12485,7 +12485,7 @@
         "kind": "organization",
         "value": 9,
         "url": "https://github.com/microsoft",
-        "total_score": 7.321583789525309,
+        "total_score": 7.329244160931721,
         "children": [
           {
             "name": "MegaDetector",
@@ -12530,7 +12530,7 @@
             "url": "https://github.com/microsoft/farmvibes-ai",
             "category": "Consumption",
             "sub_category": "Agriculture and Nutrition",
-            "total_score_combined": 0.7300724468505917
+            "total_score_combined": 0.7377328182570054
           },
           {
             "name": "Global Renewables Watch",
@@ -12575,7 +12575,7 @@
         "kind": "organization",
         "value": 9,
         "url": "https://github.com/open-energy-transition",
-        "total_score": 6.299937835517052,
+        "total_score": 6.259449715242833,
         "children": [
           {
             "name": "PyPSA-Wal",
@@ -12596,15 +12596,6 @@
             "total_score_combined": 0.9606352992791466
           },
           {
-            "name": "MapYourGrid",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/mapyourgrid",
-            "category": "Energy Systems",
-            "sub_category": "Energy Data Accessibility and Integration",
-            "total_score_combined": 0.9452820647397164
-          },
-          {
             "name": "Open Energy Benchmark",
             "kind": "project",
             "value": 1,
@@ -12612,6 +12603,15 @@
             "category": "Energy Systems",
             "sub_category": "Energy System Modeling Frameworks",
             "total_score_combined": 0.9304623014583548
+          },
+          {
+            "name": "MapYourGrid",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/mapyourgrid",
+            "category": "Energy Systems",
+            "sub_category": "Energy Data Accessibility and Integration",
+            "total_score_combined": 0.9047939444654975
           },
           {
             "name": "Open-TYNDP Workshops",
@@ -12917,7 +12917,7 @@
         "kind": "organization",
         "value": 7,
         "url": "https://github.com/NOAA-GFDL",
-        "total_score": 7.144948686288233,
+        "total_score": 7.144849045993876,
         "children": [
           {
             "name": "The Flexible Modeling System",
@@ -12944,7 +12944,7 @@
             "url": "https://github.com/NOAA-GFDL/MOM6",
             "category": "Hydrosphere",
             "sub_category": "Ocean Models",
-            "total_score_combined": 1.2178116574536608
+            "total_score_combined": 1.2177120171593039
           },
           {
             "name": "Pace",
@@ -13061,7 +13061,7 @@
         "kind": "organization",
         "value": 6,
         "url": "https://github.com/openclimatefix",
-        "total_score": 6.239664468938628,
+        "total_score": 6.240343869018426,
         "children": [
           {
             "name": "PVNet",
@@ -13097,7 +13097,7 @@
             "url": "https://github.com/openclimatefix/solar-consumer",
             "category": "Renewable Energy",
             "sub_category": "Photovoltaics and Solar Energy",
-            "total_score_combined": 0.949675757519318
+            "total_score_combined": 0.9503551575991167
           },
           {
             "name": "Solar electricity Nowcasting",
@@ -14834,7 +14834,7 @@
         "kind": "organization",
         "value": 4,
         "url": "https://github.com/google-research",
-        "total_score": 3.40741293443289,
+        "total_score": 3.4080348638618556,
         "children": [
           {
             "name": "Perch",
@@ -14843,7 +14843,7 @@
             "url": "https://github.com/google-research/perch",
             "category": "Biosphere",
             "sub_category": "Bioacoustics and Acoustic Data Analysis",
-            "total_score_combined": 0.99109644208292
+            "total_score_combined": 0.9917183715118857
           },
           {
             "name": "Analysis-Ready, Cloud Optimized ERA5",
@@ -15473,7 +15473,7 @@
         "kind": "organization",
         "value": 3,
         "url": "https://github.com/mlco2",
-        "total_score": 3.296413900814249,
+        "total_score": 3.296667279192627,
         "children": [
           {
             "name": "CodeCarbon",
@@ -15500,7 +15500,7 @@
             "url": "https://github.com/mlco2/ecologits",
             "category": "Consumption",
             "sub_category": "Computation and Communication",
-            "total_score_combined": 0.411828808509159
+            "total_score_combined": 0.41208218688753734
           }
         ]
       },
@@ -15833,7 +15833,7 @@
         "kind": "organization",
         "value": 3,
         "url": "https://github.com/ie3-institute",
-        "total_score": 2.699521487557845,
+        "total_score": 2.700682735166136,
         "children": [
           {
             "name": "PowerSystemDataModel",
@@ -15851,7 +15851,7 @@
             "url": "https://github.com/ie3-institute/simona",
             "category": "Energy Systems",
             "sub_category": "Grid Analysis and Planning",
-            "total_score_combined": 0.7492810624884354
+            "total_score_combined": 0.7504423100967262
           },
           {
             "name": "OSMoGrid",
@@ -15941,7 +15941,7 @@
         "kind": "organization",
         "value": 3,
         "url": "https://github.com/actris-cloudnet",
-        "total_score": 2.638507501575237,
+        "total_score": 2.6389748182349853,
         "children": [
           {
             "name": "MWRpy",
@@ -15968,7 +15968,7 @@
             "url": "https://github.com/actris-cloudnet/dataportal",
             "category": "Atmosphere",
             "sub_category": "Atmospheric Chemistry and Aerosol",
-            "total_score_combined": 0.7758888210331303
+            "total_score_combined": 0.7763561376928787
           }
         ]
       },
@@ -16085,7 +16085,7 @@
         "kind": "organization",
         "value": 3,
         "url": "https://github.com/openforis",
-        "total_score": 2.446553477289302,
+        "total_score": 2.446365170826892,
         "children": [
           {
             "name": "Collect Earth Online",
@@ -16094,7 +16094,7 @@
             "url": "https://github.com/openforis/collect-earth-online",
             "category": "Natural Resources",
             "sub_category": "Soil and Land",
-            "total_score_combined": 1.0367840571621612
+            "total_score_combined": 1.0369402715018514
           },
           {
             "name": "Arena",
@@ -16103,7 +16103,7 @@
             "url": "https://github.com/openforis/arena",
             "category": "Biosphere",
             "sub_category": "Biodiversity Citizen Science",
-            "total_score_combined": 0.707358861681755
+            "total_score_combined": 0.7070143408796545
           },
           {
             "name": "SEPAL",
@@ -17597,7 +17597,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/ESMValGroup",
-        "total_score": 3.3293659582564423,
+        "total_score": 3.329277156295792,
         "children": [
           {
             "name": "ESMValTool",
@@ -17606,7 +17606,7 @@
             "url": "https://github.com/ESMValGroup/ESMValTool",
             "category": "Climate Change",
             "sub_category": "Earth and Climate Modeling",
-            "total_score_combined": 1.7026047009713674
+            "total_score_combined": 1.702515899010717
           },
           {
             "name": "ESMValCore",
@@ -17786,7 +17786,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/ai2cm",
-        "total_score": 2.565531932463439,
+        "total_score": 2.5651721164432457,
         "children": [
           {
             "name": "Pace",
@@ -17804,7 +17804,7 @@
             "url": "https://github.com/ai2cm/ace",
             "category": "Atmosphere",
             "sub_category": "Atmospheric Composition and Dynamics",
-            "total_score_combined": 1.2648040442818078
+            "total_score_combined": 1.2644442282616142
           }
         ]
       },
@@ -17894,7 +17894,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/openradar",
-        "total_score": 2.3094805926533932,
+        "total_score": 2.3216120656859847,
         "children": [
           {
             "name": "xradar",
@@ -17903,7 +17903,7 @@
             "url": "https://github.com/openradar/xradar",
             "category": "Atmosphere",
             "sub_category": "Meteorological Observation and Forecast",
-            "total_score_combined": 1.2335390389048955
+            "total_score_combined": 1.2456705119374871
           },
           {
             "name": "PyDDA",
@@ -18241,33 +18241,6 @@
         ]
       },
       {
-        "name": "NVIDIA Corporation",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/NVIDIA",
-        "total_score": 2.0821013265185906,
-        "children": [
-          {
-            "name": "Earth2Studio",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nvidia/earth2studio",
-            "category": "Climate Change",
-            "sub_category": "Earth and Climate Modeling",
-            "total_score_combined": 1.2578817331148462
-          },
-          {
-            "name": "earth2mip",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/NVIDIA/earth2mip",
-            "category": "Climate Change",
-            "sub_category": "Earth and Climate Modeling",
-            "total_score_combined": 0.8242195934037444
-          }
-        ]
-      },
-      {
         "name": "ONE ARMY",
         "kind": "organization",
         "value": 2,
@@ -18291,6 +18264,33 @@
             "category": "Industrial Ecology",
             "sub_category": "Circular Economy and Waste",
             "total_score_combined": 0.836151533742786
+          }
+        ]
+      },
+      {
+        "name": "NVIDIA Corporation",
+        "kind": "organization",
+        "value": 2,
+        "url": "https://github.com/NVIDIA",
+        "total_score": 2.077282902589429,
+        "children": [
+          {
+            "name": "Earth2Studio",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/nvidia/earth2studio",
+            "category": "Climate Change",
+            "sub_category": "Earth and Climate Modeling",
+            "total_score_combined": 1.2530633091856844
+          },
+          {
+            "name": "earth2mip",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/NVIDIA/earth2mip",
+            "category": "Climate Change",
+            "sub_category": "Earth and Climate Modeling",
+            "total_score_combined": 0.8242195934037444
           }
         ]
       },
@@ -18704,7 +18704,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/PecanProject",
-        "total_score": 1.9146429435433885,
+        "total_score": 1.9180432434582353,
         "children": [
           {
             "name": "PEcAn",
@@ -18713,7 +18713,7 @@
             "url": "https://github.com/PecanProject/pecan",
             "category": "Biosphere",
             "sub_category": "Ecological and Environmental Modeling",
-            "total_score_combined": 1.4419683180966834
+            "total_score_combined": 1.44536861801153
           },
           {
             "name": "BETYdb",
@@ -18866,7 +18866,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/dataforgoodfr",
-        "total_score": 1.8090914543080747,
+        "total_score": 1.810747153759162,
         "children": [
           {
             "name": "oco2peak",
@@ -18884,7 +18884,7 @@
             "url": "https://github.com/dataforgoodfr/quotaclimat",
             "category": "Sustainable Development",
             "sub_category": "Knowledge Platforms",
-            "total_score_combined": 0.7964784802818332
+            "total_score_combined": 0.7981341797329204
           }
         ]
       },
@@ -19082,7 +19082,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/forestdatapartnership",
-        "total_score": 1.7163332537752105,
+        "total_score": 1.7155578447921938,
         "children": [
           {
             "name": "whisp",
@@ -19100,7 +19100,7 @@
             "url": "https://github.com/forestdatapartnership/whisp-app",
             "category": "Biosphere",
             "sub_category": "Deforestation and Reforestation",
-            "total_score_combined": 0.7443066556434392
+            "total_score_combined": 0.7435312466604225
           }
         ]
       },
@@ -19406,7 +19406,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/inaturalist",
-        "total_score": 1.6289427178491531,
+        "total_score": 1.6289987387470646,
         "children": [
           {
             "name": "iNaturalistReactNative",
@@ -19424,7 +19424,7 @@
             "url": "https://github.com/inaturalist/inaturalist",
             "category": "Biosphere",
             "sub_category": "Biodiversity Citizen Science",
-            "total_score_combined": 0.6514419960728919
+            "total_score_combined": 0.6514980169708033
           }
         ]
       },
@@ -20104,6 +20104,33 @@
         ]
       },
       {
+        "name": "CREA",
+        "kind": "organization",
+        "value": 2,
+        "url": "https://github.com/energyandcleanair",
+        "total_score": 1.4192122504938283,
+        "children": [
+          {
+            "name": "CREAHIA",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/energyandcleanair/creahia",
+            "category": "Natural Resources",
+            "sub_category": "Air Quality",
+            "total_score_combined": 0.8446716060477371
+          },
+          {
+            "name": "Fossil Shipment Tracker",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/energyandcleanair/fossil_shipment_tracker_r",
+            "category": "Emissions",
+            "sub_category": "Emission Observation and Modeling",
+            "total_score_combined": 0.5745406444460912
+          }
+        ]
+      },
+      {
         "name": "OpenSCM",
         "kind": "organization",
         "value": 2,
@@ -20262,6 +20289,33 @@
             "category": "Sustainable Development",
             "sub_category": "Taxonomy and Ontology",
             "total_score_combined": 0.34208445897308587
+          }
+        ]
+      },
+      {
+        "name": "Instituto de Pesquisa Econômica Aplicada (IPEA)",
+        "kind": "organization",
+        "value": 2,
+        "url": "https://github.com/ipea",
+        "total_score": 1.3557353009961637,
+        "children": [
+          {
+            "name": "accessibility",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/ipea/accessibility",
+            "category": "Consumption",
+            "sub_category": "Mobility and Transportation",
+            "total_score_combined": 0.9015793167133388
+          },
+          {
+            "name": "gtfs2emis",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/ipea/gtfs2emis",
+            "category": "Emissions",
+            "sub_category": "Emission Observation and Modeling",
+            "total_score_combined": 0.45415598428282494
           }
         ]
       },
@@ -20563,33 +20617,6 @@
         ]
       },
       {
-        "name": "CREA",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/energyandcleanair",
-        "total_score": 1.2788441322887496,
-        "children": [
-          {
-            "name": "CREAHIA",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/energyandcleanair/creahia",
-            "category": "Natural Resources",
-            "sub_category": "Air Quality",
-            "total_score_combined": 0.7043034878426584
-          },
-          {
-            "name": "Fossil Shipment Tracker",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/energyandcleanair/fossil_shipment_tracker_r",
-            "category": "Emissions",
-            "sub_category": "Emission Observation and Modeling",
-            "total_score_combined": 0.5745406444460912
-          }
-        ]
-      },
-      {
         "name": "Green Coding Solutions",
         "kind": "organization",
         "value": 2,
@@ -20864,7 +20891,7 @@
         "kind": "organization",
         "value": 2,
         "url": "https://github.com/amanzi",
-        "total_score": 1.1663492971848957,
+        "total_score": 1.16638804452153,
         "children": [
           {
             "name": "Amanzi",
@@ -20873,7 +20900,7 @@
             "url": "https://github.com/amanzi/amanzi",
             "category": "Hydrosphere",
             "sub_category": "Freshwater and Hydrology",
-            "total_score_combined": 0.8066192686419266
+            "total_score_combined": 0.806658015978561
           },
           {
             "name": "ATS",
@@ -20937,33 +20964,6 @@
             "category": "Biosphere",
             "sub_category": "Wildfire",
             "total_score_combined": 0.5601529427208725
-          }
-        ]
-      },
-      {
-        "name": "Instituto de Pesquisa Econômica Aplicada (IPEA)",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/ipea",
-        "total_score": 1.146980302653615,
-        "children": [
-          {
-            "name": "accessibility",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ipea/accessibility",
-            "category": "Consumption",
-            "sub_category": "Mobility and Transportation",
-            "total_score_combined": 0.6928243183707901
-          },
-          {
-            "name": "gtfs2emis",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ipea/gtfs2emis",
-            "category": "Emissions",
-            "sub_category": "Emission Observation and Modeling",
-            "total_score_combined": 0.45415598428282494
           }
         ]
       },
