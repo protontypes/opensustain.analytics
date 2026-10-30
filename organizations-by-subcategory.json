@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T11:23:35.075959+00:00",
+  "generated_at": "2026-10-30T11:15:55.107969+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -5907,7 +5907,7 @@
     },
     {
       "sub_category": "Grid Analysis and Planning",
-      "organization_count": 26,
+      "organization_count": 27,
       "organizations": [
         {
           "organization_name": "A Library of IEEE PES Power Grid Benchmarks",
@@ -6040,6 +6040,12 @@
           "organization_url": "https://github.com/pypsa-meets-earth",
           "location_country": "Global",
           "form_of_organization": "community"
+        },
+        {
+          "organization_name": "SmartGridToolbox",
+          "organization_url": "https://gitlab.com/SmartGridToolbox",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "advanced network science initiative",
@@ -6662,6 +6668,144 @@
       ]
     },
     {
+      "sub_category": "Wind Energy",
+      "organization_count": 22,
+      "organizations": [
+        {
+          "organization_name": "Applied Machine Learning (AML) Lab",
+          "organization_url": "https://github.com/TAMU-AML",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "BYU FLOW Lab",
+          "organization_url": "https://github.com/byuflowlab",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Energy Research and Forecasting",
+          "organization_url": "https://github.com/erf-model",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "FloatingArrayDesign",
+          "organization_url": "https://github.com/FloatingArrayDesign",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "FraunhoferIWES",
+          "organization_url": "https://github.com/FraunhoferIWES",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "IEA Wind Systems",
+          "organization_url": "https://github.com/IEAWindSystems",
+          "location_country": "Global",
+          "form_of_organization": "Collaboration"
+        },
+        {
+          "organization_name": "IEA Wind Task 66 Digitalisation",
+          "organization_url": "https://github.com/iea-wind-digitalisation",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "IEC 61400",
+          "organization_url": "https://github.com/IEC-61400",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Imperial College London",
+          "organization_url": "https://github.com/ImperialCollegeLondon",
+          "location_country": "UK",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "LHEEA",
+          "organization_url": "https://gitlab.com/lheea",
+          "location_country": "France",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "NLRWindSystems",
+          "organization_url": "https://github.com/NLRWindSystems",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "National Laboratory of the Rockies",
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "OpenFAST",
+          "organization_url": "https://github.com/OpenFAST",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "RES Group",
+          "organization_url": "https://github.com/resgroup",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Sandia National Laboratories",
+          "organization_url": "https://github.com/sandialabs",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Scottish Government Marine Directorate",
+          "organization_url": "https://github.com/MarineScotlandScience",
+          "location_country": "UK",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "The Signal Intelligence Project",
+          "organization_url": "https://github.com/sintel-dev",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "awebox",
+          "organization_url": "https://github.com/awebox",
+          "location_country": "Germany",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "brightwind",
+          "organization_url": "https://github.com/brightwind-dev",
+          "location_country": "Ireland",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "kynema",
+          "organization_url": "https://github.com/kynema",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "turbinesFoam",
+          "organization_url": "https://github.com/turbinesFoam",
+          "location_country": "Global",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "wind-python",
+          "organization_url": "https://github.com/wind-python",
+          "location_country": "",
+          "form_of_organization": ""
+        }
+      ]
+    },
+    {
       "sub_category": "Atmospheric Composition and Dynamics",
       "organization_count": 21,
       "organizations": [
@@ -6922,138 +7066,6 @@
           "organization_url": "https://github.com/wimlds-trojmiasto",
           "location_country": "Global",
           "form_of_organization": "for-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Wind Energy",
-      "organization_count": 21,
-      "organizations": [
-        {
-          "organization_name": "Applied Machine Learning (AML) Lab",
-          "organization_url": "https://github.com/TAMU-AML",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "BYU FLOW Lab",
-          "organization_url": "https://github.com/byuflowlab",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Energy Research and Forecasting",
-          "organization_url": "https://github.com/erf-model",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "FloatingArrayDesign",
-          "organization_url": "https://github.com/FloatingArrayDesign",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "FraunhoferIWES",
-          "organization_url": "https://github.com/FraunhoferIWES",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "IEA Wind Systems",
-          "organization_url": "https://github.com/IEAWindSystems",
-          "location_country": "Global",
-          "form_of_organization": "Collaboration"
-        },
-        {
-          "organization_name": "IEC 61400",
-          "organization_url": "https://github.com/IEC-61400",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Imperial College London",
-          "organization_url": "https://github.com/ImperialCollegeLondon",
-          "location_country": "UK",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "LHEEA",
-          "organization_url": "https://gitlab.com/lheea",
-          "location_country": "France",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "NLRWindSystems",
-          "organization_url": "https://github.com/NLRWindSystems",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/NatLabRockies",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "OpenFAST",
-          "organization_url": "https://github.com/OpenFAST",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "RES Group",
-          "organization_url": "https://github.com/resgroup",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Sandia National Laboratories",
-          "organization_url": "https://github.com/sandialabs",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Scottish Government Marine Directorate",
-          "organization_url": "https://github.com/MarineScotlandScience",
-          "location_country": "UK",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "The Signal Intelligence Project",
-          "organization_url": "https://github.com/sintel-dev",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "awebox",
-          "organization_url": "https://github.com/awebox",
-          "location_country": "Germany",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "brightwind",
-          "organization_url": "https://github.com/brightwind-dev",
-          "location_country": "Ireland",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "kynema",
-          "organization_url": "https://github.com/kynema",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "turbinesFoam",
-          "organization_url": "https://github.com/turbinesFoam",
-          "location_country": "Global",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "wind-python",
-          "organization_url": "https://github.com/wind-python",
-          "location_country": "",
-          "form_of_organization": ""
         }
       ]
     },
@@ -17070,7 +17082,7 @@
       {
         "name": "Grid Analysis and Planning",
         "kind": "sub_category",
-        "value": 26,
+        "value": 27,
         "children": [
           {
             "name": "A Library of IEEE PES Power Grid Benchmarks",
@@ -17203,6 +17215,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/pypsa-meets-earth"
+          },
+          {
+            "name": "SmartGridToolbox",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/SmartGridToolbox"
           },
           {
             "name": "advanced network science initiative",
@@ -17829,6 +17847,145 @@
         ]
       },
       {
+        "name": "Wind Energy",
+        "kind": "sub_category",
+        "value": 22,
+        "children": [
+          {
+            "name": "Applied Machine Learning (AML) Lab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/TAMU-AML"
+          },
+          {
+            "name": "BYU FLOW Lab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/byuflowlab"
+          },
+          {
+            "name": "Energy Research and Forecasting",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/erf-model"
+          },
+          {
+            "name": "FloatingArrayDesign",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/FloatingArrayDesign"
+          },
+          {
+            "name": "FraunhoferIWES",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/FraunhoferIWES"
+          },
+          {
+            "name": "IEA Wind Systems",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/IEAWindSystems"
+          },
+          {
+            "name": "IEA Wind Task 66 Digitalisation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/iea-wind-digitalisation"
+          },
+          {
+            "name": "IEC 61400",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/IEC-61400"
+          },
+          {
+            "name": "Imperial College London",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ImperialCollegeLondon"
+          },
+          {
+            "name": "LHEEA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/lheea"
+          },
+          {
+            "name": "NLRWindSystems",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NLRWindSystems"
+          },
+          {
+            "name": "National Laboratory of the Rockies",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NatLabRockies"
+          },
+          {
+            "name": "OpenFAST",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OpenFAST"
+          },
+          {
+            "name": "RES Group",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/resgroup"
+          },
+          {
+            "name": "Sandia National Laboratories",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/sandialabs"
+          },
+          {
+            "name": "Scottish Government Marine Directorate",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/MarineScotlandScience"
+          },
+          {
+            "name": "The Signal Intelligence Project",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/sintel-dev"
+          },
+          {
+            "name": "awebox",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/awebox"
+          },
+          {
+            "name": "brightwind",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/brightwind-dev"
+          },
+          {
+            "name": "kynema",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/kynema"
+          },
+          {
+            "name": "turbinesFoam",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/turbinesFoam"
+          },
+          {
+            "name": "wind-python",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/wind-python"
+          }
+        ]
+      },
+      {
         "name": "Atmospheric Composition and Dynamics",
         "kind": "sub_category",
         "value": 21,
@@ -18091,139 +18248,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/wimlds-trojmiasto"
-          }
-        ]
-      },
-      {
-        "name": "Wind Energy",
-        "kind": "sub_category",
-        "value": 21,
-        "children": [
-          {
-            "name": "Applied Machine Learning (AML) Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/TAMU-AML"
-          },
-          {
-            "name": "BYU FLOW Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/byuflowlab"
-          },
-          {
-            "name": "Energy Research and Forecasting",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/erf-model"
-          },
-          {
-            "name": "FloatingArrayDesign",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/FloatingArrayDesign"
-          },
-          {
-            "name": "FraunhoferIWES",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/FraunhoferIWES"
-          },
-          {
-            "name": "IEA Wind Systems",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/IEAWindSystems"
-          },
-          {
-            "name": "IEC 61400",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/IEC-61400"
-          },
-          {
-            "name": "Imperial College London",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ImperialCollegeLondon"
-          },
-          {
-            "name": "LHEEA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://gitlab.com/lheea"
-          },
-          {
-            "name": "NLRWindSystems",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NLRWindSystems"
-          },
-          {
-            "name": "National Laboratory of the Rockies",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NatLabRockies"
-          },
-          {
-            "name": "OpenFAST",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OpenFAST"
-          },
-          {
-            "name": "RES Group",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/resgroup"
-          },
-          {
-            "name": "Sandia National Laboratories",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/sandialabs"
-          },
-          {
-            "name": "Scottish Government Marine Directorate",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/MarineScotlandScience"
-          },
-          {
-            "name": "The Signal Intelligence Project",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/sintel-dev"
-          },
-          {
-            "name": "awebox",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/awebox"
-          },
-          {
-            "name": "brightwind",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/brightwind-dev"
-          },
-          {
-            "name": "kynema",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/kynema"
-          },
-          {
-            "name": "turbinesFoam",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/turbinesFoam"
-          },
-          {
-            "name": "wind-python",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/wind-python"
           }
         ]
       },

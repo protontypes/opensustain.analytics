@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T11:23:35.075959+00:00",
+  "generated_at": "2026-10-30T11:15:55.107969+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -340,7 +340,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 222
+      "count": 224
     },
     {
       "form_of_organization": "government agency",
@@ -6688,6 +6688,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "IEA Wind Task 66 Digitalisation",
+      "organization_url": "https://github.com/iea-wind-digitalisation",
+      "organization_description": "Github Repository for the efforts of IEA Wind Task 66 Digitalisation",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/57503085?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "IEC 61400",
       "organization_url": "https://github.com/IEC-61400",
       "organization_description": "Digital resources for IEC 61400: Wind energy generation systems",
@@ -9709,6 +9718,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/44724489?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "SmartGridToolbox",
+      "organization_url": "https://gitlab.com/SmartGridToolbox",
+      "organization_description": "Group for SmartGridToolbox related projects.",
+      "organization_icon_url": "",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
