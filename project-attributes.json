@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-30T12:58:56.430601+00:00",
+  "generated_at": "2026-10-31T10:49:01.420112+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1984
+      "count": 1985
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
@@ -15,7 +15,7 @@
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2246
+        "count": 2247
       },
       {
         "label": "True",
@@ -33,7 +33,7 @@
       },
       {
         "label": "True",
-        "count": 919
+        "count": 920
       },
       {
         "label": "Unknown",
@@ -43,7 +43,7 @@
     "license": [
       {
         "label": "mit",
-        "count": 729
+        "count": 730
       },
       {
         "label": "other",
@@ -90,24 +90,24 @@
         "count": 23
       },
       {
-        "label": "eupl-1.2",
+        "label": "bsd-2-clause",
         "count": 19
       },
       {
-        "label": "bsd-2-clause",
-        "count": 19
+        "label": "eupl-1.2",
+        "count": 18
       },
       {
         "label": "cc-by-sa-4.0",
         "count": 10
       },
       {
-        "label": "lgpl-2.1",
+        "label": "gpl-3.0+",
         "count": 7
       },
       {
-        "label": "gpl-3.0+",
-        "count": 6
+        "label": "lgpl-2.1",
+        "count": 7
       },
       {
         "label": "unlicense",
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 986
+        "count": 987
       },
       {
         "label": "R",
@@ -157,7 +157,7 @@
       },
       {
         "label": "Jupyter Notebook",
-        "count": 317
+        "count": 318
       },
       {
         "label": "Unknown",
@@ -248,11 +248,11 @@
         "count": 7
       },
       {
-        "label": "CSS",
-        "count": 6
+        "label": "GAMS",
+        "count": 5
       },
       {
-        "label": "GAMS",
+        "label": "CSS",
         "count": 5
       },
       {
@@ -415,27 +415,27 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7225
+        "count": 7236
       },
       {
         "label": "pypi",
-        "count": 3278
+        "count": 3304
       },
       {
         "label": "Unknown",
-        "count": 2834
+        "count": 2835
       },
       {
         "label": "docker",
-        "count": 1546
+        "count": 1548
       },
       {
         "label": "npm",
-        "count": 1501
+        "count": 1509
       },
       {
         "label": "maven",
-        "count": 712
+        "count": 758
       },
       {
         "label": "cran",
@@ -447,11 +447,11 @@
       },
       {
         "label": "nuget",
-        "count": 360
+        "count": 362
       },
       {
         "label": "julia",
-        "count": 324
+        "count": 329
       },
       {
         "label": "cargo",
@@ -495,7 +495,7 @@
       },
       {
         "label": "vcpkg",
-        "count": 14
+        "count": 13
       },
       {
         "label": "swiftpm",
@@ -541,7 +541,7 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2660
+        "count": 2661
       },
       {
         "label": "Unknown",
@@ -549,22 +549,18 @@
       },
       {
         "label": "gitlab.com",
-        "count": 46
+        "count": 47
       },
       {
         "label": "git.rwth-aachen.de",
         "count": 3
       },
       {
-        "label": "git.gfz-potsdam.de",
-        "count": 2
-      },
-      {
-        "label": "code.europa.eu",
-        "count": 2
-      },
-      {
         "label": "gitlab.dkrz.de",
+        "count": 2
+      },
+      {
+        "label": "git.gfz-potsdam.de",
         "count": 2
       },
       {
@@ -572,11 +568,11 @@
         "count": 2
       },
       {
-        "label": "git.geomar.de",
-        "count": 1
+        "label": "code.europa.eu",
+        "count": 2
       },
       {
-        "label": "codeberg.org",
+        "label": "git.geomar.de",
         "count": 1
       },
       {
@@ -585,6 +581,10 @@
       },
       {
         "label": "invent.kde.org",
+        "count": 1
+      },
+      {
+        "label": "codeberg.org",
         "count": 1
       },
       {
@@ -601,10 +601,6 @@
       },
       {
         "label": "gitlab.inria.fr",
-        "count": 1
-      },
-      {
-        "label": "git.wur.nl",
         "count": 1
       },
       {

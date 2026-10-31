@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T12:58:56.430601+00:00",
+  "generated_at": "2026-10-31T10:49:01.420112+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -47,8 +47,8 @@
       "iso_alpha": "NLD",
       "country_name": "Netherlands",
       "map_eligible": true,
-      "organization_count": 34,
-      "total_projects": 53
+      "organization_count": 33,
+      "total_projects": 52
     },
     {
       "iso_alpha": "AUS",
@@ -310,7 +310,7 @@
     },
     {
       "continent": "Europe",
-      "count": 393
+      "count": 392
     },
     {
       "continent": "Global",
@@ -336,11 +336,11 @@
     },
     {
       "form_of_organization": "academia",
-      "count": 279
+      "count": 278
     },
     {
       "form_of_organization": "unknown",
-      "count": 224
+      "count": 225
     },
     {
       "form_of_organization": "government agency",
@@ -6742,15 +6742,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "ISRIC",
-      "organization_url": "https://git.wur.nl/isric",
-      "organization_description": "ISRIC - Word Soil Information\r\nwww.isric.org",
-      "organization_icon_url": "https://git.wur.nl/uploads/-/system/group/avatar/1094/ISRIC_logo_round.png",
-      "location_country": "Netherlands",
-      "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "ISRIC — World Soil Information",
       "organization_url": "https://github.com/ISRICWorldSoil",
       "organization_description": "",
@@ -11599,6 +11590,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/20424964?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "energyincities",
+      "organization_url": "https://gitlab.com/energyincities",
+      "organization_description": "The Evins research group at the University of Victoria, Canada",
+      "organization_icon_url": "",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {

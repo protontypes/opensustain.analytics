@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T12:58:56.430601+00:00",
+  "generated_at": "2026-10-31T10:49:01.420112+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -2847,7 +2847,7 @@
     },
     {
       "sub_category": "Buildings and Heating",
-      "organization_count": 46,
+      "organization_count": 47,
       "organizations": [
         {
           "organization_name": "Architecture and Building Systems",
@@ -3094,6 +3094,12 @@
           "organization_url": "https://github.com/UdK-VPT",
           "location_country": "Germany",
           "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "energyincities",
+          "organization_url": "https://gitlab.com/energyincities",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "kW Labs",
@@ -3410,282 +3416,6 @@
       ]
     },
     {
-      "sub_category": "Soil and Land",
-      "organization_count": 45,
-      "organizations": [
-        {
-          "organization_name": "AI4SoilHealth Horizon Europe project",
-          "organization_url": "https://github.com/AI4SoilHealth",
-          "location_country": "EU",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "AWST GmbH",
-          "organization_url": "https://github.com/awst-austria",
-          "location_country": "Austria",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "Berkeley Sand Project",
-          "organization_url": "https://github.com/BerkeleySandProject",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Brazil Data Cube",
-          "organization_url": "https://github.com/brazil-data-cube",
-          "location_country": "Brazil",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "CEMS",
-          "organization_url": "https://github.com/cemsbv",
-          "location_country": "Netherlands",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "COAL Capstone",
-          "organization_url": "https://github.com/capstone-coal",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Cambridge Centre for Earth Observation",
-          "organization_url": "https://github.com/ucam-eo",
-          "location_country": "UK",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Climate Modeling Alliance",
-          "organization_url": "https://github.com/CliMA",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Conservation International",
-          "organization_url": "https://github.com/ConservationInternational",
-          "location_country": "Global",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "CryoGrid",
-          "organization_url": "https://github.com/CryoGrid",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Daily Erosion Project of Iowa State University",
-          "organization_url": "https://github.com/dailyerosion",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Databank Ondergrond Vlaanderen",
-          "organization_url": "https://github.com/DOV-Vlaanderen",
-          "location_country": "Belgium",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Department of Landscape Water Conservation",
-          "organization_url": "https://github.com/storm-fsv-cvut",
-          "location_country": "Czech Republic",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Dryland Ecology",
-          "organization_url": "https://github.com/DrylandEcology",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "ECMWF Code for Earth",
-          "organization_url": "https://github.com/ECMWFCode4Earth",
-          "location_country": "Global",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Ecosystem Modelling Facility (CREAF)",
-          "organization_url": "https://github.com/emf-creaf",
-          "location_country": "Spain",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Geoscience Australia",
-          "organization_url": "https://github.com/GeoscienceAustralia",
-          "location_country": "Australia",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "HoloViz Topics",
-          "organization_url": "https://github.com/holoviz-topics",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "ISRIC",
-          "organization_url": "https://git.wur.nl/isric",
-          "location_country": "Netherlands",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "ISRIC — World Soil Information",
-          "organization_url": "https://github.com/ISRICWorldSoil",
-          "location_country": "Netherlands",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "International-Soil-Radiocarbon-Database",
-          "organization_url": "https://github.com/International-Soil-Radiocarbon-Database",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Joint Global Change Research Institute",
-          "organization_url": "https://github.com/JGCRI",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Landlab",
-          "organization_url": "https://github.com/landlab",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "NASA-DEVELOP",
-          "organization_url": "https://github.com/NASA-DEVELOP",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "NOAA/NWS Office of Water Prediction (OWP)",
-          "organization_url": "https://github.com/NOAA-OWP",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "NSF National Center for Atmospheric Research",
-          "organization_url": "https://github.com/NCAR",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Open Foris",
-          "organization_url": "https://github.com/openforis",
-          "location_country": "Italy",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "OpenFLUID",
-          "organization_url": "https://github.com/OpenFLUID",
-          "location_country": "France",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Permian Global Research",
-          "organization_url": "https://github.com/Permian-Global-Research",
-          "location_country": "UK",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "RUBISCO Science Focus Area",
-          "organization_url": "https://github.com/rubisco-sfa",
-          "location_country": "USA",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Sinnwerkstatt",
-          "organization_url": "https://github.com/sinnwerkstatt",
-          "location_country": "Germany",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "SoilBGC-Datashare",
-          "organization_url": "https://github.com/SoilBGC-Datashare",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "SoilWatch",
-          "organization_url": "https://github.com/SoilWatch",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "TERN",
-          "organization_url": "https://github.com/ternaustralia",
-          "location_country": "Australia",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "TU Wien - Department of Geodesy and Geoinformation",
-          "organization_url": "https://github.com/TUW-GEO",
-          "location_country": "Austria",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Tech Matters",
-          "organization_url": "https://github.com/techmatters",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Vizzuality",
-          "organization_url": "https://github.com/Vizzuality",
-          "location_country": "Spain",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "WSDA",
-          "organization_url": "https://github.com/WA-Department-of-Agriculture",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "e-sensing",
-          "organization_url": "https://github.com/e-sensing",
-          "location_country": "Brazil",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "eMapR Lab",
-          "organization_url": "https://github.com/eMapR",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "geocryology",
-          "organization_url": "https://github.com/geocryology",
-          "location_country": "Canada",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "ncss-tech",
-          "organization_url": "https://github.com/ncss-tech",
-          "location_country": "USA",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "r-spatialecology",
-          "organization_url": "https://github.com/r-spatialecology",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "rOpenSci",
-          "organization_url": "https://github.com/ropensci",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "simsphere",
-          "organization_url": "https://github.com/simsphere",
-          "location_country": "",
-          "form_of_organization": ""
-        }
-      ]
-    },
-    {
       "sub_category": "Meteorological Observation and Forecast",
       "organization_count": 44,
       "organizations": [
@@ -3952,6 +3682,276 @@
           "organization_url": "https://github.com/secondlaw-ai",
           "location_country": "Global",
           "form_of_organization": "academia"
+        }
+      ]
+    },
+    {
+      "sub_category": "Soil and Land",
+      "organization_count": 44,
+      "organizations": [
+        {
+          "organization_name": "AI4SoilHealth Horizon Europe project",
+          "organization_url": "https://github.com/AI4SoilHealth",
+          "location_country": "EU",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "AWST GmbH",
+          "organization_url": "https://github.com/awst-austria",
+          "location_country": "Austria",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "Berkeley Sand Project",
+          "organization_url": "https://github.com/BerkeleySandProject",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Brazil Data Cube",
+          "organization_url": "https://github.com/brazil-data-cube",
+          "location_country": "Brazil",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "CEMS",
+          "organization_url": "https://github.com/cemsbv",
+          "location_country": "Netherlands",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "COAL Capstone",
+          "organization_url": "https://github.com/capstone-coal",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Cambridge Centre for Earth Observation",
+          "organization_url": "https://github.com/ucam-eo",
+          "location_country": "UK",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Climate Modeling Alliance",
+          "organization_url": "https://github.com/CliMA",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Conservation International",
+          "organization_url": "https://github.com/ConservationInternational",
+          "location_country": "Global",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "CryoGrid",
+          "organization_url": "https://github.com/CryoGrid",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Daily Erosion Project of Iowa State University",
+          "organization_url": "https://github.com/dailyerosion",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Databank Ondergrond Vlaanderen",
+          "organization_url": "https://github.com/DOV-Vlaanderen",
+          "location_country": "Belgium",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Department of Landscape Water Conservation",
+          "organization_url": "https://github.com/storm-fsv-cvut",
+          "location_country": "Czech Republic",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Dryland Ecology",
+          "organization_url": "https://github.com/DrylandEcology",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "ECMWF Code for Earth",
+          "organization_url": "https://github.com/ECMWFCode4Earth",
+          "location_country": "Global",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Ecosystem Modelling Facility (CREAF)",
+          "organization_url": "https://github.com/emf-creaf",
+          "location_country": "Spain",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Geoscience Australia",
+          "organization_url": "https://github.com/GeoscienceAustralia",
+          "location_country": "Australia",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "HoloViz Topics",
+          "organization_url": "https://github.com/holoviz-topics",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "ISRIC — World Soil Information",
+          "organization_url": "https://github.com/ISRICWorldSoil",
+          "location_country": "Netherlands",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "International-Soil-Radiocarbon-Database",
+          "organization_url": "https://github.com/International-Soil-Radiocarbon-Database",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Joint Global Change Research Institute",
+          "organization_url": "https://github.com/JGCRI",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Landlab",
+          "organization_url": "https://github.com/landlab",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "NASA-DEVELOP",
+          "organization_url": "https://github.com/NASA-DEVELOP",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NOAA/NWS Office of Water Prediction (OWP)",
+          "organization_url": "https://github.com/NOAA-OWP",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "NSF National Center for Atmospheric Research",
+          "organization_url": "https://github.com/NCAR",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Open Foris",
+          "organization_url": "https://github.com/openforis",
+          "location_country": "Italy",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "OpenFLUID",
+          "organization_url": "https://github.com/OpenFLUID",
+          "location_country": "France",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Permian Global Research",
+          "organization_url": "https://github.com/Permian-Global-Research",
+          "location_country": "UK",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "RUBISCO Science Focus Area",
+          "organization_url": "https://github.com/rubisco-sfa",
+          "location_country": "USA",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Sinnwerkstatt",
+          "organization_url": "https://github.com/sinnwerkstatt",
+          "location_country": "Germany",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "SoilBGC-Datashare",
+          "organization_url": "https://github.com/SoilBGC-Datashare",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "SoilWatch",
+          "organization_url": "https://github.com/SoilWatch",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "TERN",
+          "organization_url": "https://github.com/ternaustralia",
+          "location_country": "Australia",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "TU Wien - Department of Geodesy and Geoinformation",
+          "organization_url": "https://github.com/TUW-GEO",
+          "location_country": "Austria",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Tech Matters",
+          "organization_url": "https://github.com/techmatters",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Vizzuality",
+          "organization_url": "https://github.com/Vizzuality",
+          "location_country": "Spain",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "WSDA",
+          "organization_url": "https://github.com/WA-Department-of-Agriculture",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "e-sensing",
+          "organization_url": "https://github.com/e-sensing",
+          "location_country": "Brazil",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "eMapR Lab",
+          "organization_url": "https://github.com/eMapR",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "geocryology",
+          "organization_url": "https://github.com/geocryology",
+          "location_country": "Canada",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "ncss-tech",
+          "organization_url": "https://github.com/ncss-tech",
+          "location_country": "USA",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "r-spatialecology",
+          "organization_url": "https://github.com/r-spatialecology",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "rOpenSci",
+          "organization_url": "https://github.com/ropensci",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "simsphere",
+          "organization_url": "https://github.com/simsphere",
+          "location_country": "",
+          "form_of_organization": ""
         }
       ]
     },
@@ -14009,7 +14009,7 @@
       {
         "name": "Buildings and Heating",
         "kind": "sub_category",
-        "value": 46,
+        "value": 47,
         "children": [
           {
             "name": "Architecture and Building Systems",
@@ -14256,6 +14256,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/UdK-VPT"
+          },
+          {
+            "name": "energyincities",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/energyincities"
           },
           {
             "name": "kW Labs",
@@ -14573,283 +14579,6 @@
         ]
       },
       {
-        "name": "Soil and Land",
-        "kind": "sub_category",
-        "value": 45,
-        "children": [
-          {
-            "name": "AI4SoilHealth Horizon Europe project",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/AI4SoilHealth"
-          },
-          {
-            "name": "AWST GmbH",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/awst-austria"
-          },
-          {
-            "name": "Berkeley Sand Project",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/BerkeleySandProject"
-          },
-          {
-            "name": "Brazil Data Cube",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/brazil-data-cube"
-          },
-          {
-            "name": "CEMS",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/cemsbv"
-          },
-          {
-            "name": "COAL Capstone",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/capstone-coal"
-          },
-          {
-            "name": "Cambridge Centre for Earth Observation",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ucam-eo"
-          },
-          {
-            "name": "Climate Modeling Alliance",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/CliMA"
-          },
-          {
-            "name": "Conservation International",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ConservationInternational"
-          },
-          {
-            "name": "CryoGrid",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/CryoGrid"
-          },
-          {
-            "name": "Daily Erosion Project of Iowa State University",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/dailyerosion"
-          },
-          {
-            "name": "Databank Ondergrond Vlaanderen",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/DOV-Vlaanderen"
-          },
-          {
-            "name": "Department of Landscape Water Conservation",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/storm-fsv-cvut"
-          },
-          {
-            "name": "Dryland Ecology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/DrylandEcology"
-          },
-          {
-            "name": "ECMWF Code for Earth",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ECMWFCode4Earth"
-          },
-          {
-            "name": "Ecosystem Modelling Facility (CREAF)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/emf-creaf"
-          },
-          {
-            "name": "Geoscience Australia",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/GeoscienceAustralia"
-          },
-          {
-            "name": "HoloViz Topics",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/holoviz-topics"
-          },
-          {
-            "name": "ISRIC",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://git.wur.nl/isric"
-          },
-          {
-            "name": "ISRIC — World Soil Information",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ISRICWorldSoil"
-          },
-          {
-            "name": "International-Soil-Radiocarbon-Database",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/International-Soil-Radiocarbon-Database"
-          },
-          {
-            "name": "Joint Global Change Research Institute",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/JGCRI"
-          },
-          {
-            "name": "Landlab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/landlab"
-          },
-          {
-            "name": "NASA-DEVELOP",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NASA-DEVELOP"
-          },
-          {
-            "name": "NOAA/NWS Office of Water Prediction (OWP)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NOAA-OWP"
-          },
-          {
-            "name": "NSF National Center for Atmospheric Research",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NCAR"
-          },
-          {
-            "name": "Open Foris",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openforis"
-          },
-          {
-            "name": "OpenFLUID",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OpenFLUID"
-          },
-          {
-            "name": "Permian Global Research",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Permian-Global-Research"
-          },
-          {
-            "name": "RUBISCO Science Focus Area",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/rubisco-sfa"
-          },
-          {
-            "name": "Sinnwerkstatt",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/sinnwerkstatt"
-          },
-          {
-            "name": "SoilBGC-Datashare",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/SoilBGC-Datashare"
-          },
-          {
-            "name": "SoilWatch",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/SoilWatch"
-          },
-          {
-            "name": "TERN",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ternaustralia"
-          },
-          {
-            "name": "TU Wien - Department of Geodesy and Geoinformation",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/TUW-GEO"
-          },
-          {
-            "name": "Tech Matters",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/techmatters"
-          },
-          {
-            "name": "Vizzuality",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Vizzuality"
-          },
-          {
-            "name": "WSDA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/WA-Department-of-Agriculture"
-          },
-          {
-            "name": "e-sensing",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/e-sensing"
-          },
-          {
-            "name": "eMapR Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/eMapR"
-          },
-          {
-            "name": "geocryology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/geocryology"
-          },
-          {
-            "name": "ncss-tech",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ncss-tech"
-          },
-          {
-            "name": "r-spatialecology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/r-spatialecology"
-          },
-          {
-            "name": "rOpenSci",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ropensci"
-          },
-          {
-            "name": "simsphere",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/simsphere"
-          }
-        ]
-      },
-      {
         "name": "Meteorological Observation and Forecast",
         "kind": "sub_category",
         "value": 44,
@@ -15117,6 +14846,277 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/secondlaw-ai"
+          }
+        ]
+      },
+      {
+        "name": "Soil and Land",
+        "kind": "sub_category",
+        "value": 44,
+        "children": [
+          {
+            "name": "AI4SoilHealth Horizon Europe project",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/AI4SoilHealth"
+          },
+          {
+            "name": "AWST GmbH",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/awst-austria"
+          },
+          {
+            "name": "Berkeley Sand Project",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/BerkeleySandProject"
+          },
+          {
+            "name": "Brazil Data Cube",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/brazil-data-cube"
+          },
+          {
+            "name": "CEMS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/cemsbv"
+          },
+          {
+            "name": "COAL Capstone",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/capstone-coal"
+          },
+          {
+            "name": "Cambridge Centre for Earth Observation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ucam-eo"
+          },
+          {
+            "name": "Climate Modeling Alliance",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/CliMA"
+          },
+          {
+            "name": "Conservation International",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ConservationInternational"
+          },
+          {
+            "name": "CryoGrid",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/CryoGrid"
+          },
+          {
+            "name": "Daily Erosion Project of Iowa State University",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/dailyerosion"
+          },
+          {
+            "name": "Databank Ondergrond Vlaanderen",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/DOV-Vlaanderen"
+          },
+          {
+            "name": "Department of Landscape Water Conservation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/storm-fsv-cvut"
+          },
+          {
+            "name": "Dryland Ecology",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/DrylandEcology"
+          },
+          {
+            "name": "ECMWF Code for Earth",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ECMWFCode4Earth"
+          },
+          {
+            "name": "Ecosystem Modelling Facility (CREAF)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/emf-creaf"
+          },
+          {
+            "name": "Geoscience Australia",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/GeoscienceAustralia"
+          },
+          {
+            "name": "HoloViz Topics",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/holoviz-topics"
+          },
+          {
+            "name": "ISRIC — World Soil Information",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ISRICWorldSoil"
+          },
+          {
+            "name": "International-Soil-Radiocarbon-Database",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/International-Soil-Radiocarbon-Database"
+          },
+          {
+            "name": "Joint Global Change Research Institute",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/JGCRI"
+          },
+          {
+            "name": "Landlab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/landlab"
+          },
+          {
+            "name": "NASA-DEVELOP",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NASA-DEVELOP"
+          },
+          {
+            "name": "NOAA/NWS Office of Water Prediction (OWP)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NOAA-OWP"
+          },
+          {
+            "name": "NSF National Center for Atmospheric Research",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NCAR"
+          },
+          {
+            "name": "Open Foris",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/openforis"
+          },
+          {
+            "name": "OpenFLUID",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OpenFLUID"
+          },
+          {
+            "name": "Permian Global Research",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Permian-Global-Research"
+          },
+          {
+            "name": "RUBISCO Science Focus Area",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/rubisco-sfa"
+          },
+          {
+            "name": "Sinnwerkstatt",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/sinnwerkstatt"
+          },
+          {
+            "name": "SoilBGC-Datashare",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/SoilBGC-Datashare"
+          },
+          {
+            "name": "SoilWatch",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/SoilWatch"
+          },
+          {
+            "name": "TERN",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ternaustralia"
+          },
+          {
+            "name": "TU Wien - Department of Geodesy and Geoinformation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/TUW-GEO"
+          },
+          {
+            "name": "Tech Matters",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/techmatters"
+          },
+          {
+            "name": "Vizzuality",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Vizzuality"
+          },
+          {
+            "name": "WSDA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WA-Department-of-Agriculture"
+          },
+          {
+            "name": "e-sensing",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/e-sensing"
+          },
+          {
+            "name": "eMapR Lab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/eMapR"
+          },
+          {
+            "name": "geocryology",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/geocryology"
+          },
+          {
+            "name": "ncss-tech",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ncss-tech"
+          },
+          {
+            "name": "r-spatialecology",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/r-spatialecology"
+          },
+          {
+            "name": "rOpenSci",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ropensci"
+          },
+          {
+            "name": "simsphere",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/simsphere"
           }
         ]
       },
