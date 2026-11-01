@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T10:49:01.420112+00:00",
+  "generated_at": "2026-11-01T11:46:04.118251+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -570,6 +570,12 @@
           "form_of_organization": "for-profit"
         },
         {
+          "organization_name": "HPC Carpentry",
+          "organization_url": "https://github.com/hpc-carpentry",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
           "organization_name": "IIASA",
           "organization_url": "https://github.com/iiasa",
           "location_country": "Austria",
@@ -724,12 +730,6 @@
           "organization_url": "https://github.com/SERVIR-WA",
           "location_country": "Mali",
           "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "The Carpentries Incubator",
-          "organization_url": "https://github.com/carpentries-incubator",
-          "location_country": "",
-          "form_of_organization": ""
         },
         {
           "organization_name": "The Carpentries Lab (old)",
@@ -4260,6 +4260,12 @@
           "form_of_organization": "government agency"
         },
         {
+          "organization_name": "FDL",
+          "organization_url": "https://github.com/spaceml-org",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
           "organization_name": "FLOODS",
           "organization_url": "https://code.europa.eu/floods",
           "location_country": "EU",
@@ -4395,12 +4401,6 @@
           "organization_name": "SERVIR-Mekong",
           "organization_url": "https://github.com/Servir-Mekong",
           "location_country": "Thailand",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "SpaceML",
-          "organization_url": "https://github.com/spaceml-org",
-          "location_country": "Global",
           "form_of_organization": "collaboration"
         },
         {
@@ -8456,6 +8456,108 @@
       ]
     },
     {
+      "sub_category": "Grid Management and Microgrid",
+      "organization_count": 16,
+      "organizations": [
+        {
+          "organization_name": "CLOVER-energy",
+          "organization_url": "https://github.com/CLOVER-energy",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "DOS Group at TU Berlin",
+          "organization_url": "https://github.com/dos-group",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "ELECTA",
+          "organization_url": "https://github.com/Electa-Git",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "EnAccess Foundation",
+          "organization_url": "https://github.com/EnAccess",
+          "location_country": "Netherlands",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Energinet DataHub",
+          "organization_url": "https://github.com/Energinet-DataHub",
+          "location_country": "Denmark",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Grid eXchange Fabric (GXF): formerly known as the Open Smart Grid Platform",
+          "organization_url": "https://github.com/OSGP",
+          "location_country": "Netherlands",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "OperatorFabric",
+          "organization_url": "https://github.com/opfab",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Paderborn University - LEA",
+          "organization_url": "https://github.com/upb-lea",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Reiner Lemoine Institut",
+          "organization_url": "https://github.com/rl-institut",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "SEAPATH - (S)oftware (E)nabled (A)utomation (P)latform and (A)rtifacts (TH)erein",
+          "organization_url": "https://github.com/seapath",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Sienna Platform",
+          "organization_url": "https://github.com/Sienna-Platform",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Sony Computer Science Laboratories, Inc.",
+          "organization_url": "https://github.com/SonyCSL",
+          "location_country": "Japan",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "VILLASframework",
+          "organization_url": "https://github.com/VILLASframework",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "elenia",
+          "organization_url": "https://gitlab.com/elenia1",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "energyincities",
+          "organization_url": "https://gitlab.com/energyincities",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "openLEADR",
+          "organization_url": "https://github.com/OpenLEADR",
+          "location_country": "USA",
+          "form_of_organization": "collaboration"
+        }
+      ]
+    },
+    {
       "sub_category": "Radiative Transfer",
       "organization_count": 16,
       "organizations": [
@@ -8746,102 +8848,6 @@
           "organization_url": "https://github.com/transition-zero",
           "location_country": "UK",
           "form_of_organization": "non-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Grid Management and Microgrid",
-      "organization_count": 15,
-      "organizations": [
-        {
-          "organization_name": "CLOVER-energy",
-          "organization_url": "https://github.com/CLOVER-energy",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "DOS Group at TU Berlin",
-          "organization_url": "https://github.com/dos-group",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "ELECTA",
-          "organization_url": "https://github.com/Electa-Git",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "EnAccess Foundation",
-          "organization_url": "https://github.com/EnAccess",
-          "location_country": "Netherlands",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Energinet DataHub",
-          "organization_url": "https://github.com/Energinet-DataHub",
-          "location_country": "Denmark",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Grid eXchange Fabric (GXF): formerly known as the Open Smart Grid Platform",
-          "organization_url": "https://github.com/OSGP",
-          "location_country": "Netherlands",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "OperatorFabric",
-          "organization_url": "https://github.com/opfab",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Paderborn University - LEA",
-          "organization_url": "https://github.com/upb-lea",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Reiner Lemoine Institut",
-          "organization_url": "https://github.com/rl-institut",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "SEAPATH - (S)oftware (E)nabled (A)utomation (P)latform and (A)rtifacts (TH)erein",
-          "organization_url": "https://github.com/seapath",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Sienna Platform",
-          "organization_url": "https://github.com/Sienna-Platform",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Sony Computer Science Laboratories, Inc.",
-          "organization_url": "https://github.com/SonyCSL",
-          "location_country": "Japan",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "VILLASframework",
-          "organization_url": "https://github.com/VILLASframework",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "elenia",
-          "organization_url": "https://gitlab.com/elenia1",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "openLEADR",
-          "organization_url": "https://github.com/OpenLEADR",
-          "location_country": "USA",
-          "form_of_organization": "collaboration"
         }
       ]
     },
@@ -11725,6 +11731,12 @@
             "url": "https://github.com/GreenDelta"
           },
           {
+            "name": "HPC Carpentry",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/hpc-carpentry"
+          },
+          {
             "name": "IIASA",
             "kind": "organization",
             "value": 1,
@@ -11879,12 +11891,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/SERVIR-WA"
-          },
-          {
-            "name": "The Carpentries Incubator",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/carpentries-incubator"
           },
           {
             "name": "The Carpentries Lab (old)",
@@ -15427,6 +15433,12 @@
             "url": "https://github.com/ec-jrc"
           },
           {
+            "name": "FDL",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/spaceml-org"
+          },
+          {
             "name": "FLOODS",
             "kind": "organization",
             "value": 1,
@@ -15563,12 +15575,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/Servir-Mekong"
-          },
-          {
-            "name": "SpaceML",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/spaceml-org"
           },
           {
             "name": "Stichting Deltares",
@@ -19650,6 +19656,109 @@
         ]
       },
       {
+        "name": "Grid Management and Microgrid",
+        "kind": "sub_category",
+        "value": 16,
+        "children": [
+          {
+            "name": "CLOVER-energy",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/CLOVER-energy"
+          },
+          {
+            "name": "DOS Group at TU Berlin",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/dos-group"
+          },
+          {
+            "name": "ELECTA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Electa-Git"
+          },
+          {
+            "name": "EnAccess Foundation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/EnAccess"
+          },
+          {
+            "name": "Energinet DataHub",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Energinet-DataHub"
+          },
+          {
+            "name": "Grid eXchange Fabric (GXF): formerly known as the Open Smart Grid Platform",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OSGP"
+          },
+          {
+            "name": "OperatorFabric",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/opfab"
+          },
+          {
+            "name": "Paderborn University - LEA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/upb-lea"
+          },
+          {
+            "name": "Reiner Lemoine Institut",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/rl-institut"
+          },
+          {
+            "name": "SEAPATH - (S)oftware (E)nabled (A)utomation (P)latform and (A)rtifacts (TH)erein",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/seapath"
+          },
+          {
+            "name": "Sienna Platform",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Sienna-Platform"
+          },
+          {
+            "name": "Sony Computer Science Laboratories, Inc.",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/SonyCSL"
+          },
+          {
+            "name": "VILLASframework",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/VILLASframework"
+          },
+          {
+            "name": "elenia",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/elenia1"
+          },
+          {
+            "name": "energyincities",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/energyincities"
+          },
+          {
+            "name": "openLEADR",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OpenLEADR"
+          }
+        ]
+      },
+      {
         "name": "Radiative Transfer",
         "kind": "sub_category",
         "value": 16,
@@ -19943,103 +20052,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/transition-zero"
-          }
-        ]
-      },
-      {
-        "name": "Grid Management and Microgrid",
-        "kind": "sub_category",
-        "value": 15,
-        "children": [
-          {
-            "name": "CLOVER-energy",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/CLOVER-energy"
-          },
-          {
-            "name": "DOS Group at TU Berlin",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/dos-group"
-          },
-          {
-            "name": "ELECTA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Electa-Git"
-          },
-          {
-            "name": "EnAccess Foundation",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/EnAccess"
-          },
-          {
-            "name": "Energinet DataHub",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Energinet-DataHub"
-          },
-          {
-            "name": "Grid eXchange Fabric (GXF): formerly known as the Open Smart Grid Platform",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OSGP"
-          },
-          {
-            "name": "OperatorFabric",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/opfab"
-          },
-          {
-            "name": "Paderborn University - LEA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/upb-lea"
-          },
-          {
-            "name": "Reiner Lemoine Institut",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/rl-institut"
-          },
-          {
-            "name": "SEAPATH - (S)oftware (E)nabled (A)utomation (P)latform and (A)rtifacts (TH)erein",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/seapath"
-          },
-          {
-            "name": "Sienna Platform",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Sienna-Platform"
-          },
-          {
-            "name": "Sony Computer Science Laboratories, Inc.",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/SonyCSL"
-          },
-          {
-            "name": "VILLASframework",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/VILLASframework"
-          },
-          {
-            "name": "elenia",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://gitlab.com/elenia1"
-          },
-          {
-            "name": "openLEADR",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OpenLEADR"
           }
         ]
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T10:49:01.420112+00:00",
+  "generated_at": "2026-11-01T11:46:04.118251+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -12,7 +12,7 @@
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 306,
+      "organization_count": 307,
       "total_projects": 432
     },
     {
@@ -314,7 +314,7 @@
     },
     {
       "continent": "Global",
-      "count": 306
+      "count": 307
     },
     {
       "continent": "Oceania",
@@ -356,7 +356,7 @@
     },
     {
       "form_of_organization": "collaboration",
-      "count": 119
+      "count": 120
     }
   ],
   "organizations_by_project_count": [
@@ -1492,6 +1492,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/12843269?v=4",
       "location_country": "Netherlands",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 3
+    },
+    {
+      "organization_name": "energyincities",
+      "organization_url": "https://gitlab.com/energyincities",
+      "organization_description": "The Evins research group at the University of Victoria, Canada",
+      "organization_icon_url": "",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 3
     },
     {
@@ -2743,15 +2752,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/14200814?v=4",
       "location_country": "Germany",
       "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 2
-    },
-    {
-      "organization_name": "SpaceML",
-      "organization_url": "https://github.com/spaceml-org",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/75035593?v=4",
-      "location_country": "Global",
-      "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -5662,6 +5662,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "FDL",
+      "organization_url": "https://github.com/spaceml-org",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/75035593?v=4",
+      "location_country": "Global",
+      "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "FESOM",
       "organization_url": "https://github.com/FESOM",
       "organization_description": "",
@@ -6370,6 +6379,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/27004362?v=4",
       "location_country": "France",
       "form_of_organization": "for-profit",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "HPC Carpentry",
+      "organization_url": "https://github.com/hpc-carpentry",
+      "organization_description": "Lessons for novice users of large scale shared computing systems.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/25828608?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -9847,6 +9865,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "SpaceML",
+      "organization_url": "https://github.com/spaceml-org",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/75035593?v=4",
+      "location_country": "Global",
+      "form_of_organization": "collaboration",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "Spatial Ecosystem Analytics Lab",
       "organization_url": "https://github.com/ncsuSEAL",
       "organization_description": "",
@@ -9957,8 +9984,8 @@
     {
       "organization_name": "SunPeek",
       "organization_url": "https://gitlab.com/sunpeek",
-      "organization_description": "",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/63588217/Icon_Blue.png",
+      "organization_description": "SunPeek implements a dynamic, in situ test methodology for large solar thermal plants, packaged as an open-source software application and python library. It also includes the first open-source implementation of the ISO 24194 procedure for checking the performance of solar thermal collector fields. The main package and backend is in the SunPeek project. A web interface is developed in parallel in the SunPeek WebUI project.\r\nFull documentation at https://docs.sunpeek.org",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/63588217/favicon.png?v=1761347811",
       "location_country": "Austria",
       "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 1
@@ -10204,15 +10231,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/107491532?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "The Carpentries Incubator",
-      "organization_url": "https://github.com/carpentries-incubator",
-      "organization_description": "A space for The Carpentries community to create, test, and improve lessons, supported by systems, process, and training to foster collaboration.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/53264631?v=4",
-      "location_country": "",
-      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -11593,15 +11611,6 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "energyincities",
-      "organization_url": "https://gitlab.com/energyincities",
-      "organization_description": "The Evins research group at the University of Victoria, Canada",
-      "organization_icon_url": "",
-      "location_country": "",
-      "form_of_organization": "",
-      "total_listed_projects_in_organization": 1
-    },
-    {
       "organization_name": "enviroCar",
       "organization_url": "https://github.com/enviroCar",
       "organization_description": "",
@@ -11668,7 +11677,7 @@
       "organization_name": "foodsharing-dev",
       "organization_url": "https://gitlab.com/foodsharing-dev",
       "organization_description": "Issue tracker and development for https://foodsharing.de, https://foodsharing.at, and https://foodsharingschweiz.ch\r\n\r\nDev blog at https://devblog.foodsharing.de",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/761945/gabel-bg.png",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/761945/gabel-bg.png?v=1727943127",
       "location_country": "Global",
       "form_of_organization": "community",
       "total_listed_projects_in_organization": 1
@@ -12748,7 +12757,7 @@
       "organization_name": "wgms",
       "organization_url": "https://gitlab.com/wgms",
       "organization_description": "For more than a century, the World Glacier Monitoring Service (https://wgms.ch) and its predecessor organizations have been compiling and disseminating standardized data on glacier fluctuations.",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/6888114/wgms-logo.png",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/6888114/wgms-logo.png?v=1578577152",
       "location_country": "Switzerland",
       "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 1
