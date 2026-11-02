@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T11:46:04.118251+00:00",
+  "generated_at": "2026-11-02T13:17:01.120523+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -12,7 +12,7 @@
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 307,
+      "organization_count": 306,
       "total_projects": 432
     },
     {
@@ -314,7 +314,7 @@
     },
     {
       "continent": "Global",
-      "count": 307
+      "count": 306
     },
     {
       "continent": "Oceania",
@@ -340,7 +340,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 225
+      "count": 226
     },
     {
       "form_of_organization": "government agency",
@@ -356,7 +356,7 @@
     },
     {
       "form_of_organization": "collaboration",
-      "count": 120
+      "count": 119
     }
   ],
   "organizations_by_project_count": [
@@ -2086,6 +2086,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/39263635?v=4",
       "location_country": "EU",
       "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "FDL",
+      "organization_url": "https://github.com/spaceml-org",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/75035593?v=4",
+      "location_country": "Global",
+      "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -4051,6 +4060,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "CCCma",
+      "organization_url": "https://gitlab.com/cccma",
+      "organization_description": "The Canadian Centre for Climate Modelling and Analysis (CCCma),  Environment and Climate Change Canada.",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/5263675/220px-Flag_of_Canada_.png?v=1561061446",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "CCSI Toolset",
       "organization_url": "https://github.com/CCSI-Toolset",
       "organization_description": "The Carbon Capture Simulation Initiative (CCSI) Toolset is a suite of computational models for carbon capture equipment and design processes.",
@@ -4980,7 +4998,7 @@
     {
       "organization_name": "Development Seed",
       "organization_url": "https://github.com/developmentseed",
-      "organization_description": "Winning with Open Data",
+      "organization_description": "open data and tools for a changing planet",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/92384?v=4",
       "location_country": "USA",
       "form_of_organization": "for-profit",
@@ -5659,15 +5677,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/13350658?v=4",
       "location_country": "UK",
       "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "FDL",
-      "organization_url": "https://github.com/spaceml-org",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/75035593?v=4",
-      "location_country": "Global",
-      "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 1
     },
     {
@@ -7159,7 +7168,7 @@
       "organization_name": "LHEEA",
       "organization_url": "https://gitlab.com/lheea",
       "organization_description": "Hydrodynamics, Energetics & Atmospheric Environment Laboratory. École Centrale de Nantes, UMR CNRS 6598",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/15784097/LogoCN_LHEEA_CNRS.jpg",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/15784097/LogoCN_LHEEA_CNRS.jpg?v=1670826352",
       "location_country": "France",
       "form_of_organization": "academia",
       "total_listed_projects_in_organization": 1
@@ -9862,15 +9871,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/36680810?v=4",
       "location_country": "Global",
       "form_of_organization": "community",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "SpaceML",
-      "organization_url": "https://github.com/spaceml-org",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/75035593?v=4",
-      "location_country": "Global",
-      "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 1
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T11:46:04.118251+00:00",
+  "generated_at": "2026-11-02T13:17:01.120523+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -4542,6 +4542,12 @@
           "form_of_organization": "for-profit"
         },
         {
+          "organization_name": "FDL",
+          "organization_url": "https://github.com/spaceml-org",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
           "organization_name": "GEOS-Chem",
           "organization_url": "https://github.com/geoschem",
           "location_country": "Global",
@@ -4648,12 +4654,6 @@
           "organization_url": "https://github.com/SRON-ESG",
           "location_country": "",
           "form_of_organization": ""
-        },
-        {
-          "organization_name": "SpaceML",
-          "organization_url": "https://github.com/spaceml-org",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
         },
         {
           "organization_name": "TUM - Environmental Sensing and Modeling",
@@ -11072,6 +11072,36 @@
       ]
     },
     {
+      "sub_category": "Ecotoxicology",
+      "organization_count": 4,
+      "organizations": [
+        {
+          "organization_name": "CCCma",
+          "organization_url": "https://gitlab.com/cccma",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "National Institute of Environmental Health Sciences",
+          "organization_url": "https://github.com/NIEHS",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "ToxPi",
+          "organization_url": "https://github.com/ToxPi",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "U.S. Environmental Protection Agency",
+          "organization_url": "https://github.com/USEPA",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        }
+      ]
+    },
+    {
       "sub_category": "Energy Policy",
       "organization_count": 4,
       "organizations": [
@@ -11128,30 +11158,6 @@
           "organization_url": "https://github.com/sustainlab-group",
           "location_country": "USA",
           "form_of_organization": "academia"
-        }
-      ]
-    },
-    {
-      "sub_category": "Ecotoxicology",
-      "organization_count": 3,
-      "organizations": [
-        {
-          "organization_name": "National Institute of Environmental Health Sciences",
-          "organization_url": "https://github.com/NIEHS",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "ToxPi",
-          "organization_url": "https://github.com/ToxPi",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "U.S. Environmental Protection Agency",
-          "organization_url": "https://github.com/USEPA",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
         }
       ]
     }
@@ -15716,6 +15722,12 @@
             "url": "https://github.com/equinor"
           },
           {
+            "name": "FDL",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/spaceml-org"
+          },
+          {
             "name": "GEOS-Chem",
             "kind": "organization",
             "value": 1,
@@ -15822,12 +15834,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/SRON-ESG"
-          },
-          {
-            "name": "SpaceML",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/spaceml-org"
           },
           {
             "name": "TUM - Environmental Sensing and Modeling",
@@ -22309,6 +22315,37 @@
         ]
       },
       {
+        "name": "Ecotoxicology",
+        "kind": "sub_category",
+        "value": 4,
+        "children": [
+          {
+            "name": "CCCma",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/cccma"
+          },
+          {
+            "name": "National Institute of Environmental Health Sciences",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NIEHS"
+          },
+          {
+            "name": "ToxPi",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ToxPi"
+          },
+          {
+            "name": "U.S. Environmental Protection Agency",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/USEPA"
+          }
+        ]
+      },
+      {
         "name": "Energy Policy",
         "kind": "sub_category",
         "value": 4,
@@ -22367,31 +22404,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/sustainlab-group"
-          }
-        ]
-      },
-      {
-        "name": "Ecotoxicology",
-        "kind": "sub_category",
-        "value": 3,
-        "children": [
-          {
-            "name": "National Institute of Environmental Health Sciences",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NIEHS"
-          },
-          {
-            "name": "ToxPi",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ToxPi"
-          },
-          {
-            "name": "U.S. Environmental Protection Agency",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/USEPA"
           }
         ]
       }

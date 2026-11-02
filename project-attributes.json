@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T11:46:04.118251+00:00",
+  "generated_at": "2026-11-02T13:17:01.120523+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
@@ -47,7 +47,7 @@
       },
       {
         "label": "other",
-        "count": 533
+        "count": 532
       },
       {
         "label": "gpl-3.0",
@@ -63,7 +63,7 @@
       },
       {
         "label": "bsd-3-clause",
-        "count": 171
+        "count": 172
       },
       {
         "label": "agpl-3.0",
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 988
+        "count": 989
       },
       {
         "label": "R",
@@ -157,7 +157,7 @@
       },
       {
         "label": "Jupyter Notebook",
-        "count": 318
+        "count": 317
       },
       {
         "label": "Unknown",
@@ -415,11 +415,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7248
+        "count": 7258
       },
       {
         "label": "pypi",
-        "count": 3315
+        "count": 3316
       },
       {
         "label": "Unknown",
@@ -427,11 +427,11 @@
       },
       {
         "label": "docker",
-        "count": 1547
+        "count": 1555
       },
       {
         "label": "npm",
-        "count": 1506
+        "count": 1507
       },
       {
         "label": "maven",
@@ -439,7 +439,7 @@
       },
       {
         "label": "cran",
-        "count": 501
+        "count": 502
       },
       {
         "label": "conda",
@@ -451,7 +451,7 @@
       },
       {
         "label": "julia",
-        "count": 329
+        "count": 331
       },
       {
         "label": "cargo",
