@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T13:17:01.120523+00:00",
+  "generated_at": "2026-11-03T12:42:21.291005+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -376,7 +376,7 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1906800?v=4",
       "location_country": "",
       "form_of_organization": "",
-      "total_listed_projects_in_organization": 43
+      "total_listed_projects_in_organization": 44
     },
     {
       "organization_name": "U.S. Environmental Protection Agency",
@@ -5422,7 +5422,7 @@
       "organization_name": "EnMAP",
       "organization_url": "https://git.gfz-potsdam.de/EnMAP",
       "organization_description": "The Environmental Mapping and Analysis Program (EnMAP) is a German hyperspectral satellite mission that aims at monitoring and characterising the Earth’s environment on a global scale. See http://www.enmap.org/ for more information.",
-      "organization_icon_url": "https://git.gfz-potsdam.de/uploads/-/system/group/avatar/182/logo_enmap_3.jpg?v=1777290902",
+      "organization_icon_url": "/uploads/-/system/group/avatar/182/logo_enmap_3.jpg",
       "location_country": "Germany",
       "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 1
@@ -5791,7 +5791,7 @@
       "organization_name": "FernLab",
       "organization_url": "https://git.gfz-potsdam.de/fernlab",
       "organization_description": "Remote Sensing for a Sustainable Use of Resources - FERN.Lab.",
-      "organization_icon_url": "https://git.gfz-potsdam.de/uploads/-/system/group/avatar/710/FERN_Lab_Logo.png?v=1777290903",
+      "organization_icon_url": "/uploads/-/system/group/avatar/710/FERN_Lab_Logo.png",
       "location_country": "Germany",
       "form_of_organization": "non-profit",
       "total_listed_projects_in_organization": 1

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T13:17:01.120523+00:00",
+  "generated_at": "2026-11-03T12:42:21.291005+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
@@ -15,7 +15,7 @@
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2247
+        "count": 2248
       },
       {
         "label": "True",
@@ -23,13 +23,13 @@
       },
       {
         "label": "Unknown",
-        "count": 105
+        "count": 104
       }
     ],
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1809
+        "count": 1810
       },
       {
         "label": "True",
@@ -37,7 +37,7 @@
       },
       {
         "label": "Unknown",
-        "count": 105
+        "count": 104
       }
     ],
     "license": [
@@ -59,7 +59,7 @@
       },
       {
         "label": "Unknown",
-        "count": 340
+        "count": 339
       },
       {
         "label": "bsd-3-clause",
@@ -91,7 +91,7 @@
       },
       {
         "label": "bsd-2-clause",
-        "count": 19
+        "count": 20
       },
       {
         "label": "eupl-1.2",
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 989
+        "count": 990
       },
       {
         "label": "R",
@@ -161,7 +161,7 @@
       },
       {
         "label": "Unknown",
-        "count": 249
+        "count": 248
       },
       {
         "label": "C++",
@@ -419,7 +419,7 @@
       },
       {
         "label": "pypi",
-        "count": 3316
+        "count": 3312
       },
       {
         "label": "Unknown",
@@ -427,11 +427,11 @@
       },
       {
         "label": "docker",
-        "count": 1555
+        "count": 1552
       },
       {
         "label": "npm",
-        "count": 1507
+        "count": 1508
       },
       {
         "label": "maven",
@@ -447,7 +447,7 @@
       },
       {
         "label": "nuget",
-        "count": 365
+        "count": 359
       },
       {
         "label": "julia",
@@ -467,7 +467,7 @@
       },
       {
         "label": "rpm",
-        "count": 111
+        "count": 115
       },
       {
         "label": "go",
@@ -541,11 +541,11 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2662
+        "count": 2663
       },
       {
         "label": "Unknown",
-        "count": 105
+        "count": 104
       },
       {
         "label": "gitlab.com",
