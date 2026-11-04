@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T12:42:21.291005+00:00",
+  "generated_at": "2026-11-04T12:52:54.890620+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -376,7 +376,7 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/1906800?v=4",
       "location_country": "",
       "form_of_organization": "",
-      "total_listed_projects_in_organization": 44
+      "total_listed_projects_in_organization": 43
     },
     {
       "organization_name": "U.S. Environmental Protection Agency",
@@ -1021,7 +1021,7 @@
       "organization_name": "DIW EVU",
       "organization_url": "https://gitlab.com/diw-evu",
       "organization_description": "",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/6612146/diw.jpg",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/6612146/diw.jpg?v=1651164352",
       "location_country": "German",
       "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 3
@@ -1649,9 +1649,9 @@
     },
     {
       "organization_name": "BONSAI",
-      "organization_url": "https://github.com/BONSAMURAIS",
-      "organization_description": "An organisation dedicated to create and maintain a truly global Open Source Database for product footprinting",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/25032243?v=4",
+      "organization_url": "https://gitlab.com/bonsamurais",
+      "organization_description": "",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/77028262/BONSAI-logo.png?v=1732042489",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 2
@@ -5422,7 +5422,7 @@
       "organization_name": "EnMAP",
       "organization_url": "https://git.gfz-potsdam.de/EnMAP",
       "organization_description": "The Environmental Mapping and Analysis Program (EnMAP) is a German hyperspectral satellite mission that aims at monitoring and characterising the Earth’s environment on a global scale. See http://www.enmap.org/ for more information.",
-      "organization_icon_url": "/uploads/-/system/group/avatar/182/logo_enmap_3.jpg",
+      "organization_icon_url": "https://git.gfz-potsdam.de/uploads/-/system/group/avatar/182/logo_enmap_3.jpg?v=1777290902",
       "location_country": "Germany",
       "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 1

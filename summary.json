@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T12:42:21.291005+00:00",
-  "as_of": "2026-11-03T12:42:21.290960+00:00",
+  "generated_at": "2026-11-04T12:52:54.890620+00:00",
+  "as_of": "2026-11-04T12:52:54.890580+00:00",
   "totals": {
     "projects": 2835,
     "active_projects": 1986,
     "organizations": 1385,
-    "contributors": 57240
+    "contributors": 57205
   },
   "medians": {
     "project_age_years": 6.63,
