@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:52:54.890620+00:00",
+  "generated_at": "2026-11-05T13:00:42.405606+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -340,7 +340,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 226
+      "count": 230
     },
     {
       "form_of_organization": "government agency",
@@ -1678,7 +1678,7 @@
       "organization_name": "Bioeconomy",
       "organization_url": "https://gitlab.com/bioeconomy",
       "organization_description": "This group gathers repositories relating to the provision of data and analysis on biomass/bioeconomy supply and demand on a long-term basis in the context of the European Commission's in-house science service, DG Joint Research Center.",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/4897061/bioeconomy_graphic_full.jpg",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/4897061/bioeconomy_graphic_full.jpg?v=1653381485",
       "location_country": "Global",
       "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 2
@@ -2086,6 +2086,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/39263635?v=4",
       "location_country": "EU",
       "form_of_organization": "government agency",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "FAME-Framework",
+      "organization_url": "https://gitlab.com/fame-framework",
+      "organization_description": "FAME enables agent-based modelling in the energy systems domain with ease. See the [FAME-Wiki](https://gitlab.com/fame-framework/wiki/-/wikis/home)",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7465900/DLR_Logo_FAME_Squared.png?v=1754050464",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -6067,6 +6076,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "GeoHarmonizer_INEA",
+      "organization_url": "https://gitlab.com/geoharmonizer_inea",
+      "organization_description": "CEF Telecom project 2018-EU-IA-0095 (www.opendatascience.eu). This project is co-financed by the Innovation and Networks Executive Agency (INEA).",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/8014212/ODS_logo_txt_550px.png?v=1647958177",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "GeoOcean",
       "organization_url": "https://github.com/GeoOcean",
       "organization_description": "Geomatics and Ocean Engineering Group",
@@ -7852,7 +7870,7 @@
       "organization_name": "NRAP",
       "organization_url": "https://gitlab.com/NRAP",
       "organization_description": "Space for publicly available NRAP software products",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/2567614/nrap.png",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/2567614/nrap.png?v=1771117817",
       "location_country": "USA",
       "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 1
@@ -9676,6 +9694,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "Shyft Open Source",
+      "organization_url": "https://gitlab.com/shyft-os",
+      "organization_description": "Shyft is a cross-platform open source toolbox developed at Statkraft in cooperation with the Department of Geosciences at the University of Oslo. It provides high performance components for the energy-market.",
+      "organization_icon_url": "",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "Simulator of Hydrological Unstructured Domains",
       "organization_url": "https://github.com/SHUD-System",
       "organization_description": "Numeric simulator for integrated watershed to continental hydrological simulation",
@@ -11107,6 +11134,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "XDC Model",
+      "organization_url": "https://gitlab.com/xdc-model",
+      "organization_description": "",
+      "organization_icon_url": "",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "Yale OpenLab",
       "organization_url": "https://github.com/YaleOpenLab",
       "organization_description": "Yale University's Open Innovation Lab.",
@@ -11937,7 +11973,7 @@
     {
       "organization_name": "marola.dev",
       "organization_url": "https://github.com/marola-dev",
-      "organization_description": "ocean intelligence layer",
+      "organization_description": "BR water super app",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/334596585?v=4",
       "location_country": "",
       "form_of_organization": "",

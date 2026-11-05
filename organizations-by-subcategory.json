@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T12:52:54.890620+00:00",
+  "generated_at": "2026-11-05T13:00:42.405606+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
-      "organization_count": 72,
+      "organization_count": 73,
       "organizations": [
         {
           "organization_name": "ACS",
@@ -154,6 +154,12 @@
           "organization_url": "https://github.com/EnergyTransition",
           "location_country": "Netherlands",
           "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "FAME-Framework",
+          "organization_url": "https://gitlab.com/fame-framework",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Forschungszentrum Jülich - Jülich Systems Analysis (ICE-2)",
@@ -5157,7 +5163,7 @@
     },
     {
       "sub_category": "Data Catalogs and Interfaces",
-      "organization_count": 33,
+      "organization_count": 34,
       "organizations": [
         {
           "organization_name": "AI2",
@@ -5212,6 +5218,12 @@
           "organization_url": "https://github.com/eea",
           "location_country": "Denmark",
           "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "GeoHarmonizer_INEA",
+          "organization_url": "https://gitlab.com/geoharmonizer_inea",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Greater Wellington Regional Council",
@@ -8660,6 +8672,108 @@
       ]
     },
     {
+      "sub_category": "Sustainable Investment",
+      "organization_count": 16,
+      "organizations": [
+        {
+          "organization_name": "FINPLAN-Model",
+          "organization_url": "https://github.com/FINPLAN-Model",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Fingreen AI",
+          "organization_url": "https://github.com/fingreen-ai",
+          "location_country": "France",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "National Laboratory of the Rockies",
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Natural Capital Alliance",
+          "organization_url": "https://github.com/natcap",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "ONE Campaign",
+          "organization_url": "https://github.com/ONEcampaign",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "OS-Climate",
+          "organization_url": "https://github.com/os-climate",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "REMIND - REgional Model of INvestments and Development",
+          "organization_url": "https://github.com/remindmodel",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "RMI-PACTA",
+          "organization_url": "https://github.com/RMI-PACTA",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Science Based Targets initiative",
+          "organization_url": "https://github.com/ScienceBasedTargets",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Sovereign Nature Initiative",
+          "organization_url": "https://github.com/sovereign-nature",
+          "location_country": "Netherlands",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "WWF Sweden",
+          "organization_url": "https://github.com/WWF-Sweden",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Wikirate International e.V.",
+          "organization_url": "https://github.com/wikirate",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "XDC Model",
+          "organization_url": "https://gitlab.com/xdc-model",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "d-fine GmbH",
+          "organization_url": "https://github.com/d-fine",
+          "location_country": "Germany",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "fund-model",
+          "organization_url": "https://github.com/fund-model",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "opentaps",
+          "organization_url": "https://github.com/opentaps",
+          "location_country": "USA",
+          "form_of_organization": "for-profit"
+        }
+      ]
+    },
+    {
       "sub_category": "Environmental Satellites",
       "organization_count": 15,
       "organizations": [
@@ -8848,102 +8962,6 @@
           "organization_url": "https://github.com/transition-zero",
           "location_country": "UK",
           "form_of_organization": "non-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Sustainable Investment",
-      "organization_count": 15,
-      "organizations": [
-        {
-          "organization_name": "FINPLAN-Model",
-          "organization_url": "https://github.com/FINPLAN-Model",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Fingreen AI",
-          "organization_url": "https://github.com/fingreen-ai",
-          "location_country": "France",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/NatLabRockies",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Natural Capital Alliance",
-          "organization_url": "https://github.com/natcap",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "ONE Campaign",
-          "organization_url": "https://github.com/ONEcampaign",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "OS-Climate",
-          "organization_url": "https://github.com/os-climate",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "REMIND - REgional Model of INvestments and Development",
-          "organization_url": "https://github.com/remindmodel",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "RMI-PACTA",
-          "organization_url": "https://github.com/RMI-PACTA",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Science Based Targets initiative",
-          "organization_url": "https://github.com/ScienceBasedTargets",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Sovereign Nature Initiative",
-          "organization_url": "https://github.com/sovereign-nature",
-          "location_country": "Netherlands",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "WWF Sweden",
-          "organization_url": "https://github.com/WWF-Sweden",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Wikirate International e.V.",
-          "organization_url": "https://github.com/wikirate",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "d-fine GmbH",
-          "organization_url": "https://github.com/d-fine",
-          "location_country": "Germany",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "fund-model",
-          "organization_url": "https://github.com/fund-model",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "opentaps",
-          "organization_url": "https://github.com/opentaps",
-          "location_country": "USA",
-          "form_of_organization": "for-profit"
         }
       ]
     },
@@ -9872,6 +9890,78 @@
       ]
     },
     {
+      "sub_category": "Energy Markets",
+      "organization_count": 11,
+      "organizations": [
+        {
+          "organization_name": "ASSUME",
+          "organization_url": "https://github.com/assume-framework",
+          "location_country": "Germany",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Chair of Renewable and Sustainable Energy Systems",
+          "organization_url": "https://github.com/tum-ens",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Competitive Simulation of Retail Electric Power Markets",
+          "organization_url": "https://github.com/powertac",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Coöperatie Econobis U.A.",
+          "organization_url": "https://github.com/Ecodenl",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Energy Web Foundation",
+          "organization_url": "https://github.com/energywebfoundation",
+          "location_country": "Switzerland",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "Grid Singularity",
+          "organization_url": "https://github.com/gridsingularity",
+          "location_country": "Germany",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "Norges vassdrags- og energidirektorat",
+          "organization_url": "https://github.com/NVE",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Shyft Open Source",
+          "organization_url": "https://gitlab.com/shyft-os",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "dlr-ve",
+          "organization_url": "https://gitlab.com/dlr-ve",
+          "location_country": "Germany",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "openCEM",
+          "organization_url": "https://github.com/openCEMorg",
+          "location_country": "Australia",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "pommes-public",
+          "organization_url": "https://github.com/pommes-public",
+          "location_country": "Germany",
+          "form_of_organization": "community"
+        }
+      ]
+    },
+    {
       "sub_category": "Forest Observation and Management",
       "organization_count": 11,
       "organizations": [
@@ -10216,72 +10306,6 @@
           "organization_url": "https://github.com/ropensci",
           "location_country": "USA",
           "form_of_organization": "non-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Energy Markets",
-      "organization_count": 10,
-      "organizations": [
-        {
-          "organization_name": "ASSUME",
-          "organization_url": "https://github.com/assume-framework",
-          "location_country": "Germany",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Chair of Renewable and Sustainable Energy Systems",
-          "organization_url": "https://github.com/tum-ens",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Competitive Simulation of Retail Electric Power Markets",
-          "organization_url": "https://github.com/powertac",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Coöperatie Econobis U.A.",
-          "organization_url": "https://github.com/Ecodenl",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Energy Web Foundation",
-          "organization_url": "https://github.com/energywebfoundation",
-          "location_country": "Switzerland",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "Grid Singularity",
-          "organization_url": "https://github.com/gridsingularity",
-          "location_country": "Germany",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "Norges vassdrags- og energidirektorat",
-          "organization_url": "https://github.com/NVE",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "dlr-ve",
-          "organization_url": "https://gitlab.com/dlr-ve",
-          "location_country": "Germany",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "openCEM",
-          "organization_url": "https://github.com/openCEMorg",
-          "location_country": "Australia",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "pommes-public",
-          "organization_url": "https://github.com/pommes-public",
-          "location_country": "Germany",
-          "form_of_organization": "community"
         }
       ]
     },
@@ -11169,7 +11193,7 @@
       {
         "name": "Energy System Modeling Frameworks",
         "kind": "sub_category",
-        "value": 72,
+        "value": 73,
         "children": [
           {
             "name": "ACS",
@@ -11320,6 +11344,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/EnergyTransition"
+          },
+          {
+            "name": "FAME-Framework",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/fame-framework"
           },
           {
             "name": "Forschungszentrum Jülich - Jülich Systems Analysis (ICE-2)",
@@ -16340,7 +16370,7 @@
       {
         "name": "Data Catalogs and Interfaces",
         "kind": "sub_category",
-        "value": 33,
+        "value": 34,
         "children": [
           {
             "name": "AI2",
@@ -16395,6 +16425,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/eea"
+          },
+          {
+            "name": "GeoHarmonizer_INEA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/geoharmonizer_inea"
           },
           {
             "name": "Greater Wellington Regional Council",
@@ -19868,6 +19904,109 @@
         ]
       },
       {
+        "name": "Sustainable Investment",
+        "kind": "sub_category",
+        "value": 16,
+        "children": [
+          {
+            "name": "FINPLAN-Model",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/FINPLAN-Model"
+          },
+          {
+            "name": "Fingreen AI",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/fingreen-ai"
+          },
+          {
+            "name": "National Laboratory of the Rockies",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NatLabRockies"
+          },
+          {
+            "name": "Natural Capital Alliance",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/natcap"
+          },
+          {
+            "name": "ONE Campaign",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ONEcampaign"
+          },
+          {
+            "name": "OS-Climate",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/os-climate"
+          },
+          {
+            "name": "REMIND - REgional Model of INvestments and Development",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/remindmodel"
+          },
+          {
+            "name": "RMI-PACTA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/RMI-PACTA"
+          },
+          {
+            "name": "Science Based Targets initiative",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ScienceBasedTargets"
+          },
+          {
+            "name": "Sovereign Nature Initiative",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/sovereign-nature"
+          },
+          {
+            "name": "WWF Sweden",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WWF-Sweden"
+          },
+          {
+            "name": "Wikirate International e.V.",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/wikirate"
+          },
+          {
+            "name": "XDC Model",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/xdc-model"
+          },
+          {
+            "name": "d-fine GmbH",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/d-fine"
+          },
+          {
+            "name": "fund-model",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/fund-model"
+          },
+          {
+            "name": "opentaps",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/opentaps"
+          }
+        ]
+      },
+      {
         "name": "Environmental Satellites",
         "kind": "sub_category",
         "value": 15,
@@ -20058,103 +20197,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/transition-zero"
-          }
-        ]
-      },
-      {
-        "name": "Sustainable Investment",
-        "kind": "sub_category",
-        "value": 15,
-        "children": [
-          {
-            "name": "FINPLAN-Model",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/FINPLAN-Model"
-          },
-          {
-            "name": "Fingreen AI",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/fingreen-ai"
-          },
-          {
-            "name": "National Laboratory of the Rockies",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NatLabRockies"
-          },
-          {
-            "name": "Natural Capital Alliance",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/natcap"
-          },
-          {
-            "name": "ONE Campaign",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ONEcampaign"
-          },
-          {
-            "name": "OS-Climate",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/os-climate"
-          },
-          {
-            "name": "REMIND - REgional Model of INvestments and Development",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/remindmodel"
-          },
-          {
-            "name": "RMI-PACTA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/RMI-PACTA"
-          },
-          {
-            "name": "Science Based Targets initiative",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ScienceBasedTargets"
-          },
-          {
-            "name": "Sovereign Nature Initiative",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/sovereign-nature"
-          },
-          {
-            "name": "WWF Sweden",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/WWF-Sweden"
-          },
-          {
-            "name": "Wikirate International e.V.",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/wikirate"
-          },
-          {
-            "name": "d-fine GmbH",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/d-fine"
-          },
-          {
-            "name": "fund-model",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/fund-model"
-          },
-          {
-            "name": "opentaps",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/opentaps"
           }
         ]
       },
@@ -21094,6 +21136,79 @@
         ]
       },
       {
+        "name": "Energy Markets",
+        "kind": "sub_category",
+        "value": 11,
+        "children": [
+          {
+            "name": "ASSUME",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/assume-framework"
+          },
+          {
+            "name": "Chair of Renewable and Sustainable Energy Systems",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/tum-ens"
+          },
+          {
+            "name": "Competitive Simulation of Retail Electric Power Markets",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/powertac"
+          },
+          {
+            "name": "Coöperatie Econobis U.A.",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Ecodenl"
+          },
+          {
+            "name": "Energy Web Foundation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/energywebfoundation"
+          },
+          {
+            "name": "Grid Singularity",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/gridsingularity"
+          },
+          {
+            "name": "Norges vassdrags- og energidirektorat",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NVE"
+          },
+          {
+            "name": "Shyft Open Source",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/shyft-os"
+          },
+          {
+            "name": "dlr-ve",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/dlr-ve"
+          },
+          {
+            "name": "openCEM",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/openCEMorg"
+          },
+          {
+            "name": "pommes-public",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pommes-public"
+          }
+        ]
+      },
+      {
         "name": "Forest Observation and Management",
         "kind": "sub_category",
         "value": 11,
@@ -21443,73 +21558,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/ropensci"
-          }
-        ]
-      },
-      {
-        "name": "Energy Markets",
-        "kind": "sub_category",
-        "value": 10,
-        "children": [
-          {
-            "name": "ASSUME",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/assume-framework"
-          },
-          {
-            "name": "Chair of Renewable and Sustainable Energy Systems",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/tum-ens"
-          },
-          {
-            "name": "Competitive Simulation of Retail Electric Power Markets",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/powertac"
-          },
-          {
-            "name": "Coöperatie Econobis U.A.",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Ecodenl"
-          },
-          {
-            "name": "Energy Web Foundation",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/energywebfoundation"
-          },
-          {
-            "name": "Grid Singularity",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/gridsingularity"
-          },
-          {
-            "name": "Norges vassdrags- og energidirektorat",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NVE"
-          },
-          {
-            "name": "dlr-ve",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://gitlab.com/dlr-ve"
-          },
-          {
-            "name": "openCEM",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openCEMorg"
-          },
-          {
-            "name": "pommes-public",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/pommes-public"
           }
         ]
       },
