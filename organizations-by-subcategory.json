@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:00:42.405606+00:00",
+  "generated_at": "2026-11-06T12:48:07.674570+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -7208,6 +7208,132 @@
       ]
     },
     {
+      "sub_category": "Plants and Vegetation",
+      "organization_count": 20,
+      "organizations": [
+        {
+          "organization_name": "BioCro Team",
+          "organization_url": "https://github.com/biocro",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "BlueGreen Labs",
+          "organization_url": "https://github.com/bluegreen-labs",
+          "location_country": "Belgium",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Donald Danforth Plant Science Center",
+          "organization_url": "https://github.com/danforthcenter",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Eco-Hydrological Researches in China University of Geosciences (Wuhan)",
+          "organization_url": "https://github.com/eco-hydro",
+          "location_country": "China",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "GECO",
+          "organization_url": "https://github.com/geco-bern",
+          "location_country": "Switzerland",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Germinate",
+          "organization_url": "https://github.com/germinateplatform",
+          "location_country": "UK",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Imperial College London",
+          "organization_url": "https://github.com/ImperialCollegeLondon",
+          "location_country": "UK",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Open Plant Pathology",
+          "organization_url": "https://github.com/openplantpathology",
+          "location_country": "Global",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "OpenAlea",
+          "organization_url": "https://github.com/openalea",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Plant-Root-Soil-Interactions-Modelling",
+          "organization_url": "https://github.com/Plant-Root-Soil-Interactions-Modelling",
+          "location_country": "Germany",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "PlantPhys",
+          "organization_url": "https://github.com/plantphys",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "PlantSimulationLab",
+          "organization_url": "https://github.com/PlantSimulationLab",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Royal Botanic Gardens, Kew",
+          "organization_url": "https://github.com/RBGKew",
+          "location_country": "UK",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Spatial Ecosystem Analytics Lab",
+          "organization_url": "https://github.com/ncsuSEAL",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "The Alan Turing Institute",
+          "organization_url": "https://github.com/alan-turing-institute",
+          "location_country": "UK",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Trait Ecology and Evolution",
+          "organization_url": "https://github.com/traitecoevo",
+          "location_country": "Australia",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "USA National Phenology Network",
+          "organization_url": "https://github.com/usa-npn",
+          "location_country": "USA",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "p2irc",
+          "organization_url": "https://github.com/p2irc",
+          "location_country": "Canada",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "rootmodels",
+          "organization_url": "https://gitlab.com/rootmodels",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "uaf-arctic-eco-modeling",
+          "organization_url": "https://github.com/uaf-arctic-eco-modeling",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        }
+      ]
+    },
+    {
       "sub_category": "Atmospheric Chemistry and Aerosol",
       "organization_count": 19,
       "organizations": [
@@ -7442,126 +7568,6 @@
         {
           "organization_name": "xoceanmodel",
           "organization_url": "https://github.com/xoceanmodel",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        }
-      ]
-    },
-    {
-      "sub_category": "Plants and Vegetation",
-      "organization_count": 19,
-      "organizations": [
-        {
-          "organization_name": "BioCro Team",
-          "organization_url": "https://github.com/biocro",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "BlueGreen Labs",
-          "organization_url": "https://github.com/bluegreen-labs",
-          "location_country": "Belgium",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Donald Danforth Plant Science Center",
-          "organization_url": "https://github.com/danforthcenter",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Eco-Hydrological Researches in China University of Geosciences (Wuhan)",
-          "organization_url": "https://github.com/eco-hydro",
-          "location_country": "China",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "GECO",
-          "organization_url": "https://github.com/geco-bern",
-          "location_country": "Switzerland",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Germinate",
-          "organization_url": "https://github.com/germinateplatform",
-          "location_country": "UK",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Imperial College London",
-          "organization_url": "https://github.com/ImperialCollegeLondon",
-          "location_country": "UK",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Open Plant Pathology",
-          "organization_url": "https://github.com/openplantpathology",
-          "location_country": "Global",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "OpenAlea",
-          "organization_url": "https://github.com/openalea",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Plant-Root-Soil-Interactions-Modelling",
-          "organization_url": "https://github.com/Plant-Root-Soil-Interactions-Modelling",
-          "location_country": "Germany",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "PlantPhys",
-          "organization_url": "https://github.com/plantphys",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "PlantSimulationLab",
-          "organization_url": "https://github.com/PlantSimulationLab",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Royal Botanic Gardens, Kew",
-          "organization_url": "https://github.com/RBGKew",
-          "location_country": "UK",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Spatial Ecosystem Analytics Lab",
-          "organization_url": "https://github.com/ncsuSEAL",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "The Alan Turing Institute",
-          "organization_url": "https://github.com/alan-turing-institute",
-          "location_country": "UK",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Trait Ecology and Evolution",
-          "organization_url": "https://github.com/traitecoevo",
-          "location_country": "Australia",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "USA National Phenology Network",
-          "organization_url": "https://github.com/usa-npn",
-          "location_country": "USA",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "p2irc",
-          "organization_url": "https://github.com/p2irc",
-          "location_country": "Canada",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "uaf-arctic-eco-modeling",
-          "organization_url": "https://github.com/uaf-arctic-eco-modeling",
           "location_country": "Global",
           "form_of_organization": "community"
         }
@@ -18427,6 +18433,133 @@
         ]
       },
       {
+        "name": "Plants and Vegetation",
+        "kind": "sub_category",
+        "value": 20,
+        "children": [
+          {
+            "name": "BioCro Team",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/biocro"
+          },
+          {
+            "name": "BlueGreen Labs",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bluegreen-labs"
+          },
+          {
+            "name": "Donald Danforth Plant Science Center",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/danforthcenter"
+          },
+          {
+            "name": "Eco-Hydrological Researches in China University of Geosciences (Wuhan)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/eco-hydro"
+          },
+          {
+            "name": "GECO",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/geco-bern"
+          },
+          {
+            "name": "Germinate",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/germinateplatform"
+          },
+          {
+            "name": "Imperial College London",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ImperialCollegeLondon"
+          },
+          {
+            "name": "Open Plant Pathology",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/openplantpathology"
+          },
+          {
+            "name": "OpenAlea",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/openalea"
+          },
+          {
+            "name": "Plant-Root-Soil-Interactions-Modelling",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Plant-Root-Soil-Interactions-Modelling"
+          },
+          {
+            "name": "PlantPhys",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/plantphys"
+          },
+          {
+            "name": "PlantSimulationLab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PlantSimulationLab"
+          },
+          {
+            "name": "Royal Botanic Gardens, Kew",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/RBGKew"
+          },
+          {
+            "name": "Spatial Ecosystem Analytics Lab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ncsuSEAL"
+          },
+          {
+            "name": "The Alan Turing Institute",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/alan-turing-institute"
+          },
+          {
+            "name": "Trait Ecology and Evolution",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/traitecoevo"
+          },
+          {
+            "name": "USA National Phenology Network",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/usa-npn"
+          },
+          {
+            "name": "p2irc",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/p2irc"
+          },
+          {
+            "name": "rootmodels",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/rootmodels"
+          },
+          {
+            "name": "uaf-arctic-eco-modeling",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/uaf-arctic-eco-modeling"
+          }
+        ]
+      },
+      {
         "name": "Atmospheric Chemistry and Aerosol",
         "kind": "sub_category",
         "value": 19,
@@ -18665,127 +18798,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/xoceanmodel"
-          }
-        ]
-      },
-      {
-        "name": "Plants and Vegetation",
-        "kind": "sub_category",
-        "value": 19,
-        "children": [
-          {
-            "name": "BioCro Team",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/biocro"
-          },
-          {
-            "name": "BlueGreen Labs",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bluegreen-labs"
-          },
-          {
-            "name": "Donald Danforth Plant Science Center",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/danforthcenter"
-          },
-          {
-            "name": "Eco-Hydrological Researches in China University of Geosciences (Wuhan)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/eco-hydro"
-          },
-          {
-            "name": "GECO",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/geco-bern"
-          },
-          {
-            "name": "Germinate",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/germinateplatform"
-          },
-          {
-            "name": "Imperial College London",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ImperialCollegeLondon"
-          },
-          {
-            "name": "Open Plant Pathology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openplantpathology"
-          },
-          {
-            "name": "OpenAlea",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openalea"
-          },
-          {
-            "name": "Plant-Root-Soil-Interactions-Modelling",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Plant-Root-Soil-Interactions-Modelling"
-          },
-          {
-            "name": "PlantPhys",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/plantphys"
-          },
-          {
-            "name": "PlantSimulationLab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PlantSimulationLab"
-          },
-          {
-            "name": "Royal Botanic Gardens, Kew",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/RBGKew"
-          },
-          {
-            "name": "Spatial Ecosystem Analytics Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ncsuSEAL"
-          },
-          {
-            "name": "The Alan Turing Institute",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/alan-turing-institute"
-          },
-          {
-            "name": "Trait Ecology and Evolution",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/traitecoevo"
-          },
-          {
-            "name": "USA National Phenology Network",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/usa-npn"
-          },
-          {
-            "name": "p2irc",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/p2irc"
-          },
-          {
-            "name": "uaf-arctic-eco-modeling",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/uaf-arctic-eco-modeling"
           }
         ]
       },

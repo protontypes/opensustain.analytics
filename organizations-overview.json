@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:00:42.405606+00:00",
+  "generated_at": "2026-11-06T12:48:07.674570+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -340,7 +340,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 230
+      "count": 231
     },
     {
       "form_of_organization": "government agency",
@@ -12481,6 +12481,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/60000375?v=4",
       "location_country": "UK",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "rootmodels",
+      "organization_url": "https://gitlab.com/rootmodels",
+      "organization_description": "<a href=\"https://www.researchgate.net/profile/Yinglong_Chen2/publication/236843685_Modelling_root-soil_interactions_using_three-dimensional_models_of_root_growth_architecture_and_function/links/00463532650e6b5c8c000000.pdf\"> On RSA models </a>",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/602924/logotim.png?v=1714140526",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {

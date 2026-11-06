@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-05T13:00:42.405606+00:00",
+  "generated_at": "2026-11-06T12:48:07.674570+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1986
+      "count": 1985
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 849
+      "count": 850
     }
   ],
   "fields": {
@@ -54,11 +54,11 @@
         "count": 376
       },
       {
-        "label": "apache-2.0",
-        "count": 340
+        "label": "Unknown",
+        "count": 341
       },
       {
-        "label": "Unknown",
+        "label": "apache-2.0",
         "count": 340
       },
       {
@@ -78,12 +78,12 @@
         "count": 39
       },
       {
-        "label": "lgpl-3.0",
+        "label": "cc0-1.0",
         "count": 38
       },
       {
-        "label": "cc0-1.0",
-        "count": 38
+        "label": "lgpl-3.0",
+        "count": 37
       },
       {
         "label": "mpl-2.0",
@@ -415,11 +415,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7271
+        "count": 7282
       },
       {
         "label": "pypi",
-        "count": 3328
+        "count": 3302
       },
       {
         "label": "Unknown",
@@ -427,23 +427,23 @@
       },
       {
         "label": "docker",
-        "count": 1578
+        "count": 1569
       },
       {
         "label": "npm",
-        "count": 1523
+        "count": 1507
       },
       {
         "label": "maven",
-        "count": 696
+        "count": 693
       },
       {
         "label": "cran",
-        "count": 503
+        "count": 502
       },
       {
         "label": "conda",
-        "count": 379
+        "count": 380
       },
       {
         "label": "nuget",
@@ -490,20 +490,20 @@
         "count": 20
       },
       {
-        "label": "cocoapods",
-        "count": 16
-      },
-      {
         "label": "vcpkg",
         "count": 14
       },
       {
-        "label": "swiftpm",
-        "count": 9
+        "label": "cocoapods",
+        "count": 13
       },
       {
         "label": "bower",
         "count": 8
+      },
+      {
+        "label": "swiftpm",
+        "count": 7
       },
       {
         "label": "pub",
