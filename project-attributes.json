@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T12:48:07.674570+00:00",
+  "generated_at": "2026-11-07T11:36:50.315785+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 989
+        "count": 990
       },
       {
         "label": "R",
@@ -177,7 +177,7 @@
       },
       {
         "label": "TypeScript",
-        "count": 89
+        "count": 88
       },
       {
         "label": "JavaScript",
@@ -415,11 +415,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7282
+        "count": 7288
       },
       {
         "label": "pypi",
-        "count": 3302
+        "count": 3285
       },
       {
         "label": "Unknown",
@@ -427,27 +427,27 @@
       },
       {
         "label": "docker",
-        "count": 1569
+        "count": 1566
       },
       {
         "label": "npm",
-        "count": 1507
+        "count": 1504
       },
       {
         "label": "maven",
-        "count": 693
+        "count": 712
       },
       {
         "label": "cran",
-        "count": 502
+        "count": 501
       },
       {
         "label": "conda",
-        "count": 380
+        "count": 379
       },
       {
         "label": "nuget",
-        "count": 370
+        "count": 369
       },
       {
         "label": "julia",
@@ -463,11 +463,11 @@
       },
       {
         "label": "rubygems",
-        "count": 117
+        "count": 118
       },
       {
         "label": "rpm",
-        "count": 114
+        "count": 115
       },
       {
         "label": "go",
@@ -483,7 +483,7 @@
       },
       {
         "label": "deb",
-        "count": 25
+        "count": 24
       },
       {
         "label": "nix",
@@ -491,7 +491,7 @@
       },
       {
         "label": "vcpkg",
-        "count": 14
+        "count": 15
       },
       {
         "label": "cocoapods",

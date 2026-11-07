@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T12:48:07.674570+00:00",
+  "generated_at": "2026-11-07T11:36:50.315785+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -340,7 +340,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 231
+      "count": 232
     },
     {
       "form_of_organization": "government agency",
@@ -10408,7 +10408,7 @@
       "organization_name": "Then Try This",
       "organization_url": "https://gitlab.com/then-try-this",
       "organization_description": "",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/12696996/black_without_text.png",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/12696996/black_without_text.png?v=1639770645",
       "location_country": "UK",
       "form_of_organization": "non-profit",
       "total_listed_projects_in_organization": 1
@@ -12715,6 +12715,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/104212171?v=4",
       "location_country": "Global",
       "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "trapper-project",
+      "organization_url": "https://gitlab.com/trapper-project",
+      "organization_description": "",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/4645256/trapper_logo.png?v=1769900973",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {

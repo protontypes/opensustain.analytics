@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T12:48:07.674570+00:00",
+  "generated_at": "2026-11-07T11:36:50.315785+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -7334,6 +7334,132 @@
       ]
     },
     {
+      "sub_category": "Terrestrial Wildlife",
+      "organization_count": 20,
+      "organizations": [
+        {
+          "organization_name": "BlueGreen Labs",
+          "organization_url": "https://github.com/bluegreen-labs",
+          "location_country": "Belgium",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Circuitscape",
+          "organization_url": "https://github.com/Circuitscape",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Conservation Technology Lab",
+          "organization_url": "https://github.com/conservationtechlab",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "DrivenData",
+          "organization_url": "https://github.com/drivendataorg",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Google",
+          "organization_url": "https://github.com/google",
+          "location_country": "USA",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "LIFE RIPARIAS",
+          "organization_url": "https://github.com/riparias",
+          "location_country": "Belgium",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Landscape Science & Technology, Environment & Climate Change Canada",
+          "organization_url": "https://github.com/LandSciTech",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Microsoft",
+          "organization_url": "https://github.com/microsoft",
+          "location_country": "USA",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "NESP Threatened Species Recovery Hub (Project 3.1)",
+          "organization_url": "https://github.com/nesp-tsr3-1",
+          "location_country": "Global",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Natural Solutions",
+          "organization_url": "https://github.com/naturalsolutions",
+          "location_country": "Global",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "PADAS",
+          "organization_url": "https://github.com/PADAS",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "PAMGuard",
+          "organization_url": "https://github.com/PAMGuard",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Research Institute for Nature and Forest (INBO)",
+          "organization_url": "https://github.com/inbo",
+          "location_country": "Belgium",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Wild Me by Conservation X Labs",
+          "organization_url": "https://github.com/WildMeOrg",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "WildEye Conservation",
+          "organization_url": "https://github.com/WildEyeConservation",
+          "location_country": "South Africa",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "WildlifeDatasets",
+          "organization_url": "https://github.com/WildlifeDatasets",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "bcgov",
+          "organization_url": "https://github.com/bcgov",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "earthtoolsmaker",
+          "organization_url": "https://github.com/earthtoolsmaker",
+          "location_country": "USA",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "rOpenSci",
+          "organization_url": "https://github.com/ropensci",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "trapper-project",
+          "organization_url": "https://gitlab.com/trapper-project",
+          "location_country": "",
+          "form_of_organization": ""
+        }
+      ]
+    },
+    {
       "sub_category": "Atmospheric Chemistry and Aerosol",
       "organization_count": 19,
       "organizations": [
@@ -7570,126 +7696,6 @@
           "organization_url": "https://github.com/xoceanmodel",
           "location_country": "Global",
           "form_of_organization": "community"
-        }
-      ]
-    },
-    {
-      "sub_category": "Terrestrial Wildlife",
-      "organization_count": 19,
-      "organizations": [
-        {
-          "organization_name": "BlueGreen Labs",
-          "organization_url": "https://github.com/bluegreen-labs",
-          "location_country": "Belgium",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Circuitscape",
-          "organization_url": "https://github.com/Circuitscape",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Conservation Technology Lab",
-          "organization_url": "https://github.com/conservationtechlab",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "DrivenData",
-          "organization_url": "https://github.com/drivendataorg",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Google",
-          "organization_url": "https://github.com/google",
-          "location_country": "USA",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "LIFE RIPARIAS",
-          "organization_url": "https://github.com/riparias",
-          "location_country": "Belgium",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Landscape Science & Technology, Environment & Climate Change Canada",
-          "organization_url": "https://github.com/LandSciTech",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Microsoft",
-          "organization_url": "https://github.com/microsoft",
-          "location_country": "USA",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "NESP Threatened Species Recovery Hub (Project 3.1)",
-          "organization_url": "https://github.com/nesp-tsr3-1",
-          "location_country": "Global",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "PADAS",
-          "organization_url": "https://github.com/PADAS",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "PAMGuard",
-          "organization_url": "https://github.com/PAMGuard",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Research Institute for Nature and Forest (INBO)",
-          "organization_url": "https://github.com/inbo",
-          "location_country": "Belgium",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Wild Me by Conservation X Labs",
-          "organization_url": "https://github.com/WildMeOrg",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "WildEye Conservation",
-          "organization_url": "https://github.com/WildEyeConservation",
-          "location_country": "South Africa",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "WildlifeDatasets",
-          "organization_url": "https://github.com/WildlifeDatasets",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "bcgov",
-          "organization_url": "https://github.com/bcgov",
-          "location_country": "Canada",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "earthtoolsmaker",
-          "organization_url": "https://github.com/earthtoolsmaker",
-          "location_country": "USA",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "rOpenSci",
-          "organization_url": "https://github.com/ropensci",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
         }
       ]
     },
@@ -18560,6 +18566,133 @@
         ]
       },
       {
+        "name": "Terrestrial Wildlife",
+        "kind": "sub_category",
+        "value": 20,
+        "children": [
+          {
+            "name": "BlueGreen Labs",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bluegreen-labs"
+          },
+          {
+            "name": "Circuitscape",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Circuitscape"
+          },
+          {
+            "name": "Conservation Technology Lab",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/conservationtechlab"
+          },
+          {
+            "name": "DrivenData",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/drivendataorg"
+          },
+          {
+            "name": "Google",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/google"
+          },
+          {
+            "name": "LIFE RIPARIAS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/riparias"
+          },
+          {
+            "name": "Landscape Science & Technology, Environment & Climate Change Canada",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/LandSciTech"
+          },
+          {
+            "name": "Microsoft",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/microsoft"
+          },
+          {
+            "name": "NESP Threatened Species Recovery Hub (Project 3.1)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/nesp-tsr3-1"
+          },
+          {
+            "name": "Natural Solutions",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/naturalsolutions"
+          },
+          {
+            "name": "PADAS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PADAS"
+          },
+          {
+            "name": "PAMGuard",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PAMGuard"
+          },
+          {
+            "name": "Research Institute for Nature and Forest (INBO)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/inbo"
+          },
+          {
+            "name": "Wild Me by Conservation X Labs",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WildMeOrg"
+          },
+          {
+            "name": "WildEye Conservation",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WildEyeConservation"
+          },
+          {
+            "name": "WildlifeDatasets",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/WildlifeDatasets"
+          },
+          {
+            "name": "bcgov",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bcgov"
+          },
+          {
+            "name": "earthtoolsmaker",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/earthtoolsmaker"
+          },
+          {
+            "name": "rOpenSci",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ropensci"
+          },
+          {
+            "name": "trapper-project",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/trapper-project"
+          }
+        ]
+      },
+      {
         "name": "Atmospheric Chemistry and Aerosol",
         "kind": "sub_category",
         "value": 19,
@@ -18798,127 +18931,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/xoceanmodel"
-          }
-        ]
-      },
-      {
-        "name": "Terrestrial Wildlife",
-        "kind": "sub_category",
-        "value": 19,
-        "children": [
-          {
-            "name": "BlueGreen Labs",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bluegreen-labs"
-          },
-          {
-            "name": "Circuitscape",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Circuitscape"
-          },
-          {
-            "name": "Conservation Technology Lab",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/conservationtechlab"
-          },
-          {
-            "name": "DrivenData",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/drivendataorg"
-          },
-          {
-            "name": "Google",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/google"
-          },
-          {
-            "name": "LIFE RIPARIAS",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/riparias"
-          },
-          {
-            "name": "Landscape Science & Technology, Environment & Climate Change Canada",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/LandSciTech"
-          },
-          {
-            "name": "Microsoft",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/microsoft"
-          },
-          {
-            "name": "NESP Threatened Species Recovery Hub (Project 3.1)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/nesp-tsr3-1"
-          },
-          {
-            "name": "Natural Solutions",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/naturalsolutions"
-          },
-          {
-            "name": "PADAS",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PADAS"
-          },
-          {
-            "name": "PAMGuard",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PAMGuard"
-          },
-          {
-            "name": "Research Institute for Nature and Forest (INBO)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/inbo"
-          },
-          {
-            "name": "Wild Me by Conservation X Labs",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/WildMeOrg"
-          },
-          {
-            "name": "WildEye Conservation",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/WildEyeConservation"
-          },
-          {
-            "name": "WildlifeDatasets",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/WildlifeDatasets"
-          },
-          {
-            "name": "bcgov",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bcgov"
-          },
-          {
-            "name": "earthtoolsmaker",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/earthtoolsmaker"
-          },
-          {
-            "name": "rOpenSci",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ropensci"
           }
         ]
       },
