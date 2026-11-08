@@ -1,0 +1,174 @@
+name: Check dispatch token expiry
+
+# Warns before OST_TECH_DISPATCH_TOKEN stops working. That fine-grained PAT
+# drives the chain that rebuilds opensustain.tech:
+#   open-sustainable-technology notify-downstream.yml
+#   -> opensustain.analytics update_data.yml -> publish-payloads.yml
+#   -> opensustain.tech deploy.yml
+# When it expires or is revoked the dispatches fail quietly and the site only
+# catches up on its weekly scheduled rebuild.
+#
+# Once a week this calls the GitHub API with the token and reads the
+# GitHub-Authentication-Token-Expiration response header. It opens an issue
+# labelled `dispatch-token` (or comments on the open one) when the token
+# expires within 30 days, is rejected, is missing, or reports no expiry date.
+# When a later run finds a token that is good for more than 30 days, it closes
+# that issue.
+#
+# It can only see this repository's copy of the secret, not the one in
+# open-sustainable-technology. Issues are filed with the built-in GITHUB_TOKEN.
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # 06:00 UTC every Monday
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Never echo the token or the raw headers: only the status code and the
+      # expiry header leave this step.
+      - name: Read token expiry
+        id: token
+        env:
+          DISPATCH_TOKEN: ${{ secrets.OST_TECH_DISPATCH_TOKEN }}
+          WARN_DAYS: 30
+        run: |
+          set -euo pipefail
+
+          if [ -z "$DISPATCH_TOKEN" ]; then
+            echo "state=missing" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          headers="$RUNNER_TEMP/headers.txt"
+          status=$(curl -sS -o /dev/null -D "$headers" -w '%{http_code}' \
+            -H "Authorization: Bearer $DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/protontypes/opensustain.tech) || status=000
+          expires=$(grep -i '^github-authentication-token-expiration:' "$headers" \
+            | cut -d' ' -f2- | tr -d '\r' || true)
+          rm -f "$headers"
+
+          case "$status" in
+            200) ;;
+            401)
+              echo "state=invalid" >> "$GITHUB_OUTPUT"
+              exit 0
+              ;;
+            *)
+              # Network trouble, rate limits or outages say nothing about the
+              # token, so fail the run instead of filing an issue.
+              echo "::error::GitHub API returned HTTP $status; could not check the token."
+              exit 1
+              ;;
+          esac
+
+          if [ -z "$expires" ]; then
+            echo "state=no-expiry" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          days=$(( ($(date -u -d "$expires" +%s) - $(date -u +%s)) / 86400 ))
+          {
+            echo "expires=$expires"
+            echo "days=$days"
+            if [ "$days" -le "$WARN_DAYS" ]; then
+              echo "state=expiring"
+            else
+              echo "state=ok"
+            fi
+          } >> "$GITHUB_OUTPUT"
+          echo "Token expires $expires ($days days from now)."
+
+      - name: Open, update or close the rotation issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          STATE: ${{ steps.token.outputs.state }}
+          EXPIRES: ${{ steps.token.outputs.expires }}
+          DAYS: ${{ steps.token.outputs.days }}
+          ASSIGNEE: AbdulSalam416
+        run: |
+          set -euo pipefail
+
+          label=dispatch-token
+          title="Rotate OST_TECH_DISPATCH_TOKEN"
+          secret='`OST_TECH_DISPATCH_TOKEN`'
+          workflow_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/workflows/check-dispatch-token.yml"
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+          open_issue=$(gh issue list --label "$label" --state open \
+            --json number --jq '.[0].number // empty')
+
+          case "$STATE" in
+            ok)
+              if [ -n "$open_issue" ]; then
+                gh issue close "$open_issue" --comment \
+                  "The token now expires $EXPIRES ($DAYS days from now). Closing. ($run_url)"
+              fi
+              exit 0
+              ;;
+            expiring)
+              summary="expires on $EXPIRES, $DAYS days from now."
+              echo "::warning::$title: it expires in $DAYS days."
+              ;;
+            invalid)
+              summary="was rejected by the GitHub API (HTTP 401): it has expired or been revoked."
+              echo "::error::$title: the token was rejected."
+              ;;
+            no-expiry)
+              summary="works, but GitHub reports no expiry date for it, so this check cannot warn before it stops working."
+              echo "::warning::$title: the token has no expiry date."
+              ;;
+            missing)
+              summary="is not set in this repository's Actions secrets."
+              echo "::error::$title: the secret is not set."
+              ;;
+            *)
+              echo "::error::Unknown token state '$STATE'."
+              exit 1
+              ;;
+          esac
+
+          body="$RUNNER_TEMP/issue.md"
+          cat > "$body" <<EOF
+          The $secret secret in opensustain.analytics $summary
+
+          While it doesn't work, the dispatches from open-sustainable-technology and opensustain.analytics fail, and opensustain.tech only picks up changes on its weekly scheduled rebuild. Nothing else reports the failure.
+
+          To rotate it:
+
+          1. Create a new [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) with:
+             - Resource owner: \`protontypes\`
+             - Repository access: \`protontypes/opensustain.tech\` and \`protontypes/opensustain.analytics\`
+             - Repository permissions: **Contents: read and write**
+             - An expiry date, so this check can keep warning ahead of time
+          2. Update the $secret secret in **both** repositories:
+             - [open-sustainable-technology](https://github.com/protontypes/open-sustainable-technology/settings/secrets/actions)
+             - [opensustain.analytics](https://github.com/protontypes/opensustain.analytics/settings/secrets/actions)
+          3. Run [Check dispatch token expiry]($workflow_url) again. It closes this issue once the token is good for more than 30 days.
+
+          This check only sees the copy of the secret in opensustain.analytics, so it can't tell whether the one in open-sustainable-technology was updated too.
+
+          Found by $run_url
+          EOF
+
+          if [ -n "$open_issue" ]; then
+            gh issue comment "$open_issue" --body-file "$body"
+          else
+            gh label create "$label" --force --color B60205 \
+              --description "OST_TECH_DISPATCH_TOKEN needs rotating"
+            gh issue create --title "$title" --label "$label" \
+              --assignee "$ASSIGNEE" --body-file "$body"
+          fi
+
+          # A token that no longer works should also show up as a failed run.
+          if [ "$STATE" = invalid ] || [ "$STATE" = missing ]; then
+            exit 1
+          fi
