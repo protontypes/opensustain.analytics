@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T11:48:14.660608+00:00",
+  "generated_at": "2026-11-08T12:23:48.824819+00:00",
   "minimum_project_count": 2,
   "default_top_n": 150,
   "organizations": [
@@ -965,8 +965,8 @@
       "organization_url": "https://github.com/NCAR",
       "organization_description": "NSF NCAR is sponsored by the U.S. National Science Foundation and managed by the University Corporation for Atmospheric Research.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/2007542?v=4",
-      "project_count": 15,
-      "total_score": 13.132040330398342,
+      "project_count": 14,
+      "total_score": 12.651048258106655,
       "projects": [
         {
           "name": "WRF-Hydro",
@@ -1060,13 +1060,6 @@
           "total_score_combined": 0.6689920409658489
         },
         {
-          "name": "ICAR",
-          "url": "https://github.com/NCAR/icar",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.4809920722916856
-        },
-        {
           "name": "LROSE",
           "url": "https://github.com/NCAR/lrose-core",
           "category": "Atmosphere",
@@ -1080,8 +1073,8 @@
       "organization_url": "https://github.com/ecmwf",
       "organization_description": "Providing software to work with meteorological data and services",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/6368067?v=4",
-      "project_count": 15,
-      "total_score": 12.910300587599849,
+      "project_count": 14,
+      "total_score": 12.119766442396013,
       "projects": [
         {
           "name": "cdsapi",
@@ -1154,13 +1147,6 @@
           "total_score_combined": 0.8640741152140177
         },
         {
-          "name": "How to work with meteorological ECMWF data",
-          "url": "https://github.com/ecmwf/notebook-examples",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.7905341452038359
-        },
-        {
           "name": "eccodes",
           "url": "https://github.com/ecmwf/eccodes",
           "category": "Atmosphere",
@@ -1187,107 +1173,6 @@
           "category": "Atmosphere",
           "sub_category": "Meteorological Observation and Forecast",
           "total_score_combined": 0.09585240830603471
-        }
-      ]
-    },
-    {
-      "organization_name": "U.S. Geological Survey",
-      "organization_url": "https://github.com/DOI-USGS",
-      "organization_description": "By integrating our diverse scientific expertise, we understand complex natural science phenomena and provide scientific products that lead to solutions.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
-      "project_count": 13,
-      "total_score": 8.662708286214551,
-      "projects": [
-        {
-          "name": "dataretrieval-python",
-          "url": "https://github.com/DOI-USGS/dataretrieval-python",
-          "category": "Natural Resources",
-          "sub_category": "Water Supply and Quality",
-          "total_score_combined": 1.1180248574958165
-        },
-        {
-          "name": "hyswap",
-          "url": "https://github.com/doi-usgs/hyswap",
-          "category": "Hydrosphere",
-          "sub_category": "Freshwater and Hydrology",
-          "total_score_combined": 0.9865556781955839
-        },
-        {
-          "name": "python-for-hydrology",
-          "url": "https://github.com/DOI-USGS/python-for-hydrology",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.8951312733374275
-        },
-        {
-          "name": "dataRetrieval",
-          "url": "https://github.com/DOI-USGS/dataRetrieval",
-          "category": "Natural Resources",
-          "sub_category": "Water Supply and Quality",
-          "total_score_combined": 0.8439506191208169
-        },
-        {
-          "name": "From Snow to Flow",
-          "url": "https://github.com/DOI-USGS/snow-to-flow",
-          "category": "Cryosphere",
-          "sub_category": "Snow and Permafrost",
-          "total_score_combined": 0.8194613205070265
-        },
-        {
-          "name": "Delaware River Basin Story",
-          "url": "https://github.com/DOI-USGS/delaware-basin-story",
-          "category": "Hydrosphere",
-          "sub_category": "Freshwater and Hydrology",
-          "total_score_combined": 0.7413290949291157
-        },
-        {
-          "name": "EGRET",
-          "url": "https://github.com/DOI-USGS/EGRET",
-          "category": "Natural Resources",
-          "sub_category": "Water Supply and Quality",
-          "total_score_combined": 0.6795258136501591
-        },
-        {
-          "name": "gw-conditions",
-          "url": "https://github.com/doi-usgs/gw-conditions",
-          "category": "Natural Resources",
-          "sub_category": "Water Supply and Quality",
-          "total_score_combined": 0.5761201419942795
-        },
-        {
-          "name": "nhdplusTools",
-          "url": "https://github.com/doi-usgs/hydrogeofetch",
-          "category": "Natural Resources",
-          "sub_category": "Water Supply and Quality",
-          "total_score_combined": 0.5574810988538266
-        },
-        {
-          "name": "pywatershed",
-          "url": "https://github.com/doi-usgs/pywatershed",
-          "category": "Hydrosphere",
-          "sub_category": "Freshwater and Hydrology",
-          "total_score_combined": 0.4433040147279079
-        },
-        {
-          "name": "HASP",
-          "url": "https://github.com/DOI-USGS/HASP",
-          "category": "Natural Resources",
-          "sub_category": "Water Supply and Quality",
-          "total_score_combined": 0.34775654709448445
-        },
-        {
-          "name": "flow-tiles",
-          "url": "https://github.com/DOI-USGS/flow-tiles",
-          "category": "Hydrosphere",
-          "sub_category": "Freshwater and Hydrology",
-          "total_score_combined": 0.3296071356641752
-        },
-        {
-          "name": "COAWST",
-          "url": "https://github.com/DOI-USGS/COAWST",
-          "category": "Hydrosphere",
-          "sub_category": "Coastal and Reefs",
-          "total_score_combined": 0.3244606906439302
         }
       ]
     },
@@ -1382,6 +1267,100 @@
           "category": "Atmosphere",
           "sub_category": "Atmospheric Composition and Dynamics",
           "total_score_combined": 0.13210235754931346
+        }
+      ]
+    },
+    {
+      "organization_name": "U.S. Geological Survey",
+      "organization_url": "https://github.com/DOI-USGS",
+      "organization_description": "By integrating our diverse scientific expertise, we understand complex natural science phenomena and provide scientific products that lead to solutions.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/65027635?v=4",
+      "project_count": 12,
+      "total_score": 7.767577012877123,
+      "projects": [
+        {
+          "name": "dataretrieval-python",
+          "url": "https://github.com/DOI-USGS/dataretrieval-python",
+          "category": "Natural Resources",
+          "sub_category": "Water Supply and Quality",
+          "total_score_combined": 1.1180248574958165
+        },
+        {
+          "name": "hyswap",
+          "url": "https://github.com/doi-usgs/hyswap",
+          "category": "Hydrosphere",
+          "sub_category": "Freshwater and Hydrology",
+          "total_score_combined": 0.9865556781955839
+        },
+        {
+          "name": "dataRetrieval",
+          "url": "https://github.com/DOI-USGS/dataRetrieval",
+          "category": "Natural Resources",
+          "sub_category": "Water Supply and Quality",
+          "total_score_combined": 0.8439506191208169
+        },
+        {
+          "name": "From Snow to Flow",
+          "url": "https://github.com/DOI-USGS/snow-to-flow",
+          "category": "Cryosphere",
+          "sub_category": "Snow and Permafrost",
+          "total_score_combined": 0.8194613205070265
+        },
+        {
+          "name": "Delaware River Basin Story",
+          "url": "https://github.com/DOI-USGS/delaware-basin-story",
+          "category": "Hydrosphere",
+          "sub_category": "Freshwater and Hydrology",
+          "total_score_combined": 0.7413290949291157
+        },
+        {
+          "name": "EGRET",
+          "url": "https://github.com/DOI-USGS/EGRET",
+          "category": "Natural Resources",
+          "sub_category": "Water Supply and Quality",
+          "total_score_combined": 0.6795258136501591
+        },
+        {
+          "name": "gw-conditions",
+          "url": "https://github.com/doi-usgs/gw-conditions",
+          "category": "Natural Resources",
+          "sub_category": "Water Supply and Quality",
+          "total_score_combined": 0.5761201419942795
+        },
+        {
+          "name": "nhdplusTools",
+          "url": "https://github.com/doi-usgs/hydrogeofetch",
+          "category": "Natural Resources",
+          "sub_category": "Water Supply and Quality",
+          "total_score_combined": 0.5574810988538266
+        },
+        {
+          "name": "pywatershed",
+          "url": "https://github.com/doi-usgs/pywatershed",
+          "category": "Hydrosphere",
+          "sub_category": "Freshwater and Hydrology",
+          "total_score_combined": 0.4433040147279079
+        },
+        {
+          "name": "HASP",
+          "url": "https://github.com/DOI-USGS/HASP",
+          "category": "Natural Resources",
+          "sub_category": "Water Supply and Quality",
+          "total_score_combined": 0.34775654709448445
+        },
+        {
+          "name": "flow-tiles",
+          "url": "https://github.com/DOI-USGS/flow-tiles",
+          "category": "Hydrosphere",
+          "sub_category": "Freshwater and Hydrology",
+          "total_score_combined": 0.3296071356641752
+        },
+        {
+          "name": "COAWST",
+          "url": "https://github.com/DOI-USGS/COAWST",
+          "category": "Hydrosphere",
+          "sub_category": "Coastal and Reefs",
+          "total_score_combined": 0.3244606906439302
         }
       ]
     },
@@ -1619,79 +1598,6 @@
       ]
     },
     {
-      "organization_name": "oemof community",
-      "organization_url": "https://github.com/oemof",
-      "organization_description": "Open Energy Modelling Framework - A modular open source framework to model energy supply systems",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/8503379?v=4",
-      "project_count": 9,
-      "total_score": 8.562554121021543,
-      "projects": [
-        {
-          "name": "oemof-solph",
-          "url": "https://github.com/oemof/oemof-solph",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 1.5796695371255023
-        },
-        {
-          "name": "feedinlib",
-          "url": "https://github.com/oemof/feedinlib",
-          "category": "Renewable Energy",
-          "sub_category": "Photovoltaics and Solar Energy",
-          "total_score_combined": 1.2136948611957297
-        },
-        {
-          "name": "oemof",
-          "url": "https://github.com/oemof/oemof",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 1.1697648359768147
-        },
-        {
-          "name": "demandlib",
-          "url": "https://github.com/oemof/oemof-demand",
-          "category": "Energy Systems",
-          "sub_category": "Load and Demand Forecasting",
-          "total_score_combined": 1.1122317455103088
-        },
-        {
-          "name": "oemof-thermal",
-          "url": "https://github.com/oemof/oemof-thermal",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 0.8937212411741451
-        },
-        {
-          "name": "ExerPy",
-          "url": "https://github.com/oemof/exerpy",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 0.865196637328472
-        },
-        {
-          "name": "tespy",
-          "url": "https://github.com/oemof/tespy",
-          "category": "Consumption",
-          "sub_category": "Buildings and Heating",
-          "total_score_combined": 0.8011977998611854
-        },
-        {
-          "name": "DHNx",
-          "url": "https://github.com/oemof/DHNx",
-          "category": "Consumption",
-          "sub_category": "Buildings and Heating",
-          "total_score_combined": 0.5791023280459918
-        },
-        {
-          "name": "oemof Workshop on Modeling Heat Pumps",
-          "url": "https://github.com/oemof/heat-pump-tutorial",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.3479751348033937
-        }
-      ]
-    },
-    {
       "organization_name": "Sandia National Laboratories",
       "organization_url": "https://github.com/sandialabs",
       "organization_description": "Exceptional service in the national interest.",
@@ -1838,152 +1744,6 @@
       ]
     },
     {
-      "organization_name": "Open Energy Transition",
-      "organization_url": "https://github.com/open-energy-transition",
-      "organization_description": "Non-profit that accelerates the energy transition with open data and open source software solutions.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/131007753?v=4",
-      "project_count": 9,
-      "total_score": 6.275480456239299,
-      "projects": [
-        {
-          "name": "PyPSA-Wal",
-          "url": "https://github.com/open-energy-transition/pypsa-wal",
-          "category": "Energy Systems",
-          "sub_category": "Global and Regional Energy System Models",
-          "total_score_combined": 1.1145285671150775
-        },
-        {
-          "name": "Open-TYNDP",
-          "url": "https://github.com/open-energy-transition/open-tyndp",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 0.9603133484144527
-        },
-        {
-          "name": "Open Energy Benchmark",
-          "url": "https://github.com/open-energy-transition/solver-benchmark",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 0.9544085085149747
-        },
-        {
-          "name": "MapYourGrid",
-          "url": "https://github.com/open-energy-transition/mapyourgrid",
-          "category": "Energy Systems",
-          "sub_category": "Energy Data Accessibility and Integration",
-          "total_score_combined": 0.904133711656116
-        },
-        {
-          "name": "Open-TYNDP Workshops",
-          "url": "https://github.com/open-energy-transition/open-tyndp-workshops",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.6342313070839852
-        },
-        {
-          "name": "Electricity Demand Data",
-          "url": "https://github.com/open-energy-transition/demandcast",
-          "category": "Energy Systems",
-          "sub_category": "Load and Demand Forecasting",
-          "total_score_combined": 0.5569167293979731
-        },
-        {
-          "name": "Awesome Electric Grid Mapping",
-          "url": "https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping",
-          "category": "Sustainable Development",
-          "sub_category": "Curated Lists",
-          "total_score_combined": 0.5180943136625744
-        },
-        {
-          "name": "Awesome Grid Model Data",
-          "url": "https://github.com/open-energy-transition/awesome-electricity-demand",
-          "category": "Energy Systems",
-          "sub_category": "Energy Data Accessibility and Integration",
-          "total_score_combined": 0.3995105207163761
-        },
-        {
-          "name": "EarthPV",
-          "url": "https://github.com/open-energy-transition/earthpv",
-          "category": "Renewable Energy",
-          "sub_category": "Photovoltaics and Solar Energy",
-          "total_score_combined": 0.23334344967776965
-        }
-      ]
-    },
-    {
-      "organization_name": "IIASA",
-      "organization_url": "https://github.com/iiasa",
-      "organization_description": "International Institute for Applied Systems Analysis",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/15230149?v=4",
-      "project_count": 9,
-      "total_score": 5.5851897861283755,
-      "projects": [
-        {
-          "name": "MESSAGEix",
-          "url": "https://github.com/iiasa/message_ix",
-          "category": "Climate Change",
-          "sub_category": "Integrated Assessment and Climate Policy",
-          "total_score_combined": 1.1962996591012824
-        },
-        {
-          "name": "MESSAGEix-GLOBIOM",
-          "url": "https://github.com/iiasa/message-ix-models",
-          "category": "Climate Change",
-          "sub_category": "Integrated Assessment and Climate Policy",
-          "total_score_combined": 1.0223808558975829
-        },
-        {
-          "name": "ixmp",
-          "url": "https://github.com/iiasa/ixmp",
-          "category": "Climate Change",
-          "sub_category": "Integrated Assessment and Climate Policy",
-          "total_score_combined": 0.8681242434874102
-        },
-        {
-          "name": "CWatM",
-          "url": "https://github.com/iiasa/CWatM",
-          "category": "Natural Resources",
-          "sub_category": "Water Supply and Quality",
-          "total_score_combined": 0.7882467643417304
-        },
-        {
-          "name": "RE4AFAGRI",
-          "url": "https://github.com/iiasa/RE4AFAGRI_platform",
-          "category": "Energy Systems",
-          "sub_category": "Energy Data Accessibility and Integration",
-          "total_score_combined": 0.6865112782825948
-        },
-        {
-          "name": "An introduction to Systematic conservation planning with prioritzr",
-          "url": "https://github.com/iiasa/eccb2024",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5675908567688245
-        },
-        {
-          "name": "ibis.iSDM",
-          "url": "https://github.com/iiasa/ibis.iSDM",
-          "category": "Biosphere",
-          "sub_category": "Species Distribution Modeling",
-          "total_score_combined": 0.2356637815893024
-        },
-        {
-          "name": "ipcc_sr15_scenario_analysis",
-          "url": "https://github.com/iiasa/ipcc_sr15_scenario_analysis",
-          "category": "Climate Change",
-          "sub_category": "Integrated Assessment and Climate Policy",
-          "total_score_combined": 0.14252919467032588
-        },
-        {
-          "name": "ENGAGE",
-          "url": "https://github.com/iiasa/ENGAGE-netzero-analysis",
-          "category": "Climate Change",
-          "sub_category": "Integrated Assessment and Climate Policy",
-          "total_score_combined": 0.07784315198932229
-        }
-      ]
-    },
-    {
       "organization_name": "NSF Unidata",
       "organization_url": "https://github.com/Unidata",
       "organization_description": "Our mission is to transform the geosciences community, research, and education by providing innovative data services and tools.",
@@ -2050,6 +1810,72 @@
       ]
     },
     {
+      "organization_name": "oemof community",
+      "organization_url": "https://github.com/oemof",
+      "organization_description": "Open Energy Modelling Framework - A modular open source framework to model energy supply systems",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/8503379?v=4",
+      "project_count": 8,
+      "total_score": 8.21457898621815,
+      "projects": [
+        {
+          "name": "oemof-solph",
+          "url": "https://github.com/oemof/oemof-solph",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 1.5796695371255023
+        },
+        {
+          "name": "feedinlib",
+          "url": "https://github.com/oemof/feedinlib",
+          "category": "Renewable Energy",
+          "sub_category": "Photovoltaics and Solar Energy",
+          "total_score_combined": 1.2136948611957297
+        },
+        {
+          "name": "oemof",
+          "url": "https://github.com/oemof/oemof",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 1.1697648359768147
+        },
+        {
+          "name": "demandlib",
+          "url": "https://github.com/oemof/oemof-demand",
+          "category": "Energy Systems",
+          "sub_category": "Load and Demand Forecasting",
+          "total_score_combined": 1.1122317455103088
+        },
+        {
+          "name": "oemof-thermal",
+          "url": "https://github.com/oemof/oemof-thermal",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 0.8937212411741451
+        },
+        {
+          "name": "ExerPy",
+          "url": "https://github.com/oemof/exerpy",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 0.865196637328472
+        },
+        {
+          "name": "tespy",
+          "url": "https://github.com/oemof/tespy",
+          "category": "Consumption",
+          "sub_category": "Buildings and Heating",
+          "total_score_combined": 0.8011977998611854
+        },
+        {
+          "name": "DHNx",
+          "url": "https://github.com/oemof/DHNx",
+          "category": "Consumption",
+          "sub_category": "Buildings and Heating",
+          "total_score_combined": 0.5791023280459918
+        }
+      ]
+    },
+    {
       "organization_name": "Joint Global Change Research Institute",
       "organization_url": "https://github.com/JGCRI",
       "organization_description": "Advancing fundamental understanding of human and Earth systems",
@@ -2112,6 +1938,138 @@
           "category": "Consumption",
           "sub_category": "Agriculture and Nutrition",
           "total_score_combined": 0.3096433926811594
+        }
+      ]
+    },
+    {
+      "organization_name": "Open Energy Transition",
+      "organization_url": "https://github.com/open-energy-transition",
+      "organization_description": "Non-profit that accelerates the energy transition with open data and open source software solutions.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/131007753?v=4",
+      "project_count": 8,
+      "total_score": 5.641249149155314,
+      "projects": [
+        {
+          "name": "PyPSA-Wal",
+          "url": "https://github.com/open-energy-transition/pypsa-wal",
+          "category": "Energy Systems",
+          "sub_category": "Global and Regional Energy System Models",
+          "total_score_combined": 1.1145285671150775
+        },
+        {
+          "name": "Open-TYNDP",
+          "url": "https://github.com/open-energy-transition/open-tyndp",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 0.9603133484144527
+        },
+        {
+          "name": "Open Energy Benchmark",
+          "url": "https://github.com/open-energy-transition/solver-benchmark",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 0.9544085085149747
+        },
+        {
+          "name": "MapYourGrid",
+          "url": "https://github.com/open-energy-transition/mapyourgrid",
+          "category": "Energy Systems",
+          "sub_category": "Energy Data Accessibility and Integration",
+          "total_score_combined": 0.904133711656116
+        },
+        {
+          "name": "Electricity Demand Data",
+          "url": "https://github.com/open-energy-transition/demandcast",
+          "category": "Energy Systems",
+          "sub_category": "Load and Demand Forecasting",
+          "total_score_combined": 0.5569167293979731
+        },
+        {
+          "name": "Awesome Electric Grid Mapping",
+          "url": "https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping",
+          "category": "Sustainable Development",
+          "sub_category": "Curated Lists",
+          "total_score_combined": 0.5180943136625744
+        },
+        {
+          "name": "Awesome Grid Model Data",
+          "url": "https://github.com/open-energy-transition/awesome-electricity-demand",
+          "category": "Energy Systems",
+          "sub_category": "Energy Data Accessibility and Integration",
+          "total_score_combined": 0.3995105207163761
+        },
+        {
+          "name": "EarthPV",
+          "url": "https://github.com/open-energy-transition/earthpv",
+          "category": "Renewable Energy",
+          "sub_category": "Photovoltaics and Solar Energy",
+          "total_score_combined": 0.23334344967776965
+        }
+      ]
+    },
+    {
+      "organization_name": "IIASA",
+      "organization_url": "https://github.com/iiasa",
+      "organization_description": "International Institute for Applied Systems Analysis",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/15230149?v=4",
+      "project_count": 8,
+      "total_score": 5.017598929359551,
+      "projects": [
+        {
+          "name": "MESSAGEix",
+          "url": "https://github.com/iiasa/message_ix",
+          "category": "Climate Change",
+          "sub_category": "Integrated Assessment and Climate Policy",
+          "total_score_combined": 1.1962996591012824
+        },
+        {
+          "name": "MESSAGEix-GLOBIOM",
+          "url": "https://github.com/iiasa/message-ix-models",
+          "category": "Climate Change",
+          "sub_category": "Integrated Assessment and Climate Policy",
+          "total_score_combined": 1.0223808558975829
+        },
+        {
+          "name": "ixmp",
+          "url": "https://github.com/iiasa/ixmp",
+          "category": "Climate Change",
+          "sub_category": "Integrated Assessment and Climate Policy",
+          "total_score_combined": 0.8681242434874102
+        },
+        {
+          "name": "CWatM",
+          "url": "https://github.com/iiasa/CWatM",
+          "category": "Natural Resources",
+          "sub_category": "Water Supply and Quality",
+          "total_score_combined": 0.7882467643417304
+        },
+        {
+          "name": "RE4AFAGRI",
+          "url": "https://github.com/iiasa/RE4AFAGRI_platform",
+          "category": "Energy Systems",
+          "sub_category": "Energy Data Accessibility and Integration",
+          "total_score_combined": 0.6865112782825948
+        },
+        {
+          "name": "ibis.iSDM",
+          "url": "https://github.com/iiasa/ibis.iSDM",
+          "category": "Biosphere",
+          "sub_category": "Species Distribution Modeling",
+          "total_score_combined": 0.2356637815893024
+        },
+        {
+          "name": "ipcc_sr15_scenario_analysis",
+          "url": "https://github.com/iiasa/ipcc_sr15_scenario_analysis",
+          "category": "Climate Change",
+          "sub_category": "Integrated Assessment and Climate Policy",
+          "total_score_combined": 0.14252919467032588
+        },
+        {
+          "name": "ENGAGE",
+          "url": "https://github.com/iiasa/ENGAGE-netzero-analysis",
+          "category": "Climate Change",
+          "sub_category": "Integrated Assessment and Climate Policy",
+          "total_score_combined": 0.07784315198932229
         }
       ]
     },
@@ -2282,58 +2240,6 @@
           "category": "Atmosphere",
           "sub_category": "Meteorological Observation and Forecast",
           "total_score_combined": 0.6225225647076941
-        }
-      ]
-    },
-    {
-      "organization_name": "Pangeo",
-      "organization_url": "https://github.com/pangeo-data",
-      "organization_description": "A community effort for big data geoscience",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/23299451?v=4",
-      "project_count": 6,
-      "total_score": 6.050226651562085,
-      "projects": [
-        {
-          "name": "pangeo",
-          "url": "https://github.com/pangeo-data/pangeo",
-          "category": "Climate Change",
-          "sub_category": "Earth and Climate Modeling",
-          "total_score_combined": 1.4269317017447043
-        },
-        {
-          "name": "Awesome Open Climate Science",
-          "url": "https://github.com/pangeo-data/awesome-open-climate-science",
-          "category": "Sustainable Development",
-          "sub_category": "Curated Lists",
-          "total_score_combined": 1.2426248750663873
-        },
-        {
-          "name": "climpred",
-          "url": "https://github.com/pangeo-data/climpred",
-          "category": "Climate Change",
-          "sub_category": "Climate Data Processing and Analysis",
-          "total_score_combined": 1.1344997282650302
-        },
-        {
-          "name": "scikit-downscale",
-          "url": "https://github.com/pangeo-data/scikit-downscale",
-          "category": "Climate Change",
-          "sub_category": "Climate Downscaling",
-          "total_score_combined": 0.9111977118595103
-        },
-        {
-          "name": "Pangeo Docker Images",
-          "url": "https://github.com/pangeo-data/pangeo-docker-images",
-          "category": "Climate Change",
-          "sub_category": "Earth and Climate Modeling",
-          "total_score_combined": 0.7955879707900538
-        },
-        {
-          "name": "Harnessing the Power of Pangeo",
-          "url": "https://github.com/pangeo-data/egu-2025-course",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5393846638363983
         }
       ]
     },
@@ -2546,110 +2452,6 @@
       ]
     },
     {
-      "organization_name": "NASA",
-      "organization_url": "https://github.com/nasa",
-      "organization_description": "Read Instructions here: https://github.com/nasa/instructions/blob/master/docs/INSTRUCTIONS.md",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/848102?v=4",
-      "project_count": 6,
-      "total_score": 3.9147055440172047,
-      "projects": [
-        {
-          "name": "NASA CMR STAC",
-          "url": "https://github.com/nasa/cmr-stac",
-          "category": "Sustainable Development",
-          "sub_category": "Data Catalogs and Interfaces",
-          "total_score_combined": 1.0695661879950427
-        },
-        {
-          "name": "Earthdata Search",
-          "url": "https://github.com/nasa/earthdata-search",
-          "category": "Sustainable Development",
-          "sub_category": "Data Catalogs and Interfaces",
-          "total_score_combined": 1.0033356264412636
-        },
-        {
-          "name": "LPDAAC-Data-Resource",
-          "url": "https://github.com/nasa/LPDAAC-Data-Resources",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.6749353115701752
-        },
-        {
-          "name": "VITALS",
-          "url": "https://github.com/nasa/vitals",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5760141468591723
-        },
-        {
-          "name": "EMIT-Data-Resources",
-          "url": "https://github.com/nasa/EMIT-Data-Resources",
-          "category": "Emissions",
-          "sub_category": "Emission Observation and Modeling",
-          "total_score_combined": 0.4414113566954744
-        },
-        {
-          "name": "NASAaccess",
-          "url": "https://github.com/nasa/NASAaccess",
-          "category": "Climate Change",
-          "sub_category": "Climate Data Processing and Analysis",
-          "total_score_combined": 0.14944291445607663
-        }
-      ]
-    },
-    {
-      "organization_name": "Weecology",
-      "organization_url": "https://github.com/weecology",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/1156696?v=4",
-      "project_count": 6,
-      "total_score": 3.472836622163189,
-      "projects": [
-        {
-          "name": "DeepForest",
-          "url": "https://github.com/weecology/DeepForest",
-          "category": "Biosphere",
-          "sub_category": "Forest Remote Sensing",
-          "total_score_combined": 1.3766201507053182
-        },
-        {
-          "name": "DeepTreeAttention",
-          "url": "https://github.com/weecology/DeepTreeAttention",
-          "category": "Biosphere",
-          "sub_category": "Forest Remote Sensing",
-          "total_score_combined": 0.5541850477735731
-        },
-        {
-          "name": "PortalData",
-          "url": "https://github.com/weecology/PortalData",
-          "category": "Biosphere",
-          "sub_category": "Biodiversity Data Access and Management",
-          "total_score_combined": 0.5231009679555372
-        },
-        {
-          "name": "Ecological Forecasting & Dynamics Course",
-          "url": "https://github.com/weecology/forecasting-course",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5179987545318053
-        },
-        {
-          "name": "NeonTreeEvaluation",
-          "url": "https://github.com/weecology/NeonTreeEvaluation",
-          "category": "Biosphere",
-          "sub_category": "Forest Remote Sensing",
-          "total_score_combined": 0.4135160047273403
-        },
-        {
-          "name": "portalcasting",
-          "url": "https://github.com/weecology/portalcasting",
-          "category": "Biosphere",
-          "sub_category": "Ecological and Environmental Modeling",
-          "total_score_combined": 0.08741569646961435
-        }
-      ]
-    },
-    {
       "organization_name": "BlueGreen Labs",
       "organization_url": "https://github.com/bluegreen-labs",
       "organization_description": "BlueGreen open science labs & consulting: environmental research infrastructure to address climate change through data driven methods",
@@ -2743,6 +2545,51 @@
           "category": "Climate Change",
           "sub_category": "Climate Data Processing and Analysis",
           "total_score_combined": 0.7463733977908383
+        }
+      ]
+    },
+    {
+      "organization_name": "Pangeo",
+      "organization_url": "https://github.com/pangeo-data",
+      "organization_description": "A community effort for big data geoscience",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/23299451?v=4",
+      "project_count": 5,
+      "total_score": 5.510841987725686,
+      "projects": [
+        {
+          "name": "pangeo",
+          "url": "https://github.com/pangeo-data/pangeo",
+          "category": "Climate Change",
+          "sub_category": "Earth and Climate Modeling",
+          "total_score_combined": 1.4269317017447043
+        },
+        {
+          "name": "Awesome Open Climate Science",
+          "url": "https://github.com/pangeo-data/awesome-open-climate-science",
+          "category": "Sustainable Development",
+          "sub_category": "Curated Lists",
+          "total_score_combined": 1.2426248750663873
+        },
+        {
+          "name": "climpred",
+          "url": "https://github.com/pangeo-data/climpred",
+          "category": "Climate Change",
+          "sub_category": "Climate Data Processing and Analysis",
+          "total_score_combined": 1.1344997282650302
+        },
+        {
+          "name": "scikit-downscale",
+          "url": "https://github.com/pangeo-data/scikit-downscale",
+          "category": "Climate Change",
+          "sub_category": "Climate Downscaling",
+          "total_score_combined": 0.9111977118595103
+        },
+        {
+          "name": "Pangeo Docker Images",
+          "url": "https://github.com/pangeo-data/pangeo-docker-images",
+          "category": "Climate Change",
+          "sub_category": "Earth and Climate Modeling",
+          "total_score_combined": 0.7955879707900538
         }
       ]
     },
@@ -2927,51 +2774,6 @@
       ]
     },
     {
-      "organization_name": "Project Pythia",
-      "organization_url": "https://github.com/ProjectPythia",
-      "organization_description": "Community learning resource for Python-based computing in the geosciences",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/75807555?v=4",
-      "project_count": 5,
-      "total_score": 3.465060077353261,
-      "projects": [
-        {
-          "name": "Project Pythia",
-          "url": "https://github.com/projectpythia/pythia-foundations",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 1.111511097918303
-        },
-        {
-          "name": "CMIP6 Cookbook",
-          "url": "https://github.com/projectpythia/cmip6-cookbook",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.7753651722933491
-        },
-        {
-          "name": "Radar Cookbook",
-          "url": "https://github.com/projectpythia/radar-cookbook",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.6993903966872247
-        },
-        {
-          "name": "Landsat ML Cookbook",
-          "url": "https://github.com/projectpythia/landsat-ml-cookbook",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.483628858262155
-        },
-        {
-          "name": "Earth Observation Data Science Cookbook",
-          "url": "https://github.com/projectpythia/eo-datascience-cookbook",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.39516455219222935
-        }
-      ]
-    },
-    {
       "organization_name": "World Resources Institute",
       "organization_url": "https://github.com/wri",
       "organization_description": "",
@@ -3017,206 +2819,47 @@
       ]
     },
     {
-      "organization_name": "Brightway LCA Software Framework",
-      "organization_url": "https://github.com/brightway-lca",
-      "organization_description": "Open source framework for Brightway framework",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/26960762?v=4",
+      "organization_name": "Weecology",
+      "organization_url": "https://github.com/weecology",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/1156696?v=4",
       "project_count": 5,
-      "total_score": 3.177060266140211,
+      "total_score": 2.9548378676313836,
       "projects": [
         {
-          "name": "ecoinvent_interface",
-          "url": "https://github.com/brightway-lca/ecoinvent_interface",
-          "category": "Industrial Ecology",
-          "sub_category": "Life Cycle Assessment",
-          "total_score_combined": 1.0695526335359642
-        },
-        {
-          "name": "timex_lca",
-          "url": "https://github.com/brightway-lca/bw_timex",
-          "category": "Industrial Ecology",
-          "sub_category": "Life Cycle Assessment",
-          "total_score_combined": 0.7275369345141532
-        },
-        {
-          "name": "brightway2",
-          "url": "https://github.com/brightway-lca/brightway2",
-          "category": "Industrial Ecology",
-          "sub_category": "Life Cycle Assessment",
-          "total_score_combined": 0.5042686238515354
-        },
-        {
-          "name": "Learn Brightway",
-          "url": "https://github.com/brightway-lca/brightway-book",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.4768196778427603
-        },
-        {
-          "name": "Brightway2 data management",
-          "url": "https://github.com/brightway-lca/brightway2-data",
-          "category": "Industrial Ecology",
-          "sub_category": "Life Cycle Assessment",
-          "total_score_combined": 0.39888239639579814
-        }
-      ]
-    },
-    {
-      "organization_name": "ECMWF Code for Earth",
-      "organization_url": "https://github.com/ECMWFCode4Earth",
-      "organization_description": "ECMWF Code for Earth is a collaborative programme where each summer several developer teams work on innovative earth sciences-related software.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/44897980?v=4",
-      "project_count": 5,
-      "total_score": 2.854248907717413,
-      "projects": [
-        {
-          "name": "TropiDash",
-          "url": "https://github.com/ECMWFCode4Earth/TropiDash",
-          "category": "Climate Change",
-          "sub_category": "Natural Hazard and Storms",
-          "total_score_combined": 0.6978058344532833
-        },
-        {
-          "name": "ml_drought",
-          "url": "https://github.com/ecmwfcode4earth/ml_drought",
-          "category": "Natural Resources",
-          "sub_category": "Soil and Land",
-          "total_score_combined": 0.6892503054759562
-        },
-        {
-          "name": "wildfire forecasting",
-          "url": "https://github.com/ECMWFCode4Earth/wildfire-forecasting",
+          "name": "DeepForest",
+          "url": "https://github.com/weecology/DeepForest",
           "category": "Biosphere",
-          "sub_category": "Wildfire",
-          "total_score_combined": 0.571290741871582
+          "sub_category": "Forest Remote Sensing",
+          "total_score_combined": 1.3766201507053182
         },
         {
-          "name": "DeepR",
-          "url": "https://github.com/ECMWFCode4Earth/DeepR",
-          "category": "Climate Change",
-          "sub_category": "Climate Downscaling",
-          "total_score_combined": 0.5171688032735486
+          "name": "DeepTreeAttention",
+          "url": "https://github.com/weecology/DeepTreeAttention",
+          "category": "Biosphere",
+          "sub_category": "Forest Remote Sensing",
+          "total_score_combined": 0.5541850477735731
         },
         {
-          "name": "Sketchbook Earth",
-          "url": "https://github.com/ECMWFCode4Earth/sketchbook-earth",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.37873322264304254
-        }
-      ]
-    },
-    {
-      "organization_name": "PowSyBl",
-      "organization_url": "https://github.com/powsybl",
-      "organization_description": "Power System Blocks",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/29916668?v=4",
-      "project_count": 4,
-      "total_score": 5.691023066224954,
-      "projects": [
-        {
-          "name": "PowSyBl",
-          "url": "https://github.com/powsybl/powsybl-core",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 1.7876354919757462
+          "name": "PortalData",
+          "url": "https://github.com/weecology/PortalData",
+          "category": "Biosphere",
+          "sub_category": "Biodiversity Data Access and Management",
+          "total_score_combined": 0.5231009679555372
         },
         {
-          "name": "PyPowSyBl",
-          "url": "https://github.com/powsybl/pypowsybl",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 1.4679953688597664
+          "name": "NeonTreeEvaluation",
+          "url": "https://github.com/weecology/NeonTreeEvaluation",
+          "category": "Biosphere",
+          "sub_category": "Forest Remote Sensing",
+          "total_score_combined": 0.4135160047273403
         },
         {
-          "name": "PowSyBl Open Load Flow",
-          "url": "https://github.com/powsybl/powsybl-open-loadflow",
-          "category": "Energy Systems",
-          "sub_category": "Energy System Modeling Frameworks",
-          "total_score_combined": 1.3022057738487156
-        },
-        {
-          "name": "PowSyBl Tutorials",
-          "url": "https://github.com/powsybl/powsybl-tutorials",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 1.1331864315407252
-        }
-      ]
-    },
-    {
-      "organization_name": "xarray-contrib",
-      "organization_url": "https://github.com/xarray-contrib",
-      "organization_description": "xarray compatible projects",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/35757293?v=4",
-      "project_count": 4,
-      "total_score": 4.266695915888586,
-      "projects": [
-        {
-          "name": "xskillscore",
-          "url": "https://github.com/xarray-contrib/xskillscore",
-          "category": "Climate Change",
-          "sub_category": "Climate Data Processing and Analysis",
-          "total_score_combined": 1.4701930642348464
-        },
-        {
-          "name": "cf-xarray",
-          "url": "https://github.com/xarray-contrib/cf-xarray",
-          "category": "Climate Change",
-          "sub_category": "Climate Data Standards",
-          "total_score_combined": 1.2049993069290668
-        },
-        {
-          "name": "Xarray Tutorial",
-          "url": "https://github.com/xarray-contrib/xarray-tutorial",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.9460389181894531
-        },
-        {
-          "name": "xeofs",
-          "url": "https://github.com/xarray-contrib/xeofs",
-          "category": "Climate Change",
-          "sub_category": "Climate Data Processing and Analysis",
-          "total_score_combined": 0.6454646265352196
-        }
-      ]
-    },
-    {
-      "organization_name": "Data Carpentry",
-      "organization_url": "https://github.com/datacarpentry",
-      "organization_description": "Workshops teaching scientists basic skills for retrieving, viewing, managing, and manipulating data in an open and reproducible way.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6666450?v=4",
-      "project_count": 4,
-      "total_score": 4.264428490592469,
-      "projects": [
-        {
-          "name": "python-ecology-lesson",
-          "url": "https://github.com/datacarpentry/python-ecology-lesson",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 1.1096735450281379
-        },
-        {
-          "name": "Intro to R for Geospatial data",
-          "url": "https://github.com/datacarpentry/r-intro-geospatial",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 1.108151905667402
-        },
-        {
-          "name": "OpenRefine-ecology",
-          "url": "https://github.com/datacarpentry/OpenRefine-ecology-lesson",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 1.077163918132666
-        },
-        {
-          "name": "R-ecology-lesson",
-          "url": "https://github.com/datacarpentry/R-ecology-lesson",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.9694391217642637
+          "name": "portalcasting",
+          "url": "https://github.com/weecology/portalcasting",
+          "category": "Biosphere",
+          "sub_category": "Ecological and Environmental Modeling",
+          "total_score_combined": 0.08741569646961435
         }
       ]
     },
@@ -3981,6 +3624,82 @@
       ]
     },
     {
+      "organization_name": "Brightway LCA Software Framework",
+      "organization_url": "https://github.com/brightway-lca",
+      "organization_description": "Open source framework for Brightway framework",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/26960762?v=4",
+      "project_count": 4,
+      "total_score": 2.7002405882974507,
+      "projects": [
+        {
+          "name": "ecoinvent_interface",
+          "url": "https://github.com/brightway-lca/ecoinvent_interface",
+          "category": "Industrial Ecology",
+          "sub_category": "Life Cycle Assessment",
+          "total_score_combined": 1.0695526335359642
+        },
+        {
+          "name": "timex_lca",
+          "url": "https://github.com/brightway-lca/bw_timex",
+          "category": "Industrial Ecology",
+          "sub_category": "Life Cycle Assessment",
+          "total_score_combined": 0.7275369345141532
+        },
+        {
+          "name": "brightway2",
+          "url": "https://github.com/brightway-lca/brightway2",
+          "category": "Industrial Ecology",
+          "sub_category": "Life Cycle Assessment",
+          "total_score_combined": 0.5042686238515354
+        },
+        {
+          "name": "Brightway2 data management",
+          "url": "https://github.com/brightway-lca/brightway2-data",
+          "category": "Industrial Ecology",
+          "sub_category": "Life Cycle Assessment",
+          "total_score_combined": 0.39888239639579814
+        }
+      ]
+    },
+    {
+      "organization_name": "NASA",
+      "organization_url": "https://github.com/nasa",
+      "organization_description": "Read Instructions here: https://github.com/nasa/instructions/blob/master/docs/INSTRUCTIONS.md",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/848102?v=4",
+      "project_count": 4,
+      "total_score": 2.6637560855878575,
+      "projects": [
+        {
+          "name": "NASA CMR STAC",
+          "url": "https://github.com/nasa/cmr-stac",
+          "category": "Sustainable Development",
+          "sub_category": "Data Catalogs and Interfaces",
+          "total_score_combined": 1.0695661879950427
+        },
+        {
+          "name": "Earthdata Search",
+          "url": "https://github.com/nasa/earthdata-search",
+          "category": "Sustainable Development",
+          "sub_category": "Data Catalogs and Interfaces",
+          "total_score_combined": 1.0033356264412636
+        },
+        {
+          "name": "EMIT-Data-Resources",
+          "url": "https://github.com/nasa/EMIT-Data-Resources",
+          "category": "Emissions",
+          "sub_category": "Emission Observation and Modeling",
+          "total_score_combined": 0.4414113566954744
+        },
+        {
+          "name": "NASAaccess",
+          "url": "https://github.com/nasa/NASAaccess",
+          "category": "Climate Change",
+          "sub_category": "Climate Data Processing and Analysis",
+          "total_score_combined": 0.14944291445607663
+        }
+      ]
+    },
+    {
       "organization_name": "Sienna Platform",
       "organization_url": "https://github.com/Sienna-Platform",
       "organization_description": "Open Source Libraries for Scientific Energy Systems Analysis",
@@ -4015,6 +3734,44 @@
           "category": "Energy Systems",
           "sub_category": "Energy System Modeling Frameworks",
           "total_score_combined": 0.4949938326304244
+        }
+      ]
+    },
+    {
+      "organization_name": "ECMWF Code for Earth",
+      "organization_url": "https://github.com/ECMWFCode4Earth",
+      "organization_description": "ECMWF Code for Earth is a collaborative programme where each summer several developer teams work on innovative earth sciences-related software.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/44897980?v=4",
+      "project_count": 4,
+      "total_score": 2.4755156850743703,
+      "projects": [
+        {
+          "name": "TropiDash",
+          "url": "https://github.com/ECMWFCode4Earth/TropiDash",
+          "category": "Climate Change",
+          "sub_category": "Natural Hazard and Storms",
+          "total_score_combined": 0.6978058344532833
+        },
+        {
+          "name": "ml_drought",
+          "url": "https://github.com/ecmwfcode4earth/ml_drought",
+          "category": "Natural Resources",
+          "sub_category": "Soil and Land",
+          "total_score_combined": 0.6892503054759562
+        },
+        {
+          "name": "wildfire forecasting",
+          "url": "https://github.com/ECMWFCode4Earth/wildfire-forecasting",
+          "category": "Biosphere",
+          "sub_category": "Wildfire",
+          "total_score_combined": 0.571290741871582
+        },
+        {
+          "name": "DeepR",
+          "url": "https://github.com/ECMWFCode4Earth/DeepR",
+          "category": "Climate Change",
+          "sub_category": "Climate Downscaling",
+          "total_score_combined": 0.5171688032735486
         }
       ]
     },
@@ -4129,6 +3886,37 @@
           "category": "Natural Resources",
           "sub_category": "Air Quality",
           "total_score_combined": 0.20710640317404447
+        }
+      ]
+    },
+    {
+      "organization_name": "PowSyBl",
+      "organization_url": "https://github.com/powsybl",
+      "organization_description": "Power System Blocks",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/29916668?v=4",
+      "project_count": 3,
+      "total_score": 4.557836634684229,
+      "projects": [
+        {
+          "name": "PowSyBl",
+          "url": "https://github.com/powsybl/powsybl-core",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 1.7876354919757462
+        },
+        {
+          "name": "PyPowSyBl",
+          "url": "https://github.com/powsybl/pypowsybl",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 1.4679953688597664
+        },
+        {
+          "name": "PowSyBl Open Load Flow",
+          "url": "https://github.com/powsybl/powsybl-open-loadflow",
+          "category": "Energy Systems",
+          "sub_category": "Energy System Modeling Frameworks",
+          "total_score_combined": 1.3022057738487156
         }
       ]
     },
@@ -4257,6 +4045,37 @@
       ]
     },
     {
+      "organization_name": "xarray-contrib",
+      "organization_url": "https://github.com/xarray-contrib",
+      "organization_description": "xarray compatible projects",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/35757293?v=4",
+      "project_count": 3,
+      "total_score": 3.3206569976991327,
+      "projects": [
+        {
+          "name": "xskillscore",
+          "url": "https://github.com/xarray-contrib/xskillscore",
+          "category": "Climate Change",
+          "sub_category": "Climate Data Processing and Analysis",
+          "total_score_combined": 1.4701930642348464
+        },
+        {
+          "name": "cf-xarray",
+          "url": "https://github.com/xarray-contrib/cf-xarray",
+          "category": "Climate Change",
+          "sub_category": "Climate Data Standards",
+          "total_score_combined": 1.2049993069290668
+        },
+        {
+          "name": "xeofs",
+          "url": "https://github.com/xarray-contrib/xeofs",
+          "category": "Climate Change",
+          "sub_category": "Climate Data Processing and Analysis",
+          "total_score_combined": 0.6454646265352196
+        }
+      ]
+    },
+    {
       "organization_name": "CodeCarbon",
       "organization_url": "https://github.com/mlco2",
       "organization_description": "",
@@ -4315,37 +4134,6 @@
           "category": "Atmosphere",
           "sub_category": "Meteorological Observation and Forecast",
           "total_score_combined": 0.8456052141551993
-        }
-      ]
-    },
-    {
-      "organization_name": "eWaterCycle",
-      "organization_url": "https://github.com/eWaterCycle",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/12843269?v=4",
-      "project_count": 3,
-      "total_score": 3.1004757941629277,
-      "projects": [
-        {
-          "name": "era5cli",
-          "url": "https://github.com/eWaterCycle/era5cli",
-          "category": "Climate Change",
-          "sub_category": "Climate Data Processing and Analysis",
-          "total_score_combined": 1.36531285725667
-        },
-        {
-          "name": "eWaterCycle",
-          "url": "https://github.com/eWaterCycle/ewatercycle",
-          "category": "Hydrosphere",
-          "sub_category": "Freshwater and Hydrology",
-          "total_score_combined": 0.9562101412548293
-        },
-        {
-          "name": "River Basin Hydrolog",
-          "url": "https://github.com/ewatercycle/teaching-materials",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.7789527956514286
         }
       ]
     },
@@ -5497,37 +5285,6 @@
       ]
     },
     {
-      "organization_name": "Met Office",
-      "organization_url": "https://github.com/MetOffice",
-      "organization_description": "The Met Office is the UK's National Weather Service",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6997732?v=4",
-      "project_count": 3,
-      "total_score": 1.8026287616160117,
-      "projects": [
-        {
-          "name": "PyPRECIS",
-          "url": "https://github.com/MetOffice/PyPRECIS",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.9474005696148394
-        },
-        {
-          "name": "LFRic",
-          "url": "https://github.com/metoffice/lfric_apps",
-          "category": "Atmosphere",
-          "sub_category": "Atmospheric Composition and Dynamics",
-          "total_score_combined": 0.4730337380581052
-        },
-        {
-          "name": "forest",
-          "url": "https://github.com/MetOffice/forest",
-          "category": "Atmosphere",
-          "sub_category": "Meteorological Observation and Forecast",
-          "total_score_combined": 0.3821944539430671
-        }
-      ]
-    },
-    {
       "organization_name": "Arpae ER - Servizio Idro Meteo Clima",
       "organization_url": "https://github.com/ARPA-SIMC",
       "organization_description": "Agenzia regionale per la prevenzione, l'ambiente e l'energia dell'Emilia-Romagna",
@@ -5776,37 +5533,6 @@
       ]
     },
     {
-      "organization_name": "GreenDelta",
-      "organization_url": "https://github.com/GreenDelta",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/3889246?v=4",
-      "project_count": 3,
-      "total_score": 1.5390899991018037,
-      "projects": [
-        {
-          "name": "openLCA modules",
-          "url": "https://github.com/greendelta/olca-modules",
-          "category": "Industrial Ecology",
-          "sub_category": "Life Cycle Assessment",
-          "total_score_combined": 0.5822938399497765
-        },
-        {
-          "name": "openlca-python-tutorial",
-          "url": "https://github.com/GreenDelta/openlca-python-examples",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5024663163998035
-        },
-        {
-          "name": "OpenLCA",
-          "url": "https://github.com/GreenDelta/olca-app",
-          "category": "Industrial Ecology",
-          "sub_category": "Life Cycle Assessment",
-          "total_score_combined": 0.45432984275222354
-        }
-      ]
-    },
-    {
       "organization_name": "Berkeley Lab - Modeling & Simulation",
       "organization_url": "https://github.com/lbl-srg",
       "organization_description": "",
@@ -5989,37 +5715,6 @@
           "category": "Renewable Energy",
           "sub_category": "Photovoltaics and Solar Energy",
           "total_score_combined": 0.3700898082472819
-        }
-      ]
-    },
-    {
-      "organization_name": "JuliaOcean",
-      "organization_url": "https://github.com/JuliaOcean",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/41747359?v=4",
-      "project_count": 3,
-      "total_score": 1.2410908865095365,
-      "projects": [
-        {
-          "name": "MarineEcosystemsJuliaCon2021.jl",
-          "url": "https://github.com/JuliaOcean/MarineEcosystemsJuliaCon2021.jl",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5491002984915263
-        },
-        {
-          "name": "PlanktonIndividuals.jl",
-          "url": "https://github.com/JuliaOcean/PlanktonIndividuals.jl",
-          "category": "Biosphere",
-          "sub_category": "Marine Life and Fishery",
-          "total_score_combined": 0.367426216162384
-        },
-        {
-          "name": "AIBECS.jl",
-          "url": "https://github.com/juliaocean/aibecs.jl",
-          "category": "Hydrosphere",
-          "sub_category": "Ocean Carbon and Temperature",
-          "total_score_combined": 0.3245643718556261
         }
       ]
     },
@@ -6425,6 +6120,30 @@
           "category": "Atmosphere",
           "sub_category": "Meteorological Observation and Forecast",
           "total_score_combined": 1.0752678477776116
+        }
+      ]
+    },
+    {
+      "organization_name": "eWaterCycle",
+      "organization_url": "https://github.com/eWaterCycle",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/12843269?v=4",
+      "project_count": 2,
+      "total_score": 2.321522998511499,
+      "projects": [
+        {
+          "name": "era5cli",
+          "url": "https://github.com/eWaterCycle/era5cli",
+          "category": "Climate Change",
+          "sub_category": "Climate Data Processing and Analysis",
+          "total_score_combined": 1.36531285725667
+        },
+        {
+          "name": "eWaterCycle",
+          "url": "https://github.com/eWaterCycle/ewatercycle",
+          "category": "Hydrosphere",
+          "sub_category": "Freshwater and Hydrology",
+          "total_score_combined": 0.9562101412548293
         }
       ]
     },
@@ -6933,30 +6652,6 @@
       ]
     },
     {
-      "organization_name": "3DGeo Research Group, Heidelberg University",
-      "organization_url": "https://github.com/3dgeo-heidelberg",
-      "organization_description": "The 3DGeo Research Group investigates and develops computational methods for the geographic analysis of 3D/4D point clouds.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/75726016?v=4",
-      "project_count": 2,
-      "total_score": 1.9628079270144596,
-      "projects": [
-        {
-          "name": "E-TRAINEE",
-          "url": "https://github.com/3dgeo-heidelberg/etrainee",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.994005900196585
-        },
-        {
-          "name": "pytreedb",
-          "url": "https://github.com/3dgeo-heidelberg/pytreedb",
-          "category": "Biosphere",
-          "sub_category": "Forest Remote Sensing",
-          "total_score_combined": 0.9688020268178745
-        }
-      ]
-    },
-    {
       "organization_name": "Goddard Earth Observing System - Earth System Modeling",
       "organization_url": "https://github.com/GEOS-ESM",
       "organization_description": "",
@@ -7049,30 +6744,6 @@
           "category": "Sustainable Development",
           "sub_category": "Taxonomy and Ontology",
           "total_score_combined": 0.9315323947306039
-        }
-      ]
-    },
-    {
-      "organization_name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
-      "organization_url": "https://github.com/ECCO-GROUP",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/34173086?v=4",
-      "project_count": 2,
-      "total_score": 1.9375123890543824,
-      "projects": [
-        {
-          "name": "ecco_v4_py",
-          "url": "https://github.com/ECCO-GROUP/ECCOv4-py",
-          "category": "Cryosphere",
-          "sub_category": "Glacier and Ice Sheets",
-          "total_score_combined": 1.0656306229208579
-        },
-        {
-          "name": "ECCO-v4-Python-Tutorial",
-          "url": "https://github.com/ECCO-GROUP/ECCO-v4-Python-Tutorial",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.8718817661335244
         }
       ]
     },
@@ -7337,30 +7008,6 @@
           "category": "Hydrosphere",
           "sub_category": "Ocean and Hydrology Data Access",
           "total_score_combined": 0.5362856382847158
-        }
-      ]
-    },
-    {
-      "organization_name": "Open Global Glacier Model",
-      "organization_url": "https://github.com/OGGM",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/14758186?v=4",
-      "project_count": 2,
-      "total_score": 1.7548833559622157,
-      "projects": [
-        {
-          "name": "OGGM",
-          "url": "https://github.com/oggm/oggm",
-          "category": "Cryosphere",
-          "sub_category": "Glacier and Ice Sheets",
-          "total_score_combined": 1.0825830045137148
-        },
-        {
-          "name": "World Glaciers Explorer",
-          "url": "https://github.com/OGGM/world-glacier-explorer",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.6723003514485009
         }
       ]
     },
@@ -7725,30 +7372,6 @@
       ]
     },
     {
-      "organization_name": "PO.DAAC",
-      "organization_url": "https://github.com/podaac",
-      "organization_description": "Physical Oceanography Distributed Active Archive Center (PO.DAAC)",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/22459078?v=4",
-      "project_count": 2,
-      "total_score": 1.625046402026653,
-      "projects": [
-        {
-          "name": "PO.DAAC Tutorials",
-          "url": "https://github.com/podaac/tutorials",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.9389805209961934
-        },
-        {
-          "name": "Hydrocron",
-          "url": "https://github.com/podaac/hydrocron",
-          "category": "Hydrosphere",
-          "sub_category": "Ocean and Hydrology Data Access",
-          "total_score_combined": 0.6860658810304597
-        }
-      ]
-    },
-    {
       "organization_name": "iNaturalist",
       "organization_url": "https://github.com/inaturalist",
       "organization_description": "iNaturalist is a global online social network of naturalists. This is our code.",
@@ -7917,30 +7540,6 @@
       ]
     },
     {
-      "organization_name": "Community Surface Dynamics Modeling System",
-      "organization_url": "https://github.com/csdms",
-      "organization_description": "Cyberinfrastructure for the quantitative modeling of earth and planetary surface processes",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6618239?v=4",
-      "project_count": 2,
-      "total_score": 1.5687516935216452,
-      "projects": [
-        {
-          "name": "pymt",
-          "url": "https://github.com/csdms/pymt",
-          "category": "Climate Change",
-          "sub_category": "Earth and Climate Modeling",
-          "total_score_combined": 0.9762689323853546
-        },
-        {
-          "name": "CSDMS Ivy",
-          "url": "https://github.com/csdms/ivy",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5924827611362907
-        }
-      ]
-    },
-    {
       "organization_name": "MET-OM: software for Oceanography and Marine Meteorology",
       "organization_url": "https://github.com/MET-OM",
       "organization_description": "",
@@ -8009,30 +7608,6 @@
           "category": "Consumption",
           "sub_category": "Agriculture and Nutrition",
           "total_score_combined": 0.7591530320274452
-        }
-      ]
-    },
-    {
-      "organization_name": "geocompx",
-      "organization_url": "https://github.com/geocompx",
-      "organization_description": "The geocompx project is a community-driven effort to provide resources for learning and teaching about geocomputation in multiple programming languages.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/108929306?v=4",
-      "project_count": 2,
-      "total_score": 1.535292115845829,
-      "projects": [
-        {
-          "name": "Geocomputation with R",
-          "url": "https://github.com/geocompx/geocompr",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.9492879684503421
-        },
-        {
-          "name": "Geocomputation with Python",
-          "url": "https://github.com/geocompx/geocompy",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.586004147395487
         }
       ]
     },
@@ -8153,30 +7728,6 @@
           "category": "Cryosphere",
           "sub_category": "Sea Ice",
           "total_score_combined": 0.7171212971984618
-        }
-      ]
-    },
-    {
-      "organization_name": "National Snow and Ice Data Center",
-      "organization_url": "https://github.com/nsidc",
-      "organization_description": "University of Colorado Boulder",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/1874284?v=4",
-      "project_count": 2,
-      "total_score": 1.4749807944256994,
-      "projects": [
-        {
-          "name": "NSIDC-Data-Tutorials",
-          "url": "https://github.com/nsidc/NSIDC-Data-Tutorials",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.8554962708057476
-        },
-        {
-          "name": "QGreenland",
-          "url": "https://github.com/nsidc/qgreenland",
-          "category": "Cryosphere",
-          "sub_category": "Glacier and Ice Sheets",
-          "total_score_combined": 0.6194845236199519
         }
       ]
     },
@@ -8973,30 +8524,6 @@
       ]
     },
     {
-      "organization_name": "Euro-Argo ERIC",
-      "organization_url": "https://github.com/euroargodev",
-      "organization_description": "Euro-Argo is the European infrastructure for the Argo programme that aims at sustaining 1/4 of the global network and enhance coverage in European seas.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/57987739?v=4",
-      "project_count": 2,
-      "total_score": 1.1983969844721625,
-      "projects": [
-        {
-          "name": "argopy",
-          "url": "https://github.com/euroargodev/argopy",
-          "category": "Hydrosphere",
-          "sub_category": "Ocean and Hydrology Data Access",
-          "total_score_combined": 0.767865893674105
-        },
-        {
-          "name": "Argo Online School",
-          "url": "https://github.com/euroargodev/argoonlineschool",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.4305310907980575
-        }
-      ]
-    },
-    {
       "organization_name": "Aquatic EcoDynamics research group",
       "organization_url": "https://github.com/AquaticEcoDynamics",
       "organization_description": "",
@@ -9089,30 +8616,6 @@
           "category": "Energy Systems",
           "sub_category": "Energy System Modeling Frameworks",
           "total_score_combined": 0.11449228975199362
-        }
-      ]
-    },
-    {
-      "organization_name": "Earth Lab",
-      "organization_url": "https://github.com/earthlab",
-      "organization_description": "Capitalizing on the data deluge to accelerate science",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/19476722?v=4",
-      "project_count": 2,
-      "total_score": 1.156805931973087,
-      "projects": [
-        {
-          "name": "Free Earth Data Science Courses & Textbooks",
-          "url": "https://github.com/earthlab/earthlab.github.io",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.5971010270767221
-        },
-        {
-          "name": "FIREDpy",
-          "url": "https://github.com/earthlab/firedpy",
-          "category": "Biosphere",
-          "sub_category": "Wildfire",
-          "total_score_combined": 0.559704904896365
         }
       ]
     },
@@ -9477,6 +8980,30 @@
       ]
     },
     {
+      "organization_name": "GreenDelta",
+      "organization_url": "https://github.com/GreenDelta",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/3889246?v=4",
+      "project_count": 2,
+      "total_score": 1.036623682702,
+      "projects": [
+        {
+          "name": "openLCA modules",
+          "url": "https://github.com/greendelta/olca-modules",
+          "category": "Industrial Ecology",
+          "sub_category": "Life Cycle Assessment",
+          "total_score_combined": 0.5822938399497765
+        },
+        {
+          "name": "OpenLCA",
+          "url": "https://github.com/GreenDelta/olca-app",
+          "category": "Industrial Ecology",
+          "sub_category": "Life Cycle Assessment",
+          "total_score_combined": 0.45432984275222354
+        }
+      ]
+    },
+    {
       "organization_name": "Université Gustave Eiffel",
       "organization_url": "https://github.com/Universite-Gustave-Eiffel",
       "organization_description": "The Gustave Eiffel University if a french university born from the fuse of the former Université Paris-Est Marne-la-Vallé and the IFSTTAR institute.",
@@ -9693,6 +9220,30 @@
       ]
     },
     {
+      "organization_name": "Met Office",
+      "organization_url": "https://github.com/MetOffice",
+      "organization_description": "The Met Office is the UK's National Weather Service",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/6997732?v=4",
+      "project_count": 2,
+      "total_score": 0.8552281920011724,
+      "projects": [
+        {
+          "name": "LFRic",
+          "url": "https://github.com/metoffice/lfric_apps",
+          "category": "Atmosphere",
+          "sub_category": "Atmospheric Composition and Dynamics",
+          "total_score_combined": 0.4730337380581052
+        },
+        {
+          "name": "forest",
+          "url": "https://github.com/MetOffice/forest",
+          "category": "Atmosphere",
+          "sub_category": "Meteorological Observation and Forecast",
+          "total_score_combined": 0.3821944539430671
+        }
+      ]
+    },
+    {
       "organization_name": "Brazil Data Cube",
       "organization_url": "https://github.com/brazil-data-cube",
       "organization_description": "Brazil Data Cube is a subproject of the project “Environmental Monitoring of Brazilian Biomes“, funded by the The Amazon Fund in BNDES financial collaboration",
@@ -9861,54 +9412,6 @@
       ]
     },
     {
-      "organization_name": "ECMWF projects",
-      "organization_url": "https://github.com/ecmwf-projects",
-      "organization_description": "Projects of ECMWF for working with weather and climate data",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/75486320?v=4",
-      "project_count": 2,
-      "total_score": 0.7473569789553618,
-      "projects": [
-        {
-          "name": "ibicus",
-          "url": "https://github.com/ecmwf-projects/ibicus",
-          "category": "Climate Change",
-          "sub_category": "Climate Data Processing and Analysis",
-          "total_score_combined": 0.5596841645252829
-        },
-        {
-          "name": "Copernicus Atmosphere Monitoring Service Data Tutorials",
-          "url": "https://ecmwf-projects.github.io/copernicus-training-cams/",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.18767281443007885
-        }
-      ]
-    },
-    {
-      "organization_name": "PV-Tutorials",
-      "organization_url": "https://github.com/PV-Tutorials",
-      "organization_description": "Tutorial materials for open-source python packages for simulating and analyzing photovoltaic power systems",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/84424783?v=4",
-      "project_count": 2,
-      "total_score": 0.7406965045284074,
-      "projects": [
-        {
-          "name": "pv-tutorials",
-          "url": "https://github.com/pv-tutorials/pv-tutorials.github.io",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.6978754043329218
-        },
-        {
-          "name": "PVSC48-Python-Tutorial",
-          "url": "https://pvsc-python-tutorials.github.io/pvsc48-python-tutorial",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.042821100195485524
-        }
-      ]
-    },
-    {
       "organization_name": "HyRiver",
       "organization_url": "https://github.com/hyriver",
       "organization_description": "A suite of Python packages that provides a unified API for retrieving geospatial/temporal data from various web services",
@@ -9929,6 +9432,30 @@
           "category": "Hydrosphere",
           "sub_category": "Ocean and Hydrology Data Access",
           "total_score_combined": 0.27088609662735696
+        }
+      ]
+    },
+    {
+      "organization_name": "JuliaOcean",
+      "organization_url": "https://github.com/JuliaOcean",
+      "organization_description": "",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/41747359?v=4",
+      "project_count": 2,
+      "total_score": 0.6919905880180102,
+      "projects": [
+        {
+          "name": "PlanktonIndividuals.jl",
+          "url": "https://github.com/JuliaOcean/PlanktonIndividuals.jl",
+          "category": "Biosphere",
+          "sub_category": "Marine Life and Fishery",
+          "total_score_combined": 0.367426216162384
+        },
+        {
+          "name": "AIBECS.jl",
+          "url": "https://github.com/juliaocean/aibecs.jl",
+          "category": "Hydrosphere",
+          "sub_category": "Ocean Carbon and Temperature",
+          "total_score_combined": 0.3245643718556261
         }
       ]
     },
@@ -10121,30 +9648,6 @@
           "category": "Industrial Ecology",
           "sub_category": "Circular Economy and Waste",
           "total_score_combined": 0.12640733916292873
-        }
-      ]
-    },
-    {
-      "organization_name": "Radiant Earth",
-      "organization_url": "https://github.com/radiantearth",
-      "organization_description": "Increasing shared understanding of our world by making data easier to access and use.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/25801078?v=4",
-      "project_count": 2,
-      "total_score": 0.38931907145257405,
-      "projects": [
-        {
-          "name": "Radiant MLHub Python Client",
-          "url": "https://github.com/radiantearth/radiant-mlhub",
-          "category": "Sustainable Development",
-          "sub_category": "Data Catalogs and Interfaces",
-          "total_score_combined": 0.3100906214836371
-        },
-        {
-          "name": "Radiant MLHub Tutorials",
-          "url": "https://github.com/radiantearth/mlhub-tutorials",
-          "category": "Sustainable Development",
-          "sub_category": "Education",
-          "total_score_combined": 0.07922844996893699
         }
       ]
     },
@@ -11539,9 +11042,9 @@
       {
         "name": "NSF National Center for Atmospheric Research",
         "kind": "organization",
-        "value": 15,
+        "value": 14,
         "url": "https://github.com/NCAR",
-        "total_score": 13.132040330398342,
+        "total_score": 12.651048258106655,
         "children": [
           {
             "name": "WRF-Hydro",
@@ -11661,15 +11164,6 @@
             "total_score_combined": 0.6689920409658489
           },
           {
-            "name": "ICAR",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/NCAR/icar",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.4809920722916856
-          },
-          {
             "name": "LROSE",
             "kind": "project",
             "value": 1,
@@ -11683,9 +11177,9 @@
       {
         "name": "European Centre for Medium-Range Weather Forecasts",
         "kind": "organization",
-        "value": 15,
+        "value": 14,
         "url": "https://github.com/ecmwf",
-        "total_score": 12.910300587599849,
+        "total_score": 12.119766442396013,
         "children": [
           {
             "name": "cdsapi",
@@ -11778,15 +11272,6 @@
             "total_score_combined": 0.8640741152140177
           },
           {
-            "name": "How to work with meteorological ECMWF data",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ecmwf/notebook-examples",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.7905341452038359
-          },
-          {
             "name": "eccodes",
             "kind": "project",
             "value": 1,
@@ -11821,132 +11306,6 @@
             "category": "Atmosphere",
             "sub_category": "Meteorological Observation and Forecast",
             "total_score_combined": 0.09585240830603471
-          }
-        ]
-      },
-      {
-        "name": "U.S. Geological Survey",
-        "kind": "organization",
-        "value": 13,
-        "url": "https://github.com/DOI-USGS",
-        "total_score": 8.662708286214551,
-        "children": [
-          {
-            "name": "dataretrieval-python",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/dataretrieval-python",
-            "category": "Natural Resources",
-            "sub_category": "Water Supply and Quality",
-            "total_score_combined": 1.1180248574958165
-          },
-          {
-            "name": "hyswap",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/doi-usgs/hyswap",
-            "category": "Hydrosphere",
-            "sub_category": "Freshwater and Hydrology",
-            "total_score_combined": 0.9865556781955839
-          },
-          {
-            "name": "python-for-hydrology",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/python-for-hydrology",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.8951312733374275
-          },
-          {
-            "name": "dataRetrieval",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/dataRetrieval",
-            "category": "Natural Resources",
-            "sub_category": "Water Supply and Quality",
-            "total_score_combined": 0.8439506191208169
-          },
-          {
-            "name": "From Snow to Flow",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/snow-to-flow",
-            "category": "Cryosphere",
-            "sub_category": "Snow and Permafrost",
-            "total_score_combined": 0.8194613205070265
-          },
-          {
-            "name": "Delaware River Basin Story",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/delaware-basin-story",
-            "category": "Hydrosphere",
-            "sub_category": "Freshwater and Hydrology",
-            "total_score_combined": 0.7413290949291157
-          },
-          {
-            "name": "EGRET",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/EGRET",
-            "category": "Natural Resources",
-            "sub_category": "Water Supply and Quality",
-            "total_score_combined": 0.6795258136501591
-          },
-          {
-            "name": "gw-conditions",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/doi-usgs/gw-conditions",
-            "category": "Natural Resources",
-            "sub_category": "Water Supply and Quality",
-            "total_score_combined": 0.5761201419942795
-          },
-          {
-            "name": "nhdplusTools",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/doi-usgs/hydrogeofetch",
-            "category": "Natural Resources",
-            "sub_category": "Water Supply and Quality",
-            "total_score_combined": 0.5574810988538266
-          },
-          {
-            "name": "pywatershed",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/doi-usgs/pywatershed",
-            "category": "Hydrosphere",
-            "sub_category": "Freshwater and Hydrology",
-            "total_score_combined": 0.4433040147279079
-          },
-          {
-            "name": "HASP",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/HASP",
-            "category": "Natural Resources",
-            "sub_category": "Water Supply and Quality",
-            "total_score_combined": 0.34775654709448445
-          },
-          {
-            "name": "flow-tiles",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/flow-tiles",
-            "category": "Hydrosphere",
-            "sub_category": "Freshwater and Hydrology",
-            "total_score_combined": 0.3296071356641752
-          },
-          {
-            "name": "COAWST",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/DOI-USGS/COAWST",
-            "category": "Hydrosphere",
-            "sub_category": "Coastal and Reefs",
-            "total_score_combined": 0.3244606906439302
           }
         ]
       },
@@ -12064,6 +11423,123 @@
             "category": "Atmosphere",
             "sub_category": "Atmospheric Composition and Dynamics",
             "total_score_combined": 0.13210235754931346
+          }
+        ]
+      },
+      {
+        "name": "U.S. Geological Survey",
+        "kind": "organization",
+        "value": 12,
+        "url": "https://github.com/DOI-USGS",
+        "total_score": 7.767577012877123,
+        "children": [
+          {
+            "name": "dataretrieval-python",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/dataretrieval-python",
+            "category": "Natural Resources",
+            "sub_category": "Water Supply and Quality",
+            "total_score_combined": 1.1180248574958165
+          },
+          {
+            "name": "hyswap",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/doi-usgs/hyswap",
+            "category": "Hydrosphere",
+            "sub_category": "Freshwater and Hydrology",
+            "total_score_combined": 0.9865556781955839
+          },
+          {
+            "name": "dataRetrieval",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/dataRetrieval",
+            "category": "Natural Resources",
+            "sub_category": "Water Supply and Quality",
+            "total_score_combined": 0.8439506191208169
+          },
+          {
+            "name": "From Snow to Flow",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/snow-to-flow",
+            "category": "Cryosphere",
+            "sub_category": "Snow and Permafrost",
+            "total_score_combined": 0.8194613205070265
+          },
+          {
+            "name": "Delaware River Basin Story",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/delaware-basin-story",
+            "category": "Hydrosphere",
+            "sub_category": "Freshwater and Hydrology",
+            "total_score_combined": 0.7413290949291157
+          },
+          {
+            "name": "EGRET",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/EGRET",
+            "category": "Natural Resources",
+            "sub_category": "Water Supply and Quality",
+            "total_score_combined": 0.6795258136501591
+          },
+          {
+            "name": "gw-conditions",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/doi-usgs/gw-conditions",
+            "category": "Natural Resources",
+            "sub_category": "Water Supply and Quality",
+            "total_score_combined": 0.5761201419942795
+          },
+          {
+            "name": "nhdplusTools",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/doi-usgs/hydrogeofetch",
+            "category": "Natural Resources",
+            "sub_category": "Water Supply and Quality",
+            "total_score_combined": 0.5574810988538266
+          },
+          {
+            "name": "pywatershed",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/doi-usgs/pywatershed",
+            "category": "Hydrosphere",
+            "sub_category": "Freshwater and Hydrology",
+            "total_score_combined": 0.4433040147279079
+          },
+          {
+            "name": "HASP",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/HASP",
+            "category": "Natural Resources",
+            "sub_category": "Water Supply and Quality",
+            "total_score_combined": 0.34775654709448445
+          },
+          {
+            "name": "flow-tiles",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/flow-tiles",
+            "category": "Hydrosphere",
+            "sub_category": "Freshwater and Hydrology",
+            "total_score_combined": 0.3296071356641752
+          },
+          {
+            "name": "COAWST",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/DOI-USGS/COAWST",
+            "category": "Hydrosphere",
+            "sub_category": "Coastal and Reefs",
+            "total_score_combined": 0.3244606906439302
           }
         ]
       },
@@ -12356,96 +11832,6 @@
         ]
       },
       {
-        "name": "oemof community",
-        "kind": "organization",
-        "value": 9,
-        "url": "https://github.com/oemof",
-        "total_score": 8.562554121021543,
-        "children": [
-          {
-            "name": "oemof-solph",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/oemof-solph",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 1.5796695371255023
-          },
-          {
-            "name": "feedinlib",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/feedinlib",
-            "category": "Renewable Energy",
-            "sub_category": "Photovoltaics and Solar Energy",
-            "total_score_combined": 1.2136948611957297
-          },
-          {
-            "name": "oemof",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/oemof",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 1.1697648359768147
-          },
-          {
-            "name": "demandlib",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/oemof-demand",
-            "category": "Energy Systems",
-            "sub_category": "Load and Demand Forecasting",
-            "total_score_combined": 1.1122317455103088
-          },
-          {
-            "name": "oemof-thermal",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/oemof-thermal",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 0.8937212411741451
-          },
-          {
-            "name": "ExerPy",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/exerpy",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 0.865196637328472
-          },
-          {
-            "name": "tespy",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/tespy",
-            "category": "Consumption",
-            "sub_category": "Buildings and Heating",
-            "total_score_combined": 0.8011977998611854
-          },
-          {
-            "name": "DHNx",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/DHNx",
-            "category": "Consumption",
-            "sub_category": "Buildings and Heating",
-            "total_score_combined": 0.5791023280459918
-          },
-          {
-            "name": "oemof Workshop on Modeling Heat Pumps",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oemof/heat-pump-tutorial",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.3479751348033937
-          }
-        ]
-      },
-      {
         "name": "Sandia National Laboratories",
         "kind": "organization",
         "value": 9,
@@ -12626,186 +12012,6 @@
         ]
       },
       {
-        "name": "Open Energy Transition",
-        "kind": "organization",
-        "value": 9,
-        "url": "https://github.com/open-energy-transition",
-        "total_score": 6.275480456239299,
-        "children": [
-          {
-            "name": "PyPSA-Wal",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/pypsa-wal",
-            "category": "Energy Systems",
-            "sub_category": "Global and Regional Energy System Models",
-            "total_score_combined": 1.1145285671150775
-          },
-          {
-            "name": "Open-TYNDP",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/open-tyndp",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 0.9603133484144527
-          },
-          {
-            "name": "Open Energy Benchmark",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/solver-benchmark",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 0.9544085085149747
-          },
-          {
-            "name": "MapYourGrid",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/mapyourgrid",
-            "category": "Energy Systems",
-            "sub_category": "Energy Data Accessibility and Integration",
-            "total_score_combined": 0.904133711656116
-          },
-          {
-            "name": "Open-TYNDP Workshops",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/open-tyndp-workshops",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.6342313070839852
-          },
-          {
-            "name": "Electricity Demand Data",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/demandcast",
-            "category": "Energy Systems",
-            "sub_category": "Load and Demand Forecasting",
-            "total_score_combined": 0.5569167293979731
-          },
-          {
-            "name": "Awesome Electric Grid Mapping",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping",
-            "category": "Sustainable Development",
-            "sub_category": "Curated Lists",
-            "total_score_combined": 0.5180943136625744
-          },
-          {
-            "name": "Awesome Grid Model Data",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/awesome-electricity-demand",
-            "category": "Energy Systems",
-            "sub_category": "Energy Data Accessibility and Integration",
-            "total_score_combined": 0.3995105207163761
-          },
-          {
-            "name": "EarthPV",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/open-energy-transition/earthpv",
-            "category": "Renewable Energy",
-            "sub_category": "Photovoltaics and Solar Energy",
-            "total_score_combined": 0.23334344967776965
-          }
-        ]
-      },
-      {
-        "name": "IIASA",
-        "kind": "organization",
-        "value": 9,
-        "url": "https://github.com/iiasa",
-        "total_score": 5.5851897861283755,
-        "children": [
-          {
-            "name": "MESSAGEix",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/message_ix",
-            "category": "Climate Change",
-            "sub_category": "Integrated Assessment and Climate Policy",
-            "total_score_combined": 1.1962996591012824
-          },
-          {
-            "name": "MESSAGEix-GLOBIOM",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/message-ix-models",
-            "category": "Climate Change",
-            "sub_category": "Integrated Assessment and Climate Policy",
-            "total_score_combined": 1.0223808558975829
-          },
-          {
-            "name": "ixmp",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/ixmp",
-            "category": "Climate Change",
-            "sub_category": "Integrated Assessment and Climate Policy",
-            "total_score_combined": 0.8681242434874102
-          },
-          {
-            "name": "CWatM",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/CWatM",
-            "category": "Natural Resources",
-            "sub_category": "Water Supply and Quality",
-            "total_score_combined": 0.7882467643417304
-          },
-          {
-            "name": "RE4AFAGRI",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/RE4AFAGRI_platform",
-            "category": "Energy Systems",
-            "sub_category": "Energy Data Accessibility and Integration",
-            "total_score_combined": 0.6865112782825948
-          },
-          {
-            "name": "An introduction to Systematic conservation planning with prioritzr",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/eccb2024",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5675908567688245
-          },
-          {
-            "name": "ibis.iSDM",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/ibis.iSDM",
-            "category": "Biosphere",
-            "sub_category": "Species Distribution Modeling",
-            "total_score_combined": 0.2356637815893024
-          },
-          {
-            "name": "ipcc_sr15_scenario_analysis",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/ipcc_sr15_scenario_analysis",
-            "category": "Climate Change",
-            "sub_category": "Integrated Assessment and Climate Policy",
-            "total_score_combined": 0.14252919467032588
-          },
-          {
-            "name": "ENGAGE",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/iiasa/ENGAGE-netzero-analysis",
-            "category": "Climate Change",
-            "sub_category": "Integrated Assessment and Climate Policy",
-            "total_score_combined": 0.07784315198932229
-          }
-        ]
-      },
-      {
         "name": "NSF Unidata",
         "kind": "organization",
         "value": 8,
@@ -12887,6 +12093,87 @@
         ]
       },
       {
+        "name": "oemof community",
+        "kind": "organization",
+        "value": 8,
+        "url": "https://github.com/oemof",
+        "total_score": 8.21457898621815,
+        "children": [
+          {
+            "name": "oemof-solph",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/oemof-solph",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 1.5796695371255023
+          },
+          {
+            "name": "feedinlib",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/feedinlib",
+            "category": "Renewable Energy",
+            "sub_category": "Photovoltaics and Solar Energy",
+            "total_score_combined": 1.2136948611957297
+          },
+          {
+            "name": "oemof",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/oemof",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 1.1697648359768147
+          },
+          {
+            "name": "demandlib",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/oemof-demand",
+            "category": "Energy Systems",
+            "sub_category": "Load and Demand Forecasting",
+            "total_score_combined": 1.1122317455103088
+          },
+          {
+            "name": "oemof-thermal",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/oemof-thermal",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 0.8937212411741451
+          },
+          {
+            "name": "ExerPy",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/exerpy",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 0.865196637328472
+          },
+          {
+            "name": "tespy",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/tespy",
+            "category": "Consumption",
+            "sub_category": "Buildings and Heating",
+            "total_score_combined": 0.8011977998611854
+          },
+          {
+            "name": "DHNx",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/oemof/DHNx",
+            "category": "Consumption",
+            "sub_category": "Buildings and Heating",
+            "total_score_combined": 0.5791023280459918
+          }
+        ]
+      },
+      {
         "name": "Joint Global Change Research Institute",
         "kind": "organization",
         "value": 8,
@@ -12964,6 +12251,168 @@
             "category": "Consumption",
             "sub_category": "Agriculture and Nutrition",
             "total_score_combined": 0.3096433926811594
+          }
+        ]
+      },
+      {
+        "name": "Open Energy Transition",
+        "kind": "organization",
+        "value": 8,
+        "url": "https://github.com/open-energy-transition",
+        "total_score": 5.641249149155314,
+        "children": [
+          {
+            "name": "PyPSA-Wal",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/pypsa-wal",
+            "category": "Energy Systems",
+            "sub_category": "Global and Regional Energy System Models",
+            "total_score_combined": 1.1145285671150775
+          },
+          {
+            "name": "Open-TYNDP",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/open-tyndp",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 0.9603133484144527
+          },
+          {
+            "name": "Open Energy Benchmark",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/solver-benchmark",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 0.9544085085149747
+          },
+          {
+            "name": "MapYourGrid",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/mapyourgrid",
+            "category": "Energy Systems",
+            "sub_category": "Energy Data Accessibility and Integration",
+            "total_score_combined": 0.904133711656116
+          },
+          {
+            "name": "Electricity Demand Data",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/demandcast",
+            "category": "Energy Systems",
+            "sub_category": "Load and Demand Forecasting",
+            "total_score_combined": 0.5569167293979731
+          },
+          {
+            "name": "Awesome Electric Grid Mapping",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping",
+            "category": "Sustainable Development",
+            "sub_category": "Curated Lists",
+            "total_score_combined": 0.5180943136625744
+          },
+          {
+            "name": "Awesome Grid Model Data",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/awesome-electricity-demand",
+            "category": "Energy Systems",
+            "sub_category": "Energy Data Accessibility and Integration",
+            "total_score_combined": 0.3995105207163761
+          },
+          {
+            "name": "EarthPV",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/open-energy-transition/earthpv",
+            "category": "Renewable Energy",
+            "sub_category": "Photovoltaics and Solar Energy",
+            "total_score_combined": 0.23334344967776965
+          }
+        ]
+      },
+      {
+        "name": "IIASA",
+        "kind": "organization",
+        "value": 8,
+        "url": "https://github.com/iiasa",
+        "total_score": 5.017598929359551,
+        "children": [
+          {
+            "name": "MESSAGEix",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/message_ix",
+            "category": "Climate Change",
+            "sub_category": "Integrated Assessment and Climate Policy",
+            "total_score_combined": 1.1962996591012824
+          },
+          {
+            "name": "MESSAGEix-GLOBIOM",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/message-ix-models",
+            "category": "Climate Change",
+            "sub_category": "Integrated Assessment and Climate Policy",
+            "total_score_combined": 1.0223808558975829
+          },
+          {
+            "name": "ixmp",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/ixmp",
+            "category": "Climate Change",
+            "sub_category": "Integrated Assessment and Climate Policy",
+            "total_score_combined": 0.8681242434874102
+          },
+          {
+            "name": "CWatM",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/CWatM",
+            "category": "Natural Resources",
+            "sub_category": "Water Supply and Quality",
+            "total_score_combined": 0.7882467643417304
+          },
+          {
+            "name": "RE4AFAGRI",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/RE4AFAGRI_platform",
+            "category": "Energy Systems",
+            "sub_category": "Energy Data Accessibility and Integration",
+            "total_score_combined": 0.6865112782825948
+          },
+          {
+            "name": "ibis.iSDM",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/ibis.iSDM",
+            "category": "Biosphere",
+            "sub_category": "Species Distribution Modeling",
+            "total_score_combined": 0.2356637815893024
+          },
+          {
+            "name": "ipcc_sr15_scenario_analysis",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/ipcc_sr15_scenario_analysis",
+            "category": "Climate Change",
+            "sub_category": "Integrated Assessment and Climate Policy",
+            "total_score_combined": 0.14252919467032588
+          },
+          {
+            "name": "ENGAGE",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/iiasa/ENGAGE-netzero-analysis",
+            "category": "Climate Change",
+            "sub_category": "Integrated Assessment and Climate Policy",
+            "total_score_combined": 0.07784315198932229
           }
         ]
       },
@@ -13171,69 +12620,6 @@
             "category": "Atmosphere",
             "sub_category": "Meteorological Observation and Forecast",
             "total_score_combined": 0.6225225647076941
-          }
-        ]
-      },
-      {
-        "name": "Pangeo",
-        "kind": "organization",
-        "value": 6,
-        "url": "https://github.com/pangeo-data",
-        "total_score": 6.050226651562085,
-        "children": [
-          {
-            "name": "pangeo",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/pangeo-data/pangeo",
-            "category": "Climate Change",
-            "sub_category": "Earth and Climate Modeling",
-            "total_score_combined": 1.4269317017447043
-          },
-          {
-            "name": "Awesome Open Climate Science",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/pangeo-data/awesome-open-climate-science",
-            "category": "Sustainable Development",
-            "sub_category": "Curated Lists",
-            "total_score_combined": 1.2426248750663873
-          },
-          {
-            "name": "climpred",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/pangeo-data/climpred",
-            "category": "Climate Change",
-            "sub_category": "Climate Data Processing and Analysis",
-            "total_score_combined": 1.1344997282650302
-          },
-          {
-            "name": "scikit-downscale",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/pangeo-data/scikit-downscale",
-            "category": "Climate Change",
-            "sub_category": "Climate Downscaling",
-            "total_score_combined": 0.9111977118595103
-          },
-          {
-            "name": "Pangeo Docker Images",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/pangeo-data/pangeo-docker-images",
-            "category": "Climate Change",
-            "sub_category": "Earth and Climate Modeling",
-            "total_score_combined": 0.7955879707900538
-          },
-          {
-            "name": "Harnessing the Power of Pangeo",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/pangeo-data/egu-2025-course",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5393846638363983
           }
         ]
       },
@@ -13490,132 +12876,6 @@
         ]
       },
       {
-        "name": "NASA",
-        "kind": "organization",
-        "value": 6,
-        "url": "https://github.com/nasa",
-        "total_score": 3.9147055440172047,
-        "children": [
-          {
-            "name": "NASA CMR STAC",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nasa/cmr-stac",
-            "category": "Sustainable Development",
-            "sub_category": "Data Catalogs and Interfaces",
-            "total_score_combined": 1.0695661879950427
-          },
-          {
-            "name": "Earthdata Search",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nasa/earthdata-search",
-            "category": "Sustainable Development",
-            "sub_category": "Data Catalogs and Interfaces",
-            "total_score_combined": 1.0033356264412636
-          },
-          {
-            "name": "LPDAAC-Data-Resource",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nasa/LPDAAC-Data-Resources",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.6749353115701752
-          },
-          {
-            "name": "VITALS",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nasa/vitals",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5760141468591723
-          },
-          {
-            "name": "EMIT-Data-Resources",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nasa/EMIT-Data-Resources",
-            "category": "Emissions",
-            "sub_category": "Emission Observation and Modeling",
-            "total_score_combined": 0.4414113566954744
-          },
-          {
-            "name": "NASAaccess",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nasa/NASAaccess",
-            "category": "Climate Change",
-            "sub_category": "Climate Data Processing and Analysis",
-            "total_score_combined": 0.14944291445607663
-          }
-        ]
-      },
-      {
-        "name": "Weecology",
-        "kind": "organization",
-        "value": 6,
-        "url": "https://github.com/weecology",
-        "total_score": 3.472836622163189,
-        "children": [
-          {
-            "name": "DeepForest",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/weecology/DeepForest",
-            "category": "Biosphere",
-            "sub_category": "Forest Remote Sensing",
-            "total_score_combined": 1.3766201507053182
-          },
-          {
-            "name": "DeepTreeAttention",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/weecology/DeepTreeAttention",
-            "category": "Biosphere",
-            "sub_category": "Forest Remote Sensing",
-            "total_score_combined": 0.5541850477735731
-          },
-          {
-            "name": "PortalData",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/weecology/PortalData",
-            "category": "Biosphere",
-            "sub_category": "Biodiversity Data Access and Management",
-            "total_score_combined": 0.5231009679555372
-          },
-          {
-            "name": "Ecological Forecasting & Dynamics Course",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/weecology/forecasting-course",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5179987545318053
-          },
-          {
-            "name": "NeonTreeEvaluation",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/weecology/NeonTreeEvaluation",
-            "category": "Biosphere",
-            "sub_category": "Forest Remote Sensing",
-            "total_score_combined": 0.4135160047273403
-          },
-          {
-            "name": "portalcasting",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/weecology/portalcasting",
-            "category": "Biosphere",
-            "sub_category": "Ecological and Environmental Modeling",
-            "total_score_combined": 0.08741569646961435
-          }
-        ]
-      },
-      {
         "name": "BlueGreen Labs",
         "kind": "organization",
         "value": 6,
@@ -13729,6 +12989,60 @@
             "category": "Climate Change",
             "sub_category": "Climate Data Processing and Analysis",
             "total_score_combined": 0.7463733977908383
+          }
+        ]
+      },
+      {
+        "name": "Pangeo",
+        "kind": "organization",
+        "value": 5,
+        "url": "https://github.com/pangeo-data",
+        "total_score": 5.510841987725686,
+        "children": [
+          {
+            "name": "pangeo",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/pangeo-data/pangeo",
+            "category": "Climate Change",
+            "sub_category": "Earth and Climate Modeling",
+            "total_score_combined": 1.4269317017447043
+          },
+          {
+            "name": "Awesome Open Climate Science",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/pangeo-data/awesome-open-climate-science",
+            "category": "Sustainable Development",
+            "sub_category": "Curated Lists",
+            "total_score_combined": 1.2426248750663873
+          },
+          {
+            "name": "climpred",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/pangeo-data/climpred",
+            "category": "Climate Change",
+            "sub_category": "Climate Data Processing and Analysis",
+            "total_score_combined": 1.1344997282650302
+          },
+          {
+            "name": "scikit-downscale",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/pangeo-data/scikit-downscale",
+            "category": "Climate Change",
+            "sub_category": "Climate Downscaling",
+            "total_score_combined": 0.9111977118595103
+          },
+          {
+            "name": "Pangeo Docker Images",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/pangeo-data/pangeo-docker-images",
+            "category": "Climate Change",
+            "sub_category": "Earth and Climate Modeling",
+            "total_score_combined": 0.7955879707900538
           }
         ]
       },
@@ -13949,60 +13263,6 @@
         ]
       },
       {
-        "name": "Project Pythia",
-        "kind": "organization",
-        "value": 5,
-        "url": "https://github.com/ProjectPythia",
-        "total_score": 3.465060077353261,
-        "children": [
-          {
-            "name": "Project Pythia",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/projectpythia/pythia-foundations",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 1.111511097918303
-          },
-          {
-            "name": "CMIP6 Cookbook",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/projectpythia/cmip6-cookbook",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.7753651722933491
-          },
-          {
-            "name": "Radar Cookbook",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/projectpythia/radar-cookbook",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.6993903966872247
-          },
-          {
-            "name": "Landsat ML Cookbook",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/projectpythia/landsat-ml-cookbook",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.483628858262155
-          },
-          {
-            "name": "Earth Observation Data Science Cookbook",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/projectpythia/eo-datascience-cookbook",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.39516455219222935
-          }
-        ]
-      },
-      {
         "name": "World Resources Institute",
         "kind": "organization",
         "value": 5,
@@ -14057,245 +13317,56 @@
         ]
       },
       {
-        "name": "Brightway LCA Software Framework",
+        "name": "Weecology",
         "kind": "organization",
         "value": 5,
-        "url": "https://github.com/brightway-lca",
-        "total_score": 3.177060266140211,
+        "url": "https://github.com/weecology",
+        "total_score": 2.9548378676313836,
         "children": [
           {
-            "name": "ecoinvent_interface",
+            "name": "DeepForest",
             "kind": "project",
             "value": 1,
-            "url": "https://github.com/brightway-lca/ecoinvent_interface",
-            "category": "Industrial Ecology",
-            "sub_category": "Life Cycle Assessment",
-            "total_score_combined": 1.0695526335359642
-          },
-          {
-            "name": "timex_lca",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/brightway-lca/bw_timex",
-            "category": "Industrial Ecology",
-            "sub_category": "Life Cycle Assessment",
-            "total_score_combined": 0.7275369345141532
-          },
-          {
-            "name": "brightway2",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/brightway-lca/brightway2",
-            "category": "Industrial Ecology",
-            "sub_category": "Life Cycle Assessment",
-            "total_score_combined": 0.5042686238515354
-          },
-          {
-            "name": "Learn Brightway",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/brightway-lca/brightway-book",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.4768196778427603
-          },
-          {
-            "name": "Brightway2 data management",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/brightway-lca/brightway2-data",
-            "category": "Industrial Ecology",
-            "sub_category": "Life Cycle Assessment",
-            "total_score_combined": 0.39888239639579814
-          }
-        ]
-      },
-      {
-        "name": "ECMWF Code for Earth",
-        "kind": "organization",
-        "value": 5,
-        "url": "https://github.com/ECMWFCode4Earth",
-        "total_score": 2.854248907717413,
-        "children": [
-          {
-            "name": "TropiDash",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ECMWFCode4Earth/TropiDash",
-            "category": "Climate Change",
-            "sub_category": "Natural Hazard and Storms",
-            "total_score_combined": 0.6978058344532833
-          },
-          {
-            "name": "ml_drought",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ecmwfcode4earth/ml_drought",
-            "category": "Natural Resources",
-            "sub_category": "Soil and Land",
-            "total_score_combined": 0.6892503054759562
-          },
-          {
-            "name": "wildfire forecasting",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ECMWFCode4Earth/wildfire-forecasting",
+            "url": "https://github.com/weecology/DeepForest",
             "category": "Biosphere",
-            "sub_category": "Wildfire",
-            "total_score_combined": 0.571290741871582
+            "sub_category": "Forest Remote Sensing",
+            "total_score_combined": 1.3766201507053182
           },
           {
-            "name": "DeepR",
+            "name": "DeepTreeAttention",
             "kind": "project",
             "value": 1,
-            "url": "https://github.com/ECMWFCode4Earth/DeepR",
-            "category": "Climate Change",
-            "sub_category": "Climate Downscaling",
-            "total_score_combined": 0.5171688032735486
+            "url": "https://github.com/weecology/DeepTreeAttention",
+            "category": "Biosphere",
+            "sub_category": "Forest Remote Sensing",
+            "total_score_combined": 0.5541850477735731
           },
           {
-            "name": "Sketchbook Earth",
+            "name": "PortalData",
             "kind": "project",
             "value": 1,
-            "url": "https://github.com/ECMWFCode4Earth/sketchbook-earth",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.37873322264304254
-          }
-        ]
-      },
-      {
-        "name": "PowSyBl",
-        "kind": "organization",
-        "value": 4,
-        "url": "https://github.com/powsybl",
-        "total_score": 5.691023066224954,
-        "children": [
-          {
-            "name": "PowSyBl",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/powsybl/powsybl-core",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 1.7876354919757462
+            "url": "https://github.com/weecology/PortalData",
+            "category": "Biosphere",
+            "sub_category": "Biodiversity Data Access and Management",
+            "total_score_combined": 0.5231009679555372
           },
           {
-            "name": "PyPowSyBl",
+            "name": "NeonTreeEvaluation",
             "kind": "project",
             "value": 1,
-            "url": "https://github.com/powsybl/pypowsybl",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 1.4679953688597664
+            "url": "https://github.com/weecology/NeonTreeEvaluation",
+            "category": "Biosphere",
+            "sub_category": "Forest Remote Sensing",
+            "total_score_combined": 0.4135160047273403
           },
           {
-            "name": "PowSyBl Open Load Flow",
+            "name": "portalcasting",
             "kind": "project",
             "value": 1,
-            "url": "https://github.com/powsybl/powsybl-open-loadflow",
-            "category": "Energy Systems",
-            "sub_category": "Energy System Modeling Frameworks",
-            "total_score_combined": 1.3022057738487156
-          },
-          {
-            "name": "PowSyBl Tutorials",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/powsybl/powsybl-tutorials",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 1.1331864315407252
-          }
-        ]
-      },
-      {
-        "name": "xarray-contrib",
-        "kind": "organization",
-        "value": 4,
-        "url": "https://github.com/xarray-contrib",
-        "total_score": 4.266695915888586,
-        "children": [
-          {
-            "name": "xskillscore",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/xarray-contrib/xskillscore",
-            "category": "Climate Change",
-            "sub_category": "Climate Data Processing and Analysis",
-            "total_score_combined": 1.4701930642348464
-          },
-          {
-            "name": "cf-xarray",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/xarray-contrib/cf-xarray",
-            "category": "Climate Change",
-            "sub_category": "Climate Data Standards",
-            "total_score_combined": 1.2049993069290668
-          },
-          {
-            "name": "Xarray Tutorial",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/xarray-contrib/xarray-tutorial",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.9460389181894531
-          },
-          {
-            "name": "xeofs",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/xarray-contrib/xeofs",
-            "category": "Climate Change",
-            "sub_category": "Climate Data Processing and Analysis",
-            "total_score_combined": 0.6454646265352196
-          }
-        ]
-      },
-      {
-        "name": "Data Carpentry",
-        "kind": "organization",
-        "value": 4,
-        "url": "https://github.com/datacarpentry",
-        "total_score": 4.264428490592469,
-        "children": [
-          {
-            "name": "python-ecology-lesson",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/datacarpentry/python-ecology-lesson",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 1.1096735450281379
-          },
-          {
-            "name": "Intro to R for Geospatial data",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/datacarpentry/r-intro-geospatial",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 1.108151905667402
-          },
-          {
-            "name": "OpenRefine-ecology",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/datacarpentry/OpenRefine-ecology-lesson",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 1.077163918132666
-          },
-          {
-            "name": "R-ecology-lesson",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/datacarpentry/R-ecology-lesson",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.9694391217642637
+            "url": "https://github.com/weecology/portalcasting",
+            "category": "Biosphere",
+            "sub_category": "Ecological and Environmental Modeling",
+            "total_score_combined": 0.08741569646961435
           }
         ]
       },
@@ -15200,6 +14271,96 @@
         ]
       },
       {
+        "name": "Brightway LCA Software Framework",
+        "kind": "organization",
+        "value": 4,
+        "url": "https://github.com/brightway-lca",
+        "total_score": 2.7002405882974507,
+        "children": [
+          {
+            "name": "ecoinvent_interface",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/brightway-lca/ecoinvent_interface",
+            "category": "Industrial Ecology",
+            "sub_category": "Life Cycle Assessment",
+            "total_score_combined": 1.0695526335359642
+          },
+          {
+            "name": "timex_lca",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/brightway-lca/bw_timex",
+            "category": "Industrial Ecology",
+            "sub_category": "Life Cycle Assessment",
+            "total_score_combined": 0.7275369345141532
+          },
+          {
+            "name": "brightway2",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/brightway-lca/brightway2",
+            "category": "Industrial Ecology",
+            "sub_category": "Life Cycle Assessment",
+            "total_score_combined": 0.5042686238515354
+          },
+          {
+            "name": "Brightway2 data management",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/brightway-lca/brightway2-data",
+            "category": "Industrial Ecology",
+            "sub_category": "Life Cycle Assessment",
+            "total_score_combined": 0.39888239639579814
+          }
+        ]
+      },
+      {
+        "name": "NASA",
+        "kind": "organization",
+        "value": 4,
+        "url": "https://github.com/nasa",
+        "total_score": 2.6637560855878575,
+        "children": [
+          {
+            "name": "NASA CMR STAC",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/nasa/cmr-stac",
+            "category": "Sustainable Development",
+            "sub_category": "Data Catalogs and Interfaces",
+            "total_score_combined": 1.0695661879950427
+          },
+          {
+            "name": "Earthdata Search",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/nasa/earthdata-search",
+            "category": "Sustainable Development",
+            "sub_category": "Data Catalogs and Interfaces",
+            "total_score_combined": 1.0033356264412636
+          },
+          {
+            "name": "EMIT-Data-Resources",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/nasa/EMIT-Data-Resources",
+            "category": "Emissions",
+            "sub_category": "Emission Observation and Modeling",
+            "total_score_combined": 0.4414113566954744
+          },
+          {
+            "name": "NASAaccess",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/nasa/NASAaccess",
+            "category": "Climate Change",
+            "sub_category": "Climate Data Processing and Analysis",
+            "total_score_combined": 0.14944291445607663
+          }
+        ]
+      },
+      {
         "name": "Sienna Platform",
         "kind": "organization",
         "value": 4,
@@ -15241,6 +14402,51 @@
             "category": "Energy Systems",
             "sub_category": "Energy System Modeling Frameworks",
             "total_score_combined": 0.4949938326304244
+          }
+        ]
+      },
+      {
+        "name": "ECMWF Code for Earth",
+        "kind": "organization",
+        "value": 4,
+        "url": "https://github.com/ECMWFCode4Earth",
+        "total_score": 2.4755156850743703,
+        "children": [
+          {
+            "name": "TropiDash",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/ECMWFCode4Earth/TropiDash",
+            "category": "Climate Change",
+            "sub_category": "Natural Hazard and Storms",
+            "total_score_combined": 0.6978058344532833
+          },
+          {
+            "name": "ml_drought",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/ecmwfcode4earth/ml_drought",
+            "category": "Natural Resources",
+            "sub_category": "Soil and Land",
+            "total_score_combined": 0.6892503054759562
+          },
+          {
+            "name": "wildfire forecasting",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/ECMWFCode4Earth/wildfire-forecasting",
+            "category": "Biosphere",
+            "sub_category": "Wildfire",
+            "total_score_combined": 0.571290741871582
+          },
+          {
+            "name": "DeepR",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/ECMWFCode4Earth/DeepR",
+            "category": "Climate Change",
+            "sub_category": "Climate Downscaling",
+            "total_score_combined": 0.5171688032735486
           }
         ]
       },
@@ -15376,6 +14582,42 @@
             "category": "Natural Resources",
             "sub_category": "Air Quality",
             "total_score_combined": 0.20710640317404447
+          }
+        ]
+      },
+      {
+        "name": "PowSyBl",
+        "kind": "organization",
+        "value": 3,
+        "url": "https://github.com/powsybl",
+        "total_score": 4.557836634684229,
+        "children": [
+          {
+            "name": "PowSyBl",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/powsybl/powsybl-core",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 1.7876354919757462
+          },
+          {
+            "name": "PyPowSyBl",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/powsybl/pypowsybl",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 1.4679953688597664
+          },
+          {
+            "name": "PowSyBl Open Load Flow",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/powsybl/powsybl-open-loadflow",
+            "category": "Energy Systems",
+            "sub_category": "Energy System Modeling Frameworks",
+            "total_score_combined": 1.3022057738487156
           }
         ]
       },
@@ -15524,6 +14766,42 @@
         ]
       },
       {
+        "name": "xarray-contrib",
+        "kind": "organization",
+        "value": 3,
+        "url": "https://github.com/xarray-contrib",
+        "total_score": 3.3206569976991327,
+        "children": [
+          {
+            "name": "xskillscore",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/xarray-contrib/xskillscore",
+            "category": "Climate Change",
+            "sub_category": "Climate Data Processing and Analysis",
+            "total_score_combined": 1.4701930642348464
+          },
+          {
+            "name": "cf-xarray",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/xarray-contrib/cf-xarray",
+            "category": "Climate Change",
+            "sub_category": "Climate Data Standards",
+            "total_score_combined": 1.2049993069290668
+          },
+          {
+            "name": "xeofs",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/xarray-contrib/xeofs",
+            "category": "Climate Change",
+            "sub_category": "Climate Data Processing and Analysis",
+            "total_score_combined": 0.6454646265352196
+          }
+        ]
+      },
+      {
         "name": "CodeCarbon",
         "kind": "organization",
         "value": 3,
@@ -15592,42 +14870,6 @@
             "category": "Atmosphere",
             "sub_category": "Meteorological Observation and Forecast",
             "total_score_combined": 0.8456052141551993
-          }
-        ]
-      },
-      {
-        "name": "eWaterCycle",
-        "kind": "organization",
-        "value": 3,
-        "url": "https://github.com/eWaterCycle",
-        "total_score": 3.1004757941629277,
-        "children": [
-          {
-            "name": "era5cli",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/eWaterCycle/era5cli",
-            "category": "Climate Change",
-            "sub_category": "Climate Data Processing and Analysis",
-            "total_score_combined": 1.36531285725667
-          },
-          {
-            "name": "eWaterCycle",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/eWaterCycle/ewatercycle",
-            "category": "Hydrosphere",
-            "sub_category": "Freshwater and Hydrology",
-            "total_score_combined": 0.9562101412548293
-          },
-          {
-            "name": "River Basin Hydrolog",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ewatercycle/teaching-materials",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.7789527956514286
           }
         ]
       },
@@ -16964,42 +16206,6 @@
         ]
       },
       {
-        "name": "Met Office",
-        "kind": "organization",
-        "value": 3,
-        "url": "https://github.com/MetOffice",
-        "total_score": 1.8026287616160117,
-        "children": [
-          {
-            "name": "PyPRECIS",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/MetOffice/PyPRECIS",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.9474005696148394
-          },
-          {
-            "name": "LFRic",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/metoffice/lfric_apps",
-            "category": "Atmosphere",
-            "sub_category": "Atmospheric Composition and Dynamics",
-            "total_score_combined": 0.4730337380581052
-          },
-          {
-            "name": "forest",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/MetOffice/forest",
-            "category": "Atmosphere",
-            "sub_category": "Meteorological Observation and Forecast",
-            "total_score_combined": 0.3821944539430671
-          }
-        ]
-      },
-      {
         "name": "Arpae ER - Servizio Idro Meteo Clima",
         "kind": "organization",
         "value": 3,
@@ -17288,42 +16494,6 @@
         ]
       },
       {
-        "name": "GreenDelta",
-        "kind": "organization",
-        "value": 3,
-        "url": "https://github.com/GreenDelta",
-        "total_score": 1.5390899991018037,
-        "children": [
-          {
-            "name": "openLCA modules",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/greendelta/olca-modules",
-            "category": "Industrial Ecology",
-            "sub_category": "Life Cycle Assessment",
-            "total_score_combined": 0.5822938399497765
-          },
-          {
-            "name": "openlca-python-tutorial",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/GreenDelta/openlca-python-examples",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5024663163998035
-          },
-          {
-            "name": "OpenLCA",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/GreenDelta/olca-app",
-            "category": "Industrial Ecology",
-            "sub_category": "Life Cycle Assessment",
-            "total_score_combined": 0.45432984275222354
-          }
-        ]
-      },
-      {
         "name": "Berkeley Lab - Modeling & Simulation",
         "kind": "organization",
         "value": 3,
@@ -17536,42 +16706,6 @@
             "category": "Renewable Energy",
             "sub_category": "Photovoltaics and Solar Energy",
             "total_score_combined": 0.3700898082472819
-          }
-        ]
-      },
-      {
-        "name": "JuliaOcean",
-        "kind": "organization",
-        "value": 3,
-        "url": "https://github.com/JuliaOcean",
-        "total_score": 1.2410908865095365,
-        "children": [
-          {
-            "name": "MarineEcosystemsJuliaCon2021.jl",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/JuliaOcean/MarineEcosystemsJuliaCon2021.jl",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5491002984915263
-          },
-          {
-            "name": "PlanktonIndividuals.jl",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/JuliaOcean/PlanktonIndividuals.jl",
-            "category": "Biosphere",
-            "sub_category": "Marine Life and Fishery",
-            "total_score_combined": 0.367426216162384
-          },
-          {
-            "name": "AIBECS.jl",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/juliaocean/aibecs.jl",
-            "category": "Hydrosphere",
-            "sub_category": "Ocean Carbon and Temperature",
-            "total_score_combined": 0.3245643718556261
           }
         ]
       },
@@ -18031,6 +17165,33 @@
             "category": "Atmosphere",
             "sub_category": "Meteorological Observation and Forecast",
             "total_score_combined": 1.0752678477776116
+          }
+        ]
+      },
+      {
+        "name": "eWaterCycle",
+        "kind": "organization",
+        "value": 2,
+        "url": "https://github.com/eWaterCycle",
+        "total_score": 2.321522998511499,
+        "children": [
+          {
+            "name": "era5cli",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/eWaterCycle/era5cli",
+            "category": "Climate Change",
+            "sub_category": "Climate Data Processing and Analysis",
+            "total_score_combined": 1.36531285725667
+          },
+          {
+            "name": "eWaterCycle",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/eWaterCycle/ewatercycle",
+            "category": "Hydrosphere",
+            "sub_category": "Freshwater and Hydrology",
+            "total_score_combined": 0.9562101412548293
           }
         ]
       },
@@ -18602,33 +17763,6 @@
         ]
       },
       {
-        "name": "3DGeo Research Group, Heidelberg University",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/3dgeo-heidelberg",
-        "total_score": 1.9628079270144596,
-        "children": [
-          {
-            "name": "E-TRAINEE",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/3dgeo-heidelberg/etrainee",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.994005900196585
-          },
-          {
-            "name": "pytreedb",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/3dgeo-heidelberg/pytreedb",
-            "category": "Biosphere",
-            "sub_category": "Forest Remote Sensing",
-            "total_score_combined": 0.9688020268178745
-          }
-        ]
-      },
-      {
         "name": "Goddard Earth Observing System - Earth System Modeling",
         "kind": "organization",
         "value": 2,
@@ -18733,33 +17867,6 @@
             "category": "Sustainable Development",
             "sub_category": "Taxonomy and Ontology",
             "total_score_combined": 0.9315323947306039
-          }
-        ]
-      },
-      {
-        "name": "Estimating the Circulation and Climate of the Ocean (ECCO)",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/ECCO-GROUP",
-        "total_score": 1.9375123890543824,
-        "children": [
-          {
-            "name": "ecco_v4_py",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ECCO-GROUP/ECCOv4-py",
-            "category": "Cryosphere",
-            "sub_category": "Glacier and Ice Sheets",
-            "total_score_combined": 1.0656306229208579
-          },
-          {
-            "name": "ECCO-v4-Python-Tutorial",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ECCO-GROUP/ECCO-v4-Python-Tutorial",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.8718817661335244
           }
         ]
       },
@@ -19057,33 +18164,6 @@
             "category": "Hydrosphere",
             "sub_category": "Ocean and Hydrology Data Access",
             "total_score_combined": 0.5362856382847158
-          }
-        ]
-      },
-      {
-        "name": "Open Global Glacier Model",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/OGGM",
-        "total_score": 1.7548833559622157,
-        "children": [
-          {
-            "name": "OGGM",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/oggm/oggm",
-            "category": "Cryosphere",
-            "sub_category": "Glacier and Ice Sheets",
-            "total_score_combined": 1.0825830045137148
-          },
-          {
-            "name": "World Glaciers Explorer",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/OGGM/world-glacier-explorer",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.6723003514485009
           }
         ]
       },
@@ -19493,33 +18573,6 @@
         ]
       },
       {
-        "name": "PO.DAAC",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/podaac",
-        "total_score": 1.625046402026653,
-        "children": [
-          {
-            "name": "PO.DAAC Tutorials",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/podaac/tutorials",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.9389805209961934
-          },
-          {
-            "name": "Hydrocron",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/podaac/hydrocron",
-            "category": "Hydrosphere",
-            "sub_category": "Ocean and Hydrology Data Access",
-            "total_score_combined": 0.6860658810304597
-          }
-        ]
-      },
-      {
         "name": "iNaturalist",
         "kind": "organization",
         "value": 2,
@@ -19709,33 +18762,6 @@
         ]
       },
       {
-        "name": "Community Surface Dynamics Modeling System",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/csdms",
-        "total_score": 1.5687516935216452,
-        "children": [
-          {
-            "name": "pymt",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/csdms/pymt",
-            "category": "Climate Change",
-            "sub_category": "Earth and Climate Modeling",
-            "total_score_combined": 0.9762689323853546
-          },
-          {
-            "name": "CSDMS Ivy",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/csdms/ivy",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5924827611362907
-          }
-        ]
-      },
-      {
         "name": "MET-OM: software for Oceanography and Marine Meteorology",
         "kind": "organization",
         "value": 2,
@@ -19813,33 +18839,6 @@
             "category": "Consumption",
             "sub_category": "Agriculture and Nutrition",
             "total_score_combined": 0.7591530320274452
-          }
-        ]
-      },
-      {
-        "name": "geocompx",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/geocompx",
-        "total_score": 1.535292115845829,
-        "children": [
-          {
-            "name": "Geocomputation with R",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/geocompx/geocompr",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.9492879684503421
-          },
-          {
-            "name": "Geocomputation with Python",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/geocompx/geocompy",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.586004147395487
           }
         ]
       },
@@ -19975,33 +18974,6 @@
             "category": "Cryosphere",
             "sub_category": "Sea Ice",
             "total_score_combined": 0.7171212971984618
-          }
-        ]
-      },
-      {
-        "name": "National Snow and Ice Data Center",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/nsidc",
-        "total_score": 1.4749807944256994,
-        "children": [
-          {
-            "name": "NSIDC-Data-Tutorials",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nsidc/NSIDC-Data-Tutorials",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.8554962708057476
-          },
-          {
-            "name": "QGreenland",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/nsidc/qgreenland",
-            "category": "Cryosphere",
-            "sub_category": "Glacier and Ice Sheets",
-            "total_score_combined": 0.6194845236199519
           }
         ]
       },
@@ -20897,33 +19869,6 @@
         ]
       },
       {
-        "name": "Euro-Argo ERIC",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/euroargodev",
-        "total_score": 1.1983969844721625,
-        "children": [
-          {
-            "name": "argopy",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/euroargodev/argopy",
-            "category": "Hydrosphere",
-            "sub_category": "Ocean and Hydrology Data Access",
-            "total_score_combined": 0.767865893674105
-          },
-          {
-            "name": "Argo Online School",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/euroargodev/argoonlineschool",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.4305310907980575
-          }
-        ]
-      },
-      {
         "name": "Aquatic EcoDynamics research group",
         "kind": "organization",
         "value": 2,
@@ -21028,33 +19973,6 @@
             "category": "Energy Systems",
             "sub_category": "Energy System Modeling Frameworks",
             "total_score_combined": 0.11449228975199362
-          }
-        ]
-      },
-      {
-        "name": "Earth Lab",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/earthlab",
-        "total_score": 1.156805931973087,
-        "children": [
-          {
-            "name": "Free Earth Data Science Courses & Textbooks",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/earthlab/earthlab.github.io",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.5971010270767221
-          },
-          {
-            "name": "FIREDpy",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/earthlab/firedpy",
-            "category": "Biosphere",
-            "sub_category": "Wildfire",
-            "total_score_combined": 0.559704904896365
           }
         ]
       },
@@ -21464,6 +20382,33 @@
         ]
       },
       {
+        "name": "GreenDelta",
+        "kind": "organization",
+        "value": 2,
+        "url": "https://github.com/GreenDelta",
+        "total_score": 1.036623682702,
+        "children": [
+          {
+            "name": "openLCA modules",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/greendelta/olca-modules",
+            "category": "Industrial Ecology",
+            "sub_category": "Life Cycle Assessment",
+            "total_score_combined": 0.5822938399497765
+          },
+          {
+            "name": "OpenLCA",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/GreenDelta/olca-app",
+            "category": "Industrial Ecology",
+            "sub_category": "Life Cycle Assessment",
+            "total_score_combined": 0.45432984275222354
+          }
+        ]
+      },
+      {
         "name": "Université Gustave Eiffel",
         "kind": "organization",
         "value": 2,
@@ -21707,6 +20652,33 @@
         ]
       },
       {
+        "name": "Met Office",
+        "kind": "organization",
+        "value": 2,
+        "url": "https://github.com/MetOffice",
+        "total_score": 0.8552281920011724,
+        "children": [
+          {
+            "name": "LFRic",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/metoffice/lfric_apps",
+            "category": "Atmosphere",
+            "sub_category": "Atmospheric Composition and Dynamics",
+            "total_score_combined": 0.4730337380581052
+          },
+          {
+            "name": "forest",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/MetOffice/forest",
+            "category": "Atmosphere",
+            "sub_category": "Meteorological Observation and Forecast",
+            "total_score_combined": 0.3821944539430671
+          }
+        ]
+      },
+      {
         "name": "Brazil Data Cube",
         "kind": "organization",
         "value": 2,
@@ -21896,60 +20868,6 @@
         ]
       },
       {
-        "name": "ECMWF projects",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/ecmwf-projects",
-        "total_score": 0.7473569789553618,
-        "children": [
-          {
-            "name": "ibicus",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/ecmwf-projects/ibicus",
-            "category": "Climate Change",
-            "sub_category": "Climate Data Processing and Analysis",
-            "total_score_combined": 0.5596841645252829
-          },
-          {
-            "name": "Copernicus Atmosphere Monitoring Service Data Tutorials",
-            "kind": "project",
-            "value": 1,
-            "url": "https://ecmwf-projects.github.io/copernicus-training-cams/",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.18767281443007885
-          }
-        ]
-      },
-      {
-        "name": "PV-Tutorials",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/PV-Tutorials",
-        "total_score": 0.7406965045284074,
-        "children": [
-          {
-            "name": "pv-tutorials",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/pv-tutorials/pv-tutorials.github.io",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.6978754043329218
-          },
-          {
-            "name": "PVSC48-Python-Tutorial",
-            "kind": "project",
-            "value": 1,
-            "url": "https://pvsc-python-tutorials.github.io/pvsc48-python-tutorial",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.042821100195485524
-          }
-        ]
-      },
-      {
         "name": "HyRiver",
         "kind": "organization",
         "value": 2,
@@ -21973,6 +20891,33 @@
             "category": "Hydrosphere",
             "sub_category": "Ocean and Hydrology Data Access",
             "total_score_combined": 0.27088609662735696
+          }
+        ]
+      },
+      {
+        "name": "JuliaOcean",
+        "kind": "organization",
+        "value": 2,
+        "url": "https://github.com/JuliaOcean",
+        "total_score": 0.6919905880180102,
+        "children": [
+          {
+            "name": "PlanktonIndividuals.jl",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/JuliaOcean/PlanktonIndividuals.jl",
+            "category": "Biosphere",
+            "sub_category": "Marine Life and Fishery",
+            "total_score_combined": 0.367426216162384
+          },
+          {
+            "name": "AIBECS.jl",
+            "kind": "project",
+            "value": 1,
+            "url": "https://github.com/juliaocean/aibecs.jl",
+            "category": "Hydrosphere",
+            "sub_category": "Ocean Carbon and Temperature",
+            "total_score_combined": 0.3245643718556261
           }
         ]
       },
@@ -22189,33 +21134,6 @@
             "category": "Industrial Ecology",
             "sub_category": "Circular Economy and Waste",
             "total_score_combined": 0.12640733916292873
-          }
-        ]
-      },
-      {
-        "name": "Radiant Earth",
-        "kind": "organization",
-        "value": 2,
-        "url": "https://github.com/radiantearth",
-        "total_score": 0.38931907145257405,
-        "children": [
-          {
-            "name": "Radiant MLHub Python Client",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/radiantearth/radiant-mlhub",
-            "category": "Sustainable Development",
-            "sub_category": "Data Catalogs and Interfaces",
-            "total_score_combined": 0.3100906214836371
-          },
-          {
-            "name": "Radiant MLHub Tutorials",
-            "kind": "project",
-            "value": 1,
-            "url": "https://github.com/radiantearth/mlhub-tutorials",
-            "category": "Sustainable Development",
-            "sub_category": "Education",
-            "total_score_combined": 0.07922844996893699
           }
         ]
       },
