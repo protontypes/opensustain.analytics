@@ -124,6 +124,12 @@ DEFAULT_WORDCLOUD_CAPTION = (
     "Word Cloud of the Most Common Topics in OpenSustain.tech Project READMEs"
 )
 
+# ecosyste.ms indexes OST's education.md alongside its README and files those
+# entries here. They are courses, books and tutorials, not projects: OST lists
+# them on their own page and counts them separately, so they stay out of every
+# project count, ranking and chart these payloads feed.
+LEARNING_RESOURCE_SUB_CATEGORIES = ["Education"]
+
 COUNTRY_ALIASES = {
     "german": "Germany",
     "frace": "France",
@@ -267,6 +273,8 @@ def load_projects(projects_csv: Path, as_of: datetime) -> pd.DataFrame:
     df["project_names"] = df["project_names"].fillna("Unknown Project")
     df["category"] = df["category"].fillna("Unknown")
     df["sub_category"] = df["sub_category"].fillna("Unknown")
+    # Before scoring: the 0-1 rescaling below spans projects only.
+    df = df[~df["sub_category"].isin(LEARNING_RESOURCE_SUB_CATEGORIES)].copy()
     df["description"] = get_series(df, "description").fillna("")
     df["homepage"] = get_series(df, "homepage").fillna("")
     df["avatar_url"] = get_series(df, "avatar_url").fillna("")
@@ -353,6 +361,30 @@ def load_organizations(organizations_csv: Path) -> pd.DataFrame:
         get_series(df, "total_listed_projects_in_organization", 0), errors="coerce"
     ).fillna(0)
     return df
+
+
+def learning_resource_urls(projects_csv: Path) -> set[str]:
+    raw = pd.read_csv(projects_csv, usecols=["git_url", "sub_category"])
+    learning = raw[raw["sub_category"].isin(LEARNING_RESOURCE_SUB_CATEGORIES)]
+    return {url for url in learning["git_url"].map(normalize_repo_url) if url}
+
+
+def drop_learning_only_organizations(
+    organizations: pd.DataFrame, learning_urls: set[str]
+) -> pd.DataFrame:
+    """Organizations listed only for learning resources maintain no project."""
+
+    def learning_only(value: Any) -> bool:
+        urls = {
+            normalize_repo_url(part)
+            for part in str(value).split(",")
+            if clean_text(part)
+        }
+        urls.discard(None)
+        return bool(urls) and urls <= learning_urls
+
+    keep = ~organizations["organization_projects"].map(learning_only)
+    return organizations[keep].reset_index(drop=True)
 
 
 def count_series_values(series: pd.Series) -> list[dict[str, Any]]:
@@ -1148,7 +1180,9 @@ def build_payloads(
 ) -> list[Path]:
     generated_at = datetime.now(timezone.utc)
     projects = load_projects(projects_csv, as_of)
-    organizations = load_organizations(organizations_csv)
+    organizations = drop_learning_only_organizations(
+        load_organizations(organizations_csv), learning_resource_urls(projects_csv)
+    )
 
     categories = sorted(projects["category"].dropna().unique().tolist())
     category_colors = build_category_colors(categories)

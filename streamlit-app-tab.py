@@ -12,6 +12,11 @@ from tabs.projects_over_time_tab import render_projects_over_time_tab
 from tabs.organisations_ranking_tab import render_organisations_ranking_tab
 from tabs.organisations_tab import render_organisations_tab
 from tabs.organisational_projects_tab import render_organisational_projects_tab
+from scripts.build_analytics_payloads import (
+    LEARNING_RESOURCE_SUB_CATEGORIES,
+    drop_learning_only_organizations,
+    learning_resource_urls,
+)
 from tabs.organisations_by_subcategory_tab import (
     render_organisations_by_subcategory_tab,
 )
@@ -49,6 +54,13 @@ organisations_file = "./data/organizations.csv"
 
 df = load_csv(projects_file)
 df_organisations = load_csv(organisations_file)
+
+# Learning resources (OST's education.md) are not projects: the same rule the
+# payload builder applies, so this app and opensustain.tech count alike.
+df = df[~df["sub_category"].isin(LEARNING_RESOURCE_SUB_CATEGORIES)].reset_index(drop=True)
+df_organisations = drop_learning_only_organizations(
+    df_organisations, learning_resource_urls(projects_file)
+)
 
 
 # --- Preprocess ---
