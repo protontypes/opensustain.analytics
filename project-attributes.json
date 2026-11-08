@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T11:36:50.315785+00:00",
+  "generated_at": "2026-11-08T11:48:14.660608+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 990
+        "count": 991
       },
       {
         "label": "R",
@@ -181,7 +181,7 @@
       },
       {
         "label": "JavaScript",
-        "count": 82
+        "count": 81
       },
       {
         "label": "Julia",
@@ -415,11 +415,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7288
+        "count": 7296
       },
       {
         "label": "pypi",
-        "count": 3285
+        "count": 3304
       },
       {
         "label": "Unknown",
@@ -427,15 +427,15 @@
       },
       {
         "label": "docker",
-        "count": 1566
+        "count": 1565
       },
       {
         "label": "npm",
-        "count": 1504
+        "count": 1503
       },
       {
         "label": "maven",
-        "count": 712
+        "count": 720
       },
       {
         "label": "cran",
@@ -443,7 +443,7 @@
       },
       {
         "label": "conda",
-        "count": 379
+        "count": 382
       },
       {
         "label": "nuget",
@@ -451,7 +451,7 @@
       },
       {
         "label": "julia",
-        "count": 333
+        "count": 334
       },
       {
         "label": "cargo",
@@ -483,27 +483,27 @@
       },
       {
         "label": "deb",
-        "count": 24
+        "count": 25
       },
       {
         "label": "nix",
         "count": 20
       },
       {
+        "label": "cocoapods",
+        "count": 15
+      },
+      {
         "label": "vcpkg",
         "count": 15
       },
       {
-        "label": "cocoapods",
-        "count": 13
+        "label": "swiftpm",
+        "count": 8
       },
       {
         "label": "bower",
         "count": 8
-      },
-      {
-        "label": "swiftpm",
-        "count": 7
       },
       {
         "label": "pub",
