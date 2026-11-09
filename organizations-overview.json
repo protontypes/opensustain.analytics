@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T12:23:48.824819+00:00",
+  "generated_at": "2026-11-09T13:43:30.060927+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -12,8 +12,8 @@
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 302,
-      "total_projects": 427
+      "organization_count": 301,
+      "total_projects": 425
     },
     {
       "iso_alpha": "DEU",
@@ -307,7 +307,7 @@
     },
     {
       "continent": "Global",
-      "count": 302
+      "count": 301
     },
     {
       "continent": "Oceania",
@@ -333,7 +333,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 227
+      "count": 228
     },
     {
       "form_of_organization": "government agency",
@@ -341,7 +341,7 @@
     },
     {
       "form_of_organization": "for-profit",
-      "count": 142
+      "count": 141
     },
     {
       "form_of_organization": "non-profit",
@@ -2416,11 +2416,11 @@
     },
     {
       "organization_name": "Natural Solutions",
-      "organization_url": "https://github.com/naturalsolutions",
-      "organization_description": "Biodiversity data and software",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/2242739?v=4",
-      "location_country": "Global",
-      "form_of_organization": "for-profit",
+      "organization_url": "https://gitlab.com/natural-solutions",
+      "organization_description": "# NATURAL SOLUTIONS Biodiversity data and software\r\n\r\nMarseille\r\n[https://natural-solutions.world](https://natural-solutions.world)\r\n[@Nat_Solutions](https://twitter.com/Nat_Solutions)",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7726340/NS_interne.png?v=1739828241",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 2
     },
     {

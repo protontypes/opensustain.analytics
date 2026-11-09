@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T12:23:48.824819+00:00",
+  "generated_at": "2026-11-09T13:43:30.060927+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -6079,9 +6079,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
-          "form_of_organization": "for-profit"
+          "organization_url": "https://gitlab.com/natural-solutions",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OBIS",
@@ -7177,9 +7177,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
-          "form_of_organization": "for-profit"
+          "organization_url": "https://gitlab.com/natural-solutions",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "PADAS",
@@ -17090,7 +17090,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/naturalsolutions"
+            "url": "https://gitlab.com/natural-solutions"
           },
           {
             "name": "OBIS",
@@ -18196,7 +18196,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/naturalsolutions"
+            "url": "https://gitlab.com/natural-solutions"
           },
           {
             "name": "PADAS",

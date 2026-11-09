@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T12:23:48.824819+00:00",
+  "generated_at": "2026-11-09T13:43:30.060927+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
@@ -29,11 +29,11 @@
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1727
+        "count": 1726
       },
       {
         "label": "True",
-        "count": 894
+        "count": 895
       },
       {
         "label": "Unknown",
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7107
+        "count": 7120
       },
       {
         "label": "pypi",
-        "count": 3252
+        "count": 3265
       },
       {
         "label": "Unknown",
@@ -423,19 +423,19 @@
       },
       {
         "label": "docker",
-        "count": 1547
+        "count": 1563
       },
       {
         "label": "npm",
-        "count": 1498
+        "count": 1504
       },
       {
         "label": "maven",
-        "count": 702
+        "count": 703
       },
       {
         "label": "cran",
-        "count": 496
+        "count": 478
       },
       {
         "label": "nuget",
@@ -447,7 +447,7 @@
       },
       {
         "label": "conda",
-        "count": 321
+        "count": 323
       },
       {
         "label": "cargo",
@@ -459,11 +459,11 @@
       },
       {
         "label": "rpm",
-        "count": 115
+        "count": 116
       },
       {
         "label": "rubygems",
-        "count": 110
+        "count": 109
       },
       {
         "label": "go",
@@ -479,11 +479,11 @@
       },
       {
         "label": "deb",
-        "count": 25
+        "count": 26
       },
       {
         "label": "nix",
-        "count": 20
+        "count": 22
       },
       {
         "label": "cocoapods",
