@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-09T13:43:30.060927+00:00",
+  "generated_at": "2026-11-10T08:32:55.151084+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1925
+      "count": 1924
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 780
+      "count": 781
     }
   ],
   "fields": {
@@ -415,7 +415,7 @@
       },
       {
         "label": "pypi",
-        "count": 3265
+        "count": 3271
       },
       {
         "label": "Unknown",
@@ -423,15 +423,15 @@
       },
       {
         "label": "docker",
-        "count": 1563
+        "count": 1564
       },
       {
         "label": "npm",
-        "count": 1504
+        "count": 1503
       },
       {
         "label": "maven",
-        "count": 703
+        "count": 743
       },
       {
         "label": "cran",
@@ -447,7 +447,7 @@
       },
       {
         "label": "conda",
-        "count": 323
+        "count": 324
       },
       {
         "label": "cargo",
@@ -459,7 +459,7 @@
       },
       {
         "label": "rpm",
-        "count": 116
+        "count": 117
       },
       {
         "label": "rubygems",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T13:43:30.060927+00:00",
+  "generated_at": "2026-11-10T08:32:55.151084+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -5870,6 +5870,162 @@
       ]
     },
     {
+      "sub_category": "Biodiversity Data Access and Management",
+      "organization_count": 25,
+      "organizations": [
+        {
+          "organization_name": "Atlas of Living Australia",
+          "organization_url": "https://github.com/AtlasOfLivingAustralia",
+          "location_country": "Australia",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "B-Cubed",
+          "organization_url": "https://github.com/b-cubed-eu",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "BIOSCAN",
+          "organization_url": "https://github.com/bioscan-ml",
+          "location_country": "Canada",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "BioDT",
+          "organization_url": "https://github.com/BioDT",
+          "location_country": "EU",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Biodiversity Heritage Library (BHL)",
+          "organization_url": "https://github.com/gbhl",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "GFBio",
+          "organization_url": "https://github.com/gfbio",
+          "location_country": "Germany",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Global Biodiversity Information Facility",
+          "organization_url": "https://github.com/gbif",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "IUCNN",
+          "organization_url": "https://github.com/IUCNN",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Imageomics Institute",
+          "organization_url": "https://github.com/Imageomics",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Natural Solutions",
+          "organization_url": "https://gitlab.com/natural-solutions",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "OBIS",
+          "organization_url": "https://github.com/iobis",
+          "location_country": "Belgium",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "OpenDataBio",
+          "organization_url": "https://gitlab.com/opendatabio",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "OpenTreeOfLife",
+          "organization_url": "https://github.com/OpenTreeOfLife",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "SI des parcs nationaux français",
+          "organization_url": "https://github.com/PnX-SI",
+          "location_country": "France",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Species File Group",
+          "organization_url": "https://github.com/SpeciesFileGroup",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Specify Collections Consortium",
+          "organization_url": "https://github.com/specify",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Symbiota Biodiversity Management Software",
+          "organization_url": "https://github.com/Symbiota",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "UMR AMAP",
+          "organization_url": "https://github.com/umr-amap",
+          "location_country": "France",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "UNEP-WCMC",
+          "organization_url": "https://github.com/unepwcmc",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Weecology",
+          "organization_url": "https://github.com/weecology",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "baskargroup",
+          "organization_url": "https://github.com/baskargroup",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "bcgov",
+          "organization_url": "https://github.com/bcgov",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "globalbioticinteractions",
+          "organization_url": "https://github.com/globalbioticinteractions",
+          "location_country": "Global",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "rOpenSci",
+          "organization_url": "https://github.com/ropensci",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "wildflow",
+          "organization_url": "https://github.com/wildflowai",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        }
+      ]
+    },
+    {
       "sub_category": "Air Quality",
       "organization_count": 24,
       "organizations": [
@@ -6014,156 +6170,6 @@
         {
           "organization_name": "spatialmodel",
           "organization_url": "https://github.com/spatialmodel",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        }
-      ]
-    },
-    {
-      "sub_category": "Biodiversity Data Access and Management",
-      "organization_count": 24,
-      "organizations": [
-        {
-          "organization_name": "Atlas of Living Australia",
-          "organization_url": "https://github.com/AtlasOfLivingAustralia",
-          "location_country": "Australia",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "B-Cubed",
-          "organization_url": "https://github.com/b-cubed-eu",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "BIOSCAN",
-          "organization_url": "https://github.com/bioscan-ml",
-          "location_country": "Canada",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "BioDT",
-          "organization_url": "https://github.com/BioDT",
-          "location_country": "EU",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Biodiversity Heritage Library (BHL)",
-          "organization_url": "https://github.com/gbhl",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "GFBio",
-          "organization_url": "https://github.com/gfbio",
-          "location_country": "Germany",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Global Biodiversity Information Facility",
-          "organization_url": "https://github.com/gbif",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "IUCNN",
-          "organization_url": "https://github.com/IUCNN",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Imageomics Institute",
-          "organization_url": "https://github.com/Imageomics",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Natural Solutions",
-          "organization_url": "https://gitlab.com/natural-solutions",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "OBIS",
-          "organization_url": "https://github.com/iobis",
-          "location_country": "Belgium",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "OpenTreeOfLife",
-          "organization_url": "https://github.com/OpenTreeOfLife",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "SI des parcs nationaux français",
-          "organization_url": "https://github.com/PnX-SI",
-          "location_country": "France",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Species File Group",
-          "organization_url": "https://github.com/SpeciesFileGroup",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Specify Collections Consortium",
-          "organization_url": "https://github.com/specify",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Symbiota Biodiversity Management Software",
-          "organization_url": "https://github.com/Symbiota",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "UMR AMAP",
-          "organization_url": "https://github.com/umr-amap",
-          "location_country": "France",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "UNEP-WCMC",
-          "organization_url": "https://github.com/unepwcmc",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Weecology",
-          "organization_url": "https://github.com/weecology",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "baskargroup",
-          "organization_url": "https://github.com/baskargroup",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "bcgov",
-          "organization_url": "https://github.com/bcgov",
-          "location_country": "Canada",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "globalbioticinteractions",
-          "organization_url": "https://github.com/globalbioticinteractions",
-          "location_country": "Global",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "rOpenSci",
-          "organization_url": "https://github.com/ropensci",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "wildflow",
-          "organization_url": "https://github.com/wildflowai",
           "location_country": "Global",
           "form_of_organization": "community"
         }
@@ -16877,6 +16883,163 @@
         ]
       },
       {
+        "name": "Biodiversity Data Access and Management",
+        "kind": "sub_category",
+        "value": 25,
+        "children": [
+          {
+            "name": "Atlas of Living Australia",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/AtlasOfLivingAustralia"
+          },
+          {
+            "name": "B-Cubed",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/b-cubed-eu"
+          },
+          {
+            "name": "BIOSCAN",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bioscan-ml"
+          },
+          {
+            "name": "BioDT",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/BioDT"
+          },
+          {
+            "name": "Biodiversity Heritage Library (BHL)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/gbhl"
+          },
+          {
+            "name": "GFBio",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/gfbio"
+          },
+          {
+            "name": "Global Biodiversity Information Facility",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/gbif"
+          },
+          {
+            "name": "IUCNN",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/IUCNN"
+          },
+          {
+            "name": "Imageomics Institute",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Imageomics"
+          },
+          {
+            "name": "Natural Solutions",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/natural-solutions"
+          },
+          {
+            "name": "OBIS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/iobis"
+          },
+          {
+            "name": "OpenDataBio",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/opendatabio"
+          },
+          {
+            "name": "OpenTreeOfLife",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OpenTreeOfLife"
+          },
+          {
+            "name": "SI des parcs nationaux français",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PnX-SI"
+          },
+          {
+            "name": "Species File Group",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/SpeciesFileGroup"
+          },
+          {
+            "name": "Specify Collections Consortium",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/specify"
+          },
+          {
+            "name": "Symbiota Biodiversity Management Software",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Symbiota"
+          },
+          {
+            "name": "UMR AMAP",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/umr-amap"
+          },
+          {
+            "name": "UNEP-WCMC",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/unepwcmc"
+          },
+          {
+            "name": "Weecology",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/weecology"
+          },
+          {
+            "name": "baskargroup",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/baskargroup"
+          },
+          {
+            "name": "bcgov",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bcgov"
+          },
+          {
+            "name": "globalbioticinteractions",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/globalbioticinteractions"
+          },
+          {
+            "name": "rOpenSci",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ropensci"
+          },
+          {
+            "name": "wildflow",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/wildflowai"
+          }
+        ]
+      },
+      {
         "name": "Air Quality",
         "kind": "sub_category",
         "value": 24,
@@ -17024,157 +17187,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/spatialmodel"
-          }
-        ]
-      },
-      {
-        "name": "Biodiversity Data Access and Management",
-        "kind": "sub_category",
-        "value": 24,
-        "children": [
-          {
-            "name": "Atlas of Living Australia",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/AtlasOfLivingAustralia"
-          },
-          {
-            "name": "B-Cubed",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/b-cubed-eu"
-          },
-          {
-            "name": "BIOSCAN",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bioscan-ml"
-          },
-          {
-            "name": "BioDT",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/BioDT"
-          },
-          {
-            "name": "Biodiversity Heritage Library (BHL)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/gbhl"
-          },
-          {
-            "name": "GFBio",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/gfbio"
-          },
-          {
-            "name": "Global Biodiversity Information Facility",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/gbif"
-          },
-          {
-            "name": "IUCNN",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/IUCNN"
-          },
-          {
-            "name": "Imageomics Institute",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Imageomics"
-          },
-          {
-            "name": "Natural Solutions",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://gitlab.com/natural-solutions"
-          },
-          {
-            "name": "OBIS",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/iobis"
-          },
-          {
-            "name": "OpenTreeOfLife",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OpenTreeOfLife"
-          },
-          {
-            "name": "SI des parcs nationaux français",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PnX-SI"
-          },
-          {
-            "name": "Species File Group",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/SpeciesFileGroup"
-          },
-          {
-            "name": "Specify Collections Consortium",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/specify"
-          },
-          {
-            "name": "Symbiota Biodiversity Management Software",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Symbiota"
-          },
-          {
-            "name": "UMR AMAP",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/umr-amap"
-          },
-          {
-            "name": "UNEP-WCMC",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/unepwcmc"
-          },
-          {
-            "name": "Weecology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/weecology"
-          },
-          {
-            "name": "baskargroup",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/baskargroup"
-          },
-          {
-            "name": "bcgov",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bcgov"
-          },
-          {
-            "name": "globalbioticinteractions",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/globalbioticinteractions"
-          },
-          {
-            "name": "rOpenSci",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ropensci"
-          },
-          {
-            "name": "wildflow",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/wildflowai"
           }
         ]
       },
