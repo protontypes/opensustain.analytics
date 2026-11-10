@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-10T08:32:55.151084+00:00",
+  "generated_at": "2026-11-10T13:21:57.508091+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1924
+      "count": 1923
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 781
+      "count": 782
     }
   ],
   "fields": {
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7120
+        "count": 7122
       },
       {
         "label": "pypi",
-        "count": 3271
+        "count": 3275
       },
       {
         "label": "Unknown",
@@ -423,11 +423,11 @@
       },
       {
         "label": "docker",
-        "count": 1564
+        "count": 1565
       },
       {
         "label": "npm",
-        "count": 1503
+        "count": 1506
       },
       {
         "label": "maven",
@@ -439,15 +439,15 @@
       },
       {
         "label": "nuget",
-        "count": 369
+        "count": 372
       },
       {
         "label": "julia",
-        "count": 333
+        "count": 334
       },
       {
         "label": "conda",
-        "count": 324
+        "count": 323
       },
       {
         "label": "cargo",
