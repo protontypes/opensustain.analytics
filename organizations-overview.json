@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T13:21:57.508091+00:00",
+  "generated_at": "2026-11-11T12:32:53.220838+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -5667,7 +5667,7 @@
       "organization_name": "FernLab",
       "organization_url": "https://git.gfz-potsdam.de/fernlab",
       "organization_description": "Remote Sensing for a Sustainable Use of Resources - FERN.Lab.",
-      "organization_icon_url": "/uploads/-/system/group/avatar/710/FERN_Lab_Logo.png",
+      "organization_icon_url": "https://git.gfz-potsdam.de/uploads/-/system/group/avatar/710/FERN_Lab_Logo.png?v=1777290903",
       "location_country": "Germany",
       "form_of_organization": "non-profit",
       "total_listed_projects_in_organization": 1
@@ -10410,7 +10410,7 @@
       "organization_name": "USGS MODFLOW OWHM",
       "organization_url": "https://code.usgs.gov/modflow",
       "organization_description": "Official USGS MODFLOW-OWHM Source Code and Compiled Executable Downloads",
-      "organization_icon_url": "https://code.usgs.gov/uploads/-/system/group/avatar/2112/320px-MODFLOW_3D_grid.png",
+      "organization_icon_url": "https://code.usgs.gov/uploads/-/system/group/avatar/2112/320px-MODFLOW_3D_grid.png?v=1790966697",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 1
