@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-11T12:32:53.220838+00:00",
+  "generated_at": "2026-11-12T08:22:29.876615+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1922
+      "count": 1923
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 782
+      "count": 781
     }
   ],
   "fields": {
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 981
+        "count": 982
       },
       {
         "label": "R",
@@ -177,7 +177,7 @@
       },
       {
         "label": "TypeScript",
-        "count": 88
+        "count": 87
       },
       {
         "label": "JavaScript",
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7129
+        "count": 7140
       },
       {
         "label": "pypi",
-        "count": 3281
+        "count": 3290
       },
       {
         "label": "Unknown",
@@ -423,15 +423,15 @@
       },
       {
         "label": "docker",
-        "count": 1576
+        "count": 1578
       },
       {
         "label": "npm",
-        "count": 1503
+        "count": 1504
       },
       {
         "label": "maven",
-        "count": 696
+        "count": 666
       },
       {
         "label": "cran",
@@ -439,15 +439,15 @@
       },
       {
         "label": "nuget",
-        "count": 373
+        "count": 379
       },
       {
         "label": "julia",
-        "count": 334
+        "count": 338
       },
       {
         "label": "conda",
-        "count": 322
+        "count": 323
       },
       {
         "label": "cargo",
@@ -459,11 +459,11 @@
       },
       {
         "label": "rpm",
-        "count": 116
+        "count": 115
       },
       {
         "label": "rubygems",
-        "count": 109
+        "count": 107
       },
       {
         "label": "go",
@@ -479,7 +479,7 @@
       },
       {
         "label": "deb",
-        "count": 27
+        "count": 26
       },
       {
         "label": "nix",
@@ -494,12 +494,12 @@
         "count": 15
       },
       {
-        "label": "swiftpm",
+        "label": "bower",
         "count": 8
       },
       {
-        "label": "bower",
-        "count": 8
+        "label": "swiftpm",
+        "count": 7
       },
       {
         "label": "pub",

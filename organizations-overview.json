@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T12:32:53.220838+00:00",
+  "generated_at": "2026-11-12T08:22:29.876615+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -12,8 +12,8 @@
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 302,
-      "total_projects": 427
+      "organization_count": 301,
+      "total_projects": 425
     },
     {
       "iso_alpha": "DEU",
@@ -307,7 +307,7 @@
     },
     {
       "continent": "Global",
-      "count": 302
+      "count": 301
     },
     {
       "continent": "Oceania",
@@ -333,7 +333,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 228
+      "count": 230
     },
     {
       "form_of_organization": "government agency",
@@ -341,7 +341,7 @@
     },
     {
       "form_of_organization": "for-profit",
-      "count": 142
+      "count": 141
     },
     {
       "form_of_organization": "non-profit",
@@ -2416,11 +2416,11 @@
     },
     {
       "organization_name": "Natural Solutions",
-      "organization_url": "https://github.com/naturalsolutions",
-      "organization_description": "Biodiversity data and software",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/2242739?v=4",
-      "location_country": "Global",
-      "form_of_organization": "for-profit",
+      "organization_url": "https://gitlab.com/natural-solutions",
+      "organization_description": "# NATURAL SOLUTIONS Biodiversity data and software\r\n\r\nMarseille\r\n[https://natural-solutions.world](https://natural-solutions.world)\r\n[@Nat_Solutions](https://twitter.com/Nat_Solutions)",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7726340/NS_interne.png?v=1739828241",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -8328,6 +8328,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "OpenLandMap",
+      "organization_url": "https://gitlab.com/openlandmap",
+      "organization_description": "OpenLandMap are data (global land mass), services and web-apps providing access and interactive visualizations of the TB of high resolution data (1 km, 250 m resolution or better) produced by the OpenGeoHub Foundation and contributing organizations.",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7933061/Screenshot_from_2020-05-14_12-28-05.png?v=1698833014",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "OpenLitterMap",
       "organization_url": "https://github.com/OpenLitterMap",
       "organization_description": "Join us and share data",
@@ -10524,9 +10533,9 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "Virtual-FCS H2020",
+      "organization_name": "VirtualFCS",
       "organization_url": "https://github.com/Virtual-FCS",
-      "organization_description": "Development of a cyber-physical platform for fuel cell system modelling.",
+      "organization_description": "Hydrogen system cyber-physical modelling platform",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/73799930?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",

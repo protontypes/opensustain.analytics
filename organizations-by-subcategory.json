@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T12:32:53.220838+00:00",
+  "generated_at": "2026-11-12T08:22:29.876615+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -5929,9 +5929,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
-          "form_of_organization": "for-profit"
+          "organization_url": "https://gitlab.com/natural-solutions",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OBIS",
@@ -7183,9 +7183,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
-          "form_of_organization": "for-profit"
+          "organization_url": "https://gitlab.com/natural-solutions",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "PADAS",
@@ -9542,6 +9542,84 @@
       ]
     },
     {
+      "sub_category": "Forest Observation and Management",
+      "organization_count": 12,
+      "organizations": [
+        {
+          "organization_name": "Bureau du forestier en chef",
+          "organization_url": "https://github.com/Bureau-du-Forestier-en-chef",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "California Forest Observatory",
+          "organization_url": "https://github.com/forestobservatory",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Ecosystem Modelling Facility (CREAF)",
+          "organization_url": "https://github.com/emf-creaf",
+          "location_country": "Spain",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Ecotrust",
+          "organization_url": "https://github.com/Ecotrust",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Open Foris",
+          "organization_url": "https://github.com/openforis",
+          "location_country": "Italy",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "OpenLandMap",
+          "organization_url": "https://gitlab.com/openlandmap",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "OpenTreeMap",
+          "organization_url": "https://github.com/OpenTreeMap",
+          "location_country": "USA",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "PYFOREST",
+          "organization_url": "https://github.com/cp-PYFOREST",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Technologiestiftung Berlin",
+          "organization_url": "https://github.com/technologiestiftung",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Vizzuality",
+          "organization_url": "https://github.com/Vizzuality",
+          "location_country": "Spain",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "World Resources Institute",
+          "organization_url": "https://github.com/wri",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "bcgov",
+          "organization_url": "https://github.com/bcgov",
+          "location_country": "Canada",
+          "form_of_organization": "government agency"
+        }
+      ]
+    },
+    {
       "sub_category": "Waves and Currents",
       "organization_count": 12,
       "organizations": [
@@ -9760,78 +9838,6 @@
           "organization_url": "https://github.com/pommes-public",
           "location_country": "Germany",
           "form_of_organization": "community"
-        }
-      ]
-    },
-    {
-      "sub_category": "Forest Observation and Management",
-      "organization_count": 11,
-      "organizations": [
-        {
-          "organization_name": "Bureau du forestier en chef",
-          "organization_url": "https://github.com/Bureau-du-Forestier-en-chef",
-          "location_country": "Canada",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "California Forest Observatory",
-          "organization_url": "https://github.com/forestobservatory",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Ecosystem Modelling Facility (CREAF)",
-          "organization_url": "https://github.com/emf-creaf",
-          "location_country": "Spain",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Ecotrust",
-          "organization_url": "https://github.com/Ecotrust",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Open Foris",
-          "organization_url": "https://github.com/openforis",
-          "location_country": "Italy",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "OpenTreeMap",
-          "organization_url": "https://github.com/OpenTreeMap",
-          "location_country": "USA",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "PYFOREST",
-          "organization_url": "https://github.com/cp-PYFOREST",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Technologiestiftung Berlin",
-          "organization_url": "https://github.com/technologiestiftung",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Vizzuality",
-          "organization_url": "https://github.com/Vizzuality",
-          "location_country": "Spain",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "World Resources Institute",
-          "organization_url": "https://github.com/wri",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "bcgov",
-          "organization_url": "https://github.com/bcgov",
-          "location_country": "Canada",
-          "form_of_organization": "government agency"
         }
       ]
     },
@@ -10560,7 +10566,7 @@
           "form_of_organization": "government agency"
         },
         {
-          "organization_name": "Virtual-FCS H2020",
+          "organization_name": "VirtualFCS",
           "organization_url": "https://github.com/Virtual-FCS",
           "location_country": "Global",
           "form_of_organization": "collaboration"
@@ -16945,7 +16951,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/naturalsolutions"
+            "url": "https://gitlab.com/natural-solutions"
           },
           {
             "name": "OBIS",
@@ -18208,7 +18214,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/naturalsolutions"
+            "url": "https://gitlab.com/natural-solutions"
           },
           {
             "name": "PADAS",
@@ -20588,6 +20594,85 @@
         ]
       },
       {
+        "name": "Forest Observation and Management",
+        "kind": "sub_category",
+        "value": 12,
+        "children": [
+          {
+            "name": "Bureau du forestier en chef",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Bureau-du-Forestier-en-chef"
+          },
+          {
+            "name": "California Forest Observatory",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/forestobservatory"
+          },
+          {
+            "name": "Ecosystem Modelling Facility (CREAF)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/emf-creaf"
+          },
+          {
+            "name": "Ecotrust",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Ecotrust"
+          },
+          {
+            "name": "Open Foris",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/openforis"
+          },
+          {
+            "name": "OpenLandMap",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/openlandmap"
+          },
+          {
+            "name": "OpenTreeMap",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OpenTreeMap"
+          },
+          {
+            "name": "PYFOREST",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/cp-PYFOREST"
+          },
+          {
+            "name": "Technologiestiftung Berlin",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/technologiestiftung"
+          },
+          {
+            "name": "Vizzuality",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Vizzuality"
+          },
+          {
+            "name": "World Resources Institute",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/wri"
+          },
+          {
+            "name": "bcgov",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bcgov"
+          }
+        ]
+      },
+      {
         "name": "Waves and Currents",
         "kind": "sub_category",
         "value": 12,
@@ -20809,79 +20894,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/pommes-public"
-          }
-        ]
-      },
-      {
-        "name": "Forest Observation and Management",
-        "kind": "sub_category",
-        "value": 11,
-        "children": [
-          {
-            "name": "Bureau du forestier en chef",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Bureau-du-Forestier-en-chef"
-          },
-          {
-            "name": "California Forest Observatory",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/forestobservatory"
-          },
-          {
-            "name": "Ecosystem Modelling Facility (CREAF)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/emf-creaf"
-          },
-          {
-            "name": "Ecotrust",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Ecotrust"
-          },
-          {
-            "name": "Open Foris",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openforis"
-          },
-          {
-            "name": "OpenTreeMap",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OpenTreeMap"
-          },
-          {
-            "name": "PYFOREST",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/cp-PYFOREST"
-          },
-          {
-            "name": "Technologiestiftung Berlin",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/technologiestiftung"
-          },
-          {
-            "name": "Vizzuality",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Vizzuality"
-          },
-          {
-            "name": "World Resources Institute",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/wri"
-          },
-          {
-            "name": "bcgov",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bcgov"
           }
         ]
       },
@@ -21622,7 +21634,7 @@
             "url": "https://github.com/sandialabs"
           },
           {
-            "name": "Virtual-FCS H2020",
+            "name": "VirtualFCS",
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/Virtual-FCS"
