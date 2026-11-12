@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-12T08:27:44.602251+00:00",
+  "generated_at": "2026-11-12T13:38:20.000857+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1923
+      "count": 1921
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 781
+      "count": 783
     }
   ],
   "fields": {
@@ -29,11 +29,11 @@
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1725
+        "count": 1724
       },
       {
         "label": "True",
-        "count": 895
+        "count": 896
       },
       {
         "label": "Unknown",
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7140
+        "count": 7147
       },
       {
         "label": "pypi",
-        "count": 3290
+        "count": 3281
       },
       {
         "label": "Unknown",
@@ -423,19 +423,19 @@
       },
       {
         "label": "docker",
-        "count": 1578
+        "count": 1565
       },
       {
         "label": "npm",
-        "count": 1504
+        "count": 1501
       },
       {
         "label": "maven",
-        "count": 666
+        "count": 684
       },
       {
         "label": "cran",
-        "count": 480
+        "count": 481
       },
       {
         "label": "nuget",
@@ -479,19 +479,19 @@
       },
       {
         "label": "deb",
-        "count": 26
+        "count": 25
       },
       {
         "label": "nix",
         "count": 22
       },
       {
-        "label": "cocoapods",
+        "label": "vcpkg",
         "count": 15
       },
       {
-        "label": "vcpkg",
-        "count": 15
+        "label": "cocoapods",
+        "count": 13
       },
       {
         "label": "bower",

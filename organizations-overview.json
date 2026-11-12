@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T08:27:44.602251+00:00",
+  "generated_at": "2026-11-12T13:38:20.000857+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -5729,7 +5729,7 @@
     {
       "organization_name": "FlexMeasures",
       "organization_url": "https://github.com/FlexMeasures",
-      "organization_description": "FlexMeasures is the smart EMS for energy flexibility applications. An incubation project at the Linux Energy Foundation.",
+      "organization_description": "An enterprise-ready & customizable energy optimization engine, for scheduling and forecasting in real-time operations.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/75485874?v=4",
       "location_country": "Global",
       "form_of_organization": "collaboration",
