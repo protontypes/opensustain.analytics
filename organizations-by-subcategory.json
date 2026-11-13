@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T13:38:20.000857+00:00",
+  "generated_at": "2026-11-13T12:56:21.994734+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -5535,7 +5535,7 @@
     },
     {
       "sub_category": "Education",
-      "organization_count": 27,
+      "organization_count": 28,
       "organizations": [
         {
           "organization_name": "3DGeo Research Group, Heidelberg University",
@@ -5644,6 +5644,12 @@
           "organization_url": "https://github.com/OGGM",
           "location_country": "Germany",
           "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "OpenLandMap",
+          "organization_url": "https://gitlab.com/openlandmap",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "PO.DAAC",
@@ -5929,9 +5935,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://gitlab.com/natural-solutions",
-          "location_country": "",
-          "form_of_organization": ""
+          "organization_url": "https://github.com/naturalsolutions",
+          "location_country": "Global",
+          "form_of_organization": "for-profit"
         },
         {
           "organization_name": "OBIS",
@@ -7183,9 +7189,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://gitlab.com/natural-solutions",
-          "location_country": "",
-          "form_of_organization": ""
+          "organization_url": "https://github.com/naturalsolutions",
+          "location_country": "Global",
+          "form_of_organization": "for-profit"
         },
         {
           "organization_name": "PADAS",
@@ -10832,6 +10838,48 @@
       ]
     },
     {
+      "sub_category": "Production and Industry",
+      "organization_count": 6,
+      "organizations": [
+        {
+          "organization_name": "Fraunhofer ISI",
+          "organization_url": "https://github.com/fraunhofer-isi",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "National Laboratory of the Rockies",
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Oak Ridge National Laboratory - Energy Management Software",
+          "organization_url": "https://github.com/ORNL-AMO",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "OpenDSM",
+          "organization_url": "https://github.com/opendsm",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "OpenModelica",
+          "organization_url": "https://github.com/OpenModelica",
+          "location_country": "Sweden",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "SAP Archive",
+          "organization_url": "https://github.com/SAP-archive",
+          "location_country": "",
+          "form_of_organization": ""
+        }
+      ]
+    },
+    {
       "sub_category": "Bioenergy",
       "organization_count": 5,
       "organizations": [
@@ -10864,42 +10912,6 @@
           "organization_url": "https://github.com/bioenergy-research-centers",
           "location_country": "Global",
           "form_of_organization": "academia"
-        }
-      ]
-    },
-    {
-      "sub_category": "Production and Industry",
-      "organization_count": 5,
-      "organizations": [
-        {
-          "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/NatLabRockies",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Oak Ridge National Laboratory - Energy Management Software",
-          "organization_url": "https://github.com/ORNL-AMO",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "OpenDSM",
-          "organization_url": "https://github.com/opendsm",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "OpenModelica",
-          "organization_url": "https://github.com/OpenModelica",
-          "location_country": "Sweden",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "SAP Archive",
-          "organization_url": "https://github.com/SAP-archive",
-          "location_country": "",
-          "form_of_organization": ""
         }
       ]
     },
@@ -16553,7 +16565,7 @@
       {
         "name": "Education",
         "kind": "sub_category",
-        "value": 27,
+        "value": 28,
         "children": [
           {
             "name": "3DGeo Research Group, Heidelberg University",
@@ -16662,6 +16674,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/OGGM"
+          },
+          {
+            "name": "OpenLandMap",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/openlandmap"
           },
           {
             "name": "PO.DAAC",
@@ -16951,7 +16969,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/natural-solutions"
+            "url": "https://github.com/naturalsolutions"
           },
           {
             "name": "OBIS",
@@ -18214,7 +18232,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/natural-solutions"
+            "url": "https://github.com/naturalsolutions"
           },
           {
             "name": "PADAS",
@@ -21905,6 +21923,49 @@
         ]
       },
       {
+        "name": "Production and Industry",
+        "kind": "sub_category",
+        "value": 6,
+        "children": [
+          {
+            "name": "Fraunhofer ISI",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/fraunhofer-isi"
+          },
+          {
+            "name": "National Laboratory of the Rockies",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NatLabRockies"
+          },
+          {
+            "name": "Oak Ridge National Laboratory - Energy Management Software",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ORNL-AMO"
+          },
+          {
+            "name": "OpenDSM",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/opendsm"
+          },
+          {
+            "name": "OpenModelica",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/OpenModelica"
+          },
+          {
+            "name": "SAP Archive",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/SAP-archive"
+          }
+        ]
+      },
+      {
         "name": "Bioenergy",
         "kind": "sub_category",
         "value": 5,
@@ -21938,43 +21999,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/bioenergy-research-centers"
-          }
-        ]
-      },
-      {
-        "name": "Production and Industry",
-        "kind": "sub_category",
-        "value": 5,
-        "children": [
-          {
-            "name": "National Laboratory of the Rockies",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NatLabRockies"
-          },
-          {
-            "name": "Oak Ridge National Laboratory - Energy Management Software",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ORNL-AMO"
-          },
-          {
-            "name": "OpenDSM",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/opendsm"
-          },
-          {
-            "name": "OpenModelica",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/OpenModelica"
-          },
-          {
-            "name": "SAP Archive",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/SAP-archive"
           }
         ]
       },

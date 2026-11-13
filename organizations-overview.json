@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T13:38:20.000857+00:00",
+  "generated_at": "2026-11-13T12:56:21.994734+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -12,8 +12,8 @@
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 301,
-      "total_projects": 425
+      "organization_count": 302,
+      "total_projects": 427
     },
     {
       "iso_alpha": "DEU",
@@ -307,7 +307,7 @@
     },
     {
       "continent": "Global",
-      "count": 301
+      "count": 302
     },
     {
       "continent": "Oceania",
@@ -341,7 +341,7 @@
     },
     {
       "form_of_organization": "for-profit",
-      "count": 141
+      "count": 142
     },
     {
       "form_of_organization": "non-profit",
@@ -2416,11 +2416,11 @@
     },
     {
       "organization_name": "Natural Solutions",
-      "organization_url": "https://gitlab.com/natural-solutions",
-      "organization_description": "# NATURAL SOLUTIONS Biodiversity data and software\r\n\r\nMarseille\r\n[https://natural-solutions.world](https://natural-solutions.world)\r\n[@Nat_Solutions](https://twitter.com/Nat_Solutions)",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7726340/NS_interne.png?v=1739828241",
-      "location_country": "",
-      "form_of_organization": "",
+      "organization_url": "https://github.com/naturalsolutions",
+      "organization_description": "Biodiversity data and software",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/2242739?v=4",
+      "location_country": "Global",
+      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -2556,6 +2556,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/67903512?v=4",
       "location_country": "UK",
       "form_of_organization": "community",
+      "total_listed_projects_in_organization": 2
+    },
+    {
+      "organization_name": "OpenLandMap",
+      "organization_url": "https://gitlab.com/openlandmap",
+      "organization_description": "OpenLandMap are data (global land mass), services and web-apps providing access and interactive visualizations of the TB of high resolution data (1 km, 250 m resolution or better) produced by the OpenGeoHub Foundation and contributing organizations.",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7933061/Screenshot_from_2020-05-14_12-28-05.png?v=1698833014",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -5790,6 +5799,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "Fraunhofer ISI",
+      "organization_url": "https://github.com/fraunhofer-isi",
+      "organization_description": "Fraunhofer Institute for Systems and Innovation Research ISI",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/138029633?v=4",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "FraunhoferIWES",
       "organization_url": "https://github.com/FraunhoferIWES",
       "organization_description": "",
@@ -8325,15 +8343,6 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/29949865?v=4",
       "location_country": "USA",
       "form_of_organization": "for-profit",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "OpenLandMap",
-      "organization_url": "https://gitlab.com/openlandmap",
-      "organization_description": "OpenLandMap are data (global land mass), services and web-apps providing access and interactive visualizations of the TB of high resolution data (1 km, 250 m resolution or better) produced by the OpenGeoHub Foundation and contributing organizations.",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7933061/Screenshot_from_2020-05-14_12-28-05.png?v=1698833014",
-      "location_country": "",
-      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {
