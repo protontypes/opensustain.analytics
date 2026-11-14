@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T12:56:21.994734+00:00",
+  "generated_at": "2026-11-14T11:59:47.747436+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -333,7 +333,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 230
+      "count": 231
     },
     {
       "form_of_organization": "government agency",
@@ -4500,6 +4500,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/24898124?v=4",
       "location_country": "Germany",
       "form_of_organization": "community",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Climate Insights Directory",
+      "organization_url": "https://github.com/Climate-Insights-Directory",
+      "organization_description": "Our open repository for public skills and code for the Climate Insights Directory",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/345506343?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {

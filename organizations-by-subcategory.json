@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T12:56:21.994734+00:00",
+  "generated_at": "2026-11-14T11:59:47.747436+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -7376,6 +7376,126 @@
       ]
     },
     {
+      "sub_category": "Integrated Assessment and Climate Policy",
+      "organization_count": 19,
+      "organizations": [
+        {
+          "organization_name": "AeroMAPS",
+          "organization_url": "https://github.com/AeroMAPS",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "BC3 Low Carbon department",
+          "organization_url": "https://github.com/bc3LC",
+          "location_country": "Spain",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Brazil Data Cube",
+          "organization_url": "https://github.com/brazil-data-cube",
+          "location_country": "Brazil",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Climate Insights Directory",
+          "organization_url": "https://github.com/Climate-Insights-Directory",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Climate Interactive",
+          "organization_url": "https://github.com/climateinteractive",
+          "location_country": "USA",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Climate Policy Assessment Community of Models",
+          "organization_url": "https://github.com/cpmodel",
+          "location_country": "Global",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Climate Policy Radar",
+          "organization_url": "https://github.com/climatepolicyradar",
+          "location_country": "UK",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "IIASA",
+          "organization_url": "https://github.com/iiasa",
+          "location_country": "Austria",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Integrated Assessment Modeling Consortium (IAMC)",
+          "organization_url": "https://github.com/IAMconsortium",
+          "location_country": "Global",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Joint Global Change Research Institute",
+          "organization_url": "https://github.com/JGCRI",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "LPJmL group @ PIK",
+          "organization_url": "https://github.com/PIK-LPJmL",
+          "location_country": "Germany",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "Mila",
+          "organization_url": "https://github.com/mila-iqia",
+          "location_country": "Canada",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Open Modelling Group",
+          "organization_url": "https://github.com/openmodels",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "PRIMAP",
+          "organization_url": "https://github.com/primap-community",
+          "location_country": "Germany",
+          "form_of_organization": "collaboration"
+        },
+        {
+          "organization_name": "Potsdam Integrated Assessment Modelling (PIAM)",
+          "organization_url": "https://github.com/pik-piam",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "TNO",
+          "organization_url": "https://github.com/TNO",
+          "location_country": "Netherlands",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "The Social Cost of Carbon Initiative - Resources for the Future",
+          "organization_url": "https://github.com/rffscghg",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "University of Maryland Center for Global Sustainability",
+          "organization_url": "https://github.com/umd-cgs",
+          "location_country": "USA",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "World Dynamics",
+          "organization_url": "https://github.com/worlddynamics",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        }
+      ]
+    },
+    {
       "sub_category": "Ocean Models",
       "organization_count": 19,
       "organizations": [
@@ -7606,120 +7726,6 @@
           "organization_url": "https://github.com/softwareunderground",
           "location_country": "Canada",
           "form_of_organization": "non-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Integrated Assessment and Climate Policy",
-      "organization_count": 18,
-      "organizations": [
-        {
-          "organization_name": "AeroMAPS",
-          "organization_url": "https://github.com/AeroMAPS",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "BC3 Low Carbon department",
-          "organization_url": "https://github.com/bc3LC",
-          "location_country": "Spain",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Brazil Data Cube",
-          "organization_url": "https://github.com/brazil-data-cube",
-          "location_country": "Brazil",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Climate Interactive",
-          "organization_url": "https://github.com/climateinteractive",
-          "location_country": "USA",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Climate Policy Assessment Community of Models",
-          "organization_url": "https://github.com/cpmodel",
-          "location_country": "Global",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Climate Policy Radar",
-          "organization_url": "https://github.com/climatepolicyradar",
-          "location_country": "UK",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "IIASA",
-          "organization_url": "https://github.com/iiasa",
-          "location_country": "Austria",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Integrated Assessment Modeling Consortium (IAMC)",
-          "organization_url": "https://github.com/IAMconsortium",
-          "location_country": "Global",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Joint Global Change Research Institute",
-          "organization_url": "https://github.com/JGCRI",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "LPJmL group @ PIK",
-          "organization_url": "https://github.com/PIK-LPJmL",
-          "location_country": "Germany",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "Mila",
-          "organization_url": "https://github.com/mila-iqia",
-          "location_country": "Canada",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Open Modelling Group",
-          "organization_url": "https://github.com/openmodels",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "PRIMAP",
-          "organization_url": "https://github.com/primap-community",
-          "location_country": "Germany",
-          "form_of_organization": "collaboration"
-        },
-        {
-          "organization_name": "Potsdam Integrated Assessment Modelling (PIAM)",
-          "organization_url": "https://github.com/pik-piam",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "TNO",
-          "organization_url": "https://github.com/TNO",
-          "location_country": "Netherlands",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "The Social Cost of Carbon Initiative - Resources for the Future",
-          "organization_url": "https://github.com/rffscghg",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "University of Maryland Center for Global Sustainability",
-          "organization_url": "https://github.com/umd-cgs",
-          "location_country": "USA",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "World Dynamics",
-          "organization_url": "https://github.com/worlddynamics",
-          "location_country": "Global",
-          "form_of_organization": "community"
         }
       ]
     },
@@ -18418,6 +18424,127 @@
         ]
       },
       {
+        "name": "Integrated Assessment and Climate Policy",
+        "kind": "sub_category",
+        "value": 19,
+        "children": [
+          {
+            "name": "AeroMAPS",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/AeroMAPS"
+          },
+          {
+            "name": "BC3 Low Carbon department",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/bc3LC"
+          },
+          {
+            "name": "Brazil Data Cube",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/brazil-data-cube"
+          },
+          {
+            "name": "Climate Insights Directory",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Climate-Insights-Directory"
+          },
+          {
+            "name": "Climate Interactive",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/climateinteractive"
+          },
+          {
+            "name": "Climate Policy Assessment Community of Models",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/cpmodel"
+          },
+          {
+            "name": "Climate Policy Radar",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/climatepolicyradar"
+          },
+          {
+            "name": "IIASA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/iiasa"
+          },
+          {
+            "name": "Integrated Assessment Modeling Consortium (IAMC)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/IAMconsortium"
+          },
+          {
+            "name": "Joint Global Change Research Institute",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/JGCRI"
+          },
+          {
+            "name": "LPJmL group @ PIK",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/PIK-LPJmL"
+          },
+          {
+            "name": "Mila",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/mila-iqia"
+          },
+          {
+            "name": "Open Modelling Group",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/openmodels"
+          },
+          {
+            "name": "PRIMAP",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/primap-community"
+          },
+          {
+            "name": "Potsdam Integrated Assessment Modelling (PIAM)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pik-piam"
+          },
+          {
+            "name": "TNO",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/TNO"
+          },
+          {
+            "name": "The Social Cost of Carbon Initiative - Resources for the Future",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/rffscghg"
+          },
+          {
+            "name": "University of Maryland Center for Global Sustainability",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/umd-cgs"
+          },
+          {
+            "name": "World Dynamics",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/worlddynamics"
+          }
+        ]
+      },
+      {
         "name": "Ocean Models",
         "kind": "sub_category",
         "value": 19,
@@ -18650,121 +18777,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/softwareunderground"
-          }
-        ]
-      },
-      {
-        "name": "Integrated Assessment and Climate Policy",
-        "kind": "sub_category",
-        "value": 18,
-        "children": [
-          {
-            "name": "AeroMAPS",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/AeroMAPS"
-          },
-          {
-            "name": "BC3 Low Carbon department",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/bc3LC"
-          },
-          {
-            "name": "Brazil Data Cube",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/brazil-data-cube"
-          },
-          {
-            "name": "Climate Interactive",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/climateinteractive"
-          },
-          {
-            "name": "Climate Policy Assessment Community of Models",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/cpmodel"
-          },
-          {
-            "name": "Climate Policy Radar",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/climatepolicyradar"
-          },
-          {
-            "name": "IIASA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/iiasa"
-          },
-          {
-            "name": "Integrated Assessment Modeling Consortium (IAMC)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/IAMconsortium"
-          },
-          {
-            "name": "Joint Global Change Research Institute",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/JGCRI"
-          },
-          {
-            "name": "LPJmL group @ PIK",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/PIK-LPJmL"
-          },
-          {
-            "name": "Mila",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/mila-iqia"
-          },
-          {
-            "name": "Open Modelling Group",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/openmodels"
-          },
-          {
-            "name": "PRIMAP",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/primap-community"
-          },
-          {
-            "name": "Potsdam Integrated Assessment Modelling (PIAM)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/pik-piam"
-          },
-          {
-            "name": "TNO",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/TNO"
-          },
-          {
-            "name": "The Social Cost of Carbon Initiative - Resources for the Future",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/rffscghg"
-          },
-          {
-            "name": "University of Maryland Center for Global Sustainability",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/umd-cgs"
-          },
-          {
-            "name": "World Dynamics",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/worlddynamics"
           }
         ]
       },
