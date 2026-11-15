@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T11:59:47.747436+00:00",
+  "generated_at": "2026-11-15T12:35:27.661459+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -12,8 +12,8 @@
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 302,
-      "total_projects": 427
+      "organization_count": 301,
+      "total_projects": 425
     },
     {
       "iso_alpha": "DEU",
@@ -93,18 +93,18 @@
       "total_projects": 12
     },
     {
-      "iso_alpha": "BEL",
-      "country_name": "Belgium",
-      "map_eligible": true,
-      "organization_count": 10,
-      "total_projects": 18
-    },
-    {
       "iso_alpha": "NOR",
       "country_name": "Norway",
       "map_eligible": true,
       "organization_count": 10,
       "total_projects": 18
+    },
+    {
+      "iso_alpha": "BEL",
+      "country_name": "Belgium",
+      "map_eligible": true,
+      "organization_count": 9,
+      "total_projects": 17
     },
     {
       "iso_alpha": "FIN",
@@ -303,11 +303,11 @@
     },
     {
       "continent": "Europe",
-      "count": 383
+      "count": 382
     },
     {
       "continent": "Global",
-      "count": 302
+      "count": 301
     },
     {
       "continent": "Oceania",
@@ -333,7 +333,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 231
+      "count": 232
     },
     {
       "form_of_organization": "government agency",
@@ -341,7 +341,7 @@
     },
     {
       "form_of_organization": "for-profit",
-      "count": 142
+      "count": 141
     },
     {
       "form_of_organization": "non-profit",
@@ -349,7 +349,7 @@
     },
     {
       "form_of_organization": "collaboration",
-      "count": 117
+      "count": 116
     }
   ],
   "organizations_by_project_count": [
@@ -1624,9 +1624,9 @@
     },
     {
       "organization_name": "BONSAI",
-      "organization_url": "https://gitlab.com/bonsamurais",
-      "organization_description": "",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/77028262/BONSAI-logo.png?v=1732042489",
+      "organization_url": "https://github.com/BONSAMURAIS",
+      "organization_description": "An organisation dedicated to create and maintain a truly global Open Source Database for product footprinting",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/25032243?v=4",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 2
@@ -2416,11 +2416,11 @@
     },
     {
       "organization_name": "Natural Solutions",
-      "organization_url": "https://github.com/naturalsolutions",
-      "organization_description": "Biodiversity data and software",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/2242739?v=4",
-      "location_country": "Global",
-      "form_of_organization": "for-profit",
+      "organization_url": "https://gitlab.com/natural-solutions",
+      "organization_description": "# NATURAL SOLUTIONS Biodiversity data and software\r\n\r\nMarseille\r\n[https://natural-solutions.world](https://natural-solutions.world)\r\n[@Nat_Solutions](https://twitter.com/Nat_Solutions)",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7726340/NS_interne.png?v=1739828241",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 2
     },
     {
@@ -5346,15 +5346,6 @@
       "organization_icon_url": "https://git.gfz-potsdam.de/uploads/-/system/group/avatar/182/logo_enmap_3.jpg?v=1777290902",
       "location_country": "Germany",
       "form_of_organization": "government agency",
-      "total_listed_projects_in_organization": 1
-    },
-    {
-      "organization_name": "EnergieID cvso",
-      "organization_url": "https://github.com/EnergieID",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/13538977?v=4",
-      "location_country": "Belgium",
-      "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 1
     },
     {

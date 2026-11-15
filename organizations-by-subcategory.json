@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T11:59:47.747436+00:00",
+  "generated_at": "2026-11-15T12:35:27.661459+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -4105,7 +4105,7 @@
         },
         {
           "organization_name": "BONSAI",
-          "organization_url": "https://gitlab.com/bonsamurais",
+          "organization_url": "https://github.com/BONSAMURAIS",
           "location_country": "",
           "form_of_organization": ""
         },
@@ -4989,7 +4989,7 @@
     },
     {
       "sub_category": "Energy Data Accessibility and Integration",
-      "organization_count": 31,
+      "organization_count": 30,
       "organizations": [
         {
           "organization_name": "Catalyst Cooperative",
@@ -5002,12 +5002,6 @@
           "organization_url": "https://github.com/EnAccess",
           "location_country": "Netherlands",
           "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "EnergieID cvso",
-          "organization_url": "https://github.com/EnergieID",
-          "location_country": "Belgium",
-          "form_of_organization": "collaboration"
         },
         {
           "organization_name": "Energy Access Explorer",
@@ -5935,9 +5929,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
-          "form_of_organization": "for-profit"
+          "organization_url": "https://gitlab.com/natural-solutions",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OBIS",
@@ -7189,9 +7183,9 @@
         },
         {
           "organization_name": "Natural Solutions",
-          "organization_url": "https://github.com/naturalsolutions",
-          "location_country": "Global",
-          "form_of_organization": "for-profit"
+          "organization_url": "https://gitlab.com/natural-solutions",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "PADAS",
@@ -7735,7 +7729,7 @@
       "organizations": [
         {
           "organization_name": "BONSAI",
-          "organization_url": "https://gitlab.com/bonsamurais",
+          "organization_url": "https://github.com/BONSAMURAIS",
           "location_country": "",
           "form_of_organization": ""
         },
@@ -15136,7 +15130,7 @@
             "name": "BONSAI",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/bonsamurais"
+            "url": "https://github.com/BONSAMURAIS"
           },
           {
             "name": "C2SM-RCM",
@@ -16022,7 +16016,7 @@
       {
         "name": "Energy Data Accessibility and Integration",
         "kind": "sub_category",
-        "value": 31,
+        "value": 30,
         "children": [
           {
             "name": "Catalyst Cooperative",
@@ -16035,12 +16029,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/EnAccess"
-          },
-          {
-            "name": "EnergieID cvso",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/EnergieID"
           },
           {
             "name": "Energy Access Explorer",
@@ -16975,7 +16963,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/naturalsolutions"
+            "url": "https://gitlab.com/natural-solutions"
           },
           {
             "name": "OBIS",
@@ -18238,7 +18226,7 @@
             "name": "Natural Solutions",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/naturalsolutions"
+            "url": "https://gitlab.com/natural-solutions"
           },
           {
             "name": "PADAS",
@@ -18789,7 +18777,7 @@
             "name": "BONSAI",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/bonsamurais"
+            "url": "https://github.com/BONSAMURAIS"
           },
           {
             "name": "Brightway LCA Software Framework",

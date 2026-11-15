@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-14T11:59:47.747436+00:00",
+  "generated_at": "2026-11-15T12:35:27.661459+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1918
+      "count": 1919
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 788
+      "count": 787
     }
   ],
   "fields": {
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2154
+        "count": 2155
       },
       {
         "label": "True",
@@ -23,7 +23,7 @@
       },
       {
         "label": "Unknown",
-        "count": 85
+        "count": 84
       }
     ],
     "contributing_guide": [
@@ -33,17 +33,17 @@
       },
       {
         "label": "True",
-        "count": 897
+        "count": 898
       },
       {
         "label": "Unknown",
-        "count": 85
+        "count": 84
       }
     ],
     "license": [
       {
         "label": "mit",
-        "count": 693
+        "count": 694
       },
       {
         "label": "other",
@@ -59,7 +59,7 @@
       },
       {
         "label": "Unknown",
-        "count": 308
+        "count": 307
       },
       {
         "label": "bsd-3-clause",
@@ -161,7 +161,7 @@
       },
       {
         "label": "Unknown",
-        "count": 224
+        "count": 223
       },
       {
         "label": "C++",
@@ -177,7 +177,7 @@
       },
       {
         "label": "TypeScript",
-        "count": 87
+        "count": 88
       },
       {
         "label": "JavaScript",
@@ -212,12 +212,12 @@
         "count": 15
       },
       {
-        "label": "Rust",
+        "label": "Modelica",
         "count": 14
       },
       {
-        "label": "Modelica",
-        "count": 14
+        "label": "Rust",
+        "count": 13
       },
       {
         "label": "Kotlin",
@@ -257,7 +257,7 @@
       },
       {
         "label": "Scala",
-        "count": 3
+        "count": 4
       },
       {
         "label": "Swift",
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7155
+        "count": 7164
       },
       {
         "label": "pypi",
-        "count": 3294
+        "count": 3303
       },
       {
         "label": "Unknown",
@@ -423,15 +423,15 @@
       },
       {
         "label": "docker",
-        "count": 1569
+        "count": 1578
       },
       {
         "label": "npm",
-        "count": 1508
+        "count": 1510
       },
       {
         "label": "maven",
-        "count": 680
+        "count": 710
       },
       {
         "label": "cran",
@@ -479,19 +479,19 @@
       },
       {
         "label": "deb",
-        "count": 26
+        "count": 27
       },
       {
         "label": "nix",
         "count": 22
       },
       {
-        "label": "vcpkg",
-        "count": 15
+        "label": "cocoapods",
+        "count": 16
       },
       {
-        "label": "cocoapods",
-        "count": 14
+        "label": "vcpkg",
+        "count": 15
       },
       {
         "label": "swiftpm",
@@ -537,11 +537,11 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2555
+        "count": 2556
       },
       {
         "label": "Unknown",
-        "count": 85
+        "count": 84
       },
       {
         "label": "gitlab.com",
