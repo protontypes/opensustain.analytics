@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T12:35:27.661459+00:00",
+  "generated_at": "2026-11-16T13:27:36.875041+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1919
+      "count": 1920
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
@@ -23,7 +23,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 85
       }
     ],
     "contributing_guide": [
@@ -37,7 +37,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 85
       }
     ],
     "license": [
@@ -59,7 +59,7 @@
       },
       {
         "label": "Unknown",
-        "count": 307
+        "count": 308
       },
       {
         "label": "bsd-3-clause",
@@ -161,7 +161,7 @@
       },
       {
         "label": "Unknown",
-        "count": 223
+        "count": 224
       },
       {
         "label": "C++",
@@ -411,27 +411,27 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7164
+        "count": 7173
       },
       {
         "label": "pypi",
-        "count": 3303
+        "count": 3284
       },
       {
         "label": "Unknown",
-        "count": 2706
+        "count": 2707
       },
       {
         "label": "docker",
-        "count": 1578
+        "count": 1574
       },
       {
         "label": "npm",
-        "count": 1510
+        "count": 1492
       },
       {
         "label": "maven",
-        "count": 710
+        "count": 715
       },
       {
         "label": "cran",
@@ -451,7 +451,7 @@
       },
       {
         "label": "cargo",
-        "count": 276
+        "count": 277
       },
       {
         "label": "packagist",
@@ -541,7 +541,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 85
       },
       {
         "label": "gitlab.com",

@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-15T12:35:27.661459+00:00",
-  "as_of": "2026-11-15T12:35:27.661411+00:00",
+  "generated_at": "2026-11-16T13:27:36.875041+00:00",
+  "as_of": "2026-11-16T13:27:36.874985+00:00",
   "totals": {
-    "projects": 2706,
-    "active_projects": 1919,
+    "projects": 2707,
+    "active_projects": 1920,
     "organizations": 1358,
-    "contributors": 55504
+    "contributors": 55380
   },
   "medians": {
     "project_age_years": 6.74,
     "stars": 44,
-    "dds": 0.382,
+    "dds": 0.38,
     "contributors": 10.0,
     "total_commits": 555.0
   },
   "source": {
-    "projects_rows": 2706,
+    "projects_rows": 2707,
     "organizations_rows": 1358
   }
 }

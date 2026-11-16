@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T12:35:27.661459+00:00",
+  "generated_at": "2026-11-16T13:27:36.875041+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -11768,7 +11768,7 @@
     {
       "organization_name": "mosaik",
       "organization_url": "https://gitlab.com/mosaik",
-      "organization_description": "A flexible Smart Grid co-simulation framework. Questions? Get in contact on GitHub Discussions: https://github.com/orgs/OFFIS-mosaik/discussions",
+      "organization_description": "A flexible Smart Grid co-simulation framework. Questions? Get in contact on [GitHub Discussions](https://github.com/orgs/OFFIS-mosaik/discussions)",
       "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7059467/mosaik_logo.png?v=1704201644",
       "location_country": "Germany",
       "form_of_organization": "non-profit",
