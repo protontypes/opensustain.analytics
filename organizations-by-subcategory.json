@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T13:27:36.875041+00:00",
+  "generated_at": "2026-11-17T14:13:40.218186+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -7490,6 +7490,126 @@
       ]
     },
     {
+      "sub_category": "Life Cycle Assessment",
+      "organization_count": 19,
+      "organizations": [
+        {
+          "organization_name": "BONSAI",
+          "organization_url": "https://github.com/BONSAMURAIS",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Brightway LCA Software Framework",
+          "organization_url": "https://github.com/brightway-lca",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Fabrique numérique du Ministère de la Transition écologique",
+          "organization_url": "https://github.com/MTES-MCT",
+          "location_country": "France",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "GreenDelta",
+          "organization_url": "https://github.com/GreenDelta",
+          "location_country": "Germany",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "IfcLCA",
+          "organization_url": "https://github.com/IfcLCA",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "Kleis Technology",
+          "organization_url": "https://github.com/kleis-technology",
+          "location_country": "Switzerland",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "LCA-ActivityBrowser",
+          "organization_url": "https://github.com/LCA-ActivityBrowser",
+          "location_country": "Netherlands",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Laboratory for Energy Systems Analysis",
+          "organization_url": "https://github.com/Laboratory-for-Energy-Systems-Analysis",
+          "location_country": "Switzerland",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "National Energy Technology Laboratory Research & Innovation Center",
+          "organization_url": "https://github.com/NETL-RIC",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "National Laboratory of the Rockies",
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "OIE - Mines Paris - PSL",
+          "organization_url": "https://github.com/oie-mines-paristech",
+          "location_country": "France",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "POLCA",
+          "organization_url": "https://github.com/polca",
+          "location_country": "Global",
+          "form_of_organization": "community"
+        },
+        {
+          "organization_name": "Potsdam Integrated Assessment Modelling (PIAM)",
+          "organization_url": "https://github.com/pik-piam",
+          "location_country": "Germany",
+          "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "Quantitative Sustainable Design (QSD) Group",
+          "organization_url": "https://github.com/QSD-Group",
+          "location_country": "Global",
+          "form_of_organization": "academia"
+        },
+        {
+          "organization_name": "U.S. Environmental Protection Agency",
+          "organization_url": "https://github.com/USEPA",
+          "location_country": "USA",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "UN/CEFACT",
+          "organization_url": "https://github.com/uncefact",
+          "location_country": "Global",
+          "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Vizzuality",
+          "organization_url": "https://github.com/Vizzuality",
+          "location_country": "Spain",
+          "form_of_organization": "for-profit"
+        },
+        {
+          "organization_name": "eaternity",
+          "organization_url": "https://gitlab.com/eaternity",
+          "location_country": "",
+          "form_of_organization": ""
+        },
+        {
+          "organization_name": "ecoinvent",
+          "organization_url": "https://github.com/ecoinvent",
+          "location_country": "Switzerland",
+          "form_of_organization": "for-profit"
+        }
+      ]
+    },
+    {
       "sub_category": "Ocean Models",
       "organization_count": 19,
       "organizations": [
@@ -7720,120 +7840,6 @@
           "organization_url": "https://github.com/softwareunderground",
           "location_country": "Canada",
           "form_of_organization": "non-profit"
-        }
-      ]
-    },
-    {
-      "sub_category": "Life Cycle Assessment",
-      "organization_count": 18,
-      "organizations": [
-        {
-          "organization_name": "BONSAI",
-          "organization_url": "https://github.com/BONSAMURAIS",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Brightway LCA Software Framework",
-          "organization_url": "https://github.com/brightway-lca",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Fabrique numérique du Ministère de la Transition écologique",
-          "organization_url": "https://github.com/MTES-MCT",
-          "location_country": "France",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "GreenDelta",
-          "organization_url": "https://github.com/GreenDelta",
-          "location_country": "Germany",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "IfcLCA",
-          "organization_url": "https://github.com/IfcLCA",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "Kleis Technology",
-          "organization_url": "https://github.com/kleis-technology",
-          "location_country": "Switzerland",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "LCA-ActivityBrowser",
-          "organization_url": "https://github.com/LCA-ActivityBrowser",
-          "location_country": "Netherlands",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Laboratory for Energy Systems Analysis",
-          "organization_url": "https://github.com/Laboratory-for-Energy-Systems-Analysis",
-          "location_country": "Switzerland",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "National Energy Technology Laboratory Research & Innovation Center",
-          "organization_url": "https://github.com/NETL-RIC",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/NatLabRockies",
-          "location_country": "",
-          "form_of_organization": ""
-        },
-        {
-          "organization_name": "OIE - Mines Paris - PSL",
-          "organization_url": "https://github.com/oie-mines-paristech",
-          "location_country": "France",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "POLCA",
-          "organization_url": "https://github.com/polca",
-          "location_country": "Global",
-          "form_of_organization": "community"
-        },
-        {
-          "organization_name": "Potsdam Integrated Assessment Modelling (PIAM)",
-          "organization_url": "https://github.com/pik-piam",
-          "location_country": "Germany",
-          "form_of_organization": "non-profit"
-        },
-        {
-          "organization_name": "Quantitative Sustainable Design (QSD) Group",
-          "organization_url": "https://github.com/QSD-Group",
-          "location_country": "Global",
-          "form_of_organization": "academia"
-        },
-        {
-          "organization_name": "U.S. Environmental Protection Agency",
-          "organization_url": "https://github.com/USEPA",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "UN/CEFACT",
-          "organization_url": "https://github.com/uncefact",
-          "location_country": "Global",
-          "form_of_organization": "government agency"
-        },
-        {
-          "organization_name": "Vizzuality",
-          "organization_url": "https://github.com/Vizzuality",
-          "location_country": "Spain",
-          "form_of_organization": "for-profit"
-        },
-        {
-          "organization_name": "ecoinvent",
-          "organization_url": "https://github.com/ecoinvent",
-          "location_country": "Switzerland",
-          "form_of_organization": "for-profit"
         }
       ]
     },
@@ -18533,6 +18539,127 @@
         ]
       },
       {
+        "name": "Life Cycle Assessment",
+        "kind": "sub_category",
+        "value": 19,
+        "children": [
+          {
+            "name": "BONSAI",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/BONSAMURAIS"
+          },
+          {
+            "name": "Brightway LCA Software Framework",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/brightway-lca"
+          },
+          {
+            "name": "Fabrique numérique du Ministère de la Transition écologique",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/MTES-MCT"
+          },
+          {
+            "name": "GreenDelta",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/GreenDelta"
+          },
+          {
+            "name": "IfcLCA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/IfcLCA"
+          },
+          {
+            "name": "Kleis Technology",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/kleis-technology"
+          },
+          {
+            "name": "LCA-ActivityBrowser",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/LCA-ActivityBrowser"
+          },
+          {
+            "name": "Laboratory for Energy Systems Analysis",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Laboratory-for-Energy-Systems-Analysis"
+          },
+          {
+            "name": "National Energy Technology Laboratory Research & Innovation Center",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NETL-RIC"
+          },
+          {
+            "name": "National Laboratory of the Rockies",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/NatLabRockies"
+          },
+          {
+            "name": "OIE - Mines Paris - PSL",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/oie-mines-paristech"
+          },
+          {
+            "name": "POLCA",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/polca"
+          },
+          {
+            "name": "Potsdam Integrated Assessment Modelling (PIAM)",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/pik-piam"
+          },
+          {
+            "name": "Quantitative Sustainable Design (QSD) Group",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/QSD-Group"
+          },
+          {
+            "name": "U.S. Environmental Protection Agency",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/USEPA"
+          },
+          {
+            "name": "UN/CEFACT",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/uncefact"
+          },
+          {
+            "name": "Vizzuality",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/Vizzuality"
+          },
+          {
+            "name": "eaternity",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/eaternity"
+          },
+          {
+            "name": "ecoinvent",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/ecoinvent"
+          }
+        ]
+      },
+      {
         "name": "Ocean Models",
         "kind": "sub_category",
         "value": 19,
@@ -18765,121 +18892,6 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/softwareunderground"
-          }
-        ]
-      },
-      {
-        "name": "Life Cycle Assessment",
-        "kind": "sub_category",
-        "value": 18,
-        "children": [
-          {
-            "name": "BONSAI",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/BONSAMURAIS"
-          },
-          {
-            "name": "Brightway LCA Software Framework",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/brightway-lca"
-          },
-          {
-            "name": "Fabrique numérique du Ministère de la Transition écologique",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/MTES-MCT"
-          },
-          {
-            "name": "GreenDelta",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/GreenDelta"
-          },
-          {
-            "name": "IfcLCA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/IfcLCA"
-          },
-          {
-            "name": "Kleis Technology",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/kleis-technology"
-          },
-          {
-            "name": "LCA-ActivityBrowser",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/LCA-ActivityBrowser"
-          },
-          {
-            "name": "Laboratory for Energy Systems Analysis",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Laboratory-for-Energy-Systems-Analysis"
-          },
-          {
-            "name": "National Energy Technology Laboratory Research & Innovation Center",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NETL-RIC"
-          },
-          {
-            "name": "National Laboratory of the Rockies",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/NatLabRockies"
-          },
-          {
-            "name": "OIE - Mines Paris - PSL",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/oie-mines-paristech"
-          },
-          {
-            "name": "POLCA",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/polca"
-          },
-          {
-            "name": "Potsdam Integrated Assessment Modelling (PIAM)",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/pik-piam"
-          },
-          {
-            "name": "Quantitative Sustainable Design (QSD) Group",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/QSD-Group"
-          },
-          {
-            "name": "U.S. Environmental Protection Agency",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/USEPA"
-          },
-          {
-            "name": "UN/CEFACT",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/uncefact"
-          },
-          {
-            "name": "Vizzuality",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/Vizzuality"
-          },
-          {
-            "name": "ecoinvent",
-            "kind": "organization",
-            "value": 1,
-            "url": "https://github.com/ecoinvent"
           }
         ]
       },
