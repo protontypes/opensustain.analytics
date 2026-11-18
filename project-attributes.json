@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-17T14:13:40.218186+00:00",
+  "generated_at": "2026-11-18T13:44:45.357838+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1921
+      "count": 1920
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 785
+      "count": 787
     }
   ],
   "fields": {
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2152
+        "count": 2155
       },
       {
         "label": "True",
@@ -23,13 +23,13 @@
       },
       {
         "label": "Unknown",
-        "count": 87
+        "count": 85
       }
     ],
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1721
+        "count": 1724
       },
       {
         "label": "True",
@@ -37,7 +37,7 @@
       },
       {
         "label": "Unknown",
-        "count": 87
+        "count": 85
       }
     ],
     "license": [
@@ -98,7 +98,7 @@
         "count": 18
       },
       {
-        "label": "lgpl-2.1",
+        "label": "gpl-3.0+",
         "count": 7
       },
       {
@@ -106,8 +106,8 @@
         "count": 7
       },
       {
-        "label": "gpl-3.0+",
-        "count": 6
+        "label": "lgpl-2.1",
+        "count": 7
       },
       {
         "label": "unlicense",
@@ -153,7 +153,7 @@
       },
       {
         "label": "R",
-        "count": 392
+        "count": 394
       },
       {
         "label": "Jupyter Notebook",
@@ -161,7 +161,7 @@
       },
       {
         "label": "Unknown",
-        "count": 225
+        "count": 224
       },
       {
         "label": "C++",
@@ -415,11 +415,11 @@
       },
       {
         "label": "pypi",
-        "count": 3286
+        "count": 3279
       },
       {
         "label": "Unknown",
-        "count": 2706
+        "count": 2707
       },
       {
         "label": "docker",
@@ -435,7 +435,7 @@
       },
       {
         "label": "cran",
-        "count": 497
+        "count": 499
       },
       {
         "label": "nuget",
@@ -447,7 +447,7 @@
       },
       {
         "label": "conda",
-        "count": 324
+        "count": 323
       },
       {
         "label": "cargo",
@@ -463,7 +463,7 @@
       },
       {
         "label": "rubygems",
-        "count": 104
+        "count": 105
       },
       {
         "label": "go",
@@ -537,15 +537,15 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2554
+        "count": 2556
       },
       {
         "label": "Unknown",
-        "count": 87
+        "count": 85
       },
       {
         "label": "gitlab.com",
-        "count": 45
+        "count": 46
       },
       {
         "label": "git.rwth-aachen.de",

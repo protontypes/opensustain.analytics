@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-17T14:13:40.218186+00:00",
+  "generated_at": "2026-11-18T13:44:45.357838+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
       "country_name": "United States",
       "map_eligible": true,
-      "organization_count": 338,
-      "total_projects": 597
+      "organization_count": 339,
+      "total_projects": 640
     },
     {
       "iso_alpha": "Global",
       "country_name": "Global",
       "map_eligible": false,
-      "organization_count": 301,
-      "total_projects": 425
+      "organization_count": 302,
+      "total_projects": 427
     },
     {
       "iso_alpha": "DEU",
@@ -299,7 +299,7 @@
   "continent_counts": [
     {
       "continent": "America",
-      "count": 384
+      "count": 385
     },
     {
       "continent": "Europe",
@@ -307,7 +307,7 @@
     },
     {
       "continent": "Global",
-      "count": 301
+      "count": 302
     },
     {
       "continent": "Oceania",
@@ -333,15 +333,15 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 233
+      "count": 231
     },
     {
       "form_of_organization": "government agency",
-      "count": 188
+      "count": 189
     },
     {
       "form_of_organization": "for-profit",
-      "count": 141
+      "count": 142
     },
     {
       "form_of_organization": "non-profit",
@@ -364,11 +364,11 @@
     },
     {
       "organization_name": "National Laboratory of the Rockies",
-      "organization_url": "https://github.com/NatLabRockies",
-      "organization_description": "",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/1906800?v=4",
-      "location_country": "",
-      "form_of_organization": "",
+      "organization_url": "https://github.com/e-mission",
+      "organization_description": "Enables people to track their travel modes—by car, bus, bike or walking and measure their associated energy use and carbon footprint.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/10713694?v=4",
+      "location_country": "USA",
+      "form_of_organization": "government agency",
       "total_listed_projects_in_organization": 43
     },
     {
@@ -2416,11 +2416,11 @@
     },
     {
       "organization_name": "Natural Solutions",
-      "organization_url": "https://gitlab.com/natural-solutions",
-      "organization_description": "# NATURAL SOLUTIONS Biodiversity data and software\r\n\r\nMarseille\r\n[https://natural-solutions.world](https://natural-solutions.world)\r\n[@Nat_Solutions](https://twitter.com/Nat_Solutions)",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7726340/NS_interne.png?v=1739828241",
-      "location_country": "",
-      "form_of_organization": "",
+      "organization_url": "https://github.com/naturalsolutions",
+      "organization_description": "Biodiversity data and software",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/2242739?v=4",
+      "location_country": "Global",
+      "form_of_organization": "for-profit",
       "total_listed_projects_in_organization": 2
     },
     {
