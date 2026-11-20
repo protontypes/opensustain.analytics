@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:44:45.357838+00:00",
+  "generated_at": "2026-11-20T10:50:21.798463+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -235,9 +235,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OMEGAlpes",
@@ -967,9 +967,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OneBusAway",
@@ -2635,9 +2635,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OpenEnergyMonitor",
@@ -4105,7 +4105,7 @@
         },
         {
           "organization_name": "BONSAI",
-          "organization_url": "https://github.com/BONSAMURAIS",
+          "organization_url": "https://gitlab.com/bonsamurais",
           "location_country": "",
           "form_of_organization": ""
         },
@@ -4633,9 +4633,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "National Renewable Energy Centre - CENER",
@@ -5023,9 +5023,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Open Climate Fix (Archives)",
@@ -6541,9 +6541,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OpenFAST",
@@ -6949,9 +6949,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "PyBOP Team",
@@ -7495,7 +7495,7 @@
       "organizations": [
         {
           "organization_name": "BONSAI",
-          "organization_url": "https://github.com/BONSAMURAIS",
+          "organization_url": "https://gitlab.com/bonsamurais",
           "location_country": "",
           "form_of_organization": ""
         },
@@ -7549,9 +7549,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OIE - Mines Paris - PSL",
@@ -7903,9 +7903,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OnStove",
@@ -8503,9 +8503,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Natural Capital Alliance",
@@ -8737,9 +8737,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "OSeMOSYS",
@@ -9193,9 +9193,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Open Energy Family",
@@ -9883,9 +9883,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Open Energy Transition",
@@ -10513,9 +10513,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Pacific Northwest National Laboratory (Public)",
@@ -10855,9 +10855,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "Oak Ridge National Laboratory - Energy Management Software",
@@ -10897,9 +10897,9 @@
         },
         {
           "organization_name": "National Laboratory of the Rockies",
-          "organization_url": "https://github.com/e-mission",
-          "location_country": "USA",
-          "form_of_organization": "government agency"
+          "organization_url": "https://github.com/NatLabRockies",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "PEcAn Project",
@@ -11253,7 +11253,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "OMEGAlpes",
@@ -11987,7 +11987,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "OneBusAway",
@@ -13660,7 +13660,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "OpenEnergyMonitor",
@@ -15136,7 +15136,7 @@
             "name": "BONSAI",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/BONSAMURAIS"
+            "url": "https://gitlab.com/bonsamurais"
           },
           {
             "name": "C2SM-RCM",
@@ -15666,7 +15666,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "National Renewable Energy Centre - CENER",
@@ -16058,7 +16058,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "Open Climate Fix (Archives)",
@@ -17585,7 +17585,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "OpenFAST",
@@ -17996,7 +17996,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "PyBOP Team",
@@ -18547,7 +18547,7 @@
             "name": "BONSAI",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/BONSAMURAIS"
+            "url": "https://gitlab.com/bonsamurais"
           },
           {
             "name": "Brightway LCA Software Framework",
@@ -18601,7 +18601,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "OIE - Mines Paris - PSL",
@@ -18958,7 +18958,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "OnStove",
@@ -19564,7 +19564,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "Natural Capital Alliance",
@@ -19800,7 +19800,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "OSeMOSYS",
@@ -20261,7 +20261,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "Open Energy Family",
@@ -20960,7 +20960,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "Open Energy Transition",
@@ -21600,7 +21600,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "Pacific Northwest National Laboratory (Public)",
@@ -21949,7 +21949,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "Oak Ridge National Laboratory - Energy Management Software",
@@ -21992,7 +21992,7 @@
             "name": "National Laboratory of the Rockies",
             "kind": "organization",
             "value": 1,
-            "url": "https://github.com/e-mission"
+            "url": "https://github.com/NatLabRockies"
           },
           {
             "name": "PEcAn Project",

@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-18T13:44:45.357838+00:00",
+  "generated_at": "2026-11-20T10:50:21.798463+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1920
+      "count": 1922
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 787
+      "count": 785
     }
   ],
   "fields": {
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2155
+        "count": 2154
       },
       {
         "label": "True",
@@ -23,21 +23,21 @@
       },
       {
         "label": "Unknown",
-        "count": 85
+        "count": 86
       }
     ],
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1724
+        "count": 1725
       },
       {
         "label": "True",
-        "count": 898
+        "count": 896
       },
       {
         "label": "Unknown",
-        "count": 85
+        "count": 86
       }
     ],
     "license": [
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 981
+        "count": 982
       },
       {
         "label": "R",
@@ -157,7 +157,7 @@
       },
       {
         "label": "Jupyter Notebook",
-        "count": 251
+        "count": 250
       },
       {
         "label": "Unknown",
@@ -169,7 +169,7 @@
       },
       {
         "label": "HTML",
-        "count": 96
+        "count": 97
       },
       {
         "label": "Fortran",
@@ -185,7 +185,7 @@
       },
       {
         "label": "JavaScript",
-        "count": 78
+        "count": 77
       },
       {
         "label": "Java",
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7177
+        "count": 7176
       },
       {
         "label": "pypi",
-        "count": 3279
+        "count": 3271
       },
       {
         "label": "Unknown",
@@ -423,15 +423,15 @@
       },
       {
         "label": "docker",
-        "count": 1574
+        "count": 1556
       },
       {
         "label": "npm",
-        "count": 1489
+        "count": 1478
       },
       {
         "label": "maven",
-        "count": 715
+        "count": 714
       },
       {
         "label": "cran",
@@ -447,7 +447,7 @@
       },
       {
         "label": "conda",
-        "count": 323
+        "count": 325
       },
       {
         "label": "cargo",
@@ -463,7 +463,7 @@
       },
       {
         "label": "rubygems",
-        "count": 105
+        "count": 107
       },
       {
         "label": "go",
@@ -479,19 +479,19 @@
       },
       {
         "label": "deb",
-        "count": 27
+        "count": 26
       },
       {
         "label": "nix",
         "count": 22
       },
       {
-        "label": "cocoapods",
-        "count": 16
-      },
-      {
         "label": "vcpkg",
         "count": 15
+      },
+      {
+        "label": "cocoapods",
+        "count": 14
       },
       {
         "label": "swiftpm",
@@ -537,11 +537,11 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2556
+        "count": 2555
       },
       {
         "label": "Unknown",
-        "count": 85
+        "count": 86
       },
       {
         "label": "gitlab.com",
