@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:50:21.798463+00:00",
+  "generated_at": "2026-11-20T15:08:59.739094+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 982
+        "count": 983
       },
       {
         "label": "R",
@@ -185,7 +185,7 @@
       },
       {
         "label": "JavaScript",
-        "count": 77
+        "count": 76
       },
       {
         "label": "Java",
@@ -415,7 +415,7 @@
       },
       {
         "label": "pypi",
-        "count": 3271
+        "count": 3270
       },
       {
         "label": "Unknown",
@@ -423,7 +423,7 @@
       },
       {
         "label": "docker",
-        "count": 1556
+        "count": 1557
       },
       {
         "label": "npm",

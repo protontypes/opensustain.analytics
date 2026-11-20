@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:50:21.798463+00:00",
+  "generated_at": "2026-11-20T15:08:59.739094+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -2255,7 +2255,7 @@
     {
       "organization_name": "MET-OM: software for Oceanography and Marine Meteorology",
       "organization_url": "https://github.com/MET-OM",
-      "organization_description": "",
+      "organization_description": "Open-source metocean tools from the MET-OM, MET Norway",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/135607669?v=4",
       "location_country": "Norway",
       "form_of_organization": "academia",
