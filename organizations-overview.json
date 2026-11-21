@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:08:59.739094+00:00",
+  "generated_at": "2026-11-21T13:18:35.274641+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -55,7 +55,7 @@
       "country_name": "Netherlands",
       "map_eligible": true,
       "organization_count": 30,
-      "total_projects": 48
+      "total_projects": 49
     },
     {
       "iso_alpha": "CHE",
@@ -333,7 +333,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 232
+      "count": 233
     },
     {
       "form_of_organization": "government agency",
@@ -480,6 +480,15 @@
       "total_listed_projects_in_organization": 9
     },
     {
+      "organization_name": "Stichting Deltares",
+      "organization_url": "https://github.com/Deltares",
+      "organization_description": "Deltares is an independent institute for applied research in the field of water and subsurface.",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/6613768?v=4",
+      "location_country": "Netherlands",
+      "form_of_organization": "academia",
+      "total_listed_projects_in_organization": 9
+    },
+    {
       "organization_name": "oemof community",
       "organization_url": "https://github.com/oemof",
       "organization_description": "Open Energy Modelling Framework - A modular open source framework to model energy supply systems",
@@ -503,15 +512,6 @@
       "organization_description": "Our mission is to transform the geosciences community, research, and education by providing innovative data services and tools.",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/613345?v=4",
       "location_country": "USA",
-      "form_of_organization": "academia",
-      "total_listed_projects_in_organization": 8
-    },
-    {
-      "organization_name": "Stichting Deltares",
-      "organization_url": "https://github.com/Deltares",
-      "organization_description": "Deltares is an independent institute for applied research in the field of water and subsurface.",
-      "organization_icon_url": "https://avatars.githubusercontent.com/u/6613768?v=4",
-      "location_country": "Netherlands",
       "form_of_organization": "academia",
       "total_listed_projects_in_organization": 8
     },
@@ -5160,6 +5160,15 @@
       "total_listed_projects_in_organization": 1
     },
     {
+      "organization_name": "EV-Fleet",
+      "organization_url": "https://gitlab.com/ev-fleet",
+      "organization_description": "This group includes a series of projects which will be used for electric vehicle analyses. The focus of the projects will be on fleet transitioning planning.",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7613473/EV-Fleet-Logo-FA-04.png?v=1784100510",
+      "location_country": "",
+      "form_of_organization": "",
+      "total_listed_projects_in_organization": 1
+    },
+    {
       "organization_name": "EVMap",
       "organization_url": "https://github.com/ev-map",
       "organization_description": "Android app to find electric vehicle charging stations - compatible with community databases such as GoingElectric.de and OpenChargeMap.org.",
@@ -8700,7 +8709,7 @@
       "organization_name": "PermafrostNet",
       "organization_url": "https://gitlab.com/permafrostnet",
       "organization_description": "Welcome to the GitLab repository for [NSERC PermafrostNet](www.permafrostnet.ca). \r\n\r\n## Guide to software for permafrost research\r\n[See the Wiki pages](https://gitlab.com/groups/permafrostnet/-/wikis/home)",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7682572/Permafrost_logo_4color_stack_crop.png",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/7682572/Permafrost_logo_4color_stack_crop.png?v=1736556049",
       "location_country": "Canada",
       "form_of_organization": "collaboration",
       "total_listed_projects_in_organization": 1

@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-20T15:08:59.739094+00:00",
+  "generated_at": "2026-11-21T13:18:35.274641+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1922
+      "count": 1924
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 785
+      "count": 783
     }
   ],
   "fields": {
     "code_of_conduct": [
       {
         "label": "False",
-        "count": 2154
+        "count": 2155
       },
       {
         "label": "True",
@@ -23,21 +23,21 @@
       },
       {
         "label": "Unknown",
-        "count": 86
+        "count": 85
       }
     ],
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1725
+        "count": 1724
       },
       {
         "label": "True",
-        "count": 896
+        "count": 898
       },
       {
         "label": "Unknown",
-        "count": 86
+        "count": 85
       }
     ],
     "license": [
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7176
+        "count": 7183
       },
       {
         "label": "pypi",
-        "count": 3270
+        "count": 3261
       },
       {
         "label": "Unknown",
@@ -423,15 +423,15 @@
       },
       {
         "label": "docker",
-        "count": 1557
+        "count": 1556
       },
       {
         "label": "npm",
-        "count": 1478
+        "count": 1476
       },
       {
         "label": "maven",
-        "count": 714
+        "count": 715
       },
       {
         "label": "cran",
@@ -447,11 +447,11 @@
       },
       {
         "label": "conda",
-        "count": 325
+        "count": 326
       },
       {
         "label": "cargo",
-        "count": 277
+        "count": 278
       },
       {
         "label": "packagist",
@@ -537,11 +537,11 @@
     "platform": [
       {
         "label": "GitHub",
-        "count": 2555
+        "count": 2556
       },
       {
         "label": "Unknown",
-        "count": 86
+        "count": 85
       },
       {
         "label": "gitlab.com",

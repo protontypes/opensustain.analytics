@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:08:59.739094+00:00",
+  "generated_at": "2026-11-21T13:18:35.274641+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -825,7 +825,7 @@
     },
     {
       "sub_category": "Mobility and Transportation",
-      "organization_count": 60,
+      "organization_count": 61,
       "organizations": [
         {
           "organization_name": "3DStreet",
@@ -892,6 +892,12 @@
           "organization_url": "https://github.com/cyclestreets",
           "location_country": "UK",
           "form_of_organization": "non-profit"
+        },
+        {
+          "organization_name": "EV-Fleet",
+          "organization_url": "https://gitlab.com/ev-fleet",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "EVMap",
@@ -11843,7 +11849,7 @@
       {
         "name": "Mobility and Transportation",
         "kind": "sub_category",
-        "value": 60,
+        "value": 61,
         "children": [
           {
             "name": "3DStreet",
@@ -11910,6 +11916,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/cyclestreets"
+          },
+          {
+            "name": "EV-Fleet",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://gitlab.com/ev-fleet"
           },
           {
             "name": "EVMap",
