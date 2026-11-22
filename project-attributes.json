@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T13:18:35.274641+00:00",
+  "generated_at": "2026-11-22T13:10:54.782343+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1924
+      "count": 1923
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 783
+      "count": 784
     }
   ],
   "fields": {
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7183
+        "count": 7195
       },
       {
         "label": "pypi",
-        "count": 3261
+        "count": 3249
       },
       {
         "label": "Unknown",
@@ -423,15 +423,15 @@
       },
       {
         "label": "docker",
-        "count": 1556
+        "count": 1566
       },
       {
         "label": "npm",
-        "count": 1476
+        "count": 1481
       },
       {
         "label": "maven",
-        "count": 715
+        "count": 717
       },
       {
         "label": "cran",
@@ -451,7 +451,7 @@
       },
       {
         "label": "cargo",
-        "count": 278
+        "count": 281
       },
       {
         "label": "packagist",
@@ -479,19 +479,19 @@
       },
       {
         "label": "deb",
-        "count": 26
+        "count": 27
       },
       {
         "label": "nix",
         "count": 22
       },
       {
-        "label": "vcpkg",
-        "count": 15
+        "label": "cocoapods",
+        "count": 16
       },
       {
-        "label": "cocoapods",
-        "count": 14
+        "label": "vcpkg",
+        "count": 15
       },
       {
         "label": "swiftpm",
