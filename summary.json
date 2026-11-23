@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-22T13:10:54.782343+00:00",
-  "as_of": "2026-11-22T13:10:54.782304+00:00",
+  "generated_at": "2026-11-23T17:21:13.948221+00:00",
+  "as_of": "2026-11-23T17:21:13.948177+00:00",
   "totals": {
     "projects": 2707,
     "active_projects": 1923,
     "organizations": 1360,
-    "contributors": 55597
+    "contributors": 55611
   },
   "medians": {
     "project_age_years": 6.76,
     "stars": 44,
-    "dds": 0.38,
+    "dds": 0.381,
     "contributors": 10.0,
     "total_commits": 556.0
   },

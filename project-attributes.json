@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T13:10:54.782343+00:00",
+  "generated_at": "2026-11-23T17:21:13.948221+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
@@ -411,7 +411,7 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7195
+        "count": 7202
       },
       {
         "label": "pypi",
@@ -423,11 +423,11 @@
       },
       {
         "label": "docker",
-        "count": 1566
+        "count": 1578
       },
       {
         "label": "npm",
-        "count": 1481
+        "count": 1484
       },
       {
         "label": "maven",
@@ -451,7 +451,7 @@
       },
       {
         "label": "cargo",
-        "count": 281
+        "count": 282
       },
       {
         "label": "packagist",
