@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-24T15:39:47.911771+00:00",
+  "generated_at": "2026-11-25T15:24:29.020911+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1922
+      "count": 1920
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 784
+      "count": 786
     }
   ],
   "fields": {
@@ -29,11 +29,11 @@
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1724
+        "count": 1723
       },
       {
         "label": "True",
-        "count": 898
+        "count": 899
       },
       {
         "label": "Unknown",
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 984
+        "count": 985
       },
       {
         "label": "R",
@@ -177,7 +177,7 @@
       },
       {
         "label": "TypeScript",
-        "count": 90
+        "count": 89
       },
       {
         "label": "Julia",
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7211
+        "count": 7196
       },
       {
         "label": "pypi",
-        "count": 3257
+        "count": 3258
       },
       {
         "label": "Unknown",
@@ -423,7 +423,7 @@
       },
       {
         "label": "docker",
-        "count": 1577
+        "count": 1578
       },
       {
         "label": "npm",
@@ -443,11 +443,11 @@
       },
       {
         "label": "julia",
-        "count": 335
+        "count": 340
       },
       {
         "label": "conda",
-        "count": 325
+        "count": 327
       },
       {
         "label": "cargo",
@@ -463,7 +463,7 @@
       },
       {
         "label": "rubygems",
-        "count": 107
+        "count": 108
       },
       {
         "label": "go",
