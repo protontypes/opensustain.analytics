@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25T15:24:29.020911+00:00",
+  "generated_at": "2026-11-26T14:51:51.440893+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1920
+      "count": 1919
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
-      "count": 786
+      "count": 787
     }
   ],
   "fields": {
@@ -29,11 +29,11 @@
     "contributing_guide": [
       {
         "label": "False",
-        "count": 1723
+        "count": 1722
       },
       {
         "label": "True",
-        "count": 899
+        "count": 900
       },
       {
         "label": "Unknown",
@@ -411,11 +411,11 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7196
+        "count": 7204
       },
       {
         "label": "pypi",
-        "count": 3258
+        "count": 3267
       },
       {
         "label": "Unknown",
@@ -423,11 +423,11 @@
       },
       {
         "label": "docker",
-        "count": 1578
+        "count": 1587
       },
       {
         "label": "npm",
-        "count": 1484
+        "count": 1497
       },
       {
         "label": "maven",
@@ -447,7 +447,7 @@
       },
       {
         "label": "conda",
-        "count": 327
+        "count": 326
       },
       {
         "label": "cargo",
@@ -459,7 +459,7 @@
       },
       {
         "label": "rpm",
-        "count": 116
+        "count": 118
       },
       {
         "label": "rubygems",
