@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-26T14:51:51.440893+00:00",
+  "generated_at": "2026-11-27T14:50:55.364337+00:00",
   "top_n_default": 30,
   "commit_activity": [
     {
       "label": "Active (Commits in Last 365 Days)",
-      "count": 1919
+      "count": 1920
     },
     {
       "label": "Inactive (No Commits in Last 365 Days)",
@@ -23,7 +23,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 85
       }
     ],
     "contributing_guide": [
@@ -37,7 +37,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 85
       }
     ],
     "license": [
@@ -59,7 +59,7 @@
       },
       {
         "label": "Unknown",
-        "count": 307
+        "count": 308
       },
       {
         "label": "bsd-3-clause",
@@ -149,7 +149,7 @@
     "language": [
       {
         "label": "Python",
-        "count": 985
+        "count": 986
       },
       {
         "label": "R",
@@ -161,7 +161,7 @@
       },
       {
         "label": "Unknown",
-        "count": 223
+        "count": 224
       },
       {
         "label": "C++",
@@ -173,7 +173,7 @@
       },
       {
         "label": "Fortran",
-        "count": 94
+        "count": 93
       },
       {
         "label": "TypeScript",
@@ -411,15 +411,15 @@
     "ecosystems": [
       {
         "label": "actions",
-        "count": 7204
+        "count": 7213
       },
       {
         "label": "pypi",
-        "count": 3267
+        "count": 3268
       },
       {
         "label": "Unknown",
-        "count": 2706
+        "count": 2707
       },
       {
         "label": "docker",
@@ -435,7 +435,7 @@
       },
       {
         "label": "cran",
-        "count": 499
+        "count": 500
       },
       {
         "label": "nuget",
@@ -447,11 +447,11 @@
       },
       {
         "label": "conda",
-        "count": 326
+        "count": 329
       },
       {
         "label": "cargo",
-        "count": 282
+        "count": 283
       },
       {
         "label": "packagist",
@@ -541,7 +541,7 @@
       },
       {
         "label": "Unknown",
-        "count": 84
+        "count": 85
       },
       {
         "label": "gitlab.com",

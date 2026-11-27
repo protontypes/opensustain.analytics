@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:51:51.440893+00:00",
+  "generated_at": "2026-11-27T14:50:55.364337+00:00",
   "countries": [
     {
       "iso_alpha": "USA",
@@ -333,7 +333,7 @@
     },
     {
       "form_of_organization": "unknown",
-      "count": 234
+      "count": 235
     },
     {
       "form_of_organization": "government agency",
@@ -1624,9 +1624,9 @@
     },
     {
       "organization_name": "BONSAI",
-      "organization_url": "https://gitlab.com/bonsamurais",
-      "organization_description": "",
-      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/77028262/BONSAI-logo.png?v=1732042489",
+      "organization_url": "https://github.com/BONSAMURAIS",
+      "organization_description": "An organisation dedicated to create and maintain a truly global Open Source Database for product footprinting",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/25032243?v=4",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 2
@@ -4449,7 +4449,7 @@
       "total_listed_projects_in_organization": 1
     },
     {
-      "organization_name": "Clay Foundation",
+      "organization_name": "Clay",
       "organization_url": "https://github.com/Clay-foundation",
       "organization_description": "Make with Clay",
       "organization_icon_url": "https://avatars.githubusercontent.com/u/141743919?v=4",
@@ -8880,7 +8880,7 @@
       "organization_name": "Prospect Energy",
       "organization_url": "https://gitlab.com/prospect-energy",
       "organization_description": "",
-      "organization_icon_url": "",
+      "organization_icon_url": "https://gitlab.com/uploads/-/system/group/avatar/57315666/logo-1741bfabe788ee6194e081c4a82268d2fa58a943877a53a642f992b1a09a60f0.png?v=1771313173",
       "location_country": "",
       "form_of_organization": "",
       "total_listed_projects_in_organization": 1
@@ -9531,6 +9531,15 @@
       "organization_icon_url": "https://avatars.githubusercontent.com/u/2915622?v=4",
       "location_country": "USA",
       "form_of_organization": "non-profit",
+      "total_listed_projects_in_organization": 1
+    },
+    {
+      "organization_name": "Skyborn",
+      "organization_url": "https://github.com/skyborn-org",
+      "organization_description": "High-performance Python, C, and Fortran ecosystem for atmospheric & climate science",
+      "organization_icon_url": "https://avatars.githubusercontent.com/u/361482228?v=4",
+      "location_country": "",
+      "form_of_organization": "",
       "total_listed_projects_in_organization": 1
     },
     {

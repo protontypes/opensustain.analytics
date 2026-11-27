@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:51:51.440893+00:00",
+  "generated_at": "2026-11-27T14:50:55.364337+00:00",
   "subcategories": [
     {
       "sub_category": "Energy System Modeling Frameworks",
@@ -1887,7 +1887,7 @@
     },
     {
       "sub_category": "Climate Data Processing and Analysis",
-      "organization_count": 48,
+      "organization_count": 49,
       "organizations": [
         {
           "organization_name": "AI4S2S",
@@ -2110,6 +2110,12 @@
           "organization_url": "https://github.com/SciTools",
           "location_country": "UK",
           "form_of_organization": "government agency"
+        },
+        {
+          "organization_name": "Skyborn",
+          "organization_url": "https://github.com/skyborn-org",
+          "location_country": "",
+          "form_of_organization": ""
         },
         {
           "organization_name": "The Alan Turing Institute",
@@ -4111,7 +4117,7 @@
         },
         {
           "organization_name": "BONSAI",
-          "organization_url": "https://gitlab.com/bonsamurais",
+          "organization_url": "https://github.com/BONSAMURAIS",
           "location_country": "",
           "form_of_organization": ""
         },
@@ -4800,7 +4806,7 @@
           "form_of_organization": "for-profit"
         },
         {
-          "organization_name": "Clay Foundation",
+          "organization_name": "Clay",
           "organization_url": "https://github.com/Clay-foundation",
           "location_country": "Global",
           "form_of_organization": "community"
@@ -7501,7 +7507,7 @@
       "organizations": [
         {
           "organization_name": "BONSAI",
-          "organization_url": "https://gitlab.com/bonsamurais",
+          "organization_url": "https://github.com/BONSAMURAIS",
           "location_country": "",
           "form_of_organization": ""
         },
@@ -12914,7 +12920,7 @@
       {
         "name": "Climate Data Processing and Analysis",
         "kind": "sub_category",
-        "value": 48,
+        "value": 49,
         "children": [
           {
             "name": "AI4S2S",
@@ -13137,6 +13143,12 @@
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/SciTools"
+          },
+          {
+            "name": "Skyborn",
+            "kind": "organization",
+            "value": 1,
+            "url": "https://github.com/skyborn-org"
           },
           {
             "name": "The Alan Turing Institute",
@@ -15148,7 +15160,7 @@
             "name": "BONSAI",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/bonsamurais"
+            "url": "https://github.com/BONSAMURAIS"
           },
           {
             "name": "C2SM-RCM",
@@ -15838,7 +15850,7 @@
             "url": "https://github.com/CS-SI"
           },
           {
-            "name": "Clay Foundation",
+            "name": "Clay",
             "kind": "organization",
             "value": 1,
             "url": "https://github.com/Clay-foundation"
@@ -18559,7 +18571,7 @@
             "name": "BONSAI",
             "kind": "organization",
             "value": 1,
-            "url": "https://gitlab.com/bonsamurais"
+            "url": "https://github.com/BONSAMURAIS"
           },
           {
             "name": "Brightway LCA Software Framework",
